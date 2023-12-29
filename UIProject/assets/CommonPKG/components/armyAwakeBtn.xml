@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="58,65" pivot="0.5,0.5">
+  <controller name="redDot" pages="0,,1," selected="1"/>
+  <controller name="hint" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0_spxy" name="ArmyBtn" src="f3et1qp8ved" fileName="components/components_new/armyBtn.xml" xy="0,0"/>
+    <image id="n1_spxy" name="n1" src="dix6fj" fileName="images/images_new/com_red_dot.png" xy="35,-22" size="52,48">
+      <gearDisplay controller="redDot" pages="1"/>
+    </image>
+    <text id="n3_spxy" name="armTitle" xy="-14,113" pivot="0.5,0.5" size="88,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#acacac" align="center" strokeColor="#000000" strokeSize="2" shadowColor="#000000" shadowOffset="2,3" autoClearText="true" text="40级觉醒">
+      <gearDisplay controller="hint" pages="1"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </text>
+  </displayList>
+</component>

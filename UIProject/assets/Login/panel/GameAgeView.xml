@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame">
+  <displayList>
+    <component id="n5_7oiz" name="bg_01" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_7oiz" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="97,45" size="1140,659" group="n34_110xn">
+      <Label title="适龄提示"/>
+    </component>
+    <component id="n36_qidv" name="content" src="a9my1ygcg9z" fileName="components/title_notice1.xml" xy="207,141" size="921,521" group="n34_110xn"/>
+    <group id="n34_110xn" name="n34" xy="97,45" size="1140,659" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,88" clipSoftness="20,20" mask="n3_lxji">
+  <displayList>
+    <graph id="n3_lxji" name="n3" xy="6,6" pivot="0.5,0.5" size="76,76" aspect="true" type="eclipse"/>
+    <loader id="n0_m47y" name="icon" xy="7,-2" pivot="0.5,0.5" size="73,94" aspect="true" url="ui://4557t28ky6f5hz9cpe" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>

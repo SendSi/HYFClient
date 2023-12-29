@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="134,26" extention="Button" designImageOffsetX="-891" designImageOffsetY="-429">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n9_dxyz" name="icon" xy="0,1" size="25,24" aspect="true" url="ui://2r331opvsvx3hz9d75" fill="scaleFree"/>
+    <text id="n8_dxyz" name="name" xy="22,0" size="112,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" autoClearText="true" text="玩家最长六字"/>
+  </displayList>
+  <Button/>
+  <relation target="n8_dxyz" sidePair="rightext-right"/>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="38,38" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4_j4kd" name="n4" src="j4kdhz9clp" fileName="images/main/mainhud_bg_buff.png" xy="0,0"/>
+    <loader id="n3_j4kd" name="icon" xy="4,4" size="30,30" url="ui://tvbfx6zpj4kd7" align="center" vAlign="middle" fill="scale"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".95"/>
+</component>

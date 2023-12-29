@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="245,54" pivot="0.5,0.5" anchor="true" opaque="false" designImage="ui://4ni413lalk93kl" designImageOffsetX="-730" designImageOffsetY="-153">
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <text id="n6_o0c9" name="title" xy="-7,0" pivot="1,0.5" size="129,52" font="ui://4ni413lao0c91qp8vfk" fontSize="6" color="#ffffff" letterSpacing="-37" autoClearText="true" text="e">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <component id="n15_u9dn" name="number" src="u9dn1qp8vfo" fileName="panel/main/fighting/FightingHurtNumber3.xml" xy="110,27" pivot="0,0.5" anchor="true" size="118,51">
+      <gearXY controller="state" pages="0,1" values="63,27|110,27"/>
+    </component>
+  </displayList>
+  <transition name="normal">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="3,3" duration="4"/>
+    <item time="0" type="XY" target="n15_u9dn" tween="true" startValue="146,26" endValue="44.25,-24.625" duration="4"/>
+    <item time="4" type="Scale" target="n15_u9dn" tween="true" startValue="3,3" endValue="1.3,1.3" duration="2"/>
+    <item time="4" type="XY" target="n15_u9dn" tween="true" startValue="44.25,-24.625" endValue="144,-41.5" duration="2"/>
+    <item time="6" type="Scale" target="n15_u9dn" tween="true" startValue="1.3,1.3" endValue="1,1" duration="3"/>
+    <item time="6" type="XY" target="n15_u9dn" tween="true" startValue="144,-41.5" endValue="171,-1" duration="6"/>
+    <item time="9" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="0.8,0.8" duration="3"/>
+    <item time="12" type="Scale" target="n15_u9dn" tween="true" startValue="0.8,0.8" endValue="0.6,0.6" duration="3"/>
+    <item time="12" type="XY" target="n15_u9dn" tween="true" startValue="171,-1" endValue="183,-18" duration="3"/>
+    <item time="15" type="Scale" target="n15_u9dn" tween="true" startValue="0.6,0.6" endValue="0.5,0.5" duration="3"/>
+    <item time="15" type="XY" target="n15_u9dn" tween="true" startValue="183,-18" endValue="187,-25" duration="3"/>
+    <item time="18" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0.7" duration="3"/>
+    <item time="18" type="Scale" target="n15_u9dn" tween="true" startValue="0.5,0.5" endValue="0.4,0.4" duration="3"/>
+    <item time="18" type="XY" target="n15_u9dn" tween="true" startValue="187,-25" endValue="192,-42" duration="3"/>
+    <item time="21" type="Alpha" target="n15_u9dn" tween="true" startValue="0.7" endValue="0" duration="3"/>
+    <item time="21" type="Scale" target="n15_u9dn" tween="true" startValue="0.4,0.4" endValue="0.2,0.2" duration="3"/>
+    <item time="21" type="XY" target="n15_u9dn" tween="true" startValue="192,-42" endValue="204,-65" duration="3"/>
+  </transition>
+  <transition name="left">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Alpha" target="n6_o0c9" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="2,2" duration="2"/>
+    <item time="0" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="2,2" duration="2"/>
+    <item time="0" type="XY" target="n15_u9dn" tween="true" startValue="109,27" endValue="148.633,22.286" duration="2"/>
+    <item time="0" type="XY" target="n6_o0c9" tween="true" startValue="1,1" endValue="69.633,-3.714" duration="2"/>
+    <item time="2" type="Scale" target="n15_u9dn" tween="true" startValue="2,2" endValue="3,3" duration="4"/>
+    <item time="2" type="Scale" target="n6_o0c9" tween="true" startValue="2,2" endValue="3,3" duration="4"/>
+    <item time="2" type="XY" target="n15_u9dn" tween="true" startValue="148.633,22.286" endValue="197,20" duration="4"/>
+    <item time="2" type="XY" target="n6_o0c9" tween="true" startValue="69.633,-3.714" endValue="143,-6" duration="4"/>
+    <item time="6" type="Scale" target="n15_u9dn" tween="true" startValue="3,3" endValue="1.5,1.5" duration="3"/>
+    <item time="6" type="Scale" target="n6_o0c9" tween="true" startValue="3,3" endValue="1.5,1.5" duration="3"/>
+    <item time="6" type="XY" target="n15_u9dn" tween="true" startValue="197,20" endValue="128,-75" duration="3"/>
+    <item time="6" type="XY" target="n6_o0c9" tween="true" startValue="143,-6" endValue="37,-101" duration="3"/>
+    <item time="9" type="Scale" target="n15_u9dn" tween="true" startValue="1.5,1.5" endValue="1.1,1.1" duration="3"/>
+    <item time="9" type="Scale" target="n6_o0c9" tween="true" startValue="1.5,1.5" endValue="1.1,1.1" duration="3"/>
+    <item time="9" type="XY" target="n15_u9dn" tween="true" startValue="128,-75" endValue="112,-60" duration="3"/>
+    <item time="9" type="XY" target="n6_o0c9" tween="true" startValue="37,-101" endValue="10,-85" duration="3"/>
+    <item time="12" type="Scale" target="n15_u9dn" tween="true" startValue="1.1,1.1" endValue="0.7,0.7" duration="3"/>
+    <item time="12" type="Scale" target="n6_o0c9" tween="true" startValue="1.1,1.1" endValue="0.7,0.7" duration="3"/>
+    <item time="12" type="XY" target="n15_u9dn" tween="true" startValue="112,-60" endValue="84,-10" duration="3"/>
+    <item time="12" type="XY" target="n6_o0c9" tween="true" startValue="10,-85" endValue="-29,-37" duration="3"/>
+    <item time="15" type="Scale" target="n15_u9dn" tween="true" startValue="0.7,0.7" endValue="0.5,0.5" duration="3"/>
+    <item time="15" type="Scale" target="n6_o0c9" tween="true" startValue="0.7,0.7" endValue="0.5,0.5" duration="3"/>
+    <item time="15" type="XY" target="n15_u9dn" tween="true" startValue="84,-10" endValue="59,30" duration="3"/>
+    <item time="15" type="XY" target="n6_o0c9" tween="true" startValue="-29,-37" endValue="-58,4" duration="3"/>
+    <item time="18" type="Scale" target="n15_u9dn" tween="true" startValue="0.5,0.5" endValue="0.3,0.3" duration="3"/>
+    <item time="18" type="Scale" target="n6_o0c9" tween="true" startValue="0.5,0.5" endValue="0.3,0.3" duration="3"/>
+    <item time="18" type="XY" target="n15_u9dn" tween="true" startValue="59,30" endValue="11,53" duration="3"/>
+    <item time="18" type="XY" target="n6_o0c9" tween="true" startValue="-58,4" endValue="-111,27" duration="3"/>
+    <item time="20" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0.6" duration="3"/>
+    <item time="20" type="Alpha" target="n6_o0c9" tween="true" startValue="1" endValue="0.6" duration="3"/>
+    <item time="21" type="Scale" target="n15_u9dn" tween="true" startValue="0.3,0.3" endValue="0.2,0.2" duration="3"/>
+    <item time="21" type="Scale" target="n6_o0c9" tween="true" startValue="0.3,0.3" endValue="0.2,0.2" duration="3"/>
+    <item time="21" type="XY" target="n15_u9dn" tween="true" startValue="11,53" endValue="-69,62" duration="8"/>
+    <item time="21" type="XY" target="n6_o0c9" tween="true" startValue="-111,27" endValue="-196,36" duration="8"/>
+    <item time="23" type="Alpha" target="n15_u9dn" tween="true" startValue="0.6" endValue="0" duration="6"/>
+    <item time="23" type="Alpha" target="n6_o0c9" tween="true" startValue="0.6" endValue="0" duration="6"/>
+    <item time="24" type="Scale" target="n15_u9dn" tween="true" startValue="0.2,0.2" endValue="0.1,0.1" duration="5"/>
+    <item time="24" type="Scale" target="n6_o0c9" tween="true" startValue="0.2,0.2" endValue="0.1,0.1" duration="5"/>
+  </transition>
+  <transition name="right">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Alpha" target="n6_o0c9" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="2,2" duration="2"/>
+    <item time="0" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="2,2" duration="2"/>
+    <item time="0" type="XY" target="n15_u9dn" tween="true" startValue="107,27" endValue="149.633,22.286" duration="2"/>
+    <item time="0" type="XY" target="n6_o0c9" tween="true" startValue="1,1" endValue="69.633,-3.714" duration="2"/>
+    <item time="2" type="Scale" target="n15_u9dn" tween="true" startValue="2,2" endValue="3,3" duration="4"/>
+    <item time="2" type="Scale" target="n6_o0c9" tween="true" startValue="2,2" endValue="3,3" duration="4"/>
+    <item time="2" type="XY" target="n15_u9dn" tween="true" startValue="149.633,22.286" endValue="197,20" duration="4"/>
+    <item time="2" type="XY" target="n6_o0c9" tween="true" startValue="69.633,-3.714" endValue="143,-6" duration="4"/>
+    <item time="6" type="Scale" target="n15_u9dn" tween="true" startValue="3,3" endValue="1.5,1.5" duration="3"/>
+    <item time="6" type="Scale" target="n6_o0c9" tween="true" startValue="3,3" endValue="1.5,1.5" duration="3"/>
+    <item time="6" type="XY" target="n15_u9dn" tween="true" startValue="197,20" endValue="128,-75" duration="3"/>
+    <item time="6" type="XY" target="n6_o0c9" tween="true" startValue="143,-6" endValue="37,-101" duration="3"/>
+    <item time="9" type="Scale" target="n15_u9dn" tween="true" startValue="1.5,1.5" endValue="1.1,1.1" duration="3"/>
+    <item time="9" type="Scale" target="n6_o0c9" tween="true" startValue="1.5,1.5" endValue="1.1,1.1" duration="3"/>
+    <item time="9" type="XY" target="n15_u9dn" tween="true" startValue="128,-75" endValue="112,-60" duration="3"/>
+    <item time="9" type="XY" target="n6_o0c9" tween="true" startValue="37,-101" endValue="10,-85" duration="3"/>
+    <item time="12" type="Scale" target="n15_u9dn" tween="true" startValue="1.1,1.1" endValue="0.7,0.7" duration="3"/>
+    <item time="12" type="Scale" target="n6_o0c9" tween="true" startValue="1.1,1.1" endValue="0.7,0.7" duration="3"/>
+    <item time="12" type="XY" target="n15_u9dn" tween="true" startValue="112,-60" endValue="105,-10" duration="3"/>
+    <item time="12" type="XY" target="n6_o0c9" tween="true" startValue="10,-85" endValue="-7,-37" duration="3"/>
+    <item time="15" type="Scale" target="n15_u9dn" tween="true" startValue="0.7,0.7" endValue="0.5,0.5" duration="3"/>
+    <item time="15" type="Scale" target="n6_o0c9" tween="true" startValue="0.7,0.7" endValue="0.5,0.5" duration="3"/>
+    <item time="15" type="XY" target="n15_u9dn" tween="true" startValue="105,-10" endValue="110,30" duration="3"/>
+    <item time="15" type="XY" target="n6_o0c9" tween="true" startValue="-7,-37" endValue="-6,4" duration="3"/>
+    <item time="18" type="Scale" target="n15_u9dn" tween="true" startValue="0.5,0.5" endValue="0.3,0.3" duration="3"/>
+    <item time="18" type="Scale" target="n6_o0c9" tween="true" startValue="0.5,0.5" endValue="0.3,0.3" duration="3"/>
+    <item time="18" type="XY" target="n15_u9dn" tween="true" startValue="110,30" endValue="145,53" duration="3"/>
+    <item time="18" type="XY" target="n6_o0c9" tween="true" startValue="-6,4" endValue="24,27" duration="3"/>
+    <item time="20" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0.6" duration="4"/>
+    <item time="20" type="Alpha" target="n6_o0c9" tween="true" startValue="1" endValue="0.6" duration="4"/>
+    <item time="21" type="Scale" target="n15_u9dn" tween="true" startValue="0.3,0.3" endValue="0.2,0.2" duration="3"/>
+    <item time="21" type="Scale" target="n6_o0c9" tween="true" startValue="0.3,0.3" endValue="0.2,0.2" duration="3"/>
+    <item time="21" type="XY" target="n15_u9dn" tween="true" startValue="145,53" endValue="230,62" duration="8"/>
+    <item time="21" type="XY" target="n6_o0c9" tween="true" startValue="24,27" endValue="103,36" duration="8"/>
+    <item time="24" type="Alpha" target="n15_u9dn" tween="true" startValue="0.6" endValue="0" duration="5"/>
+    <item time="24" type="Alpha" target="n6_o0c9" tween="true" startValue="0.6" endValue="0" duration="5"/>
+    <item time="24" type="Scale" target="n15_u9dn" tween="true" startValue="0.2,0.2" endValue="0.1,0.1" duration="5"/>
+    <item time="24" type="Scale" target="n6_o0c9" tween="true" startValue="0.2,0.2" endValue="0.1,0.1" duration="5"/>
+  </transition>
+  <transition name="normal2">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="3,3" duration="4"/>
+    <item time="4" type="Scale" target="n15_u9dn" tween="true" startValue="3,3" endValue="0.2,0.2" duration="20"/>
+    <item time="12" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0.7" duration="3"/>
+    <item time="15" type="Alpha" target="n15_u9dn" tween="true" startValue="0.7" endValue="0" duration="9"/>
+  </transition>
+  <transition name="special">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Alpha" target="n6_o0c9" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="3,3" duration="5"/>
+    <item time="0" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="3,3" duration="5"/>
+    <item time="5" type="Scale" target="n15_u9dn" tween="true" startValue="3,3" endValue="0.1,0.1" duration="24"/>
+    <item time="5" type="Scale" target="n6_o0c9" tween="true" startValue="3,3" endValue="0.1,0.1" duration="24"/>
+    <item time="12" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0.6" duration="11"/>
+    <item time="12" type="Alpha" target="n6_o0c9" tween="true" startValue="1" endValue="0.6" duration="11"/>
+    <item time="23" type="Alpha" target="n15_u9dn" tween="true" startValue="0.6" endValue="0" duration="6"/>
+    <item time="23" type="Alpha" target="n6_o0c9" tween="true" startValue="0.6" endValue="0" duration="6"/>
+  </transition>
+  <transition name="rightp">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Alpha" target="n6_o0c9" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="1.5,1.5" duration="2"/>
+    <item time="0" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="1.5,1.5" duration="2"/>
+    <item time="0" type="XY" target="n15_u9dn" tween="true" startValue="108,26" endValue="104,16" duration="2"/>
+    <item time="0" type="XY" target="n6_o0c9" tween="true" startValue="-2,0" endValue="-3,-11" duration="2"/>
+    <item time="2" type="Scale" target="n15_u9dn" tween="true" startValue="1.5,1.5" endValue="1,1" duration="3"/>
+    <item time="2" type="Scale" target="n6_o0c9" tween="true" startValue="1.5,1.5" endValue="1,1" duration="3"/>
+    <item time="2" type="XY" target="n15_u9dn" tween="true" startValue="104,16" endValue="150,15" duration="3"/>
+    <item time="2" type="XY" target="n6_o0c9" tween="true" startValue="-3,-11" endValue="28,-11" duration="3"/>
+    <item time="5" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="0.6,0.6" duration="3"/>
+    <item time="5" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="0.6,0.6" duration="3"/>
+    <item time="5" type="XY" target="n15_u9dn" tween="true" startValue="150,15" endValue="170,1" duration="5"/>
+    <item time="5" type="XY" target="n6_o0c9" tween="true" startValue="28,-11" endValue="48,-25" duration="5"/>
+    <item time="10" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0" duration="14"/>
+    <item time="10" type="Alpha" target="n6_o0c9" tween="true" startValue="1" endValue="0" duration="14"/>
+    <item time="10" type="XY" target="n15_u9dn" tween="true" startValue="170,1" endValue="210,40" duration="14"/>
+    <item time="10" type="XY" target="n6_o0c9" tween="true" startValue="48,-25" endValue="80,14" duration="14"/>
+    <item time="24" type="Scale" target="n15_u9dn" value="0.6,0.6"/>
+    <item time="24" type="Scale" target="n6_o0c9" value="0.6,0.6"/>
+  </transition>
+  <transition name="leftp">
+    <item time="0" type="Alpha" target="n15_u9dn" value="1"/>
+    <item time="0" type="Alpha" target="n6_o0c9" value="1"/>
+    <item time="0" type="Scale" target="n15_u9dn" tween="true" startValue="1,1" endValue="2,2" duration="1"/>
+    <item time="0" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="1.5,1.5" duration="3"/>
+    <item time="0" type="XY" target="n15_u9dn" tween="true" startValue="104,27" endValue="40,17" duration="1"/>
+    <item time="0" type="XY" target="n6_o0c9" tween="true" startValue="-2,0" endValue="-34,-8" duration="3"/>
+    <item time="1" type="Scale" target="n15_u9dn" tween="true" startValue="2,2" endValue="0.6,0.6" duration="3"/>
+    <item time="1" type="XY" target="n15_u9dn" tween="true" startValue="40,17" endValue="125,17" duration="3"/>
+    <item time="3" type="Scale" target="n6_o0c9" tween="true" startValue="1.5,1.5" endValue="1,1" duration="3"/>
+    <item time="3" type="XY" target="n6_o0c9" tween="true" startValue="-34,-8" endValue="-34,-9" duration="2"/>
+    <item time="4" type="Scale" target="n15_u9dn" tween="true" startValue="0.6,0.6" endValue="0.6,0.6" duration="3"/>
+    <item time="4" type="XY" target="n15_u9dn" tween="true" startValue="125,17" endValue="111,2" duration="5"/>
+    <item time="5" type="XY" target="n6_o0c9" tween="true" startValue="-34,-9" endValue="-51,-24" duration="5"/>
+    <item time="6" type="Scale" target="n6_o0c9" tween="true" startValue="1,1" endValue="0.6,0.6" duration="3"/>
+    <item time="9" type="XY" target="n15_u9dn" tween="true" startValue="111,2" endValue="107,1" duration="1"/>
+    <item time="10" type="Alpha" target="n6_o0c9" tween="true" startValue="1" endValue="0" duration="14"/>
+    <item time="10" type="XY" target="n15_u9dn" tween="true" startValue="107,1" endValue="104,2" duration="1"/>
+    <item time="10" type="XY" target="n6_o0c9" tween="true" startValue="-51,-24" endValue="-91,13" duration="14"/>
+    <item time="11" type="XY" target="n15_u9dn" tween="true" startValue="104,2" endValue="101,4" duration="1"/>
+    <item time="12" type="XY" target="n15_u9dn" tween="true" startValue="101,4" endValue="98,7" duration="1"/>
+    <item time="13" type="XY" target="n15_u9dn" tween="true" startValue="98,7" endValue="95,11" duration="1"/>
+    <item time="14" type="XY" target="n15_u9dn" tween="true" startValue="95,11" endValue="92,16" duration="1"/>
+    <item time="15" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="15" type="XY" target="n15_u9dn" tween="true" startValue="92,16" endValue="89,21" duration="1"/>
+    <item time="16" type="XY" target="n15_u9dn" tween="true" startValue="89,21" endValue="86,26" duration="1"/>
+    <item time="17" type="XY" target="n15_u9dn" tween="true" startValue="86,26" endValue="80,40" duration="6"/>
+    <item time="23" type="Scale" target="n15_u9dn" value="0.6,0.6"/>
+    <item time="24" type="Scale" target="n6_o0c9" value="0.6,0.6"/>
+  </transition>
+  <transition name="cure">
+    <item time="0" type="Alpha" target="n15_u9dn" tween="true" startValue="0.2" endValue="1" duration="6"/>
+    <item time="0" type="Scale" target="n15_u9dn" value="1,1"/>
+    <item time="0" type="XY" target="n15_u9dn" tween="true" startValue="45,43" endValue="44,8" duration="6"/>
+    <item time="2" type="Scale" target="n15_u9dn" tween="true" startValue="1.3,1.3" endValue="0.7,0.7" duration="2"/>
+    <item time="4" type="Scale" target="n15_u9dn" tween="true" startValue="0.7,0.7" endValue="0.6,0.6" duration="4"/>
+    <item time="6" type="XY" target="n15_u9dn" tween="true" startValue="44,8" endValue="44,8" duration="6"/>
+    <item time="12" type="XY" target="n15_u9dn" tween="true" startValue="44,8" endValue="44,0" duration="10"/>
+    <item time="16" type="Alpha" target="n15_u9dn" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="22" type="Scale" target="n15_u9dn" value="0.6,0.6"/>
+  </transition>
+</component>

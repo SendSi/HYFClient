@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="167,151" designImageOffsetX="-994" designImageOffsetY="-182">
+  <controller name="reincarnation" pages="0,,1,,2,,3,,4,,6," selected="0"/>
+  <controller name="star" pages="0,,1,,2,,3,,4,,5,,6," selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="4"/>
+  <displayList>
+    <loader id="n3_xz10" name="bg0" xy="23,16" size="120,120" aspect="true" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="0,1,2,3,4" values="||||"/>
+    </loader>
+    <loader id="n0_xz10" name="bg" xy="-17,-24" size="200,200" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearIcon controller="reincarnation" pages="0,1,2,3,4,6" values="|||||"/>
+    </loader>
+    <component id="n16_mikg" name="icon" src="hxd7hz9d7c" fileName="components/general_new/circleGeneral.xml" xy="20,13" size="125,125"/>
+    <loader id="n1_xz10" name="qualityIcon" xy="3,5" size="160,38" url="ui://4557t28kxz10hz9cpq" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://4557t28kxz10hz9cps|ui://4557t28kxz10hz9cpt|ui://4557t28kxz10hz9cpu|ui://4557t28kxz10hz9cpq" default="ui://4557t28kxz10hz9cpr"/>
+    </loader>
+    <text id="n2_xz10" name="lv" xy="72,102" pivot="0.5,0.5" size="20,23" font="ui://2r331opvlwft3" fontSize="15" color="#ffffff" align="center" vAlign="middle" strokeColor="#0a4460" strokeSize="2" text="20"/>
+    <component id="n5_xz10" name="star0" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="71,124" size="25,25" group="n13_xz10" aspect="true" touchable="false">
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="71,124|57,124|71,124|85,124|71,125|84,124|71,124"/>
+    </component>
+    <component id="n6_xz10" name="star1" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="94,120" size="25,25" group="n13_xz10" touchable="false">
+      <gearDisplay controller="star" pages="1,2,3,4,5,6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="94,120|84,124|45,121|59,124|45,120|58,124|49,119"/>
+    </component>
+    <component id="n7_xz10" name="star2" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="95,120" size="25,25" group="n13_xz10" touchable="false">
+      <gearDisplay controller="star" pages="2,3,4,5,6,7"/>
+      <gearXY controller="star" pages="0,2,3,4,5,6" values="95,120|97,121|108,112|97,121|107,115|94,120" default="95,120"/>
+    </component>
+    <component id="n8_xz10" name="star3" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="30,111" size="25,25" group="n13_xz10" touchable="false">
+      <gearDisplay controller="star" pages="3,4,5,6,7"/>
+      <gearXY controller="star" pages="0,3,4,5,6" values="30,111|36,113|22,107|35,115|29,111" default="30,111"/>
+    </component>
+    <component id="n9_xz10" name="star4" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="116,110" size="25,25" group="n13_xz10" touchable="false">
+      <gearDisplay controller="star" pages="4,5,6,7"/>
+      <gearXY controller="star" pages="0,4,5,6" values="116,110|119,107|124,96|114,111" default="116,110"/>
+    </component>
+    <component id="n10_xz10" name="star5" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="17,96" size="25,25" group="n13_xz10" touchable="false">
+      <gearDisplay controller="star" pages="5,6,7"/>
+      <gearXY controller="star" pages="0,6" values="17,96|15,93" default="17,96"/>
+    </component>
+    <component id="n11_xz10" name="star6" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="127,95" size="25,25" group="n13_xz10" touchable="false">
+      <gearDisplay controller="star" pages="6,7"/>
+      <gearXY controller="star" pages="0,6" values="127,95|127,93" default="127,95"/>
+    </component>
+    <group id="n13_xz10" name="n13" xy="17,95" size="135,54"/>
+  </displayList>
+</component>

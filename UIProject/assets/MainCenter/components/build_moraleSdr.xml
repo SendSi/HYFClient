@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="155,23" extention="ProgressBar" designImageOffsetX="-707" designImageOffsetY="-315">
+  <controller name="state" pages="0,,1,,2,,3," selected="3"/>
+  <displayList>
+    <image id="n0_v96q" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-5,-4" size="165,31">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_x762" name="n3" src="hc7e1ygcgly" fileName="images/images_new/windowBg_new/negative_strip014.png" pkg="2r331opv" xy="0,0" size="155,23">
+      <gearDisplay controller="state" pages="3"/>
+      <relation target="n6_x762" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_x762" name="n4" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="0,0" size="155,23">
+      <gearDisplay controller="state" pages="2"/>
+      <relation target="n6_x762" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5_x762" name="n5" src="o5d41qp8ve9" fileName="images/images_new/windowBg_new/negative_strip05.png" pkg="2r331opv" xy="0,0" size="155,23">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="n6_x762" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_x762" name="bar" src="o5d41qp8vea" fileName="images/images_new/windowBg_new/negative_strip06.png" pkg="2r331opv" xy="0,0" size="155,23">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n2_e1ua" name="text" xy="3,0" pivot="0.5,0.5" size="148,20" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" ubb="true" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="士气高昂:108">
+      <relation target="" sidePair="height-height"/>
+    </richtext>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

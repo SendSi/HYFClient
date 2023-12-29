@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,36" extention="Slider">
+  <displayList>
+    <image id="n0_ms13" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-9,-3" size="110,42" alpha="0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_ms13" name="bar" src="svx3hz9d79" fileName="images/images_new/windowBg_new/strip01.png" pkg="2r331opv" xy="-4,2" size="100,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_f3wx" name="title" xy="158,2" size="35,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#845744" align="center" vAlign="middle" letterSpacing="-2" autoClearText="true" text="X/Y">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <component id="n2_ms13" name="grip" src="f3wxfi" fileName="components/components_new/bag_Slider2_grip.xml" pkg="2r331opv" xy="78,-10">
+      <relation target="n1_ms13" sidePair="right-right"/>
+      <Button icon="ui://2r331opvceggz9cou"/>
+    </component>
+  </displayList>
+  <Slider titleType="valueAndmax" wholeNumbers="true" changeOnClick="false"/>
+</component>

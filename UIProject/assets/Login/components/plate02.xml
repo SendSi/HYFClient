@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="617,420" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <image id="n2_g6y7" name="n2" src="g6y729" fileName="images/plate06.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n8_c92h" name="icon" xy="165,92" size="116,119" align="center" vAlign="middle"/>
+    <text id="n9_c92h" name="title" xy="161,185" size="124,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" vAlign="middle" strokeColor="#9f4c00" strokeSize="2" singleLine="true" text="澜川平原">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+      <gearColor controller="button" pages="0,1,2,3" values="#dac7a5,#224559|#ffffff,#9f4c00|#dac7a5,#432e21|#ffffff,#9f4c00"/>
+    </text>
+    <component id="n10_cale" name="recom" src="cale1ygcg9x" fileName="components/landItem1.xml" xy="78,227">
+      <gearDisplay controller="state" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="ColorFilter" target="n2_g6y7" tween="true" startValue="-0.11,0,0,0" endValue="0.13,0,0,0" duration="12"/>
+    <item time="12" type="ColorFilter" target="n2_g6y7" tween="true" startValue="0.13,0,0,0" endValue="-0.11,0,0,0" duration="12"/>
+  </transition>
+</component>

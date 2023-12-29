@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="98,99" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n5_i8bs" name="bg_quality" xy="4,4" size="90,90"   align="center" vAlign="middle"/>
+    <loader id="n4_i8bs" name="icon" xy="0,0" size="98,98" url="ui://2r331opv94956" fill="scale"/>
+    <text id="n6_iwg4" name="title" xy="41,65" pivot="0.5,0.5" size="10,29" fontSize="20" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" singleLine="true" text=""/>
+  </displayList>
+  <Button/>
+</component>

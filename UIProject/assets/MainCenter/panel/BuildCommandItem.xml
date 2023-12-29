@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="260,50">
+  <controller name="state" pages="0,,1,,2," selected="2">
+    <remark page="0" value="空闲中"/>
+    <remark page="1" value="建造中"/>
+    <remark page="2" value="未解锁"/>
+  </controller>
+  <displayList>
+    <text id="n162_sfim" name="timeCount" xy="2,29" size="109,24" font="ui://2r331opvno3vhz9d62" fontSize="16" color="#ff4343" vAlign="middle" leading="0" autoClearText="true" text="(00:00:04失效)">
+      <gearDisplay controller="state" pages="0,1"/>
+    </text>
+    <text id="n154_1025j" name="title" xy="4,10" size="56,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" autoClearText="true" text="队列1"/>
+    <text id="n155_1025j" name="lockLbl" xy="61,13" size="59,23" font="ui://2r331opvtauyhz9cz0" fontSize="15" color="#ffffff" text="(未解锁)">
+      <gearDisplay controller="state" pages="2"/>
+    </text>
+    <component id="n161_sfim" name="buyBtn" src="jvu0ci2" fileName="components/components_new/com_btn_lbl_lines.xml" pkg="2r331opv" xy="168,7" size="91,35">
+      <gearDisplay controller="state" pages="2"/>
+      <Button title="点击购买" titleFontSize="20"/>
+    </component>
+    <text id="n156_1025j" name="noBusy" xy="176,10" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffe765" text="空闲中...">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <text id="n160_1025j" name="timeLbl" xy="172,6" pivot="0.5,0.5" size="88,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoClearText="true" text="00:00:04">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+  </displayList>
+</component>

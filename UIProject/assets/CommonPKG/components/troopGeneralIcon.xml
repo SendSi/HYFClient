@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="63,63" mask="n2_f4o9">
+  <displayList>
+    <loader id="n0_f4o9" name="icon" xy="-29,-61" size="115,313" aspect="true" url="ui://61bunt4fy6f5er" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <graph id="n2_f4o9" name="n2" xy="0,0" size="63,63" alpha="0.3" type="rect" lineSize="0" corner="5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1045,65" extention="Button" designImage="ui://4ni413lac1q9hz9cum" designImageOffsetX="-135" designImageOffsetY="-494" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n8_ejbh" name="n8" xy="0,0" size="1045,65" type="rect" lineSize="2" lineColor="#fffffc5a" fillColor="#ffdbaf5a">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n7_c1q9" name="n7" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="0,61" size="1045,4">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n4_c1q9" name="lvNum" xy="3,15" pivot="0.5,0.5" size="284,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" autoSize="none" singleLine="true" autoClearText="true" text="13-14"/>
+    <text id="n5_c1q9" name="timeNum" xy="729,15" pivot="0.5,0.5" size="302,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" autoSize="none" singleLine="true" autoClearText="true" text="2分钟">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

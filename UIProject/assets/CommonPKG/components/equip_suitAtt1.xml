@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="409,259" designImageOffsetX="-861" designImageOffsetY="-153">
+  <displayList>
+    <list id="n0_s135" name="basAttList" xy="16,11" size="390,129" touchable="false" overflow="scroll" scrollBarFlags="32" lineGap="-6" defaultItem="ui://2r331opvs1351iy5b98" autoClearItems="true">
+      <item title="攻击+150"/>
+      <item title="伤害加成+5%"/>
+      <item title="攻击+150"/>
+      <item title="伤害加成+5%"/>
+    </list>
+    <list id="n1_s135" name="addAttList" xy="16,172" size="390,123" touchable="false" overflow="scroll" scrollBarFlags="32" lineGap="-6" defaultItem="ui://2r331opvs1351iy5b98" autoClearItems="true">
+      <item title="攻击+150"/>
+      <item title="伤害加成+5%"/>
+      <item title="攻击+150"/>
+      <item title="伤害加成+5%"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n2_s135" name="n2" src="b9bj1ygcgmg" fileName="images/images_new/windowBg_new/welfare_btn_bg17.png" xy="-1,144" size="430,27" alpha="0.7"/>
+    <text id="n4_s135" name="title" xy="16,143" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#845744" text="附加属性"/>
+  </displayList>
+</component>

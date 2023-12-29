@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="202,58" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n7_h55m" name="n7" pkg="2r331opv" src="w84whz9cxa" fileName="images/images_new/com_btn_bg09.png" xy="0,0" size="202,58">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <richtext id="n4_h55m" name="title" xy="-62,1" pivot="0.5,0.5" size="326,32" font="ui://2r331opvlwft3" fontSize="22" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#2196c6" strokeSize="2" singleLine="true" autoClearText="true" text="购买并使用">
+      <relation target="" sidePair="center-center,bottom-bottom%"/>
+    </richtext>
+    <text id="n6_h55m" name="time" xy="72,26" pivot="0.5,0.5" size="82,29" group="n8_h55m" font="ui://2r331opvlwft2" fontSize="20" color="#ffffff" vAlign="middle" strokeColor="#2196c6" strokeSize="2" autoClearText="true" text="01:05:01">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <loader id="n5_h55m" name="icon" xy="48,29" size="24,24" group="n8_h55m" aspect="true" url="ui://2r331opvn4qwhz9cz1" align="center" vAlign="middle" fill="scale">
+      <relation target="n6_h55m" sidePair="middle-middle,right-left"/>
+    </loader>
+    <group id="n8_h55m" name="n8" xy="48,26" size="106,29"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

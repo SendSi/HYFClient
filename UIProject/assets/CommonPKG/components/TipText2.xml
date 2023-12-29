@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="209,82" pivot="0,0.5" anchor="true" opaque="false">
+  <displayList>
+    <image id="n5_nybh" name="textBg" src="nybh1qp8vhy" fileName="images/images_new/windowBg_new/dialogbox_bg01.png" xy="53,2" size="152,77">
+      <relation target="n0_n7rt" sidePair="width-width,left-left"/>
+    </image>
+    <richtext id="n0_n7rt" name="text" xy="83,41" pivot="0,0.5" anchor="true" size="92,32" touchable="false" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#916535" vAlign="middle" leading="0" ubb="true" autoClearText="true" text="引导提示"/>
+    <image id="n2_n7rt" name="arrow" src="l3xgz9cm0" fileName="images/common_arrow_12.png" xy="32,41" pivot="0.5,0.5" anchor="true" size="65,80" aspect="true"/>
+  </displayList>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="412,84" extention="Button" designImageOffsetX="-547" designImageOffsetY="-216">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1,,4,,3," selected="0">
+    <remark page="0" value="未开启"/>
+    <remark page="1" value="进行中"/>
+    <remark page="2" value="领取"/>
+    <remark page="3" value="已领取"/>
+  </controller>
+  <displayList>
+    <image id="n3_fz63" name="n3" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="0,0" size="412,84">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <image id="n13_fpkn" name="n13" src="g6i71ygcfoi" fileName="images/images_new/com_icon_huawen1.png" pkg="2r331opv" xy="10,4" scale="0.8,0.8" alpha="0.3" color="#97794f"/>
+    <text id="n5_fz63" name="num" xy="104,25" size="156,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" autoSize="none" autoClearText="true" text="1分钟"/>
+    <component id="n10_fpkn" name="ongingBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="289,17" size="110,50">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearText controller="state" pages="0" values="未开启" default="进行中"/>
+      <Button title="未开启" titleFontSize="24"/>
+    </component>
+    <component id="n11_fpkn" name="receiveBtn" src="dfgw1ygcfmd" fileName="components/components_new/com_btn_0002.xml" pkg="2r331opv" xy="289,17" size="110,50">
+      <gearDisplay controller="state" pages="4,3"/>
+      <gearLook controller="state" pages="4,3" values="1,0,0,1|1,0,1,1" default="1,0,0,1"/>
+      <gearText controller="state" pages="3" values="已领取" default="领取"/>
+      <Button title="领取" titleFontSize="24"/>
+    </component>
+    <component id="n12_fpkn" name="icon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="12,5" scale="0.6,0.6"/>
+  </displayList>
+  <Button/>
+</component>

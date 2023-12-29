@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="402,124" mask="n22_oted">
+  <displayList>
+    <graph id="n22_oted" name="n22" xy="0,0" size="402,124" type="rect"/>
+    <list id="n21_bflr" name="itemList" xy="0,0" size="397,124" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="128" margin="-5,0,0,0" colGap="10" defaultItem="ui://2r331opvr52r1ygcgpe" align="center" vAlign="middle" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

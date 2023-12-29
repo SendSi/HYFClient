@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="93,28" extention="ProgressBar">
+  <displayList>
+    <image id="n0_j4kd" name="n0" src="lumy1qp8vdg" fileName="images4/mainhud_progress04.png" xy="0,0"/>
+    <image id="n1_j4kd" name="bar" src="lumy1qp8vdh" fileName="images4/mainhud_progress05.png" xy="0,0" fillMethod="radial180" fillClockwise="false"/>
+    <image id="n2_qc12" name="n2" src="t6g91ygcfho" fileName="images4/mainhud_progress06.png" xy="-12,-13"/>
+  </displayList>
+  <ProgressBar/>
+</component>

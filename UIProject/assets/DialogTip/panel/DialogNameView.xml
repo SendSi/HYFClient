@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_bwlb" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_bwlb" name="n3" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n11_bwlb"/>
+    <text id="n5_bwlb" name="titleTxt" xy="631,163" pivot="0.5,0.5" size="72,46" group="n11_bwlb" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示"/>
+    <component id="n7_bwlb" name="btnRight" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="569,469" size="202,85" group="n11_bwlb">
+      <Button title="确认" titleFontSize="32"/>
+    </component>
+    <image id="n8_bwlb" name="n8" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="392,261" size="557,59" group="n11_bwlb" alpha="0.5"/>
+    <text id="n9_bwlb" name="checkInput" xy="392,261" size="557,63" group="n11_bwlb" font="ui://2r331opvno3vhz9d62" fontSize="28" color="#50382e" align="center" vAlign="middle" ubb="true" autoSize="none" bold="true" autoClearText="true" text="" input="true" prompt="点击这里输入名称"/>
+    <text id="n10_bwlb" name="tips" xy="389,358" size="562,80" group="n11_bwlb" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" autoSize="none" text="您能够输入1-5个汉字或3-15英文字符，可以由数字、字母和特殊符号组成。"/>
+    <component id="n4_bwlb" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" size="80,87" group="n11_bwlb" scale="0.8,0.8"/>
+    <group id="n11_bwlb" name="n11" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

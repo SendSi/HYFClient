@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="916,112" designImageOffsetX="-151" designImageOffsetY="-200" designImageLayer="1">
+  <displayList>
+    <image id="n0_xoe1" name="n0" src="b1o21ygcfnq" fileName="images/images_new/windowBg_new/negative_bg26.png" pkg="2r331opv" xy="0,0" size="916,112">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n2_xoe1" name="icon" xy="23,16" size="78,78" aspect="true" url="ui://4ni413labmedhz9cvh" align="center" vAlign="middle" fill="scale"/>
+    <component id="n9_tbe6" name="modifyBtn" src="o4uyfe" fileName="components/components_new/common_btn_07.xml" pkg="2r331opv" xy="125,24" size="40,40">
+      <Button icon="ui://2r331opvbmedhz9cvd"/>
+    </component>
+    <text id="n4_xoe1" name="title" xy="164,28" size="390,36" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" autoSize="none" autoClearText="true" text="等级4野怪"/>
+    <text id="n5_xoe1" name="title2" xy="129,59" size="162,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#599e27" autoClearText="true" text="15服  X:125  Y:93"/>
+    <component id="n6_xoe1" name="deleteBtn" src="o4uyfe" fileName="components/components_new/common_btn_07.xml" pkg="2r331opv" xy="653,39" size="40,40">
+      <relation target="" sidePair="right-right"/>
+      <Button icon="ui://2r331opvbmedhz9cvc"/>
+    </component>
+    <component id="n7_w64j" name="shaerBtn" src="o4uyfe" fileName="components/components_new/common_btn_07.xml" pkg="2r331opv" xy="584,40" size="40,40">
+      <relation target="" sidePair="right-right"/>
+      <Button icon="ui://2r331opvbmedhz9cve"/>
+    </component>
+    <component id="n8_w64j" name="goBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="731,27">
+      <relation target="" sidePair="right-right"/>
+      <Button title="前往" titleFontSize="28"/>
+    </component>
+  </displayList>
+</component>

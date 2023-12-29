@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,84" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_lcq7" name="n3" src="lcq71qp8vf9" fileName="images/images_new/com_icon_completed.png" xy="0,0" color="#fd8f3c"/>
+  </displayList>
+  <Button/>
+</component>

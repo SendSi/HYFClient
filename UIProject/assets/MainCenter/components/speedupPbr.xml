@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="551,34" extention="ProgressBar" designImageOffsetX="-315" designImageOffsetY="-215">
+  <displayList>
+    <image id="n0_thpv" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-5,-4" size="561,42">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_thpv" name="bar" src="svx3hz9d79" fileName="images/images_new/windowBg_new/strip01.png" pkg="2r331opv" xy="0,1" size="551,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_thpv" name="titleTime" xy="57,-38" pivot="0.5,0.5" size="105,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" autoClearText="true" text="05:00:55">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <image id="n3_thpv" name="n3" src="thpvkq" fileName="images/images_new/com_clock.png" pkg="2r331opv" xy="28,-35" aspect="true">
+      <relation target="n2_thpv" sidePair="right-left"/>
+    </image>
+  </displayList>
+  <ProgressBar titleType="value"/>
+</component>

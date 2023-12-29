@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" designImage="ui://4ni413lag9nyhz9ctx" designImageLayer="1">
+  <displayList>
+    <component id="n3_ok6z" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" alpha="0.7" touchable="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n0_ok6z" name="com_window" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="177,108" size="979,534" group="n4_ok6z"/>
+    <image id="n8_rb01" name="n8" src="za6y1ygcgmn" fileName="images/images_new/windowBg_new/welfare_btn_bg23.png" pkg="2r331opv" xy="233,136" pivot="0.5,0.5" size="868,39" group="n4_ok6z" alpha="0.9"/>
+    <text id="n1_ok6z" name="lbl" xy="216,188" size="901,413" group="n4_ok6z" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" leading="8" ubb="true" autoSize="none" autoClearText="true" text="1、生命从来不是公平的，得到多少，便要靠那个多少做到最好，努力的生活下去。《我们不是天使》&#xA;2、聪明人，无谓争意气。《连环》&#xA;3、爱一个人决不潇洒，为自己留了后步的，也就不是爱《星之碎片》&#xA;4、一个成熟的人往往发觉可以责怪的人越来越少，人人都有他的难处。《我们不是天使》&#xA;5、能够说出的委屈，便不算委屈；能够抢走的爱人，便不算爱人。《开到荼蘼》&#xA;6、行乐及时，上天给你什么，就享受什么。千万不要去听难堪的话，一定不去见难看的人。或者是做难做的事情，爱上不应爱的人。《电光幻影》"/>
+    <text id="n5_ok6z" name="title" xy="216,137" pivot="0.5,0.5" size="902,39" group="n4_ok6z" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#845744" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="城墙（配表"/>
+    <group id="n4_ok6z" name="n4" xy="177,108" size="979,534" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n7_skl3" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0" size="1334,750" visible="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+  </displayList>
+</component>

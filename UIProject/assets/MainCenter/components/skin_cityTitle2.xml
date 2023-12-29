@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="252,113" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="2,,3,,8,,9," selected="0">
+    <remark page="0" value="使用中"/>
+    <remark page="1" value="可使用"/>
+    <remark page="2" value="未激活"/>
+    <remark page="3" value="可激活"/>
+  </controller>
+  <displayList>
+    <loader id="n17_onvm" name="sel" xy="-1,3" size="249,92" aspect="true" touchable="false" url="ui://4ni413lacwtb1ygcfg1" fill="scale" autoSize="true" playing="false">
+      <gearDisplay controller="button" pages="1,3"/>
+    </loader>
+    <loader id="n16_onvm" name="icon" xy="2,3" size="249,92" url="ui://4ni413lacwtb1ygcffx" fill="scale" autoSize="true">
+      <gearLook controller="state" pages="3,8,9" values="1,0,0,1|1,0,1,1|1,0,1,1" default="1,0,0,1"/>
+    </loader>
+    <image id="n12_cwtb" name="n12" src="cwtb1ygcffr" fileName="images/cityskin/com_cityskinicon_new.png" xy="0,0">
+      <gearDisplay controller="state" pages="9"/>
+    </image>
+    <image id="n18_w2v3" name="n18" src="hqarz9co6" fileName="images/images_new/com_change08.png" pkg="2r331opv" xy="98,79" pivot="0.5,0.5" size="109,35" group="n20_w2v3" color="#000000"/>
+    <text id="n19_w2v3" name="title" xy="120,81" size="64,29" group="n20_w2v3" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="使用中">
+      <gearColor controller="state" pages="3" values="#8bff3d,#000000" default="#ffffff,#000000"/>
+      <gearText controller="state" pages="3" values="可使用" default="使用中"/>
+    </text>
+    <group id="n20_w2v3" name="state1" xy="98,79" size="109,35" advanced="true">
+      <gearDisplay controller="state" pages="2,3"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

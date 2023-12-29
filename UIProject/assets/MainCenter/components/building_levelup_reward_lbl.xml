@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="404,35" extention="Button" designImageOffsetX="-640" designImageOffsetY="-186">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6_8rmp" name="n6" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="0,0" size="404,35" alpha="0.3" color="#000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_et21" name="lable01_name" xy="3,1" size="167,34" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="兵营人数上限啊"/>
+    <text id="n2_et21" name="lable02_befor_number" xy="184,1" pivot="1,0" size="118,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="right" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="50011000"/>
+    <text id="n3_et21" name="lable03_after_number" xy="303,1" pivot="1,0" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#94e957" align="right" vAlign="middle" ubb="true" autoSize="none" singleLine="true" autoClearText="true" text="+2000">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Button sound="0"/>
+</component>

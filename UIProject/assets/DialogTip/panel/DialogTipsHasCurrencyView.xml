@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" designImageOffsetX="-409" designImageOffsetY="-185" designImageLayer="1">
+  <displayList>
+    <image id="n24_suuv" name="bg" src="xjmv1qp8vf8" fileName="images/images_new/com_bg_tips02_mask4.png" pkg="2r331opv" xy="4,20" size="229,110" group="n19_sc2r" flip="vt">
+      <relation target="n25_suuv" sidePair="bottomext-bottom"/>
+    </image>
+    <list id="n25_suuv" name="list" xy="16,34" size="200,82" group="n19_sc2r" overflow="scroll" defaultItem="ui://utp01xiat6g91ygcfhr">
+      <item/>
+      <item/>
+    </list>
+    <image id="n26_suuv" name="arrow" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="98,3" pivot="0.5,0.5" size="40,30" group="n19_sc2r" flip="vt"/>
+    <group id="n19_sc2r" name="view" xy="4,3" size="229,127" advanced="true"/>
+  </displayList>
+</component>

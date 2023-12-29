@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="309,81" opaque="false">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="已拥有"/>
+    <remark page="1" value="未拥有"/>
+  </controller>
+  <controller name="sel" pages="0,,1," selected="0">
+    <remark page="0" value="未选中"/>
+    <remark page="1" value="选中"/>
+  </controller>
+  <controller name="isForever" pages="0,永久,1,限时" selected="1"/>
+  <displayList>
+    <image id="n2_qx30" name="n2" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,0" size="309,81" alpha="0.6" color="#000000"/>
+    <image id="n6_mtwh" name="n6" src="o283z9cnt" fileName="images/images_new/com_select_00.png" pkg="2r331opv" xy="-22,-19" size="352,121">
+      <gearDisplay controller="sel" pages="1"/>
+    </image>
+    <text id="n1_qx30" name="title" xy="76,29" size="44,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="限时">
+      <gearText controller="isForever" pages="1" values="限时" default="永久"/>
+    </text>
+    <component id="n3_qx30" name="btnUse" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="199,20" size="103,44">
+      <gearDisplay controller="state" pages="0"/>
+      <Button title="激活" titleFontSize="24"/>
+    </component>
+    <component id="n4_qx30" name="btnGet" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="250,20">
+      <gearDisplay controller="state" pages="1"/>
+    </component>
+    <component id="n5_qx30" name="propIcon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="5,4" size="120,118" scale="0.6,0.6" touchable="false"/>
+  </displayList>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="91,74" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="tab" pages="0,,1," selected="0">
+    <remark page="0" value="表情"/>
+    <remark page="1" value="文字"/>
+  </controller>
+  <displayList>
+    <image id="n5_u6yz" name="n5" src="u6yzhz9cqz" fileName="images/map/expression_bg02.png" xy="3,15" size="86,56">
+      <relation target="n7_u6yz" sidePair="rightext-right,leftext-left"/>
+    </image>
+    <loader id="n6_u6yz" name="icon" xy="17,-1" size="70,70" url="ui://4ni413lau6yzhz9cqu" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="tab" pages="0"/>
+    </loader>
+    <text id="n7_u6yz" name="title" xy="25,25" pivot="0.5,0.5" size="56,36" font="ui://2r331opvlwft3" fontSize="26" color="#2392aa" align="center" vAlign="middle" autoClearText="true" text="配表">
+      <gearDisplay controller="tab" pages="1"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <relation target="n5_u6yz" sidePair="width-width,height-height"/>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="163,163" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="红点"/>
+  </controller>
+  <displayList>
+    <image id="n0_gzkh" name="bg" src="f9h91ygcfgh" fileName="images/images_new/windowBg_new/negative_bg18.png" xy="-5,-5" aspect="true"/>
+    <loader id="n2_gzkh" name="icon" xy="15,12" size="133,133" aspect="true" url="ui://tsbe09ddnv4khz9di8" align="center" vAlign="middle" fill="scale"/>
+    <component id="n6_cz1o" name="effectCut" src="cz1oz9clx" fileName="components/components_new/cutParticle.xml" xy="3,3" size="156,156" aspect="true"/>
+    <component id="n3_gaz3" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="139,29" size="66,61" aspect="true">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

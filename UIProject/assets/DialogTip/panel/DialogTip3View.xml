@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_eznb" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_eznb" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n4_eznb" name="n4" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="352,181" size="628,380" group="n13_eznb"/>
+    <image id="n14_rb01" name="n14" src="za6y1ygcgmn" fileName="images/images_new/windowBg_new/welfare_btn_bg23.png" pkg="2r331opv" xy="446,209" pivot="0.5,0.5" size="442,39" group="n13_eznb" alpha="0.9"/>
+    <text id="n6_eznb" name="titleTxt" xy="468,208" pivot="0.5,0.5" size="398,39" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#845744" align="center" autoSize="none" text="转生成功"/>
+    <text id="n8_eznb" name="befor" xy="493,293" pivot="1,0" size="93,49" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="36" color="#97794f" align="right" autoSize="none" autoClearText="true" text="0转"/>
+    <text id="n9_eznb" name="after" xy="749,293" size="95,49" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="36" color="#4c9129" autoSize="none" autoClearText="true" text="1转"/>
+    <image id="n10_eznb" name="n10" src="aibb2e" fileName="images/images_new/common_arrow_4.png" pkg="2r331opv" xy="709,283" group="n13_eznb" scale="1.1,1.1" rotation="90"/>
+    <text id="n11_eznb" name="tips" xy="396,367" size="542,74" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" align="center" leading="0" autoSize="none" text="转生后等级将重新计算，原本的属性保留开启新的突破系统，原本突破保留。"/>
+    <component id="n12_eznb" name="btnCenter" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="572,467" size="189,68" group="n13_eznb">
+      <Button title="前往突破"/>
+    </component>
+    <group id="n13_eznb" name="n13" xy="352,181" size="628,380" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

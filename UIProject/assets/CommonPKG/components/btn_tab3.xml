@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="116,126" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0">
+    <remark page="1" value="显"/>
+  </controller>
+  <displayList>
+    <loader id="n7_lfqn" name="bg" xy="0,0" size="116,126" url="ui://2r331opvlfqnhz9d6z" align="center" vAlign="middle">
+      <gearIcon controller="button" pages="0,1,2,3" values="ui://2r331opvlfqnhz9d6z|ui://2r331opvlfqnhz9d70|ui://2r331opvlfqnhz9d6z|ui://2r331opvlfqnhz9d70"/>
+    </loader>
+    <loader id="n8_lfqn" name="icon" xy="18,14" size="80,80" aspect="true" url="ui://4hio38umxz10z9cra" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n9_lfqn" name="title" xy="31,76" pivot="0.5,0.5" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#81cbfa" align="center" vAlign="middle" strokeColor="#322b63" strokeSize="2" singleLine="true" autoClearText="true" text="升级">
+      <gearColor controller="button" pages="0,1,2,3" values="#81cbfa,#322b63|#ffffff,#322b63|#81cbfa,#322b63|#ffffff,#322b63"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n10_lfqn" name="redElement" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="97,24" size="44,43" aspect="true">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

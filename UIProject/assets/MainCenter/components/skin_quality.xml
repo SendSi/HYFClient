@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="72,30">
+  <controller name="quality" pages="1,,2,,3,,4,,5," selected="0">
+    <remark page="1" value="普通"/>
+    <remark page="2" value="优秀"/>
+    <remark page="3" value="史诗"/>
+    <remark page="4" value="传奇"/>
+  </controller>
+  <displayList>
+    <graph id="n0_qx30" name="n0" xy="0,0" size="72,30" touchable="false" type="rect" lineSize="0" fillColor="#ff599e27" corner="5">
+      <gearColor controller="quality" pages="1,2,3,4,5" values="#599e27|#3991d3|#b333d9|#cc681c|#d93a3a"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3_qx30" name="title" xy="24,0" pivot="0.5,0.5" size="24,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" autoClearText="true" text="金">
+      <gearText controller="quality" pages="1,2,3,4,5" values="金|普通|优秀|史诗|传奇"/>
+    </text>
+  </displayList>
+</component>

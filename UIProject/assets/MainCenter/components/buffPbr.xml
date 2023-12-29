@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="240,22" extention="ProgressBar">
+  <displayList>
+    <image id="n0_r616" name="n0" src="ceggz9cot" fileName="images/images_new/com_strip_bg03.png" pkg="2r331opv" xy="-4,-4" size="248,30">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_r616" name="bar" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="-4,-4" size="248,30"/>
+    <text id="n2_r616" name="title" xy="242,-6" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#845744" align="right" vAlign="middle" autoSize="shrink" autoClearText="true" text="50">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="value"/>
+</component>

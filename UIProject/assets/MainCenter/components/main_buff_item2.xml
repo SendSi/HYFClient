@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="145,52">
+  <displayList>
+    <list id="n24_m3dm" name="buff_list" xy="0,0" size="145,52" layout="row" overflow="scroll" scroll="horizontal" colGap="-7" defaultItem="ui://4ni413laj4kdhz9clo">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

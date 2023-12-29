@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="350,62">
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="初级"/>
+    <remark page="1" value="中级"/>
+    <remark page="2" value="高级"/>
+    <action type="play_transition" fromPage="0" toPage="0" transition="t0"/>
+  </controller>
+  <displayList>
+    <loader id="n7_sumv" name="n7" xy="0,0" size="360,36" url="ui://2r331opvbyqs1ygcfha" fill="scaleFree">
+      <gearIcon controller="state" pages="1,2" values="ui://2r331opvbyqs1ygcfhb|ui://2r331opvbyqs1ygcfhc" default="ui://2r331opvbyqs1ygcfha"/>
+    </loader>
+    <text id="n5_byqs" name="title" xy="125,24" pivot="0.5,0.5" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" leading="0" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="这里打字"/>
+  </displayList>
+  <transition name="t1" autoPlay="true">
+    <item time="0" type="Alpha" target="n5_byqs" value="0"/>
+    <item time="0" type="Alpha" target="n7_sumv" tween="true" startValue="0.21" endValue="1" duration="8"/>
+    <item time="0" type="Size" target="n7_sumv" tween="true" startValue="360,32" endValue="360,60" duration="5"/>
+    <item time="5" type="Alpha" target="n5_byqs" tween="true" startValue="0" endValue="1" duration="3"/>
+  </transition>
+  <transition name="t3">
+    <item time="0" type="Alpha" target="n5_byqs" tween="true" startValue="1" endValue="0" duration="3"/>
+    <item time="0" type="Alpha" target="n7_sumv" value="1"/>
+    <item time="0" type="Size" target="n7_sumv" value="360,60"/>
+    <item time="2" type="Alpha" target="n7_sumv" tween="true" startValue="1" endValue="0" duration="9"/>
+    <item time="5" type="Size" target="n7_sumv" tween="true" startValue="360,59" endValue="360,31" duration="4"/>
+  </transition>
+</component>

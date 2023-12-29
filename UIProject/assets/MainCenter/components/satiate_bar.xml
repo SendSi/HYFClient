@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="44,32" extention="ProgressBar">
+  <displayList>
+    <image id="n1_d2so" name="bar" src="happ1qp8vgz" fileName="images/chief/chiefPb08.png" xy="0,0" size="44,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_nm3l" name="title" xy="-18,3" size="117,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" autoClearText="true" text="10/10000000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n3_nm3l" name="title01" xy="-73,3" size="58,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" autoClearText="true" text="饱食度">
+      <relation target="n2_nm3l" sidePair="left-left"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

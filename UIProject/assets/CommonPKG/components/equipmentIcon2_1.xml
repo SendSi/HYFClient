@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="138,138" extention="Button" designImageOffsetX="-846" designImageOffsetY="-462">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="2,,3,,4,,8,,9,,10," selected="0"/>
+  <controller name="state" pages="2,normal,3,get,4,wearing,11,canwear,12,blank" selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="获得途径"/>
+    <remark page="2" value="穿戴中"/>
+    <remark page="3" value="可穿戴"/>
+    <remark page="4" value="未获得"/>
+  </controller>
+  <displayList>
+    <image id="n12_dxcu" name="n12" src="h3jujt" fileName="images/images_new/common_frame_quality_0.png" xy="16,15">
+      <gearDisplay controller="state" pages="12"/>
+    </image>
+    <loader id="n2_ryh2" name="bg" xy="16,15" size="110,112" url="ui://2r331opvh3jujt" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="2,3,4,11"/>
+      <gearIcon controller="quality" pages="2,3,4,8,10" values="ui://2r331opvh3jujt|ui://2r331opv94956|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv9495a" default="ui://2r331opv94959"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n3_ryh2" name="icon" xy="25,23" pivot="0.5,0.5" size="92,92" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="2,4"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n7_wp0j" name="n7" src="94955" fileName="images/images_new/common_btn_plus.png" xy="40,40" alpha="0.5" grayed="true">
+      <gearDisplay controller="state" pages="11,12"/>
+      <gearLook controller="state" pages="3,11" values="1,0,0,0|1,0,0,0" default="0.5,0,1,0"/>
+      <gearColor controller="state" pages="11" values="#ffffff" default="#ffffff"/>
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n9_mmv0" name="name" xy="16,14" size="52,24" fontSize="16" color="#ffffff" vAlign="middle" autoClearText="true" text="罗德斯">
+      <gearDisplay controller="state" pages="4"/>
+    </text>
+    <text id="n11_mmv0" name="lbl" xy="38,88" size="58,26" visible="false" fontSize="18" color="#43c26a" text="可穿戴">
+      <gearDisplay controller="state" pages="11"/>
+      <relation target="" sidePair="center-center%,bottom-bottom%"/>
+    </text>
+    <image id="n13_poaz" name="n13" src="spsrz9ckd" fileName="images/images_new/common_select_08.png" xy="1,0" group="n15_poaz"/>
+    <group id="n15_poaz" name="n15" xy="1,0" size="138,138" advanced="true">
+      <gearDisplay controller="button" pages="1,3"/>
+    </group>
+  </displayList>
+  <Button mode="Check"/>
+</component>

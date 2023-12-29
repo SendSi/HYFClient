@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="176,49">
+  <displayList>
+    <image id="n1_svpo" name="n1" src="svpo1ygcfld" fileName="images/number/numberbg02.png" pkg="2r331opv" xy="120,12">
+      <relation target="n2_svpo" sidePair="right-right"/>
+    </image>
+    <text id="n2_svpo" name="n2" xy="46,4" pivot="1,0" size="76,39" font="ui://2r331opvsvpo1ygcfle" fontSize="34" color="#ffffff" leading="0" letterSpacing="-4" singleLine="true" text="320"/>
+  </displayList>
+  <relation target="n1_svpo" sidePair="rightext-right"/>
+  <transition name="disappear">
+    <item time="0" type="Alpha" target="n1_svpo" tween="true" startValue="1" endValue="0" duration="12"/>
+    <item time="0" type="Alpha" target="n2_svpo" tween="true" startValue="1" endValue="0" duration="12"/>
+  </transition>
+  <transition name="addnum">
+    <item time="0" type="Alpha" target="n1_svpo" value="1"/>
+    <item time="0" type="Alpha" target="n2_svpo" value="1"/>
+    <item time="0" type="Scale" target="n2_svpo" tween="true" startValue="1,1" endValue="4,4" duration="1"/>
+    <item time="1" type="Scale" target="n2_svpo" tween="true" startValue="4,4" endValue="1,1" duration="2"/>
+    <item time="2" type="XY" target="n1_svpo" value="121,15"/>
+    <item time="3" type="XY" target="n1_svpo" value="125,15"/>
+    <item time="4" type="XY" target="n1_svpo" value="121,15"/>
+  </transition>
+  <transition name="t2">
+    <item time="0" type="Transition" value="addnum"/>
+    <item time="7" type="Transition" value="disappear"/>
+    <item time="24" type="Transition" value="addnum"/>
+    <item time="30" type="Transition" value="disappear"/>
+  </transition>
+</component>

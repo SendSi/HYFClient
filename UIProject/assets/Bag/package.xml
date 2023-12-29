@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="b7676vbq">
+  <resources>
+    <component id="xbayc" name="BagMainView.xml" path="/panel/" exported="true"/>
+    <component id="9232k" name="BagComposeView.xml" path="/panel/" exported="true"/>
+    <component id="9232p" name="bagComposeItem.xml" path="/components/" exported="true"/>
+    <component id="l5s1s" name="bag_Slider2.xml" path="/components/" exported="true"/>
+    <component id="ixhoko" name="warePbr.xml" path="/components/" exported="true"/>
+    <image id="poazkt" name="bagicon_tab01.png" path="/images/" exported="true"/>
+    <image id="poazku" name="bagicon_tab02.png" path="/images/" exported="true"/>
+    <image id="poazkv" name="bagicon_tab03.png" path="/images/" exported="true"/>
+    <image id="poazkw" name="heroicon_tab04.png" path="/images/" exported="true"/>
+    <image id="poazkx" name="heroicon_tab05.png" path="/images/" exported="true"/>
+    <image id="poazky" name="heroicon_tab06.png" path="/images/" exported="true"/>
+    <image id="poazkz" name="heroicon_tab07.png" path="/images/" exported="true"/>
+    <image id="poazl0" name="heroicon_tab08.png" path="/images/" exported="true"/>
+    <image id="poazl2" name="bag_bg02.png" path="/images/" exported="true" scale="9grid" scale9grid="15,0,5,29"/>
+    <component id="poazl3" name="sdrBtn.xml" path="/components/" exported="true"/>
+    <component id="saytl4" name="FightOrderBuyView.xml" path="/panel/" exported="true"/>
+    <image id="b9bjl6" name="heroicon_tab09.png" path="/images/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

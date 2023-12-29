@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,140" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="firstReward" pages="1,,0," selected="1">
+    <remark page="0" value="未显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <component id="n73_m474" name="comItem" src="j842hz9cyi" fileName="components/components_new/comItem.xml" xy="0,0"/>
+    <image id="n60_d2so" name="bg" src="mgry1qp8veg" fileName="images/images_new/activity_bg07.png" xy="14,51" size="92,25" group="n62_d2so"/>
+    <text id="n61_d2so" name="star" xy="14,48" size="93,26" group="n62_d2so" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#fff956" align="center" vAlign="middle" letterSpacing="-1" autoSize="none" singleLine="true" autoClearText="true" text="First 3star"/>
+    <group id="n62_d2so" name="chief" xy="14,48" size="93,28" advanced="true">
+      <gearDisplay controller="firstReward" pages="0"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="91,91" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_xse5" name="icon" xy="0,0" size="91,91" url="ui://4ni413la8z41cz" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n3_xse5" tween="true" startValue="0" endValue="1" duration="7" ease="Quad.In"/>
+    <item time="0" type="XY" target="n3_xse5" tween="true" startValue="0,0" endValue="0,-57" duration="4"/>
+    <item time="4" type="XY" target="n3_xse5" tween="true" startValue="0,-57" endValue="0,0" duration="3" ease="Quad.In"/>
+  </transition>
+</component>

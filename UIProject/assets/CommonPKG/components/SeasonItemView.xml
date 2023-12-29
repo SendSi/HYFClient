@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="193,105" overflow="hidden" extention="Button" designImage="ui://4hio38umc4umcin" designImageOffsetX="-363" designImageOffsetY="-110" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n6_ebe4" name="bg" xy="0,12" size="166,92" url="ui://2r331opvebe41qp8vcv">
+      <gearXY controller="button" pages="0,1" values="0,12|10,12"/>
+      <gearIcon controller="button" pages="0,1" values="ui://2r331opvebe41qp8vcv|ui://2r331opvebe41qp8vcu"/>
+    </loader>
+    <text id="n4_tr7w" name="title" xy="35,38" size="137,40" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#cc681c" strokeSize="2" singleLine="true" text="守卫王城">
+      <gearColor controller="button" pages="1" values="#4e2910,#ffd372" default="#ffffff,#cc681c"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

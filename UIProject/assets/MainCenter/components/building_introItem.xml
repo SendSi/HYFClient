@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="581,42" extention="Button" designImageOffsetX="-547" designImageOffsetY="-216">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="0" value="normal"/>
+    <remark page="1" value="次数"/>
+  </controller>
+  <displayList>
+    <image id="n3_fz63" name="n3" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="0,38" size="581,4">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <text id="n4_fz63" name="title" xy="6,4" size="92,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" autoClearText="true" text="资源建筑"/>
+    <text id="n5_fz63" name="num0" xy="462,6" pivot="1,0" size="56,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="right" vAlign="middle" autoClearText="true" text="1550">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="n6_fz63" sidePair="right-left"/>
+    </text>
+    <text id="n6_fz63" name="num1" xy="515,6" pivot="1,0" size="56,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#4c9129" vAlign="middle" autoClearText="true" text="+550">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <text id="n7_fpkn" name="num3" xy="532,6" pivot="1,0" size="39,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="right" vAlign="middle" autoClearText="true" text="1次">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="n6_fz63" sidePair="right-left"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

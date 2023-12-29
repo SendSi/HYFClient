@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,52" pivot="0.5,0.5" extention="Button" designImageOffsetX="-91" designImageOffsetY="-41">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n10_ukvb" name="n10" src="ukvb1ygcg94" fileName="images4/mainhud_progress013.png" xy="6,6" pivot="0.5,0.5" pkg="2r331opv">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n8_rjev" name="n8" src="tj0x1ygcfni" fileName="images/images_new/com_icon_token1.png" pkg="2r331opv" xy="6,6" pivot="0.5,0.5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n6_b6o0" name="title" xy="0,33" pivot="0.5,0.5" size="52,22" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#ffffff" align="center" vAlign="middle" leading="0" letterSpacing="-1" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="88&#xA;">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n9_ek3a" name="icon" xy="38,14" pivot="0.5,0.5" anchor="true" size="120,116" aspect="true" scale="0.2,0.2" url="ui://2r331opvdix6fj" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="red" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <relation target="n8_rjev" sidePair="width-width,height-height"/>
+</component>

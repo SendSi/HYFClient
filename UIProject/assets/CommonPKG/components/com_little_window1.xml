@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,460" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <component id="n5_d9gi" name="n5" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n10_kl1d" name="title" xy="167,12" pivot="0.5,0.5" size="466,49" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="1,4" autoClearText="true" text="购买道具">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n12_g6y7" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" xy="703,-13" scale="0.8,0.8">
+      <relation target="" sidePair="right-right"/>
+    </component>
+    <loader id="n7_d9gi" name="icon" xy="96,86" size="609,309" touchable="false" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width"/>
+    </loader>
+  </displayList>
+  <Button sound="0"/>
+</component>

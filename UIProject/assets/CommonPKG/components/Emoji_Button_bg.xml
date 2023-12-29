@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="66,66" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_dslz" name="bg" src="r9f632" fileName="images/bg_chat_05.png" pkg="62wjs2s2" xy="0,0" size="66,66" visible="false" alpha="0.8" color="#71acff">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n1_dslz" name="icon" xy="7,7" size="50,50" url=" " align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

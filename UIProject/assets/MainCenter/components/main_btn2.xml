@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="91,91" pivot="0.5,0.5" extention="Button" designImageOffsetX="-23" designImageOffsetY="-513" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="1">
+    <remark page="0" value="无"/>
+    <remark page="1" value="有"/>
+  </controller>
+  <displayList>
+    <loader id="n3_j4kd" name="icon" xy="12,13" size="66,68" url="ui://4ni413latauyhz9czt" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+    <component id="n6_bvce" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="67,24" size="42,39">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="67,9" extention="ProgressBar">
+  <displayList>
+    <image id="n0_hqb9" name="n0" src="hqb9z9r5" fileName="images2/main_bg_pbr00.png" xy="0,0" size="67,9">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_hqb9" name="bar" src="hqb9z9r9" fileName="images2/main_bg_pbr04.png" xy="2,2" size="63,5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

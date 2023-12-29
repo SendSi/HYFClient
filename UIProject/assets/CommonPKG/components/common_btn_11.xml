@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="42,42" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <loader id="n1_o4uy" name="icon" xy="0,1" size="42,42" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

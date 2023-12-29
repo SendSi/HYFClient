@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="104,44" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="白色"/>
+    <remark page="1" value="红色"/>
+  </controller>
+  <controller name="show" pages="0,,1," selected="0">
+    <remark page="0" value="显示"/>
+    <remark page="1" value="不显示"/>
+  </controller>
+  <displayList>
+    <loader id="n3_js41" name="icon" xy="-3,0" size="44,44" aspect="true" url="ui://lh4qx1m6lcfj2z" align="center" vAlign="middle" fill="scale"/>
+    <richtext id="n4_js41" name="title" xy="34,6" size="65,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" vAlign="middle" letterSpacing="-1" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="12,334">
+      <gearColor controller="state" pages="0,1" values="#ffffff,#000000|#f00000,#000000"/>
+    </richtext>
+  </displayList>
+  <Button volume="0"/>
+  <relation target="n4_js41" sidePair="rightext-right"/>
+</component>

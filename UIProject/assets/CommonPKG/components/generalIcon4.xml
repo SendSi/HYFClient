@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="167,151">
+  <displayList>
+    <loader id="n1_v1bt" name="bg" xy="-16,-24" size="200,200" aspect="true" align="center" vAlign="middle" fill="scale"/>
+    <loader id="n4_v1bt" name="quality" xy="23,15" size="120,120" aspect="true" align="center" vAlign="middle" fill="scale"/>
+    <loader id="n2_v1bt" name="icon" xy="23,15" size="120,120" url="ui://tsbe09ddv4de9cjj" align="center" vAlign="middle" fill="scale"/>
+    <text id="n5_6lai" name="reviveTimeLbl" xy="35,25" size="95,98" fontSize="75" color="#cc0000" align="center" vAlign="middle" leading="0" autoSize="shrink" text=""/>
+  </displayList>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,140" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="bottomNumCtrl" pages="0,,1," selected="1">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <component id="n73_m474" name="comItem" src="j842hz9cyi" fileName="components/components_new/comItem.xml" xy="0,0"/>
+    <image id="n74_o23t" name="n74" src="a4b91qp8veo" fileName="images/images_new/com_change010.png" xy="9,85" size="100,24" group="n76_o23t" alpha="0.96"/>
+    <text id="n75_o23t" name="hadNumFra" xy="8,82" pivot="0.5,0.5" size="102,28" group="n76_o23t" font="ui://2r331opvno3vhz9d63" fontSize="19" color="#ffffff" align="center" vAlign="bottom" ubb="true" autoSize="none" strokeColor="#000000" strokeSize="2" singleLine="true" text="1/2"/>
+    <group id="n76_o23t" name="n76" xy="8,82" size="102,28" advanced="true">
+      <gearDisplay controller="bottomNumCtrl" pages="1"/>
+    </group>
+  </displayList>
+</component>

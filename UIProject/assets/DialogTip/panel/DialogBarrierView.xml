@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="70">
+  <controller name="grayed" pages="0,,1," selected="0">
+    <remark page="0" value="next"/>
+    <remark page="1" value="置灰"/>
+  </controller>
+  <displayList>
+    <component id="n2_l9c5" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-2" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n28_osur" name="showTopTitle" src="osur1ygcfn3" fileName="components/components_new/showTopTitle.xml" pkg="2r331opv" xy="309,-27" touchable="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://2r331opv10473hz9cyn"/>
+    </component>
+    <image id="n6_l9c5" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,272" pivot="0.5,0.5" size="1334,332" alpha="0.8">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n27_snky" name="null" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,1"/>
+    <image id="n35_r847" name="n35" src="nm3l1ygcfm5" fileName="images/images_new/windowBg_new/title_bg03.png" pkg="2r331opv" xy="211,425" pivot="0.5,0.5" size="912,38" group="n37_r847"/>
+    <image id="n34_r847" name="n34" src="nm3l1ygcfm5" fileName="images/images_new/windowBg_new/title_bg03.png" pkg="2r331opv" xy="211,279" pivot="0.5,0.5" size="912,38" group="n37_r847"/>
+    <text id="n31_ceuh" name="titleSucc1" xy="613,280" pivot="0.5,0.5" size="108,36" group="n37_r847" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#74d0ff" align="center" vAlign="middle" leading="0" ubb="true" text="挑战目标"/>
+    <text id="n32_ceuh" name="titleSucc2" xy="613,425" pivot="0.5,0.5" size="108,36" group="n37_r847" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#74d0ff" align="center" vAlign="middle" leading="0" ubb="true" text="奖励结算"/>
+    <component id="n12_l9c5" name="centerList" src="g17g1ygcfi2" fileName="components/Item1.xml" xy="527,325" size="280,96" group="n37_r847"/>
+    <list id="n30_g4fb" name="award_list" xy="192,455" pivot="0.5,0.5" size="949,167" group="n37_r847" scale="0.9,0.9" layout="row" overflow="scroll" scroll="horizontal" colGap="40" defaultItem="ui://2r331opvr52r1ygcgpe" align="center" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n37_r847" name="n37" xy="192,279" size="949,343" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n13_l9c5" name="nextBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="359,633" size="202,78" group="n38_r847">
+      <gearLook controller="grayed" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="下一关" titleFontSize="30"/>
+    </component>
+    <component id="n14_l9c5" name="outBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="772,633" size="202,78" group="n38_r847">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="退出" titleFontSize="30"/>
+    </component>
+    <text id="n39_pam3" name="titleSucc3" xy="346,709" pivot="0.5,0.5" size="228,29" group="n38_r847" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" ubb="true" text="这里20号字体打条件描述">
+      <gearDisplay controller="grayed" pages="1"/>
+      <relation target="n13_l9c5" sidePair="center-center"/>
+    </text>
+    <group id="n38_r847" name="n38" xy="346,633" size="628,105" advanced="true"/>
+    <image id="n36_r847" name="n36" src="itz02a" fileName="images/images_new/com_bg_mask.png" pkg="2r331opv" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n28_osur" value="0"/>
+    <item time="0" type="Alpha" target="n36_r847" value="0"/>
+    <item time="0" type="Alpha" target="n36_r847" value="0"/>
+    <item time="0" type="Alpha" target="n36_r847" value="0"/>
+    <item time="0" type="Alpha" target="n36_r847" value="0"/>
+    <item time="0" type="Alpha" target="n36_r847" value="0"/>
+    <item time="0" type="Alpha" target="n36_r847" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Visible" target="n2_l9c5" value="false"/>
+    <item time="0" type="Visible" target="n2_l9c5" value="false"/>
+    <item time="0" type="Visible" target="n37_r847" value="false"/>
+    <item time="0" type="Visible" target="n38_r847" value="false"/>
+    <item time="0" type="Visible" target="n6_l9c5" value="false"/>
+    <item time="0" type="XY" target="n28_osur" value="310,175"/>
+    <item time="5" type="Visible" target="n2_l9c5" value="true"/>
+    <item time="12" type="Alpha" target="n36_r847" value="1"/>
+    <item time="12" type="Alpha" target="n36_r847" value="1"/>
+    <item time="12" type="Alpha" target="n36_r847" value="1"/>
+    <item time="12" type="Alpha" target="n36_r847" value="1"/>
+    <item time="12" type="Alpha" target="n36_r847" value="1"/>
+    <item time="12" type="Alpha" target="n36_r847" tween="true" startValue="1" endValue="0" duration="5"/>
+    <item time="18" type="Alpha" target="n28_osur" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="44" type="XY" target="n28_osur" tween="true" startValue="310,175" endValue="310,-28" duration="6"/>
+    <item time="51" type="Size" target="n6_l9c5" tween="true" startValue="1334,28" endValue="1334,332" duration="3"/>
+    <item time="51" type="Visible" target="n6_l9c5" value="true"/>
+    <item time="54" type="Visible" target="n6_l9c5" value="true"/>
+    <item time="55" type="Alpha" target="n28_osur" value="1"/>
+    <item time="55" type="Visible" target="n37_r847" value="true"/>
+    <item time="55" type="Visible" target="n38_r847" value="true"/>
+  </transition>
+</component>

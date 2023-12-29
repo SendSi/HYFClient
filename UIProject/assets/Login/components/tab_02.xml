@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <controller name="tab" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <image id="n12_g6y7" name="n12" src="gxxt1u" fileName="images/land_bg07.png" xy="773,43">
+      <relation target="" sidePair="right-right"/>
+    </image>
+    <component id="n11_gxxt" name="btn_tab0" src="p7811r" fileName="components/btn_choose.xml" xy="837,88">
+      <gearXY controller="tab" pages="0,1,2" values="970,232|1101,88|837,88" tween="true"/>
+      <Button controller="tab" page="0"/>
+    </component>
+    <component id="n9_gxxt" name="btn_tab1" src="p7811r" fileName="components/btn_choose.xml" xy="1101,88">
+      <gearXY controller="tab" pages="0,1,2" values="837,88|970,232|1101,88" tween="true"/>
+      <Button controller="tab" page="1"/>
+    </component>
+    <component id="n10_gxxt" name="btn_tab2" src="p7811r" fileName="components/btn_choose.xml" xy="970,232">
+      <gearXY controller="tab" pages="0,1,2" values="1101,88|837,88|970,232" tween="true"/>
+      <Button checked="true" controller="tab" page="2"/>
+    </component>
+  </displayList>
+</component>

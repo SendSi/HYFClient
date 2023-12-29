@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="118,71" extention="Button" designImageOffsetX="-1088" designImageOffsetY="-623">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n5_etns" name="n5" src="l3kw1ygcgl3" fileName="images/images_new/com_btn_switch03.png" pkg="2r331opv" xy="-4,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n7_etns" name="n7" src="l3kw1ygcgl4" fileName="images/images_new/com_btn_switch04.png" pkg="2r331opv" xy="5,1">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n6_etns" name="n6" src="cwtb1ygcffs" fileName="images/cityskin/com_cityskinicon_moon2.png" xy="73,21" aspect="true" color="#b26105">
+      <gearXY controller="button" pages="0,1" values="73,21|73,21"/>
+      <gearColor controller="button" pages="0,1" values="#9f9898|#b26105"/>
+    </image>
+    <image id="n9_qx30" name="title" src="cwtb1ygcffw" fileName="images/cityskin/com_cityskinicon_sun2.png" xy="16,20" aspect="true" color="#9f9898">
+      <gearXY controller="button" pages="0,1" values="16,20|16,20"/>
+      <gearColor controller="button" pages="0,1" values="#b26105|#9f9898"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

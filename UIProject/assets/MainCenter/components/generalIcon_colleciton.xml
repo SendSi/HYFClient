@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="40,40">
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="1"/>
+  <controller name="star" alias="星级" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="1星"/>
+    <remark page="1" value="2星"/>
+    <remark page="2" value="3星"/>
+    <remark page="3" value="4星"/>
+    <remark page="4" value="5星"/>
+    <remark page="5" value="6星"/>
+  </controller>
+  <displayList>
+    <loader id="n4_oept" name="qualityBg" xy="0,0" size="40,40" aspect="true" url="ui://4557t28koepthz9coq" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="0,1,2,3" values="ui://4557t28koepthz9cop|ui://4557t28koepthz9coq|ui://4557t28koepthz9cor|ui://4557t28koepthz9cos" default="ui://4557t28koepthz9cot"/>
+    </loader>
+    <loader id="n5_oept" name="starBg" xy="0,0" size="40,40" url="ui://4557t28koepthz9cou" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="star" pages="0,1,2,3,4" values="ui://4557t28koepthz9cou|ui://4557t28koepthz9cov|ui://4557t28koepthz9cow|ui://4557t28koepthz9cox|ui://4557t28koepthz9coy" default="ui://4557t28koepthz9coz"/>
+    </loader>
+    <component id="n6_oept" name="icon" src="oepthz9cp0" fileName="components/general_new/main_teamGeneral.xml" pkg="2r331opv" xy="5,5" size="30,30" aspect="true"/>
+  </displayList>
+</component>

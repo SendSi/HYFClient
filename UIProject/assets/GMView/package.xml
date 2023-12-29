@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="21uyefv8">
+  <resources>
+    <component id="h7e50" name="gmView.xml" path="/" exported="true"/>
+    <component id="h7e53" name="gmButton2.xml" path="/components/" exported="true"/>
+    <component id="h7e54" name="GmRecord.xml" path="/components/" exported="true"/>
+    <component id="h7e55" name="btn.xml" path="/components/" exported="true"/>
+    <component id="cu6w7" name="switch.xml" path="/components/" exported="true"/>
+    <component id="e3cq8" name="gmButton1.xml" path="/components/" exported="true"/>
+    <component id="ovmzchq" name="closeBtn.xml" path="/components/" exported="true"/>
+    <component id="ovmzchr" name="com_toggleBtn_1.xml" path="/components/" exported="true"/>
+    <component id="p0stchs" name="GmBtn.xml" path="/components/"/>
+    <component id="p0stcht" name="GmTab.xml" path="/components/"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

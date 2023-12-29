@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,88" clipSoftness="20,20" mask="n2_m47y">
+  <displayList>
+    <image id="n2_m47y" name="n2" src="8z99hz9cq7" fileName="fragment/fragment10.png" pkg="4557t28k" xy="-3,-2" size="95,94">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n0_m47y" name="icon" xy="-1,-8" size="90,115" aspect="true" url="ui://4557t28ky6f5hz9cpe" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>

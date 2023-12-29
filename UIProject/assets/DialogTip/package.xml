@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="utp01xia" hasFavorites="true">
+  <resources>
+    <component id="q1qg1" name="FloatTipView.xml" path="/panel/" exported="true"/>
+    <component id="m79t2l" name="DialogTip1View.xml" path="/panel/" exported="true"/>
+    <component id="m79t16" name="DialogTip2View.xml" path="/panel/" exported="true"/>
+    <component id="d7y82n" name="DialogTipLineView.xml" path="/panel/" exported="true"/>
+    <component id="xse52o" name="DialogTipToggleView.xml" path="/panel/" exported="true"/>
+    <component id="ix8t2r" name="DialogBuyView.xml" path="/panel/" exported="true"/>
+    <component id="plmm2t" name="ExplainTipView.xml" path="/panel/" exported="true"/>
+    <component id="d4a62v" name="DialogBuyConfirmView.xml" path="/panel/" exported="true"/>
+    <component id="ykww2w" name="UsePropView.xml" path="/panel/" exported="true"/>
+    <component id="tbod38" name="contentTxt.xml" path="/components/" exported="true"/>
+    <component id="spte39" name="DialogPropNotEnough.xml" path="/panel/" exported="true"/>
+    <component id="lbxx3c" name="dropItem.xml" path="/panel/" exported="true"/>
+    <component id="ykwwkw" name="useProp_Slider4.xml" path="/components/" exported="true"/>
+    <component id="jdqkhz9cya" name="DialogBtnListView.xml" path="/panel/" exported="true"/>
+    <component id="jdqkkx" name="DialogCheckInputView.xml" path="/panel/" exported="true"/>
+    <component id="eznb1iy5bbi" name="DialogTip3View.xml" path="/panel/" exported="true"/>
+    <component id="bwlb1iy5bbl" name="DialogNameView.xml" path="/panel/" exported="true"/>
+    <component id="bwlb1iy5bbn" name="DialogBuyView3.xml" path="/panel/" exported="true"/>
+    <component id="esvr1iy5bbo" name="DialogTipsAttView.xml" path="/panel/" exported="true"/>
+    <component id="ldbz1iy5bbp" name="tipsAttItem.xml" path="/components/" exported="true"/>
+    <component id="10xg71iy5bbq" name="GetWayViewTemp.xml" path="/panel/" exported="true"/>
+    <component id="10xg71iy5bbt" name="GetWayItemTemp.xml" path="/components/" exported="true"/>
+    <component id="t2qk1iy5bbq" name="getPbr.xml" path="/components/" exported="true"/>
+    <component id="jo5i1iy5bbr" name="DialogCommonResultView.xml" path="/panel/" exported="true"/>
+    <component id="suuv1ygcfeu" name="DialogTipsHasCurrencyView.xml" path="/panel/" exported="true"/>
+    <component id="t6g91ygcfhr" name="currencyItem.xml" path="/components/" exported="true"/>
+    <component id="b0uj1ygcfhs" name="CheckInDialogTipView.xml" path="/panel/" exported="true"/>
+    <component id="vnkq1ygcfht" name="DialogCityUpgradeView.xml" path="/panel/" exported="true"/>
+    <component id="sumv1ygcfhu" name="DialogTip6View.xml" path="/panel/" exported="true"/>
+    <component id="uckw1ygcfhv" name="MoppingUp.xml" path="/panel/" exported="true"/>
+    <component id="hsk61ygcfhw" name="DialogTip7View.xml" path="/panel/"/>
+    <component id="hsk61ygcfhx" name="rule.xml" path="/panel/" exported="true"/>
+    <component id="p6fy1ygcfhy" name="Picture_information.xml" path="/panel/"/>
+    <component id="ntk51ygcfhz" name="TipItem01.xml" path="/panel/" exported="true"/>
+    <component id="ntk51ygcfi0" name="attribute001.xml" path="/panel/" exported="true"/>
+    <component id="oojm1ygcfi1" name="DialogBarrierView.xml" path="/panel/" exported="true"/>
+    <component id="g17g1ygcfi2" name="Item1.xml" path="/components/" exported="true"/>
+    <component id="l1qp1ygcfi4" name="KillTipItem.xml" path="/panel/" exported="true"/>
+    <component id="pxy31ygcfi3" name="DialogTipCoordinateView.xml" path="/panel/" exported="true"/>
+    <component id="pxy31ygcfmu" name="posItem.xml" path="/components/" exported="true"/>
+    <component id="wb0l1ygcfmv" name="DialogItemListView.xml" path="/panel/" exported="true"/>
+    <component id="x5vt1ygcfmw" name="upgradeBg.xml" path="/panel/" exported="true"/>
+    <font id="ml181ygcfmy" name="gold_font.fnt" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfmz" name="0.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn0" name="1.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn1" name="2.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn2" name="3.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn3" name="4.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn4" name="5.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn5" name="6.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn6" name="7.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn7" name="8.png" path="/img_font/" exported="true"/>
+    <image id="ml181ygcfn8" name="9.png" path="/img_font/" exported="true"/>
+    <component id="qi981ygcfn9" name="DialogResultView.xml" path="/panel/" exported="true"/>
+    <component id="qok112" name="DialogPerBossView.xml" path="/panel/" exported="true"/>
+    <component id="dxcu1ygcfe3" name="DialogResearchView.xml" path="/panel/" exported="true"/>
+    <component id="ithohz9cye" name="DialogWorldBossView.xml" path="/panel/" exported="true"/>
+    <component id="ya6w1ygcfsy" name="DialogLeaBossView.xml" path="/panel/" exported="true"/>
+    <component id="ff111ygcft0" name="RebirthItem2.xml" path="/components/" exported="true"/>
+    <component id="ff111ygcft1" name="RebirthItem1.xml" path="/components/" exported="true"/>
+    <component id="ff111ygcft2" name="contentTxt2.xml" path="/components/" exported="true"/>
+    <component id="ff111ygcft3" name="contentTxt3.xml" path="/components/" exported="true"/>
+    <component id="kxkw1ygcft1" name="Items_name.xml" path="/components/" exported="true"/>
+    <component id="r1zh1ygcft0" name="rankItem_world.xml" path="/components/" exported="true"/>
+    <component id="di051ygcft0" name="rankItem1_lea.xml" path="/components/" exported="true"/>
+    <component id="he9p1ygcft7" name="BreakSuccessView.xml" path="/panel/" exported="true"/>
+    <component id="he9p1ygcfta" name="DialogRebirthView.xml" path="/panel/" exported="true"/>
+    <component id="sz581ygcftb" name="DialogUsingView.xml" path="/panel/" exported="true"/>
+    <component id="9v8f1ygcftc" name="RebirthItem3.xml" path="/components/" exported="true"/>
+    <component id="pam31iy5bhw" name="DialogTipsAttributeTip.xml" path="/panel/" exported="true"/>
+    <component id="r8ha1ygcftd" name="DialogTipsSingleDescView.xml" path="/panel/" exported="true"/>
+    <component id="ile41ygcftf" name="TitleDes.xml" path="/panel/" exported="true"/>
+    <component id="9cw11ygcftg" name="DialogPreView.xml" path="/panel/" exported="true"/>
+    <image id="sxlp1ygcg9n" name="main_bg04.png" path="/img_font/" favorite="true" scale="9grid" scale9grid="8,8,5,4"/>
+    <component id="t6g91ygcfhs" name="RechargeBtn.xml" path="/panel/"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

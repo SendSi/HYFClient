@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" designImageOffsetX="-409" designImageOffsetY="-185" designImageLayer="1">
+  <displayList>
+    <image id="n1_9232" name="bg" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="0,0" size="420,116" group="n19_sc2r">
+      <relation target="n17_9232" sidePair="bottomext-bottom"/>
+    </image>
+    <image id="n21_za6y" name="n21" src="za6y1ygcgmn" fileName="images/images_new/windowBg_new/welfare_btn_bg23.png" pkg="2r331opv" xy="58,20" pivot="0.5,0.5" size="302,39" group="n19_sc2r" alpha="0.8"/>
+    <text id="n0_9232" name="titleName" xy="171,22" pivot="0.5,0.5" size="82,36" group="n19_sc2r" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#845744" align="center" vAlign="middle" singleLine="true" autoClearText="true" text="道具名"/>
+    <component id="n17_9232" name="titleDesc" src="ile41ygcftf" fileName="TitleDes.xml" xy="24,63" size="368,29" restrictSize="0,0,0,300" group="n19_sc2r">
+      <Label title="描述"/>
+    </component>
+    <image id="n20_yhld" name="arrow" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="180,111" pivot="0.5,0.5" group="n19_sc2r">
+      <relation target="n1_9232" sidePair="center-center,top-bottom"/>
+    </image>
+    <group id="n19_sc2r" name="view" xy="0,0" size="420,157" advanced="true"/>
+  </displayList>
+</component>

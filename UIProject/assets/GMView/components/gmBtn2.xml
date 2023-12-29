@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="132,60" extention="Button" bgColor="#000000">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n3_gbb4" name="n3" xy="0,0" size="132,60" type="rect" lineSize="0" fillColor="#ff1ca896" corner="10">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n4_gbb4" name="n4" xy="0,0" size="132,60" type="rect" lineSize="0" fillColor="#ffaf4141" corner="10">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n2_h7e5" name="title" xy="0,0" size="132,60" fontSize="22" color="#ff00ff" align="center" vAlign="middle" autoSize="none" shadowColor="#ff00ff" shadowOffset="1,1" autoClearText="true" text="hello">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

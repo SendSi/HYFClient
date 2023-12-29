@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="86,38">
+  <controller name="c1" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <image id="n49_lhtp" name="bg_01" src="lhtphw" fileName="images/images_new/friends_icon_05.png" xy="50,4" color="#754135">
+      <gearDisplay controller="c1" pages="0"/>
+    </image>
+    <image id="n50_lhtp" name="bg_02" src="lhtphw" fileName="images/images_new/friends_icon_05.png" xy="67,34" rotation="180" color="#754135">
+      <gearDisplay controller="c1" pages="0"/>
+    </image>
+    <image id="n51_lhtp" name="bg_03" src="lhtphw" fileName="images/images_new/friends_icon_05.png" xy="50,12" color="#754135">
+      <gearDisplay controller="c1" pages="1"/>
+    </image>
+    <image id="n52_lhtp" name="bg_04" src="lhtphw" fileName="images/images_new/friends_icon_05.png" xy="67,27" rotation="180" color="#754135">
+      <gearDisplay controller="c1" pages="2"/>
+    </image>
+    <component id="n53_lhtp" name="n53" src="hfih8s" fileName="components/main_btn_popup.xml" xy="0,0" size="86,38"/>
+  </displayList>
+</component>

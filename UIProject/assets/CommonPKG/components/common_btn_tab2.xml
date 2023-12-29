@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="284,105" extention="Button" designImage="ui://7ubcym0wm79t2b" designImageOffsetX="-3" designImageOffsetY="-181">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <displayList>
+    <image id="n0_tv1v" name="n0" src="kn295" fileName="images/common_btn_paging_1.png" xy="0,0" size="304,105">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n4_m79t" name="icon" xy="171,-9" size="105,105" align="center" vAlign="middle">
+      <relation target="" sidePair="right-right"/>
+    </loader>
+    <text id="n5_m79t" name="title" xy="171,-9" size="105,105" fontSize="22" color="#fff38d" align="center" vAlign="bottom" autoSize="none" text="">
+      <gearColor controller="button" pages="0,2" values="#858997,#000000|#858997,#000000" default="#fff38d,#000000"/>
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

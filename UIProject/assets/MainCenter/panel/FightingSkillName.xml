@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,116" pivot="0.5,1" anchor="true" opaque="false" designImage="ui://4ni413lalk93kl" designImageOffsetX="-730" designImageOffsetY="-153">
+  <controller name="color" pages="0,,1,,2," selected="0">
+    <remark page="0" value="红色"/>
+    <remark page="1" value="绿色"/>
+    <remark page="2" value="黄色"/>
+  </controller>
+  <displayList>
+    <loader id="n1_lk93" name="icon" xy="44,58" pivot="0.5,0.5" anchor="true" size="155,49" touchable="false" url="ui://tvbfx6zphdzvl" align="center" vAlign="middle" clearOnPublish="true">
+      <gearColor controller="color" pages="0,2" values="#ffffff|#fffc00" default="#5cff5c"/>
+    </loader>
+  </displayList>
+  <transition name="t1">
+    <item time="0" type="Pivot" target="n1_lk93" value="0.5,0.5"/>
+    <item time="0" type="Alpha" target="n1_lk93" value="1"/>
+    <item time="0" type="Scale" target="n1_lk93" tween="true" startValue="0,0" endValue="1,1" duration="12" ease="Custom" customEase="2,0,0,0.3375,2.02,0.25,1.3825,1,0,1,1"/>
+    <item time="0" type="XY" target="n1_lk93" value="44,58"/>
+    <item time="12" type="XY" target="n1_lk93" value="44,58"/>
+    <item time="22" type="Alpha" target="n1_lk93" tween="true" startValue="1" endValue="0.5" duration="10"/>
+    <item time="32" type="Alpha" target="n1_lk93" tween="true" startValue="0.5" endValue="0" duration="8"/>
+    <item time="32" type="XY" target="n1_lk93" tween="true" startValue="44,58" endValue="44,38" duration="8"/>
+    <item time="40" type="Pivot" target="n1_lk93" value="0.5,0.5"/>
+  </transition>
+  <transition name="t2">
+    <item time="0" type="Alpha" target="n1_lk93" tween="true" startValue="0" endValue="1" duration="5" ease="Quad.In"/>
+    <item time="0" type="XY" target="n1_lk93" tween="true" startValue="231,58" endValue="98,58" duration="5" ease="Quad.In"/>
+    <item time="5" type="XY" target="n1_lk93" tween="true" startValue="98,58" endValue="37,58" duration="22" ease="Linear"/>
+    <item time="26" type="Alpha" target="n1_lk93" tween="true" startValue="1" endValue="0" duration="7"/>
+    <item time="27" type="XY" target="n1_lk93" tween="true" startValue="37,58" endValue="-78,58" duration="6"/>
+  </transition>
+</component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_spte" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-3" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_spte" name="window" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n9_spte"/>
+    <text id="n12_jmae" name="titleTxt" xy="538,163" pivot="0.5,0.5" size="258,46" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" singleLine="true" text="提示"/>
+    <text id="n7_spte" name="tipTxt" xy="467,230" pivot="0.5,0.5" size="400,34" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" text="分解后将获得以下道具,是否确认分解?"/>
+    <list id="n11_lwba" name="propList" xy="365,287" pivot="0.5,0.5" size="604,158" group="n9_spte" layout="row" overflow="scroll" scroll="horizontal" defaultItem="ui://2r331opvj842hz9cyi" align="center" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n3_spte" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n9_spte" scale="0.8,0.8"/>
+    <component id="n15_wb0l" name="btnLeft" src="yhldz9cod" fileName="components/components_new/com_btn_02.xml" pkg="2r331opv" xy="406,478" size="202,78" group="n9_spte">
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+    <component id="n16_wb0l" name="btnRight" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="716,478" size="202,78" group="n9_spte">
+      <Button title="确定&#xA;" titleFontSize="32"/>
+    </component>
+    <group id="n9_spte" name="n9" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

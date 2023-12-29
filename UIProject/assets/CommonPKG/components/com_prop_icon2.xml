@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="85,105" extention="Button" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="2"/>
+  <controller name="use" pages="0,prop,1,people,2,bag_composeProp,3,return_general" selected="3"/>
+  <displayList>
+    <loader id="n23_nq4j" name="bg_quality" xy="3,4" size="80,81" group="n32_grws" url="ui://2r331opv94956" fill="scale">
+      <relation target="" sidePair=""/>
+    </loader>
+    <loader id="n13_l9d2" name="icon_prop" xy="8,9" pivot="0.5,0.5" size="70,70" group="n32_grws" url="ui://tsbe09ddmz4w0" align="center" vAlign="middle" fill="scale" shrinkOnly="true"/>
+    <text id="n12_d9gi" name="title_have_number" xy="20,57" size="61,29" group="n32_grws" fontSize="20" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" singleLine="true" text="50"/>
+    <group id="n32_grws" name="0_prop" xy="3,4" size="80,82" advanced="true">
+      <gearDisplay controller="use" pages="0,2"/>
+    </group>
+    <loader id="n26_m79t" name="bg_quality00" xy="3,4" size="80,81" group="n11_d9gi" url="ui://61bunt4f9495l" fill="scale"/>
+    <loader id="n42_ln1d" name="icon_people" xy="4,5" size="78,79" group="n11_d9gi" url="ui://4557t28kln1d4s" align="center" vAlign="middle" fill="scale"/>
+    <loader id="n24_m79t" name="bg_quality01" xy="4,5" size="78,79" group="n11_d9gi" url="ui://61bunt4f9495m" fill="scale"/>
+    <loader id="n25_m79t" name="icon_topright" xy="12,5" size="70,73" group="n11_d9gi" url="ui://61bunt4fkn29g" align="right" fill="scale"/>
+    <image id="n7_d9gi" name="bg02" src="9495r" fileName="images/general_advanced_bg.png" xy="82,82" size="88,18" group="n11_d9gi" rotation="180"/>
+    <text id="n8_d9gi" name="title_grade" xy="22,60" size="61,26" group="n11_d9gi" fontSize="18" color="#ffffff" align="right" autoSize="none" strokeColor="#000000" singleLine="true" text="50"/>
+    <loader id="n9_d9gi" name="icon_camp" xy="4,36" pivot="0,1" size="35,48" group="n11_d9gi" url="ui://61bunt4fkn29y" vAlign="bottom" fill="scale"/>
+    <loader id="n33_grws" name="icon_topleft00" xy="-6,-4" size="49,43" group="n11_d9gi" url="ui://61bunt4fkn29f" fill="scale"/>
+    <loader id="n34_grws" name="icon_topleft01" xy="4,7" size="24,21" group="n11_d9gi" url="ui://2r331opvkn293" align="center" vAlign="middle" fill="scale"/>
+    <list id="n10_d9gi" name="list_star" xy="69,6" size="14,76" group="n11_d9gi" overflow="scroll" lineGap="-14" defaultItem="ui://2r331opvn16mg3">
+      <item icon="ui://2r331opvkn299"/>
+      <item icon="ui://2r331opvkn299"/>
+      <item icon="ui://2r331opvkn299"/>
+      <item icon="ui://2r331opvkn299"/>
+      <item icon="ui://2r331opvkn29b"/>
+    </list>
+    <group id="n11_d9gi" name="1_people" xy="-6,-4" size="176,104" advanced="true">
+      <gearDisplay controller="use" pages="1,3"/>
+    </group>
+    <component id="n29_grws" name="composePbr" src="grwsdo" fileName="components/com_ProgressBar4.xml" xy="2,88" size="81,12" group="n31_grws">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n30_grws" name="title_pbr" xy="0,80" size="91,29" group="n31_grws" visible="false" fontSize="14" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" singleLine="true" text="25/50"/>
+    <group id="n31_grws" name="2_bag_compose" xy="0,80" size="91,29" advanced="true">
+      <gearDisplay controller="use" pages="2"/>
+      <relation target="" sidePair="center-center"/>
+      <relation target="n26_m79t" sidePair="top-bottom"/>
+    </group>
+    <text id="n35_grws" name="returnLbl" xy="35,84" size="53,24" group="n38_grws" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" autoClearText="true" text="x"/>
+    <text id="n37_grws" name="returnNumber" xy="43,84" size="53,25" group="n38_grws" fontSize="17" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" text="30"/>
+    <image id="n36_grws" name="bg" pkg="2r331opv" src="grwsdr" fileName="images/com_number_bg.png" xy="18,88" group="n38_grws" alpha="0.7"/>
+    <group id="n38_grws" name="3_return_general" xy="18,84" size="78,25" advanced="true">
+      <gearDisplay controller="use" pages="3"/>
+      <relation target="n26_m79t" sidePair="top-bottom"/>
+      <relation target="" sidePair="left-left"/>
+    </group>
+    <image id="n40_9232" name="n40" src="7oizdc" fileName="images/common_select_01.png" xy="-2,-1" size="90,90" alpha="0.6">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

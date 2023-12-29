@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <controller name="mode" pages="0,,1," selected="1"/>
+  <displayList>
+    <component id="n39_gp9p" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n31_gp9p" name="n31" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n34_gp9p"/>
+    <text id="n29_gp9p" name="title" xy="369,70" pivot="0.5,0.5" size="565,46" group="n34_gp9p" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" autoClearText="true" text="获取方式"/>
+    <list id="n24_pz0v" name="list" xy="223,210" pivot="1,1" size="892,432" group="n34_gp9p" overflow="scroll" lineGap="3" defaultItem="ui://utp01xia10xg71iy5bbt" autoClearItems="true">
+      <gearSize controller="mode" pages="0,1" values="892,480,1,1|892,432,1,1"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n40_t2qk" name="pbr" src="t2qk1iy5bbq" fileName="components/getPbr.xml" xy="294,157" size="809,25" group="n34_gp9p">
+      <gearDisplay controller="mode" pages="1"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <loader id="n41_t2qk" name="icon" xy="227,136" size="59,63" group="n34_gp9p" aspect="true" url="ui://tsbe09ddmz4w0" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="mode" pages="1,2"/>
+    </loader>
+    <component id="n30_gp9p" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n34_gp9p"/>
+    <group id="n34_gp9p" name="window" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

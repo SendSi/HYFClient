@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="298,160" pivot="0.5,-0.25" anchor="true" opaque="false" designImageOffsetX="99" designImageOffsetY="-88">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_u6yz" name="n0" src="u6yzhz9cq5" fileName="images/map/main_bg_04.png" xy="-77,12" pivot="0.5,0" size="453,168" alpha="0.9">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <component id="n5_u6yz" name="btn1" src="u6yzhz9cq9" fileName="components/components_new/map/chequer_btn.xml" xy="-1,28">
+      <gearDisplay controller="state" pages="0"/>
+    </component>
+    <component id="n28_q21v" name="btn2" src="u6yzhz9cq9" fileName="components/components_new/map/chequer_btn.xml" xy="97,42">
+      <gearDisplay controller="state" pages="0"/>
+    </component>
+    <component id="n6_u6yz" name="btn3" src="u6yzhz9cq9" fileName="components/components_new/map/chequer_btn.xml" xy="194,28">
+      <gearDisplay controller="state" pages="0"/>
+    </component>
+    <component id="n18_u6yz" name="emjioBtn1" src="u6yzhz9cr0" fileName="components/components_new/map/chequerEmjioBtn1.xml" xy="12,-111" group="n25_u6yz"/>
+    <component id="n21_u6yz" name="emjioBtn2" src="u6yzhz9cr4" fileName="components/components_new/map/chequerEmjioBtn2.xml" xy="200,-112" group="n25_u6yz"/>
+    <component id="n19_u6yz" name="emjioBtn3" src="u6yzhz9cr2" fileName="components/components_new/map/chequerEmjioBtn3.xml" xy="-29,-35" group="n25_u6yz"/>
+    <component id="n22_u6yz" name="emjioBtn4" src="u6yzhz9cr5" fileName="components/components_new/map/chequerEmjioBtn4.xml" xy="236,-35" group="n25_u6yz"/>
+    <component id="n20_u6yz" name="emjioBtn5" src="u6yzhz9cr3" fileName="components/components_new/map/chequerEmjioBtn5.xml" xy="-4,42" group="n25_u6yz"/>
+    <component id="n23_u6yz" name="emjioBtn6" src="u6yzhz9cr6" fileName="components/components_new/map/chequerEmjioBtn6.xml" xy="210,42" group="n25_u6yz"/>
+    <component id="n24_u6yz" name="switchBtn" src="u6yzhz9cr9" fileName="components/components_new/map/chequer_btn2.xml" xy="128,86" pivot="0.5,0.5" group="n25_u6yz"/>
+    <group id="n25_u6yz" name="n25" xy="-29,-112" size="356,248" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="emjio1">
+    <item time="0" type="Alpha" target="n18_u6yz" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n19_u6yz" value="0"/>
+    <item time="0" type="Alpha" target="n20_u6yz" value="0"/>
+    <item time="0" type="Alpha" target="n21_u6yz" value="0"/>
+    <item time="0" type="Alpha" target="n22_u6yz" value="0"/>
+    <item time="0" type="Alpha" target="n23_u6yz" value="0"/>
+    <item time="0" type="Alpha" target="n24_u6yz" value="0"/>
+    <item time="0" type="Scale" target="n18_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="6" ease="Elastic.Out"/>
+    <item time="0" type="Scale" target="n19_u6yz" value="0,0"/>
+    <item time="0" type="Scale" target="n20_u6yz" value="0,0"/>
+    <item time="0" type="Scale" target="n21_u6yz" value="0,0"/>
+    <item time="0" type="Scale" target="n22_u6yz" value="0,0"/>
+    <item time="0" type="Scale" target="n23_u6yz" value="0,0"/>
+    <item time="0" type="Scale" target="n24_u6yz" value="0,0"/>
+    <item time="1" type="Alpha" target="n21_u6yz" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="1" type="Scale" target="n21_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="9" ease="Elastic.Out"/>
+    <item time="2" type="Alpha" target="n19_u6yz" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="2" type="Scale" target="n19_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="9" ease="Elastic.Out"/>
+    <item time="3" type="Alpha" target="n22_u6yz" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="3" type="Alpha" target="n24_u6yz" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="3" type="Scale" target="n22_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="9" ease="Elastic.Out"/>
+    <item time="3" type="Scale" target="n24_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="6" ease="Elastic.Out"/>
+    <item time="4" type="Alpha" target="n20_u6yz" tween="true" startValue="0" endValue="1" duration="10"/>
+    <item time="4" type="Scale" target="n20_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="10" ease="Elastic.Out"/>
+    <item time="5" type="Alpha" target="n23_u6yz" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="5" type="Scale" target="n23_u6yz" tween="true" startValue="0,0" endValue="1,1" duration="9" ease="Elastic.Out"/>
+  </transition>
+  <transition name="emjio2">
+    <item time="0" type="Alpha" target="n18_u6yz" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="0" type="Alpha" target="n19_u6yz" value="1"/>
+    <item time="0" type="Alpha" target="n20_u6yz" value="1"/>
+    <item time="0" type="Alpha" target="n21_u6yz" value="1"/>
+    <item time="0" type="Alpha" target="n22_u6yz" value="1"/>
+    <item time="0" type="Alpha" target="n23_u6yz" value="1"/>
+    <item time="0" type="Alpha" target="n24_u6yz" value="1"/>
+    <item time="0" type="Scale" target="n18_u6yz" tween="true" startValue="1,1" endValue="1.2,1.2" duration="3"/>
+    <item time="0" type="Scale" target="n19_u6yz" value="1,1"/>
+    <item time="0" type="Scale" target="n20_u6yz" value="1,1"/>
+    <item time="0" type="Scale" target="n21_u6yz" value="1,1"/>
+    <item time="0" type="Scale" target="n22_u6yz" value="1,1"/>
+    <item time="0" type="Scale" target="n23_u6yz" value="1,1"/>
+    <item time="0" type="Scale" target="n24_u6yz" value="1,1"/>
+    <item time="2" type="Alpha" target="n21_u6yz" tween="true" startValue="1" endValue="0" duration="6" ease="Elastic.Out"/>
+    <item time="2" type="Scale" target="n21_u6yz" tween="true" startValue="1,1" endValue="1.2,1.2" duration="3"/>
+    <item time="3" type="Alpha" target="n19_u6yz" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="3" type="Alpha" target="n24_u6yz" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="3" type="Scale" target="n18_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+    <item time="3" type="Scale" target="n19_u6yz" tween="true" startValue="1.2,1.2" endValue="1.2,1.2" duration="3"/>
+    <item time="3" type="Scale" target="n24_u6yz" tween="true" startValue="1,1" endValue="1.2,1.2" duration="3"/>
+    <item time="5" type="Alpha" target="n22_u6yz" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="5" type="Scale" target="n21_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+    <item time="5" type="Scale" target="n22_u6yz" tween="true" startValue="1,1" endValue="1.2,1.2" duration="3"/>
+    <item time="6" type="Scale" target="n19_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+    <item time="6" type="Scale" target="n24_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0.2" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+    <item time="7" type="Alpha" target="n20_u6yz" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="7" type="Scale" target="n20_u6yz" tween="true" startValue="1,1" endValue="1.2,1.2" duration="3"/>
+    <item time="8" type="Scale" target="n22_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+    <item time="9" type="Alpha" target="n23_u6yz" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="9" type="Scale" target="n23_u6yz" tween="true" startValue="1,1" endValue="1.2,1.2" duration="3"/>
+    <item time="10" type="Scale" target="n20_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+    <item time="12" type="Scale" target="n23_u6yz" tween="true" startValue="1.2,1.2" endValue="0,0" duration="3" ease="Custom" customEase="2,0,0,0.645,1.2675,0.9325,1.1775,1,0,1,1"/>
+  </transition>
+</component>

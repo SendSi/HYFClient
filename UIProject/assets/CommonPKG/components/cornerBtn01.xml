@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="84,90" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n1_7so9" name="icon" xy="0,0" size="84,90" url="ui://2r331opvro6q1ygcffz" fill="scale">
+      <gearIcon controller="button" pages="0,1,2,3" values="ui://2r331opvro6q1ygcffz|ui://2r331opvro6q1ygcfg0|ui://2r331opvro6q1ygcffz|ui://2r331opvro6q1ygcfg0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="254,86">
+  <displayList>
+    <image id="n12_ptr5" name="n12" src="xjmv1qp8vf8" fileName="images/images_new/com_bg_tips02_mask4.png" pkg="2r331opv" xy="0,0" size="254,86" flip="both"/>
+    <loader id="n9_ptr5" name="n9" xy="19,10" size="94,94" scale="0.7,0.7" url="ui://tsbe09ddqdf69cja" autoSize="true"/>
+    <text id="n10_ptr5" name="title" xy="92,18" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#061324" shadowColor="#061324" shadowOffset="1,1" singleLine="true" autoClearText="true" text="守卫王城"/>
+    <text id="n11_ptr5" name="leve" xy="92,46" size="87,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ff4343" strokeColor="#902222" shadowColor="#902222" shadowOffset="1,1" autoClearText="true" text="等级20开启"/>
+    <graph id="n13_ssaa" name="mask" xy="0,0" size="254,86" type="rect" lineSize="0" fillColor="#00ffffff"/>
+  </displayList>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="184,83" overflow="hidden" extention="Button" designImage="ui://2r331opvcxixz9cm6" designImageOffsetY="-91">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_tv1v" name="n0" pkg="2r331opv" src="cxixz9cm5" fileName="images/images_new/btn_bg.png" xy="0,57" size="181,24">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_tv1v" name="title" xy="-9,-10" size="147,105" font="ui://2r331opvlwft3" fontSize="33" color="#f8ec8a" align="right" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="配表">
+      <gearColor controller="button" pages="0,1,2,3" values="#f8ec8a,#000000|#ffffff,#000000|#f8ec8a,#000000|#ffffff,#000000"/>
+    </text>
+    <component id="n2_eaah" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="154,23">
+      <gearDisplay controller="red" pages="1"/>
+      <relation target="" sidePair="left-right"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

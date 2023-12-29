@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <image id="n2_oxy0" name="bg" src="kvv41iy5be0" fileName="images/hero_bg02_dynamic/hero_bg03_001.jpg" pkg="4hio38um" xy="586,375" pivot="0.5,0.5" anchor="true" size="1495,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_cwb2" name="site" src="slj11iy5bfh" fileName="images/hero_bg_site.png" pkg="4hio38um" xy="592,712" pivot="0.5,0.5" anchor="true" scale="0.9,0.9">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+</component>

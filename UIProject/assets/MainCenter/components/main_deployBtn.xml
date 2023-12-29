@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,52" overflow="hidden">
+  <displayList>
+    <image id="n22_pr6b" name="n22" src="g01ie" fileName="images/bg_chat_2.png" pkg="2r331opv" xy="92,52" size="92,52" rotation="180"/>
+    <component id="n21_pr6b" name="replenishment" src="pr6b1qp8vhg" fileName="components/components_new/main/main_rightTeam_Reple.xml" xy="8,6"/>
+  </displayList>
+  <transition name="t0"/>
+</component>

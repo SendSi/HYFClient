@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="60,29" designImage="ui://4ni413la8z41cm" designImageOffsetX="-1426" designImageOffsetY="-192">
+  <controller name="c1" pages="1,,0,,2,,13,,4,,15," selected="0"/>
+  <controller name="bg" pages="0,yes,1,no" selected="0"/>
+  <displayList>
+    <graph id="n12_dxjf" name="bg" xy="0,0" size="60,29" visible="false" type="rect" lineSize="0" fillColor="#ff2f7131">
+      <gearDisplay controller="bg" pages="0"/>
+      <gearColor controller="c1" pages="1,2,4,15" values="#2f7131|#712f34|#71532f|#627e2d" default="#2e5d7e"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n6_lac7" name="text" xy="0,0" size="60,29" fontSize="18" color="#aaff7b" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" autoClearText="true" text="行军">
+      <gearColor controller="c1" pages="1,2,4,15" values="#aaff7b,#000000|#ff7b7b,#000000|#ffe761,#000000|#ffff70,#000000" default="#6ee2ff,#000000"/>
+      <gearText controller="c1" pages="1,2,4,15" values="行军|攻占|撤退|屯田" default="待命"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

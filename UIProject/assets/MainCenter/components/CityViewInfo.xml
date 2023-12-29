@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,60">
+  <controller name="belong" pages="0,,1,,2,,3,,4,,5," selected="0"/>
+  <displayList>
+    <component id="n5_ubhv" name="place" src="ubhvkc" fileName="components/CityView/IconAndText.xml" xy="0,0" size="300,30" group="n10_ubhv">
+      <Label icon="ui://4ni413labnhnjo"/>
+    </component>
+    <component id="n6_ubhv" name="defense" src="ubhvkc" fileName="components/CityView/IconAndText.xml" xy="0,30" size="300,30" group="n10_ubhv">
+      <gearDisplay controller="belong" pages="0,1,2"/>
+      <Label title="?" icon="ui://4ni413labnhnjr"/>
+    </component>
+    <component id="n12_1020r" name="production" src="ubhvkc" fileName="components/CityView/IconAndText.xml" xy="0,30" size="300,30" group="n10_ubhv">
+      <gearDisplay controller="belong" pages="3,4,5"/>
+      <Label title="粮草 [color=#FFFF0F]+n[/color]/每小时" icon="ui://2r331opvm79tci"/>
+    </component>
+    <component id="n7_ubhv" name="influence" src="ubhvkc" fileName="components/CityView/IconAndText.xml" xy="0,60" size="300,30" group="n10_ubhv">
+      <gearDisplay controller="belong" pages="1,2,4,5"/>
+      <Label title="该区域属于" icon="ui://2r331opvbnhnjq"/>
+    </component>
+    <component id="n8_ubhv" name="player" src="ubhvkd" fileName="components/CityView/PlayerNameAndChat.xml" xy="0,90" size="300,35" group="n10_ubhv">
+      <gearDisplay controller="belong" pages="1,2,5"/>
+    </component>
+    <component id="n9_ubhv" name="alliance" src="ubhvkc" fileName="components/CityView/IconAndText.xml" xy="0,125" size="300,30" group="n10_ubhv">
+      <gearDisplay controller="belong" pages="2,5"/>
+      <Label title="联盟名" icon="ui://4ni413labnhnjs"/>
+    </component>
+    <group id="n10_ubhv" name="info" xy="0,0" size="300,60" advanced="true" layout="vt" excludeInvisibles="true"/>
+  </displayList>
+  <relation target="n10_ubhv" sidePair="height-height"/>
+</component>

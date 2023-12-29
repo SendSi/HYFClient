@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,101" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0">
+    <remark page="1" value="显"/>
+  </controller>
+  <displayList>
+    <image id="n5_tauy" name="n5" pkg="2r331opv" src="tauyhz9cyx" fileName="images/images_new/com_popup_btn_bg.png" xy="-21,-49">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n3_tauy" name="title" xy="2,74" pivot="0.5,0.5" size="83,26" font="ui://2r331opvlwft3" fontSize="18" color="#5fa3bf" align="center" vAlign="middle" singleLine="true" autoClearText="true" text="System">
+      <gearColor controller="button" pages="1,3" values="#ffffff,#000000|#ffffff,#000000" default="#5fa3bf,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n4_tauy" name="icon" xy="4,4" size="80,80" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <component id="n6_vqdv" name="redElement" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="78,18" size="40,36" aspect="true">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="254,303">
+  <displayList>
+    <image id="n0_xoe1" name="n0" src="ukvb1ygcg93" fileName="images4/mainhud_progress012.png" xy="0,32" size="254,272" alpha="0.8">
+      <relation target="n16_p5sz" sidePair="bottomext-bottom"/>
+    </image>
+    <component id="n10_rjev" name="taskBtn" src="rjevhz9d2l" fileName="components/components_new/main/taskBtn.xml" xy="1,-19" size="98,98">
+      <Button title="Task"/>
+    </component>
+    <component id="n16_p5sz" name="task_list" src="p5sz1ygcfn6" fileName="components/components_new/plot/plot_list.xml" xy="12,78" size="230,216"/>
+    <text id="n17_snkg" name="LevelLbl" xy="102,42" pivot="1,0" size="139,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" strokeColor="#222222" singleLine="true" text="当前关卡90-99"/>
+  </displayList>
+  <relation target="n0_xoe1" sidePair="width-width,height-height"/>
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="166,40">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <component id="n0_qc12" name="n0" src="lpzoz9clq" fileName="components/components_new/com_btnAdd_diamonds.xml" pkg="2r331opv" xy="107,0"/>
+    <component id="n2_qc12" name="stateBtn" src="t6g91ygcfhl" fileName="components/components_new/main/blankBtn.xml" xy="0,0" size="106,40"/>
+    <image id="n14_qc12" name="n14" pkg="2r331opv" src="qc121ygcfhg" fileName="images4/mainhud_progress07.png" xy="-57,40" size="223,118" group="n23_qc12">
+      <relation target="" sidePair="center-center"/>
+    </image>
+    <image id="n15_qc12" name="bg1" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="-35,67" size="184,34" group="n23_qc12" alpha="0.5"/>
+    <image id="n16_qc12" name="bg2" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="-35,106" size="184,34" group="n23_qc12" alpha="0.5"/>
+    <image id="n17_qc12" name="n17" src="mz4wb" fileName="images/item_12.png" pkg="tsbe09dd" xy="-49,62" pivot="0.5,0.5" size="44,44" group="n23_qc12" aspect="true"/>
+    <image id="n18_qc12" name="n18" src="mz4wc" fileName="images/item_13.png" pkg="tsbe09dd" xy="-49,101" pivot="0.5,0.5" size="44,44" group="n23_qc12" aspect="true"/>
+    <text id="n19_qc12" name="numberLbl01" xy="-12,67" size="83,34" group="n23_qc12" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" autoSize="none" autoClearText="true" text="1800"/>
+    <text id="n20_qc12" name="numberLbl02" xy="-12,106" size="83,34" group="n23_qc12" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" autoSize="none" autoClearText="true" text="1800"/>
+    <component id="n21_qc12" name="RechargeBtn" src="t6g91ygcfhm" fileName="components/components_new/main/blankBtn01.xml" xy="61,68" size="115,33" group="n23_qc12"/>
+    <text id="n22_qc12" name="numberLbl03" xy="59,109" size="87,29" group="n23_qc12" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" autoSize="none" autoClearText="true" text="优先使用"/>
+    <group id="n23_qc12" name="n23" xy="-57,40" size="233,118" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+    </group>
+  </displayList>
+</component>

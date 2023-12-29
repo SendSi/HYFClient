@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="91,74" pivot="-0.2,1" extention="Button" designImageOffsetX="-344" designImageOffsetY="-196">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="tab" pages="0,,1," selected="0">
+    <remark page="0" value="表情"/>
+    <remark page="1" value="文字"/>
+  </controller>
+  <displayList>
+    <image id="n5_u6yz" name="n5" src="u6yzhz9cqy" fileName="images/map/expression_bg01.png" xy="3,15" pivot="0,1" size="86,56">
+      <relation target="n7_u6yz" sidePair="rightext-right,leftext-left"/>
+    </image>
+    <loader id="n6_u6yz" name="icon" xy="17,-1" pivot="0.5,1" size="70,70" url="ui://4ni413lau6yzhz9cqt" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="tab" pages="0"/>
+    </loader>
+    <text id="n7_u6yz" name="title" xy="25,25" pivot="0,0.5" size="56,36" font="ui://2r331opvlwft3" fontSize="26" color="#2392aa" align="center" vAlign="middle" autoClearText="true" text="配表">
+      <gearDisplay controller="tab" pages="1"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <relation target="n5_u6yz" sidePair="width-width,height-height"/>
+  <transition name="t0">
+    <item time="0" type="Rotation" tween="true" startValue="45" endValue="0" duration="6"/>
+    <item time="0" type="Scale" tween="true" startValue="0.1,0.1" endValue="1,1" duration="6"/>
+    <item time="0" type="XY" tween="true" startValue="0,10" endValue="0,0" duration="6"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Rotation" target="n5_u6yz" tween="true" startValue="45" endValue="0" duration="4"/>
+    <item time="0" type="Scale" target="n5_u6yz" tween="true" startValue="0.1,0.1" endValue="1,1" duration="4"/>
+    <item time="0" type="Scale" target="n6_u6yz" value="0,0"/>
+    <item time="0" type="XY" target="n5_u6yz" tween="true" startValue="3,30" endValue="3,15" duration="4"/>
+    <item time="4" type="Scale" target="n6_u6yz" tween="true" startValue="0,0" endValue="1.1,1.1" duration="2"/>
+    <item time="6" type="Scale" target="n6_u6yz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+  </transition>
+</component>

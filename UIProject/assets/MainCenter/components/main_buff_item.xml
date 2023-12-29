@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="396,76" designImage="ui://4ni413lar616hz9cmn" designImageOffsetX="-249" designImageOffsetY="-105">
+  <displayList>
+    <image id="n4_r616" name="n4" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="5,28" size="387,46" alpha="0.3" color="#97794f"/>
+    <text id="n0_r616" name="title" xy="8,0" size="99,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" ubb="true" singleLine="true" autoClearText="true" text="name......"/>
+    <text id="n1_r616" name="additionTitle" xy="110,0" size="181,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#4c9129" autoSize="none" autoClearText="true" text="25%">
+      <relation target="n0_r616" sidePair="right-right"/>
+    </text>
+    <component id="n2_r616" name="n2" src="j4kdhz9clo" fileName="components/components_new/main/cityBuff.xml" xy="4,26"/>
+    <component id="n3_r616" name="n3" src="r616hz9cmr" fileName="components/components_new/main/buffPbr.xml" xy="54,41" size="234,22">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n5_ihkp" name="btn" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="7,31" size="380,42"/>
+  </displayList>
+  <relation target="n4_r616" sidePair="width-width,height-height"/>
+</component>

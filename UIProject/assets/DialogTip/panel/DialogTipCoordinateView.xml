@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <controller name="contentCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="坐标列表"/>
+    <remark page="1" value="空"/>
+  </controller>
+  <displayList>
+    <component id="n3_m79t" name="bg" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n14_cdsd"/>
+    <image id="n27_dsil" name="n27" src="n1oz1ygcfoc" fileName="images/images_new/com_icon_huawen.png" pkg="2r331opv" xy="600,281" group="n14_cdsd" scale="0.6,0.6" alpha="0.15" color="#97794f">
+      <gearDisplay controller="contentCtrl" pages="1"/>
+    </image>
+    <text id="n19_eznb" name="titleTxt" xy="512,163" pivot="0.5,0.5" size="310,46" group="n14_cdsd" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示">
+      <gearText controller="contentCtrl" default="提示"/>
+    </text>
+    <text id="n22_pxy3" name="contentTxt" xy="360,225" pivot="0.5,0" size="616,67" group="n14_cdsd" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="需要攻占据点才能建造联盟中心要塞&#xA;以下是可占据点：">
+      <gearDisplay controller="contentCtrl" pages="0"/>
+    </text>
+    <text id="n26_pxy3" name="nullTxt" xy="396,315" pivot="0.5,0" size="540,54" group="n14_cdsd" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#b26105" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="本州已无可占领">
+      <gearDisplay controller="contentCtrl" pages="1"/>
+    </text>
+    <list id="n23_pxy3" name="posList" xy="343,297" pivot="0.5,0.5" size="648,281" group="n14_cdsd" layout="flow_hz" overflow="scroll" lineGap="4" colGap="28" defaultItem="ui://utp01xiapxy31ygcfmu" align="center">
+      <gearDisplay controller="contentCtrl" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n16_jg06" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n14_cdsd" scale="0.8,0.8"/>
+    <group id="n14_cdsd" name="window" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

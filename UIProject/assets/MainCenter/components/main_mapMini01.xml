@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="176,410" opaque="false">
+  <displayList>
+    <image id="n111_nuh7" name="bg" src="pepa1ygcfng" fileName="images/images_new/com_bg_tips02_mask1.png" pkg="2r331opv" xy="0,118" pivot="1,0" size="176,292" flip="vt"/>
+    <image id="n117_kxfy" name="n117" src="pepa1ygcfng" fileName="images/images_new/com_bg_tips02_mask1.png" pkg="2r331opv" xy="0,0" size="176,116" color="#061324"/>
+    <list id="n114_nuh7" name="list01" xy="9,6" size="154,104" overflow="hidden" lineGap="2" defaultItem="ui://4ni413lal3l81ygcfkz">
+      <item title="你的主城" icon="ui://lh4qx1m6kxfyba"/>
+      <item title="盟主" icon="ui://lh4qx1m6kxfyb4"/>
+    </list>
+    <list id="n115_nuh7" name="list02" xy="9,128" size="154,104" overflow="hidden" lineGap="2" defaultItem="ui://4ni413lal3l81ygcfkz">
+      <item title="我方中心要塞" icon="ui://lh4qx1m6kxfyb5"/>
+      <item title="其他中心要塞" icon="ui://lh4qx1m6t7ytbb"/>
+    </list>
+    <list id="n118_kxfy" name="list03" xy="9,244" size="156,154" overflow="hidden" lineGap="2" defaultItem="ui://4ni413lal3l81ygcfkz">
+      <item title="我方中立城" icon="ui://lh4qx1m6kxfyb7"/>
+      <item title="已占领中立城" icon="ui://lh4qx1m6kxfyb8"/>
+      <item title="未占领中立城" icon="ui://lh4qx1m6kxfyb9"/>
+    </list>
+  </displayList>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="888,51" extention="Button" designImage="ui://4ni413lajg06hz9cv7" designImageOffsetX="-211" designImageOffsetY="-205">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n1_et21" name="lable01_level" xy="0,0" pivot="0.5,0.5" size="145,51" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="1000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n2_et21" name="lable02" xy="148,0" pivot="0.5,0.5" size="145,51" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="1000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n3_et21" name="lable03" xy="296,0" pivot="0.5,0.5" size="145,51" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n4_et21" name="lable04" xy="444,0" pivot="0.5,0.5" size="145,51" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n6_5750" name="lable05" xy="592,0" pivot="0.5,0.5" size="145,51" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n7_5750" name="lable06" xy="740,0" pivot="0.5,0.5" size="145,51" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n5_et21" name="n5" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="0,47" size="888,4">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+  </displayList>
+  <Button sound="0"/>
+</component>

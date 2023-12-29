@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="44,32" pivot="0.5,0.5" extention="ProgressBar">
+  <displayList>
+    <image id="n2_ihkp" name="n2" src="tg9h1qp8vhr" fileName="images/chief/chiefPb00.png" xy="-4,-3" size="52,38" alpha="0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_d2so" name="bar" src="happ1qp8vh3" fileName="images/chief/chiefPb12.png" xy="22,16" pivot="0.5,0.5" anchor="true" size="44,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

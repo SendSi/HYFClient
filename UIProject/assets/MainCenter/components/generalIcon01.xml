@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="167,151" extention="Button" designImageOffsetX="-985" designImageOffsetY="-101">
+  <controller name="quality" pages="1,,2,,3,,4," selected="0"/>
+  <controller name="state" pages="0,,2,,1,,3,,4,,6,,5," selected="0">
+    <remark page="0" value="正常（无部队）"/>
+    <remark page="1" value="有部队"/>
+    <remark page="2" value="灰"/>
+    <remark page="3" value="空"/>
+    <remark page="4" value="未解锁"/>
+    <remark page="5" value="倒计时"/>
+    <remark page="6" value="添加"/>
+  </controller>
+  <controller name="button" pages="2,up,3,down,4,over,5,selectedOver" selected="0"/>
+  <controller name="showPower" pages="0,,1," selected="0">
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="captain" pages="0,,1,,10," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示队长图标"/>
+    <remark page="2" value="队员"/>
+  </controller>
+  <controller name="garrison" pages="0,,1," selected="0">
+    <remark page="0" value="none"/>
+    <remark page="1" value="有驻防"/>
+  </controller>
+  <controller name="existing" pages="0,,1," selected="0">
+    <remark page="0" value="nor"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="elementCtrl" pages="0,,1," selected="1">
+    <remark page="0" value="nor"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <image id="n17_lfqn" name="n17" src="lfqnhz9d76" fileName="images/images_new/hero_bg.png" xy="36,102" size="93,54" pkg="2r331opv">
+      <gearDisplay controller="state" pages="0,2"/>
+    </image>
+    <loader id="n3_xz10" name="bg0" xy="26,13" size="114,124" url="ui://61bunt4fhxd7g4" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <gearLook controller="state" pages="1,3,4,6" values="1,0,0,1|1,0,1,1|1,0,1,1|1,0,1,1" default="1,0,0,1"/>
+      <gearColor controller="state" pages="1" values="#717171" default="#ffffff"/>
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://61bunt4fhxd7g4|ui://61bunt4fhxd7g5|ui://61bunt4fhxd7g6|ui://61bunt4fhxd7g7"/>
+    </loader>
+    <loader id="n0_xz10" name="bg" xy="25,11" size="116,128" aspect="true" visible="false" url="ui://61bunt4fhxd7fy" align="center" vAlign="middle" fill="scale">
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+    </loader>
+    <loader id="n22_hxd7" name="select" xy="13,0" size="140,171" url="ui://2r331opvhxd7hz9d7n">
+      <gearDisplay controller="button" pages="3,5"/>
+      <gearIcon controller="state" pages="1" values="ui://2r331opvhxd7hz9d7m" default="ui://2r331opvhxd7hz9d7n"/>
+    </loader>
+    <loader id="n18_hxd7" name="icon" xy="33,10" size="100,128" url="ui://4557t28ky6f5hz9cp9" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearDisplay controller="state" pages="0,2,1"/>
+      <gearLook controller="state" pages="1,3" values="1,0,0,1|1,0,1,1" default="1,0,0,1"/>
+      <gearColor controller="state" pages="1" values="#414141" default="#ffffff"/>
+    </loader>
+    <loader id="n1_xz10" name="qualityIcon" xy="27,10" size="58,40" visible="false" url="ui://4557t28klfqnhz9cq2" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="0,2,1"/>
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://4557t28klfqnhz9cq2|ui://4557t28klfqnhz9cq3|ui://4557t28klfqnhz9cq4|ui://4557t28klfqnhz9cq5"/>
+    </loader>
+    <image id="n29_sn5c" name="n29" src="sn5cg9" fileName="HeadQuality/comhead_quality_bg.png" pkg="61bunt4f" xy="103,80">
+      <gearDisplay controller="state" pages="0,2"/>
+    </image>
+    <text id="n2_xz10" name="lv" xy="58,101" pivot="0.5,0.5" size="50,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" strokeSize="2" shadowColor="#000000" shadowOffset="2,2" autoClearText="true" text="200">
+      <gearDisplay controller="state" pages="0,2"/>
+    </text>
+    <loader id="n30_sn5c" name="occupation" xy="107,84" size="80,80" scale="0.3,0.3" url="ui://2r331opvfrte1qp8vdx" fill="scale" autoSize="true">
+      <gearDisplay controller="state" pages="0,2"/>
+    </loader>
+    <loader id="n27_lvki" name="captain" xy="26,25" size="26,28" group="n21_hxd7" url="ui://jqem9egtp6fy1ygcfg2" autoSize="true">
+      <gearDisplay controller="captain" pages="1,10"/>
+      <gearIcon controller="captain" pages="1,10" values="ui://4hio38umct1e1iy5bfv|ui://4hio38umct1e1iy5bfw" default="ui://jqem9egtp6fy1ygcfg2"/>
+    </loader>
+    <text id="n20_hxd7" name="team" xy="31,22" pivot="0.5,0.5" size="16,29" group="n21_hxd7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="1">
+      <gearDisplay controller="captain" pages="1,10"/>
+    </text>
+    <group id="n21_hxd7" name="team0" xy="26,22" size="26,31" advanced="true">
+      <gearDisplay controller="state" pages="2"/>
+    </group>
+    <list id="n23_svlg" name="starList" xy="-108,115" pivot="0.5,0.5" size="385,47" scale="0.3,0.3" layout="row" defaultItem="ui://2r331opv104731iy5b91" align="center" autoClearItems="true">
+      <gearDisplay controller="state" pages="0,2"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n28_dkpj" name="garr_icon" src="oepthz9cp8" fileName="components/general_new/main_teamStae.xml" xy="26,24" scale="0.8,0.8">
+      <gearDisplay controller="garrison" pages="1"/>
+      <gearDisplay2 controller="state" pages="0" condition="0"/>
+    </component>
+    <text id="n24_tg9h" name="powerLbl" xy="24,149" pivot="0.5,0.5" size="118,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ff7575" align="center" strokeColor="#501c1c" strokeSize="2" shadowColor="#501c1c" shadowOffset="2,3" singleLine="true" autoClearText="true" text="战斗力:5000">
+      <gearDisplay controller="showPower" pages="1"/>
+    </text>
+    <text id="n25_fetn" name="emptyLbl" xy="52,58" size="65,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" autoSize="none" text="未上阵">
+      <gearDisplay controller="state" pages="3"/>
+    </text>
+    <image id="n31_gmyb" name="lock" src="u6yzhz9cpx" fileName="images/images_new/com_icon_lock.png" xy="56,37" pkg="2r331opv">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+    <image id="n34_gmyb" name="n34" src="dfgw1ygcfmf" fileName="images/images_new/com_change04.png" xy="28,56" size="112,34" color="#061324" pkg="2r331opv">
+      <gearDisplay controller="state" pages="6"/>
+    </image>
+    <text id="n33_gmyb" name="countdown" xy="40,59" pivot="0.5,0.5" size="88,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" text="01:02:55">
+      <gearDisplay controller="state" pages="6"/>
+    </text>
+    <image id="n32_gmyb" name="n32" src="94955" fileName="images/images_new/common_btn_plus.png" xy="53,44" pkg="2r331opv">
+      <gearDisplay controller="state" pages="5"/>
+    </image>
+    <component id="n35_ftur" name="exist" src="edhk1ygcgq1" fileName="components/components_new/existingItem2.xml" xy="84,-1" rotation="10" pkg="2r331opv">
+      <gearDisplay controller="existing" pages="1"/>
+      <Button title="待转生"/>
+    </component>
+    <component id="n36_tt4v" name="elementIcon" src="y8rv1iy5bhu" fileName="components/hero_Item2.xml" pkg="4hio38um" xy="13,82" scale="0.8,0.8">
+      <gearDisplay controller="elementCtrl" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

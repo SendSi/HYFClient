@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="160,148" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="1,,0,,2,,3," selected="0">
+    <remark page="0" value="使用中"/>
+    <remark page="1" value="可使用"/>
+    <remark page="2" value="未激活"/>
+    <remark page="3" value="可激活"/>
+  </controller>
+  <displayList>
+    <image id="n7_mgry" name="n7" src="cwtb1ygcffz" fileName="images/cityskin/com_cityskinselect_city.png" xy="0,16">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n3_mgry" name="icon" xy="24,0" size="113,128" url="ui://2r331opvlwxi1ygcfka" align="center" vAlign="bottom" fill="scale">
+      <gearLook controller="state" pages="2,3" values="1,0,1,1|1,0,1,1" default="1,0,0,1"/>
+      <gearColor controller="state" pages="1,0,3" values="#ffffff|#ffffff|#cccccc" default="#cccccc"/>
+    </loader>
+    <image id="n4_mgry" name="n4" src="hqarz9co6" fileName="images/images_new/com_change08.png" pkg="2r331opv" xy="26,104" pivot="0.5,0.5" size="109,35" group="n6_mgry" color="#000000">
+      <gearDisplay controller="state" pages="1,0"/>
+    </image>
+    <text id="n5_mgry" name="title" xy="48,106" size="64,29" group="n6_mgry" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="使用中">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <text id="n13_cwtb" name="title1" xy="48,106" size="64,29" group="n6_mgry" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#8bff3d" text="可使用">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <group id="n6_mgry" name="state1" xy="26,104" size="109,35" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+    </group>
+    <image id="n12_cwtb" name="n12" src="cwtb1ygcffr" fileName="images/cityskin/com_cityskinicon_new.png" xy="1,0">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

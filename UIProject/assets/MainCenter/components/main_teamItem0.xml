@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="204,82">
+  <controller name="showBtn" pages="0,,1,,2," selected="0">
+    <remark page="0" value="定位"/>
+    <remark page="1" value="补兵"/>
+    <remark page="2" value="死亡"/>
+  </controller>
+  <controller name="countdown" pages="0,,1," selected="0">
+    <remark page="0" value="显示倒计时"/>
+    <remark page="1" value="不显示"/>
+  </controller>
+  <displayList>
+    <image id="n3_oept" name="n3" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="204,82" alpha="0.6"/>
+    <text id="n24_tbf1" name="time" xy="84,53" size="76,24" group="n17_oept" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="none" autoClearText="true" text="00:01:11">
+      <gearDisplay controller="countdown" pages="0"/>
+    </text>
+    <text id="n7_oept" name="title1" xy="65,9" size="84,24" group="n26_qabg" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="shrink" singleLine="true" autoClearText="true" text="突尼斯巴拉"/>
+    <text id="n9_oept" name="powerNum" xy="110,30" size="50,24" group="n26_qabg" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" letterSpacing="-1" autoSize="shrink" autoClearText="true" text="99,999">
+      <relation target="n8_oept" sidePair="left-right"/>
+    </text>
+    <graph id="n19_na04" name="armsbg" xy="68,34" size="43,17" group="n26_qabg" type="rect" lineSize="0" fillColor="#ff2f6ab7" corner="5">
+      <relation target="n8_oept" sidePair="rightext-right,leftext-left"/>
+    </graph>
+    <text id="n8_oept" name="title2" xy="67,32" size="46,22" group="n26_qabg" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#86c9f4" autoClearText="true" text="轻骑兵"/>
+    <group id="n26_qabg" name="n26" xy="65,9" size="95,45" group="n17_oept" advanced="true">
+      <gearXY controller="countdown" pages="0,1" values="65,9|65,15"/>
+    </group>
+    <group id="n17_oept" name="infor" xy="65,9" size="95,68" advanced="true"/>
+  </displayList>
+</component>

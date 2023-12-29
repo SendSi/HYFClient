@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="590,110" pivot="1,0" opaque="false" designImageOffsetX="-724" designImageOffsetY="-634">
+  <controller name="switchCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="展开了"/>
+    <remark page="1" value="收缩了"/>
+    <action type="play_transition" fromPage="0" toPage="1" transition="contractDT"/>
+    <action type="play_transition" fromPage="1" toPage="0" transition="expandDT"/>
+  </controller>
+  <displayList>
+    <image id="n3_pgcs" name="n3" src="lumy1qp8vdk" fileName="images4/main_bg03.png" xy="0,34" pivot="1,0" size="591,41" alpha="0.8"/>
+    <list id="n4_m8i8" name="btnFuncList" xy="53,8" pivot="1,0" size="452,94" layout="row" overflow="hidden" colGap="-6" defaultItem="ui://4ni413laj4kdhz9cm2" align="right" foldInvisibleItems="true">
+      <item title="英雄" icon="ui://4ni413lalumy1qp8vdc" name="0"/>
+      <item title="联盟" icon="ui://4ni413lalumy1qp8vd7" name="1"/>
+      <item title="背包" icon="ui://4ni413lalumy1qp8vd9" name="2"/>
+      <item title="邮件" icon="ui://4ni413lapqav1qp8ve0" name="3"/>
+      <item title="部队" icon="ui://4ni413lalumy1qp8vda" name="4"/>
+    </list>
+    <component id="n1_xoe1" name="switchBtn" src="qy501qp8vdr" fileName="components/main_task_hide2.xml" xy="505,20">
+      <Button checked="true" controller="switchCtrl" page="0"/>
+    </component>
+  </displayList>
+  <transition name="contractDT">
+    <item time="0" type="Size" target="n3_pgcs" tween="true" startValue="591,41" endValue="146,41" duration="6"/>
+    <item time="0" type="Size" target="n4_m8i8" tween="true" startValue="452,94" endValue="0,94" duration="6"/>
+  </transition>
+  <transition name="expandDT">
+    <item time="0" type="Size" target="n3_pgcs" tween="true" startValue="146,41" endValue="591,41" duration="6"/>
+    <item time="0" type="Size" target="n4_m8i8" tween="true" startValue="0,94" endValue="452,94" duration="6"/>
+  </transition>
+</component>

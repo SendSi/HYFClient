@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="204,50" pivot="0.5,1.4" opaque="false" designImageOffsetX="-445" designImageOffsetY="-258">
+  <controller name="colorController" pages="0,,9,,1,,5,,8," selected="0">
+    <remark page="0" value="绿"/>
+    <remark page="1" value="（空）为了对应血条里的控制器"/>
+    <remark page="2" value="红"/>
+    <remark page="3" value="蓝"/>
+    <remark page="4" value="白"/>
+  </controller>
+  <controller name="selectedController" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="普通未选中"/>
+    <remark page="1" value="部队选中"/>
+    <remark page="2" value="近距离部队战斗状态"/>
+    <remark page="3" value="远距离部队战斗状态"/>
+    <remark page="4" value="带连线的部队战斗状态"/>
+    <remark page="5" value="状态-联盟首领"/>
+  </controller>
+  <controller name="collection" pages="0,,1," selected="0">
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="medal" pages="0,,1," selected="0">
+    <remark page="1" value="一个都没有"/>
+  </controller>
+  <displayList>
+    <text id="n7_ejj4" name="name" xy="101,38" pivot="0.5,0.5" anchor="true" size="116,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#a5ff64" ubb="true" strokeColor="#173b0d" strokeSize="2" singleLine="true" autoClearText="true" text="他的名字增加了">
+      <gearXY controller="selectedController" pages="0,1,2,3,4" values="101,38|100,-20|103,14|100,-33|100,-33" default="103,14"/>
+      <gearColor controller="colorController" pages="0,1,5,8" values="#a5ff64,#173b0d|#ff4a4a,#4f0b0b|#00c3ff,#143754|#ffffff,#000000" default="#ffffff,#000000"/>
+    </text>
+    <list id="n19_smjf" name="medal_list" xy="40,2" pivot="0.5,1.019" size="119,23" layout="row" scroll="horizontal" colGap="-13" defaultItem="ui://4ni413ladsd11qp8vgt" align="center" vAlign="middle">
+      <gearDisplay controller="selectedController" pages="0,1"/>
+      <gearXY controller="selectedController" pages="0,1,2,3,4" values="40,2|40,-56|-55,-115|-55,-171|-55,-189" default="-55,-115"/>
+      <gearDisplay2 controller="medal" pages="0" condition="0"/>
+      <item/>
+      <item icon="ui://4ni413ladsd11qp8vgp"/>
+      <item icon="ui://4ni413ladsd11qp8vgq"/>
+      <item icon="ui://4ni413ladsd11qp8vgr"/>
+    </list>
+    <component id="n2_ex0k" name="icon" src="smjf1qp8vei" fileName="components/general_new/main_generalIcon.xml" pkg="2r331opv" xy="-78,-180" scale="0.6,0.6">
+      <gearDisplay controller="selectedController" pages="1,3,4"/>
+      <gearXY controller="selectedController" pages="0,1,2,3,4" values="-78,-180|17,-51|-78,-131|17,-51|17,-51" default="-78,-131"/>
+    </component>
+    <component id="n23_mkav" name="EffectHandle_01" src="ayljdv" fileName="components/EffectHandle.xml" pkg="2r331opv" xy="75,-2">
+      <gearDisplay controller="selectedController" pages="1,3,4"/>
+    </component>
+    <text id="n22_happ" name="collectionLbl" xy="57,-19" pivot="0.5,0.5" size="86,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" strokeColor="#000000" strokeSize="2" singleLine="true" autoClearText="true" text="采集量:701">
+      <gearDisplay controller="collection" pages="1"/>
+      <gearXY controller="selectedController" pages="0,1,2,3,4,5" values="57,-19|57,-19|57,-19|57,-19|57,-19|57,-19"/>
+      <gearColor controller="colorController" pages="0,1,5,8" values="#ffffff,#000000|#ff2727,#000000|#00c3ff,#000000|#ffffff,#000000" default="#ffffff,#000000"/>
+      <gearDisplay2 controller="selectedController" pages="0,1" condition="0"/>
+      <relation target="n19_smjf" sidePair="top-top"/>
+    </text>
+    <component id="n5_ejj4" name="anger" src="ex0khz9cu3" fileName="components/components_new/main/anger_pbr.xml" xy="-40,-87" pivot="0.5,0.5" size="43,13" scale="1.1,1.1" rotation="-90">
+      <gearDisplay controller="selectedController" pages="3,4"/>
+      <gearXY controller="selectedController" pages="0,1,2,3,4" values="-40,-87|-40,-84|-40,-48|39,16|39,16" default="-40,-87"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n4_ex0k" name="armSum" src="oepthz9cp5" fileName="components/components_new/main/main_teamPbr.xml" xy="-33,-145" pivot="0.5,0.5" size="60,5">
+      <gearDisplay controller="selectedController" pages="2,3,4"/>
+      <gearXY controller="selectedController" pages="2,3,4" values="64,31|69,-19|69,-18" default="-33,-145"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n29_v238" name="btnStart" src="tg9hhz9d0o" fileName="panel/panel_new/map/ChallengeBtn.xml" xy="37,20" size="130,70">
+      <gearDisplay controller="selectedController" pages="5,6"/>
+      <Button title="开启挑战"/>
+    </component>
+  </displayList>
+  <transition name="shake">
+    <item time="0" type="ColorFilter" target="n2_ex0k" tween="true" startValue="0,0,0,0" endValue="0.54,0.15,0,0" duration="2"/>
+    <item time="0" type="ColorFilter" target="n4_ex0k" tween="true" startValue="0,0,0,0" endValue="0.54,0.15,0,0" duration="2"/>
+    <item time="0" type="ColorFilter" target="n5_ejj4" tween="true" startValue="0,0,0,0" endValue="0.54,0.15,0,0" duration="2"/>
+    <item time="0" type="Rotation" target="n2_ex0k" tween="true" startValue="-2.25" endValue="0" duration="10" ease="Quad.In"/>
+    <item time="0" type="Rotation" target="n5_ejj4" tween="true" startValue="-92.25" endValue="-90" duration="10"/>
+    <item time="0" type="Scale" target="n2_ex0k" tween="true" startValue="0.6,0.6" endValue="0.66,0.66" duration="3"/>
+    <item time="0" type="XY" target="n2_ex0k" value="17,-51"/>
+    <item time="0" type="XY" target="n5_ejj4" value="39,16"/>
+    <item time="1" type="XY" target="n2_ex0k" value="14,-51"/>
+    <item time="1" type="XY" target="n5_ejj4" value="36,16"/>
+    <item time="2" type="ColorFilter" target="n2_ex0k" tween="true" startValue="0.54,0.15,0,0" endValue="0,0.096,0,0" duration="1"/>
+    <item time="2" type="ColorFilter" target="n4_ex0k" tween="true" startValue="0.54,0.15,0,0" endValue="0,0.096,0,0" duration="1"/>
+    <item time="2" type="ColorFilter" target="n5_ejj4" tween="true" startValue="0.54,0.15,0,0" endValue="0,0.096,0,0" duration="1"/>
+    <item time="2" type="XY" target="n2_ex0k" value="18,-51"/>
+    <item time="2" type="XY" target="n5_ejj4" value="40,16"/>
+    <item time="3" type="Scale" target="n2_ex0k" tween="true" startValue="0.66,0.66" endValue="0.58,0.58" duration="5"/>
+    <item time="3" type="XY" target="n2_ex0k" value="21,-51"/>
+    <item time="3" type="XY" target="n5_ejj4" value="43,16"/>
+    <item time="4" type="ColorFilter" target="n2_ex0k" tween="true" startValue="0,0,0,0" endValue="0,0,0,0" duration="6"/>
+    <item time="4" type="ColorFilter" target="n4_ex0k" tween="true" startValue="0,0,0,0" endValue="0,0,0,0" duration="6"/>
+    <item time="4" type="ColorFilter" target="n5_ejj4" tween="true" startValue="0,0,0,0" endValue="0,0,0,0" duration="6"/>
+    <item time="4" type="XY" target="n2_ex0k" value="16,-51"/>
+    <item time="4" type="XY" target="n5_ejj4" value="38,16"/>
+    <item time="5" type="XY" target="n2_ex0k" value="15,-51"/>
+    <item time="5" type="XY" target="n5_ejj4" value="37,16"/>
+    <item time="6" type="XY" target="n2_ex0k" value="18,-51"/>
+    <item time="6" type="XY" target="n5_ejj4" value="40,16"/>
+    <item time="7" type="XY" target="n2_ex0k" value="16,-51"/>
+    <item time="7" type="XY" target="n5_ejj4" value="38,16"/>
+    <item time="8" type="Scale" target="n2_ex0k" tween="true" startValue="0.58,0.58" endValue="0.6,0.6" duration="2"/>
+    <item time="10" type="XY" target="n2_ex0k" value="17,-51"/>
+    <item time="10" type="XY" target="n5_ejj4" value="39,16"/>
+  </transition>
+</component>

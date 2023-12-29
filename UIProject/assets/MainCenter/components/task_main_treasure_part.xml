@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="188,89" pivot="0.5,0.5" extention="Button">
+  <controller name="button" exported="true" pages="2,up,3,down" selected="0"/>
+  <displayList>
+    <loader id="n4_qz5p" name="icon" xy="41,14" size="147,60" url="ui://4ni413laqz5p1ygcfhf" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width"/>
+    </loader>
+    <component id="n9_qz5p" name="bar_2" src="qz5p1ygcfhh" fileName="components/components_new/taskBar.xml" xy="75,44" size="113,24">
+      <relation target="" sidePair="width-width"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n3_qz5p" name="title" xy="76,19" size="111,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="送六星蕾拉">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

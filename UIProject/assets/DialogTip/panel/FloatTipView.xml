@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <component id="n3_q1qg" name="TipItem" src="q1qg2" fileName="TipItem.xml" xy="562,180" visible="false" pkg="2r331opv">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>

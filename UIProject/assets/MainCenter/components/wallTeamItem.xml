@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="306,128" designImage="ui://4ni413lag9nyhz9ctt" designImageOffsetX="-602" designImageOffsetY="-243" designImageAlpha="0">
+  <controller name="state" pages="0,,4," selected="1">
+    <remark page="0" value="未上阵"/>
+    <remark page="1" value="未解锁"/>
+  </controller>
+  <displayList>
+    <image id="n26_95a1" name="n26" src="no3vhz9d68" fileName="images/images_new/com_bg_resource01.png" pkg="2r331opv" xy="100,33" size="194,62" group="n28_95a1" alpha="0.85"/>
+    <text id="n27_95a1" name="lockLbl" xy="122,47" pivot="0.5,0.5" size="152,34" group="n28_95a1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#d93a3a" align="center" autoClearText="true" text="城墙13级解锁"/>
+    <group id="n28_95a1" name="lock" xy="100,33" size="194,62" advanced="true">
+      <gearDisplay controller="state" pages="4"/>
+    </group>
+    <component id="n32_95a1" name="general1" src="h00fhz9d46" fileName="components/components_new/generalLock.xml" pkg="2r331opv" xy="0,0"/>
+    <component id="n33_95a1" name="general2" src="h00fhz9d46" fileName="components/components_new/generalLock.xml" pkg="2r331opv" xy="118,15" scale="0.8,0.8">
+      <gearDisplay controller="state" pages="0"/>
+    </component>
+    <component id="n34_95a1" name="general3" src="h00fhz9d46" fileName="components/components_new/generalLock.xml" pkg="2r331opv" xy="215,15" scale="0.8,0.8">
+      <gearDisplay controller="state" pages="0"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="141,24">
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="时间"/>
+    <remark page="1" value="预备兵"/>
+    <remark page="2" value="技能名字"/>
+  </controller>
+  <displayList>
+    <text id="n123_sz27" name="title_0" xy="0,0" size="141,24" font="ui://2r331opvlwft3" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" autoClearText="true" text="04:09:01">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <text id="n116_efn9" name="title_1" xy="0,0" size="141,24" font="ui://2r331opvlwft3" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" autoClearText="true" text="预备兵x100">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <text id="n124_d3m9" name="title_2" xy="0,0" size="141,24" font="ui://2r331opvlwft3" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" autoClearText="true" text="技能名字">
+      <gearDisplay controller="state" pages="2"/>
+    </text>
+  </displayList>
+</component>

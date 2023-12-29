@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="320,34" extention="Slider" designImageOffsetX="-707" designImageOffsetY="-315">
+  <displayList>
+    <image id="n0_v96q" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-5,-4" size="330,42">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_v96q" name="bar" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="0,1" size="320,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_v96q" name="title" xy="334,1" size="56,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" singleLine="true" autoClearText="true" text="6000">
+      <relation target="" sidePair="middle-middle,left-right"/>
+    </text>
+    <text id="n4_d1gb" name="n4" xy="136,3" size="64,29" fontSize="20" color="#ffffff" autoClearText="true" text="采集中"/>
+  </displayList>
+  <Slider titleType="value" wholeNumbers="true"/>
+</component>

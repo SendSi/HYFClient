@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="世界地图宝箱"/>
+  </controller>
+  <displayList>
+    <component id="n2_spte" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-3" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_spte" name="window" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n9_spte"/>
+    <text id="n12_jmae" name="titleTxt" xy="538,162" pivot="0.5,0.5" size="258,46" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" singleLine="true" autoClearText="true" text="补足资源">
+      <gearText controller="state" pages="1" values="世界地图宝箱" default="补足资源"/>
+    </text>
+    <text id="n7_spte" name="tips" xy="421,230" pivot="0.5,0.5" size="492,34" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" text="执政官，仓库中的资源不足，缺少的资源如下:">
+      <gearText controller="state" pages="1" values="搜集散落所有区域地图后即可领取" default="执政官，仓库中的资源不足，缺少的资源如下:"/>
+    </text>
+    <list id="n11_lwba" name="propList" xy="365,302" pivot="0.5,0.5" size="604,168" group="n9_spte" layout="row" overflow="scroll" scroll="horizontal" colGap="-5" defaultItem="ui://2r331opvr52r1ygcgpe" align="center" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n8_spte" name="getBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="566,473" size="202,78" group="n9_spte">
+      <gearDisplay controller="state" pages="0"/>
+      <Button title="获得更多"/>
+    </component>
+    <component id="n14_rr0d" name="receiveBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="560,470" size="211,74" group="n9_spte">
+      <gearDisplay controller="state" pages="1"/>
+      <Button title="领取"/>
+    </component>
+    <component id="n3_spte" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n9_spte" scale="0.8,0.8"/>
+    <group id="n9_spte" name="n9" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

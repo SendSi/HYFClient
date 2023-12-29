@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="81,100" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n5_d4a6" name="bg" src="qdf6hz9cue" fileName="images/buliding/building_bg_bubble01.png" xy="-2,1" size="85,95" aspect="true" pkg="2r331opv">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3_7lo1" name="icon" xy="41,42" pivot="0.5,0.5" anchor="true" size="80,80" aspect="true" url="ui://4ni413lagflyhz9d2h" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="show" autoPlayRepeat="3">
+    <item time="0" type="Rotation" target="n3_7lo1" tween="true" startValue="0" endValue="8" duration="2"/>
+    <item time="2" type="Rotation" target="n3_7lo1" tween="true" startValue="8" endValue="-8" duration="2"/>
+    <item time="4" type="Rotation" target="n3_7lo1" tween="true" startValue="-8" endValue="0" duration="2"/>
+    <item time="6" type="Rotation" target="n3_7lo1" tween="true" startValue="0" endValue="5" duration="2"/>
+    <item time="8" type="Rotation" target="n3_7lo1" tween="true" startValue="5" endValue="-5" duration="2"/>
+    <item time="10" type="Rotation" target="n3_7lo1" tween="true" startValue="-5" endValue="0" duration="2"/>
+    <item time="12" type="Size" target="n3_7lo1" tween="true" startValue="66,66" endValue="80,80" duration="6"/>
+    <item time="18" type="Size" target="n3_7lo1" tween="true" startValue="80,80" endValue="66,66" duration="7"/>
+    <item time="25" type="Size" target="n3_7lo1" tween="true" startValue="66,66" endValue="80,80" duration="4"/>
+    <item time="29" type="Size" target="n3_7lo1" tween="true" startValue="80,80" endValue="66,66" duration="3"/>
+  </transition>
+</component>

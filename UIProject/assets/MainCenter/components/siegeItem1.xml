@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="324,51">
+  <displayList>
+    <text id="n3_o4i9" name="title" xy="0,0" size="324,50" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" leading="0" ubb="true" autoSize="none" autoClearText="true" text="每打掉城池10点耐久度，将扣除1个攻城令， 当攻城令为0时，将激活【工程弱化】效果">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+  <relation target="n3_o4i9" sidePair="height-height"/>
+</component>

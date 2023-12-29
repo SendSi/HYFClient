@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="465,34" extention="Button" designImage="ui://4ni413lajg06hz9cv0" designImageOffsetX="-23" designImageOffsetY="-219">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="colour_title" pages="0,,1," selected="0">
+    <remark page="0" value="normal"/>
+    <remark page="1" value="未完成"/>
+  </controller>
+  <displayList>
+    <text id="n6_p5sz" name="title" xy="140,0" pivot="0,0.5" size="324,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" leading="0" ubb="true" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="击败5支队伍队伍队支队伍">
+      <gearColor controller="colour_title" pages="0" values="#ffffff,#000000" default="#9f9898,#000000"/>
+    </text>
+    <loader id="n7_p5sz" name="icon" xy="112,4" size="54,52" scale="0.5,0.5" url="ui://2r331opvcxixz9cmd" autoSize="true">
+      <gearIcon controller="colour_title" pages="1" values="ui://2r331opvlfqnhz9d75" default="ui://2r331opvcxixz9cmd"/>
+    </loader>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".97"/>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1" autoPlayDelay="1.5"/>
+</component>

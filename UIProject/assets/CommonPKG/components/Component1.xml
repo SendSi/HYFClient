@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,92">
+  <controller name="state" pages="2,normal,3,灰版" selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="置灰"/>
+  </controller>
+  <displayList>
+    <loader id="n3_ryh2" name="icon" xy="4,3" pivot="0.5,0.5" size="84,84" aspect="true" url="ui://4557t28ky6f5hz9cp0" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearLook controller="state" pages="2" values="1,0,0,1" default="1,0,1,1"/>
+    </loader>
+    <graph id="n13_bumc" name="n13" xy="0,0" size="92,92" type="rect" corner="20"/>
+  </displayList>
+</component>

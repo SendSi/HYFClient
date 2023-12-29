@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="297,376" designImage="ui://4ni413lafz63hz9crp" designImageOffsetX="-124" designImageOffsetY="-406" designImageAlpha="0">
+  <displayList>
+    <component id="n31_fz63" name="build" src="pvy91ygcg8n" fileName="components/components_new/main/buildingGrid1.xml" xy="0,0" pivot="0.5,0.5"/>
+  </displayList>
+  <transition name="scal">
+    <item time="0" type="Scale" target="n31_fz63" tween="true" startValue="1,1" endValue="1.2,1.2" duration="5"/>
+    <item time="5" type="Scale" target="n31_fz63" tween="true" startValue="1.2,1.2" endValue="1,1" duration="6"/>
+  </transition>
+</component>

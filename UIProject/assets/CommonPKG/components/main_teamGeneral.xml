@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="60,60" mask="n1_oept" designImage="ui://4ni413laoepthz9coe" designImageOffsetX="-1128" designImageOffsetY="-209">
+  <displayList>
+    <loader id="n0_oept" name="icon" xy="0,0" size="60,60" aspect="true" url="ui://4557t28ky6f5hz9cpf" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </loader>
+    <graph id="n1_oept" name="n1" xy="0,0" pivot="0.5,0.5" size="60,60" aspect="true" alpha="0.82" rotation="90" type="eclipse" lineSize="0">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+  </displayList>
+</component>

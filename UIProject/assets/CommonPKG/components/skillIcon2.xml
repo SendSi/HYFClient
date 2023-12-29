@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="90,93" pivot="0.5,0.5" extention="Button" designImageOffsetX="-271" designImageOffsetY="-450">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="2,,3,,4,,8,,9,,10," selected="0"/>
+  <displayList>
+    <loader id="n2_ryh2" name="bg" xy="0,0" size="90,93" aspect="true" url="ui://2r331opvh3jujt" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="2,3,4,8,10" values="ui://2r331opvh3jujt|ui://2r331opv94956|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv9495a" default="ui://2r331opv94959"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n3_ryh2" name="icon" xy="3,4" pivot="0.5,0.5" size="84,84" aspect="true" url="ui://tvbfx6zpoxy08" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

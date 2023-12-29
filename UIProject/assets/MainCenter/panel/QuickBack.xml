@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="67,76" designImageOffsetX="-606">
+  <displayList>
+    <image id="n3_b6o0" name="n3" src="b6o0ml" fileName="images/map/main_btn_backCity.png" xy="4,8"/>
+    <image id="n2_b6o0" name="pointer" src="b6o0mk" fileName="images/map/main_btn_backCity2.png" xy="-18,-15" pivot="0.5,0.5" rotation="196" flip="vt"/>
+    <text id="n1_hdrq" name="title" xy="9,37" pivot="0.5,0.5" size="48,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff091" align="center" vAlign="middle" strokeColor="#295490" shadowColor="#295490" shadowOffset="1,2" autoClearText="true" text="999里">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+</component>

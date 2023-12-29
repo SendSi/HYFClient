@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="66,66" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="newRed" pages="0,,1," selected="0">
+    <remark page="1" value="显示数字"/>
+  </controller>
+  <displayList>
+    <loader id="n3_j4kd" name="icon" xy="0,0" pivot="0.5,0.5" size="66,66" aspect="true" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4_ts2v" name="title" xy="1,47" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" strokeColor="#413a67" strokeSize="2" shadowColor="#413a67" shadowOffset="1,2" text="">
+      <relation target="n3_j4kd" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <component id="n9_9zwe" name="redpoint" src="pyiyhz9d6l" fileName="components/components_new/redPoint.xml" xy="53,13" scale="0.7,0.7">
+      <gearDisplay controller="newRed" pages="1"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0" autoPlayRepeat="-1">
+    <item time="6" type="Shake" target="n3_j4kd" value="3,0.4"/>
+  </transition>
+</component>

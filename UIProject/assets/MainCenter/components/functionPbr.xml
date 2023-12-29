@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="285,34" extention="ProgressBar" designImageOffsetX="-742" designImageOffsetY="-314" designImageAlpha="24" designImageLayer="1">
+  <displayList>
+    <image id="n0_vey3" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-5,-4" size="295,42">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_vey3" name="bar" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="0,1" size="285,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_g9ny" name="title" xy="59,3" size="168,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" autoClearText="true" text="进行中：50:03:56">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <graph id="n4_oajf" name="effectNode" xy="280,1" pivot="0.5,0.5" size="1,32" alpha="0" type="rect">
+      <relation target="n1_vey3" sidePair="right-right"/>
+    </graph>
+  </displayList>
+  <ProgressBar titleType="value"/>
+</component>

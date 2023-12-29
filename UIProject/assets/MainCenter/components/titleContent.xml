@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="156,51">
+  <controller name="col" pages="0,,1," selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="选中"/>
+  </controller>
+  <displayList>
+    <text id="n3_o4i9" name="title" xy="0,0" size="156,50" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" leading="0" ubb="true" autoSize="none" autoClearText="true" text="(1/5)守卫王城挡住5波攻击">
+      <gearColor controller="col" pages="0,1" values="#ffffff,#000000|#b16d33,#000000"/>
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+  <relation target="n3_o4i9" sidePair="height-height"/>
+</component>

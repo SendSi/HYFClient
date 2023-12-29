@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="84,84" extention="Button" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n7_j4kd" name="n7" src="j4kdhz9cm3" fileName="images/main/mainhud_btn03.png" xy="2,2"/>
+    <loader id="n4_b6o0" name="icon" xy="17,16" pivot="0.489,0.512" size="53,53" aspect="true" url="ui://4ni413laj4kdhz9cm4" align="center" vAlign="middle" fill="scale">
+      <gearLook controller="button" pages="1,3" values="1,45,0,1|1,45,0,1" default="1,0,0,1" tween="true"/>
+    </loader>
+    <component id="n10_bvce" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="75,9">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Check"/>
+</component>

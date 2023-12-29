@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="106,108" pivot="0.5,0.5" extention="Button" designImageOffsetX="-10" designImageOffsetY="-631">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_j4kd" name="icon" xy="1,0" pivot="0.5,0.5" size="106,108" url="ui://4ni413lalumy1qp8vdd" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n5_j4kd" name="title" xy="18,86" pivot="0.5,0.5" size="70,29" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#000000" strokeSize="2" shadowColor="#000000" shadowOffset="1,2" text="To city">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="715,400" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n6_osur" name="bgBig_Left" xy="-37,94" pivot="1,0" size="348,205" alpha="0.6" url="ui://2r331opvrpi01ygcgpr"/>
+    <loader id="n5_osur" name="bgBig_Right" xy="408,94" size="348,205" alpha="0.6" url="ui://2r331opv10473hz9cye"/>
+    <loader id="n7_osur" name="bgTxt" xy="14,-149" pivot="0.5,0.5" size="686,625" touchable="false" url="ui://2r331opv10473hz9cyd"/>
+    <loader id="n14_rpi0" name="bgSmall_Left" xy="120,162" pivot="1,0" size="237,103" url="ui://2r331opvrpi01ygcgpo"/>
+    <loader id="n13_rpi0" name="bgSmall_Right" xy="356,162" size="239,102" url="ui://2r331opvrpi01ygcgpn"/>
+    <loader id="n12_osur" name="titleIcon" xy="218,91" pivot="0.5,0.5" size="300,200" touchable="false" url="ui://2r331opv10473hz9cyn"/>
+  </displayList>
+  <Button/>
+  <transition name="tGood" autoPlay="true" autoPlayDelay=".75">
+    <item time="0" type="Scale" target="n12_osur" tween="true" startValue="1.5,1.5" endValue="1,1" duration="5" ease="Back.Out"/>
+    <item time="0" type="Visible" target="n5_osur" value="false"/>
+    <item time="0" type="Visible" target="n6_osur" value="false"/>
+    <item time="0" type="XY" target="n13_rpi0" value="301,162"/>
+    <item time="0" type="XY" target="n14_rpi0" value="185,162"/>
+    <item time="3" type="XY" target="n13_rpi0" tween="true" startValue="301,162" endValue="363,162" duration="5" ease="Back.Out"/>
+    <item time="3" type="XY" target="n14_rpi0" tween="true" startValue="185,162" endValue="120,162" duration="5" ease="Back.Out"/>
+    <item time="8" type="Rotation" target="n5_osur" tween="true" startValue="10" endValue="0" duration="7" ease="Back.InOut"/>
+    <item time="8" type="Rotation" target="n6_osur" tween="true" startValue="-10" endValue="0" duration="7" ease="Back.InOut"/>
+    <item time="8" type="Visible" target="n5_osur" value="true"/>
+    <item time="8" type="Visible" target="n6_osur" value="true"/>
+  </transition>
+  <transition name="tFail" autoPlayDelay=".75">
+    <item time="0" type="Rotation" target="n13_rpi0" value="-8"/>
+    <item time="0" type="Rotation" target="n14_rpi0" value="8"/>
+    <item time="0" type="Scale" target="n12_osur" tween="true" startValue="1.5,1.5" endValue="1,1" duration="5" ease="Back.Out"/>
+    <item time="0" type="Visible" target="n5_osur" value="false"/>
+    <item time="0" type="Visible" target="n6_osur" value="false"/>
+    <item time="0" type="XY" target="n13_rpi0" tween="true" startValue="328,162" endValue="344,162" duration="4"/>
+    <item time="0" type="XY" target="n14_rpi0" tween="true" startValue="136,162" endValue="128,162" duration="4"/>
+    <item time="8" type="Rotation" target="n13_rpi0" tween="true" startValue="-8" endValue="0" duration="7" ease="Back.In"/>
+    <item time="8" type="Rotation" target="n14_rpi0" tween="true" startValue="8" endValue="0" duration="7" ease="Back.In"/>
+    <item time="8" type="Rotation" target="n5_osur" tween="true" startValue="-5" endValue="2" duration="7" ease="Back.In"/>
+    <item time="8" type="Rotation" target="n6_osur" tween="true" startValue="5" endValue="-2" duration="7" ease="Back.In"/>
+    <item time="8" type="Visible" target="n5_osur" value="true"/>
+    <item time="8" type="Visible" target="n6_osur" value="true"/>
+  </transition>
+</component>

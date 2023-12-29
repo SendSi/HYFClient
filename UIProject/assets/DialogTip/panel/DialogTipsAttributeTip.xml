@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="541,134" designImage="ui://4hio38ums1351iy5bb2" designImageOffsetX="-393" designImageOffsetY="-105" designImageLayer="1">
+  <displayList>
+    <component id="n20_pam3" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0" size="541,134">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n1_nsww" name="bg" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="0,0" size="541,101"/>
+    <text id="n10_nsww" name="txtDescrption" xy="27,21" size="486,56" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" ubb="true" autoSize="height" autoClearText="true" text="这是20号字体，这里打英雄属性描述这里打英雄属性描述这里打英雄属性描述这里打英雄属性描述"/>
+    <image id="n21_pam3" name="arrow" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="270,116" pivot="0.5,0.7" anchor="true" aspect="true">
+      <relation target="n1_nsww" sidePair="bottomext-bottom"/>
+    </image>
+  </displayList>
+</component>

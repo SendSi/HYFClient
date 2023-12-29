@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="432,81">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="左"/>
+    <remark page="1" value="右"/>
+  </controller>
+  <displayList>
+    <loader id="n3_hd50" name="icon" xy="0,0" size="432,81" url="ui://4ni413lahd501qp8vg2" fill="scaleFree">
+      <gearIcon controller="state" pages="1" values="ui://4ni413lahd501qp8vg6" default="ui://4ni413lahd501qp8vg2"/>
+      <relation target="n1_hd50" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n1_hd50" name="title" xy="51,10" size="347,59" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#845744" vAlign="middle" leading="0" ubb="true" vars="true" autoClearText="true" text="这显示2行吧，长度可以改变，宽度&#xA;不变">
+      <gearXY controller="state" pages="1" values="29,10" default="51,10"/>
+    </text>
+  </displayList>
+  <relation target="n3_hd50" sidePair="width-width"/>
+  <transition name="t0">
+    <item time="0" type="Pivot" value="0,0.2"/>
+    <item time="0" type="Alpha" tween="true" startValue="0.09" endValue="1" duration="9" ease="Custom" customEase="2,0,0,0.66,0.075,0.67,0.34,1,0,1,1"/>
+    <item time="0" type="Rotation" tween="true" startValue="9.47" endValue="-0.58" duration="9" ease="Custom" customEase="2,0,0,0.4375,0.31,-0.0075,1.115,1,0,1,1"/>
+    <item time="9" type="Rotation" tween="true" startValue="-0.58" endValue="0" duration="4"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Pivot" value="1,0.48"/>
+    <item time="0" type="Alpha" tween="true" startValue="0.09" endValue="1" duration="9" ease="Custom" customEase="2,0,0,0.66,0.075,0.67,0.34,1,0,1,1"/>
+    <item time="0" type="Rotation" tween="true" startValue="-9.47" endValue="0.58" duration="9" ease="Custom" customEase="2,0,0,0.4375,0.31,-0.0075,1.115,1,0,1,1"/>
+    <item time="9" type="Rotation" tween="true" startValue="0.58" endValue="0" duration="4"/>
+  </transition>
+</component>

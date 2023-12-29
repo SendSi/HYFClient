@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="82,36" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n8_ukvb" name="n8" src="ukvb1ygcg92" fileName="images4/mainhud_progress011.png" xy="5,1" pivot="0.5,0.5" alpha="0.5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <loader id="n6_qy50" name="n6" xy="30,0" pivot="0.5,0.5" size="24,19" rotation="180" url="ui://4ni413la10t6x1ygcfjf" align="center" vAlign="middle">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n7_eh3a" name="n7" src="10t6x1ygcfjf" fileName="images4/mainhud_progress09.png" xy="30,2" pivot="0.5,0.5">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="394,44">
+  <controller name="dirCtrl" pages="0,,1,,2,,3," selected="0">
+    <remark page="0" value="上"/>
+    <remark page="1" value="下"/>
+    <remark page="2" value="左"/>
+    <remark page="3" value="右"/>
+  </controller>
+  <displayList>
+    <loader id="n3_hd50" name="icon" xy="0,-23" size="394,71" alpha="0.9" url="ui://4ni413la88e61ygcg9j" fill="scaleFree">
+      <gearXY controller="dirCtrl" pages="0,1,2,3" values="0,-23|0,-5|0,-5|0,-5"/>
+      <gearSize controller="dirCtrl" pages="0,1,2,3" values="394,71,1,1|394,71,1,1|414,53,1,1|414,53,1,1"/>
+      <gearIcon controller="dirCtrl" pages="0,1,2,3" values="ui://4ni413la88e61ygcg9j|ui://4ni413la88e61ygcg9i|ui://4ni413la88e61ygcg9h|ui://4ni413la88e61ygcg9g"/>
+      <relation target="n1_hd50" sidePair="width-width"/>
+    </loader>
+    <text id="n1_hd50" name="title" xy="41,4" size="316,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#916535" align="center" vAlign="middle" leading="0" ubb="true" vars="true" singleLine="true" autoClearText="true" text="这里显示一行，长度可变！">
+      <gearXY controller="dirCtrl" pages="0,1,2,3" values="41,4|41,4|61,4|44,4"/>
+    </text>
+  </displayList>
+  <relation target="n3_hd50" sidePair="width-width"/>
+</component>

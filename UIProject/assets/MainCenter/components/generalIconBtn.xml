@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="star" pages="0,,1,,2,,3,,4,,5," selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="4"/>
+  <displayList>
+    <loader id="n15_h00f" name="qualityBg" xy="6,6" pivot="0.5,0.5" size="68,68" aspect="true" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearIcon controller="quality" pages="0" values="" default=""/>
+    </loader>
+    <loader id="n12_xyhc" name="starBg" xy="-15,-15" pivot="0.5,0.5" size="110,110" aspect="true" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearIcon controller="star" pages="0,1,2,3,4,5" values="|ui://4557t28kxz10hz9cpk|ui://4557t28kxz10hz9cpl|ui://4557t28kxz10hz9cpm|ui://4557t28kxz10hz9cpn|ui://4557t28kxz10hz9cpo"/>
+    </loader>
+    <component id="n13_xyhc" name="icon" src="oepthz9cp0" fileName="components/general_new/main_teamGeneral.xml" xy="8,10" pivot="0.5,0.5" size="64,62" pkg="2r331opv"/>
+    <component id="n14_xyhc" name="state" src="oepthz9cp8" fileName="components/general_new/main_teamStae.xml" xy="55,51" size="23,23" aspect="true"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

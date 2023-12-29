@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="98,99" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4_i8bs" name="bg_quality" xy="0,0" size="98,98" group="n7_i8bs" url="ui://2r331opv94956" fill="scale"/>
+    <loader id="n5_i8bs" name="icon_prop" xy="1,1" size="96,96" group="n7_i8bs" url="ui://2r331opvm79td2" align="center" vAlign="middle"/>
+    <text id="n8_d4a6" name="title_have_number" xy="29,69" size="66,29" group="n7_i8bs" fontSize="20" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" singleLine="true" text="50"/>
+    <group id="n7_i8bs" name="0_prop" xy="0,0" size="98,98" advanced="true"/>
+  </displayList>
+  <Button/>
+</component>

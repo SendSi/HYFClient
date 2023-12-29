@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="248,34" extention="Slider" designImageOffsetX="-235" designImageOffsetY="-374">
+  <displayList>
+    <image id="n0_cegg" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-5,-4" size="258,42">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_cegg" name="bar" src="svx3hz9d79" fileName="images/images_new/windowBg_new/strip01.png" pkg="2r331opv" xy="0,1" size="248,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_cegg" name="title" xy="106,-37" size="30,32" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#37f7ff" align="center" autoClearText="true" text="10">
+      <relation target="" sidePair="width-width"/>
+    </text>
+    <component id="n3_cegg" name="grip" src="ceggz9con" fileName="components/components_new/map/search/searchSdr_grip.xml" xy="229,-12">
+      <relation target="n1_cegg" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <Slider titleType="value" wholeNumbers="true" changeOnClick="false"/>
+</component>

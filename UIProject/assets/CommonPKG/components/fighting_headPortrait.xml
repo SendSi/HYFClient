@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="89,99" overflow="hidden" mask="n1_q8mh" designImage="ui://4ni413laq8mhf5" designImageOffsetX="-583" designImageOffsetY="-224" designImageLayer="1">
+  <displayList>
+    <loader id="n0_q8mh" name="icon" xy="-5,0" size="100,100" url="ui://4557t28kln1d4x" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <graph id="n1_q8mh" name="mask" xy="3,5" size="91,83" type="regular_polygon" sides="6" startAngle="30">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+</component>

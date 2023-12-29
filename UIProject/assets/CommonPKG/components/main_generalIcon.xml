@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="167,151" pivot="0.5,0.5" extention="Button" designImageOffsetX="-985" designImageOffsetY="-101">
+  <controller name="state" pages="0,,4,,1,,2,,3," selected="0">
+    <remark page="0" value="己方"/>
+    <remark page="1" value="空"/>
+    <remark page="2" value="敌方"/>
+    <remark page="3" value="盟军"/>
+    <remark page="4" value="联盟首领"/>
+  </controller>
+  <displayList>
+    <loader id="n3_xz10" name="bg0" xy="26,13" size="90,101" url="ui://61bunt4fhxd7g3" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <gearDisplay controller="state" pages="4,1,2,3"/>
+      <gearIcon controller="state" pages="0,4,1,2,3" values="ui://61bunt4fhxd7g3|ui://61bunt4fhxd7g6|ui://61bunt4fhxd7g7|ui://61bunt4fhxd7g4|ui://61bunt4fhxd7g5"/>
+    </loader>
+    <loader id="n24_pyuf" name="bg1" xy="38,25" size="90,101" url="ui://61bunt4fhxd7g3" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <gearDisplay controller="state" pages="0"/>
+      <gearIcon controller="state" pages="0,4,1,2,3" values="ui://61bunt4fhxd7g3|ui://61bunt4fhxd7g6|ui://61bunt4fhxd7g7|ui://61bunt4fhxd7g4|ui://61bunt4fhxd7g5"/>
+    </loader>
+    <loader id="n0_xz10" name="bg" xy="25,11" size="116,128" aspect="true" url="ui://61bunt4fsmjfg8" align="center" vAlign="middle" fill="scale" color="#44c846">
+      <gearDisplay controller="state" pages="0"/>
+      <gearColor controller="state" pages="0,4,1,3" values="#44c846|#ff9d54|#f44d4d|#c260ff" default="#0faaff"/>
+      <gearIcon controller="state" pages="0,1,2" values="ui://61bunt4fsmjfg8|ui://61bunt4fsmjfg8|ui://61bunt4fsmjfg8" default="ui://61bunt4fsmjfg8"/>
+    </loader>
+    <loader id="n18_hxd7" name="icon" xy="19,10" size="128,128" aspect="true" url="ui://4557t28ky6f5hz9cp9" align="center" vAlign="middle" fill="scale"/>
+    <component id="n23_gww7" name="armsBtn" src="f3et1qp8ved" fileName="components/components_new/armyBtn.xml" xy="92,72" scale="0.6,0.6" visible="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="t0"/>
+</component>

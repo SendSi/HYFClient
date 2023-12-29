@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="238,282" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="bgColor" pages="0,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11," selected="11"/>
+  <controller name="flagColor" pages="0,,1,,2,,3,,4,,5," selected="0"/>
+  <controller name="bgIcon" pages="7,,0,,1,,2,,3,,4,,5,,6," selected="7"/>
+  <controller name="state" pages="1,,0," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示底座"/>
+  </controller>
+  <displayList>
+    <loader id="n3_nnlh" name="bgBig" xy="0,0" size="238,282" url="ui://tsbe09ddn9phhz9cyj" align="center" vAlign="middle" fill="scale" color="#a42329">
+      <gearColor controller="bgColor" pages="0,1,2,3,4,5,6,7,8,9,10,11" values="#8c441c|#81540e|#27770f|#716809|#12989b|#126076|#2a5385|#303994|#5c2aa0|#7e2399|#a3246f|#a42329"/>
+      <gearIcon controller="bgColor" pages="0,1,2,3,4,5,6,7,8,9,10,11" values="ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj|ui://tsbe09ddn9phhz9cyj"/>
+    </loader>
+    <loader id="n4_nnlh" name="bgSmall" xy="36,55" size="165,177" alpha="0.25" url="ui://tsbe09ddb3sk9cl8" align="center" vAlign="middle" fill="scale" color="#000000">
+      <gearIcon controller="bgIcon" pages="7,0,1,2,3,4,5,6" values="ui://tsbe09ddoif2hz9d4z|ui://tsbe09ddb3sk9cl2|ui://tsbe09ddb3sk9cl3|ui://tsbe09ddb3sk9cl4|ui://tsbe09ddb3sk9cl5|ui://tsbe09ddb3sk9cl6|ui://tsbe09ddb3sk9cl7|ui://tsbe09ddb3sk9cl8"/>
+    </loader>
+    <loader id="n5_nnlh" name="flagIcon" xy="57,93" size="124,124" aspect="true" url="ui://tsbe09ddb3sk9ckf" align="center" vAlign="middle" fill="scale">
+      <gearColor controller="flagColor" pages="0,1,2,3,4,5" values="#ffffff|#ffeebb|#b4ffd0|#98fdff|#c5d1ff|#ffacdd"/>
+    </loader>
+    <loader id="n6_n9ph" name="base_colour" xy="18,397" size="201,89" aspect="true" visible="false" alpha="0.8" url="ui://tsbe09ddn9phhz9cyl" fill="scale" color="#c32828">
+      <gearDisplay controller="state" pages="0"/>
+      <gearColor controller="bgColor" pages="0,1,2,3,4,5,6,7,8,9,10,11" values="#da1c8c|#dc48c2|#902dcf|#532cd2|#1b35ce|#246883|#82feff|#05e600|#d3e600|#e6a800|#e66100|#c32828"/>
+      <gearIcon controller="bgColor" pages="0,1,2,3,4,5,6,7,8,9,10,11" values="ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl|ui://tsbe09ddn9phhz9cyl"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="416,34" extention="ProgressBar" designImageOffsetX="-462" designImageOffsetY="-438" designImageLayer="1">
+  <displayList>
+    <image id="n0_z3y8" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="-5,-4" size="426,42">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_z3y8" name="bar" src="svx3hz9d79" fileName="images/images_new/windowBg_new/strip01.png" pkg="2r331opv" xy="-1,1" size="417,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_z3y8" name="timeLbl" xy="140,6" size="147,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoClearText="true" text="剩余时间:  00:05:36"/>
+    <text id="n4_pu9r" name="progressLbl" xy="142,6" size="143,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoClearText="true" text="采集量: 1000/5000"/>
+  </displayList>
+  <ProgressBar titleType="value"/>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n3_z3y8" tween="true" startValue="0" endValue="1" duration="24"/>
+    <item time="0" type="Alpha" target="n4_pu9r" value="0"/>
+    <item time="96" type="Alpha" target="n3_z3y8" tween="true" startValue="1" endValue="0" duration="24"/>
+    <item time="120" type="Alpha" target="n4_pu9r" tween="true" startValue="0" endValue="1" duration="24"/>
+    <item time="216" type="Alpha" target="n4_pu9r" tween="true" startValue="1" endValue="0" duration="24"/>
+  </transition>
+</component>

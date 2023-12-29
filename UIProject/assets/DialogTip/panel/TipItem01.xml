@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="268,52">
+  <displayList>
+    <image id="n5_ntk5" name="n5" src="ntk51ygcfn0" fileName="images/images_new/windowBg_new/attribute_bg002.png" pkg="2r331opv" xy="0,0"/>
+    <list id="n6_ntk5" name="list" xy="17,54" size="234,366" lineGap="4" defaultItem="ui://utp01xiantk51ygcfi0" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n7_ntk5" name="n7" xy="83,10" pivot="0.5,0.5" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffec9e" align="center" singleLine="true" text="属性变化"/>
+  </displayList>
+  <transition name="moveAlpha"/>
+</component>

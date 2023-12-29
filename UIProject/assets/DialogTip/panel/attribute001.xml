@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="234,37">
+  <displayList>
+    <image id="n3_q1qg" name="bg" src="ntk51ygcfn1" fileName="images/images_new/windowBg_new/attribute_bg001.png" pkg="2r331opv" xy="0,0" pivot="0.5,0.5" size="234,37" alpha="0.5"/>
+    <richtext id="n0_q1qg" name="title" xy="0,4" pivot="0.5,0.5" size="234,29" touchable="false" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" ubb="true" autoSize="none" singleLine="true" autoClearText="true" text="卓越一击概率:[color=#94e957]+2%[/color]">
+      <relation target="" sidePair="center-center"/>
+    </richtext>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Alpha" tween="true" startValue="0" endValue="1" duration="6"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Alpha" tween="true" startValue="1" endValue="0" duration="6"/>
+  </transition>
+</component>

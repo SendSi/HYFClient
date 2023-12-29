@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,6" extention="ProgressBar">
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="黄"/>
+    <remark page="2" value="红"/>
+  </controller>
+  <displayList>
+    <image id="n0_oept" name="n0" src="oepthz9cp2" fileName="images/team/main_bar01.png" xy="0,0" size="50,6">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_d5sh" name="bar" src="oepthz9cp4" fileName="images/team/main_bar03.png" xy="1,1" size="48,4">
+      <gearIcon controller="state" pages="1,2" values="ui://2r331opvoepthz9cp4|ui://2r331opvoepthz9cp1" default="ui://2r331opvoepthz9cp3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

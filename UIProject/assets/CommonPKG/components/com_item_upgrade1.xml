@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="164,172">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <loader id="n8_sd0v" name="buildIcon" xy="15,8" size="134,152" url="ui://2r331opvlwxi1ygcfka" fill="scale"/>
+    <image id="n5_91o9" name="bg" src="dfgw1ygcfmf" fileName="images/images_new/com_change04.png" xy="0,121" size="164,50" color="#1b3c65"/>
+    <richtext id="n0_k6s7" name="title" xy="3,123" size="158,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" autoSize="none" singleLine="true" autoClearText="true" text="农场"/>
+    <richtext id="n1_k6s7" name="title2" xy="3,145" size="158,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" autoSize="none" singleLine="true" autoClearText="true" text="等级上限Lv.2"/>
+    <component id="n6_91o9" name="newbuildBtn" src="k06chz9d3d" fileName="components/components_new/com_btn_tab3.xml" xy="80,15">
+      <gearDisplay controller="state" pages="1"/>
+    </component>
+  </displayList>
+</component>

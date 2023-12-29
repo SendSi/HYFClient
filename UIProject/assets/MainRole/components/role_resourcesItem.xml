@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,40" extention="Button" designImage="ui://4ni413laj3xs9p8" designImageOffsetX="-635" designImageOffsetY="-386" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6_gqih" name="n6" src="bumchz9d7q" fileName="images/images_new/windowBg_new/negative_bg04.png" pkg="2r331opv" xy="5,0" size="192,39" alpha="0.7"/>
+    <loader id="n3_j3xs" name="icon" xy="-1,-4" size="45,45" aspect="true" url="ui://tsbe09ddmz4w1" align="center" vAlign="middle" fill="scale"/>
+    <text id="n4_j3xs" name="title" xy="39,4" size="50,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" autoSize="none" text="木材"/>
+    <text id="n5_j3xs" name="number" xy="83,4" size="106,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" autoSize="none" autoClearText="true" text="12780万"/>
+  </displayList>
+  <Button/>
+</component>

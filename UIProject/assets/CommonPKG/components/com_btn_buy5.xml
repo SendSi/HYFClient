@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="161,62" pivot="0.5,0.5" extention="Button" designImageOffsetX="-912" designImageOffsetY="-369" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_vpos" name="n0" src="c4umz9cna" fileName="images/images_new/com_btn_bg01.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3_vpos" name="icon" xy="36,11" size="34,34" aspect="true" url="ui://tsbe09ddmz4wb" align="center" vAlign="middle" fill="scale">
+      <relation target="n4_vpos" sidePair="middle-middle,right-left"/>
+    </loader>
+    <text id="n4_vpos" name="title" xy="73,11" pivot="0.5,0.5" size="46,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,2" autoClearText="true" text="400">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="132,40" pivot="0.5,0.5" extention="Button" designImageOffsetX="-882" designImageOffsetY="-7" bgColor="#ff0000">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n0_cl1u" name="n0" xy="0,0" size="132,40" alpha="0.2" type="rect" lineSize="4" lineColor="#ff00ff00" fillColor="#ffcccccc">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="transition"/>
+</component>

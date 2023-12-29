@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="136,136" extention="Button" designImageOffsetX="-831" designImageOffsetY="-169">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,normal,4,gray,8,,9," selected="2">
+    <remark page="0" value="已解锁"/>
+    <remark page="1" value="未解锁"/>
+    <remark page="2" value="红点"/>
+    <remark page="3" value="新"/>
+  </controller>
+  <displayList>
+    <image id="n21_s4rw" name="n21" src="f9h91ygcfgh" fileName="images/images_new/windowBg_new/negative_bg18.png" xy="1,1" pivot="0.5,0.5" size="134,134" aspect="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n20_dxyz" name="icon" xy="13,10" size="110,110" aspect="true" url="ui://tsbe09ddnv4khz9di8" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n19_dxyz" name="black" src="dxyz1ygcfmj" fileName="images/images_new/windowBg_new/negative_bg24.png" xy="3,0" alpha="0.7" color="#000000">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+    <image id="n18_gqih" name="n18" src="u6yzhz9cpx" fileName="images/images_new/com_icon_lock.png" xy="83,79" size="38,50" aspect="true">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+    <image id="n9_j3xs" name="n9" src="gqih1ygcfgl" fileName="images/images_new/windowBg_new/new_bg06.png" xy="87,-16" size="84,61" group="n10_j3xs"/>
+    <group id="n10_j3xs" name="stae2" xy="87,-16" size="84,61" advanced="true">
+      <gearDisplay controller="state" pages="9"/>
+    </group>
+    <image id="n15_j3xs" name="n15" src="dix6fj" fileName="images/images_new/com_red_dot.png" xy="88,-5" size="50,50" aspect="true">
+      <gearDisplay controller="state" pages="8"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

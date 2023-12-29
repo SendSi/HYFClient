@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="49,49">
+  <displayList>
+    <loader id="n0_xse5" name="bg_general" xy="0,0" size="49,49" group="n2_xse5" url="ui://2r331opv94956" fill="scale"/>
+    <loader id="n3_ln1d" name="icon_general" xy="1,1" size="47,47" group="n2_xse5" url="ui://7ubcym0w9495s" align="center" vAlign="middle" fill="scale"/>
+    <group id="n2_xse5" name="icongeneral" xy="0,0" size="49,49" advanced="true"/>
+  </displayList>
+</component>

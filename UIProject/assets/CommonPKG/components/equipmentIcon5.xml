@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,112" extention="Button" designImageOffsetX="-846" designImageOffsetY="-462">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="2,,3,,4,,8,,9,,10," selected="0"/>
+  <controller name="state" pages="2,normal,3,get,4,wearing,11,canwear,12,blank" selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="获得途径"/>
+    <remark page="2" value="穿戴中"/>
+    <remark page="3" value="可穿戴"/>
+    <remark page="4" value="未获得"/>
+  </controller>
+  <displayList>
+    <image id="n12_dxcu" name="n12" src="h3jujt" fileName="images/images_new/common_frame_quality_0.png" xy="0,0">
+      <gearDisplay controller="state" pages="12"/>
+    </image>
+    <loader id="n2_ryh2" name="bg" xy="0,0" size="110,112" url="ui://2r331opvitkw1ygcfke" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="2,3,4,11"/>
+      <gearIcon controller="quality" pages="2,3,4,8,10" values="ui://2r331opvitkw1ygcfke|ui://2r331opv94956|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv9495a" default="ui://2r331opv94959"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n3_ryh2" name="icon" xy="-2,2" pivot="0.5,0.5" size="112,112" scale="0.7,0.7" url="ui://45o8gpfbaklwe" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="2,4"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n7_wp0j" name="n7" src="94955" fileName="images/images_new/common_btn_plus.png" xy="24,19" alpha="0.5" grayed="true">
+      <gearDisplay controller="state" pages="11,12"/>
+      <gearXY controller="state" pages="11,12" values="24,23|24,23" default="24,19"/>
+      <gearLook controller="state" pages="3,11" values="1,0,0,0|1,0,0,0" default="0.5,0,1,0"/>
+      <gearColor controller="state" pages="11" values="#ffffff" default="#ffffff"/>
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+    </image>
+    <text id="n11_mmv0" name="lbl" xy="26,75" size="58,26" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#8bff86" strokeColor="#0d4c14" strokeSize="2" shadowColor="#0d4c14" shadowOffset="1,1" autoClearText="true" text="可穿戴">
+      <gearDisplay controller="state" pages="11"/>
+      <relation target="" sidePair="center-center%,bottom-bottom%"/>
+    </text>
+    <image id="n13_bwlb" name="n13" src="poaz1qp8vcr" fileName="images/images_new/bag_label.png" xy="3,4">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

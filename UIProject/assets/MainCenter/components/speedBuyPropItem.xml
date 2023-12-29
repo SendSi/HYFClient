@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="700,150" designImageOffsetX="-316" designImageOffsetY="-197" designImageLayer="1">
+  <displayList>
+    <image id="n0_i8bs" name="n0" src="xjmv1qp8vf8" fileName="images/images_new/com_bg_tips02_mask4.png" pkg="2r331opv" xy="1,0" size="699,148" alpha="0.7">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_i8bs" name="title" xy="134,28" size="403,59" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#94e957" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="5分钟建筑加速X1">
+      <relation target="" sidePair="width-width"/>
+    </text>
+    <text id="n2_i8bs" name="introduceLbl" xy="135,74" size="377,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" autoSize="none" autoClearText="true" text="加速建筑建造或升级时间"/>
+    <richtext id="n4_i8bs" name="price" xy="509,19" size="169,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="图标 4">
+      <relation target="" sidePair="right-right"/>
+    </richtext>
+    <component id="n5_i8bs" name="buyBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="516,59">
+      <relation target="" sidePair="right-right"/>
+      <Button title="购买"/>
+    </component>
+    <component id="n9_lyph" name="propIcon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="11,13" touchable="false"/>
+  </displayList>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="241,30" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n7_ovs4" name="bg" pkg="2r331opv" src="kn29c" fileName="images/common_pg_1.png" xy="0,30" size="241,1">
+      <relation target="" sidePair="width-width,bottom-bottom"/>
+    </image>
+    <loader id="n4_8z41" name="icon" xy="1,0" size="30,30" url="ui://2r331opvm79td1" align="center" vAlign="middle" fill="scale"/>
+    <text id="n5_8z41" name="title" xy="31,0" size="87,30" fontSize="20" color="#ffea98" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="食物"/>
+    <text id="n6_8z41" name="title2" xy="116,0" size="122,30" fontSize="20" color="#ffeed1" align="right" vAlign="middle" leading="0" autoSize="none" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="+100/小时"/>
+  </displayList>
+  <Button/>
+</component>

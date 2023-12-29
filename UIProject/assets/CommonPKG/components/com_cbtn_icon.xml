@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="55,45" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <image id="n3_j4kd" name="icon" src="e2ps1iy5b96" fileName="images/images_new/com_btn_arrow04.png" xy="11,1" pivot="0.5,0.5" aspect="true" rotation="270">
+      <gearLook controller="button" pages="0,1,2,3" values="1,90,0,0|1,270,0,0|1,90,0,0|1,270,0,0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check" downEffect="scale" downEffectValue=".95"/>
+</component>

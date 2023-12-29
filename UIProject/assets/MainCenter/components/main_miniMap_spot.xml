@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="21,21" opaque="false">
+  <controller name="state" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n0_xoe1" name="n0" src="xoe1n6" fileName="images2/spot01.png" xy="-10,-10">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <image id="n1_xoe1" name="n1" src="xoe1n7" fileName="images2/spot02.png" xy="-10,-10">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <graph id="n2_jf52" name="n2" xy="-10,-10" size="21,21" type="rect" lineColor="#ffffffff" fillColor="#00ffffff">
+      <gearDisplay controller="state" pages="2"/>
+    </graph>
+  </displayList>
+</component>

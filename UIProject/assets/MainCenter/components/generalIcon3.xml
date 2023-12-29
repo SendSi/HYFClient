@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,200" extention="Button" designImage="ui://4hio38umoxy0cic" designImageOffsetX="-144" designImageOffsetY="-180" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="reincarnation" pages="0,,1,,2,,3,,4,,7," selected="0"/>
+  <controller name="star" pages="0,,1,,2,,3,,4,,5,,6," selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="0"/>
+  <controller name="troops" pages="0,,1," selected="0"/>
+  <controller name="state" pages="0,,1,,2,,6,,7," selected="0">
+    <remark page="1" value="可升级"/>
+    <remark page="2" value="新获得"/>
+    <remark page="3" value="灰"/>
+    <remark page="4" value="状态"/>
+  </controller>
+  <controller name="empty" pages="0,,1," selected="0"/>
+  <displayList>
+    <loader id="n3_oxy0" name="bg0" xy="40,40" size="120,120" aspect="true" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearDisplay controller="empty" pages="0"/>
+      <gearLook controller="state" pages="6" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="quality" pages="0,1,2,3,4" values="||||"/>
+    </loader>
+    <loader id="n4_oxy0" name="bg" xy="0,0" size="200,200" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearLook controller="state" pages="6" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="reincarnation" pages="0,1,2,3,4,7" values="|ui://4557t28kxz10hz9cpk|ui://4557t28kxz10hz9cpl||ui://4557t28kxz10hz9cpn|ui://4557t28kxz10hz9cpo"/>
+    </loader>
+    <text id="n27_cl07" name="noTroop" xy="61,84" size="76,34" fontSize="24" color="#666666" align="center" autoClearText="true" text="未拥有">
+      <gearDisplay controller="empty" pages="1"/>
+    </text>
+    <component id="n5_oxy0" name="icon" src="hxd7hz9d7c" fileName="components/general_new/circleGeneral.xml" xy="40,40" group="n26_cl07" pkg="2r331opv"/>
+    <loader id="n6_oxy0" name="qualityIcon" xy="20,29" size="160,38" group="n26_cl07" url="ui://4557t28kxz10hz9cpr" align="center" vAlign="middle" fill="scale">
+      <gearLook controller="state" pages="6" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://4557t28kxz10hz9cps|ui://4557t28kxz10hz9cpt|ui://4557t28kxz10hz9cpu|ui://4557t28kxz10hz9cpq" default="ui://4557t28kxz10hz9cpr"/>
+    </loader>
+    <text id="n7_oxy0" name="lv" xy="89,126" pivot="0.5,0.5" size="20,23" group="n26_cl07" font="ui://2r331opvlwft3" fontSize="15" color="#ffffff" align="center" vAlign="middle" strokeColor="#0a4460" strokeSize="2" autoClearText="true" text="20">
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </text>
+    <component id="n8_oxy0" name="star0" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="87,148" size="25,25" group="n15_oxy0" aspect="true" touchable="false" pkg="2r331opv">
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="87,148|72,146|85,147|99,147|86,147|99,145|86,149"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <component id="n9_oxy0" name="star1" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="110,144" size="25,25" group="n15_oxy0" touchable="false" pkg="2r331opv">
+      <gearDisplay controller="star" pages="1,2,3,4,5,6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="110,144|99,146|58,144|73,147|61,142|73,145|64,144"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <component id="n10_oxy0" name="star2" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="111,144" size="25,25" group="n15_oxy0" touchable="false" pkg="2r331opv">
+      <gearDisplay controller="star" pages="2,3,4,5,6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="111,144|110,142|111,144|122,136|112,143|123,137|109,145"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <component id="n11_oxy0" name="star3" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="46,135" size="25,25" group="n15_oxy0" touchable="false" pkg="2r331opv">
+      <gearDisplay controller="star" pages="3,4,5,6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="46,135|45,133|44,134|50,136|39,128|49,137|44,136"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <component id="n12_oxy0" name="star4" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="132,134" size="25,25" group="n15_oxy0" touchable="false" pkg="2r331opv">
+      <gearDisplay controller="star" pages="4,5,6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="132,134|131,132|130,133|130,133|135,129|142,119|129,136"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <component id="n13_oxy0" name="star5" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="33,120" size="25,25" group="n15_oxy0" touchable="false" pkg="2r331opv">
+      <gearDisplay controller="star" pages="5,6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="33,120|32,118|31,119|31,119|32,118|32,119|30,118"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <component id="n14_oxy0" name="star6" src="n16mg3" fileName="components/general_new/general_star_grid.xml" xy="143,119" size="25,25" group="n15_oxy0" touchable="false" pkg="2r331opv">
+      <gearDisplay controller="star" pages="6,7"/>
+      <gearXY controller="star" pages="0,1,2,3,4,5,6" values="143,119|142,117|141,118|141,118|142,117|142,116|142,118"/>
+      <gearLook controller="state" pages="6" values="1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <group id="n15_oxy0" name="n15" xy="32,117" size="135,54" group="n26_cl07"/>
+    <image id="n23_oxy0" name="n23" src="yhldz9coo" fileName="images/images_new/com_select_01.png" xy="1,2" size="197,197" group="n26_cl07" pkg="2r331opv">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <image id="n16_oxy0" name="n16" src="r9f638" fileName="images/images_new/bg_chat_09.png" xy="27,80" pivot="0.5,0.5" size="146,41" group="n18_oxy0" alpha="0.9" pkg="2r331opv"/>
+    <text id="n17_oxy0" name="troopTitle" xy="66,86" pivot="0.5,0.5" size="68,26" group="n18_oxy0" fontSize="18" color="#fff959" align="center" vAlign="middle" letterSpacing="-1" autoClearText="true" text="Troops 1"/>
+    <group id="n18_oxy0" name="n18" xy="27,80" size="146,41" group="n26_cl07" advanced="true">
+      <gearDisplay controller="troops" pages="1"/>
+    </group>
+    <image id="n19_oxy0" name="n19" src="aibb2e" fileName="images/images_new/common_arrow_4.png" xy="29,30" size="41,41" group="n26_cl07" aspect="true" pkg="2r331opv">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <image id="n20_oxy0" name="n20" src="oxy0hz9cze" fileName="images/images_new/hero_bg05.png" xy="19,29" size="55,48" group="n22_oxy0" aspect="true" pkg="2r331opv"/>
+    <text id="n21_oxy0" name="newTitle" xy="27,37" size="37,25" group="n22_oxy0" fontSize="17" color="#ffffff" singleLine="true" autoClearText="true" text="New"/>
+    <group id="n22_oxy0" name="n22" xy="19,29" size="55,48" group="n26_cl07" advanced="true">
+      <gearDisplay controller="state" pages="2"/>
+    </group>
+    <component id="n24_d8di" name="troopState" src="oepthz9cp8" fileName="components/general_new/main_teamStae.xml" xy="31,38" group="n26_cl07" scale="1.5,1.5">
+      <gearDisplay controller="state" pages="7"/>
+    </component>
+    <text id="n25_q7xg" name="power" xy="30,165" size="137,34" group="n26_cl07" fontSize="24" color="#43f0ff" align="center" autoClearText="true" text="战力:200000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n26_cl07" name="n26" xy="1,2" size="197,197" advanced="true">
+      <gearDisplay controller="empty" pages="0"/>
+    </group>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="XY" target="n19_oxy0" tween="true" startValue="29,30" endValue="29,24" duration="12" repeat="-1" yoyo="true"/>
+  </transition>
+</component>

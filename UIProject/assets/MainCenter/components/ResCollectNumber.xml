@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,36" pivot="0.5,0.5" anchor="true" opaque="false">
+  <displayList>
+    <text id="n0_nnv4" name="n0" xy="0,0" size="120,36" fontSize="22" color="#ffe382" align="center" vAlign="middle" autoSize="none" strokeColor="#482c20" autoClearText="true" text="粮食 +50"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n0_nnv4" tween="true" startValue="0.2" endValue="1" duration="7" ease="Quad.In"/>
+    <item time="0" type="XY" target="n0_nnv4" tween="true" startValue="0,0" endValue="0,-40" duration="7" ease="Cubic.In"/>
+    <item time="31" type="Alpha" target="n0_nnv4" tween="true" startValue="1" endValue="0" duration="9"/>
+    <item time="31" type="XY" target="n0_nnv4" tween="true" startValue="0,-56.198" endValue="0,-100" duration="9"/>
+  </transition>
+</component>

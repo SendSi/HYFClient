@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="131,43" pivot="0.5,0.5" extention="Button" designImageOffsetX="-149" designImageOffsetY="-100">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1_vqdv" name="n1" src="f9h91ygcfgv" fileName="images/chief/boss_bg01.png" xy="2,2" size="127,39">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n5_b2gg" name="title" xy="27,8" pivot="0.5,0.5" size="76,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#b16d16" autoSize="none" autoClearText="true" text="个人首领">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

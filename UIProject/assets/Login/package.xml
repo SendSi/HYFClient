@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="byy9k3gh">
+  <resources>
+    <image id="7oiz6" name="land_role.png" path="/images/" exported="true"/>
+    <image id="7oiz7" name="btn_bg_accountnumber.png" path="/images/" exported="true"/>
+    <image id="7oiz9" name="btn_bg_notice.png" path="/images/" exported="true"/>
+    <image id="7oiza" name="btn_bg_sweep.png" path="/images/" exported="true"/>
+    <image id="7oizb" name="btn_land.png" path="/images/" exported="true" scale="9grid" scale9grid="32,19,272,38"/>
+    <component id="7oize" name="LoginMainView.xml" path="/panel/" exported="true"/>
+    <component id="7oizh" name="interactive.xml" path="/components/" exported="true"/>
+    <component id="7oizi" name="ServerListDetailView.xml" path="/panel/" exported="true"/>
+    <component id="7oizj" name="paging.xml" path="/components/" exported="true"/>
+    <component id="7oizm" name="list_clothes_01.xml" path="/components/" exported="true"/>
+    <component id="7oizn" name="list_clothes_02.xml" path="/components/" exported="true"/>
+    <component id="7oizo" name="list_clothes_03.xml" path="/components/" exported="true"/>
+    <component id="tc38q" name="list_clothes_04.xml" path="/components/" exported="true"/>
+    <component id="tc38r" name="fold.xml" path="/components/" exported="true"/>
+    <component id="bwazs" name="list_clothes_00.xml" path="/components/" exported="true"/>
+    <component id="efn9y" name="title_notice.xml" path="/components/" exported="true"/>
+    <component id="q8mhz" name="clothes_btn_02.xml" path="/components/" exported="true"/>
+    <component id="n7te11" name="noticeItem.xml" path="/components/" exported="true"/>
+    <component id="njwj13" name="list_clothes_05.xml" path="/components/" exported="true"/>
+    <component id="p78115" name="button_game_start.xml" path="/components/" exported="true"/>
+    <image id="p78116" name="land_bg02.png" path="/images/" exported="true" scale="9grid" scale9grid="203,0,9,57"/>
+    <component id="p78117" name="title_btn01.xml" path="/components/" exported="true"/>
+    <image id="p78118" name="land_bg10.png" path="/images/" exported="true"/>
+    <image id="p78119" name="land_bg03.png" path="/images/" exported="true"/>
+    <image id="p7811a" name="land_bg04.png" path="/images/" exported="true"/>
+    <component id="p7811d" name="clothes_btn_01.xml" path="/components/" exported="true"/>
+    <component id="p7811e" name="clothes_btn.xml" path="/components/" exported="true"/>
+    <image id="p7811f" name="land_bg05.png" path="/images/" exported="true" scale="9grid" scale9grid="583,12,100,26"/>
+    <image id="p7811j" name="land_bg08.png" path="/images/" exported="true"/>
+    <component id="p7811n" name="head01.xml" path="/components/" exported="true"/>
+    <component id="p7811r" name="btn_choose.xml" path="/components/" exported="true"/>
+    <image id="p7811s" name="land_bg06.png" path="/images/" exported="true"/>
+    <component id="gxxt1t" name="tab01.xml" path="/components/" exported="true"/>
+    <image id="gxxt1u" name="land_bg07.png" path="/images/" exported="true"/>
+    <image id="gxxt1v" name="land_bg09.png" path="/images/" exported="true"/>
+    <image id="g6y71w" name="gender_02.png" path="/images/" exported="true"/>
+    <image id="g6y71x" name="gender_01.png" path="/images/" exported="true"/>
+    <component id="g6y71y" name="gender.xml" path="/components/" exported="true"/>
+    <image id="g6y71z" name="btn_dice.png" path="/images/" exported="true"/>
+    <component id="g6y720" name="screen.xml" path="/components/" exported="true"/>
+    <component id="g6y721" name="tab_02.xml" path="/components/" exported="true"/>
+    <component id="g6y72a" name="plate01.xml" path="/components/" exported="true"/>
+    <component id="g6y72b" name="plate02.xml" path="/components/" exported="true"/>
+    <component id="g6y72c" name="plate03.xml" path="/components/" exported="true"/>
+    <component id="g6y72d" name="plate04.xml" path="/components/" exported="true"/>
+    <image id="c92h2e" name="com_bg_wall05.png" path="/images/" exported="true" scale="9grid" scale9grid="23,22,4,6"/>
+    <image id="c92h2f" name="com_bg_wall04.png" path="/images/" exported="true" scale="9grid" scale9grid="8,8,9,5"/>
+    <image id="c92h2g" name="bg04.png" path="/images/" exported="true"/>
+    <image id="c92h2k" name="bg03.jpg.png" path="/images/" exported="true"/>
+    <component id="c92h2n" name="btn_enter.xml" path="/components/" exported="true"/>
+    <image id="usrj2o" name="com_btn_01.png" path="/images/" exported="true"/>
+    <image id="usrj2p" name="com_btn_02.png" path="/images/" exported="true"/>
+    <component id="v4de2q" name="start.xml" path="/components/" exported="true"/>
+    <component id="v4de34" name="GameNoticeView.xml" path="/panel/" exported="true"/>
+    <image id="mpc835" name="bg.png" path="/images/" exported="true"/>
+    <image id="mpc836" name="btn_bg_service.png" path="/images/" exported="true"/>
+    <image id="mpc837" name="land_bg11.png" path="/images/" exported="true"/>
+    <image id="mpc838" name="land_bg12.png" path="/images/" exported="true"/>
+    <image id="nfva3b" name="icon_001.png" path="/images/" exported="true"/>
+    <image id="nfva3c" name="icon_002.png" path="/images/" exported="true"/>
+    <image id="nfva3h" name="land_bg01.png" path="/images/" exported="true"/>
+    <component id="y65p5k" name="label_btn1.xml" path="/components/"/>
+    <image id="b9bj5l" name="land_bg.png" path="/images/" exported="true"/>
+    <image id="hgjr5n" name="btn_enter.png" path="/images/" exported="true"/>
+    <component id="x5vt5o" name="intoBtn.xml" path="/components/"/>
+    <image id="qg415p" name="btn_bg_notice16.png" path="/images/" exported="true"/>
+    <component id="qg411ygcg9q" name="ServerListRemoteView.xml" path="/panel/" exported="true"/>
+    <image id="fs541ygcg9r" name="btn_bg_notice12.png" path="/images/" exported="true"/>
+    <image id="fs541ygcg9t" name="btn_bg_notice8.png" path="/images/" exported="true"/>
+    <image id="cale1ygcg9v" name="land_icon1.png" path="/images/" exported="true"/>
+    <image id="cale1ygcg9w" name="land_bg010.png" path="/images/" exported="true" scale="9grid" scale9grid="28,8,76,16"/>
+    <component id="cale1ygcg9x" name="landItem1.xml" path="/components/" exported="true"/>
+    <component id="a9my1ygcg9y" name="GameAgeView.xml" path="/panel/" exported="true"/>
+    <component id="a9my1ygcg9z" name="title_notice1.xml" path="/components/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

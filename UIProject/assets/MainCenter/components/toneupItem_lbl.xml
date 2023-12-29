@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="911,34" designImageOffsetX="-205" designImageOffsetY="-476">
+  <controller name="line" pages="0,,1," selected="0">
+    <remark page="0" value="无"/>
+    <remark page="1" value="有"/>
+  </controller>
+  <displayList>
+    <text id="n8_f6no" name="title" xy="60,3" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" autoClearText="true" text="建造能力"/>
+    <text id="n9_f6no" name="num" xy="830,3" pivot="1,0" size="47,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#599e27" singleLine="true" autoClearText="true" text="+0%&#xA;">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <graph id="n10_f6no" name="n10" xy="58,30" pivot="0.5,0.5" size="821,2" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ff365454">
+      <gearDisplay controller="line" pages="1"/>
+    </graph>
+  </displayList>
+</component>

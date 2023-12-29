@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="10,10" pivot="0.5,0.5">
+  <displayList>
+    <graph id="n1_nlxa" name="n1" xy="0,1" size="10,5" type="polygon" fillColor="#4cff3333" points="0,0,10,-2.5,10,2.5"/>
+    <component id="n0_rdcq" name="n0" src="ex0khz9cu4" fileName="panel/panel_new/map/main_troops_board.xml" xy="0,0" pivot="0.5,1.81" anchor="true" size="80,73" scale="1.4,1.4"/>
+  </displayList>
+</component>

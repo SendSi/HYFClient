@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="131,42" pivot="0.5,0.5" anchor="true" opaque="false">
+  <controller name="colour" pages="0,hurt_red,1,reply_green" selected="1"/>
+  <displayList>
+    <text id="n0_nnv4" name="n0" xy="0,0" size="131,42" fontSize="30" color="#74f766" align="center" vAlign="middle" strokeColor="#1d1c1c" autoClearText="true" text="+-455000">
+      <gearColor controller="colour" pages="0,1" values="#ff4d4d,#1d1c1c|#74f766,#1d1c1c"/>
+    </text>
+  </displayList>
+  <relation target="n0_nnv4" sidePair="width-width,height-height"/>
+  <transition name="t1">
+    <item time="0" type="Pivot" target="n0_nnv4" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n0_nnv4" tween="true" startValue="0,0" endValue="1,1" duration="4"/>
+    <item time="4" type="Pivot" target="n0_nnv4" value="0.5,0.5"/>
+    <item time="8" type="Alpha" target="n0_nnv4" tween="true" startValue="1" endValue="0" duration="4"/>
+    <item time="8" type="XY" target="n0_nnv4" tween="true" startValue="0,0" endValue="0,-50" duration="4"/>
+  </transition>
+</component>

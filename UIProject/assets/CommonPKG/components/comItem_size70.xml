@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="84,89" extention="Button" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="绿"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫"/>
+    <remark page="4" value="金"/>
+    <remark page="5" value="红"/>
+  </controller>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="普通道具显示"/>
+    <remark page="1" value="个人首领显示"/>
+  </controller>
+  <displayList>
+    <loader id="n23_nq4j" name="bgProp" xy="7,6" size="70,70" group="n32_grws" aspect="true" url="ui://2r331opvh3jujt" fill="scale" shrinkOnly="true">
+      <gearIcon controller="quality" pages="0,2,3,4,5" values="ui://2r331opvh3jujt|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv94959|ui://2r331opv9495a" default="ui://2r331opv94956"/>
+    </loader>
+    <loader id="n13_l9d2" name="iconProp" xy="18,17" size="48,48" group="n32_grws" aspect="true"   align="center" vAlign="middle" fill="scale" shrinkOnly="true"/>
+    <group id="n32_grws" name="0_prop" xy="7,6" size="70,70" advanced="true"/>
+    <image id="n40_9232" name="n40" src="spsrz9ckd" fileName="images/images_new/common_select_08.png" xy="-12,-12" size="118,118" aspect="true">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n12_d9gi" name="hadNumProp" xy="13,50" size="61,26" visible="false" font="ui://2r331opvlwft2" fontSize="18" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" singleLine="true" text="50"/>
+    <text id="n46_rq2j" name="name" xy="-3,66" size="92,26" visible="false" font="ui://2r331opvlwft2" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="道具名称">
+      <relation target="n23_nq4j" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <image id="n47_s9vk" name="bg" src="tx7rl" fileName="images/activity_bg07.png" pkg="sinorujt" xy="13,54" size="58,21" group="n49_s9vk"/>
+    <text id="n48_s9vk" name="star" xy="12,50" size="62,24" group="n49_s9vk" font="ui://2r331opvlwft2" fontSize="13" color="#fff956" align="center" vAlign="middle" letterSpacing="-1" autoSize="none" singleLine="true" autoClearText="true" text="First 3star">
+      <relation target="n23_nq4j" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <group id="n49_s9vk" name="n49" xy="12,50" size="62,25" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+    </group>
+  </displayList>
+  <Button/>
+  <relation target="n32_grws" sidePair="width-width,height-height"/>
+</component>

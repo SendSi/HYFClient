@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="254,377">
+  <displayList>
+    <image id="n0_qok1" name="n0" src="ukvb1ygcg93" fileName="images4/mainhud_progress012.png" xy="0,0" size="254,377" alpha="0.8" flip="both">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n10_pc5k" name="n10" xy="2,103" size="250,30" alpha="0.3" type="rect" lineSize="0" fillColor="#ff000000"/>
+    <list id="n2_qok1" name="list_reward" xy="21,154" size="346,348" scale="0.6,0.6" layout="flow_hz" overflow="scroll" lineGap="-26" colGap="-5" lineItemCount="3" defaultItem="ui://2r331opvj842hz9cyi" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n3_qok1" name="rewardLbl" xy="24,102" size="205,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffe076" align="center" autoSize="none" singleLine="true" text="奖励预览"/>
+    <text id="n4_qok1" name="conditionLbl" xy="23,131" pivot="0.5,0.5" size="207,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ff757b" align="center" ubb="true" autoSize="none" singleLine="true" text="[color=#ffffff]消灭:[/color] 燃烧军团"/>
+    <text id="n5_qok1" name="conditionRlbl" xy="23,56" size="207,46" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" leading="0" ubb="true" autoSize="none" text="Kill the target in[color=#6add65] 00:20:15 [/color]with a [color=#6add65]200%[/color] drop rate"/>
+    <image id="n8_qok1" name="Star2" src="cxixz9cmd" fileName="images/images_new/stars02.png" pkg="2r331opv" xy="76,24" pivot="0.5,0.5" size="39,39" aspect="true"/>
+    <image id="n9_qok1" name="Star3" src="cxixz9cmd" fileName="images/images_new/stars02.png" pkg="2r331opv" xy="137,24" pivot="0.5,0.5" size="39,39" aspect="true"/>
+    <image id="n7_qok1" name="Star1" src="cxixz9cmd" fileName="images/images_new/stars02.png" pkg="2r331opv" xy="102,9" pivot="0.5,0.5" size="48,48" aspect="true"/>
+  </displayList>
+</component>

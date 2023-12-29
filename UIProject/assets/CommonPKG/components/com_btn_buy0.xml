@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="161,62" pivot="0.5,0.5" extention="Button" designImageOffsetX="-912" designImageOffsetY="-369" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n5_e8ot" name="bg" xy="0,0" size="161,62" url="ui://2r331opvc4umz9cna" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n2_vpos" name="title" xy="0,11" pivot="0.5,0.5" size="161,36" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,2" singleLine="true" autoClearText="true" text="购买并使用">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

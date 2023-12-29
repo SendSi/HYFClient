@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="216,396" opaque="false">
+  <controller name="rightTeam2" pages="0,,1," selected="0">
+    <remark page="0" value="显"/>
+    <remark page="1" value="隐"/>
+  </controller>
+  <displayList>
+    <component id="n114_ssbd" name="team" src="le3m1qp8vhq" fileName="components/main_team_right.xml" xy="0,0">
+      <gearXY controller="rightTeam2" pages="0,1" values="0,0,0,0|257,0,1.004,0" tween="true" positionsInPercent="true"/>
+    </component>
+  </displayList>
+  <relation target="n114_ssbd" sidePair=""/>
+</component>

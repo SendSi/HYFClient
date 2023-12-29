@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="76,76" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="newRed" pages="0,,1," selected="0"/>
+  <controller name="text" pages="0,,1," selected="0">
+    <remark page="0" value="显示"/>
+    <remark page="1" value="不显示"/>
+  </controller>
+  <displayList>
+    <image id="n9_mlhy" name="n9" src="mlhy1ygcg8k" fileName="images/bubble_bg.png" xy="2,2"/>
+    <loader id="n3_j4kd" name="icon" xy="5,5" pivot="0.5,0.5" size="66,66" aspect="true" scale="1.2,1.2" align="center" vAlign="middle" fill="scale"/>
+    <text id="n4_ts2v" name="title" xy="4,45" size="65,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="right" vAlign="middle" autoSize="none" strokeColor="#000000" text="11">
+      <gearDisplay controller="text" pages="0"/>
+    </text>
+    <image id="n8_ilfj" name="n8" src="dix6fj" fileName="images/images_new/com_red_dot.png" xy="48,6" pivot="0.5,0.5" size="25,25" aspect="true">
+      <gearDisplay controller="newRed" pages="1"/>
+      <relation target="n3_j4kd" sidePair="right-right,top-top"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0" autoPlayRepeat="-1">
+    <item time="6" type="Shake" target="n3_j4kd" value="3,0.4"/>
+  </transition>
+  <transition name="boxani">
+    <item time="0" type="Rotation" target="n3_j4kd" tween="true" startValue="0" endValue="8" duration="2"/>
+    <item time="2" type="Rotation" target="n3_j4kd" tween="true" startValue="8" endValue="-8" duration="2"/>
+    <item time="4" type="Rotation" target="n3_j4kd" tween="true" startValue="-8" endValue="0" duration="2"/>
+    <item time="6" type="Rotation" target="n3_j4kd" tween="true" startValue="0" endValue="5" duration="2"/>
+    <item time="8" type="Rotation" target="n3_j4kd" tween="true" startValue="5" endValue="-5" duration="2"/>
+    <item time="10" type="Rotation" target="n3_j4kd" tween="true" startValue="-5" endValue="0" duration="2"/>
+    <item time="12" type="Size" target="n3_j4kd" tween="true" startValue="66,66" endValue="80,80" duration="6"/>
+    <item time="18" type="Size" target="n3_j4kd" tween="true" startValue="80,80" endValue="66,66" duration="7"/>
+    <item time="25" type="Size" target="n3_j4kd" tween="true" startValue="66,66" endValue="80,80" duration="4"/>
+    <item time="29" type="Size" target="n3_j4kd" tween="true" startValue="80,80" endValue="66,66" duration="3"/>
+  </transition>
+</component>

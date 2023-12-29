@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,420">
+  <displayList>
+    <image id="n0_bik7" name="n0" src="c4umz9cnk" fileName="images/images_new/com_bg_popup.png" xy="0,0" size="800,420">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_bik7" name="n1" src="o6syhz9cyj" fileName="images/images_new/com_bg_tips05_framePattern.png" xy="263,-28">
+      <relation target="" sidePair="center-center"/>
+    </image>
+    <image id="n2_bik7" name="n2" src="jwslhz9cyc" fileName="images/images_new/com_bg_tips05_c.png" xy="224,60">
+      <relation target="" sidePair="center-center"/>
+    </image>
+  </displayList>
+</component>

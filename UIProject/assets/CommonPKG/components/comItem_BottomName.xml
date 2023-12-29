@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,140" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="qualityCtrl" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="绿"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫"/>
+    <remark page="4" value="金"/>
+    <remark page="5" value="红"/>
+  </controller>
+  <displayList>
+    <component id="n74_r52r" name="comItem" src="j842hz9cyi" fileName="components/components_new/comItem.xml" xy="0,0"/>
+    <text id="n73_jo5i" name="itemName" xy="-30,110" pivot="0.5,0.5" size="180,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" autoClearText="true" text="这是最多打八个字">
+      <gearColor controller="qualityCtrl" pages="1,2,3,4,5" values="#94e957,#000000|#74d0ff,#000000|#db60ff,#000000|#ff9b42,#000000|#ff4343,#000000" default="#ffffff,#000000"/>
+    </text>
+  </displayList>
+</component>

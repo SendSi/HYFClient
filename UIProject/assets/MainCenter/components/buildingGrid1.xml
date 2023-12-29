@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="297,378">
+  <controller name="page" pages="0,unlocked,1,lock" selected="0"/>
+  <controller name="cost" pages="0,,1," selected="0">
+    <remark page="0" value="消耗"/>
+    <remark page="1" value="免费"/>
+  </controller>
+  <displayList>
+    <image id="n31_fz63" name="n31" src="fz63hz9crt" fileName="images/main/build_bottom04.png" xy="0,25" group="n19_m79t" color="#999999"/>
+    <loader id="n17_m79t" name="icon2" xy="48,316" size="44,34" group="n19_m79t" align="center" vAlign="middle" fill="scale"/>
+    <text id="n18_m79t" name="lblCondition" xy="89,315" size="121,34" group="n19_m79t" font="ui://2r331opvno3vhz9d63" fontSize="19" color="#b3b3b3" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="市政厅[color=#ef6d6d]6级[/color]"/>
+    <text id="n20_h7e5" name="maxNum" xy="36,318" pivot="0.5,0.5" size="227,28" group="n19_m79t" font="ui://2r331opvno3vhz9d63" fontSize="19" color="#ef6d6d" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="市政厅[color=#ef6d6d]6级[/color]"/>
+    <group id="n19_m79t" name="lock" xy="0,25" size="297,352" group="n33_pvy9" advanced="true">
+      <gearDisplay controller="page" pages="1"/>
+    </group>
+    <image id="n30_fz63" name="n30" src="fz63hz9crt" fileName="images/main/build_bottom04.png" xy="0,25" group="n14_m79t"/>
+    <image id="n32_8su0" name="n32" src="bumchz9d7q" fileName="images/images_new/windowBg_new/negative_bg04.png" pkg="2r331opv" xy="29,245" size="239,40" group="n14_m79t" alpha="0.7"/>
+    <richtext id="n8_m79t" name="rlblConsume" xy="103,252" pivot="0.5,0.5" size="90,29" group="n14_m79t" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="center" vAlign="middle" letterSpacing="-1" autoSize="none" autoClearText="true" text="免费">
+      <gearDisplay controller="cost" pages="1"/>
+    </richtext>
+    <list id="n35_fawx" name="consumeList" xy="32,250" size="308,44" group="n14_m79t" scale="0.75,0.75" layout="row" defaultItem="ui://2r331opvjs41hz9cw1" align="center" autoClearItems="true">
+      <gearDisplay controller="cost" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n9_m79t" name="lbl00" xy="22,305" size="81,29" group="n14_m79t" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#82c6ff" letterSpacing="-1" text="建造时间"/>
+    <text id="n11_m79t" name="lbl00Time" xy="22,329" size="107,29" group="n14_m79t" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" autoSize="none" autoClearText="true" text="5/10"/>
+    <text id="n10_m79t" name="lbl02" xy="217,305" size="62,29" group="n14_m79t" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#82c6ff" letterSpacing="-1" text="已建造"/>
+    <text id="n12_m79t" name="lbl02Number" xy="169,329" size="108,29" group="n14_m79t" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" autoSize="none" autoClearText="true" text="3/5"/>
+    <group id="n14_m79t" name="unlocked" xy="0,25" size="340,352" group="n33_pvy9" advanced="true">
+      <gearDisplay controller="page" pages="0"/>
+    </group>
+    <loader id="n3_m79t" name="icon" xy="29,-26" pivot="0.5,0.5" size="238,230" group="n33_pvy9" url="ui://2r331opvlwxi1ygcfkb" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearLook controller="page" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+    </loader>
+    <text id="n5_m79t" name="title" xy="18,176" pivot="0.5,0.5" size="260,39" group="n33_pvy9" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="农场">
+      <gearColor controller="page" pages="0,1" values="#50382e,#000000|#50382e,#000000"/>
+    </text>
+    <text id="n6_m79t" name="titleTxt" xy="24,206" size="250,26" group="n33_pvy9" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" align="center" autoSize="none" autoClearText="true" text="通过家畜和农作物来供给食物">
+      <gearLook controller="page" pages="1" values="1,0,0,0" default="1,0,0,0"/>
+      <gearColor controller="page" pages="0,1" values="#97794f,#000000|#674e2b,#000000"/>
+    </text>
+    <component id="n21_u70h" name="Effect_ui_JianZhuShengJi_ZhiYin" src="is8cg8" fileName="components/EffectRoot.xml" pkg="2r331opv" xy="123,173" group="n33_pvy9" touchable="false"/>
+    <group id="n33_pvy9" name="liebiao" xy="0,-26" size="340,403" advanced="true"/>
+  </displayList>
+</component>

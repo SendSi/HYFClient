@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="390,398">
+  <displayList>
+    <image id="n6_i52u" name="arrow" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="373,194" pivot="0.5,0.5" anchor="true" rotation="-90"/>
+    <image id="n0_i52u" name="n0" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="3,4" size="357,389">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_i52u" name="n1" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="22,77" size="319,107" alpha="0.3" color="#97794f">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n7_rb01" name="n7" src="za6y1ygcgmn" fileName="images/images_new/windowBg_new/welfare_btn_bg23.png" pkg="2r331opv" xy="56,26" pivot="0.5,0.5" size="254,39" visible="false" alpha="0.9"/>
+    <text id="n2_i52u" name="title" xy="34,26" pivot="0.5,0.5" size="294,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#845744" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="部落村庄"/>
+    <text id="n3_i52u" name="describeLbl" xy="33,85" size="296,92" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" align="center" vAlign="middle" leading="-2" autoSize="none" autoClearText="true" text="测试文字的见进阶武将沃尔我沃尔无人沃尔"/>
+    <list id="n4_i52u" name="reward_list" xy="-28,182" pivot="0.5,0.5" size="420,119" scale="0.8,0.8" layout="row" overflow="scroll" scroll="horizontal" colGap="6" defaultItem="ui://2r331opvj842hz9cyi" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n5_i52u" name="fantasticBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="103,306">
+      <Button title="好极了"/>
+    </component>
+  </displayList>
+</component>

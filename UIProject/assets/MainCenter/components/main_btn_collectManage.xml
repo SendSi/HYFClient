@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,52" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1_ukvb" name="n1" src="ukvb1ygcg94" fileName="images4/mainhud_progress013.png" xy="6,6" pivot="0.5,0.5" pkg="2r331opv">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <loader id="n0_j4kd" name="icon" xy="6,6" pivot="0.5,0.5" size="39,39" url="ui://2r331opvg4fb1ygcfod" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

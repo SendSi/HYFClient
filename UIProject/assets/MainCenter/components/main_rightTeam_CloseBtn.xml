@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="31,51" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <loader id="n3_oept" name="icon" xy="0,0" size="31,51" url="ui://4ni413lapqav1qp8vdz">
+      <gearIcon controller="button" pages="0,1,2,3" values="ui://4ni413lapqav1qp8vdy|ui://4ni413lapqav1qp8vdz|ui://4ni413lapqav1qp8vdy|ui://4ni413lapqav1qp8vdz"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>

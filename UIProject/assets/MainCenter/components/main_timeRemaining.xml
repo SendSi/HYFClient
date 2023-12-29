@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="266,60">
+  <displayList>
+    <image id="n0_b6o0" name="n0" pkg="2r331opv" src="g01ie" fileName="images/bg_chat_2.png" xy="-267,-1" size="266,60" group="n2_b6o0" flip="hz">
+      <relation target="n1_b6o0" sidePair="leftext-left"/>
+    </image>
+    <text id="n1_b6o0" name="remainingTime" xy="-244,16" pivot="1,0" size="222,29" group="n2_b6o0" fontSize="20" color="#ffffff" align="right" ubb="true" vars="true" strokeColor="#000000" autoClearText="true" text="队列剩余时间：04:11:55"/>
+    <group id="n2_b6o0" name="time" xy="-267,-1" size="266,60" advanced="true"/>
+  </displayList>
+  <transition name="time" autoPlay="true">
+    <item time="0" type="Alpha" target="n2_b6o0" value="0"/>
+    <item time="1" type="Alpha" target="n2_b6o0" tween="true" startValue="0.3" endValue="1" duration="16"/>
+    <item time="30" type="Alpha" target="n2_b6o0" tween="true" startValue="1" endValue="0" duration="30"/>
+  </transition>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,120" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <graph id="n1_aol7" name="EffectHandle" xy="60,60" size="1,1" visible="false" touchable="false" type="rect"/>
+    <loader id="n0_aol7" name="icon" xy="0,0" size="120,120" touchable="false"/>
+  </displayList>
+</component>

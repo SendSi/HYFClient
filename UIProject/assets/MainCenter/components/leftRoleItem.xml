@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="234,34">
+  <controller name="stat" pages="0,,1," selected="1">
+    <remark page="0" value="他人"/>
+    <remark page="1" value="自己"/>
+  </controller>
+  <displayList>
+    <image id="n4_gr02" name="n4" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="234,34" alpha="0.7"/>
+    <component id="n7_w2ss" name="barh_2" src="happ1qp8vhd" fileName="components/components_new/Personal_leader/bar_10.xml" xy="0,1" size="234,32" alpha="0.5">
+      <gearDisplay controller="stat" pages="1"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n8_w2ss" name="bar_2" src="happ1qp8vhd" fileName="components/components_new/Personal_leader/bar_10.xml" xy="0,1" size="234,32">
+      <gearDisplay controller="stat" pages="1"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n9_w2ss" name="barh_1" src="happ1qp8vhb" fileName="components/components_new/Personal_leader/bar_08.xml" xy="0,1" size="234,32" alpha="0.5">
+      <gearDisplay controller="stat" pages="0"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n10_w2ss" name="bar_1" src="happ1qp8vhb" fileName="components/components_new/Personal_leader/bar_08.xml" xy="0,1" size="234,32">
+      <gearDisplay controller="stat" pages="0"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n0_pu9r" name="rankNum" xy="2,5" size="28,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffe765" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="10."/>
+    <text id="n1_pu9r" name="nameLbl" xy="26,5" size="100,26" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffe765" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="玩家名字六字"/>
+    <text id="n2_pu9r" name="harmLbl" xy="154,4" size="75,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#c8c8c8" align="right" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="1000.1K"/>
+    <image id="n11_inp0" name="n11" src="gr021ygcfgz" fileName="images4/activity_icon_attack.png" xy="202,3" visible="false"/>
+  </displayList>
+</component>

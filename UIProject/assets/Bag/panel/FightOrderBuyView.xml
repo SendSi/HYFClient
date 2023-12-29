@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750"  initName="frame" designImage="ui://b7676vbqe9mlkc">
+  <displayList>
+    <component id="n39_gp9p" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n31_gp9p" name="n31" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n34_gp9p"/>
+    <text id="n29_gp9p" name="title" xy="384,70" pivot="0.5,0.5" size="565,46" group="n34_gp9p" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" autoClearText="true" text="购买攻城令"/>
+    <list id="n24_pz0v" name="list" xy="222,225" pivot="1,1" size="900,411" group="n34_gp9p" overflow="scroll" lineGap="3" defaultItem="ui://b7676vbqpf4ml8" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n40_gp9p" name="n40" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="345,157" size="654,57" group="n43_ixho"/>
+    <component id="n42_ixho" name="Pbr" src="ixhoko" fileName="components/warePbr.xml" xy="402,169" group="n43_ixho">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <loader id="n41_gp9p" name="icon" xy="372,159" size="52,52" group="n43_ixho" url="ui://tsbe09ddmz4w1" align="center" vAlign="middle" fill="scale"/>
+    <group id="n43_ixho" name="pbr1" xy="345,157" size="654,57" group="n34_gp9p" advanced="true"/>
+    <component id="n30_gp9p" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n34_gp9p"/>
+    <group id="n34_gp9p" name="window" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n13_pz0v" name="propTopList" src="ykwwkx" fileName="components/components_new/TokenListView.xml" pkg="2r331opv" xy="623,7" size="700,40">
+      <relation target="" sidePair="right-right"/>
+    </component>
+  </displayList>
+</component>

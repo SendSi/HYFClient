@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="386,110" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="role" pages="0,,1," selected="0">
+    <remark page="0" value="无角色"/>
+    <remark page="1" value="有角色"/>
+  </controller>
+  <controller name="state" pages="0,recommend,1,hot,2,busy,3,maintain" selected="0"/>
+  <controller name="label" pages="0,,1," selected="0">
+    <remark page="0" value="normal"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <image id="n5_p781" name="bg_01" src="b1o21ygcfnq" fileName="images/images_new/windowBg_new/negative_bg26.png" pkg="2r331opv" xy="17,10" size="342,88"/>
+    <image id="n6_p781" name="bg_02" src="s4xx1ygcgkv" fileName="images/images_new/windowBg_new/negative_strip013.png" pkg="2r331opv" xy="4,-3" size="368,114">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n7_p781" name="title_name" xy="114,37" size="120,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" letterSpacing="-1" singleLine="true" text="倾国倾城我">
+      <relation target="n8_p781" sidePair="left-right"/>
+    </text>
+    <text id="n8_p781" name="title_number" xy="33,37" size="81,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" letterSpacing="-1" singleLine="true" autoClearText="true" text="9999服">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n9_p781" name="title_recommend" xy="288,39" size="59,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#599e27" vAlign="middle" singleLine="true" text="[推荐]">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <text id="n10_p781" name="title_hot" xy="288,36" size="59,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d93a3a" vAlign="middle" singleLine="true" autoClearText="true" text="[火爆]">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n11_p781" name="title_busy" xy="288,36" size="59,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#e77917" vAlign="middle" singleLine="true" autoClearText="true" text="[繁忙]">
+      <gearDisplay controller="state" pages="2"/>
+    </text>
+    <text id="n12_p781" name="title_maintain" xy="288,36" size="59,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#9f9898" vAlign="middle" singleLine="true" autoClearText="true" text="[维护]">
+      <gearDisplay controller="state" pages="3"/>
+    </text>
+    <image id="n13_p781" name="rolelen9" src="xjmv1qp8vf3" fileName="images/images_new/windowBg_new/head_quantity.png" pkg="2r331opv" xy="234,41" aspect="true">
+      <gearDisplay controller="role" pages="1"/>
+      <relation target="n7_p781" sidePair="left-right"/>
+    </image>
+    <component id="n14_p781" name="icon" pkg="byy9k3gh" src="mczt5l" fileName="components/label_btn1.xml" xy="0,4">
+      <gearDisplay controller="label" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="66,68" pivot="0.5,0.5" extention="Button" designImage="ui://4ni413laj4kdhz9cl7" designImageOffsetX="-23" designImageOffsetY="-260" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="buildState" pages="0,normal,1,building" selected="0">
+    <remark page="0" value="空闲"/>
+    <remark page="1" value="建造中"/>
+  </controller>
+  <controller name="numb" pages="0,,1," selected="0">
+    <remark page="0" value="不显示数字"/>
+    <remark page="1" value="显示数字"/>
+  </controller>
+  <displayList>
+    <loader id="n5_gm0a" name="icon" xy="0,0" size="66,68" url="ui://4ni413latauyhz9czu" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="buildState" pages="0,6"/>
+      <gearIcon controller="buildState" pages="0,1" values="ui://4ni413latauyhz9czu|ui://4ni413lab6o0l2"/>
+    </loader>
+    <movieclip id="n29_yya0" name="mov" src="b6o0ls" fileName="components/components_new/main/main_mov_building.jta" xy="-7,-14">
+      <gearDisplay controller="buildState" pages="1"/>
+    </movieclip>
+    <text id="n30_yya0" name="numText" xy="0,44" size="66,34" font="ui://2r331opvlwft2" fontSize="24" color="#ffffff" align="center" autoSize="none" strokeColor="#000000" text="1/2">
+      <gearDisplay controller="numb" pages="1"/>
+    </text>
+  </displayList>
+  <Button sound="ui://2r331opvu9ouh3" volume="50" downEffect="scale" downEffectValue=".95"/>
+</component>

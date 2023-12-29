@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="760,287" overflow="hidden">
+  <displayList>
+    <image id="n2_prcz" name="n2" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="29,0" size="702,36"/>
+    <text id="n1_7oiz" name="title" xy="38,1" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="服务器"/>
+    <list id="n0_7oiz" name="list" xy="0,39" size="759,248" layout="flow_hz" overflow="scroll" margin="0,0,10,0" colGap="-23" defaultItem="ui://byy9k3ghp7811d" autoItemSize="true" renderOrder="arch" foldInvisibleItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

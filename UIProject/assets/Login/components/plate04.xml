@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="246,153" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_g6y7" name="n0" src="qqk53i" fileName="images/plate04.png" xy="0,0" color="#999999"/>
+    <image id="n4_v2uk" name="n4" src="v2uk1ygcg9u" fileName="images/plate099.png" xy="-112,-74" filter="color" filterData="0,1,0.65,0"/>
+    <text id="n3_c92h" name="title" xy="49,97" size="124,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#a6a6a6" align="center" vAlign="middle" strokeColor="#0f3144" strokeSize="2" singleLine="true" text="永恒之地"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

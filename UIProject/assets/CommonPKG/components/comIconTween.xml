@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="81,100" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n5_d4a6" name="bg" src="qdf6hz9cue" fileName="images/buliding/building_bg_bubble01.png" xy="-2,1" size="85,95" aspect="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3_7lo1" name="icon" xy="3,6" pivot="0.5,0.5" size="74,78" aspect="true" url="ui://2r331opvt1vs1ygcfmu" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height,center-center"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

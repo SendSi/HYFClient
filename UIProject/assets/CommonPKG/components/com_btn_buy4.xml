@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="161,62" pivot="0.5,0.5" extention="Button" designImageOffsetX="-912" designImageOffsetY="-369" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="colorCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="钱够"/>
+    <remark page="1" value="钱不够"/>
+  </controller>
+  <displayList>
+    <image id="n5_vvwc" name="n5" src="eaahz9co9" fileName="images/images_new/com_btn_bg00.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n7_vvwc" name="icon" xy="36,11" size="34,34" aspect="true" url="ui://tsbe09ddmz4wb" align="center" vAlign="middle" fill="scale">
+      <relation target="n8_vvwc" sidePair="middle-middle,right-left"/>
+    </loader>
+    <text id="n8_vvwc" name="price" xy="73,12" pivot="0,0.5" size="46,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" strokeColor="#844d30" strokeSize="2" shadowColor="#844d30" shadowOffset="1,2" autoClearText="true" text="400">
+      <gearColor controller="colorCtrl" pages="1" values="#ff0000,#844d30" default="#ffffff,#844d30"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

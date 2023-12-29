@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="209,55">
+  <displayList>
+    <image id="n3_q1qg" name="bg" src="w6lt1ygcg9o" fileName="images1/bg_chat_09.png" xy="-35,-4" pivot="0.5,0.5" size="277,66" group="n4_q1qg">
+      <relation target="n0_q1qg" sidePair="center-center,rightext-right,topext-top,bottomext-bottom,leftext-left"/>
+    </image>
+    <richtext id="n0_q1qg" name="titleTxt" xy="32,6" size="145,45" group="n4_q1qg" fontSize="33" color="#ffffff" align="center" ubb="true" vars="true" autoClearText="true" text="提示语&lt;img src=&apos;ui://Emoji/item_1&apos;&gt;">
+      <relation target="" sidePair="center-center"/>
+    </richtext>
+    <group id="n4_q1qg" name="content" xy="-35,-4" size="277,66" advanced="true">
+      <relation target="" sidePair="center-center"/>
+    </group>
+  </displayList>
+  <transition name="moveAlpha">
+    <item time="0" type="" value=""/>
+    <item time="0" type="Visible" target="n4_q1qg" value="false"/>
+    <item time="4" type="Visible" target="n4_q1qg" value="true"/>
+    <item time="49" type="Alpha" target="n4_q1qg" tween="true" startValue="1" endValue="0.4" duration="15"/>
+    <item time="64" type="Visible" target="n4_q1qg" value="false"/>
+  </transition>
+</component>

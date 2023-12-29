@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,52" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6_ukvb" name="n6" src="ukvb1ygcg94" fileName="images4/mainhud_progress013.png" xy="4,4" pivot="0.5,0.5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <loader id="n3_aklw" name="icon" xy="6,6" pivot="0.5,0.5" size="39,39" url="ui://2r331opvf22l1ygcfmz" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n4_aklw" name="title" xy="0,34" pivot="0.5,0.5" size="52,22" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#ffffff" align="center" vAlign="middle" letterSpacing="-1" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="0/10">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

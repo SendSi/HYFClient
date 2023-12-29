@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="357,81" designImage="ui://4ni413lashxmhz9cob" designImageOffsetX="-443" designImageOffsetY="-94" designImageLayer="1">
+  <displayList>
+    <image id="n112_pwz3" name="n112" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="0,2" size="357,80" group="n121_pwz3"/>
+    <image id="n113_pwz3" name="n113" src="bumchz9d7x" fileName="images/images_new/windowBg_new/negative_bg01.png" pkg="2r331opv" xy="67,24" size="84,35" group="n121_pwz3" alpha="0.8" color="#ffcc66"/>
+    <text id="n115_pwz3" name="n115" xy="38,23" size="29,36" group="n121_pwz3" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#97794f" text="X:"/>
+    <text id="n116_pwz3" name="ilbl01" xy="68,23" size="84,36" group="n121_pwz3" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="9999" input="true" maxLength="4" keyboardType="4"/>
+    <image id="n117_pwz3" name="n117" src="bumchz9d7x" fileName="images/images_new/windowBg_new/negative_bg01.png" pkg="2r331opv" xy="187,24" size="84,35" group="n121_pwz3" alpha="0.8" color="#ffcc66"/>
+    <text id="n118_pwz3" name="n118" xy="158,23" size="28,36" group="n121_pwz3" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#97794f" text="Y:"/>
+    <text id="n119_pwz3" name="ilbl02" xy="187,23" size="84,36" group="n121_pwz3" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="91" input="true" maxLength="4" keyboardType="4"/>
+    <component id="n120_pwz3" name="searchCoordinateBtn" src="gv9e1ygcgmr" fileName="components/components_new/com_btn_icon2.xml" pkg="2r331opv" xy="245,-19" size="121,121" group="n121_pwz3" aspect="true" scale="0.52,0.52">
+      <Button icon="ui://2r331opvgv9e1ygcgmq"/>
+    </component>
+    <image id="n122_eh3a" name="n122" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="73,-19" size="38,28" group="n121_pwz3" aspect="true" flip="vt"/>
+    <group id="n121_pwz3" name="n121" xy="0,-19" size="366,121"/>
+  </displayList>
+  <relation target="n112_pwz3" sidePair="width-width,height-height"/>
+</component>

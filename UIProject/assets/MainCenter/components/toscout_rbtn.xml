@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,120" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1,,2,,3,,4," selected="0">
+    <remark page="0" value="待命中"/>
+    <remark page="1" value="探索中"/>
+    <remark page="2" value="驻扎中"/>
+    <remark page="3" value="返回中"/>
+    <remark page="4" value="未解锁"/>
+  </controller>
+  <controller name="unlock" pages="0,,1," selected="0">
+    <remark page="0" value="已解锁"/>
+    <remark page="1" value="未解锁"/>
+  </controller>
+  <controller name="select" pages="0,未选中,1,选中" selected="0"/>
+  <controller name="btn" pages="0,,1," selected="0">
+    <remark page="0" value="派遣"/>
+    <remark page="1" value="回城"/>
+  </controller>
+  <displayList>
+    <loader id="n2_mdy2" name="icon_state" xy="16,14" size="90,91" aspect="true" url="ui://4ni413lamdy2hz9d1g" fill="scale">
+      <gearLook controller="unlock" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="state" pages="1,2,3" values="ui://4ni413lamdy2hz9d1h|ui://4ni413lamdy2hz9d17|ui://4ni413lamdy2hz9d18" default="ui://4ni413lamdy2hz9d1g"/>
+    </loader>
+    <image id="n14_8lng" name="n14" src="mdy2hz9d1g" fileName="images/explore01/toscout_btn01.png" xy="16,14" alpha="0.5" color="#000000">
+      <gearDisplay controller="unlock" pages="1"/>
+    </image>
+    <image id="n3_mdy2" name="n3" src="yhldz9coo" fileName="images/images_new/com_select_01.png" pkg="2r331opv" xy="4,2" size="111,111">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <image id="n12_m25n" name="n12" src="u6yzhz9cpx" fileName="images/images_new/com_icon_lock.png" pkg="2r331opv" xy="41,32" size="38,50" aspect="true" alpha="0.6">
+      <gearDisplay controller="unlock" pages="1"/>
+    </image>
+    <component id="n1_mdy2" name="icon_state01" src="oepthz9cp8" fileName="components/general_new/main_teamStae.xml" xy="72,69" size="34,35" scale="0.86,0.86">
+      <gearDisplay controller="state" pages="0,1,2,3"/>
+    </component>
+    <image id="n4_mdy2" name="n4" src="mouz1qp8vfl" fileName="images/images_new/com_bg_tips03_3.png" pkg="2r331opv" xy="-366,-48" size="324,227" group="n7_mdy2" flip="hz"/>
+    <image id="n5_mdy2" name="n5" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="-48,95" group="n7_mdy2" rotation="-90"/>
+    <image id="n6_mdy2" name="n6" src="xjmv1qp8vf8" fileName="images/images_new/com_bg_tips02_mask4.png" pkg="2r331opv" xy="-355,-39" size="302,131" group="n7_mdy2" alpha="0.6" flip="both"/>
+    <loader id="n8_mdy2" name="icon_ldr" xy="-351,-28" size="110,110" group="n7_mdy2" aspect="true" url="ui://4ni413lamdy2hz9d1f" fill="scale" shrinkOnly="true"/>
+    <text id="n9_mdy2" name="explainLbl" xy="-241,1" size="171,34" group="n7_mdy2" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" autoClearText="true" text="探索中..."/>
+    <component id="n10_mdy2" name="DispatchBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="-282,98" group="n7_mdy2">
+      <gearDisplay controller="btn" pages="0"/>
+      <Button title="派遣"/>
+    </component>
+    <component id="n11_mdy2" name="BackBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="-282,98" group="n7_mdy2">
+      <gearDisplay controller="btn" pages="1"/>
+      <Button title="返回"/>
+    </component>
+    <text id="n13_l1sb" name="timeLbl" xy="-240,27" size="170,29" group="n7_mdy2" font="ui://2r331opvno3vhz9d62" fontSize="20" color="#94e957" autoSize="none" autoClearText="true" text="222秒"/>
+    <group id="n7_mdy2" name="n7" xy="-366,-48" size="379,227" advanced="true">
+      <gearDisplay controller="select" pages="1"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

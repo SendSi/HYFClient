@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,24" overflow="hidden" extention="Button">
+  <controller name="color" pages="0,,1," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="灰"/>
+  </controller>
+  <displayList>
+    <text id="n0_s135" name="title" xy="3,-1" size="82,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" autoClearText="true" text="攻击+150">
+      <gearColor controller="color" pages="0,1" values="#50382e,#000000|#9e9e9e,#000000"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

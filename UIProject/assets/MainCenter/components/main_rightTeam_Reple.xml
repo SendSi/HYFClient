@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="65,37" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n8_pr6b" name="icon" xy="0,0" size="161,62" aspect="true" scale="0.4,0.6" url="ui://2r331opvc4umz9cna" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n9_pr6b" name="title" xy="2,0" pivot="0.5,0.5" size="57,38" aspect="true" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="shrink" strokeColor="#322b64" shadowColor="#322b64" shadowOffset="1,2" singleLine="true" text="补兵">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+  <Button mode="Check"/>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="520,150" pivot="0.5,0.5">
+  <displayList>
+    <text id="n0_hn57" name="attrname" xy="150,38" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" text="转生"/>
+    <text id="n4_ff11" name="number1" xy="298,38" size="42,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" ubb="true" autoClearText="true" text="0转"/>
+    <image id="n5_ff11" name="n5" src="aibb2e" fileName="images/images_new/common_arrow_4.png" pkg="2r331opv" xy="368,18" pivot="0.5,0.5" scale="0.5,0.5" rotation="90"/>
+    <text id="n1_hn57" name="number2" xy="438,38" size="42,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#8bff3d" ubb="true" autoClearText="true" text="1转"/>
+    <component id="n6_ff11" name="hero" src="hxd7hz9d7l" fileName="components/general_new/generalIcon01.xml" pkg="2r331opv" xy="0,-6"/>
+    <text id="n7_ff11" name="lv" xy="150,87" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" text="等级上限"/>
+    <text id="n8_ff11" name="number3" xy="298,87" size="32,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" ubb="true" autoClearText="true" text="50"/>
+    <image id="n9_ff11" name="n9" src="aibb2e" fileName="images/images_new/common_arrow_4.png" pkg="2r331opv" xy="368,67" pivot="0.5,0.5" scale="0.5,0.5" rotation="90"/>
+    <text id="n10_ff11" name="number4" xy="438,87" size="46,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#8bff3d" ubb="true" autoClearText="true" text="100"/>
+  </displayList>
+</component>

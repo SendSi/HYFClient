@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="66sh7tc6">
+  <resources>
+    <component id="j3xs9ph" name="RoleHeadView.xml" path="/components/" exported="true"/>
+    <component id="j3xs9pe" name="changeNameBtn.xml" path="/components/" exported="true"/>
+    <component id="j3xs9pf" name="role_pbr.xml" path="/components/" exported="true"/>
+    <component id="j3xs9pg" name="role_resourcesItem.xml" path="/components/" exported="true"/>
+    <component id="j3xs9p7" name="RoleMainView.xml" path="/panels/" exported="true"/>
+    <image id="j3xs9pa" name="role_bg.png" path="/images/" exported="true"/>
+    <image id="j3xs9pb" name="role_icon01.png" path="/images/" exported="true"/>
+    <image id="j3xs9pc" name="role_icon02.png" path="/images/" exported="true"/>
+    <image id="j3xs9pd" name="role_icon03.png" path="/images/" exported="true"/>
+    <image id="j3xs9p9" name="role_modify.png" path="/images/" exported="true"/>
+    <component id="rv2y9pr" name="roleInfoItem.xml" path="/components/"/>
+    <image id="nqnq9cjh" name="league_city_he.png" path="/images/" exported="true"/>
+    <image id="nqnq9cji" name="league_see.png" path="/images/" exported="true"/>
+    <image id="pm2o9cjl" name="body.png" path="/images/" exported="true"/>
+    <component id="z3y8hz9cz9" name="LookRoleView.xml" path="/panels/" exported="true"/>
+    <component id="g38xhz9czg" name="headItem.xml" path="/components/" exported="true"/>
+    <component id="dnyfhz9czi" name="MainRoleOtherInfoView.xml" path="/panels/" exported="true"/>
+    <component id="dnyfhz9czj" name="RoleMainModifyNameView.xml" path="/panels/" exported="true"/>
+    <image id="spadhz9czk" name="role_icon04.png" path="/images/" exported="true"/>
+    <image id="spadhz9czl" name="role_icon05.png" path="/images/" exported="true"/>
+    <image id="spadhz9czm" name="role_icon07.png" path="/images/" exported="true"/>
+    <image id="spadhz9czn" name="role_icon08.png" path="/images/" exported="true"/>
+    <image id="spadhz9czo" name="role_icon09.png" path="/images/" exported="true"/>
+    <component id="spadhz9czp" name="roleBtn.xml" path="/components/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

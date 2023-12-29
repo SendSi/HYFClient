@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="311,122" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,使用中,1,可使用,2,未激活,3,可激活" selected="0"/>
+  <displayList>
+    <loader id="n4_al8r" name="icon" xy="0,22" pivot="0.5,0.5" size="311,100" group="n9_al8r" aspect="true" url="ui://4ni413lasvpo1ygcfk0" fill="scaleMatchWidth">
+      <gearLook controller="state" pages="0,1" values="1,0,0,1|1,0,0,1" default="1,0,1,1"/>
+    </loader>
+    <component id="n5_al8r" name="head" src="j3xs9pm" fileName="components/components_new/btn_head4.xml" pkg="2r331opv" xy="53,-71" pivot="0.5,0.5" size="205,205" group="n9_al8r" scale="0.35,0.35" touchable="false">
+      <gearLook controller="state" pages="2,3" values="1,0,1,0|1,0,1,0" default="1,0,0,0"/>
+    </component>
+    <text id="n6_al8r" name="KillLbl" xy="124,93" pivot="0.5,0.5" size="64,24" group="n9_al8r" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" strokeColor="#13223e" strokeSize="2" shadowColor="#13223e" shadowOffset="1,2" autoClearText="true" text="击杀200"/>
+    <text id="n7_al8r" name="nameLbl" xy="51,61" pivot="0.5,0.5" size="124,29" group="n9_al8r" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffdd76" align="center" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="他的名字六字">
+      <gearLook controller="state" pages="0,1" values="1,0,0,0|1,0,0,0" default="1,0,1,0"/>
+      <relation target="n8_al8r" sidePair="left-left"/>
+    </text>
+    <text id="n8_al8r" name="contentLbl" xy="175,61" pivot="0.5,0.5" size="84,29" group="n9_al8r" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffdd76" align="center" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="五连绝世">
+      <gearLook controller="state" pages="2,3" values="1,0,1,0|1,0,1,0" default="1,0,0,0"/>
+    </text>
+    <loader id="n17_epr7" name="sel" xy="0,0" pivot="0.5,0.5" size="311,122" group="n9_al8r" url="ui://4ni413la11ms71ygcfnm" fill="scaleFree">
+      <gearDisplay controller="button" pages="1,3"/>
+    </loader>
+    <group id="n9_al8r" name="n9" xy="0,-71" size="311,205" advanced="true"/>
+    <image id="n10_al8r" name="n10" src="hqarz9co6" fileName="images/images_new/com_change08.png" pkg="2r331opv" xy="103,87" pivot="0.5,0.5" size="109,35" group="n13_al8r" color="#000000"/>
+    <text id="n11_al8r" name="title" xy="125,89" size="64,29" group="n13_al8r" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="使用中"/>
+    <group id="n13_al8r" name="state1" xy="103,87" size="109,35" advanced="true">
+      <gearDisplay controller="state" pages="0"/>
+    </group>
+    <image id="n14_al8r" name="n14" src="cwtb1ygcffr" fileName="images/cityskin/com_cityskinicon_new.png" xy="0,0">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

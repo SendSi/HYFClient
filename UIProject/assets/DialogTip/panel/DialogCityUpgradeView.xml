@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="45">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="新建筑"/>
+    <remark page="1" value="没有新建筑"/>
+  </controller>
+  <displayList>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n3_9232" name="window" src="91o91ygcfko" fileName="images/images_new/cityupgrade/cityupgrade_bg1.png" pkg="2r331opv" xy="0,175" size="1334,489" alpha="0.9">
+      <gearSize controller="state" pages="0,1" values="1334,489,1,1|1334,276,1,1"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n7_9232" name="lable" xy="391,672" pivot="0.5,0.5" size="551,33" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="-  点击任意处关闭  -">
+      <relation target="n3_9232" sidePair="top-bottom%"/>
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n38_x5vt" name="n38" src="x5vt1ygcfmw" fileName="DialogResultView/upgradeBg.xml" xy="446,72" group="n13_pc9t"/>
+    <text id="n6_9232" name="txtupgrade" xy="570,200" pivot="0.5,0.5" size="194,36" group="n13_pc9t" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#ffffff" align="center" vAlign="middle" leading="0" letterSpacing="-2" autoSize="none" strokeColor="#8c4427" strokeSize="2" shadowColor="#8c4427" shadowOffset="0,3" text="恭喜升级"/>
+    <text id="n31_91o9" name="number" xy="624,137" pivot="0.5,0.5" size="83,76" group="n13_pc9t" font="ui://utp01xiaml181ygcfmy" fontSize="72" color="#ffffff" align="center" vAlign="middle" letterSpacing="-20" autoSize="shrink" autoClearText="true" text="15"/>
+    <list id="n34_91o9" name="num_list" xy="274,249" pivot="0.5,0.5" size="786,164" group="n13_pc9t" selectionMode="none" overflow="scroll" scroll="horizontal" lineGap="6" defaultItem="ui://2r331opv91o91ygcfku" align="center" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n33_91o9" name="light" src="91o91ygcfkq" fileName="images/images_new/cityupgrade/cityupgrade_bg3.png" pkg="2r331opv" xy="327,432" group="n13_pc9t">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <text id="n29_rr0d" name="unlock" xy="273,430" pivot="0.5,0.5" size="788,34" group="n13_pc9t" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#93cff6" align="center" autoSize="none" text="解锁建筑">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <component id="n36_sd0v" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="-168,0" size="1670,750" group="n13_pc9t"/>
+    <list id="n32_91o9" name="building_list" xy="273,477" pivot="0.5,0.5" size="787,176" group="n13_pc9t" layout="row" overflow="scroll" scroll="horizontal" colGap="12" defaultItem="ui://2r331opv91o91ygcfkt" align="center">
+      <gearDisplay controller="state" pages="0"/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n13_pc9t" name="windows" xy="-168,0" size="1670,750" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n31_91o9" value="0"/>
+    <item time="0" type="Alpha" target="n6_9232" value="0"/>
+    <item time="6" type="Alpha" target="n31_91o9" tween="true" startValue="1" endValue="1" duration="8"/>
+    <item time="6" type="Scale" target="n31_91o9" tween="true" startValue="1.8,1.8" endValue="1,1" duration="8" ease="Back.InOut"/>
+    <item time="23" type="Alpha" target="n6_9232" tween="true" startValue="0" endValue="1" duration="5" ease="Circ.In"/>
+  </transition>
+</component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="910,138">
+  <controller name="type" pages="0,,1,,2," selected="1">
+    <remark page="0" value="迁城"/>
+    <remark page="1" value="有进度"/>
+    <remark page="2" value="无进度"/>
+  </controller>
+  <displayList>
+    <image id="n3_vpos" name="n3" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="0,0" size="910,138"/>
+    <text id="n4_vpos" name="title" xy="131,14" size="200,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" singleLine="true" autoClearText="true" text="Urban migration"/>
+    <text id="n5_vpos" name="inforLbl" xy="131,44" size="559,41" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" leading="-6" autoSize="height" autoClearText="true" text="Move your city to another area of the map, (not available when fighting assembled troops)"/>
+    <component id="n6_vpos" name="moveBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="705,31" size="180,74">
+      <gearDisplay controller="type" pages="0"/>
+      <relation target="" sidePair="right-right"/>
+      <Button title="迁入城市"/>
+    </component>
+    <component id="n9_vpos" name="usePropBtn" src="j4kdz9cp3" fileName="components/components_new/com_btn_icon.xml" pkg="2r331opv" xy="830,33">
+      <gearDisplay controller="type" pages="1,2"/>
+      <Button icon="ui://2r331opvj9d91qp8vcj"/>
+    </component>
+    <component id="n7_vpos" name="pbr" src="vposhz9cn4" fileName="components/components_new/city/cityManagePbr.xml" xy="131,83" size="578,36" group="n10_vpos">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <text id="n8_vpos" name="addTitle" xy="274,88" pivot="1,0" size="139,29" group="n10_vpos" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" autoClearText="true" text="食物产量+20%"/>
+    <group id="n10_vpos" name="n10" xy="131,83" size="578,36" advanced="true">
+      <gearDisplay controller="type" pages="1"/>
+    </group>
+    <image id="n12_vpos" name="n12" src="65iwhz9d49" fileName="images/build_icon/citymanage00.png" pkg="tsbe09dd" xy="16,13" group="n13_vpos"/>
+    <loader id="n11_vpos" name="icon" xy="27,24" size="86,86" group="n13_vpos" url="ui://tsbe09ddspsrchx" fill="scale"/>
+    <group id="n13_vpos" name="n13" xy="16,13" size="110,110" advanced="true"/>
+  </displayList>
+  <relation target="n3_vpos" sidePair="width-width,height-height"/>
+</component>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="64,78" extention="Button" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="use" pages="0,prop,1,people,6,,7,,8,,9," selected="0">
+    <remark page="0" value="道具"/>
+    <remark page="1" value="武将"/>
+    <remark page="2" value="武将碎片"/>
+    <remark page="3" value="可合成道具"/>
+    <remark page="4" value="过期时间"/>
+    <remark page="5" value="个人boss"/>
+  </controller>
+  <controller name="quality" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="绿"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫"/>
+    <remark page="4" value="金"/>
+    <remark page="5" value="红"/>
+  </controller>
+  <controller name="size" pages="0,,1,,2,,3,,4," selected="0">
+    <remark page="0" value="50"/>
+    <remark page="1" value="60"/>
+    <remark page="2" value="70"/>
+    <remark page="3" value="84"/>
+    <remark page="4" value="正常大小"/>
+  </controller>
+  <displayList>
+    <loader id="n23_nq4j" name="bgProp" xy="8,6" size="50,50" group="n32_grws" url="ui://2r331opvh3jujt" fill="scaleFree">
+      <gearSize controller="size" pages="0,1,2,3,4" values="50,50,1,1|60,60,1,1|70,70,1,1|84,84,1,1|106,106,1,1"/>
+      <gearIcon controller="quality" pages="0,2,3,4,5" values="ui://2r331opvh3jujt|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv94959|ui://2r331opv9495a" default="ui://2r331opv94956"/>
+    </loader>
+    <loader id="n13_l9d2" name="iconProp" xy="15,11" size="40,40" group="n32_grws" aspect="true"   align="center" vAlign="middle" fill="scale">
+      <gearXY controller="size" pages="0,1,2,3,4" values="15,11|16,12|17,13|18,14|19,17"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="40,40,1,1|48,48,1,1|56,56,1,1|68,68,1,1|84,84,1,1"/>
+    </loader>
+    <text id="n12_d9gi" name="hadNumProp" xy="13,37" pivot="0.5,0.5" size="42,19" group="n32_grws" font="ui://2r331opvlwft2" fontSize="12" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" singleLine="true" text="50">
+      <gearXY controller="size" pages="0,1,2,3,4" values="13,37|13,37|13,37|13,37|13,37"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="42,19,1,1|51,22,1,1|58,24,1,1|70,25,1,1|89,28,1,1"/>
+      <gearFontSize controller="size" pages="0,1,2,3" values="12|14|16|17" default="19"/>
+      <relation target="n23_nq4j" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <group id="n32_grws" name="0_prop" xy="8,6" size="50,50" advanced="true">
+      <gearDisplay controller="use" pages="0,7,8,9"/>
+    </group>
+    <loader id="n26_m79t" name="bgGen" xy="8,6" size="50,50" group="n11_d9gi" url="ui://2r331opvh3jujt" fill="scaleFree">
+      <gearSize controller="size" pages="0,1,2,3,4" values="50,50,1,1|60,60,1,1|70,70,1,1|84,84,1,1|106,106,1,1"/>
+      <gearIcon controller="quality" pages="0,2,3,4,5" values="ui://2r331opvh3jujt|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv94959|ui://2r331opv9495a" default="ui://2r331opv94956"/>
+    </loader>
+    <loader id="n42_ln1d" name="iconGen" xy="13,11" size="40,40" group="n11_d9gi" url="ui://4557t28kln1d4m" align="center" vAlign="middle" fill="scaleFree">
+      <gearXY controller="size" pages="0,1,2,4" values="13,11|14,12|15,13|19,17" default="16,14"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="40,40,1,1|48,48,1,1|56,56,1,1|68,68,1,1|84,84,1,1"/>
+    </loader>
+    <group id="n11_d9gi" name="1_general" xy="8,6" size="50,50" advanced="true">
+      <gearDisplay controller="use" pages="1"/>
+    </group>
+    <loader id="n55_shxm" name="bgFra0" xy="8,6" size="50,50" group="n47_m47y" url="ui://2r331opvh3jujt" fill="scaleFree">
+      <gearSize controller="size" pages="0,1,2,3,4" values="50,50,1,1|60,60,1,1|70,70,1,1|84,84,1,1|106,106,1,1"/>
+      <gearIcon controller="quality" pages="0,2,3,4,5" values="ui://2r331opvh3jujt|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv94959|ui://2r331opv9495a" default="ui://2r331opv94956"/>
+    </loader>
+    <loader id="n49_m47y" name="bgFra" xy="13,11" size="40,40" group="n47_m47y" aspect="true" url="ui://4557t28km47yf2" fill="scale">
+      <gearXY controller="size" pages="0,1,2,3" values="13,11|14,12|15,13|16,14" default="19,17"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="40,40,1,1|48,48,1,1|56,56,1,1|68,68,1,1|84,84,1,1"/>
+      <gearIcon controller="quality" pages="0,1,3,4,5" values="ui://4557t28km47yf2|ui://4557t28km47yf3|ui://4557t28km47yf5|ui://4557t28km47yf6|ui://4557t28km47yf0" default="ui://4557t28km47yf4"/>
+    </loader>
+    <component id="n51_m47y" name="iconFra" src="m47yhz9cnc" fileName="components/components_new/generalFragment.xml" xy="13,11" size="40,40" group="n47_m47y">
+      <gearXY controller="size" pages="0,1,2,3,4" values="13,11|14,12|15,13|16,14|19,17"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="40,40,1,1|48,48,1,1|56,56,1,1|68,68,1,1|84,84,1,1"/>
+    </component>
+    <text id="n8_d9gi" name="hadNumFra" xy="13,38" size="43,19" group="n47_m47y" fontSize="12" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" singleLine="true" text="50">
+      <gearXY controller="size" pages="0,1,2,3,4" values="13,38|12,45|12,52|16,63|18,81"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="43,19,1,1|54,22,1,1|63,24,1,1|72,25,1,1|89,28,1,1"/>
+      <gearFontSize controller="size" pages="0,1,2,3" values="12|14|16|17" default="19"/>
+    </text>
+    <group id="n47_m47y" name="2_fragment" xy="8,6" size="50,51" advanced="true">
+      <gearDisplay controller="use" pages="6"/>
+    </group>
+    <image id="n40_9232" name="n40" src="spsrz9ckd" fileName="images/images_new/common_select_08.png" xy="-5,-7" pivot="0.5,0.5" size="76,76">
+      <gearDisplay controller="button" pages="1,3"/>
+      <gearXY controller="size" pages="0,1,2,3,4" values="-5,-7|-7,-9|-9,-11|-11,-13|-10,-12"/>
+      <gearSize controller="size" pages="0,1,2,3,4" values="76,76,1,1|90,90,1,1|104,104,1,1|122,122,1,1|142,142,1,1"/>
+    </image>
+    <text id="n46_rq2j" name="name" xy="-11,54" size="86,20" font="ui://2r331opvlwft2" fontSize="12" color="#ffffff" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="道具名称">
+      <gearXY controller="size" pages="0,1,2,3,4" values="-11,54|-12,60|0,70|-15,84|-25,104"/>
+      <gearSize controller="size" pages="0,1,2,3" values="86,20,1,1|98,24,1,1|86,24,1,1|128,27,1,1" default="170,33,1,1"/>
+      <gearFontSize controller="size" pages="0,1,2,3" values="12|14|16|17" default="19"/>
+    </text>
+    <component id="n56_fz63" name="composePbr" src="grwsdo" fileName="components/com_ProgressBar4.xml" xy="0,57" size="64,8">
+      <gearDisplay controller="use" pages="7"/>
+      <gearXY controller="size" pages="0,1,2,3" values="0,57|0,66|0,76|1,91" default="11,114"/>
+      <gearSize controller="size" pages="0,1,2" values="64,8,1,1|74,12,1,1|84,12,1,1" default="96,12,1,1"/>
+      <ProgressBar value="5" max="10"/>
+    </component>
+    <image id="n57_fz63" name="n57" src="9495v" fileName="images/common_bg_2.png" xy="-25,23" size="123,22" group="n59_fz63">
+      <gearXY controller="size" pages="0,1,2,3" values="-25,23|-20,29|-13,31|-12,39" default="-3,48"/>
+      <gearSize controller="size" pages="2" values="111,21,1,1" default="123,22,1,1"/>
+    </image>
+    <text id="n58_fz63" name="exceedTime" xy="-18,22" size="108,24" group="n59_fz63" fontSize="16" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" autoClearText="true" text="01:50:00[color=#ffc58c]后[/color][color=#ff8c8c]过期[/color]">
+      <gearXY controller="size" pages="0,1,2,3,4" values="-18,22|-13,28|-11,31|-3,38|6,48"/>
+      <gearFontSize controller="size" pages="2" values="15" default="16"/>
+    </text>
+    <group id="n59_fz63" name="4_exceedTime" xy="-25,22" size="123,24" advanced="true">
+      <gearDisplay controller="use" pages="8"/>
+    </group>
+    <image id="n60_j842" name="bg" src="tx7rl" fileName="images/activity_bg07.png" pkg="sinorujt" xy="-3,37" size="71,21" group="n62_j842">
+      <gearXY controller="size" pages="0,1,2,3,4" values="-3,37|4,47|8,56|15,67|17,82"/>
+      <gearSize controller="size" pages="4" values="88,25,1,1" default="71,21,1,1"/>
+    </image>
+    <text id="n61_j842" name="star" xy="-7,32" size="80,26" group="n62_j842" font="ui://2r331opvlwft2" fontSize="16" color="#fff956" align="center" vAlign="middle" letterSpacing="-1" autoSize="none" singleLine="true" autoClearText="true" text="First 3star">
+      <gearXY controller="size" pages="0,1,2,3,4" values="-7,32|1,42|4,51|12,63|20,79"/>
+      <gearSize controller="size" default="80,26,1,1"/>
+      <gearFontSize controller="size" pages="4" values="18" default="16"/>
+    </text>
+    <group id="n62_j842" name="chief" xy="-7,32" size="80,26" advanced="true"/>
+  </displayList>
+  <Button/>
+  <relation target="n23_nq4j" sidePair="width-width,height-height"/>
+</component>

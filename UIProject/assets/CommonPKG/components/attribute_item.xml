@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="141,26" extention="Button" designImageOffsetX="-891" designImageOffsetY="-429">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="灰"/>
+  </controller>
+  <displayList>
+    <loader id="n3_ebe5" name="icon" xy="13,3" size="20,20" aspect="true" url="ui://4hio38umpoaz1iy5bd5" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="state" pages="0" values="ui://4hio38umpoaz1iy5bd5" default="ui://4hio38umpoaz1iy5bd4"/>
+      <relation target="" sidePair="middle-middle"/>
+    </loader>
+    <text id="n5_ebe5" name="num" xy="34,0" size="104,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" ubb="true" vars="true" singleLine="true" autoClearText="true" text="统率提升5%">
+      <gearColor controller="state" pages="1" values="#c6c4c4,#000000" default="#ffffff,#000000"/>
+    </text>
+  </displayList>
+  <Button/>
+  <relation target="n5_ebe5" sidePair="rightext-right"/>
+</component>

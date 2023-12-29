@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="337,36">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="1到3级"/>
+  </controller>
+  <displayList>
+    <image id="n36_g6ic" name="n36" src="fz63hz9cnk" fileName="images/images_new/line_00.png" pkg="2r331opv" xy="3,34" size="390,2" visible="false" alpha="0.3"/>
+    <text id="n32_itho" name="rank" xy="40,4" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#74d0ff" vAlign="middle" singleLine="true" autoClearText="true" text="玩家名字">
+      <gearXY controller="state" pages="0" values="40,4" default="14,4"/>
+    </text>
+    <text id="n41_w2ss" name="num" xy="282,19" pivot="0.5,0.5" anchor="true" size="98,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" singleLine="true" autoClearText="true" text="12345678">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <loader id="n43_nm3l" name="icon" xy="10,7" size="26,26" aspect="true" url="ui://2r331opvsvx3hz9d75" fill="scale">
+      <gearDisplay controller="state" pages="0"/>
+    </loader>
+  </displayList>
+</component>

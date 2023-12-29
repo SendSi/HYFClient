@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,34">
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="0"/>
+  <displayList>
+    <text id="n69_poaz" name="propTitle" xy="0,0" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#94e957" autoClearText="true" text="装备名字">
+      <gearColor controller="quality" pages="0,1,2,3,4" values="#94e957,#325b12|#74d0ff,#03487c|#db60ff,#325b12|#ff9b42,#325b12|#ff4343,#325b12"/>
+    </text>
+  </displayList>
+</component>

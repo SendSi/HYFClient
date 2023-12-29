@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="118,71" extention="Button" designImage="ui://dh3hukhzg30w2" designImageOffsetX="-424" designImageOffsetY="-134">
+  <controller name="button" pages="0,up,1,down" selected="0">
+    <remark page="0" value="自动"/>
+    <remark page="1" value="手动"/>
+  </controller>
+  <displayList>
+    <image id="n9_jyqr" name="n9" src="l3kw1ygcgl3" fileName="images/images_new/com_btn_switch03.png" pkg="2r331opv" xy="-4,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n10_jyqr" name="n10" src="l3kw1ygcgl4" fileName="images/images_new/com_btn_switch04.png" pkg="2r331opv" xy="5,1">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n11_hddb" name="on" xy="10,21" pivot="0.5,0.5" size="44,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#e77917" leading="0" text="自动">
+      <gearXY controller="button" pages="0,1" values="10,21|10,21"/>
+      <gearColor controller="button" pages="0,1" values="#e77917,#000000|#846e4e,#000000"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n12_hddb" name="off" xy="66,21" pivot="0.5,0.5" size="44,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#846e4e" leading="0" text="手动">
+      <gearXY controller="button" pages="0,1" values="66,21|66,21"/>
+      <gearColor controller="button" pages="0,1" values="#846e4e,#000000|#e77917,#000000"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="close"/>
+  <transition name="open"/>
+</component>

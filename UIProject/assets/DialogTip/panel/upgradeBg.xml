@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="441,163">
+  <displayList>
+    <image id="n38_x5vt" name="n38" src="x5vt1ygcgnn" fileName="images/images_new/cityupgrade/cityupgrade_bg04.png" pkg="2r331opv" xy="0,71" pivot="1,0"/>
+    <image id="n39_x5vt" name="n39" src="x5vt1ygcgnm" fileName="images/images_new/cityupgrade/cityupgrade_bg03.png" pkg="2r331opv" xy="213,71"/>
+    <image id="n41_x5vt" name="n41" src="x5vt1ygcgnk" fileName="images/images_new/cityupgrade/cityupgrade_bg01.png" pkg="2r331opv" xy="244,21" pivot="0,1"/>
+    <image id="n42_x5vt" name="n42" src="x5vt1ygcgnl" fileName="images/images_new/cityupgrade/cityupgrade_bg02.png" pkg="2r331opv" xy="81,21" pivot="1,1"/>
+    <image id="n40_x5vt" name="n40" src="x5vt1ygcgno" fileName="images/images_new/cityupgrade/cityupgrade_bg05.png" pkg="2r331opv" xy="146,8" pivot="0.5,0.609"/>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Scale" target="n40_x5vt" tween="true" startValue="1.8,1.8" endValue="1,1" duration="6" ease="Back.Out"/>
+    <item time="0" type="Visible" target="n38_x5vt" value="false"/>
+    <item time="0" type="Visible" target="n39_x5vt" value="false"/>
+    <item time="0" type="Visible" target="n41_x5vt" value="false"/>
+    <item time="0" type="Visible" target="n42_x5vt" value="false"/>
+    <item time="6" type="Rotation" target="n41_x5vt" tween="true" startValue="20" endValue="0" duration="10" ease="Back.Out"/>
+    <item time="6" type="Rotation" target="n42_x5vt" tween="true" startValue="-20" endValue="0" duration="10" ease="Back.Out"/>
+    <item time="6" type="Visible" target="n41_x5vt" value="true"/>
+    <item time="6" type="Visible" target="n42_x5vt" value="true"/>
+    <item time="16" type="Visible" target="n38_x5vt" value="true"/>
+    <item time="16" type="Visible" target="n39_x5vt" value="true"/>
+    <item time="16" type="XY" target="n38_x5vt" tween="true" startValue="30,71" endValue="0,71" duration="6" ease="Back.Out"/>
+    <item time="16" type="XY" target="n39_x5vt" tween="true" startValue="183,71" endValue="213,71" duration="6" ease="Back.Out"/>
+  </transition>
+</component>

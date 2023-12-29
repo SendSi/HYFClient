@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="43,40" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <image id="n5_jg06" name="n5" src="bumchz9d83" fileName="images/images_new/small_btn022.png" pkg="2r331opv" xy="0,0" pivot="0.5,0.5" size="43,39" aspect="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check" downEffect="scale" downEffectValue=".95"/>
+</component>

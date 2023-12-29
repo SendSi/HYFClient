@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="43,43">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" homePageType="specific" homePage="1" pages="0,,1," selected="0">
+    <remark page="1" value="灰色"/>
+  </controller>
+  <displayList>
+    <loader id="n3_kpbt" name="icon" xy="0,0" pivot="0.5,0.5" size="43,43" group="n5_h545" touchable="false" url="ui://2r331opvcxixz9cmd" align="center" vAlign="middle" fill="scale">
+      <gearLook controller="state" pages="1" values="1,0,0,0" default="1,0,0,0"/>
+      <gearIcon controller="state" pages="0" values="ui://2r331opvcxixz9cmd" default="ui://2r331opvlfqnhz9d75"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <component id="n4_h545" name="EffectRoot_ShengXing" src="is8cg8" fileName="components/EffectRoot.xml" xy="-3,-3" group="n5_h545" touchable="false">
+      <relation target="n3_kpbt" sidePair="center-center,middle-middle"/>
+    </component>
+    <group id="n5_h545" name="n5" xy="-3,-3" size="50,50"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n3_kpbt" tween="true" startValue="2,2" endValue="1,1" duration="6" ease="Quad.In"/>
+  </transition>
+</component>

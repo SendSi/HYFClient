@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="501,48" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="srvStateCtrl" pages="1,,2,,0,,3," selected="0">
+    <remark page="0" value="推荐"/>
+    <remark page="1" value="维"/>
+    <remark page="2" value="火爆"/>
+    <remark page="3" value="火爆"/>
+  </controller>
+  <displayList>
+    <image id="n3_q8mh" name="bg_01" src="p78116" fileName="images/land_bg02.png" xy="-189,-4" pivot="0.5,0.5" size="878,57"/>
+    <text id="n4_q8mh" name="title_number" xy="29,7" pivot="1,0" size="61,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="right" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="1107">
+      <relation target="n5_q8mh" sidePair="left-left"/>
+    </text>
+    <text id="n5_q8mh" name="title_area" xy="97,7" pivot="0.5,0.5" size="196,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="江东霸主企鹅企鹅"/>
+    <text id="n7_q8mh" name="title_change" xy="359,7" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#7eff81" align="center" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="点击换服">
+      <relation target="n6_q8mh" sidePair="right-right"/>
+    </text>
+    <text id="n6_q8mh" name="title_hot" xy="300,7" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#7eff81" align="center" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="推荐">
+      <gearColor controller="srvStateCtrl" pages="1,2" values="#7eff81,#000000|#999999,#000000" default="#ff5959,#000000"/>
+      <gearText controller="srvStateCtrl" pages="1,2" values="推荐|维护" default="火爆"/>
+      <relation target="n5_q8mh" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".97"/>
+</component>

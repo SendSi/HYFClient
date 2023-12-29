@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="56,40" pivot="0.5,0.5" extention="Button" designImage="ui://nf2zagxssdtv2d" designImageOffsetX="-781" designImageOffsetY="-15" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="plus" pages="0,no,1,yes" selected="0"/>
+  <displayList>
+    <image id="n8_oqow" name="n8" src="no3vhz9d6a" fileName="images/images_new/com_bg_resource.png" xy="-97,1" size="118,39"/>
+    <loader id="n2_eqqy" name="icon" xy="-91,20" pivot="0.5,0.5" anchor="true" size="40,40" aspect="true" url="ui://tsbe09ddmz4wb" align="center" vAlign="middle" fill="scale" shrinkOnly="true" clearOnPublish="true">
+      <relation target="" sidePair="left-left"/>
+    </loader>
+    <text id="n1_eqqy" name="title" xy="21,1" size="0,39" visible="false" fontSize="22" color="#e1d8c1" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="将魂">
+      <relation target="" sidePair="width-width,height-height,left-left"/>
+    </text>
+    <text id="n6_grws" name="0_haveTitle" xy="-78,2" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" letterSpacing="-2" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="1200万">
+      <gearDisplay controller="plus" pages="0"/>
+    </text>
+    <image id="n7_lpzo" name="n7" src="no3vhz9d64" fileName="images/images_new/com_addto.png" xy="12,2" aspect="true" scale="0.8,0.8">
+      <relation target="n8_oqow" sidePair="left-right"/>
+    </image>
+    <text id="n4_grws" name="1_haveTitle" xy="33,0" size="0,40" group="n5_grws" fontSize="19" color="#e1d8c1" align="right" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="1200万">
+      <relation target="" sidePair="width-width,height-height,right-right"/>
+    </text>
+    <image id="n3_eqqy" name="n3" pkg="2r331opv" src="hef41i" fileName="images/recruit_btn_bg.png" xy="35,2" group="n5_grws">
+      <relation target="" sidePair="right-right"/>
+    </image>
+    <group id="n5_grws" name="1_yesPlus" xy="33,0" size="31,40" advanced="true">
+      <gearDisplay controller="plus" pages="1"/>
+    </group>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n2_eqqy" value="1,1"/>
+    <item time="0" type="Scale" target="n2_eqqy" tween="true" startValue="1,1" endValue="1.3,1.3" duration="3"/>
+    <item time="3" type="Scale" target="n2_eqqy" tween="true" startValue="1.3,1.3" endValue="1,1" duration="3"/>
+  </transition>
+</component>

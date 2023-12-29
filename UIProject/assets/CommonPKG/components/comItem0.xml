@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="86,86" mask="n14_nv4k">
+  <controller name="useTypeCtrl" pages="0,,1,,6,,7,,8,,9," selected="0">
+    <remark page="0" value="道具"/>
+    <remark page="1" value="武将"/>
+    <remark page="2" value="武碎"/>
+    <remark page="3" value="可合成道具"/>
+    <remark page="4" value="过期时间"/>
+    <remark page="5" value="信物"/>
+  </controller>
+  <displayList>
+    <graph id="n14_nv4k" name="mark" xy="0,0" size="86,86" aspect="true" type="rect" lineSize="0" corner="18"/>
+    <loader id="n13_l9d2" name="itemIcon" xy="0,0" pivot="0.5,0.5" size="86,86" url="ui://tsbe09ddmzk6hz9ddu" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="useTypeCtrl" pages="0,1,7,8"/>
+    </loader>
+  </displayList>
+</component>

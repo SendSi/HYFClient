@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="241,75" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="display" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_7oiz" name="bg_01" pkg="2r331opv" src="cxixz9cm5" fileName="images/images_new/btn_bg.png" xy="0,62" size="225,24">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n1_7oiz" name="title" xy="91,14" pivot="0.5,0.5" size="88,45" font="ui://2r331opvlwft3" fontSize="33" color="#f2dd68" align="center" vAlign="middle" shadowColor="#000000" shadowOffset="2,2" singleLine="true" autoClearText="true" text="赛季1">
+      <gearColor controller="button" pages="0,1,2,3" values="#f2dd68,#000000|#ffffff,#000000|#f2dd68,#000000|#ffffff,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n2_7oiz" name="icon" xy="19,15" size="62,29" group="n7_7oiz" url="ui://byy9k3ghp78119" align="center" vAlign="middle"/>
+    <group id="n7_7oiz" name="recommend" xy="19,15" size="62,29" advanced="true">
+      <gearDisplay controller="display" pages="0"/>
+      <relation target="n1_7oiz" sidePair="left-left"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

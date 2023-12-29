@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,141" designImageOffsetX="-198" designImageOffsetY="-267" designImageLayer="1">
+  <displayList>
+    <image id="n15_e9ml" name="n15" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="0,3" size="892,134">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n16_lwba" name="propBg" src="65iwhz9d49" fileName="images/build_icon/citymanage00.png" pkg="tsbe09dd" xy="16,15" group="n18_lwba"/>
+    <loader id="n17_lwba" name="icon" xy="27,25" size="88,88" group="n18_lwba" aspect="true" url="ui://01_4_prop/item_1" fill="scale" clearOnPublish="true"/>
+    <group id="n18_lwba" name="propIcon" xy="16,15" size="110,110" advanced="true"/>
+    <component id="n13_e9ml" name="useBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="673,30" size="202,78" group="n9_d4a6">
+      <Button title="前往" titleFontSize="34"/>
+    </component>
+    <group id="n9_d4a6" name="use" xy="673,30" size="202,78" advanced="true">
+      <relation target="" sidePair="right-right"/>
+    </group>
+    <text id="n2_d4a6" name="title" xy="130,35" size="535,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#50382e" ubb="true" autoSize="none" autoClearText="true" text="世界首领"/>
+    <text id="n3_d4a6" name="desc" xy="132,72" size="534,36" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#599e27" autoSize="none" autoClearText="true" text="可参与世界首领获得"/>
+  </displayList>
+</component>

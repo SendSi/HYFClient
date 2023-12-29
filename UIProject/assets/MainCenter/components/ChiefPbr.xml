@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="695,132" opaque="false" extention="ProgressBar">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="无护盾条"/>
+    <remark page="1" value="有护盾"/>
+  </controller>
+  <controller name="state01" pages="0,,1,,2,,3," selected="3">
+    <remark page="0" value="BOSS"/>
+    <remark page="1" value="中立城"/>
+    <remark page="2" value="喂养状态"/>
+    <remark page="3" value="boss死亡"/>
+  </controller>
+  <displayList>
+    <image id="n0_qok1" name="n0" src="tg9h1qp8vhr" fileName="images/chief/chiefPb00.png" xy="66,24" size="633,42">
+      <gearDisplay controller="state01" pages="0,1,2"/>
+    </image>
+    <text id="n4_qok1" name="title_name" xy="153,-1" pivot="0.5,0.5" size="309,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ff757b" align="center" vAlign="middle" strokeColor="#3b0200" strokeSize="2" shadowColor="#3b0200" shadowOffset="2,2" autoClearText="true" text="boss名称【归属：联盟名称六字】">
+      <gearDisplay controller="state01" pages="0,1,2"/>
+      <relation target="n72_nm3l" sidePair="left-left"/>
+    </text>
+    <component id="n69_oulc" name="barh_12" src="happ1qp8vhf" fileName="components/components_new/Personal_leader/bar_12.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n23_happ" name="bar_12" src="happ1qp8vhf" fileName="components/components_new/Personal_leader/bar_12.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n68_oulc" name="barh_11" src="happ1qp8vhe" fileName="components/components_new/Personal_leader/bar_11.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n22_happ" name="bar_11" src="happ1qp8vhe" fileName="components/components_new/Personal_leader/bar_11.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n67_oulc" name="barh_10" src="happ1qp8vhd" fileName="components/components_new/Personal_leader/bar_10.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n21_happ" name="bar_10" src="happ1qp8vhd" fileName="components/components_new/Personal_leader/bar_10.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n66_oulc" name="barh_09" src="happ1qp8vhc" fileName="components/components_new/Personal_leader/bar_09.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n20_happ" name="bar_09" src="happ1qp8vhc" fileName="components/components_new/Personal_leader/bar_09.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n65_oulc" name="barh_08" src="happ1qp8vhb" fileName="components/components_new/Personal_leader/bar_08.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n19_happ" name="bar_08" src="happ1qp8vhb" fileName="components/components_new/Personal_leader/bar_08.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n64_oulc" name="barh_07" src="happ1qp8vha" fileName="components/components_new/Personal_leader/bar_07.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n18_happ" name="bar_07" src="happ1qp8vha" fileName="components/components_new/Personal_leader/bar_07.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n63_oulc" name="barh_06" src="happ1qp8vh9" fileName="components/components_new/Personal_leader/bar_06.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n17_happ" name="bar_06" src="happ1qp8vh9" fileName="components/components_new/Personal_leader/bar_06.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n62_oulc" name="barh_05" src="happ1qp8vh8" fileName="components/components_new/Personal_leader/bar_05.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n16_happ" name="bar_05" src="happ1qp8vh8" fileName="components/components_new/Personal_leader/bar_05.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n61_oulc" name="barh_04" src="happ1qp8vh7" fileName="components/components_new/Personal_leader/bar_04.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n15_happ" name="bar_04" src="happ1qp8vh7" fileName="components/components_new/Personal_leader/bar_04.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n60_oulc" name="barh_03" src="happ1qp8vh6" fileName="components/components_new/Personal_leader/bar_03.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n14_happ" name="bar_03" src="happ1qp8vh6" fileName="components/components_new/Personal_leader/bar_03.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n59_oulc" name="barh_02" src="happ1qp8vh5" fileName="components/components_new/Personal_leader/bar_02.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n13_happ" name="bar_02" src="happ1qp8vh5" fileName="components/components_new/Personal_leader/bar_02.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n58_oulc" name="barh_01" src="happ1qp8vh4" fileName="components/components_new/Personal_leader/bar_01.xml" xy="71,29" size="623,32" group="n71_nm3l" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n12_happ" name="bar_01" src="happ1qp8vh4" fileName="components/components_new/Personal_leader/bar_01.xml" xy="71,29" size="623,32" group="n71_nm3l">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n24_tg9h" name="time" xy="462,1" size="115,26" group="n71_nm3l" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" vAlign="middle" strokeColor="#3b0200" strokeSize="2" shadowColor="#3b0200" shadowOffset="2,2" autoClearText="true" text="01:25:11消失">
+      <gearDisplay controller="state01" pages="0"/>
+      <relation target="n4_qok1" sidePair="right-right"/>
+    </text>
+    <group id="n71_nm3l" name="n71" xy="71,1" size="623,60" advanced="true">
+      <gearDisplay controller="state01" pages="0,1"/>
+    </group>
+    <text id="n2_qok1" name="title" xy="607,29" size="74,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="right" vAlign="middle" autoSize="none" italic="true" strokeColor="#000000" strokeSize="2" autoClearText="true" text="x9">
+      <gearDisplay controller="state01" pages="0,1"/>
+    </text>
+    <component id="n70_nm3l" name="satiate_bar" src="nm3l1ygcfl5" fileName="components/components_new/Personal_leader/satiate_bar.xml" xy="71,29" size="623,32">
+      <gearDisplay controller="state01" pages="2"/>
+      <ProgressBar value="33" max="100"/>
+    </component>
+    <image id="n27_tg9h" name="n27" src="tg9h1qp8vht" fileName="images/chief/boss_bg00.png" xy="0,1">
+      <gearDisplay controller="state01" pages="0,2"/>
+    </image>
+    <loader id="n28_tg9h" name="icon" xy="7,8" pivot="0.5,0.5" size="74,74" url="ui://4ni413latg9h1qp8vhs" fill="scale">
+      <gearDisplay controller="state01" pages="0,2"/>
+    </loader>
+    <component id="n30_ihkp" name="singleBossShield" src="fx9i1ygcfh1" fileName="components/components_new/Personal_leader/bar_50.xml" xy="96,63" pivot="0.5,0.5" size="578,28">
+      <gearDisplay controller="state" pages="1"/>
+      <gearDisplay2 controller="state01" pages="0" condition="0"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n32_klt5" name="n32" src="klt51ygcfgl" fileName="images/map/city12.png" xy="-16,3" size="124,67" aspect="true">
+      <gearDisplay controller="state01" pages="1"/>
+    </image>
+    <text id="n31_ihkp" name="singleBossTime" xy="196,70" size="323,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" vAlign="middle" ubb="true" vars="true" strokeColor="#000000" strokeSize="2" shadowColor="#000000" shadowOffset="3,3" autoClearText="true" text="距离评价降低[color=#ff757b] {time=00:20:15} [/color]">
+      <gearDisplay controller="state01" pages="0,3"/>
+      <gearXY controller="state" pages="0,1" values="196,70|158,83"/>
+    </text>
+    <graph id="n72_nm3l" name="n72" xy="452,3" pivot="1,0" size="242,23" type="rect" lineSize="0" fillColor="#00ffffff">
+      <gearSize controller="state01" pages="0,1,2" values="242,23,1,1|194,23,1,1|194,23,1,1" default="242,23,1,1"/>
+    </graph>
+    <text id="n73_nm3l" name="n73" xy="0,63" pivot="0.5,0.5" size="694,29" font="ui://2r331opvno3vhz9d63" fontSize="18" align="center" autoSize="none" singleLine="true" autoClearText="true" text="饱食度100%后魔化，击败获得更丰厚奖励">
+      <gearDisplay controller="state01" pages="2"/>
+    </text>
+  </displayList>
+  <ProgressBar/>
+  <transition name="shake">
+    <item time="0" type="Color" target="n31_ihkp" value="#ff0000"/>
+    <item time="0" type="Shake" target="n31_ihkp" value="5,0.5"/>
+    <item time="6" type="Color" target="n31_ihkp" tween="true" startValue="#ff0000" endValue="#b73131" duration="12"/>
+  </transition>
+  <transition name="shakeGroupAnim">
+    <item time="0" type="Shake" value="5,0.25"/>
+  </transition>
+</component>

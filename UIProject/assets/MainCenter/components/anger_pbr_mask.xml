@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="48,8" mask="n4_skbg">
+  <displayList>
+    <image id="n4_skbg" name="mask" src="ex0khz9cu6" fileName="images/map/anger_bg02.png" xy="0,0" size="48,8">
+      <relation target="" sidePair="width-width"/>
+    </image>
+  </displayList>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageOffsetX="-311" designImageOffsetY="-139" designImageLayer="1">
+  <displayList>
+    <component id="n27_i1n0" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_xoe1" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="267,157" size="800,460" group="n19_xoe1"/>
+    <graph id="n29_qg41" name="n29" xy="341,246" size="652,332" group="n19_xoe1" alpha="0.1" type="rect" lineSize="0">
+      <relation target="n28_i1n0" sidePair="bottomext-bottom"/>
+    </graph>
+    <text id="n28_i1n0" name="coords" xy="350,254" size="634,314" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" ubb="true" autoSize="none" text="感谢您使用本游戏，我们非常重视您的个人信息和隐私保 护。为了更好地保障您的个人权益,在您使用本游戏的服务 前，请务必巴拉巴拉巴[color=#e77917]《用户服务协议》[/color]及[color=#e77917]《用户隐私协议》[/color]的各条款。如果您同意并接受巴拉巴拉，若不同意，请退出游戏。如果您同意并接受巴拉巴拉，若不同意，请退出游戏。如果您同意并接受巴拉巴拉，若不同意，请退出游戏。"/>
+    <group id="n19_xoe1" name="view1" xy="267,157" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

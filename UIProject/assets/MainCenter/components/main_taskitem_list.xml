@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="208,141" mask="n14_l21a">
+  <controller name="hideOpen" exported="true" pages="0,hide,1,open" selected="0"/>
+  <displayList>
+    <graph id="n14_l21a" name="n14" xy="0,0" size="206,141" type="rect" lineSize="0"/>
+    <list id="n13_ptr5" name="taskList" xy="0,0" size="208,141" overflow="scroll" lineGap="1" defaultItem="ui://4ni413lao4i9z9cjs" autoClearItems="true">
+      <gearDisplay controller="hideOpen" pages="0"/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n13_ptr5" sidePair="height-height"/>
+</component>

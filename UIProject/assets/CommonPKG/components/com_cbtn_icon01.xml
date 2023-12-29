@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="912,36" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n2_k4tr" name="n2" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" xy="1,1" size="912,36"/>
+    <text id="n3_k4tr" name="title" xy="364,2" pivot="0.5,0.5" size="186,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#97794f" align="center" autoClearText="true" text="这里是标题名字"/>
+    <text id="n4_k4tr" name="quantityLbl" xy="855,0" pivot="0.5,0.5" size="45,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#845744" align="right" autoClearText="true" text="1/1"/>
+    <image id="n0_ku7p" name="n0" src="jmaehz9cuv" fileName="images/images_new/com_btn_arrow02.png" xy="797,4">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_ku7p" name="n1" src="jmaehz9cuv" fileName="images/images_new/com_btn_arrow02.png" xy="797,4" flip="vt">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

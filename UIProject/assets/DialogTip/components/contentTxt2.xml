@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="618,199">
+  <displayList>
+    <image id="n2_ff11" name="n2" src="ihid1ygcfmp" fileName="images/images_new/com_change06.png" pkg="2r331opv" xy="0,0" size="618,43" alpha="0.2" color="#97794f"/>
+    <richtext id="n0_tbod" name="contentTxt" xy="26,2" size="49,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#50382e" vAlign="middle" ubb="true" autoClearText="true" text="0转"/>
+    <list id="n1_ff11" name="list" xy="33,47" size="582,144" overflow="hidden" lineGap="4" defaultItem="ui://utp01xiaff111ygcft3">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n1_ff11" sidePair="bottomext-bottom"/>
+</component>

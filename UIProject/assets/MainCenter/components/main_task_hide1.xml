@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="43,39" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <loader id="n6_qy50" name="n6" xy="0,0" pivot="0.5,0.5" size="43,39" url="ui://2r331opvqy501qp8vdv">
+      <gearIcon controller="button" pages="1,3" values="ui://2r331opvqy501qp8vdv|ui://2r331opvqy501qp8vdv" default="ui://2r331opvlumy1qp8vdq"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>

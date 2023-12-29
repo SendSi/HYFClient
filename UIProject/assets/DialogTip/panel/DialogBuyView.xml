@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImage="ui://utp01xiaix8t2s" designImageOffsetX="-165" designImageLayer="1">
+  <displayList>
+    <component id="n2_ix8t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n17_arx1" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_ix8t" name="window" src="d9gi17" fileName="panel/com_little_window.xml" pkg="2r331opv" xy="267,145" group="n16_arx1">
+      <Button title="快捷购买"/>
+    </component>
+    <image id="n19_in8y" name="n19" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="350,231" size="632,330" group="n16_arx1"/>
+    <component id="n18_lyph" name="propIcon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="607,253" group="n16_arx1" touchable="false"/>
+    <image id="n8_ix8t" name="n8" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="477,387" size="386,41" group="n16_arx1"/>
+    <component id="n6_ix8t" name="cutBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="422,384" group="n16_arx1" aspect="true">
+      <Button icon="ui://2r331opvno3vhz9d6c"/>
+    </component>
+    <component id="n7_ix8t" name="plusBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="866,384" group="n16_arx1"/>
+    <text id="n9_ix8t" name="n9" xy="481,388" size="376,39" group="n16_arx1" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#50382e" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="rwer" input="true" restrict="[0-9]"/>
+    <loader id="n15_ix8t" name="currencyIcon" xy="589,436" size="37,37" group="n16_arx1" url="ui://tsbe09ddmz4w4" align="center" vAlign="middle" fill="scale"/>
+    <text id="n11_ix8t" name="currencyName" xy="624,438" size="76,34" group="n16_arx1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="金币："/>
+    <text id="n12_ix8t" name="needNum" xy="684,438" size="181,34" group="n16_arx1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" autoSize="none" singleLine="true" autoClearText="true" text="500"/>
+    <component id="n14_ix8t" name="buyBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="565,486" size="202,78" group="n16_arx1">
+      <Button title="购买" titleFontSize="32"/>
+    </component>
+    <group id="n16_arx1" name="n16" xy="267,145" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

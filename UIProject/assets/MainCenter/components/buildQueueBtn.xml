@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="64,64" pivot="0.5,0.5" extention="Button" designImage="ui://4ni413laj4kdhz9cl7" designImageOffsetX="-23" designImageOffsetY="-260" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="buildState" pages="0,normal,1,building" selected="0">
+    <remark page="0" value="空闲"/>
+    <remark page="1" value="建造中"/>
+  </controller>
+  <controller name="showText" pages="0,,1," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <image id="n24_bvce" name="bg" src="lumy1qp8vdi" fileName="images4/main_bg_icon.png" xy="0,0">
+      <gearDisplay controller="buildState" pages="1"/>
+    </image>
+    <loader id="n5_gm0a" name="icon" xy="0,0" size="64,64" aspect="true" url="ui://4ni413lalumy1qp8vdn" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="buildState" pages="0,6"/>
+      <gearIcon controller="buildState" pages="1" values="ui://4ni413lab6o0l2" default="ui://4ni413lalumy1qp8vdn"/>
+    </loader>
+    <image id="n33_uppn" name="n33" src="uppn1ygcfm5" fileName="images4/main_build_icon05.png" xy="5,13" size="38,34" group="n34_uppn" scale="0.8,0.8"/>
+    <image id="n31_eh3a" name="n31" src="uppn1ygcfm3" fileName="images4/main_build_icon03.png" xy="-6,0" pivot="0.5,0.5" size="68,54" group="n34_uppn" scale="0.8,0.8"/>
+    <image id="n32_uppn" name="n32" src="uppn1ygcfm4" fileName="images4/main_build_icon04.png" xy="16,22" size="40,38" group="n34_uppn" scale="0.8,0.8"/>
+    <group id="n34_uppn" name="n34" xy="-6,0" size="68,60" visible="false" advanced="true">
+      <gearDisplay controller="buildState" pages="1"/>
+    </group>
+    <text id="n30_yya0" name="title" xy="0,40" pivot="0.5,0.5" size="64,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="3/1">
+      <gearDisplay controller="showText" pages="1"/>
+    </text>
+    <image id="n36_gv9e" name="n36" src="gv9e1ygcg8s" fileName="images4/main_build_icon07.png" xy="9,9">
+      <gearDisplay controller="buildState" pages="1"/>
+    </image>
+  </displayList>
+  <Button sound="ui://2r331opvu9ouh3" volume="50" downEffect="scale" downEffectValue=".95"/>
+  <transition name="t1" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n31_eh3a" tween="true" startValue="-8,0" endValue="5,-6" duration="11"/>
+    <item time="11" type="XY" target="n31_eh3a" tween="true" startValue="5,-6" endValue="-8,0" duration="12"/>
+  </transition>
+  <transition name="t2" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="ColorFilter" target="n36_gv9e" tween="true" startValue="0,0,0,0" endValue="0.13,0.24,0,0" duration="12"/>
+    <item time="12" type="ColorFilter" target="n36_gv9e" tween="true" startValue="0.13,0.24,0,0" endValue="0,0,0,0" duration="11"/>
+  </transition>
+</component>

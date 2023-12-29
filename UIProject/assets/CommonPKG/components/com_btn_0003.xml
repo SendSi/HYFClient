@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="113,52" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,no,1,yes" selected="0"/>
+  <displayList>
+    <loader id="n2_9495" name="icon" xy="0,0" size="113,52" url="ui://2r331opvdfgw1ygcfmb" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n1_9495" name="title" xy="13,9" pivot="0.5,0.5" size="86,34" aspect="true" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#902222" strokeSize="2" shadowColor="#902222" shadowOffset="2,3" singleLine="true" text="Button">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+    <component id="n3_gyfa" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="80,-18" pivot="0.5,0.5">
+      <gearDisplay controller="red" pages="1"/>
+      <relation target="n2_9495" sidePair="left-right"/>
+    </component>
+  </displayList>
+  <Button sound="ui://2r331opvu9ouh8" downEffect="scale" downEffectValue=".95"/>
+</component>

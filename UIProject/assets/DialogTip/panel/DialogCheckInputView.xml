@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImage="ui://utp01xiac1q93b">
+  <displayList>
+    <component id="n2_m79t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_m79t" name="bg" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,150" group="n14_t0n1"/>
+    <text id="n17_eznb" name="titleTxt" xy="631,163" pivot="0.5,0.5" size="72,46" group="n14_t0n1" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示"/>
+    <component id="n6_m79t" name="contentTxt" src="tbod38" fileName="components/contentTxt.xml" xy="394,237" size="563,108" group="n14_t0n1"/>
+    <component id="n7_m79t" name="btnLeft" src="yhldz9cod" fileName="components/components_new/com_btn_02.xml" pkg="2r331opv" xy="409,466" size="202,78" group="n14_t0n1">
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+    <component id="n8_m79t" name="btnRight" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="719,466" size="202,78" group="n14_t0n1">
+      <Button title="确认" titleFontSize="32"/>
+    </component>
+    <image id="n18_eznb" name="n18" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="403,369" size="528,45" group="n14_t0n1"/>
+    <text id="n16_jdqk" name="checkInput" xy="412,375" size="509,34" group="n14_t0n1" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" bold="true" autoClearText="true" text="" input="true" prompt="[color=#97794f]请输入...[color]"/>
+    <component id="n15_jg06" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n14_t0n1" scale="0.8,0.8"/>
+    <group id="n14_t0n1" name="win" xy="267,138" size="800,472" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

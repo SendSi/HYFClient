@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,52" extention="Button" designImageOffsetX="-1265" designImageOffsetY="-179">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="nor"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <graph id="n23_dsil" name="line" xy="106,38" size="152,1" type="rect" lineSize="0" fillColor="#ff4c9129">
+      <relation target="n14_676j" sidePair="rightext-right"/>
+    </graph>
+    <text id="n14_676j" name="title" xy="108,10" size="150,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#4c9129" vAlign="middle" ubb="true" singleLine="true" autoClearText="true" text="X: 001 Y: 100">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n22_pxy3" name="name" xy="0,1" size="120,50" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" ubb="true" autoSize="none" singleLine="true" autoClearText="true" text="据点11">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n24_pi64" name="n24" src="pi641ygcgq5" fileName="images/images_new/windowBg_new/label_010.png" pkg="2r331opv" xy="255,2">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+  <relation target="n14_676j" sidePair="rightext-right"/>
+</component>

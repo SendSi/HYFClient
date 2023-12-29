@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="429,457">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n1_8dzs" name="bg" src="yhldz9coj" fileName="images/images_new/com_bg_tips03.png" pkg="2r331opv" xy="0,0" size="429,456" group="n22_pcso">
+      <gearSize controller="state" pages="0,1" values="429,456,1,1|429,374,1,1"/>
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n23_lhad" name="n23" src="12fw9ci9" fileName="images/com_bg3.png" pkg="2r331opv" xy="22,20" size="184,184" group="n22_pcso" aspect="true" alpha="0.3" color="#326fb0"/>
+    <image id="n4_8dzs" name="bg_02" src="b6o0chl" fileName="images/images_new/com_bg_ilbl.png" pkg="2r331opv" xy="206,90" pivot="0.5,0.5" size="188,32" group="n22_pcso" alpha="0.3">
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n10_8dzs" name="bg_03" src="b6o0chl" fileName="images/images_new/com_bg_ilbl.png" pkg="2r331opv" xy="206,128" pivot="0.5,0.5" size="188,32" group="n22_pcso" alpha="0.3">
+      <relation target="" sidePair=""/>
+    </image>
+    <image id="n13_8dzs" name="bg_04" src="b6o0chl" fileName="images/images_new/com_bg_ilbl.png" pkg="2r331opv" xy="342,51" size="52,28" group="n22_pcso" visible="false" alpha="0.3">
+      <relation target="" sidePair=""/>
+    </image>
+    <component id="n3_8dzs" name="head" src="b6o0cho" fileName="components/components_new/btn_head.xml" pkg="2r331opv" xy="61,59" group="n22_pcso" aspect="true"/>
+    <text id="n5_8dzs" name="title_name" xy="208,49" size="136,32" group="n22_pcso" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" autoClearText="true" text="一剑听风雨号"/>
+    <text id="n12_8dzs" name="title_state" xy="344,50" size="49,29" group="n22_pcso" visible="false" fontSize="20" color="#d7ca8d" align="center" autoSize="none" autoClearText="true" text="交州"/>
+    <text id="n6_8dzs" name="title_power" xy="208,92" size="44,29" group="n22_pcso" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d7ca8d" autoSize="none" text="国力"/>
+    <text id="n9_8dzs" name="title_power_01" xy="257,92" size="131,29" group="n22_pcso" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" autoSize="none" autoClearText="true" text="25010"/>
+    <text id="n7_8dzs" name="title_union" xy="208,130" size="44,29" group="n22_pcso" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d7ca8d" autoSize="none" text="联盟"/>
+    <text id="n11_8dzs" name="title_union_01" xy="257,130" size="131,29" group="n22_pcso" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" autoSize="none" autoClearText="true" text="三国战无双"/>
+    <component id="n14_8dzs" name="btn_01" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="37,201" group="n22_pcso">
+      <Button title="发送消息" titleFontSize="24"/>
+    </component>
+    <component id="n15_8dzs" name="btn_02" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="229,201" group="n22_pcso">
+      <gearDisplay controller="state" pages="0"/>
+      <Button title="添加好友" titleFontSize="24"/>
+    </component>
+    <component id="n16_8dzs" name="btn_03" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="37,284" group="n22_pcso">
+      <Button title="加入黑名单" titleFontSize="24"/>
+    </component>
+    <component id="n17_8dzs" name="btn_04" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="229,284" group="n22_pcso">
+      <gearXY controller="state" pages="0,1" values="229,284|230,201"/>
+      <Button title="查看信息" titleFontSize="24"/>
+    </component>
+    <component id="n18_8dzs" name="btn_05" src="yhldz9cod" fileName="components/components_new/com_btn_02.xml" pkg="2r331opv" xy="37,367" group="n22_pcso">
+      <gearXY controller="state" pages="0,1" values="37,367|230,284"/>
+      <Button title="举报" titleFontSize="24"/>
+    </component>
+    <group id="n22_pcso" name="info" xy="0,0" size="429,456" advanced="true"/>
+  </displayList>
+</component>

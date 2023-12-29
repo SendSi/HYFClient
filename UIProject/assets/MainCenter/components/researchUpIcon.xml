@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,130">
+  <displayList>
+    <loader id="n0_thpv" name="icon" xy="0,0" size="100,100" url="ui://2r331opv94957" align="center" vAlign="middle" fill="scaleMatchWidth"/>
+    <text id="n1_thpv" name="title" xy="4,96" pivot="0.5,0.5" size="92,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" autoClearText="true" text="研究名字"/>
+  </displayList>
+</component>

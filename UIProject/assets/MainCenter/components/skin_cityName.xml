@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="286,94" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="1,,0,,2,,3," selected="0">
+    <remark page="0" value="使用中"/>
+    <remark page="1" value="可使用"/>
+    <remark page="2" value="未激活"/>
+    <remark page="3" value="可激活"/>
+  </controller>
+  <displayList>
+    <image id="n7_mgry" name="n7" src="cwtb1ygcfg3" fileName="images/cityskin/com_cityskiselect_name.png" xy="6,11" size="278,76">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n3_mgry" name="icon" xy="13,10" size="273,73" aspect="true" url="ui://4ni413lacwtb1ygcffu" align="center" vAlign="bottom" fill="scaleFree">
+      <gearLook controller="state" pages="2,3" values="1,0,1,1|1,0,0,1" default="1,0,0,1"/>
+      <gearColor controller="state" pages="1,0,3" values="#ffffff|#ffffff|#cccccc" default="#cccccc"/>
+    </loader>
+    <text id="n5_mgry" name="title" xy="111,34" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="使用中">
+      <gearDisplay controller="state" pages="1,0"/>
+      <gearColor controller="state" pages="0,2,3" values="#8bff3d,#000000|#9f9898,#000000|#ebcea3,#000000" default="#ffffff,#000000"/>
+      <gearText controller="state" pages="0,2,3" values="可使用|未激活|可激活" default="使用中"/>
+    </text>
+    <image id="n12_cwtb" name="n12" src="cwtb1ygcffr" fileName="images/cityskin/com_cityskinicon_new.png" xy="0,0">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="918,137" designImage="ui://4ni413lac1q9hz9cup" designImageOffsetX="-103" designImageOffsetY="-260" designImageLayer="1">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="行军中"/>
+    <remark page="1" value="战斗中"/>
+  </controller>
+  <displayList>
+    <image id="n0_ix8t" name="n0" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="0,2" size="918,133">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_ix8t" name="playerIcon" src="b6o0cho" fileName="components/components_new/btn_head.xml" pkg="2r331opv" xy="8,11" size="114,114" aspect="true"/>
+    <text id="n2_ix8t" name="enemyName" xy="124,22" size="219,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="[联盟名字] 玩家名字"/>
+    <text id="n3_ix8t" name="n3" xy="125,50" size="85,32" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="正在向：">
+      <relation target="n4_ix8t" sidePair="middle-middle,right-left"/>
+    </text>
+    <richtext id="n4_ix8t" name="ourPlace" xy="187,53" size="253,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#599e27" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="我方领地 图标(627.1150)"/>
+    <text id="n5_ix8t" name="enemyTroops" xy="437,53" size="177,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#d93a3a" align="right" ubb="true" autoSize="none" autoClearText="true" text="[color=#97794F]进发[/color]敌军军队[color=#97794F]x1[/color]"/>
+    <component id="n8_ix8t" name="checkBtn" src="xjmv1qp8vey" fileName="components/TickCbtn.xml" pkg="2r331opv" xy="629,46" aspect="true" scale="0.5,0.5"/>
+    <text id="n9_ix8t" name="n9" xy="668,54" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" text="免扰"/>
+    <component id="n10_ix8t" name="goBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="734,39" size="161,62">
+      <Button title="前往" titleFontSize="30"/>
+    </component>
+    <image id="n20_jsuo" name="n20" src="c1q9hz9cuj" fileName="images/images_new/com_bg_title7.png" pkg="2r331opv" xy="123,81" size="126,36" group="n25_jsuo"/>
+    <image id="n24_jsuo" name="n24" src="f6nohz9cth" fileName="images/main/gain_bg_icon_010.png" xy="137,80" size="33,37" group="n25_jsuo"/>
+    <text id="n22_jsuo" name="marchingTitle" xy="170,84" size="64,29" group="n25_jsuo" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="行军中"/>
+    <group id="n25_jsuo" name="n25" xy="123,80" size="126,37" advanced="true">
+      <gearDisplay controller="state" pages="0"/>
+    </group>
+    <component id="n14_c1q9" name="pbr" src="c1q9hz9cur" fileName="components/components_new/city/warningPbr.xml" xy="124,83" size="490,36" visible="false">
+      <gearDisplay controller="state" pages="0"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n15_c1q9" name="n15" src="c1q9hz9cuj" fileName="images/images_new/com_bg_title7.png" pkg="2r331opv" xy="123,81" size="126,36" group="n19_c1q9"/>
+    <image id="n16_c1q9" name="n16" src="f6nohz9cte" fileName="images/main/gain_bg_icon_07.png" xy="137,80" size="33,37" group="n19_c1q9" aspect="true"/>
+    <text id="n17_c1q9" name="fightingTitle" xy="170,84" size="64,29" group="n19_c1q9" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="战斗中"/>
+    <text id="n18_c1q9" name="fightingTitle2" xy="250,84" size="124,29" group="n19_c1q9" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" text="请尽快前往！"/>
+    <group id="n19_c1q9" name="n19" xy="123,80" size="251,37" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+    </group>
+  </displayList>
+</component>

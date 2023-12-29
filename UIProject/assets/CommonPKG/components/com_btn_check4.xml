@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="46,46" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <displayList>
+    <image id="n0_m79t" name="n0" src="m79tcm" fileName="images/images_new/com_check02.png" xy="7,9" pivot="0.5,0.5">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n1_m79t" name="n1" src="m79tcn" fileName="images/images_new/com_check01.png" xy="6,7" aspect="true">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="244,258">
+  <displayList>
+    <image id="n13_ry4y" name="n13" src="mdy2hz9d1b" fileName="images/explore01/explore_bg01.png" xy="0,0" size="244,258">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <list id="n49_ttlv" name="n49" xy="14,10" size="216,219" layout="flow_hz" selectionMode="none" overflow="hidden" lineGap="-12" lineItemCount="9" defaultItem="ui://4ni413lai52uhz9d1y" scrollItemToViewOnClick="false">
+      <relation target="" sidePair="width-width,height-height"/>
+      <item url="ui://4ni413lai52uhz9d1v"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1x"/>
+      <item url="ui://4ni413lai52uhz9d1w"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+      <item url="ui://4ni413ladmns1ygcfhz"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item url="ui://4ni413ladmns1ygcfi0"/>
+    </list>
+  </displayList>
+</component>

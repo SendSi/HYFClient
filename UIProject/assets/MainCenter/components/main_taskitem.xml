@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="208,209">
+  <controller name="hideOpen" exported="true" pages="1,hide,3,open,0,open2" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="有"/>
+    <remark page="1" value="无"/>
+  </controller>
+  <displayList>
+    <image id="n0_xoe1" name="n0" src="10t6x1ygcfje" fileName="images4/mainhud_progress08.png" xy="0,32" size="206,159" alpha="0.8">
+      <gearDisplay controller="state" pages="0"/>
+      <gearSize controller="hideOpen" pages="1,3,0" values="206,159,1,1|206,228,1,1|206,297,1,1" tween="true" duration=".15"/>
+      <gearLook controller="hideOpen" pages="1,3,0" values="0.8,0,0,0|0.8,0,0,0|0.8,0,0,0" tween="true"/>
+    </image>
+    <image id="n20_outx" name="n20" src="10t6x1ygcfje" fileName="images4/mainhud_progress08.png" xy="0,32" size="206,88" alpha="0.8">
+      <gearDisplay controller="state" pages="1"/>
+      <gearSize controller="hideOpen" pages="1,3,0" values="206,88,1,1|206,157,1,1|206,227,1,1" tween="true" duration=".15"/>
+      <gearLook controller="hideOpen" pages="1,3,0" values="0.8,0,0,0|0.8,0,0,0|0.8,0,0,0" tween="true"/>
+    </image>
+    <image id="n14_ptr5" name="n14" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="9,72" size="188,36" alpha="0.6"/>
+    <component id="n13_ptr5" name="taskList" src="l21a1ygcfht" fileName="components/components_new/main/main_taskitem_list.xml" xy="0,110" size="206,86">
+      <gearDisplay controller="hideOpen" pages="0,3"/>
+    </component>
+    <text id="n12_gqgl" name="title" xy="13,78" size="162,25" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="none" autoClearText="true" text="第一章:守卫王城(1/7)">
+      <gearDisplay controller="hideOpen" pages="0,3,1"/>
+    </text>
+    <component id="n6_o4i9" name="foldBtn" src="eh3a1ygcfje" fileName="components/components_new/main/main_task_hide3.xml" xy="62,188" pivot="0.5,0.5">
+      <Button icon="ui://4ni413la10t6x1ygcfjf"/>
+    </component>
+    <component id="n10_rjev" name="taskBtn" src="rjevhz9d2l" fileName="components/components_new/main/taskBtn.xml" xy="1,-15" size="98,98">
+      <Button title="Task"/>
+    </component>
+    <component id="n15_eh3a" name="n15" src="eh3a1ygcfjf" fileName="components/components_new/main/secretcodeBtn.xml" xy="123,1" size="80,73"/>
+  </displayList>
+  <relation target="n0_xoe1" sidePair="width-width,height-height"/>
+</component>

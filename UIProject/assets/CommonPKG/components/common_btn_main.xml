@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="122,50" pivot="0.5,0.5" extention="Button">
+  <displayList>
+    <loader id="n2_9495" name="icon" xy="0,0" size="161,62" scale="0.76,0.8" grayed="true" url="ui://2r331opveaahz9co9" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n1_9495" name="title" xy="23,6" pivot="0.5,0.5" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" ubb="true" strokeColor="#9f9898" strokeSize="2" shadowColor="#9f9898" shadowOffset="1,4" singleLine="true" autoClearText="true" text="已售罄">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+  <Button sound="ui://2r331opvu9ouh8" downEffect="scale" downEffectValue=".95"/>
+</component>

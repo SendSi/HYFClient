@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="172,120" extention="Button" designImageOffsetX="-225" designImageOffsetY="-556">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="0">
+    <remark page="0" value="绿"/>
+    <remark page="1" value="蓝"/>
+    <remark page="2" value="紫"/>
+    <remark page="3" value="金"/>
+    <remark page="4" value="红"/>
+  </controller>
+  <displayList>
+    <loader id="n26_9232" name="bg_quality00" xy="12,11" size="146,97" url="ui://4557t28ko283ek" align="center" vAlign="middle" fill="scaleFree">
+      <gearIcon controller="quality" pages="0,1,2,4" values="ui://4557t28ko283ek|ui://4557t28ko283el|ui://4557t28ko283em|ui://4557t28ko283ej" default="ui://4557t28ko283en"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <component id="n41_ln1d" name="general" src="f4o9z9cnw" fileName="components/general_new/troopGeneralIcon.xml" xy="13,12" size="144,95">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n29_9232" name="bg02" src="o283z9cnq" fileName="images/images_new/com_change07.png" xy="14,12" size="82,23" alpha="0.4">
+      <relation target="" sidePair="left-left"/>
+    </image>
+    <text id="n30_9232" name="title_grade" xy="14,10" size="140,26" fontSize="18" color="#ffffff" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="50级">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <image id="n43_ubym" name="bg03" pkg="2r331opv" src="o283z9cns" fileName="images/images_new/com_bg_mask2.png" xy="13,83" size="144,24" alpha="0.4">
+      <relation target="" sidePair="left-left"/>
+    </image>
+    <list id="n33_9232" name="list_star" xy="20,84" size="131,22" touchable="false" layout="row" overflow="scroll" lineGap="-7" colGap="-20" defaultItem="ui://2r331opvn16mg3" align="center" vAlign="middle">
+      <relation target="" sidePair="left-right"/>
+      <item icon="ui://2r331opvcxixz9cmc"/>
+      <item icon="ui://2r331opvcxixz9cmc"/>
+      <item icon="ui://2r331opvcxixz9cmd"/>
+      <item icon="ui://2r331opvcxixz9cmd"/>
+      <item icon="ui://2r331opvcxixz9cmd"/>
+    </list>
+    <text id="n39_9232" name="starLevel" xy="91,54" size="63,29" visible="false" font="ui://2r331opvlwft3" fontSize="20" color="#ffffff" align="right" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="+3&#xA;"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

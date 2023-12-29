@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_m79t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_m79t" name="bg" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n14_tbod"/>
+    <component id="n6_m79t" name="contentTxt" src="tbod38" fileName="components/contentTxt.xml" xy="380,223" size="574,162" group="n14_tbod"/>
+    <richtext id="n10_m79t" name="lineTxt" xy="394,401" size="546,56" group="n14_tbod" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="图标铁矿120000"/>
+    <component id="n15_c1q9" name="btnLeft" src="yhldz9cod" fileName="components/components_new/com_btn_02.xml" pkg="2r331opv" xy="409,480" size="202,78" group="n14_tbod">
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+    <component id="n16_c1q9" name="btnRight" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="719,480" size="202,78" group="n14_tbod">
+      <Button title="确认" titleFontSize="32"/>
+    </component>
+    <component id="n18_jg06" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n14_tbod" scale="0.8,0.8"/>
+    <text id="n19_poaz" name="titleTxt" xy="631,162" pivot="0.5,0.5" size="72,46" group="n14_tbod" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示"/>
+    <group id="n14_tbod" name="win" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

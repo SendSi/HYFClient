@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="36">
+  <displayList>
+    <component id="n47_k6s7" name="n47" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n61_dnyf" name="win" src="gqih1ygcfgk" fileName="panel/com_little_window01.xml" pkg="2r331opv" xy="0,0" group="n49_k6s7">
+      <Button title="更多信息"/>
+    </component>
+    <image id="n62_dnyf" name="n62" src="bumchz9d7s" fileName="images/images_new/windowBg_new/negative_bg06.png" pkg="2r331opv" xy="224,171" size="884,78" group="n49_k6s7"/>
+    <list id="n63_dnyf" name="item" xy="224,276" size="884,391" group="n49_k6s7" selectionMode="multipleSingleClick" overflow="scroll" defaultItem="ui://2r331opvk6s79ciy" autoClearItems="true" treeView="true" indent="15" clickToExpand="1">
+      <item url="ui://2r331opvvlhb1ygcfh0" level="0"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item url="ui://2r331opvvlhb1ygcfh0" title="战斗统计" level="0"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item url="ui://2r331opvvlhb1ygcfh0" level="0"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+    </list>
+    <component id="n64_dnyf" name="icon" src="j3xs9pm" fileName="components/components_new/btn_head4.xml" pkg="2r331opv" xy="208,139" size="203,203" group="n49_k6s7" scale="0.7,0.7"/>
+    <text id="n65_dnyf" name="nameLbl" xy="359,193" size="186,36" group="n49_k6s7" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" singleLine="true" autoClearText="true" text="他的名字八个字"/>
+    <text id="n66_dnyf" name="n66" xy="645,194" size="76,34" group="n49_k6s7" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" singleLine="true" text="战力："/>
+    <text id="n67_dnyf" name="combatEffectivenessLbl" xy="724,194" size="89,34" group="n49_k6s7" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" singleLine="true" autoClearText="true" text="546500"/>
+    <group id="n49_k6s7" name="view" xy="0,0" size="1334,750" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

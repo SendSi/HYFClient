@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="886,43">
+  <displayList>
+    <image id="n3_8su0" name="n3" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" xy="0,2" size="886,36" alpha="0.4"/>
+    <richtext id="n0_k6s7" name="title" xy="4,3" size="453,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" singleLine="true" text="建筑战力"/>
+    <richtext id="n1_k6s7" name="title2" xy="458,3" size="428,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="right" autoSize="none" singleLine="true" autoClearText="true" text="40,822,522,516"/>
+  </displayList>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="143,35" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n3_ebn7" name="title" xy="3,1" pivot="0.5,0.5" size="136,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#94e957" align="center" vAlign="middle" underline="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" text="查看满级效果">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

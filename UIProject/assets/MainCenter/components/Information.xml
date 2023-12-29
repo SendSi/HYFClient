@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="414,100">
+  <displayList>
+    <image id="n4_i52u" name="arrow" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="24,46" pivot="0.5,0.5" anchor="true" rotation="90">
+      <relation target="" sidePair="middle-middle"/>
+    </image>
+    <image id="n0_i52u" name="n0" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="43,-3" size="375,105">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_i52u" name="nameLbl" xy="147,9" size="228,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" singleLine="true" autoClearText="true" text="Discover tribal villages"/>
+    <text id="n2_i52u" name="describeLbl" xy="147,34" size="241,54" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" leading="-6" autoSize="none" autoClearText="true" text="The scouts found the tribal &#xD;village in the fog"/>
+    <loader id="n3_i52u" name="icon" xy="64,9" size="80,80" url="ui://4ni413lai52uhz9cz4" fill="scale" shrinkOnly="true"/>
+  </displayList>
+</component>

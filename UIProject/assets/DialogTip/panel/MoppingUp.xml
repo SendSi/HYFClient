@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_spte" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-167,-3" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_spte" name="window" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n9_spte"/>
+    <text id="n12_jmae" name="titleTxt" xy="538,163" pivot="0.5,0.5" size="258,46" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" singleLine="true" autoClearText="true" text="人类逃亡-1"/>
+    <image id="n16_uckw" name="n16" src="bumchz9d7s" fileName="images/images_new/windowBg_new/negative_bg06.png" pkg="2r331opv" xy="371,228" size="591,215" group="n9_spte"/>
+    <richtext id="n7_spte" name="tips" xy="428,263" pivot="0.5,0.5" size="478,36" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" align="center" autoSize="none" text="快速挑战可以直接获得关卡奖励!"/>
+    <list id="n15_uckw" name="list" xy="517,317" size="524,129" group="n9_spte" scale="0.8,0.8" layout="row" overflow="scroll" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n17_uckw" name="Lbl01" xy="407,350" pivot="0.5,0.5" size="108,34" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="可能掉落:"/>
+    <richtext id="n20_b35j" name="Lbl02" xy="553,449" pivot="0.5,0.5" size="118,34" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" ubb="true" autoSize="none" text="体力消耗:">
+      <relation target="n21_fflx" sidePair="right-left"/>
+    </richtext>
+    <richtext id="n22_fflx" name="Lbl03" xy="701,449" pivot="0.5,0.5" size="70,34" group="n9_spte" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" ubb="true" text="10/20"/>
+    <loader id="n21_fflx" name="n21" xy="662,449" size="36,40" group="n9_spte" url="ui://tsbe09ddop2xhz9d53" fill="scaleMatchWidth">
+      <relation target="n22_fflx" sidePair="right-left"/>
+    </loader>
+    <component id="n8_spte" name="getBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="566,495" size="202,78" group="n9_spte">
+      <Button title="扫荡一次"/>
+    </component>
+    <component id="n18_uckw" name="plusBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="801,507" size="59,53" group="n9_spte" aspect="true">
+      <Button icon="ui://2r331opvxjmv1qp8vf2"/>
+    </component>
+    <component id="n19_uckw" name="reduceBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="477,507" size="59,53" group="n9_spte" aspect="true">
+      <Button icon="ui://2r331opvxjmv1qp8vf1"/>
+    </component>
+    <component id="n3_spte" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n9_spte" scale="0.8,0.8"/>
+    <group id="n9_spte" name="n9" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

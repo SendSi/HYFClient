@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="282,24" extention="ProgressBar">
+  <displayList>
+    <image id="n0_aklw" name="n0" src="ceggz9cot" fileName="images/images_new/com_strip_bg03.png" pkg="2r331opv" xy="0,0" size="282,24" alpha="0.9">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_9zwe" name="bar" src="svx3hz9d79" fileName="images/images_new/windowBg_new/strip01.png" pkg="2r331opv" xy="1,1" size="280,22">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_aklw" name="title1" xy="20,-4" pivot="0.5,0.5" size="241,32" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="探索中...">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <image id="n2_ujpq" name="bg" src="fk801ygcgqs" fileName="images/bg_new/bg4.jpg" xy="-168,0" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n3_ujpq" name="bar" src="n8nhhz9cw2" fileName="components/buildingPbr01.xml" xy="167,636" size="1000,30">
+      <relation target="" sidePair="center-center"/>
+      <ProgressBar value="66" max="100"/>
+    </component>
+    <text id="n4_s4xx" name="title" xy="413,677" pivot="0.5,0.5" size="508,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="提升联盟堡垒等级，可以提升盟军人口上限哦！"/>
+  </displayList>
+</component>

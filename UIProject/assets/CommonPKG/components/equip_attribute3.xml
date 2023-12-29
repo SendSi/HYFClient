@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="372,26" extention="Button" designImageOffsetX="-874" designImageOffsetY="-574">
+  <controller name="color" pages="0,,1," selected="0">
+    <remark page="1" value="灰"/>
+  </controller>
+  <displayList>
+    <text id="n0_s135" name="title" xy="3,0" size="82,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#e77917" autoClearText="true" text="攻击+150">
+      <gearColor controller="color" pages="0,1" values="#e77917,#000000|#b9b9b9,#000000"/>
+    </text>
+    <text id="n1_s135" name="title2" xy="267,0" pivot="1,0" size="105,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#e77917" autoClearText="true" text="（2件激活）">
+      <gearColor controller="color" pages="0,1" values="#e77917,#000000|#b9b9b9,#000000"/>
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

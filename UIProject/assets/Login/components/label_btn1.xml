@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="66,46" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2_tc38" name="icon" xy="0,0" pivot="0.5,0.5" size="66,46" url="ui://2r331opvmczt5k" align="center" vAlign="middle" autoSize="true">
+      <gearIcon controller="button" pages="0,1,2,3" values="ui://2r331opvmczt5k|ui://2r331opvjmaehz9cuv|ui://2r331opvxjmv1qp8vf0|ui://2r331opvjmaehz9cuv"/>
+      <relation target="" sidePair="right-right"/>
+    </loader>
+    <text id="n1_tc38" name="title" xy="4,1" pivot="0.5,0.5" size="56,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="新服"/>
+  </displayList>
+  <Button mode="Check"/>
+</component>

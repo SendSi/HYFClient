@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="2r331opv" hasFavorites="true">
+  <resources>
+    <folder id="/images/number/" name="number" path="/images/" atlas="1"/>
+    <image id="kn291" name="common_Arms_3.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="kn292" name="common_Arms_2.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="kn293" name="common_Arms_1.png" path="/images/images_new/arms/" exported="true"/>
+    <component id="tv1v1a" name="com_btn_close.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="l8n91i" name="common_btn_switch.png" path="/images/images_new/" exported="true"/>
+    <image id="9495v" name="common_bg_2.png" path="/images/" exported="true" scale="9grid" scale9grid="2,2,78,4"/>
+    <image id="9495y" name="com_btn_close.png" path="/images/images_new/" exported="true"/>
+    <image id="94955" name="common_btn_plus.png" path="/images/images_new/" exported="true"/>
+    <image id="94956" name="common_frame_quality_1.png" path="/images/images_new/" exported="true" scale9grid="6,6,84,87"/>
+    <image id="94957" name="common_frame_quality_2.png" path="/images/images_new/" exported="true" scale9grid="6,6,84,87"/>
+    <image id="94958" name="common_frame_quality_3.png" path="/images/images_new/" exported="true" scale9grid="6,6,84,87"/>
+    <image id="94959" name="common_frame_quality_4.png" path="/images/images_new/" exported="true" scale9grid="6,6,84,87"/>
+    <image id="9495a" name="common_frame_quality_5.png" path="/images/images_new/" exported="true" scale9grid="6,6,84,87"/>
+    <component id="94951z" name="common_btn_main.xml" path="/components/" exported="true"/>
+    <component id="mbg322" name="com_btn_03.xml" path="/components/" exported="true"/>
+    <component id="d9gi23" name="com_btn_close3.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="d9gi17" name="com_little_window1.xml" path="/components/" exported="true"/>
+    <component id="itz029" name="com_mask.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="itz02a" name="com_bg_mask.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="4,4,8,8"/>
+    <component id="jg422c" name="com_btn_explain2.xml" path="/components/" exported="true"/>
+    <image id="aibb2d" name="common_arrow_3.png" path="/images/images_new/" exported="true"/>
+    <image id="aibb2e" name="common_arrow_4.png" path="/images/images_new/" exported="true"/>
+    <image id="aibb2g" name="common_bg_5.png" path="/images/" exported="true" scale="9grid" scale9grid="3,11,4,7"/>
+    <image id="aibb2q" name="com_btn_reduce.png" path="/images/images_new/" exported="true"/>
+    <component id="kwe92w" name="com_btn_max.xml" path="/components/" exported="true"/>
+    <component id="kwe92x" name="com_btn_cut.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="9gtice" name="common_btn_02.xml" path="/components/" exported="true"/>
+    <component id="m79t9n" name="common_btn_tab2.xml" path="/components/" exported="true"/>
+    <image id="m79tcm" name="com_check02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="7,6,16,20"/>
+    <image id="m79tcn" name="com_check01.png" path="/images/images_new/" exported="true" favorite="true"/>
+    <component id="m79tco" name="com_btn_check.xml" path="/components/" exported="true"/>
+    <image id="7oizdc" name="common_select_01.png" path="/images/" exported="true" scale="9grid" scale9grid="11,11,3,3"/>
+    <component id="m79tdd" name="com_btn_tap_to_zoom.xml" path="/components/" exported="true"/>
+    <component id="grwsdo" name="com_ProgressBar4.xml" path="/components/" exported="true"/>
+    <component id="ayljdv" name="EffectHandle.xml" path="/components/" exported="true"/>
+    <image id="9232e4" name="com_bg_red_01.png" path="/images/" exported="true"/>
+    <component id="9232eg" name="common_btn_tab3.xml" path="/components/" exported="true"/>
+    <image id="9232ev" name="com_collection_btn.png" path="/images/" exported="true"/>
+    <component id="9232ex" name="common_btn_03.xml" path="/components/" exported="true"/>
+    <component id="odgaey" name="common_btn_05.xml" path="/components/" exported="true"/>
+    <component id="odgaez" name="common_btn_04.xml" path="/components/" exported="true"/>
+    <image id="8z41f6" name="com_collection_btn_1.png" path="/images/" exported="true"/>
+    <image id="9232b" name="fight_icon_bg.png" path="/images/" exported="true"/>
+    <image id="8z4119" name="fight_icon_bg01.png" path="/images/" exported="true"/>
+    <component id="xse5fd" name="common_btn_06grey.xml" path="/components/" exported="true"/>
+    <component id="o4uyfe" name="common_btn_07.xml" path="/components/" exported="true"/>
+    <component id="f3wxfh" name="bag_Slider2.xml" path="/components/" exported="true"/>
+    <component id="f3wxfi" name="bag_Slider2_grip.xml" path="/components/" exported="true"/>
+    <image id="dix6fj" name="com_red_dot.png" path="/images/images_new/" exported="true" scale9grid="11,10,1,1"/>
+    <component id="dix6fm" name="red_dot.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="ngv8ft" name="com_btn_explain.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="eigkfu" name="bag_Slider3.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="iqhig0" name="com_btn_collection.xml" path="/components/" exported="true"/>
+    <component id="dslz1l" name="Emoji_Button_bg.xml" path="/components/" exported="true"/>
+    <component id="n16mg3" name="general_star_grid.xml" path="/components/" exported="true"/>
+    <image id="9495r" name="general_advanced_bg.png" path="/images/" exported="true" scale="9grid" scale9grid="19,3,6,3"/>
+    <component id="hfih8s" name="main_btn_popup.xml" path="/components/" exported="true"/>
+    <component id="g01iq" name="Button_chose.xml" path="/components/" exported="true"/>
+    <component id="is8cg8" name="EffectRoot.xml" path="/components/" exported="true"/>
+    <image id="un05ga" name="red_9.png" path="/images/number/" exported="true"/>
+    <image id="un05gb" name="green_+.png" path="/images/number/" exported="true"/>
+    <image id="un05gc" name="green_0.png" path="/images/number/" exported="true"/>
+    <image id="un05gd" name="green_1.png" path="/images/number/" exported="true"/>
+    <image id="un05ge" name="green_2.png" path="/images/number/" exported="true"/>
+    <image id="un05gf" name="green_3.png" path="/images/number/" exported="true"/>
+    <image id="un05gg" name="green_4.png" path="/images/number/" exported="true"/>
+    <image id="un05gh" name="green_5.png" path="/images/number/" exported="true"/>
+    <image id="un05gi" name="green_6.png" path="/images/number/" exported="true"/>
+    <image id="un05gj" name="green_7.png" path="/images/number/" exported="true"/>
+    <image id="un05gk" name="green_8.png" path="/images/number/" exported="true"/>
+    <image id="un05gl" name="green_9.png" path="/images/number/" exported="true"/>
+    <image id="un05gm" name="red_-.png" path="/images/number/" exported="true"/>
+    <image id="un05gn" name="red_0.png" path="/images/number/" exported="true"/>
+    <image id="un05go" name="red_1.png" path="/images/number/" exported="true"/>
+    <image id="un05gp" name="red_2.png" path="/images/number/" exported="true"/>
+    <image id="un05gq" name="red_3.png" path="/images/number/" exported="true"/>
+    <image id="un05gr" name="red_4.png" path="/images/number/" exported="true"/>
+    <image id="un05gs" name="red_5.png" path="/images/number/" exported="true"/>
+    <image id="un05gt" name="red_6.png" path="/images/number/" exported="true"/>
+    <image id="un05gu" name="red_7.png" path="/images/number/" exported="true"/>
+    <image id="un05gv" name="red_8.png" path="/images/number/" exported="true"/>
+    <font id="un05gw" name="number_01.fnt" path="/images/font/" exported="true"/>
+    <font id="un05gx" name="number_02.fnt" path="/images/font/" exported="true"/>
+    <image id="un05gy" name="red_+.png" path="/images/number/" exported="true"/>
+    <image id="un05gz" name="green_-.png" path="/images/number/" exported="true"/>
+    <component id="rq2jh1" name="com_prop_iconName.xml" path="/components/" exported="true"/>
+    <image id="m79tb" name="troops_head_bg_03.png" path="/images/" exported="true"/>
+    <image id="lhtphs" name="friends_icon_01.png" path="/images/images_new/" exported="true"/>
+    <image id="lhtpht" name="friends_icon_02.png" path="/images/images_new/" exported="true"/>
+    <image id="lhtphu" name="friends_icon_03.png" path="/images/images_new/" exported="true"/>
+    <image id="lhtphw" name="friends_icon_05.png" path="/images/images_new/" exported="true"/>
+    <component id="lhtphx" name="chat.xml" path="/components/" exported="true"/>
+    <component id="lhtphy" name="collect.xml" path="/components/" exported="true"/>
+    <component id="lhtphz" name="give.xml" path="/components/" exported="true"/>
+    <component id="lhtp5" name="sort.xml" path="/components/" exported="true"/>
+    <image id="o48wi3" name="0.png" path="/images/number/" exported="true"/>
+    <image id="o48wi4" name="1.png" path="/images/number/" exported="true"/>
+    <image id="o48wi5" name="2.png" path="/images/number/" exported="true"/>
+    <image id="o48wi6" name="3.png" path="/images/number/" exported="true"/>
+    <image id="o48wi7" name="4.png" path="/images/number/" exported="true"/>
+    <image id="o48wi8" name="5.png" path="/images/number/" exported="true"/>
+    <image id="o48wi9" name="6.png" path="/images/number/" exported="true"/>
+    <image id="o48wia" name="7.png" path="/images/number/" exported="true"/>
+    <image id="o48wib" name="8.png" path="/images/number/" exported="true"/>
+    <image id="o48wic" name="9.png" path="/images/number/" exported="true"/>
+    <font id="o48wid" name="number_03.fnt" path="/images/font/" exported="true"/>
+    <image id="o48wie" name="10.png" path="/images/number/" exported="true"/>
+    <image id="t2rgif" name="com_fire.png" path="/images/" exported="true"/>
+    <image id="hgk1ij" name="rank06_0.png" path="/images/number/" exported="true"/>
+    <image id="hgk1ik" name="rank06_1.png" path="/images/number/" exported="true"/>
+    <image id="hgk1il" name="rank06_2.png" path="/images/number/" exported="true"/>
+    <image id="hgk1im" name="rank06_3.png" path="/images/number/" exported="true"/>
+    <image id="hgk1in" name="rank06_4.png" path="/images/number/" exported="true"/>
+    <image id="hgk1io" name="rank06_5.png" path="/images/number/" exported="true"/>
+    <image id="hgk1ip" name="rank06_6.png" path="/images/number/" exported="true"/>
+    <image id="hgk1iq" name="rank01.png" path="/images/number/" exported="true"/>
+    <image id="hgk1ir" name="rank01_+.png" path="/images/number/" exported="true"/>
+    <image id="hgk1is" name="rank01_1.png" path="/images/number/" exported="true"/>
+    <image id="hgk1it" name="rank02.png" path="/images/number/" exported="true"/>
+    <image id="hgk1iu" name="rank02_+.png" path="/images/number/" exported="true"/>
+    <image id="hgk1iv" name="rank02_1.png" path="/images/number/" exported="true"/>
+    <image id="hgk1iw" name="rank03.png" path="/images/number/" exported="true"/>
+    <image id="hgk1ix" name="rank03_+.png" path="/images/number/" exported="true"/>
+    <image id="hgk1iy" name="rank03_1.png" path="/images/number/" exported="true"/>
+    <image id="hgk1iz" name="rank04.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j0" name="rank04_+.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j1" name="rank04_1.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j2" name="rank05.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j3" name="rank05_+.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j4" name="rank05_1.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j5" name="rank06.png" path="/images/number/" exported="true"/>
+    <image id="hgk1j6" name="rank06_+.png" path="/images/number/" exported="true"/>
+    <font id="hgk1j7" name="rank_1.fnt" path="/images/font/" exported="true"/>
+    <font id="hgk1j8" name="rank_2.fnt" path="/images/font/" exported="true"/>
+    <font id="hgk1j9" name="rank_3.fnt" path="/images/font/" exported="true"/>
+    <font id="hgk1ja" name="rank_4.fnt" path="/images/font/" exported="true"/>
+    <font id="hgk1jb" name="rank_5.fnt" path="/images/font/" exported="true"/>
+    <font id="hgk1jc" name="rank_6.fnt" path="/images/font/" exported="true"/>
+    <image id="hgk1jd" name="rank06_7.png" path="/images/number/" exported="true"/>
+    <image id="hgk1je" name="rank06_8.png" path="/images/number/" exported="true"/>
+    <image id="hgk1jf" name="rank06_9.png" path="/images/number/" exported="true"/>
+    <image id="wywsjg" name="common_select_02.png" path="/images/" exported="true" scale="9grid" scale9grid="10,9,2,4"/>
+    <component id="e6v7ji" name="GlobalModalWaiting.xml" path="/components/" exported="true"/>
+    <image id="e6v7jj" name="icon_zzz.png" path="/images/" exported="true"/>
+    <image id="h3jujt" name="common_frame_quality_0.png" path="/images/images_new/" exported="true" scale9grid="6,6,84,87"/>
+    <component id="ee2ik0" name="equipmentIcon.xml" path="/components/" exported="true"/>
+    <component id="aklwkc" name="common_btn_siege.xml" path="/components/" exported="true"/>
+    <image id="aklwkd" name="research_btn_3.png" path="/images/" exported="true"/>
+    <image id="aklwkg" name="research_bg_02.png" path="/images/" exported="true" scale="9grid" scale9grid="81,80,162,94"/>
+    <component id="aklwkm" name="common_btn_close03.xml" path="/components/" exported="true"/>
+    <image id="go05ko" name="location.png" path="/images/" exported="true"/>
+    <image id="hns1ga" name="icon_mail.png" path="/images/" exported="true" scale9grid="13,13,26,26"/>
+    <image id="thpvkq" name="com_clock.png" path="/images/images_new/" exported="true"/>
+    <component id="k7pz1v" name="Button_cut.xml" path="/components/" exported="true"/>
+    <component id="d4a6ku" name="btn_tab.xml" path="/components/" exported="true"/>
+    <component id="ykwwkx" name="currencyListCom.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="ykwwky" name="icon_06.png" path="/images/" exported="true"/>
+    <component id="rb1rl1" name="com_btnAdd.xml" path="/components/" exported="true"/>
+    <component id="q8mhff" name="fighting_headPortrait.xml" path="/components/" exported="true"/>
+    <component id="9yrdle" name="com_leagueName.xml" path="/components/" exported="true"/>
+    <component id="pz0vlf" name="com_prop_icon4.xml" path="/components/" exported="true"/>
+    <image id="u0wxcf8" name="common_select_04.png" path="/images/" exported="true" scale="9grid" scale9grid="29,27,7,8"/>
+    <component id="wp0jcfb" name="common_btn_close_2.xml" path="/components/" exported="true"/>
+    <image id="mmv0cgx" name="common_select_05.png" path="/images/" exported="true" scale="9grid" scale9grid="15,15,30,30"/>
+    <component id="mmv0cgy" name="equipmentIcon2.xml" path="/components/" exported="true"/>
+    <component id="ujpqchc" name="LoadingView.xml" path="/panel/" exported="true"/>
+    <image id="b6o0chl" name="com_bg_ilbl.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,5,3,5"/>
+    <component id="b6o0cho" name="btn_head.xml" path="/components/" exported="true"/>
+    <image id="b6o0chw" name="com_change03.png" path="/images/" exported="true" scale="9grid" scale9grid="16,1,464,23"/>
+    <image id="xoe1ci1" name="common_arrow01.png" path="/images/" exported="true"/>
+    <image id="xoe1ci3" name="com_btn_share2.png" path="/images/images_new/" exported="true"/>
+    <component id="pwz3ci7" name="common_btn.xml" path="/components/" exported="true"/>
+    <image id="12fw9ci9" name="com_bg3.png" path="/images/" exported="true"/>
+    <image id="12fw9cid" name="com_btn_close.png" path="/images/" exported="true"/>
+    <component id="d4gi9cij" name="Component_blank.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="j3xs9cio" name="bg15.png" path="/images/" exported="true"/>
+    <component id="sa6m9cip" name="common_btn_11.xml" path="/components/" exported="true"/>
+    <component id="k6s79ciy" name="com_item_lbl.xml" path="/components/" exported="true"/>
+    <image id="139yz9cj6" name="common_Arms_10.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cj7" name="common_Arms_11.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cj8" name="common_Arms_4.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cj9" name="common_Arms_5.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cja" name="common_Arms_6.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cjb" name="common_Arms_7.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cjc" name="common_Arms_8.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="139yz9cjd" name="common_Arms_9.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="ssbdz9cjg" name="common_pbr_loading_5.png" path="/images/" exported="true" scale="9grid" scale9grid="0,4,82,2"/>
+    <component id="arx1z9cjj" name="com_btn_closeBlank.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="fw4dz9cjk" name="common_Arms_14.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="fw4dz9cjl" name="common_Arms_12.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="fw4dz9cjm" name="common_Arms_13.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="hqb9z9cjo" name="fight_icon_bg02.png" path="/images/" exported="true"/>
+    <font id="q24lz9cjq" name="fight_font.fnt" path="/images/font/" exported="true"/>
+    <image id="q24lz9ck2" name="fight_0.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck3" name="fight_1.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck4" name="fight_2.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck5" name="fight_3.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck6" name="fight_4.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck7" name="fight_5.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck8" name="fight_6.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ck9" name="fight_7.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9cka" name="fight_8.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ckb" name="fight_9.png" path="/images/number/" exported="true"/>
+    <image id="q24lz9ckc" name="fight_-.png" path="/images/number/" exported="true"/>
+    <image id="spsrz9ckd" name="common_select_08.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="55,54,27,25"/>
+    <component id="nqnqz9ckg" name="com_btn_report.xml" path="/components/" exported="true"/>
+    <image id="bnhnjq" name="city_04.png" path="/images/" exported="true"/>
+    <image id="lhadz9ckj" name="com_bg_title4.png" path="/images/" exported="true" scale="9grid" scale9grid="21,21,5,9"/>
+    <image id="lhadz9ckk" name="common_arrow_11.png" path="/images/" exported="true"/>
+    <component id="iwg4z9ckq" name="comPropTween.xml" path="/components/" exported="true"/>
+    <component id="jvu0ci2" name="com_btn_lbl_lines.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="kn9hz9cl9" name="common_Arms_15.png" path="/images/images_new/arms/" exported="true"/>
+    <font id="kn9hz9cle" name="quality_font.fnt" path="/images/font/" exported="true"/>
+    <image id="kn9hz9clf" name="quality_0.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9clg" name="quality_1.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9clh" name="quality_2.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9cli" name="quality_3.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9clj" name="quality_4.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9clk" name="quality_5.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9cll" name="quality_6.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9clm" name="quality_7.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9cln" name="quality_8.png" path="/images/number/" exported="true"/>
+    <image id="kn9hz9clo" name="quality_9.png" path="/images/number/" exported="true"/>
+    <component id="lpzoz9clq" name="com_btnAdd_diamonds.xml" path="/components/" exported="true"/>
+    <component id="qj9zz9cls" name="choice.xml" path="/components/" exported="true"/>
+    <component id="p3vgz9clu" name="comItem_Animation.xml" path="/components/" exported="true"/>
+    <component id="cz1oz9clw" name="btn_head3.xml" path="/components/" exported="true"/>
+    <component id="cz1oz9clx" name="cutParticle.xml" path="/components/" exported="true"/>
+    <image id="l3xgz9cm0" name="common_arrow_12.png" path="/images/" exported="true"/>
+    <component id="l3xgz9cm1" name="Button_guide_1.xml" path="/components/" exported="true"/>
+    <image id="cxixz9cm3" name="btn_close.png" path="/images/images_new/" exported="true"/>
+    <image id="cxixz9cmc" name="stars01.png" path="/images/images_new/" exported="true"/>
+    <image id="cxixz9cmd" name="stars02.png" path="/images/images_new/" exported="true" favorite="true"/>
+    <image id="cxixz9cmf" name="gen_card_select.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="37,36,4,4"/>
+    <image id="cxixz9cmr" name="com_change05.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="0,5,202,4"/>
+    <component id="ssbdchk" name="information_name_camp.xml" path="/components/" exported="true"/>
+    <image id="ebe5z9cn2" name="line_01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="8,0,2,2"/>
+    <image id="oqowz9cn5" name="com_spot.png" path="/images/images_new/" exported="true"/>
+    <component id="ebe5ci9" name="attribute_item.xml" path="/components/" exported="true"/>
+    <image id="c4umz9cna" name="com_btn_bg01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="6,6,142,47"/>
+    <component id="c4umz9cnc" name="com_btn_001.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="c4umz9cne" name="com_bg_tips_arrow.png" path="/images/images_new/" exported="true"/>
+    <component id="c4umcio" name="com_btn_tab.xml" path="/components/" exported="true"/>
+    <image id="c4umz9cnm" name="line_03.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="42,6,10,12"/>
+    <image id="o283z9cnq" name="com_change07.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="3,5,84,12"/>
+    <image id="o283z9cnt" name="com_select_00.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="38,39,7,7"/>
+    <image id="hqarz9co6" name="com_change08.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="0,3,297,10"/>
+    <component id="n1mwt" name="com_btn_square.xml" path="/components/" exported="true"/>
+    <image id="eaahz9co9" name="com_btn_bg00.png" path="/images/images_new/" exported="true" favorite="true" scale="9grid" scale9grid="6,6,142,47"/>
+    <component id="eaahz9cob" name="com_btn_01.xml" path="/components/" exported="true"/>
+    <image id="yhldz9coc" name="com_icon_00.png" path="/images/images_new/" exported="true"/>
+    <component id="yhldz9cod" name="com_btn_02_redPoint.xml" path="/components/" exported="true"/>
+    <image id="yhldz9cof" name="com_btn_share.png" path="/images/images_new/" exported="true"/>
+    <component id="yhldz9cog" name="com_btn_share0.xml" path="/components/" exported="true"/>
+    <image id="yhldz9coj" name="com_bg_tips03.png" path="/images/images_new/" exported="true" favorite="true" scale="9grid" scale9grid="27,33,5,5"/>
+    <component id="yhldz9con" name="com_btn_close2.xml" path="/components/" exported="true"/>
+    <image id="yhldz9coo" name="com_select_01.png" path="/images/images_new/" exported="true"/>
+    <image id="ceggz9cop" name="com_btn_plus.png" path="/images/images_new/" exported="true"/>
+    <component id="ceggz9cor" name="com_btn_plus.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="ceggz9cot" name="com_strip_bg03.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="13,13,6,4"/>
+    <component id="j4kdz9cp3" name="com_btn_icon.xml" path="/components/" exported="true"/>
+    <image id="j4kdz9cp4" name="com_red_dot2.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,11,8,6"/>
+    <image id="r616z9cp9" name="com_btn_coord.png" path="/images/images_new/" exported="true"/>
+    <image id="r616z9cpa" name="com_change03.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="18,9,462,20"/>
+    <image id="r616z9cpc" name="com_btn_explain01.png" path="/images/images_new/" exported="true"/>
+    <image id="yhlde" name="blame01.png" path="/images/images_new/" exported="true"/>
+    <image id="m7yvhz9cna" name="com_btn_lower.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="7,7,6,5"/>
+    <component id="m47yhz9cnc" name="generalFragment.xml" path="/components/" exported="true"/>
+    <image id="oepthz9cnd" name="com_select_02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="14,13,5,5"/>
+    <image id="u6yzhz9cnf" name="com_page04.png" path="/images/images_new/" exported="true"/>
+    <image id="u6yzhz9cng" name="com_page03.png" path="/images/images_new/" exported="true"/>
+    <component id="u6yzhz9cni" name="com_btn_page.xml" path="/components/" exported="true"/>
+    <image id="fz63hz9cnk" name="line_00.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="7,0,7,4"/>
+    <component id="e9mlkf" name="com_btn_buy.xml" path="/components/" exported="true"/>
+    <component id="gp9phz9cns" name="com_prop_icon2.xml" path="/components/"/>
+    <component id="f6nohz9cnx" name="tokenItem.xml" path="/components/" exported="true"/>
+    <component id="oepthz9cp0" name="main_teamGeneral.xml" path="/components/" exported="true"/>
+    <component id="g9nyhz9ct6" name="generalSkillIcon.xml" path="/components/" exported="true"/>
+    <image id="u6yzhz9cpx" name="com_icon_lock.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu2" name="main_bg_icon01.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu3" name="com_arms_bg.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu4" name="com_arms_icon00.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu5" name="com_arms_icon01.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu6" name="com_arms_icon02.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu7" name="com_arms_icon03.png" path="/images/images_new/" exported="true"/>
+    <image id="ok6zhz9cu8" name="com_arms_icon04.png" path="/images/images_new/" exported="true"/>
+    <image id="qdf6hz9cua" name="com_arms_icon.png" path="/images/images_new/" exported="true"/>
+    <image id="qdf6hz9cub" name="com_arms_icon05.png" path="/images/images_new/" exported="true"/>
+    <image id="qdf6hz9cud" name="building_bg_levelup02.png" path="/images/images_new/" exported="true"/>
+    <component id="c1q9hz9cug" name="com_btn_check4.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="c1q9hz9cuh" name="line_04.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="27,0,341,14"/>
+    <image id="c1q9hz9cuj" name="com_bg_title7.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="19,0,16,36"/>
+    <component id="jmaehz9cup" name="common_btn_01.xml" path="/components/"/>
+    <image id="jmaehz9cuv" name="com_btn_arrow02.png" path="/images/images_new/" exported="true" favorite="true"/>
+    <image id="jmaehz9cuw" name="com_btn_arrow03.png" path="/images/images_new/" exported="true"/>
+    <image id="bmedhz9cvc" name="btn_icon03_delete.png" path="/images/images_new/" exported="true"/>
+    <image id="bmedhz9cvd" name="btn_icon01.png" path="/images/images_new/" exported="true"/>
+    <image id="bmedhz9cve" name="btn_icon02_share.png" path="/images/images_new/" exported="true"/>
+    <component id="ovc9hz9cvh" name="com_btn_close4.xml" path="/components/" exported="true"/>
+    <component id="js41hz9cw1" name="iconItem.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="n8nhhz9cw2" name="buildingPbr01.xml" path="/components/" exported="true"/>
+    <component id="9itdhz9cw3" name="btn_lbl.xml" path="/components/" exported="true"/>
+    <component id="9itdz9cnx" name="TroopGenItem.xml" path="/components/" exported="true"/>
+    <image id="r9f638" name="bg_chat_09.png" path="/images_new/" exported="true" scale="9grid" scale9grid="240,16,6,5"/>
+    <image id="o4i9z9cjt" name="icon.png" path="/images/images_new/" exported="true"/>
+    <component id="f4o9z9cnw" name="troopGeneralIcon.xml" path="/components/" exported="true"/>
+    <component id="gjl8hz9cx4" name="comItem2.xml" path="/components/" exported="true"/>
+    <image id="w84whz9cxd" name="small_btn02.png" path="/images/images_new/" exported="true"/>
+    <image id="w84whz9cxe" name="small_btn03.png" path="/images/images_new/" exported="true"/>
+    <image id="w84whz9cxf" name="small_btn04.png" path="/images/images_new/" exported="true"/>
+    <image id="w84whz9cxg" name="small_btn05.png" path="/images/images_new/" exported="true"/>
+    <image id="w84whz9cxj" name="small_btn08.png" path="/images/images_new/" exported="true"/>
+    <component id="w84whz9cxl" name="comItem_size70.xml" path="/components/"/>
+    <component id="s9vkhz9cxm" name="comItem_size60.xml" path="/components/"/>
+    <component id="s9vkhz9cxn" name="comItem_size50.xml" path="/components/"/>
+    <component id="s9vkhz9cxo" name="comItem_size84.xml" path="/components/"/>
+    <component id="s9vkhz9cxp" name="com_btn_small.xml" path="/components/" exported="true"/>
+    <image id="o6syhz9cyi" name="con_bg_icon_s.png" path="/images/images_new/" exported="true"/>
+    <component id="j842hz9cyi" name="comItem.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="d2sohz9cyl" name="comItem1.xml" path="/components/"/>
+    <image id="cmlrhz9cym" name="com_bg_tips01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="15,12,6,9"/>
+    <image id="cmlrhz9cyn" name="com_btn_explain02.png" path="/images/images_new/" exported="true"/>
+    <image id="cmlrhz9cyo" name="com_btn_explain03.png" path="/images/images_new/" exported="true"/>
+    <component id="bik7hz9cyq" name="Popup_bg.xml" path="/components/" exported="true"/>
+    <component id="yhldk" name="rewardIcon.xml" path="/components/" exported="true"/>
+    <image id="tauyhz9cyv" name="com_popup_bg05.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="16,14,5,8"/>
+    <image id="tauyhz9cyw" name="com_popup_bg06.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="11,11,9,7"/>
+    <image id="tauyhz9cyy" name="com_state_bg.png" path="/images/images_new/" exported="true"/>
+    <image id="n4qwhz9cz1" name="common_funnel.png" path="/images/images_new/" exported="true"/>
+    <image id="z04phz9cz2" name="com_btn_lock.png" path="/images/images_new/" exported="true"/>
+    <component id="z04phz9cz4" name="com_btn_tab2.xml" path="/components/" exported="true"/>
+    <component id="xz10hz9cz8" name="com_btn_share1(1).xml" path="/components/" exported="true"/>
+    <image id="xz10hz9cz9" name="com_warbg01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="31,0,4,65"/>
+    <image id="xz10hz9czb" name="common_arrow_5.png" path="/images/images_new/" exported="true"/>
+    <component id="oxy0hz9czd" name="generalIcon4.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="oxy0hz9cze" name="hero_bg05.png" path="/images/images_new/" exported="true"/>
+    <image id="oxy0hz9czg" name="hero_btn03.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="7,0,10,33"/>
+    <image id="oxy0jx" name="hero_btn01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="19,16,8,8"/>
+    <component id="oxy0hz9czl" name="com_btn_iconName.xml" path="/components/" exported="true"/>
+    <component id="oxy0z9cqy" name="skillItem.xml" path="/components/" exported="true"/>
+    <image id="oxy0hz9czm" name="hero_bg02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="20,0,22,30"/>
+    <image id="vb7khz9czn" name="com_btn_explain01_1.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9czo" name="com_btn_explain01_2.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9czp" name="com_build_icon.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9czr" name="com_check02_1.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9czs" name="com_check02_2.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9czt" name="com_check03_1.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9czv" name="com_function_icon_base.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9d01" name="com_green_dot.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9d02" name="com_privateletters_btn011.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9d03" name="com_recommendbg.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="45,16,3,6"/>
+    <image id="vb7khz9d05" name="common_research_6.png" path="/images/images_new/" exported="true"/>
+    <image id="vb7khz9d06" name="common_select_09.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="42,40,10,12"/>
+    <component id="vb7khz9d0a" name="com_btn_share1.xml" path="/components/"/>
+    <image id="vb7khz9d0g" name="common_Arms_1.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0h" name="common_Arms_10.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0i" name="common_Arms_11.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0j" name="common_Arms_12.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0k" name="common_Arms_13.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0l" name="common_Arms_14.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0m" name="common_Arms_15.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0n" name="common_Arms_2.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0o" name="common_Arms_3.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0p" name="common_Arms_4.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0q" name="common_Arms_5.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0r" name="common_Arms_6.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0s" name="common_Arms_7.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0t" name="common_Arms_8.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0u" name="common_Arms_9.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="vb7khz9d0v" name="mainhud_task_bg01_1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,7,25,41"/>
+    <image id="d8dihz9d0y" name="com_guide_arrow.png" path="/images/images_new/" exported="true"/>
+    <image id="d8dihz9d0z" name="small_btn012.png" path="/images/images_new/" exported="true"/>
+    <image id="d8dihz9d11" name="com_spot01.png" path="/images/images_new/" exported="true"/>
+    <image id="d8dihz9d12" name="com_spot02.png" path="/images/images_new/" exported="true"/>
+    <image id="d8dihz9d13" name="com_spot03.png" path="/images/images_new/" exported="true"/>
+    <component id="nnlhhz9d15" name="com_btn_buy2.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="nnlhhz9d16" name="common_slidingblock.png" path="/images/images_new/" exported="true"/>
+    <image id="fx02hz9d19" name="icon_00.png" path="/images/images_new/" exported="true"/>
+    <image id="vqdvhz9d19" name="com_repair_icon.png" path="/images/images_new/" exported="true"/>
+    <image id="vqdvhz9d2v" name="league_icon_map.png" path="/images/images_new/" exported="true"/>
+    <component id="h55mhz9d1a" name="com_btn_time.xml" path="/components/" exported="true"/>
+    <image id="v1bthz9d2x" name="com_bg_delimiter.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="24,0,3,11"/>
+    <component id="k06chz9d3d" name="com_btn_tab3.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="wqqdhz9d30" name="com_icon_unlocked.png" path="/images/images_new/" exported="true"/>
+    <component id="s5edhz9d3f" name="com_btn_tab4.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="s5edhz9d3g" name="com_btn_buy3.xml" path="/components/" exported="true"/>
+    <component id="vvwchz9d3h" name="com_btn_buy4.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="vvwchz9d3i" name="com_btn_buy5.xml" path="/components/" exported="true"/>
+    <component id="vvwchz9d3j" name="propsIcon.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="ae0jhz9d3n" name="com_balckmask.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="3,0,3,260"/>
+    <image id="ae0jhz9d3o" name="com_bg_dialog.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="86,20,172,40"/>
+    <image id="ae0jhz9d3p" name="com_bg_dialog2.png" path="/images/images_new/" exported="true"/>
+    <image id="k4gnhz9d3r" name="com_recommendbg2.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="43,0,6,41"/>
+    <image id="gpdyhz9d61" name="com_icon_edit.png" path="/images/images_new/" exported="true"/>
+    <font id="no3vhz9d62" name="source_regular.ttf" path="/images/font/" exported="true" renderMode="" samplePointSize="16"/>
+    <font id="no3vhz9d63" name="source_bold.ttf" path="/images/font/" exported="true" renderMode="" samplePointSize="16"/>
+    <image id="no3vhz9d64" name="com_addto.png" path="/images/images_new/" exported="true"/>
+    <image id="no3vhz9d66" name="com_bg_btn01.png" path="/images/images_new/" exported="true"/>
+    <image id="no3vhz9d67" name="com_bg_btn02.png" path="/images/images_new/" exported="true"/>
+    <image id="no3vhz9d68" name="com_bg_resource01.png" path="/images/images_new/" exported="true" favorite="true" scale="9grid" scale9grid="7,6,32,32"/>
+    <image id="no3vhz9d69" name="com_bg_segmentation.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="2,16,5,2"/>
+    <image id="no3vhz9d6a" name="com_bg_resource.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,0,2,33"/>
+    <image id="no3vhz9d6b" name="com_btn_plus01.png" path="/images/images_new/" exported="true"/>
+    <image id="no3vhz9d6c" name="com_btn_reduce01.png" path="/images/images_new/" exported="true"/>
+    <component id="no3vhz9d6d" name="com_btn_close5.xml" path="/components/" exported="true"/>
+    <component id="no3vhz9d6f" name="com_btn_close6.xml" path="/components/" exported="true"/>
+    <image id="b2gghz9d6g" name="com_btn_bg02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="6,6,142,47"/>
+    <component id="b2gghz9d6h" name="resourceNum.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="b2gghz9d6i" name="com_btn_tab5.xml" path="/components/" exported="true"/>
+    <image id="ss6ehz9cyp" name="com_smithy_icon.png" path="/images/" exported="true"/>
+    <component id="ozu2hz9d6j" name="resourceNum2.xml" path="/components/"/>
+    <component id="ozu2hz9d48" name="comIconTween.xml" path="/components/" exported="true"/>
+    <image id="pdfthz9d6k" name="com_btn_close2.png" path="/images/images_new/" exported="true"/>
+    <component id="aokv9" name="btnClose.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="pyiyhz9d6l" name="redPoint.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="lfqnhz9d6u" name="common_btn_plus1.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d6w" name="com_bg_popup02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="60,58,7,10"/>
+    <image id="lfqnhz9d6y" name="com_bg_popup04.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="211,156,7,52"/>
+    <image id="lfqnhz9d6z" name="com_btn_tab01.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d70" name="com_btn_tab02.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d71" name="com_strip010.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,0,80,29"/>
+    <image id="lfqnhz9d72" name="com_strip011.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,0,4,30"/>
+    <component id="izxehz9d74" name="Popup_bg1.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="ux7hhz9d75" name="com_bg_popup1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="303,185,51,413"/>
+    <image id="lfqnhz9d75" name="stars03.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d76" name="hero_bg.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d77" name="attribute_icon02.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d78" name="attribute_icon03.png" path="/images/images_new/" exported="true"/>
+    <image id="lfqnhz9d79" name="attribute_icon01.png" path="/images/images_new/" exported="true"/>
+    <component id="hxd7hz9d7a" name="generalIconNormal.xml" path="/components/" exported="true"/>
+    <component id="hxd7hz9d7b" name="generalIcon2.xml" path="/components/" exported="true"/>
+    <component id="hxd7hz9d7c" name="circleGeneral.xml" path="/components/" exported="true"/>
+    <component id="hxd7hz9d7e" name="btn_tab3.xml" path="/components/" exported="true"/>
+    <component id="hxd7hz9d7f" name="Button_cut2.xml" path="/components/" exported="true"/>
+    <image id="hxd7hz9d7g" name="com_bg_tips00.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="67,74,8,11"/>
+    <image id="hxd7hz9d7i" name="com_bg_tips02_mask2.png" path="/images/images_new/" exported="true" favorite="true" scale="9grid" scale9grid="43,43,19,12"/>
+    <image id="hxd7hz9d7j" name="title_bg01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="0,3,363,3"/>
+    <image id="hxd7hz9d7m" name="hero_selec02.png" path="/images/images_new/" exported="true"/>
+    <image id="hxd7hz9d7n" name="hero_selec01.png" path="/images/images_new/" exported="true"/>
+    <image id="hxd7hz9d7o" name="lock_10.png" path="/images/images_new/" exported="true"/>
+    <image id="bumchz9d7p" name="negative_bg03.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="19,18,16,13"/>
+    <image id="bumchz9d7q" name="negative_bg04.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="21,0,12,44"/>
+    <image id="bumchz9d7r" name="negative_bg05.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="9,0,18,4"/>
+    <image id="bumchz9d7s" name="negative_bg06.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="31,31,6,5"/>
+    <image id="bumchz9d7t" name="negative_bg07.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="20,0,5,50"/>
+    <image id="bumchz9d7u" name="negative_strip00.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="bumchz9d7v" name="negative_strip01.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="13,15,6,5"/>
+    <image id="bumchz9d7w" name="negative_strip02.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="12,13,6,5"/>
+    <image id="bumchz9d7x" name="negative_bg01.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="13,12,12,10"/>
+    <image id="bumchz9d7y" name="negative_bg02.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="9,9,18,18"/>
+    <component id="bumchz9d7z" name="Component1.xml" path="/components/"/>
+    <image id="bumchz9d80" name="com_bg_tips06.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="8,5,9,12"/>
+    <image id="bumchz9d83" name="small_btn022.png" path="/images/images_new/" exported="true"/>
+    <component id="jas1hz9d7z" name="filletGeneral.xml" path="/components/" exported="true"/>
+    <component id="jas1hz9d80" name="equipmentIcon3.xml" path="/components/" exported="true"/>
+    <image id="jas1hz9d82" name="com_btn_switch02.png" path="/images/images_new/" exported="true"/>
+    <image id="jas1hz9d83" name="com_btn_bg001.png" path="/images/images_new/" exported="true"/>
+    <image id="jas1hz9d84" name="com_btn_setting.png" path="/images/images_new/" exported="true"/>
+    <image id="jas1hz9d85" name="com_btn_switch01.png" path="/images/images_new/" exported="true"/>
+    <image id="10473hz9cyd" name="settlement_bg01.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="10473hz9cyf" name="settlement_bg03.png" path="/images/images_new/settlement2/" exported="true" scale="9grid" scale9grid="0,15,702,134"/>
+    <image id="10473hz9cyg" name="settlement_bg04.png" path="/images/images_new/settlement2/" exported="true" scale="9grid" scale9grid="113,0,5,29"/>
+    <image id="10473hz9cyh" name="settlement_bg05.png" path="/images/images_new/settlement2/" exported="true" scale="9grid" scale9grid="0,11,489,183"/>
+    <image id="10473hz9cyi" name="settlement_bg06.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="10473hz9cyj" name="settlement_bg07.png" path="/images/images_new/settlement2/" exported="true" scale="9grid" scale9grid="37,0,6,36"/>
+    <image id="10473hz9cyk" name="settlement_bg08.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="10473hz9cym" name="settlement_bg010.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="10473hz9cyn" name="settlement_word01.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="10473hz9cyo" name="settlement_word02.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="10473hz9cyp" name="settlement_word03.png" path="/images/images_new/settlement2/" exported="true"/>
+    <component id="krfh1iy5b91" name="com_btn_setting.xml" path="/components/" exported="true"/>
+    <component id="krfh1iy5b92" name="headmask.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="krfh1iy5b93" name="com_btn_explain1.png" path="/images/images_new/" exported="true"/>
+    <component id="krfh1iy5b94" name="com_btn_explain1.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="hdmy1iy5b95" name="WindowFrame.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="104731iy5b91" name="general_star_grid2.xml" path="/components/" exported="true"/>
+    <image id="e2ps1iy5b96" name="com_btn_arrow04.png" path="/images/images_new/" exported="true"/>
+    <component id="e2ps1iy5b97" name="com_btn_close7.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="e2ps1iy5b98" name="bg8.jpg" path="/images/bg_new/" exported="true" atlas="alone_npot"/>
+    <component id="e2ps1iy5b99" name="btn_tab0.xml" path="/components/" exported="true"/>
+    <component id="s1351iy5b96" name="equip_suitAtt1.xml" path="/components/" exported="true"/>
+    <component id="s1351iy5b98" name="equip_attribute.xml" path="/components/" exported="true"/>
+    <image id="s1351iy5b9a" name="com_title_line01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="48,0,54,16"/>
+    <component id="s1351iy5b9c" name="equip_attribute2.xml" path="/components/" exported="true"/>
+    <component id="s1351iy5b9d" name="equip_attribute3.xml" path="/components/" exported="true"/>
+    <component id="s1351iy5b9e" name="com_cbtn_icon.xml" path="/components/" exported="true"/>
+    <component id="s1351iy5b9f" name="equip_suitAtt_0.xml" path="/components/" exported="true"/>
+    <image id="yya01iy5b9h" name="negative_bg08.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="11,12,8,6"/>
+    <image id="1025jhz9d4f" name="com_icon_selected.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="19,29,85,58"/>
+    <component id="j9d91qp8vci" name="btn_tab2.xml" path="/components/"/>
+    <image id="j9d91qp8vcj" name="com_arrow015.png" path="/images/images_new/" exported="true"/>
+    <image id="j9d91qp8vck" name="lock_11.png" path="/images/images_new/" exported="true"/>
+    <image id="j9d91qp8vcl" name="small_btn023.png" path="/images/images_new/" exported="true"/>
+    <image id="j9d91qp8vcm" name="negative_bg09.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="64,0,73,25"/>
+    <image id="poaz1iy5b9m" name="hero_bg024.png" path="/images/images_new/" exported="true"/>
+    <component id="poazl1" name="equiTitle.xml" path="/components/" exported="true"/>
+    <image id="poaz1qp8vcr" name="bag_label.png" path="/images/images_new/" exported="true"/>
+    <image id="ebe41qp8vcs" name="negative_strip001.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="14,15,7,6"/>
+    <image id="ebe41qp8vct" name="com_btn_return.png" path="/images/images_new/" exported="true" favorite="true"/>
+    <image id="ebe41qp8vcu" name="com_tab03.png" path="/images/images_new/" exported="true"/>
+    <image id="ebe41qp8vcv" name="com_tab04.png" path="/images/images_new/" exported="true"/>
+    <component id="ebe41qp8vcw" name="com_btn_tab03.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="n6021qp8vcx" name="consumeItem.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="n6021qp8vcy" name="com_btn_return.xml" path="/components/" exported="true"/>
+    <component id="h00fhz9d46" name="generalLock.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="js41hz9cw0" name="wallTeamBtn.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="klrg1qp8vcz" name="com_cbtn_icon01.xml" path="/components/" exported="true"/>
+    <component id="klrg1qp8vd0" name="equipmentIcon2_1.xml" path="/components/" exported="true"/>
+    <font id="klrg1qp8vd1" name="InexactEnunciation.fnt" path="/images/font/" exported="true"/>
+    <image id="klrg1qp8vd2" name="common_lines_1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="25,0,2,1"/>
+    <image id="klrg1qp8vd3" name="common_lines_9.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="22,0,15,7"/>
+    <image id="klrg1qp8vd5" name="com_btn_correct.png" path="/images/images_new/" exported="true"/>
+    <image id="klrg1qp8vd6" name="p_0.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vd7" name="p_1.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vd8" name="p_2.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vd9" name="p_3.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vda" name="p_4.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vdb" name="p_5.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vdc" name="p_6.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vdd" name="p_7.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vde" name="p_8.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vdf" name="p_9.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vdg" name="p_plus.png" path="/images/number/" exported="true"/>
+    <image id="klrg1qp8vdh" name="p_reduce.png" path="/images/number/" exported="true"/>
+    <image id="fk1q1qp8vdi" name="com_bg_popup01.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="0,140,155,282"/>
+    <image id="lumy1qp8vdk" name="com_btn_explain04.png" path="/images/images_new/" exported="true"/>
+    <image id="lumy1qp8vdl" name="small_btn013.png" path="/images/images_new/" exported="true"/>
+    <image id="lumy1qp8vdm" name="small_btn014.png" path="/images/images_new/" exported="true"/>
+    <image id="lumy1qp8vdn" name="small_btn015.png" path="/images/images_new/" exported="true"/>
+    <image id="lumy1qp8vdo" name="small_btn016.png" path="/images/images_new/" exported="true"/>
+    <image id="lumy1qp8vdp" name="small_btn017.png" path="/images/images_new/" exported="true"/>
+    <image id="lumy1qp8vdq" name="small_btn18.png" path="/images/images_new/" exported="true"/>
+    <component id="qy501qp8vdr" name="com_btn_explain04.xml" path="/components/" exported="true"/>
+    <component id="qy501qp8vdu" name="com_btn_icon1.xml" path="/components/" exported="true"/>
+    <image id="qy501qp8vdv" name="small_btn19.png" path="/images/images_new/" exported="true"/>
+    <image id="l1vu1qp8vdw" name="com_arrow016.png" path="/images/images_new/" exported="true"/>
+    <image id="frte1qp8vdx" name="com_arms01.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="frte1qp8vdy" name="com_arms02.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="frte1qp8vdz" name="com_arms03.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="frte1qp8ve0" name="com_arms04.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="frte1qp8ve1" name="com_arms05.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="frte1qp8ve2" name="com_arms06.png" path="/images/images_new/arms/" exported="true"/>
+    <component id="vntm1qp8ve3" name="troopBloodPbr.xml" path="/components/" exported="true"/>
+    <image id="gww71qp8ve5" name="quality_01.png" path="/images/images_new/" exported="true"/>
+    <image id="gww71qp8ve6" name="quality_02.png" path="/images/images_new/" exported="true"/>
+    <image id="gww71qp8ve7" name="quality_03.png" path="/images/images_new/" exported="true"/>
+    <image id="gww71qp8ve8" name="quality_04.png" path="/images/images_new/" exported="true"/>
+    <image id="gww71qp8ve9" name="quality_05.png" path="/images/images_new/" exported="true"/>
+    <image id="gww71qp8veb" name="decorativePattern.png" path="/images/images_new/" exported="true"/>
+    <image id="gww71qp8vec" name="settlement_word04.png" path="/images/images_new/settlement2/" exported="true"/>
+    <component id="f3et1qp8ved" name="armyBtn.xml" path="/components/" exported="true"/>
+    <image id="frte1iy5bds" name="hero_bg028.png" path="/images/images_new/" exported="true"/>
+    <image id="xm3w1qp8ve4" name="com_btn_arrow05.png" path="/images/images_new/" exported="true"/>
+    <component id="o5d41qp8ve5" name="skillIcon2.xml" path="/components/" exported="true"/>
+    <image id="o5d41qp8ve6" name="com_bg_tips02_mask3.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="29,25,20,29"/>
+    <image id="o5d41qp8ve7" name="negative_strip03.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="11,9,8,12"/>
+    <image id="o5d41qp8ve8" name="negative_strip04.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="14,13,3,4"/>
+    <image id="o5d41qp8ve9" name="negative_strip05.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="11,9,8,12"/>
+    <image id="o5d41qp8vea" name="negative_strip06.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="11,9,8,12"/>
+    <image id="mgry1qp8veg" name="activity_bg07.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,3,22,10"/>
+    <image id="shlm6" name="com_change11.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="108,22,9,63"/>
+    <image id="svx3hz9d78" name="strip00.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="17,16,12,8"/>
+    <image id="svx3hz9d79" name="strip01.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="17,15,4,3"/>
+    <image id="svx3hz9d7a" name="strip02.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="15,15,9,3"/>
+    <component id="l6381qp8veh" name="com_btn_buy6.xml" path="/components/" exported="true"/>
+    <image id="hae91qp8veh" name="common_arrow_10.png" path="/images/" exported="true"/>
+    <image id="hae91qp8vei" name="com_btn_bg014.png" path="/images/images_new/" exported="true"/>
+    <component id="smjf1qp8vei" name="main_generalIcon.xml" path="/components/" exported="true"/>
+    <image id="happ1qp8vek" name="function_on_bg.png" path="/images/images_new/function_open/" exported="true"/>
+    <image id="happ1qp8vel" name="function_on_bg01.png" path="/images/images_new/function_open/" exported="true" scale="9grid" scale9grid="0,28,292,56"/>
+    <image id="t4up1qp8vek" name="com_btn_explain01_3.png" path="/images/images_new/" exported="true"/>
+    <image id="t4up1qp8vel" name="com_check03.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="10,10,9,8"/>
+    <component id="h0om1qp8vem" name="com_btn_explain3.xml" path="/components/" exported="true"/>
+    <image id="a4b91qp8ven" name="com_popup_bg07.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="28,11,6,24"/>
+    <image id="a4b91qp8veo" name="com_change010.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="60,8,12,16"/>
+    <component id="aol71qp8vep" name="FloatItem.xml" path="/components/" exported="true"/>
+    <component id="aol71qp8ver" name="FunctionOpenView.xml" path="/components/" exported="true"/>
+    <image id="pr6b1qp8ves" name="negative_strip002.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="7,2,2,4"/>
+    <image id="pr6b1qp8vet" name="negative_strip07.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="5,0,5,7"/>
+    <image id="pr6b1qp8veu" name="negative_strip08.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="7,0,3,7"/>
+    <image id="pr6b1qp8vev" name="common_btn_plus2.png" path="/images/images_new/" exported="true"/>
+    <image id="pr6b1qp8vew" name="com_btn_explain05.png" path="/images/images_new/" exported="true"/>
+    <image id="d5681qp8vex" name="negative_strip09.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="8,0,3,7"/>
+    <component id="xjmv1qp8vey" name="TickCbtn.xml" path="/components/" exported="true"/>
+    <component id="xjmv1qp8vez" name="pagingRbtn.xml" path="/components/" exported="true"/>
+    <image id="xjmv1qp8vf0" name="com_btn_arrow00.png" path="/images/images_new/" exported="true"/>
+    <image id="xjmv1qp8vf1" name="small_btn024.png" path="/images/images_new/" exported="true"/>
+    <image id="xjmv1qp8vf2" name="small_btn025.png" path="/images/images_new/" exported="true"/>
+    <image id="xjmv1qp8vf3" name="head_quantity.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="xjmv1qp8vf4" name="negative_bg10.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="14,64,10,128"/>
+    <image id="xjmv1qp8vf5" name="negative_bg11.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="22,12,2,24"/>
+    <image id="xjmv1qp8vf6" name="negative_bg12.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="13,12,26,24"/>
+    <image id="xjmv1qp8vf7" name="negative_bg13.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="10,8,9,16"/>
+    <image id="kajr1qp8vf3" name="negative_strip09.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="kajr1qp8vf5" name="title_bg01.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="xjmv1qp8vf8" name="com_bg_tips02_mask4.png" path="/images/images_new/" exported="true" favorite="true" scale="9grid" scale9grid="30,31,6,4"/>
+    <image id="lcq71qp8vf9" name="com_icon_completed.png" path="/images/images_new/" exported="true"/>
+    <component id="lcq71qp8vfa" name="completedBtn.xml" path="/components/" exported="true"/>
+    <image id="prcz1qp8vfb" name="negative_strip010.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="45,51,2,2"/>
+    <component id="prcz1qp8vfc" name="com_btn_tab04.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="p11n1qp8vfb" name="small_btn026.png" path="/images/images_new/" exported="true"/>
+    <image id="p11n1qp8vfd" name="com_arrow018.png" path="/images/images_new/" exported="true"/>
+    <image id="p11n1qp8vfe" name="com_arrow017.png" path="/images/images_new/" exported="true"/>
+    <image id="rck81qp8vfj" name="common_lines_9.png" path="/images/" exported="true"/>
+    <image id="l8uo1qp8vfk" name="com_change011.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="6,18,12,33"/>
+    <image id="mouz1qp8vfl" name="com_bg_tips03_3.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="16,16,21,22"/>
+    <image id="ha7x1b" name="title_bg02.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="svx3hz9d75" name="ranking01.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="svx3hz9d76" name="ranking02.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="svx3hz9d77" name="ranking03.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="svx3hz9d6o" name="bg008.png" path="/images/images_new/result/" exported="true"/>
+    <image id="svx3hz9d6p" name="bg009.png" path="/images/images_new/result/" exported="true"/>
+    <image id="svx3hz9d6q" name="bg0010.png" path="/images/images_new/result/" exported="true"/>
+    <image id="svx3hz9d6r" name="bg0011.png" path="/images/images_new/result/" exported="true"/>
+    <image id="svx3hz9d6s" name="bg0012.png" path="/images/images_new/result/" exported="true"/>
+    <image id="tg9h1qp8vfl" name="bg0013.png" path="/images/images_new/result/" exported="true"/>
+    <image id="k0s51qp8vfm" name="negative_bg02_2.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="9,9,18,18"/>
+    <image id="gjb01qp8vfn" name="com_btn_bg015.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="29,0,13,64"/>
+    <image id="gjb01qp8vfo" name="com_btn_bg016.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="23,0,7,52"/>
+    <component id="nybhet" name="TipText2.xml" path="/components/" exported="true"/>
+    <image id="nybh1qp8vhy" name="dialogbox_bg01.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="31,30,8,7"/>
+    <component id="nvnv1qp8vi1" name="com_btn_share2.xml" path="/components/"/>
+    <image id="nvnv1qp8vi2" name="com_btn_coord01.png" path="/images/images_new/" exported="true"/>
+    <image id="nvnv1qp8vi3" name="negative_chat.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="8z991qp8vi4" name="attribute_item01.xml" path="/components/" exported="true"/>
+    <component id="m4741qp8vi6" name="comItem_FirstReward.xml" path="/components/" exported="true"/>
+    <component id="m4741qp8vi8" name="comItem_Select.xml" path="/components/" exported="true"/>
+    <component id="7so91qp8vi9" name="cornerBtn.xml" path="/components/" exported="true"/>
+    <image id="klt51qp8via" name="com_btn_explain06.png" path="/images/images_new/" exported="true"/>
+    <image id="svx3hz9d7d" name="negative_bg14.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="svx3hz9d7e" name="negative_bg15.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="klt51qp8vib" name="bg0014.png" path="/images/images_new/result/" exported="true"/>
+    <image id="klt51qp8vic" name="label_01.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="klt51qp8vid" name="label_02.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="klt51qp8vie" name="label_03.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="klt51ygcffx" name="activity_bg010.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="ro6q1ygcffy" name="cornerBtn01.xml" path="/components/" exported="true"/>
+    <image id="ro6q1ygcffz" name="com_btn_coord02.png" path="/images/images_new/" exported="true"/>
+    <image id="ro6q1ygcfg0" name="com_btn_coord03.png" path="/images/images_new/" exported="true"/>
+    <image id="v3t61ygcfg9" name="com_cityskinicon_new.png" path="/images/images_new/" exported="true"/>
+    <component id="jo5i1ygcfga" name="General_bar01.xml" path="/components/" exported="true"/>
+    <image id="jo5i1ygcffh" name="negative_bg16.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="l2su1ygcfgb" name="small_btn028.png" path="/images/images_new/" exported="true"/>
+    <component id="l9c51ygcfgg" name="btn_activity.xml" path="/components/" exported="true"/>
+    <image id="f9h91ygcfgh" name="negative_bg18.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="pc5k1ygcfgi" name="small_btn027.png" path="/images/images_new/" exported="true"/>
+    <image id="fx9i1ygcfgj" name="new_bg05.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="gqih1ygcfgk" name="com_little_window2.xml" path="/components/" exported="true"/>
+    <image id="gqih1ygcfgl" name="new_bg06.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="gqih1ygcfgm" name="negative_bg19.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="24,7,48,14"/>
+    <image id="gqih1ygcfgn" name="001.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgo" name="002.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgp" name="003.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgq" name="004.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgr" name="005.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgs" name="006.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgt" name="007.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgu" name="008.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgv" name="009.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgw" name="0010.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgx" name="0011.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="gqih1ygcfgy" name="negative_bg20.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="gqih1ygcfgz" name="negative_bg21.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="vlhb1ygcfh0" name="listButton01.xml" path="/components/" exported="true"/>
+    <component id="j3xs9pm" name="btn_head4.xml" path="/components/" exported="true" favorite="true"/>
+    <image id="lono1ygcfh1" name="com_arrow019.png" path="/images/images_new/" exported="true"/>
+    <component id="lono1ygcfh3" name="com_btn_close8.xml" path="/components/" exported="true"/>
+    <component id="g38x1ygcfh4" name="com_limit_btn.xml" path="/components/" exported="true"/>
+    <image id="mloz1ygcfh6" name="000.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="mloz1ygcfh7" name="0012.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="mloz1ygcfh8" name="013.png" path="/images/images_new/frame/" exported="true"/>
+    <image id="mloz1ygcfh9" name="negative_bg22.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="r1km1ygcfha" name="small_btn029.png" path="/images/images_new/" exported="true"/>
+    <image id="r1km1ygcfhb" name="small_btn030.png" path="/images/images_new/" exported="true"/>
+    <image id="r1km1ygcfhc" name="small_btn031.png" path="/images/images_new/" exported="true"/>
+    <image id="r1km1ygcfhd" name="small_btn032.png" path="/images/images_new/" exported="true"/>
+    <image id="r1km1ygcfhe" name="small_btn033.png" path="/images/images_new/" exported="true"/>
+    <image id="byqs1ygcfha" name="com_change012.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="20,26,323,4"/>
+    <image id="byqs1ygcfhb" name="com_change013.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="20,26,323,4"/>
+    <image id="byqs1ygcfhc" name="com_change014.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="20,26,323,4"/>
+    <component id="byqs1ygcfhd" name="com_tips.xml" path="/components/" exported="true"/>
+    <component id="sfia1ygcfhf" name="com_btn_null.xml" path="/components/" exported="true"/>
+    <component id="d37l1ygcfhi" name="Item_Currency.xml" path="/components/" exported="true"/>
+    <component id="qzkt1ygcfhl" name="common_btn_title.xml" path="/components/" exported="true"/>
+    <component id="uovc1ygcfhm" name="comIcon.xml" path="/components/" exported="true"/>
+    <image id="g4yj1ygcfhl" name="negative_bg023.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="27,30,14,17"/>
+    <image id="g4yj1ygcfhm" name="negative_bg024.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="27,30,14,17"/>
+    <image id="g4yj1ygcfhn" name="com_icon_bought.png" path="/images/images_new/" exported="true"/>
+    <image id="g4yj1ygcfhp" name="com_btn_bg018.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="20,16,15,20"/>
+    <image id="g4yj1ygcfhq" name="com_btn_bg017.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="29,16,18,32"/>
+    <component id="ld4m1ygcfhr" name="com_btnAdd2.xml" path="/components/" exported="true"/>
+    <image id="v8di1ygcfhs" name="decorativePattern2.png" path="/images/images_new/" exported="true"/>
+    <image id="il9y1ygcfje" name="activity_001.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjf" name="activity_002.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjg" name="activity_003.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjh" name="activity_004.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfji" name="activity_005.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjj" name="activity_006.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjk" name="activity_007.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjl" name="activity_008.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfjm" name="activity_009.png" path="/images/activity/" exported="true"/>
+    <image id="il9y1ygcfht" name="activity_010.png" path="/images/activity/" exported="true"/>
+    <image id="eq9c1ygcfjn" name="activity_011.png" path="/images/activity/" exported="true"/>
+    <image id="eq9c1ygcfjo" name="activity_012.png" path="/images/activity/" exported="true"/>
+    <image id="eq9c1ygcfjp" name="activity_013.png" path="/images/activity/" exported="true"/>
+    <image id="k6h81ygcfjq" name="bg0015.png" path="/images/images_new/result/" exported="true"/>
+    <component id="nmhb1ygcfjr" name="com_btn_null_2(1).xml" path="/components/"/>
+    <component id="10t6x1ygcfjr" name="com_btn_null_2.xml" path="/components/"/>
+    <component id="eh3a1ygcfjr" name="com_btn_switch.xml" path="/components/" exported="true"/>
+    <image id="so711ygcfjt" name="arms_bg01.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfju" name="arms_bg02.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfjv" name="arms_bg03.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfjw" name="arms_bg04.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfjx" name="arms_bg05.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfjy" name="arms_bg06.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfjz" name="arms_icon01.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="tbf11ygcfjs" name="com_bg_curve.png" path="/images/images_new/" exported="true"/>
+    <image id="tbf11ygcfjt" name="com_btn_04.png" path="/images/images_new/" exported="true"/>
+    <image id="tbf11ygcfju" name="com_btn_05.png" path="/images/images_new/" exported="true"/>
+    <component id="tbf11ygcfjv" name="com_btn_04.xml" path="/components/" exported="true"/>
+    <image id="tbf11ygcfjw" name="com_icon_time.png" path="/images/images_new/" exported="true"/>
+    <image id="so711ygcfk0" name="arms_icon02.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfk1" name="arms_icon03.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfk2" name="arms_icon04.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfk3" name="arms_icon05.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="so711ygcfk4" name="arms_icon06.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="poazl4" name="bag_bg01.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="6,0,2,740"/>
+    <component id="d5so1ygcfk6" name="com_btn_buy1.xml" path="/components/" exported="true"/>
+    <image id="qqk51ygcfk7" name="activity_014.png" path="/images/activity/" exported="true"/>
+    <image id="qqk51ygcfk8" name="activity_015.png" path="/images/activity/" exported="true"/>
+    <image id="lwxi1ygcfka" name="build_001.png" path="/images/images_new/build/" exported="true"/>
+    <image id="lwxi1ygcfkb" name="build_002.png" path="/images/images_new/build/" exported="true"/>
+    <image id="lwxi1ygcfkc" name="build_003.png" path="/images/images_new/build/" exported="true"/>
+    <image id="lwxi1ygcfkd" name="build_004.png" path="/images/images_new/build/" exported="true"/>
+    <image id="91o91ygcfke" name="0.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkf" name="1.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkg" name="2.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkh" name="3.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfki" name="4.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkj" name="5.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkk" name="6.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkl" name="7.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkm" name="8.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkn" name="9.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfko" name="cityupgrade_bg1.png" path="/images/images_new/cityupgrade/" exported="true" scale="9grid" scale9grid="0,6,561,85" atlas="alone_npot"/>
+    <image id="91o91ygcfkq" name="cityupgrade_bg3.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="91o91ygcfkr" name="cityupgrade_marker.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <component id="91o91ygcfkt" name="com_item_upgrade1.xml" path="/components/" exported="true"/>
+    <component id="91o91ygcfku" name="com_item_upgrade2.xml" path="/components/" exported="true"/>
+    <image id="itkw1ygcfke" name="bottomframe_01.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="itkw1ygcfkf" name="com_btn_00_redPoint.xml" path="/components/" exported="true" favorite="true"/>
+    <font id="faxr1ygcfkv" name="gold_font.fnt" path="/images/font/" exported="true"/>
+    <component id="s99e1ygcfkw" name="com_btn_buy0(1).xml" path="/components/" exported="true"/>
+    <component id="sd0v1ygcfkx" name="com_btn_buy0.xml" path="/components/"/>
+    <component id="sd0v1ygcfky" name="com_btn_01_redPoint.xml" path="/components/" exported="true"/>
+    <image id="wp7i1ygcfkz" name="label_04.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="cmbv1ygcfl0" name="com_change07_1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="0,5,87,16"/>
+    <image id="cmbv1ygcfl1" name="common_arrow_1.png" path="/images/images_new/" exported="true"/>
+    <image id="svpo1ygcfl2" name="n0.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl3" name="n1.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl4" name="n2.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl5" name="n3.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl6" name="n4.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl7" name="n5.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl8" name="n6.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfl9" name="n7.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfla" name="n8.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcflb" name="n9.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcflc" name="numberbg01.png" path="/images/number/" exported="true"/>
+    <image id="svpo1ygcfld" name="numberbg02.png" path="/images/number/" exported="true"/>
+    <font id="svpo1ygcfle" name="Break.fnt" path="/images/font/" exported="true"/>
+    <font id="ns8m1ygcflf" name="citiupgradeFont.fnt" path="/images/font/" exported="true"/>
+    <image id="i69g1ygcflg" name="negative_strip011.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="7,7,12,9"/>
+    <image id="i69g1ygcflh" name="negative_strip012.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="3,7,14,8"/>
+    <image id="mcwm1ygcfli" name="activity_016.png" path="/images/activity/" exported="true"/>
+    <image id="mqls1ygcfi5" name="welfare_btn_bg06.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="25,24,2,4"/>
+    <image id="mqls1ygcfi6" name="welfare_btn_bg07.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="34,0,27,108"/>
+    <component id="mqls1ygcfi8" name="rbtn01.xml" path="/components/" exported="true"/>
+    <component id="6kgt1ygcflj" name="flagIcon.xml" path="/components/" exported="true"/>
+    <image id="ufp91ygcflk" name="com_arms_bg01.png" path="/images/images_new/" exported="true"/>
+    <component id="p9k91ygcfll" name="com_btn_lbl_lines2.xml" path="/components/" exported="true"/>
+    <image id="p9k91ygcfln" name="negative_strip003.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="7,0,5,16"/>
+    <component id="mw3o1ygcflo" name="com_btn_tab03_redPoint.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="spxy1ygcflp" name="armyAwakeBtn.xml" path="/components/" exported="true"/>
+    <image id="n4491ygcflq" name="com_btn_close3.png" path="/images/images_new/" exported="true"/>
+    <image id="n4491ygcflt" name="activity_num0.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcflu" name="activity_num1.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcflv" name="activity_num2.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcflw" name="activity_num3.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcflx" name="activity_num4.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcfly" name="activity_num5.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcflz" name="activity_num6.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcfm0" name="activity_num7.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcfm1" name="activity_num8.png" path="/images/images_new/season/" exported="true"/>
+    <image id="n4491ygcfm2" name="activity_num9.png" path="/images/images_new/season/" exported="true"/>
+    <font id="n4491ygcflr" name="season_num.fnt" path="/images/font/" exported="true"/>
+    <component id="8lkd1ygcfm3" name="com_limit_btn1.xml" path="/components/" exported="true"/>
+    <image id="8lkd1ygcfm4" name="com_arms_bg02.png" path="/images/images_new/" exported="true"/>
+    <image id="nm3l1ygcfm5" name="title_bg03.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="nm3l1ygcfm6" name="label_05.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="lylx1ygcfm7" name="com_icon_recover.png" path="/images/images_new/" exported="true"/>
+    <image id="khh61ygcfm8" name="arms_bg07.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="dfgw1ygcfm9" name="com_bg_tips04.png" path="/images/images_new/" exported="true" favorite="true" scale="9grid" scale9grid="29,33,4,4"/>
+    <image id="dfgw1ygcfma" name="com_btn_bg0002.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="11,8,92,37"/>
+    <image id="dfgw1ygcfmb" name="com_btn_bg0003.png" path="/images/images_new/" exported="true"/>
+    <image id="dfgw1ygcfmc" name="com_btn_bg0001.png" path="/images/images_new/" exported="true"/>
+    <component id="dfgw1ygcfmd" name="com_btn_0002.xml" path="/components/" exported="true"/>
+    <component id="dfgw1ygcfme" name="com_btn_0003.xml" path="/components/" exported="true"/>
+    <image id="dfgw1ygcfmf" name="com_change04.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="0,1,112,18"/>
+    <component id="dfgw1ygcfmg" name="com_btn_0001.xml" path="/components/" exported="true"/>
+    <component id="dxyz1ygcfmi" name="btn_head5.xml" path="/components/" exported="true"/>
+    <image id="dxyz1ygcfmj" name="negative_bg24.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="8ur01ygcfmk" name="com_btn_00.xml" path="/components/"/>
+    <image id="8ur01ygcfml" name="welfare_btn_bg09.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="8ur01ygcfmm" name="welfare_btn_bg10.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="47,187,1,374"/>
+    <image id="gw9a1ygcfmn" name="com_bg_tips05.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="91,34,18,35"/>
+    <image id="ihid1ygcfmp" name="com_change06.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="26,0,253,43"/>
+    <image id="ihid1ygcfmq" name="com_btn_reduce001.png" path="/images/images_new/" exported="true"/>
+    <image id="ihid1ygcfmr" name="com_btn_plus001.png" path="/images/images_new/" exported="true"/>
+    <image id="ihid1ygcfms" name="com_btn_close4.png" path="/images/images_new/" exported="true"/>
+    <image id="ihid1ygcfmu" name="com_bg_tips05_1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="15,11,17,22"/>
+    <image id="oy351ygcfmv" name="com_icon_tip.png" path="/images/images_new/" exported="true"/>
+    <image id="oy351ygcfmw" name="com_bg_tips02_mask5.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="67,67,3,3"/>
+    <image id="8rmp1ygcfmx" name="com_bg_strip001.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="20,19,3,3"/>
+    <image id="j4951ygcfi1" name="activity_icon010.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="j4951ygcfi2" name="activity_icon011.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="j4951ygcfi3" name="activity_icon012.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="j4951ygcfhz" name="activity_icon08.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="j4951ygcfi0" name="activity_icon09.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="q60q1ygcfhe" name="activity_label.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="8rmp1ygcfmy" name="small_btn018.png" path="/images/images_new/" exported="true"/>
+    <image id="f22l1ygcfmz" name="small_btn019.png" path="/images/images_new/" exported="true"/>
+    <image id="ntk51ygcfn0" name="attribute_bg002.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="ntk51ygcfn1" name="attribute_bg001.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="15,15,6,6"/>
+    <component id="o23t1ygcfn2" name="comItem_BottomNum.xml" path="/components/" exported="true"/>
+    <component id="osur1ygcfn3" name="showTopTitle.xml" path="/components/" exported="true"/>
+    <component id="osur1ygcfn4" name="settlement_com_002.xml" path="/components/" exported="true"/>
+    <image id="e1m31ygcfn5" name="small_btn034.png" path="/images/images_new/" exported="true"/>
+    <image id="e1m31ygcfn9" name="welfare_btn_bg11.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="gad31ygcfna" name="equipmentIcon2_2.xml" path="/components/" exported="true"/>
+    <image id="fccv1ygcfnb" name="com_strip009.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="9,9,81,18"/>
+    <image id="gad31iy5bf7" name="bg031.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="29,29,4,6"/>
+    <image id="f7na1ygcfnd" name="bg032.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="9,23,6,3"/>
+    <image id="x4z51ygcfne" name="small_btn035.png" path="/images/images_new/" exported="true"/>
+    <image id="pepa1ygcfnf" name="bg9.jpg" path="/images/bg_new/" exported="true" atlas="alone_npot"/>
+    <image id="pepa1ygcfng" name="com_bg_tips02_mask1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="30,23,42,46"/>
+    <image id="pepa1ygcfnh" name="com_bg_tips02_mask6.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="5,5,7,30"/>
+    <image id="ia6s1ygcfn1" name="com_bg_tips02_mask.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="25,37,44,14"/>
+    <image id="tj0x1ygcfni" name="com_icon_token1.png" path="/images/images_new/" exported="true"/>
+    <image id="tj0x1ygcfnj" name="com_bg_aborn.png" path="/images/images_new/" exported="true"/>
+    <image id="slj11ygcfnk" name="common_arrow_7.png" path="/images/images_new/" exported="true"/>
+    <component id="b1o21ygcfno" name="iconItem2.xml" path="/components/" exported="true"/>
+    <image id="b1o21ygcfnp" name="common_btn_plus3.png" path="/images/images_new/" exported="true"/>
+    <image id="b1o21ygcfnq" name="negative_bg26.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="36,34,4,7"/>
+    <image id="n1oz1ygcfnr" name="build_0001.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfns" name="build_00017.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfnt" name="build_00016.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfnu" name="build_00015.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfnv" name="build_00014.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfnw" name="build_00013.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfnx" name="build_00012.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfny" name="build_00011.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfnz" name="build_00018.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo0" name="build_00010.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo1" name="build_0008.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo2" name="build_0007.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo3" name="build_0006.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo5" name="build_0004.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo6" name="build_0003.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo7" name="build_0002.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo8" name="build_0009.png" path="/images/images_new/build/" exported="true"/>
+    <image id="n1oz1ygcfo9" name="build_00019.png" path="/images/images_new/build/" exported="true"/>
+    <component id="n1oz1ygcfoa" name="com_btn_05.xml" path="/components/" exported="true"/>
+    <image id="n1oz1ygcfob" name="btn_icon031_delete.png" path="/images/images_new/" exported="true"/>
+    <image id="n1oz1ygcfoc" name="com_icon_huawen.png" path="/images/images_new/" exported="true"/>
+    <image id="g4fb1ygcfod" name="small_btn036.png" path="/images/images_new/" exported="true"/>
+    <component id="cys41ygcfoe" name="com_btn_lbl_lines3.xml" path="/components/" exported="true"/>
+    <image id="qysg1ygcfos" name="label_06.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="11ms71ygcfot" name="com_btn_06.png" path="/images/images_new/" exported="true"/>
+    <image id="m7tg1ygcgkr" name="label_07.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="m7tg1ygcgks" name="negative_bg23.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="m7tg1ygcgkt" name="com_btn_boos2.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="25,17,3,29"/>
+    <image id="m7tg1ygcgku" name="com_btn_boos1.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="25,17,3,29"/>
+    <image id="g6i71ygcfoi" name="com_icon_huawen1.png" path="/images/images_new/" exported="true"/>
+    <image id="mczt5k" name="label_08.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="s4xx1ygcgkv" name="negative_strip013.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="31,31,6,6"/>
+    <image id="s4xx1ygcgkw" name="com_strip012.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="48,5,4,15"/>
+    <image id="s4xx1ygcgkx" name="com_strip013.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="12,6,2,4"/>
+    <image id="fs161ygcgky" name="build_00021.png" path="/images/images_new/build/" exported="true"/>
+    <image id="fs161ygcgkz" name="build_00020.png" path="/images/images_new/build/" exported="true"/>
+    <image id="dfim1ygcgl0" name="label_09.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="l3kw1ygcgl2" name="com_bg_tips_arrow1.png" path="/images/images_new/" exported="true"/>
+    <image id="l3kw1ygcgl3" name="com_btn_switch03.png" path="/images/images_new/" exported="true"/>
+    <image id="l3kw1ygcgl4" name="com_btn_switch04.png" path="/images/images_new/" exported="true"/>
+    <sound id="u9ouh1" name="com_01.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh2" name="com_02.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh3" name="com_03.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh4" name="com_04.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh5" name="com_05.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh6" name="com_06.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh7" name="com_07.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh8" name="com_08.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouh9" name="com_09.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouha" name="com_10.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouhb" name="com_11.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouhm" name="com_12.mp3" path="/sound/" exported="true"/>
+    <sound id="u9ouhn" name="com_13.mp3" path="/sound/" exported="true"/>
+    <sound id="qok1hz9cy6" name="ui_quest_new.mp3" path="/sound/" exported="true"/>
+    <sound id="qok1hz9cy9" name="ui_smithing_improveweapon_01.mp3" path="/sound/" exported="true"/>
+    <image id="hc7e1ygcgly" name="negative_strip014.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="12,9,7,12"/>
+    <image id="kxfy1ygcgm0" name="com_bg_tips02_mask7.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="22,23,3,3"/>
+    <image id="m3dm1ygcgm1" name="build_00022.png" path="/images/images_new/build/" exported="true"/>
+    <image id="m1hb1ygcgm2" name="negative_bg081.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="13,9,6,10"/>
+    <image id="qajo1ygcgm3" name="com_btn_bg019.png" path="/images/images_new/" exported="true"/>
+    <image id="qajo1ygcgm4" name="welfare_btn_bg12.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="0,3,304,6"/>
+    <image id="qajo1ygcgm5" name="welfare_btn_bg13.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="17,0,4,39"/>
+    <image id="qajo1ygcgm6" name="welfare_btn_bg14.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="qajo1ygcgm7" name="welfare_btn_bg15.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="9,7,2,16"/>
+    <component id="qajo1ygcfok" name="chiefbtn.xml" path="/components/" exported="true"/>
+    <image id="qajo1ygcg8m" name="activity_icon_attack01.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="jqbn1ygcgm8" name="welfare_btn_bg16.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="xbfy1ygcgm9" name="com_arms003.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="xbfy1ygcgma" name="com_arms005.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="xbfy1ygcgmb" name="com_arms006.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="xbfy1ygcgmc" name="com_arms002.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="xbfy1ygcgmd" name="com_arms004.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="xbfy1ygcgme" name="com_arms001.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="lavj1ygcff7" name="negative04.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="3,35,3,11"/>
+    <component id="g820hz9cx4" name="dialogue_btn_close.xml" path="/components/" exported="true"/>
+    <image id="c92h2m" name="btn_enter01.png" path="/images/images_new/" exported="true"/>
+    <image id="b9bj1" name="VidepBg.png" path="/images/images_new/" exported="true"/>
+    <component id="b9bj2" name="dialogueBtn01.xml" path="/components/" exported="true"/>
+    <component id="b9bj1ygcgmf" name="dialogueBtn02.xml" path="/components/" exported="true"/>
+    <image id="b9bj1ygcgmg" name="welfare_btn_bg17.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="b9bj1ygcgmh" name="welfare_btn_bg18.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="b9bj1ygcgmi" name="welfare_btn_bg19.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="14,15,4,5"/>
+    <image id="isps1ygcgmj" name="welfare_btn_bg20.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="16,14,5,3"/>
+    <image id="isps1ygcgmk" name="welfare_btn_bg21.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="16,15,7,8"/>
+    <image id="xm3w1xvobd9" name="troops_btn_team0.png" path="/images/images_new/" exported="true"/>
+    <image id="xm3w1xvobda" name="troops_btn_team1.png" path="/images/images_new/" exported="true"/>
+    <image id="jl9d1ygcgml" name="line_05.png" path="/images/images_new/" exported="true"/>
+    <image id="c7781ygcgmm" name="welfare_btn_bg22.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="za6y1ygcgmn" name="welfare_btn_bg23.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="53,9,15,18"/>
+    <image id="yt2t1ygcgmo" name="com_bg_tips02_mask8.png" path="/images/images_new/" exported="true"/>
+    <image id="yt2t1ygcgmp" name="com_bg_tips02_mask9.png" path="/images/images_new/" exported="true"/>
+    <image id="gv9e1ygcgmq" name="small_btn037.png" path="/images/images_new/" exported="true"/>
+    <component id="gv9e1ygcgmr" name="com_btn_icon2.xml" path="/components/" exported="true"/>
+    <image id="c68p1ygcgms" name="com_change015.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="43,0,68,68"/>
+    <image id="lvki1ygcgmt" name="com_btn_explain01_4.png" path="/images/images_new/" exported="true"/>
+    <component id="b9bj5m" name="intoBtn.xml" path="/components/" exported="true"/>
+    <component id="kvv41iy5bdz" name="hero_bg02.xml" path="/components/" exported="true"/>
+    <image id="wgal1ygcgmu" name="com_btn_close5.png" path="/images/images_new/" exported="true"/>
+    <component id="abzm1ygcgnj" name="comItem_Select_Btn.xml" path="/components/" exported="true"/>
+    <font id="vsu61ygcgni" name="crit_Font.fnt" path="/images/font/" exported="true"/>
+    <image id="vsu61ygcfom" name="crit_num0.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfol" name="crit_num1.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfok" name="crit_num2.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfoj" name="crit_num3.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfoi" name="crit_num4.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfoh" name="crit_num5.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfog" name="crit_num6.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfof" name="crit_num7.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfoe" name="crit_num8.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="vsu61ygcfod" name="crit_num9.png" path="/images/images_new/crit/" exported="true"/>
+    <image id="x5vt1ygcgnk" name="cityupgrade_bg01.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="x5vt1ygcgnl" name="cityupgrade_bg02.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="x5vt1ygcgnm" name="cityupgrade_bg03.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="x5vt1ygcgnn" name="cityupgrade_bg04.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="x5vt1ygcgno" name="cityupgrade_bg05.png" path="/images/images_new/cityupgrade/" exported="true"/>
+    <image id="bv451ygcgnp" name="com_btn_lament.png" path="/images/images_new/" exported="true"/>
+    <image id="jnfz1ygcgnq" name="welfare_btn_bg26.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="jnfz1ygcgnr" name="welfare_btn_bg24.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="152,0,22,101"/>
+    <image id="jnfz1ygcgns" name="welfare_btn_bg25.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="144,0,43,101"/>
+    <image id="clbo1ygcgnt" name="attribute_icon04.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgnu" name="attribute_icon24.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgnv" name="attribute_icon23.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgnw" name="attribute_icon22.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgnx" name="attribute_icon21.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgny" name="attribute_icon20.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgnz" name="attribute_icon19.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo0" name="attribute_icon18.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo1" name="attribute_icon17.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo2" name="attribute_icon16.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo3" name="attribute_icon25.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo4" name="attribute_icon15.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo5" name="attribute_icon13.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo6" name="attribute_icon12.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo7" name="attribute_icon11.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo8" name="attribute_icon10.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgo9" name="attribute_icon09.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgoa" name="attribute_icon08.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgob" name="attribute_icon07.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgoc" name="attribute_icon06.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgod" name="attribute_icon05.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgoe" name="attribute_icon14.png" path="/images/images_new/" exported="true"/>
+    <image id="clbo1ygcgof" name="attribute_icon26.png" path="/images/images_new/" exported="true"/>
+    <component id="ho0c1ygcgnt" name="btn_head6.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="rjgu1ygcgog" name="upgradeBtn.xml" path="/components/" exported="true"/>
+    <image id="rjgu1ygcgoh" name="small_btn038.png" path="/images/images_new/" exported="true"/>
+    <component id="lto01ygcgpa" name="comItem_AnimEffect.xml" path="/components/" exported="true"/>
+    <image id="fjdi1ygcgoi" name="build_00024.png" path="/images/images_new/build/" exported="true"/>
+    <image id="fjdi1ygcgoj" name="build_00023.png" path="/images/images_new/build/" exported="true"/>
+    <image id="syny1ygcgpb" name="com_icon_completed2.png" path="/images/images_new/" exported="true"/>
+    <image id="lt801ygcgpc" name="com_bg_tips02_mask0.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="1,27,3,5"/>
+    <component id="r52r1ygcgpe" name="comItem_BottomName.xml" path="/components/" exported="true"/>
+    <image id="pk1s1ygcgpf" name="welfare_btn_bg27.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="nkto1ygcgpg" name="com_warbg02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="35,0,7,98"/>
+    <component id="lxji1ygcgph" name="generalFragment01.xml" path="/components/" exported="true"/>
+    <image id="lxji1ygcgpi" name="Keepsake_icon.png" path="/images/" exported="true"/>
+    <image id="lxji1ygcgpj" name="com_warbg03.png" path="/images/images_new/" exported="true"/>
+    <component id="g1sp1ygcgpm" name="equipmentIcon4.xml" path="/components/" exported="true"/>
+    <image id="rpi01ygcgpo" name="settlement_bg012.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="rpi01ygcgpq" name="settlement_bg014.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="rpi01ygcgpr" name="settlement_bg015.png" path="/images/images_new/settlement2/" exported="true"/>
+    <image id="rpi01ygcgps" name="settlement_bg016.png" path="/images/images_new/settlement2/" exported="true"/>
+    <component id="rpi01ygcgpt" name="showTopTitle01.xml" path="/components/" exported="true"/>
+    <component id="ya6w1ygcg9p" name="main_btn3.xml" path="/components/" exported="true"/>
+    <image id="ya6w1ygcgpu" name="welfare_btn_bg28.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="ya6w1ygcgpw" name="welfare_btn_bg29.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <component id="v6sq1ygcgpx" name="showTopTitle_Good.xml" path="/components/" exported="true"/>
+    <component id="he9p1ygcgpy" name="com_btn_02.xml" path="/components/" exported="true"/>
+    <image id="ftur1ygcgpz" name="common_exist01.png" path="/images/" exported="true"/>
+    <component id="ftur1ygcgq0" name="existingItem.xml" path="/components/" exported="true"/>
+    <component id="edhk1ygcgq1" name="existingItem2.xml" path="/components/" exported="true"/>
+    <image id="edhk1ygcgq2" name="common_exist02.png" path="/images/" exported="true"/>
+    <component id="sz581ygcgq3" name="hero_bg02TestVideo.xml" path="/components/" exported="true"/>
+    <component id="evvi1ygcgq4" name="comItem_BottomName_btn.xml" path="/components/" exported="true"/>
+    <image id="pi641ygcgq5" name="label_010.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="mp5s1ygcgq6" name="com_bg_resource02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="16,17,15,10"/>
+    <component id="mp5s1ygcgq7" name="com_btnBubble.xml" path="/components/" exported="true"/>
+    <component id="w5x51ygcgq6" name="SeasonItemView.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="dkdi1ygcgq9" name="equipmentIcon5.xml" path="/components/" exported="true"/>
+    <image id="6ja41ygcgqa" name="com_fight03.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="6ja41ygcgqb" name="com_fight04.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="6ja41ygcgqc" name="com_fight05.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="6ja41ygcgqd" name="com_fight06.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="6ja41ygcgqe" name="com_fight07.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="6ja41ygcgqf" name="com_fight01.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="6ja41ygcgqg" name="com_fight02.png" path="/images/images_new/arms/" exported="true"/>
+    <image id="wvlo1ygcgqh" name="com_btn_explain033.png" path="/images/images_new/" exported="true"/>
+    <image id="tx851ygcgqi" name="com_btn_explain01_5.png" path="/images/images_new/" exported="true"/>
+    <image id="tx851ygcgqj" name="com_icon_huawen2.png" path="/images/images_new/" exported="true"/>
+    <image id="x7bt1ygcgqk" name="com_btn_explain01_6.png" path="/images/images_new/" exported="true"/>
+    <image id="npop1ygcgql" name="guide_bg01.png" path="/images/images_new/" exported="true"/>
+    <image id="npop1ygcgqm" name="guide_bg02.png" path="/images/images_new/" exported="true"/>
+    <image id="e1lc1ygcgqn" name="skill_bg01.png" path="/images/images_new/" exported="true"/>
+    <image id="e1lc1ygcgqo" name="skill_bg02.png" path="/images/images_new/" exported="true"/>
+    <image id="vfda1ygcgqp" name="com_btn_boos4.png" path="/images/images_new/" exported="true"/>
+    <image id="vfda1ygcgqq" name="com_btn_boos3.png" path="/images/images_new/" exported="true"/>
+    <image id="vfda1ygcgqr" name="com_btn_boos5.png" path="/images/images_new/" exported="true"/>
+    <image id="fk801ygcgqs" name="bg4.jpg" path="/images/bg_new/" exported="true" atlas="alone_npot"/>
+    <image id="8o5e1ygcfpw" name="com_btn_explain07.png" path="/images/images_new/" exported="true"/>
+    <image id="y8rv1ygcgqt" name="com_select_03.png" path="/images/images_new/" exported="true"/>
+    <image id="y8rv1ygcgqu" name="common_arrow_2.png" path="/images/images_new/" exported="true"/>
+    <image id="y8rv1ygcgqv" name="com_spot04.png" path="/images/images_new/" exported="true"/>
+    <image id="pam31ygcgqw" name="skill_bg03.png" path="/images/images_new/" exported="true"/>
+    <component id="nv4k1ygcgqx" name="comItem0.xml" path="/components/" exported="true"/>
+    <component id="ps611ygcgqy" name="comItem3.xml" path="/components/" exported="true"/>
+    <image id="cs1c1ygcgqz" name="common_arrow_8.png" path="/images/images_new/" exported="true"/>
+    <image id="ja341ygcgr0" name="activity_017.png" path="/images/activity/" exported="true"/>
+    <image id="s4rw1ygcgr1" name="blame02.png" path="/images/images_new/" exported="true"/>
+    <image id="wab51ygcgro" name="faction_icon6.png" path="/images/images_new/" exported="true"/>
+    <image id="wab51ygcgrp" name="faction_icon7.png" path="/images/images_new/" exported="true"/>
+    <image id="mxxq1ygcgrq" name="label_011.png" path="/images/images_new/windowBg_new/" exported="true"/>
+    <image id="qdf6hz9cue" name="building_bg_bubble01.png" path="/images/"/>
+    <image id="t1vs1ygcfmu" name="bubbling_11.png" path="/images/"/>
+    <image id="ukvb1ygcg94" name="mainhud_progress013.png" path="/images/"/>
+    <image id="mlhy1ygcg8k" name="bubble_bg.png" path="/images/"/>
+    <image id="oepthz9cp2" name="main_bar01.png" path="/images/" scale="9grid" scale9grid="20,0,6,5"/>
+    <image id="oepthz9cp3" name="main_bar02.png" path="/images/" scale="9grid" scale9grid="13,0,16,4"/>
+    <image id="oepthz9cp4" name="main_bar03.png" path="/images/" scale="9grid" scale9grid="11,0,22,4"/>
+    <image id="oepthz9cp1" name="main_bar04.png" path="/images/" scale="9grid" scale9grid="11,0,22,4"/>
+    <image id="w6lt1ygcg9o" name="bg_chat_09.png" path="/_new/" exported="true" scale="9grid" scale9grid="220,12,53,14"/>
+    <image id="ig901ygcg9n" name="btn_bg.png" path="/_new/" exported="true" scale="9grid" scale9grid="9,10,111,26"/>
+    <image id="mpc836" name="btn_bg_service.png" path="/_new/" exported="true"/>
+    <image id="7oiza" name="btn_bg_sweep.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9p" name="com_arms_icon01.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9q" name="com_bg_popup04.png" path="/_new/" exported="true" scale="9grid" scale9grid="201,178,20,34"/>
+    <image id="w6lt1ygcg9r" name="com_bg_tips05.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9w" name="com_btn_bg0001.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9s" name="com_btn_plus001.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9t" name="com_btn_reduce001.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9u" name="com_check01.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9v" name="com_check02.png" path="/_new/" exported="true"/>
+    <image id="w6lt1ygcg9x" name="small_btn026.png" path="/_new/" exported="true"/>
+    <component id="ig9038" name="comBtn_Icon.xml" path="/_new/" exported="true"/>
+    <component id="ig90hz9czq" name="comBtn_IconTxt.xml" path="/_new/" exported="true"/>
+    <component id="nqbv1ygcg9y" name="comBtn_tab.xml" path="/_new/" exported="true"/>
+    <component id="odfq1ygcgrr" name="ComItem_bag.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="g17g1ygcfn7" name="plot_btn2.xml" path="/_new/"/>
+    <component id="tixj1ygcg9p" name="ToastTipView.xml" path="/panel/" exported="true"/>
+    <component id="tixj1ygcg9o" name="ToastItem.xml" path="/components_new/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

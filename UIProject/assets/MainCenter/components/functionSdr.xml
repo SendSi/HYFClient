@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="542,34" extention="ProgressBar" designImageOffsetX="-707" designImageOffsetY="-315">
+  <controller name="state" pages="3,,2,,1,,0," selected="0">
+    <remark page="0" value="高昂"/>
+    <remark page="1" value="正盛"/>
+    <remark page="2" value="低落"/>
+    <remark page="3" value="萎靡"/>
+  </controller>
+  <displayList>
+    <image id="n0_v96q" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" pkg="2r331opv" xy="0,-4" size="542,42">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_hc7e" name="n2" src="hc7e1ygcgly" fileName="images/images_new/windowBg_new/negative_strip014.png" pkg="2r331opv" xy="6,1" size="531,32">
+      <gearDisplay controller="state" pages=""/>
+      <relation target="n5_hc7e" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_hc7e" name="n3" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="7,1" size="531,32">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="n5_hc7e" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_hc7e" name="n4" src="o5d41qp8ve9" fileName="images/images_new/windowBg_new/negative_strip05.png" pkg="2r331opv" xy="7,1" size="531,32">
+      <gearDisplay controller="state" pages="2"/>
+      <relation target="n5_hc7e" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5_hc7e" name="bar" src="o5d41qp8vea" fileName="images/images_new/windowBg_new/negative_strip06.png" pkg="2r331opv" xy="7,1" size="531,32">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

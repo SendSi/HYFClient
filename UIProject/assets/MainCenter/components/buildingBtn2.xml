@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,105" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_qdf6" name="n0" src="u6yzhz9cq8" fileName="images/map/main_btn_map02.png" xy="-11,-7" visible="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n1_qdf6" name="icon" xy="0,0" size="100,105" url="ui://4ni413laqdf6hz9cui" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

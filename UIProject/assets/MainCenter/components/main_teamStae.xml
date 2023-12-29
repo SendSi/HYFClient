@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="34,34" designImage="ui://4ni413laoepthz9coe" designImageOffsetX="-1155" designImageOffsetY="-240">
+  <controller name="state" pages="0,,1,,2,,3,,4,,5,,6,,7,,8,,9," selected="9">
+    <remark page="0" value="战斗"/>
+    <remark page="1" value="待命"/>
+    <remark page="2" value="行军"/>
+    <remark page="3" value="城内"/>
+    <remark page="4" value="采集"/>
+    <remark page="5" value="撤退"/>
+    <remark page="6" value="侦查"/>
+    <remark page="7" value="增援"/>
+    <remark page="8" value="死亡"/>
+    <remark page="9" value="驻防"/>
+  </controller>
+  <displayList>
+    <loader id="n0_oept" name="bg" xy="0,0" size="34,34" aspect="true" url="ui://4ni413laoepthz9cpc" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="state" pages="0,2,3,4,5,6,9" values="ui://4ni413laoepthz9cpa|ui://4ni413laoepthz9cpc|ui://4ni413laoepthz9cp9|ui://4ni413laoepthz9cpc|ui://4ni413lamdy2hz9d1q|ui://4ni413lamdy2hz9d1p|ui://4ni413laoepthz9cpc" default="ui://4ni413laoepthz9cpb"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n1_oept" name="n1" src="oepthz9cpi" fileName="images/team/team_state01.png" xy="0,2" pivot="1,1" size="10,31" aspect="true" rotation="22.38">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_oept" name="n2" src="oepthz9cpi" fileName="images/team/team_state01.png" xy="24,1" pivot="0,1" size="10,31" aspect="true" rotation="-22.38">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_oept" name="n3" src="oepthz9cpj" fileName="images/team/team_state02.png" xy="17,15" pivot="0.5,0.5" anchor="true" size="26,23" aspect="true">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n5_oept" name="n5" src="oepthz9cpk" fileName="images/team/team_state03.png" xy="15,3" size="14,21" aspect="true" flip="hz">
+      <gearDisplay controller="state" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n4_oept" name="n4" src="oepthz9cpk" fileName="images/team/team_state03.png" xy="5,6" size="14,23" aspect="true">
+      <gearDisplay controller="state" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_oept" name="n6" src="oepthz9cph" fileName="images/team/team_state04.png" xy="8,7" size="18,20">
+      <gearDisplay controller="state" pages="3"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n7_f3dx" name="n7" src="f3dxhz9cwu" fileName="images/team/team_state05.png" xy="4,4" size="24,24" aspect="true">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+    <image id="n8_mdy2" name="n8" src="mdy2hz9d1s" fileName="images/team/team_state07.png" xy="8,6" size="19,21">
+      <gearDisplay controller="state" pages="5"/>
+    </image>
+    <image id="n9_mdy2" name="n9" src="mdy2hz9d1r" fileName="images/team/team_state06.png" xy="6,4" size="24,24" aspect="true">
+      <gearDisplay controller="state" pages="6"/>
+    </image>
+    <image id="n10_w7az" name="n10" src="w7az1ygcfn8" fileName="images/team/team_state08.png" xy="7,6" scale="0.5,0.5">
+      <gearDisplay controller="state" pages="7"/>
+    </image>
+    <image id="n11_v3a8" name="n11" src="v3a81ygcfnc" fileName="images/team/team_state09.png" xy="0,0" scale="0.5,0.5">
+      <gearDisplay controller="state" pages="8"/>
+    </image>
+    <image id="n12_dkpj" name="n12" src="dkpj1ygcg90" fileName="images/team/team_state10.png" xy="0,0">
+      <gearDisplay controller="state" pages="9"/>
+    </image>
+  </displayList>
+  <transition name="state0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Rotation" target="n1_oept" tween="true" startValue="22.38" endValue="40" duration="18" repeat="-1" yoyo="true"/>
+    <item time="0" type="Rotation" target="n2_oept" tween="true" startValue="-22.38" endValue="-40" duration="18" repeat="-1" yoyo="true"/>
+    <item time="18" type="Rotation" target="n1_oept" tween="true" startValue="40" endValue="22.38" duration="18" repeat="-1" yoyo="true"/>
+    <item time="18" type="Rotation" target="n2_oept" tween="true" startValue="-40" endValue="-22.38" duration="18" repeat="-1" yoyo="true"/>
+  </transition>
+</component>

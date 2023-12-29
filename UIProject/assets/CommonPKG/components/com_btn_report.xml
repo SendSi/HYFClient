@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,42" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_nqnq" name="n0" src="c1q9hz9cuj" fileName="images/images_new/com_bg_title7.png" xy="0,2" size="110,40" color="#e24646">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_nqnq" name="title" xy="24,3" size="59,36" font="ui://2r331opvlwft3" fontSize="26" color="#f2684d" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="举报">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

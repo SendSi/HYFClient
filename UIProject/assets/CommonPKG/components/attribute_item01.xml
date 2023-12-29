@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="254,29" extention="Button" designImageOffsetX="-891" designImageOffsetY="-429">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="1" value="灰"/>
+  </controller>
+  <displayList>
+    <text id="n5_ebe5" name="num" xy="5,0" size="112,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#8d8d8d" align="center" ubb="true" vars="true" autoSize="none" singleLine="true" autoClearText="true" text="重击概率">
+      <gearColor controller="state" pages="0,1" values="#48fbff,#000000|#8d8d8d,#000000"/>
+      <relation target="" sidePair="middle-middle"/>
+    </text>
+    <text id="n6_ebe5" name="additionNum" xy="118,0" size="68,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#8d8d8d" align="right" vAlign="middle" autoSize="none" autoClearText="true" text="50">
+      <gearColor controller="state" pages="1" values="#8d8d8d,#000000" default="#48fbff,#000000"/>
+    </text>
+    <image id="n7_nxs9" name="n7" src="slj11ygcfnk" fileName="images/images_new/common_arrow_7.png" xy="185,7" scale="0.8,0.8" grayed="true">
+      <gearLook controller="state" pages="1" values="1,0,1,0" default="1,0,0,0"/>
+    </image>
+    <text id="n8_nxs9" name="additionNum2" xy="198,0" size="56,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#8d8d8d" vAlign="middle" autoSize="none" autoClearText="true" text="60">
+      <gearColor controller="state" pages="1" values="#8d8d8d,#000000" default="#8bff3d,#000000"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

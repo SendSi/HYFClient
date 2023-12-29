@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="98,97" extention="Button" designImageOffsetX="-149" designImageOffsetY="-100">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_vqdv" name="n0" src="iusrz9cmk" fileName="images/economic/building_btn_default.png" pkg="madu8sce" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_vqdv" name="n1" src="iusrz9cml" fileName="images/economic/building_btn_selected.png" pkg="madu8sce" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3_vqdv" name="icon" xy="14,25" size="55,41" url="ui://madu8sceiusrz9cmb" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

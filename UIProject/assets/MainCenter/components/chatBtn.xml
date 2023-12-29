@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="51,40" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n0_r616" name="n0" src="cv8s1qp8vds" fileName="images/main/mainhud_chat_icon02.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_r616" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="50,-1">
+      <gearDisplay controller="red" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

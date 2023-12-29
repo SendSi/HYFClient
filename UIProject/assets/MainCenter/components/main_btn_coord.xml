@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="231,36" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_m47y" name="n3" src="yt2t1ygcg8q" fileName="images4/mainhud_btn_icon014.png" xy="0,2" pivot="0.5,0.5" size="230,31" alpha="0.7"/>
+    <text id="n4_m47y" name="coordLbl_x" xy="62,4" size="45,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" autoClearText="true" text="9999"/>
+    <text id="n5_m47y" name="coordLbl_y" xy="124,4" size="45,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" autoClearText="true" text="9999"/>
+    <text id="n6_m47y" name="n6" xy="44,4" size="22,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="X:"/>
+    <text id="n7_m47y" name="n7" xy="106,4" size="21,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="Y:"/>
+    <image id="n10_jxsz" name="n10" src="j4kdhz9clm" fileName="images/main/mainhud_bg08.png" xy="169,7" scale="0.72,0.72"/>
+    <component id="n9_m47y" name="btn" src="m47yhz9co5" fileName="components/main_btn_coord2.xml" xy="1,0" size="237,36"/>
+    <loader id="n11_ijk7" name="n11" xy="0,-2" size="40,40" touchable="false" url="ui://4ni413laltnnhz9cw8" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>

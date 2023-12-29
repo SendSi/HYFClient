@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="82,28">
+  <displayList>
+    <loader id="n72_t2qt" name="rankIcon" xy="0,0" size="28,28" url="ui://2r331opvsvx3hz9d75" fill="scale"/>
+    <text id="n73_t2qt" name="heroName" xy="31,2" size="48,24" font="ui://2r331opvmwt91ygcfk5" fontSize="16" color="#ffffff" vAlign="middle" autoClearText="true" text="玩家A"/>
+  </displayList>
+  <relation target="n73_t2qt" sidePair="rightext-right"/>
+</component>

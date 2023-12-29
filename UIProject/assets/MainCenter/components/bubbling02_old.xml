@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="953,44">
+  <controller name="dirCtrl" pages="0,,1,,2,,3," selected="0">
+    <remark page="0" value="上"/>
+    <remark page="1" value="下"/>
+    <remark page="2" value="左"/>
+    <remark page="3" value="右"/>
+  </controller>
+  <displayList>
+    <loader id="n3_hd50" name="icon" xy="0,0" size="953,44" url="ui://4ni413lahd501qp8vg1" fill="scaleFree">
+      <gearIcon controller="dirCtrl" pages="0,1,2,3" values="ui://4ni413lahd501qp8vg1|ui://4ni413lahd501qp8vg1|ui://4ni413lahd501qp8vg1|ui://4ni413lahd501qp8vg7"/>
+      <relation target="n1_hd50" sidePair="width-width"/>
+    </loader>
+    <text id="n1_hd50" name="title" xy="41,9" size="868,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" leading="0" ubb="true" vars="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" autoClearText="true" text="这里显示一行，长度可变！这里显示一行，长度可变！这里显示一行，长度可变！这里显示一行，长度可变！">
+      <gearXY controller="dirCtrl" pages="3" values="44,9" default="41,9"/>
+    </text>
+    <image id="n2_hd50" name="n2" src="hd501qp8vg3" fileName="images/map/expression_bg05.png" xy="476,-31">
+      <gearDisplay controller="dirCtrl" pages="0,1"/>
+      <gearXY controller="dirCtrl" pages="0,1,3" values="476,-31|499,26|476,-31" default="476,-31"/>
+      <gearLook controller="dirCtrl" pages="1" values="1,51,0,0" default="1,0,0,0"/>
+      <relation target="" sidePair="center-center"/>
+    </image>
+    <image id="n4_hd50" name="n4" src="hd501qp8vg8" fileName="images/map/expression_bg09.png" xy="-23,8">
+      <gearDisplay controller="dirCtrl" pages="2"/>
+    </image>
+    <image id="n5_hd50" name="n5" src="hd501qp8vg8" fileName="images/map/expression_bg09.png" xy="941,7" flip="hz">
+      <gearDisplay controller="dirCtrl" pages="3"/>
+      <relation target="" sidePair="right-right"/>
+    </image>
+  </displayList>
+  <relation target="n3_hd50" sidePair="width-width"/>
+</component>

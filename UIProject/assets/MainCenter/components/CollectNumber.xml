@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="95,32" pivot="0.5,0.5" anchor="true" opaque="false">
+  <displayList>
+    <richtext id="n0_nnv4" name="n0" xy="0,0" size="95,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#93ff21" align="center" vAlign="middle" ubb="true" strokeColor="#004107" shadowColor="#004107" shadowOffset="1,2" singleLine="true" autoClearText="true" text="9999999"/>
+  </displayList>
+  <relation target="n0_nnv4" sidePair="width-width,height-height"/>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n0_nnv4" value="1"/>
+    <item time="0" type="XY" target="n0_nnv4" tween="true" startValue="-,0" endValue="-,-80" duration="23"/>
+    <item time="11" type="Alpha" target="n0_nnv4" tween="true" startValue="1" endValue="0" duration="12"/>
+  </transition>
+</component>

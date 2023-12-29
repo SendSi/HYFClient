@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,120" extention="Button" designImage="ui://b7676vbqxbayh" designImageOffsetX="-499" designImageOffsetY="-236">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <displayList>
+    <loader id="n1_9232" name="bg_quality" xy="11,11" size="98,98" url="ui://2r331opv94956" fill="scale">
+      <relation target="" sidePair=""/>
+    </loader>
+    <loader id="n2_9232" name="icon_prop" xy="12,12" size="96,96" url="ui://2r331opvkn292" align="center" vAlign="middle">
+      <relation target="" sidePair=""/>
+    </loader>
+    <text id="n6_kbi5" name="composeNumber" xy="13,80" size="94,30" fontSize="20" color="#ffffff" align="right" vAlign="bottom" autoSize="none" strokeColor="#000000" singleLine="true" text="50"/>
+    <image id="n0_9232" name="n0" src="spsrz9ckd" fileName="images/images_new/common_select_08.png" pkg="2r331opv" xy="-12,-12" size="144,143">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n4_9232" name="name" xy="7,112" size="106,33" fontSize="22" color="#bbc1c3" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="1"/>
+  </displayList>
+  <Button mode="Check"/>
+</component>

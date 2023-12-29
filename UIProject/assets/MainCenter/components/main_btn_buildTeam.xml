@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="83,82" pivot="0.5,0.5" extention="Button" designImage="ui://4ni413laj4kdhz9cl7" designImageOffsetX="-23" designImageOffsetY="-260" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="build" pages="0,normal,6,normal2,1,building,5,building2,4,free" selected="0">
+    <remark page="0" value="建造"/>
+    <remark page="1" value="探索"/>
+    <remark page="2" value="建造ing"/>
+    <remark page="3" value="探索ing"/>
+    <remark page="4" value="免费加速"/>
+  </controller>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="正常队列"/>
+    <remark page="1" value="临时队列"/>
+  </controller>
+  <displayList>
+    <component id="n16_b6o0" name="timePbr" src="b6o0l5" fileName="components/main_build_pbr.xml" xy="-5,-5" aspect="true">
+      <gearDisplay controller="build" pages="1,5,4"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <graph id="n23_b6o0" name="n23" xy="0,0" size="78,70">
+      <gearSize controller="build" pages="0,6" values="78,70,1,1|78,70,1,1" default="78,90,1,1"/>
+    </graph>
+    <image id="n24_bvce" name="n24" pkg="4ni413la" src="bvcehz9cmc" fileName="images/main/mainhud_build01.png" xy="1,1">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <image id="n28_bvce" name="n28" pkg="4ni413la" src="bvcehz9cmc" fileName="images/main/mainhud_build01.png" xy="1,1">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <loader id="n5_gm0a" name="icon" xy="3,4" size="75,75" url="ui://4ni413labvcehz9cmf" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="build" pages="0,6"/>
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="build" pages="0,6,1" values="ui://4ni413labvcehz9cmf|ui://4ni413lab6o0l4|ui://4ni413lab6o0l2" default="ui://2r1ub4e4gzkh7v"/>
+    </loader>
+    <image id="n15_b6o0" name="n15" pkg="4ni413la" src="j4kdhz9cm7" fileName="images/main/mainhud_bg09.png" xy="4,78" pivot="0.5,0.5" size="74,22" group="n7_gm0a">
+      <relation target="n6_gm0a" sidePair="width-width"/>
+    </image>
+    <text id="n6_gm0a" name="title_time" xy="4,75" pivot="0.5,0.5" size="74,26" group="n7_gm0a" fontSize="18" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="00:01:44"/>
+    <group id="n7_gm0a" name="title" xy="4,75" size="74,26" advanced="true">
+      <gearDisplay controller="build" pages="1,5,4"/>
+    </group>
+    <text id="n17_b6o0" name="freeLbl" xy="19,15" size="44,50" fontSize="20" color="#6cea6f" leading="-3" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="免费&#xA;加速">
+      <gearDisplay controller="build" pages="4"/>
+    </text>
+    <loader id="n19_b6o0" name="mov" xy="-3,-6" size="80,80" aspect="true" url="ui://4ni413lab6o0lt" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="build" pages="1,5"/>
+      <gearXY controller="build" pages="1,5" values="1,1|18,17" default="-3,-6"/>
+      <gearSize controller="build" pages="5" values="51,51,1,1" default="80,80,1,1"/>
+      <gearIcon controller="build" pages="1" values="ui://4ni413lab6o0ls" default="ui://4ni413lab6o0lt"/>
+    </loader>
+    <component id="n22_b6o0" name="timeRemaining" src="is8cg8" fileName="components/EffectRoot.xml" pkg="2r331opv" xy="6,10"/>
+  </displayList>
+  <Button sound="ui://2r331opvu9ouh3" volume="50" downEffect="scale" downEffectValue=".95"/>
+  <relation target="n23_b6o0" sidePair="height-height"/>
+</component>

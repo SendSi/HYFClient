@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="324,60" overflow="scroll">
+  <displayList>
+    <text id="n41_pb7c" name="text" xy="0,0" size="324,68" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="height" autoClearText="true" text="每日5点重置，购买的攻城令不会被重置， 攻城令上限和主城等级有关 每日可免费领取1次攻城令">
+      <relation target="" sidePair="width-width,center-center"/>
+    </text>
+  </displayList>
+</component>

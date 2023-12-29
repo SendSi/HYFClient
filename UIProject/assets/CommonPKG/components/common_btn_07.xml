@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="42,42" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n1_o4uy" name="icon" xy="0,1" size="42,42" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n2_r0ap" name="title" xy="16,55" size="10,26" fontSize="18" color="#ffffff" align="center" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n3_r0ap" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="32,12" visible="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".94"/>
+</component>

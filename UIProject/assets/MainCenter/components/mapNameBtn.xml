@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="230,47" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="colour" pages="0,,1," selected="0">
+    <remark page="0" value="绿色"/>
+    <remark page="1" value="白色"/>
+  </controller>
+  <displayList>
+    <image id="n0_klt5" name="n0" src="klt51ygcfgm" fileName="images/map/see_bg02.png" xy="0,0" size="230,47">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_klt5" name="title" xy="18,9" pivot="0.5,0.5" size="159,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="2级护城柱">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <loader id="n2_klt5" name="icon" xy="184,0" size="46,46" url="ui://4ni413laklt51ygcfgn" align="center" vAlign="middle">
+      <relation target="" sidePair="right-right"/>
+    </loader>
+    <image id="n3_klt5" name="n3" src="klt51ygcfgp" fileName="images/map/see_bg03.png" xy="27,-37" pivot="0.5,0.5" size="158,45">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="n4_klt5" sidePair="width-width"/>
+    </image>
+    <text id="n4_klt5" name="nameLbl" xy="45,-27" pivot="0.5,0.5" size="124,26" font="ui://2r331opvno3vhz9d62" fontSize="18" color="#94e957" align="center" vAlign="middle" singleLine="true" autoClearText="true" text="归属[联盟名称]">
+      <gearDisplay controller="state" pages="1"/>
+      <gearColor controller="colour" pages="0" values="#94e957,#000000" default="#ffffff,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

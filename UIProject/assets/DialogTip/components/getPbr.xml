@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="914,25" extention="ProgressBar" designImageOffsetX="-260" designImageOffsetY="-207" designImageLayer="1">
+  <controller name="color" pages="0,,1," selected="0">
+    <remark page="0" value="蓝色"/>
+    <remark page="1" value="绿色"/>
+  </controller>
+  <displayList>
+    <image id="n0_g9ny" name="n0" src="ceggz9cot" fileName="images/images_new/com_strip_bg03.png" pkg="2r331opv" xy="-5,-4" size="923,33">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_k0s5" name="bar" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="-4,-4" size="922,32">
+      <gearDisplay controller="color" pages="0"/>
+    </image>
+    <image id="n7_k0s5" name="bar1" src="bumchz9d7w" fileName="images/images_new/windowBg_new/negative_strip02.png" pkg="2r331opv" xy="-5,-4" size="922,32">
+      <gearDisplay controller="color" pages="1"/>
+    </image>
+    <text id="n2_g9ny" name="title" xy="409,-1" pivot="0.5,0.5" size="118,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" shadowColor="#322b64" shadowOffset="1,1" autoClearText="true" text="1050/15500">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n4_vqdv" name="descLbl" xy="357,-2" size="50,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#322b64" shadowColor="#322b64" shadowOffset="1,1" text="需求:">
+      <relation target="n2_g9ny" sidePair="right-left"/>
+      <relation target="" sidePair="middle-middle"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

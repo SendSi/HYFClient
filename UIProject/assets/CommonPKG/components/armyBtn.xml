@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="58,65" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="2,up,3,down,4,over,5,selectedOver" selected="0"/>
+  <controller name="colour" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="骑士"/>
+    <remark page="1" value="盾兵"/>
+    <remark page="2" value="剑士"/>
+    <remark page="3" value="弓兵"/>
+    <remark page="4" value="法师"/>
+    <remark page="5" value="刺客"/>
+  </controller>
+  <controller name="state" pages="1,,0," selected="0">
+    <remark page="1" value="30级激活"/>
+  </controller>
+  <controller name="state01" pages="0,,1," selected="1">
+    <remark page="0" value="隐藏"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="awake" pages="0,,1,,2," selected="0">
+    <remark page="0" value="未觉醒"/>
+    <remark page="1" value="未激活"/>
+    <remark page="2" value="已激活"/>
+  </controller>
+  <displayList>
+    <loader id="n23_so71" name="icon" xy="-58,-66" size="172,172" group="n22_oxy0" aspect="true" grayed="true" url="ui://2r331opvso711ygcfjv" color="#cccccc">
+      <gearDisplay controller="state01" pages="1"/>
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearColor controller="state" pages="1" values="#cccccc" default="#ffffff"/>
+      <gearIcon controller="colour" pages="0,1,2,3,4,5" values="ui://2r331opvso711ygcfjv|ui://2r331opvso711ygcfju|ui://2r331opvso711ygcfjt|ui://2r331opvso711ygcfjw|ui://2r331opvso711ygcfjx|ui://2r331opvso711ygcfjy"/>
+    </loader>
+    <loader id="n20_oxy0" name="armIcon" xy="0,-10" pivot="0.5,0.5" size="58,65" group="n22_oxy0" url="ui://2r331opvso711ygcfk1" align="center" vAlign="middle" fill="scale">
+      <gearColor controller="colour" pages="0,1,2,3,4,5" values="#ffffff|#ffffff|#ffffff|#ffffff|#ffffff|#ffffff"/>
+      <gearIcon controller="colour" pages="0,1,2,3,4,5" values="ui://2r331opvso711ygcfk1|ui://2r331opvso711ygcfk0|ui://2r331opvso711ygcfjz|ui://2r331opvso711ygcfk2|ui://2r331opvso711ygcfk3|ui://2r331opvso711ygcfk4"/>
+    </loader>
+    <text id="n21_oxy0" name="armTitle" xy="-3,62" pivot="0.5,0.5" size="64,42" group="n22_oxy0" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#acacac" align="center" strokeColor="#000000" strokeSize="2" shadowColor="#000000" shadowOffset="2,3" autoClearText="true" text="骑兵">
+      <gearDisplay controller="state01" pages="1"/>
+      <gearColor controller="state" pages="1" values="#acacac,#000000" default="#ffffff,#000000"/>
+      <gearText controller="colour" pages="0,2,3,4,5" values="骑兵|剑士|弓兵|法师|刺客" default="盾兵"/>
+      <relation target="" sidePair="bottom-bottom"/>
+    </text>
+    <image id="n24_khh6" name="n24" src="khh61ygcfm8" fileName="images/images_new/arms/arms_bg07.png" xy="-30,99" group="n22_oxy0">
+      <gearDisplay controller="awake" pages="1,2"/>
+      <gearLook controller="awake" pages="1" values="1,0,1,0" default="1,0,0,0"/>
+    </image>
+    <text id="n25_khh6" name="awakeTitle" xy="-10,102" size="79,26" group="n22_oxy0" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" autoClearText="true" text="40级觉醒">
+      <gearDisplay controller="awake" pages="1,2"/>
+    </text>
+    <group id="n22_oxy0" name="n22" xy="-58,-66" size="172,196" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

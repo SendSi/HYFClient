@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="760,383">
+  <controller name="fold" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n5_p781" name="button" src="tc38r" fileName="components/fold.xml" xy="18,13" size="710,50">
+      <relation target="" sidePair="center-center"/>
+      <Button controller="fold" page="1"/>
+    </component>
+    <component id="n4_efn9" name="list" src="bwazs" fileName="components/list_clothes_00.xml" xy="0,70" size="760,312">
+      <gearDisplay controller="fold" pages="0"/>
+      <gearSize controller="fold" pages="0,1" values="760,312,1,1|734,0,1,1" tween="true"/>
+    </component>
+  </displayList>
+  <relation target="n4_efn9" sidePair="height-height"/>
+</component>

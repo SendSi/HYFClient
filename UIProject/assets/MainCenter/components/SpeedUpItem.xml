@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="916,141" designImageOffsetX="-198" designImageOffsetY="-267" designImageLayer="1">
+  <controller name="operate" pages="0,buy,1,use,2,batch" selected="0"/>
+  <displayList>
+    <image id="n15_e9ml" name="n15" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="0,3" size="916,134">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n24_cm9t" name="propBg" xy="16,15" size="110,110" group="n18_lwba" url="ui://tsbe09dd65iwhz9d49"/>
+    <loader id="n17_lwba" name="icon" xy="27,25" size="88,88" group="n18_lwba" aspect="true" url="ui://tsbe09ddmz4w4" fill="scale"/>
+    <group id="n18_lwba" name="propIcon" xy="16,15" size="110,110" advanced="true"/>
+    <text id="n2_d4a6" name="title" xy="130,20" size="378,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" ubb="true" autoSize="none" autoClearText="true" text="名字名字"/>
+    <text id="n3_d4a6" name="introduceLbl" xy="130,52" size="534,36" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#599e27" autoSize="none" autoClearText="true" text="使用8小时免战状态，解释说明解释说明解释说明"/>
+    <component id="n14_e9ml" name="buyBtn" src="d5so1ygcfk6" fileName="components/components_new/com_btn_buy1.xml" pkg="2r331opv" xy="735,38" size="158,62">
+      <gearDisplay controller="operate" pages="0"/>
+    </component>
+    <component id="n13_e9ml" name="useBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="734,38" size="158,62">
+      <gearDisplay controller="operate" pages="1,2"/>
+      <Button title="使 用" titleFontSize="28"/>
+    </component>
+    <text id="n11_e9ml" name="hadLbl" xy="130,84" size="104,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" text="拥有数量："/>
+    <text id="n12_e9ml" name="hadNum" xy="232,84" size="28,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" singleLine="true" autoClearText="true" text="20"/>
+    <image id="n19_cbav" name="n19" src="ekmx1ygcfhg" fileName="images/bg_chat_2.png" pkg="62wjs2s2" xy="739,105" size="105,65" group="n23_cbav" alpha="0.5" rotation="180"/>
+    <component id="n20_cbav" name="batchBtn" src="pr6b1qp8vhg" fileName="components/components_new/main/main_rightTeam_Reple.xml" xy="653,51" size="65,39" group="n23_cbav">
+      <Button title="×20"/>
+    </component>
+    <group id="n23_cbav" name="batchUse" xy="653,51" size="191,119" advanced="true">
+      <gearDisplay controller="operate" pages="2"/>
+    </group>
+  </displayList>
+</component>

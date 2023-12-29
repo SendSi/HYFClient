@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageOffsetX="-24" designImageOffsetY="-4">
+  <displayList>
+    <component id="n2_xse5" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n17_kfrl" name="bg" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n18_arx1"/>
+    <component id="n6_xse5" name="contentTxt" src="tbod38" fileName="components/contentTxt.xml" xy="390,227" pivot="0.5,0.5" size="557,168" group="n18_arx1"/>
+    <text id="n19_c1q9" name="titleTxt" xy="631,164" pivot="0.5,0.5" size="72,46" group="n18_arx1" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示"/>
+    <component id="n11_xse5" name="tipToggleBtn" src="c1q9hz9cug" fileName="components/components_new/com_btn_check4.xml" pkg="2r331opv" xy="552,413" group="n18_arx1">
+      <relation target="n12_xse5" sidePair="right-left"/>
+    </component>
+    <text id="n12_xse5" name="tipToggleTxt" xy="601,422" pivot="0.5,0.5" size="164,29" group="n18_arx1" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" text="本次登录不再提醒"/>
+    <component id="n20_c1q9" name="btnLeft" src="yhldz9cod" fileName="components/components_new/com_btn_02_redPoint.xml" pkg="2r331opv" xy="409,480" size="202,78" group="n18_arx1">
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+    <component id="n21_c1q9" name="btnRight" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="719,480" size="202,78" group="n18_arx1">
+      <Button title="确认" titleFontSize="32"/>
+    </component>
+    <component id="n22_jg06" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n18_arx1" scale="0.8,0.8"/>
+    <group id="n18_arx1" name="window" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

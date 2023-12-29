@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_ykww" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_ykww" name="window" src="d9gi17" fileName="panel/com_little_window.xml" pkg="2r331opv" xy="267,145" group="n22_arx1">
+      <Button title="使用道具"/>
+    </component>
+    <image id="n25_in8y" name="n25" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="351,230" size="632,330" group="n22_arx1"/>
+    <component id="n23_s055" name="icon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="383,270" group="n22_arx1"/>
+    <text id="n24_jmae" name="titleTxt" xy="356,157" size="10,49" group="n22_arx1" font="ui://2r331opvlwft3" fontSize="36" color="#f2dd68" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text=""/>
+    <text id="n6_ykww" name="title" xy="506,299" size="353,34" group="n22_arx1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="道具名称"/>
+    <text id="n7_ykww" name="title2" xy="506,330" size="443,32" group="n22_arx1" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" autoSize="height" autoClearText="true" text="用于提升……"/>
+    <component id="n13_ykww" name="useBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="566,483" size="202,78" group="n22_arx1">
+      <Button title="使用" titleFontSize="32" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+    <image id="n14_ykww" name="n14" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="834,428" size="110,39" group="n22_arx1" alpha="0.8"/>
+    <component id="n15_ykww" name="cutBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="395,423" group="n22_arx1" aspect="true">
+      <Button icon="ui://2r331opvno3vhz9d6c"/>
+    </component>
+    <component id="n16_ykww" name="plusBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="782,423" group="n22_arx1" aspect="true"/>
+    <component id="n20_ykww" name="n20" src="ykwwkw" fileName="components/useProp_Slider4.xml" xy="448,430" size="327,34" group="n22_arx1">
+      <Slider value="28" max="100"/>
+    </component>
+    <group id="n22_arx1" name="n22" xy="267,145" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

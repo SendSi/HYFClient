@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="121,32" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="当前选中"/>
+  </controller>
+  <displayList>
+    <image id="n1_oxy0" name="n1" src="k0s51qp8vfm" fileName="images/images_new/windowBg_new/negative_bg02_2.png" pkg="2r331opv" xy="0,0" size="121,32" color="#000000">
+      <gearColor controller="button" pages="0,1,2,3" values="#000000|#333333|#333333|#333333"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_oxy0" name="title" xy="6,2" size="45,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#c8c8c8" vAlign="middle" singleLine="true" text="Star"/>
+    <image id="n4_qx30" name="n4" src="klrg1qp8vd5" fileName="images/images_new/com_btn_correct.png" pkg="2r331opv" xy="94,4" size="23,23" aspect="true">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

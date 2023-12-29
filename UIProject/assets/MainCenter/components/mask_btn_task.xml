@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="95,95" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" alias="红点" pages="0,,1," selected="1"/>
+  <displayList>
+    <loader id="n0_xoe1" name="icon" xy="2,-2" size="90,100">
+      <gearDisplay controller="button" pages="0,2"/>
+    </loader>
+    <component id="n1_xoe1" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="82,14">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

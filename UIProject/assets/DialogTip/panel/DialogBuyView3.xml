@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_bwlb" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_bwlb" name="n3" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,150" group="n10_u80i"/>
+    <text id="n5_bwlb" name="titleTxt" xy="631,163" pivot="0.5,0.5" size="72,46" group="n10_u80i" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示"/>
+    <component id="n6_bwlb" name="contentTxt" src="tbod38" fileName="components/contentTxt.xml" xy="381,246" size="573,221" group="n10_u80i"/>
+    <component id="n7_bwlb" name="btnLeft" src="yhldz9cod" fileName="components/components_new/com_btn_02.xml" pkg="2r331opv" xy="429,479" group="n10_u80i">
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+    <component id="n8_bwlb" name="btnRight" src="d5so1ygcfk6" fileName="components/components_new/com_btn_buy1.xml" pkg="2r331opv" xy="739,481" group="n10_u80i">
+      <Button title="购买并使用" titleFontSize="28"/>
+    </component>
+    <text id="n9_bwlb" name="hadTxt" xy="770,553" pivot="0.5,0.5" size="99,29" group="n10_u80i" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#966f39" autoClearText="true" text="拥有：656"/>
+    <component id="n4_bwlb" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n10_u80i" scale="0.8,0.8"/>
+    <group id="n10_u80i" name="window" xy="267,138" size="800,472" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

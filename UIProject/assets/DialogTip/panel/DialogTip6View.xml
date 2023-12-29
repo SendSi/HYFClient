@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_m79t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_m79t" name="bg" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n14_cdsd"/>
+    <text id="n19_eznb" name="titleTxt" xy="512,164" pivot="0.5,0.5" size="310,46" group="n14_cdsd" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" text="提示"/>
+    <component id="n7_m79t" name="btnCenter" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="565,472" size="202,78" group="n14_cdsd">
+      <Button title="立即进入" titleFontSize="32"/>
+    </component>
+    <component id="n16_jg06" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n14_cdsd" scale="0.8,0.8" visible="false"/>
+    <text id="n21_poaz" name="contentTitle" xy="384,238" size="565,49" group="n14_cdsd" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#e77917" align="center" vAlign="middle" autoSize="none" text="即将进入玩法，请做好准备！"/>
+    <text id="n24_sumv" name="contentTitle1" xy="384,312" size="565,138" group="n14_cdsd" font="ui://2r331opvno3vhz9d63" fontSize="74" color="#d93a3a" align="center" autoSize="none" autoClearText="true" text="3"/>
+    <group id="n14_cdsd" name="window" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

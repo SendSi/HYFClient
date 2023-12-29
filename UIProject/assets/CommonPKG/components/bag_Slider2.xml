@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="71,36" extention="Slider">
+  <displayList>
+    <image id="n0_ms13" name="n0" src="svx3hz9d78" fileName="images/images_new/windowBg_new/strip00.png" xy="-4,-3" size="79,42" alpha="0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_ms13" name="bar" src="svx3hz9d79" fileName="images/images_new/windowBg_new/strip01.png" xy="1,2" size="69,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n2_ms13" name="grip" src="f3wxfi" fileName="components/components_new/bag_Slider2_grip.xml" xy="46,-10" pivot="0.5,0.5">
+      <relation target="n1_ms13" sidePair="right-right"/>
+    </component>
+    <text id="n3_f3wx" name="title" xy="0,-47" size="46,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#845744" vAlign="middle" autoClearText="true" text="111">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Slider titleType="value" wholeNumbers="true"/>
+</component>

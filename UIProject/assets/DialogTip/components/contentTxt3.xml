@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="582,45" overflow="hidden">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="已激活"/>
+  </controller>
+  <displayList>
+    <richtext id="n0_tbod" name="contentTxt" xy="48,5" size="94,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" ubb="true" autoClearText="true" text="防御+10">
+      <gearColor controller="state" pages="0,1" values="#97794f,#000000|#4c9129,#000000"/>
+    </richtext>
+    <loader id="n1_ff11" name="icon" xy="0,0" size="45,45" url="ui://4hio38umoxy0z9cs7" autoSize="true">
+      <gearIcon controller="state" pages="1" values="ui://4hio38umoxy0z9cs6" default="ui://4hio38umoxy0z9cs7"/>
+    </loader>
+  </displayList>
+</component>

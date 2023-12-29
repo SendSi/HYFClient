@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame">
+  <controller name="stateCtrl" pages="1,,0," selected="1">
+    <remark page="0" value="未有账号"/>
+  </controller>
+  <displayList>
+    <component id="n5_7oiz" name="bg_01" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_7oiz" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="134,31" size="1104,688" group="n37_vidf">
+      <Label title="选择服务器"/>
+    </component>
+    <component id="n7_7oiz" name="sureBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="571,595" size="202,68" group="n37_vidf">
+      <Button title="确定" titleFontSize="28" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+    <image id="n41_s4xx" name="n41" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="946,142" size="208,428" group="n37_vidf" alpha="0.6"/>
+    <text id="n16_7oiz" name="title_01" xy="951,153" size="52,34" group="n37_vidf" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" text="介绍"/>
+    <text id="n17_7oiz" name="title_02" xy="951,191" size="198,127" group="n37_vidf" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" autoSize="none" text="欢迎来到XXXXXX游戏"/>
+    <richtext id="n19_7oiz" name="title_03" xy="951,326" size="198,112" group="n37_vidf" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" ubb="true" autoSize="none" text="服务器开启时间：&#xA;[color=#50382e]2020年9月19日&#xA;14:00[/color]"/>
+    <text id="n20_7oiz" name="title_04" xy="951,451" size="198,113" group="n37_vidf" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#4c9129" autoSize="none" text="本服已进入PK赛季只能继承已有角色"/>
+    <component id="n9_7oiz" name="recentlylanded" src="7oizm" fileName="components/list_clothes_01.xml" xy="197,141" size="760,160" group="n21_7oiz"/>
+    <component id="n10_7oiz" name="existing roles" src="7oizn" fileName="components/list_clothes_02.xml" xy="197,292" size="760,293" group="n21_7oiz"/>
+    <group id="n21_7oiz" name="list_01" xy="197,141" size="760,444" group="n37_vidf" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+    </group>
+    <component id="n22_7oiz" name="list_02" src="7oizo" fileName="components/list_clothes_03.xml" xy="197,115" size="760,470" group="n37_vidf">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+    </component>
+    <group id="n37_vidf" name="windows" xy="134,31" size="1104,688" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="368,29" overflow="scroll" extention="Label">
+  <displayList>
+    <richtext id="n17_9232" name="title" xy="0,0" size="368,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" ubb="true" autoSize="height" autoClearText="true" text="这里是描述描述"/>
+  </displayList>
+  <relation target="n17_9232" sidePair="bottomext-bottom"/>
+</component>

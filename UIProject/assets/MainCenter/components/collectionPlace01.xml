@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageOffsetX="-311" designImageOffsetY="-139" designImageLayer="1">
+  <controller name="deleteCtrl" pages="0,,1," selected="1">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <component id="n3_xoe1" name="n3" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,145" group="n19_xoe1"/>
+    <text id="n6_xoe1" name="titleTxt" xy="597,157" pivot="0.5,0.5" size="140,46" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" text="添加收藏"/>
+    <text id="n8_xoe1" name="placeTitle" xy="573,222" pivot="0.5,0.5" size="193,32" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#599e27" align="center" vAlign="middle" autoClearText="true" text="15服     X:124  Y:87"/>
+    <image id="n9_xoe1" name="n9" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="404,259" size="531,45" group="n11_xoe1"/>
+    <text id="n10_xoe1" name="ilblName" xy="608,265" pivot="0.5,0.5" size="124,34" group="n11_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" autoClearText="true" text="联盟金矿场" input="true" prompt="请输入……"/>
+    <group id="n11_xoe1" name="n11" xy="404,259" size="531,45" group="n19_xoe1"/>
+    <text id="n14_xoe1" name="txtSelectedName" xy="640,316" size="60,39" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#97794f" align="center" text="特殊"/>
+    <list id="n16_xoe1" name="typeList" xy="408,360" size="523,119" group="n19_xoe1" layout="flow_hz" overflow="scroll" scrollBarFlags="32" colGap="14" defaultItem="ui://4ni413laxoe1nc">
+      <item icon="ui://4ni413labmedhz9cvh"/>
+      <item icon="ui://4ni413labmedhz9cvi"/>
+      <item icon="ui://4ni413labmedhz9cvj"/>
+      <item icon="ui://4ni413labmedhz9cvg"/>
+    </list>
+    <component id="n17_xoe1" name="yesButton" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="589,503" group="n19_xoe1">
+      <Button title="确定" titleFontSize="28"/>
+    </component>
+    <image id="n22_ejbh" name="n22" src="j9d91qp8vcm" fileName="images/images_new/windowBg_new/negative_bg09.png" pkg="2r331opv" xy="712,327" size="222,25" group="n19_xoe1"/>
+    <image id="n23_ejbh" name="n23" src="j9d91qp8vcm" fileName="images/images_new/windowBg_new/negative_bg09.png" pkg="2r331opv" xy="405,327" size="222,25" group="n19_xoe1" flip="hz"/>
+    <component id="n24_j3d7" name="deleteBtn" src="n1oz1ygcfoa" fileName="components/components_new/com_btn_05.xml" pkg="2r331opv" xy="777,503" group="n19_xoe1">
+      <gearDisplay controller="deleteCtrl" pages="1"/>
+      <Button title="删除" titleFontSize="28"/>
+    </component>
+    <group id="n19_xoe1" name="view1" xy="267,145" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

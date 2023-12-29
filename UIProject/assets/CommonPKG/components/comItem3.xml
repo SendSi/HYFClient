@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,120" extention="Button" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <controller name="qualityCtrl" pages="0,,1,,2,,3,,4,,5," selected="0"/>
+  <displayList>
+    <loader id="n23_nq4j" name="bg" xy="5,6" pivot="0.5,0.5" size="110,112" aspect="true" url="ui://2r331opvh3jujt" fill="scaleFree">
+      <gearIcon controller="qualityCtrl" pages="1,2,3,4,5" values="ui://2r331opv94956|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv94959|ui://2r331opv9495a" default="ui://2r331opvh3jujt"/>
+    </loader>
+    <component id="n49_ps61" name="icon" src="nv4k1ygcgqx" fileName="components/components_new/comItem0.xml" xy="17,17"/>
+    <text id="n46_rq2j" name="title" xy="18,110" pivot="0.5,0.5" size="84,29" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="这里打字"/>
+    <text id="n48_hfi1" name="num" xy="17,76" size="86,29" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" autoSize="shrink" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text=""/>
+  </displayList>
+  <Button/>
+</component>

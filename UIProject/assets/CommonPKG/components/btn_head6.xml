@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="210,210" extention="Button" designImageOffsetX="-831" designImageOffsetY="-169">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="frame" pages="12,,0,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11," selected="0"/>
+  <controller name="onLineCtrl" pages="2,,0,,1," selected="2">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="不在线"/>
+    <remark page="2" value="在线ing"/>
+  </controller>
+  <displayList>
+    <image id="n7_j3xs" name="selected" src="yhldz9coo" fileName="images/images_new/com_select_01.png" xy="3,2" aspect="true">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n20_e49k" name="icon" xy="39,37" size="133,133" aspect="true" url="ui://tsbe09ddnv4khz9di8" align="center" vAlign="middle" fill="scale"/>
+    <loader id="n17_gqih" name="frame" xy="0,1" size="210,210" url="ui://2r331opvmloz1ygcfh8" clearOnPublish="true">
+      <gearIcon controller="frame" pages="12,0,1,2,3,4,5,6,7,8,9,10,11" values="ui://2r331opvmloz1ygcfh8|ui://2r331opvmloz1ygcfh7|ui://2r331opvgqih1ygcfgn|ui://2r331opvgqih1ygcfgo|ui://2r331opvgqih1ygcfgp|ui://2r331opvgqih1ygcfgq|ui://2r331opvgqih1ygcfgr|ui://2r331opvgqih1ygcfgs|ui://2r331opvgqih1ygcfgt|ui://2r331opvgqih1ygcfgu|ui://2r331opvgqih1ygcfgv|ui://2r331opvgqih1ygcfgw|ui://2r331opvgqih1ygcfgx"/>
+    </loader>
+    <image id="n19_ho0c" name="onLine" src="vb7khz9d01" fileName="images/images_new/com_green_dot.png" xy="23,12" pivot="0.5,0.5" size="36,36" aspect="true">
+      <gearDisplay controller="onLineCtrl" pages="0,1"/>
+      <gearLook controller="onLineCtrl" pages="0" values="1,0,1,0" default="1,0,0,0"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

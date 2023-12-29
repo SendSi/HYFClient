@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="204,82" pivot="0.5,0.5" extention="Button" designImage="ui://4ni413laoepthz9cod" designImageOffsetX="-1231" designImageOffsetY="-102" designImageAlpha="0">
+  <controller name="isSelect" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="0"/>
+  <controller name="star" alias="星级" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="1星"/>
+    <remark page="1" value="2星"/>
+    <remark page="2" value="3星"/>
+    <remark page="3" value="4星"/>
+    <remark page="4" value="5星"/>
+    <remark page="5" value="6星"/>
+  </controller>
+  <controller name="tab" pages="0,,1," selected="0">
+    <remark page="0" value="详情"/>
+    <remark page="1" value="简易"/>
+  </controller>
+  <controller name="revive" pages="0,,1,,2," selected="0"/>
+  <controller name="worldBoss" pages="0,,1," selected="0">
+    <remark page="0" value="boss区域外"/>
+    <remark page="1" value="boss区域内"/>
+  </controller>
+  <displayList>
+    <image id="n23_fsqx" name="n23" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="74,82" alpha="0.6">
+      <gearDisplay controller="tab" pages="1"/>
+    </image>
+    <component id="n3_oept" name="infor" src="oepthz9cpw" fileName="components/components_new/main/main_teamItem0.xml" xy="0,0" size="204,82">
+      <gearDisplay controller="tab" pages="0"/>
+      <gearSize controller="tab" pages="0,1" values="204,82,1,1|74,82,1,1"/>
+      <gearLook controller="tab" pages="1" values="0,0,0,1" default="1,0,0,1" tween="true"/>
+    </component>
+    <image id="n21_7k93" name="n21" src="7k93hz9d2c" fileName="images/troops/fight_begins.png" xy="-4,26" visible="false"/>
+    <image id="n25_ts2v" name="n25" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="0,0" size="204,82" group="n27_ts2v" alpha="0.8" color="#5e190a">
+      <gearSize controller="tab" pages="0,1" values="204,82,1,1|74,82,1,1"/>
+    </image>
+    <text id="n22_gptw" name="reviveTimeLbl" xy="0,16" size="204,49" group="n27_ts2v" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="shrink" autoClearText="true" text="5秒后可复活">
+      <gearXY controller="tab" pages="0,1" values="0,16|5,14"/>
+      <gearSize controller="tab" pages="0,1" values="204,49,1,1|63,54,1,1"/>
+    </text>
+    <group id="n27_ts2v" name="reviveState" xy="0,0" size="204,82" advanced="true">
+      <gearDisplay controller="revive" pages="1"/>
+    </group>
+    <image id="n28_gr02" name="attackbg" src="gr021ygcfgy" fileName="images4/main_bg04_2.png" xy="2,1" size="201,78">
+      <gearDisplay controller="worldBoss" pages="1"/>
+      <gearSize controller="tab" pages="0,1" values="201,78,1,1|70,80,1,1"/>
+    </image>
+    <image id="n30_m5mo" name="n30" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="0,0" size="160,82" group="n32_m5mo" alpha="0.8" color="#000000">
+      <gearSize controller="tab" pages="0,1" values="160,82,1,1|74,82,1,1"/>
+    </image>
+    <text id="n31_m5mo" name="settleTimeLbl" xy="7,16" size="145,49" group="n32_m5mo" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ff0000" align="center" vAlign="middle" leading="0" autoSize="shrink" autoClearText="true" text="整备">
+      <gearXY controller="tab" pages="0,1" values="7,16|6,14"/>
+      <gearSize controller="tab" pages="0,1" values="145,49,1,1|63,54,1,1"/>
+    </text>
+    <group id="n32_m5mo" name="settleState" xy="0,0" size="160,82" advanced="true">
+      <gearDisplay controller="revive" pages="2"/>
+    </group>
+  </displayList>
+  <Button mode="Check"/>
+  <relation target="n3_oept" sidePair="width-width,height-height"/>
+  <transition name="select">
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="0.95,0.95" duration="2"/>
+    <item time="2" type="Scale" tween="true" startValue="0.95,0.95" endValue="1.05,1.05" duration="2"/>
+    <item time="4" type="Scale" tween="true" startValue="1.05,1.05" endValue="1,1" duration="2"/>
+  </transition>
+  <transition name="battle">
+    <item time="0" type="Alpha" target="n21_7k93" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Visible" target="n21_7k93" value="true"/>
+    <item time="0" type="XY" target="n21_7k93" tween="true" startValue="-71,34.5" endValue="-180,34.5" duration="4"/>
+    <item time="4" type="XY" target="n21_7k93" tween="true" startValue="-180,34.5" endValue="-206,34.5" duration="21"/>
+    <item time="25" type="Alpha" target="n21_7k93" value="1"/>
+    <item time="25" type="Visible" target="n21_7k93" value="false"/>
+  </transition>
+</component>

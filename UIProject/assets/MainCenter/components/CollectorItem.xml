@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="450,72">
+  <controller name="state" pages="3,,0,,1,,5,,2," selected="2">
+    <remark page="0" value="在城内待命"/>
+    <remark page="1" value="采集路上"/>
+    <remark page="2" value="正在采集"/>
+    <remark page="3" value="回城路上"/>
+    <remark page="4" value="未解锁"/>
+  </controller>
+  <controller name="dispatch" pages="0,,1," selected="0">
+    <remark page="0" value="否"/>
+    <remark page="1" value="是"/>
+  </controller>
+  <displayList>
+    <image id="n22_t18r" name="n2" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,4" size="448,65" alpha="0.4"/>
+    <component id="n15_hs5t" name="headIcon" src="hs5t1ygcfls" fileName="components/components_new/map/search/collectorHead.xml" xy="-19,-24" scale="0.7,0.7" visible="false"/>
+    <component id="n7_9zwe" name="goBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="327,10">
+      <gearDisplay controller="state" pages="3,0,1,5"/>
+      <gearDisplay2 controller="dispatch" pages="0" condition="0"/>
+      <Button title="前往"/>
+    </component>
+    <component id="n8_9zwe" name="dispatchBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="327,10">
+      <gearDisplay controller="dispatch" pages="1"/>
+      <gearDisplay2 controller="state" pages="3,0,1,5" condition="0"/>
+      <Button title="派遣"/>
+    </component>
+    <component id="n20_rlhp" name="unlockBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="327,10" touchable="false" grayed="true">
+      <gearDisplay controller="state" pages="2"/>
+      <Button title="未解锁"/>
+    </component>
+    <text id="n4_mdy2" name="title" xy="74,6" size="244,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#845744" autoSize="none" singleLine="true" autoClearText="true" text="1号采集队(1级农田资源点)">
+      <gearXY controller="state" pages="3" values="74,6" default="74,6"/>
+    </text>
+    <text id="n16_rs9w" name="collectNum" xy="149,30" size="86,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="10000">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <component id="n18_fpkn" name="tosPbr" src="9zwez9cnc" fileName="components/components_new/explore/ToScoutPbr.xml" xy="76,31" size="240,28">
+      <ProgressBar value="72" max="100"/>
+    </component>
+    <text id="n19_rlhp" name="stateLbl" xy="83,32" pivot="0.5,0.5" size="228,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="采集中...">
+      <gearText controller="state" pages="3,0,1,5" values="待命中...|采集中...|采集中...|回程中..." default="主城6级解锁"/>
+    </text>
+    <image id="n23_t18r" name="n23" src="8lkd1ygcfm4" fileName="images/images_new/com_arms_bg02.png" pkg="2r331opv" xy="18,14"/>
+  </displayList>
+</component>

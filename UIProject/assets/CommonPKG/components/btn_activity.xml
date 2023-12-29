@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_l9c5" name="icon" xy="0,0" size="100,100" aspect="true" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <richtext id="n4_ya7r" name="title" xy="0,85" size="100,33" fontSize="23" color="#ffffff" align="center" autoSize="none" autoClearText="true" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

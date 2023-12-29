@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,140" pivot="0.5,0.5" extention="Button" designImageOffsetX="-985" designImageOffsetY="-101">
+  <controller name="reincarnation" pages="0,,1,,2,,3,,4,,6,,7,,10," selected="0"/>
+  <controller name="quality" pages="1,,2,,3,,4," selected="0"/>
+  <controller name="button" pages="2,up,3,down,4,over,5,selectedOver" selected="0">
+    <action type="play_transition" fromPage="" toPage="3,5" transition="t0"/>
+  </controller>
+  <controller name="name" pages="0,,1," selected="0">
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="Arms" pages="0,,1," selected="0">
+    <remark page="1" value="不显示"/>
+  </controller>
+  <controller name="hasCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="nor"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <loader id="n3_xz10" name="bg0" xy="3,12" size="114,124" url="ui://61bunt4fhxd7g4" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://61bunt4fhxd7g4|ui://61bunt4fhxd7g5|ui://61bunt4fhxd7g6|ui://61bunt4fhxd7g7"/>
+    </loader>
+    <loader id="n0_xz10" name="bg" xy="2,11" size="116,128" aspect="true" visible="false" url="ui://61bunt4fhxd7fw" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="reincarnation" pages="1,2,3,4,6,7,10" values="ui://61bunt4fhxd7fx|ui://61bunt4fhxd7fy|ui://61bunt4fhxd7fz|ui://61bunt4fhxd7g0|ui://61bunt4fhxd7g1|ui://61bunt4fhxd7g2|ui://61bunt4fhxd7g2" default="ui://61bunt4fhxd7fw"/>
+    </loader>
+    <loader id="n18_hxd7" name="icon" xy="10,10" size="100,128" url="ui://4557t28ky6f5hz9cp3" align="center" vAlign="middle" fill="scale"/>
+    <image id="n19_bwlb" name="n19" src="hxd7hz9d7m" fileName="images/images_new/hero_selec02.png" xy="-10,0">
+      <gearDisplay controller="button" pages="3,5"/>
+    </image>
+    <loader id="n1_xz10" name="qualityIcon" xy="4,10" size="58,40" visible="false" url="ui://4557t28klfqnhz9cq2" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://4557t28klfqnhz9cq2|ui://4557t28klfqnhz9cq3|ui://4557t28klfqnhz9cq4|ui://4557t28klfqnhz9cq5"/>
+    </loader>
+    <component id="n23_gww7" name="armsBtn" src="f3et1qp8ved" fileName="components/components_new/armyBtn.xml" xy="69,72" scale="0.6,0.6">
+      <gearDisplay controller="Arms" pages="1"/>
+    </component>
+    <component id="n24_ftur" name="exist" src="ftur1ygcgq0" fileName="components/components_new/existingItem.xml" xy="61,-2" rotation="10">
+      <gearDisplay controller="hasCtrl" pages="1"/>
+    </component>
+    <graph id="n20_gww7" name="n20" xy="16,61" size="88,22" group="n22_gww7" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#f4000000"/>
+    <text id="n21_gww7" name="nameLbl" xy="14,60" pivot="0.5,0.5" size="92,24" group="n22_gww7" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" letterSpacing="-2" autoSize="none" autoClearText="true" text="名字六个字吧"/>
+    <group id="n22_gww7" name="n22" xy="14,60" size="92,24" advanced="true">
+      <gearDisplay controller="button" pages="3,5"/>
+      <gearDisplay2 controller="name" pages="1" condition="0"/>
+    </group>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n22_gww7" value="0"/>
+    <item time="1" type="Alpha" target="n22_gww7" tween="true" startValue="1" endValue="1" duration="24"/>
+    <item time="25" type="Alpha" target="n22_gww7" tween="true" startValue="1" endValue="0" duration="23"/>
+  </transition>
+</component>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="74,82" pivot="0.5,0.5" extention="Button" designImageOffsetX="-1110" designImageOffsetY="-438" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="tab" pages="0,,1,,2," selected="1">
+    <remark page="1" value="简易"/>
+    <remark page="2" value="未解锁"/>
+  </controller>
+  <displayList>
+    <image id="n3_ssbd" name="n3" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="74,82" alpha="0.6">
+      <gearDisplay controller="tab" pages="0,1,2"/>
+      <gearSize controller="tab" pages="0,1,2" values="204,82,1,1|74,82,1,1|204,82,1,1"/>
+    </image>
+    <image id="n7_oept" name="n7" pkg="4ni413la" src="oepthz9con" fileName="images/team/main_team_bg00.png" xy="-4,-5" group="n8_oept" visible="false">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <group id="n8_oept" name="tab1" xy="-4,-5" size="100,100" advanced="true">
+      <gearDisplay controller="tab" pages="1"/>
+    </group>
+    <text id="n5_ssbd" name="title" xy="84,26" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="创建部队">
+      <gearDisplay controller="tab" pages="0"/>
+    </text>
+    <image id="n4_ssbd" name="n4" src="pr6b1qp8vev" fileName="images/images_new/common_btn_plus2.png" pkg="2r331opv" xy="22,27" size="30,30" aspect="true" alpha="0.8">
+      <gearDisplay controller="tab" pages="0,1"/>
+      <gearXY controller="tab" pages="0,1" values="22,26|22,27" default="39,24"/>
+    </image>
+    <image id="n10_u6yz" name="n10" src="u6yzhz9cpx" fileName="images/images_new/com_icon_lock.png" pkg="2r331opv" xy="84,10" size="32,42" aspect="true" alpha="0.3">
+      <gearDisplay controller="tab" pages="2"/>
+    </image>
+    <text id="n11_ihkp" name="lockTxt" xy="56,46" pivot="0.5,0.5" size="87,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" autoClearText="true" text="统帅厅X级">
+      <gearDisplay controller="tab" pages="2"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <relation target="n3_ssbd" sidePair="width-width,height-height"/>
+</component>

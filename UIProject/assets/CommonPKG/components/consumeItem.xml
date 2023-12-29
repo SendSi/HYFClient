@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="178,44" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="白色"/>
+    <remark page="1" value="红色"/>
+  </controller>
+  <displayList>
+    <loader id="n3_js41" name="icon" xy="68,0" size="40,40" aspect="true" url="ui://lh4qx1m6lcfj2z" align="center" vAlign="middle" fill="scale"/>
+    <richtext id="n7_vntm" name="consumeLbl" xy="5,4" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="消耗："/>
+    <richtext id="n4_js41" name="need_01" xy="104,4" size="70,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" ubb="true" autoClearText="true" text="10/10">
+      <gearColor controller="state" pages="1" values="#f00000,#000000" default="#ffffff,#000000"/>
+    </richtext>
+  </displayList>
+  <Button volume="0"/>
+  <relation target="n4_js41" sidePair="rightext-right"/>
+</component>

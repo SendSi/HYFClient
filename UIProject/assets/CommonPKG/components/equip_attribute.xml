@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,26" extention="Button">
+  <controller name="color" pages="0,,1,,2,,3,,4,,6," selected="5">
+    <remark page="0" value="白"/>
+    <remark page="1" value="绿"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫"/>
+    <remark page="4" value="橙"/>
+    <remark page="5" value="红"/>
+  </controller>
+  <displayList>
+    <text id="n0_s135" name="title" xy="3,-2" size="91,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d93a3a" autoClearText="true" text="攻击+150">
+      <gearColor controller="color" pages="0,1,2,3,4,6" values="#50382e,#000000|#4c9129,#000000|#3991d3,#000000|#b333d9,#000000|#e77917,#000000|#d93a3a,#000000"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

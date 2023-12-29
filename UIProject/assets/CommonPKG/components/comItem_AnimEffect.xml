@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="103,128" extention="Button" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <displayList>
+    <component id="n51_je0x" name="n50" src="ayljdv" fileName="components/EffectHandle.xml" xy="27,28" pivot="0.5,0.5" size="50,50"/>
+    <component id="n52_fyi4" name="comItem" src="j842hz9cyi" fileName="components/components_new/comItem.xml" xy="-8,-8" pivot="0.5,0.5"/>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n52_fyi4" tween="true" startValue="0.5,0.5" endValue="1.2,1.2" duration="6" ease="Sine.In"/>
+    <item time="6" type="Scale" target="n52_fyi4" tween="true" startValue="1.2,1.2" endValue="1,1" duration="4" ease="Sine.Out"/>
+    <item time="10" type="Scale" target="n52_fyi4" tween="true" startValue="1,1" endValue="1,1" duration="6" ease="Linear"/>
+  </transition>
+</component>

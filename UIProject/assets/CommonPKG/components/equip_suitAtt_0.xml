@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="423,145" overflow="hidden">
+  <controller name="switch" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n3_s135" name="n3" src="b9bj1ygcgmi" fileName="images/images_new/windowBg_new/welfare_btn_bg19.png" xy="0,0" size="423,145" group="n7_s135" alpha="0.2"/>
+    <list id="n4_s135" name="list" xy="13,10" size="393,107" group="n7_s135" overflow="scroll" lineGap="-4" defaultItem="ui://2r331opvs1351iy5b9c">
+      <item title="(2)幸运套转·2转"/>
+      <item title="幸运衣服"/>
+      <item title="幸运戒指·4转"/>
+      <item title="幸运项链·4转"/>
+      <item title="幸运武器·4转"/>
+    </list>
+    <text id="n5_s135" name="tips" xy="25,115" pivot="0.5,0.5" size="372,24" group="n7_s135" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#845744" align="center" vAlign="middle" text="套装属性取对应件数的最低转生等级的套装属性生效"/>
+    <group id="n7_s135" name="n7" xy="0,0" size="423,145" advanced="true">
+      <gearDisplay controller="switch" pages="0"/>
+    </group>
+  </displayList>
+</component>

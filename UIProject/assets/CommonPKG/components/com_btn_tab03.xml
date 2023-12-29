@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="166,92" extention="Button" designImage="ui://4hio38umc4umcin" designImageOffsetX="-363" designImageOffsetY="-110" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="1"/>
+  <displayList>
+    <loader id="n6_ebe4" name="bg" xy="0,0" size="166,92" url="ui://2r331opvebe41qp8vcv">
+      <gearIcon controller="button" pages="0,1,2,3" values="ui://2r331opvebe41qp8vcv|ui://2r331opvebe41qp8vcu|ui://2r331opvebe41qp8vcv|ui://2r331opvebe41qp8vcu"/>
+    </loader>
+    <text id="n2_tv1v" name="title0" xy="30,26" size="137,40" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#4e2910" align="center" vAlign="middle" autoSize="none" shadowColor="#cf9223" shadowOffset="1,4" singleLine="true" autoClearText="true" text="守卫王城">
+      <gearDisplay controller="button" pages="1,3"/>
+      <gearColor controller="button" pages="0,1,2,3" values="#4e2910,#cc681c|#4e2910,#000000|#488e8e,#000000|#4e2910,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n4_tr7w" name="title1" xy="30,26" size="137,40" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#cc681c" strokeSize="2" shadowColor="#cc681c" shadowOffset="1,4" singleLine="true" autoClearText="true" text="守卫王城">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n5_eaah" name="redpoint" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="165,7">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

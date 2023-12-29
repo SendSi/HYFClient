@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="43,13" extention="ProgressBar" designImage="ui://4ni413laejj4hz9cub" designImageOffsetX="-415" designImageOffsetY="-230">
+  <displayList>
+    <image id="n0_ex0k" name="n0" src="k06chz9d2e" fileName="images/team/fight_bg_ragevalue.png" xy="0,0" size="43,13">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n1_ex0k" name="bar" src="k06chz9d2f" fileName="images/team/fight_point_ragevalue.png" xy="0,0" size="43,13" fillMethod="hz">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <component id="n4_skbg" name="mask" src="skbghz9cw2" fileName="components/components_new/main/anger_pbr_mask.xml" xy="0,2" size="43,8"/>
+  </displayList>
+  <ProgressBar/>
+</component>

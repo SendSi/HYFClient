@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n104_ya6w" name="btnNext" src="sfia1ygcfhf" fileName="components/components_new/com_btn_null.xml" pkg="2r331opv" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n88_osur" name="showTopTitle" src="osur1ygcfn3" fileName="components/components_new/showTopTitle.xml" pkg="2r331opv" xy="309,-42">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://2r331opv10473hz9cyn"/>
+    </component>
+    <image id="n44_w2ss" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,290" pivot="0.5,0.5" size="1334,378" group="n57_w2ss" alpha="0.8"/>
+    <text id="n48_w2ss" name="txtDesc" xy="309,275" size="708,39" group="n57_w2ss" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#fae66c" align="center" vAlign="middle" autoSize="none" shadowColor="#773a00" shadowOffset="2,3" text="成功净化古龙">
+      <relation target="n44_w2ss" sidePair="top-top"/>
+    </text>
+    <image id="n60_w2ss" name="n60" src="k0s51qp8vfm" fileName="images/images_new/windowBg_new/negative_bg02_2.png" pkg="2r331opv" xy="228,327" size="390,306" group="n72_w2ss" alpha="0.3" color="#000000"/>
+    <image id="n93_ya6w" name="n93" src="k0s51qp8vfm" fileName="images/images_new/windowBg_new/negative_bg02_2.png" pkg="2r331opv" xy="228,326" size="390,37" group="n72_w2ss" alpha="0.6" color="#294590"/>
+    <list id="n58_w2ss" name="ranking_list" xy="254,366" size="337,265" group="n72_w2ss" overflow="scroll" lineGap="-2" defaultItem="ui://utp01xiadi051ygcft0" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n59_w2ss" name="rankinglbl" xy="279,328" pivot="0.5,0.5" size="76,34" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#74d0ff" text="总排名"/>
+    <text id="n90_qon7" name="hurtLbl" xy="486,328" pivot="0.5,0.5" size="100,34" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#74d0ff" align="center" text="伤害输出"/>
+    <image id="n69_w2ss" name="minebg" src="o283z9cnq" fileName="images/images_new/com_change07.png" pkg="2r331opv" xy="644,327" size="450,37" group="n72_w2ss" alpha="0.4" color="#061324"/>
+    <image id="n71_w2ss" name="awardbg" src="o283z9cnq" fileName="images/images_new/com_change07.png" pkg="2r331opv" xy="644,487" size="450,37" group="n72_w2ss" alpha="0.4" color="#061324"/>
+    <text id="n65_w2ss" name="rewardlbl" xy="650,489" size="100,34" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#74d0ff" text="联盟奖励"/>
+    <list id="n64_w2ss" name="rewardList2" xy="645,532" size="566,132" group="n72_w2ss" scale="0.8,0.8" layout="row" overflow="scroll" scroll="horizontal" margin="-6,0,0,0" colGap="20" defaultItem="ui://2r331opvr52r1ygcgpe" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n94_ya6w" name="rewardlbl01" xy="650,328" size="76,34" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#74d0ff" text="参与奖"/>
+    <text id="n105_ya6w" name="reward1" xy="727,331" size="164,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#74d0ff" ubb="true" text="（通过邮件发放）">
+      <relation target="n94_ya6w" sidePair="right-right"/>
+    </text>
+    <text id="n106_ya6w" name="reward2" xy="751,491" size="184,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#74d0ff" ubb="true" text="（进入联盟拍卖行）">
+      <relation target="n65_w2ss" sidePair="right-right"/>
+    </text>
+    <image id="n107_ya6w" name="horn1" src="nm3l1ygcfm6" fileName="images/images_new/windowBg_new/label_05.png" pkg="2r331opv" xy="891,328" size="49,36" group="n72_w2ss" aspect="true"/>
+    <image id="n108_ya6w" name="horn2" src="nm3l1ygcfm6" fileName="images/images_new/windowBg_new/label_05.png" pkg="2r331opv" xy="936,488" size="49,36" group="n72_w2ss" aspect="true">
+      <relation target="n65_w2ss" sidePair="right-right"/>
+    </image>
+    <list id="n109_ya6w" name="rewardList1" xy="645,371" size="566,132" group="n72_w2ss" scale="0.8,0.8" layout="row" overflow="scroll" scroll="horizontal" margin="-6,0,0,0" colGap="20" defaultItem="ui://2r331opvr52r1ygcgpe" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n72_w2ss" name="com" xy="228,326" size="983,338" group="n57_w2ss" advanced="true"/>
+    <group id="n57_w2ss" name="panel" xy="0,275" size="1334,393" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <image id="n99_ya6w" name="n99" src="itz02a" fileName="images/images_new/com_bg_mask.png" pkg="2r331opv" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n103_ya6w" name="lable" xy="547,690" size="239,35" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="0,2" text="-  点击空白关闭  -">
+      <relation target="" sidePair="center-center,top-bottom"/>
+    </text>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n88_osur" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n99_ya6w" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Size" target="n44_w2ss" value="1334,26"/>
+    <item time="0" type="Visible" target="n103_ya6w" value="false"/>
+    <item time="0" type="Visible" target="n2_9232" value="false"/>
+    <item time="0" type="Visible" target="n44_w2ss" value="false"/>
+    <item time="0" type="Visible" target="n72_w2ss" value="false"/>
+    <item time="0" type="XY" target="n103_ya6w" value="547,760"/>
+    <item time="0" type="XY" target="n88_osur" value="309,175"/>
+    <item time="6" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="6" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="6" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="6" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="6" type="Visible" target="n2_9232" value="true"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" value="1"/>
+    <item time="12" type="Alpha" target="n99_ya6w" tween="true" startValue="1" endValue="0" duration="5"/>
+    <item time="17" type="Alpha" target="n88_osur" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="17" type="Alpha" target="n99_ya6w" value="0"/>
+    <item time="44" type="XY" target="n88_osur" tween="true" startValue="309,175" endValue="309,-42" duration="6"/>
+    <item time="50" type="Size" target="n44_w2ss" tween="true" startValue="1334,26" endValue="1334,378" duration="4"/>
+    <item time="50" type="Visible" target="n44_w2ss" value="true"/>
+    <item time="54" type="Visible" target="n44_w2ss" value="true"/>
+    <item time="55" type="Visible" target="n103_ya6w" value="true"/>
+    <item time="55" type="Visible" target="n72_w2ss" value="true"/>
+    <item time="57" type="XY" target="n103_ya6w" tween="true" startValue="547,760" endValue="547,690" duration="6"/>
+  </transition>
+</component>

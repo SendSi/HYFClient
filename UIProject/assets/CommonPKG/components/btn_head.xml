@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="106,106" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="红点"/>
+  </controller>
+  <displayList>
+    <image id="n0_gzkh" name="bg" src="7oizdc" fileName="images/common_select_01.png" xy="0,0" size="25,25">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n2_gzkh" name="icon" xy="14,13" size="79,80" aspect="true" url="ui://tsbe09ddnv4khz9di8" align="center" vAlign="middle" fill="scale">
+      <relation target="n0_gzkh" sidePair="width-width%,height-height%,center-center,middle-middle"/>
+    </loader>
+    <component id="n3_gaz3" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="84,19">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>

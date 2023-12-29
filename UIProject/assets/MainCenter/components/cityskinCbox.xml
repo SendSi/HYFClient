@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="121,41" extention="ComboBox" designImageOffsetX="-158" designImageOffsetY="-106">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_oxy0" name="n0" src="oxy0jx" fileName="images/images_new/hero_btn01.png" pkg="2r331opv" xy="0,0" size="121,41">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_oxy0" name="n1" src="jmaehz9cuv" fileName="images/images_new/com_btn_arrow02.png" pkg="2r331opv" xy="83,8" pivot="0.5,0.5" size="33,27">
+      <gearLook controller="button" pages="1,3" values="1,180,0,0|1,180,0,0" default="1,0,0,0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_oxy0" name="title" xy="4,2" size="73,37" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#c8c8c8" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="排序">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ComboBox dropdown="ui://4ni413lacwtb1ygcfgb"/>
+</component>

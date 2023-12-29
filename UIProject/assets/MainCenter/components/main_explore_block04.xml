@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="24,35">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="有雾"/>
+    <remark page="1" value="无"/>
+  </controller>
+  <displayList>
+    <image id="n0_k4g9" name="n0" src="lvbk1ygcfhx" fileName="images/explore01/explore_bg05.png" xy="0,0" flip="hz">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+  </displayList>
+</component>

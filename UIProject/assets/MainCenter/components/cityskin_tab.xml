@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="66,66" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_cwtb" name="n0" src="no3vhz9d66" fileName="images/images_new/com_bg_btn01.png" pkg="2r331opv" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_cwtb" name="n1" src="no3vhz9d67" fileName="images/images_new/com_bg_btn02.png" pkg="2r331opv" xy="0,0" size="66,66">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n3_cwtb" name="icon" xy="11,15" size="42,34" aspect="true" url="ui://4ni413lacwtb1ygcffj" align="center" vAlign="middle" fill="scaleFree" color="#9f9898">
+      <gearColor controller="button" pages="0,1,2,3" values="#9f9898|#ffffff|#9f9898|#ffffff"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n4_l0ga" name="redDot" src="dix6fj" fileName="images/images_new/com_red_dot.png" pkg="2r331opv" xy="42,0" size="24,26" aspect="true"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

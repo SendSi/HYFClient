@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-2" size="1665,756">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n8_hs4g" name="btnNext" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n40_osur" name="showTopTitle" src="osur1ygcfn3" fileName="components/components_new/showTopTitle.xml" pkg="2r331opv" xy="309,0">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://2r331opv10473hz9cyn"/>
+    </component>
+    <text id="n7_9232" name="lable" xy="547,690" pivot="0.5,0.5" size="239,35" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="0,2" text="- 点击空白处关闭 -">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <image id="n34_pc5k" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,298" pivot="0.5,0.5" size="1334,333" alpha="0.8">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n36_pc5k" name="EffectHandle_GongXiHuoDe" src="ayljdv" fileName="components/EffectHandle.xml" pkg="2r331opv" xy="639,213" group="n39_pc5k" touchable="false">
+      <relation target="n34_pc5k" sidePair="top-top"/>
+    </component>
+    <group id="n39_pc5k" name="n39" xy="639,213" size="50,50" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n24_qok1" name="TimeLbl" xy="563,430" pivot="0.5,0.5" size="206,32" group="n28_qok1" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" singleLine="true" autoClearText="true" text="清关时间：21:01:94">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <richtext id="n26_qok1" name="DropRlbl" xy="525,454" pivot="0.5,0.5" size="283,29" group="n28_qok1" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#76c1ec" align="center" ubb="true" autoClearText="true" text="当前评估具有[color=#6add65]180%[/color] 的下降概率">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <image id="n21_qok1" name="star02" src="cxixz9cmd" fileName="images/images_new/stars02.png" pkg="2r331opv" xy="575,352" pivot="0.5,0.5" size="70,70" group="n28_qok1" aspect="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n20_qok1" name="star01" src="cxixz9cmd" fileName="images/images_new/stars02.png" pkg="2r331opv" xy="621,322" pivot="0.5,0.5" size="89,89" group="n28_qok1">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <image id="n23_qok1" name="star03" src="cxixz9cmd" fileName="images/images_new/stars02.png" pkg="2r331opv" xy="685,352" pivot="0.5,0.5" size="70,70" group="n28_qok1" aspect="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <list id="n27_qok1" name="reward" xy="66,487" pivot="0.5,0.5" size="1200,167" group="n28_qok1" scale="0.9,0.9" layout="row" overflow="scroll" scroll="horizontal" lineGap="8" colGap="76" defaultItem="ui://2r331opvr52r1ygcgpe" align="center" vAlign="middle" autoClearItems="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n28_qok1" name="n28" xy="66,322" size="1200,332" advanced="true"/>
+    <image id="n42_ya6w" name="n42" src="itz02a" fileName="images/images_new/com_bg_mask.png" pkg="2r331opv" xy="0,0" size="1334,750" visible="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n40_osur" value="0"/>
+    <item time="0" type="Alpha" target="n42_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n42_ya6w" value="0"/>
+    <item time="0" type="Alpha" target="n42_ya6w" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Size" target="n34_pc5k" value="1334,28"/>
+    <item time="0" type="Visible" target="n28_qok1" value="false"/>
+    <item time="0" type="Visible" target="n2_9232" value="false"/>
+    <item time="0" type="Visible" target="n34_pc5k" value="false"/>
+    <item time="0" type="XY" target="n40_osur" value="309,175"/>
+    <item time="0" type="XY" target="n7_9232" value="547,766"/>
+    <item time="6" type="Visible" target="n2_9232" value="true"/>
+    <item time="12" type="Alpha" target="n42_ya6w" tween="true" startValue="1" endValue="1" duration="0"/>
+    <item time="17" type="Alpha" target="n42_ya6w" value="0"/>
+    <item time="18" type="Alpha" target="n40_osur" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="44" type="XY" target="n40_osur" tween="true" startValue="309,175" endValue="309,0" duration="6"/>
+    <item time="51" type="Size" target="n34_pc5k" tween="true" startValue="1334,28" endValue="1334,333" duration="4"/>
+    <item time="51" type="Visible" target="n34_pc5k" value="true"/>
+    <item time="55" type="Visible" target="n28_qok1" value="true"/>
+    <item time="55" type="Visible" target="n34_pc5k" value="true"/>
+    <item time="58" type="XY" target="n7_9232" tween="true" startValue="547,766" endValue="547,690" duration="5" ease="Back.Out"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Alpha" target="n20_qok1" value="0"/>
+    <item time="0" type="Alpha" target="n21_qok1" value="0"/>
+    <item time="0" type="Alpha" target="n23_qok1" value="0"/>
+    <item time="0" type="Size" target="n20_qok1" tween="true" startValue="238,238" endValue="89,89" duration="7" label2="A" ease="Back.In"/>
+    <item time="1" type="Alpha" target="n20_qok1" value="1"/>
+    <item time="1" type="Alpha" target="n21_qok1" value="0"/>
+    <item time="1" type="Alpha" target="n23_qok1" value="0"/>
+    <item time="7" type="Alpha" target="n21_qok1" value="1"/>
+    <item time="7" type="Size" target="n21_qok1" tween="true" startValue="128,128" endValue="70,70" duration="11" label2="B" ease="Back.In"/>
+    <item time="18" type="Alpha" target="n23_qok1" value="1"/>
+    <item time="18" type="Size" target="n23_qok1" tween="true" startValue="128,128" endValue="70,70" duration="12" label2="C" ease="Back.In"/>
+  </transition>
+  <transition name="star">
+    <item time="0" type="Alpha" target="n20_qok1" value="0"/>
+    <item time="0" type="Alpha" target="n21_qok1" tween="true" startValue="0" endValue="0.3" duration="3"/>
+    <item time="0" type="Alpha" target="n23_qok1" value="0"/>
+    <item time="0" type="Scale" target="n21_qok1" tween="true" startValue="0.2,0.2" endValue="1.5,1.5" duration="6"/>
+    <item time="0" type="XY" target="n21_qok1" tween="true" startValue="629,334" endValue="575,352" duration="15" path="2,0,0,-15,-52,-48,-8,1,2,-54,18,11.56372,-7.312744,0,0,0"/>
+    <item time="3" type="Alpha" target="n21_qok1" tween="true" startValue="0.3" endValue="1" duration="3"/>
+    <item time="6" type="Scale" target="n21_qok1" tween="true" startValue="1.5,1.5" endValue="0.8,0.8" duration="4"/>
+    <item time="9" type="Alpha" target="n20_qok1" tween="true" startValue="0" endValue="0.3" duration="2"/>
+    <item time="10" type="Scale" target="n20_qok1" tween="true" startValue="0.2,0.2" endValue="1.5,1.5" duration="5"/>
+    <item time="10" type="Scale" target="n21_qok1" tween="true" startValue="0.8,0.8" endValue="1,1" duration="3" label2="A"/>
+    <item time="11" type="Alpha" target="n20_qok1" tween="true" startValue="0.3" endValue="0.7" duration="4"/>
+    <item time="15" type="Alpha" target="n20_qok1" tween="true" startValue="0.7" endValue="1" duration="3"/>
+    <item time="15" type="Scale" target="n20_qok1" tween="true" startValue="1.5,1.5" endValue="0.8,0.8" duration="4"/>
+    <item time="18" type="Alpha" target="n20_qok1" value="1"/>
+    <item time="18" type="Alpha" target="n23_qok1" value="0"/>
+    <item time="18" type="XY" target="n23_qok1" tween="true" startValue="629,334" endValue="685,352" duration="14" path="2,0,0,13,-67,68,-7,1,2,56,18,11.56372,-7.312744,0,0,0"/>
+    <item time="19" type="Alpha" target="n23_qok1" tween="true" startValue="0.1" endValue="0.7" duration="5"/>
+    <item time="19" type="Scale" target="n20_qok1" tween="true" startValue="0.8,0.8" endValue="1,1" duration="3" label2="B"/>
+    <item time="19" type="Scale" target="n23_qok1" tween="true" startValue="0.2,0.2" endValue="1.5,1.5" duration="6"/>
+    <item time="24" type="Alpha" target="n23_qok1" tween="true" startValue="0.7" endValue="1" duration="3"/>
+    <item time="25" type="Scale" target="n23_qok1" tween="true" startValue="1.5,1.5" endValue="0.8,0.8" duration="4"/>
+    <item time="29" type="Scale" target="n23_qok1" tween="true" startValue="0.8,0.8" endValue="1,1" duration="3" label2="C"/>
+  </transition>
+</component>

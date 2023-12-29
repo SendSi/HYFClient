@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,29" extention="Button">
+  <controller name="color" pages="0,,1," selected="0">
+    <remark page="0" value="绿"/>
+    <remark page="1" value="红"/>
+  </controller>
+  <displayList>
+    <text id="n0_s135" name="title" xy="0,0" size="79,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="攻击150"/>
+    <text id="n1_qx30" name="num" xy="80,0" size="47,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#8bff3d" strokeColor="#599e27" shadowColor="#599e27" shadowOffset="1,1" autoClearText="true" text="+5%">
+      <gearDisplay controller="color" pages="0"/>
+      <relation target="n0_s135" sidePair="left-right"/>
+    </text>
+    <text id="n2_mdcg" name="num1" xy="80,0" size="47,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ff4343" strokeColor="#902222" shadowColor="#902222" shadowOffset="1,1" autoClearText="true" text="+5%">
+      <gearDisplay controller="color" pages="1"/>
+      <relation target="n0_s135" sidePair="left-right"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

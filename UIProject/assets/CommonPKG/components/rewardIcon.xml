@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="45,40" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="5,,0,,1,,2,,3,,4," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="绿"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫"/>
+    <remark page="4" value="金"/>
+    <remark page="5" value="红"/>
+  </controller>
+  <displayList>
+    <loader id="n4_yhld" name="bg" xy="10,3" size="33,33" url="ui://4557t28kyhldep" fill="scaleFree">
+      <gearIcon controller="quality" pages="5,1,2,3,4" values="ui://4557t28kyhldep|ui://4557t28ko283el|ui://4557t28ko283em|ui://4557t28ko283en|ui://4557t28ko283ej" default="ui://4557t28ko283ek"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n3_yhld" name="icon" xy="10,3" size="33,33" url="ui://tsbe09ddmz4w0" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n5_yhld" name="num" xy="7,23" pivot="1,0" size="39,16" font="ui://2r331opvno3vhz9d63" fontSize="10" color="#ffffff" align="right" strokeColor="#000000" autoClearText="true" text="990000"/>
+  </displayList>
+  <Button/>
+</component>

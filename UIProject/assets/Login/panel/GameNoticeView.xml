@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame">
+  <displayList>
+    <component id="n5_7oiz" name="bg_01" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n4_7oiz" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="153,48" size="1106,653" group="n34_110xn">
+      <Label title="游戏公告"/>
+    </component>
+    <list id="n8_7oiz" name="tabList" xy="38,145" size="194,496" group="n34_110xn" overflow="scroll" lineGap="10" defaultItem="ui://2r331opvprcz1qp8vfc" align="right">
+      <item controllers="display,1,state,0"/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n36_qidv" name="content" src="efn9y" fileName="components/title_notice.xml" xy="263,320" size="907,261" group="n34_110xn"/>
+    <loader id="n37_mpc8" name="bannerIcon" xy="256,170" size="920,149" group="n34_110xn" url="ui://byy9k3ghmpc835"/>
+    <group id="n34_110xn" name="n34" xy="38,48" size="1221,653" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

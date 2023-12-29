@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="30">
+  <displayList>
+    <component id="n2_plmm" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_plmm" name="bg" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" group="n12_tbod"/>
+    <component id="n11_tbod" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="968,138" group="n12_tbod" scale="0.8,0.8"/>
+    <component id="n6_plmm" name="contentTxt" src="tbod38" fileName="components/contentTxt.xml" xy="367,259" pivot="0.5,0.5" size="599,262" group="n12_tbod" visible="false"/>
+    <list id="n14_ff11" name="list" xy="358,233" size="618,333" group="n12_tbod" overflow="scroll" defaultItem="ui://utp01xiaff111ygcft2">
+      <item/>
+      <item/>
+    </list>
+    <text id="n13_poaz" name="titleTxt" xy="631,162" pivot="0.5,0.5" size="72,46" group="n12_tbod" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" autoClearText="true" text="提示"/>
+    <group id="n12_tbod" name="win" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,300" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n2_ew0j" name="bg_00" src="ew0jel" fileName="images/guide_bg_02.png" pkg="4hio38um" xy="74,73" pivot="0.5,0.5" size="154,154">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_ew0j" name="bg_01" src="ew0jel" fileName="images/guide_bg_02.png" pkg="4hio38um" xy="74,73" pivot="0.5,0.5" size="154,154">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_ew0j" name="n3" src="ew0jen" fileName="images/guide_bg_03.png" pkg="4hio38um" xy="93,92" pivot="0.5,0.5" size="116,116">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n0_ew0j" name="bg" src="ew0jek" fileName="images/guide_bg_01.png" pkg="4hio38um" xy="127,130" pivot="0.207,0.154" size="123,132">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="1.29"/>
+  <transition name="guide" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n0_ew0j" tween="true" startValue="0.47" endValue="1" duration="21"/>
+    <item time="0" type="Alpha" target="n1_ew0j" tween="true" startValue="0" endValue="0.1" duration="21"/>
+    <item time="0" type="Alpha" target="n2_ew0j" tween="true" startValue="0" endValue="0.03" duration="21"/>
+    <item time="0" type="Alpha" target="n3_ew0j" tween="true" startValue="0" endValue="0.6" duration="21"/>
+    <item time="0" type="ColorFilter" target="n0_ew0j" tween="true" startValue="0.1,0,0,0.02" endValue="0.15,0,0,0.02" duration="21"/>
+    <item time="0" type="Size" target="n0_ew0j" tween="true" startValue="123,132" endValue="100.658,108.835" duration="21"/>
+    <item time="0" type="Size" target="n1_ew0j" tween="true" startValue="154,154" endValue="73,73" duration="21"/>
+    <item time="0" type="Size" target="n2_ew0j" tween="true" startValue="240,240" endValue="114,114" duration="21"/>
+    <item time="0" type="Size" target="n3_ew0j" tween="true" startValue="116,116" endValue="52,52" duration="21"/>
+    <item time="21" type="Alpha" target="n0_ew0j" tween="true" startValue="1" endValue="0.47" duration="21"/>
+    <item time="21" type="Alpha" target="n1_ew0j" tween="true" startValue="0.1" endValue="0" duration="21"/>
+    <item time="21" type="Alpha" target="n2_ew0j" tween="true" startValue="0.03" endValue="0" duration="21"/>
+    <item time="21" type="Alpha" target="n3_ew0j" tween="true" startValue="0.6" endValue="0" duration="21"/>
+    <item time="21" type="ColorFilter" target="n0_ew0j" tween="true" startValue="0.15,0,0,0.02" endValue="0.1,0,0,0.02" duration="21"/>
+    <item time="21" type="Size" target="n0_ew0j" tween="true" startValue="100.658,108.835" endValue="123,132" duration="21" ease="Expo.Out"/>
+    <item time="21" type="Size" target="n1_ew0j" tween="true" startValue="73,73" endValue="154,154" duration="21"/>
+    <item time="21" type="Size" target="n2_ew0j" tween="true" startValue="114,114" endValue="240,240" duration="21"/>
+    <item time="21" type="Size" target="n3_ew0j" tween="true" startValue="52,52" endValue="116,116" duration="21"/>
+  </transition>
+</component>

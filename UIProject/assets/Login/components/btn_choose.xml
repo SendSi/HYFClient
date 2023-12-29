@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="150,150" opaque="false" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="race_bg" pages="0,,1,,2," selected="0"/>
+  <controller name="gender" pages="0,boy,1,girl" selected="0"/>
+  <displayList>
+    <loader id="n4_p781" name="bg" xy="80,74" pivot="0.5,0.5" anchor="true" size="240,240" alpha="0.5" touchable="false" url="ui://byy9k3ghp7811o" align="center" vAlign="middle" fill="scaleFree">
+      <gearSize controller="button" pages="0,2" values="240,240,1,1|240,240,1,1" default="300,300,1,1" tween="true"/>
+      <gearLook controller="button" pages="0,1,2,3" values="0.5,0,0,0|1,0,0,0|0.5,0,0,1|1,0,0,0" tween="true"/>
+      <gearIcon controller="race_bg" pages="1,2" values="ui://byy9k3ghp7811p|ui://byy9k3ghp7811q" default="ui://byy9k3ghp7811o"/>
+    </loader>
+    <loader id="n7_p781" name="head" xy="80,74" pivot="0.5,0.5" anchor="true" size="161,161" alpha="0.6" url="ui://byy9k3ghv4de2z" fill="scaleFree">
+      <gearSize controller="button" pages="0,2" values="161,161,1,1|161,161,1,1" default="203,203,1,1" tween="true"/>
+      <gearLook controller="button" pages="0,1,2,3" values="0.6,0,0,1|1,0,0,1|0.6,0,0,1|1,0,0,0" tween="true"/>
+      <gearIcon controller="race_bg" pages="0,1,2" values="ui://byy9k3ghv4de2z|ui://byy9k3ghv4de30|ui://byy9k3ghv4de2y"/>
+    </loader>
+    <text id="n3_p781" name="title01" xy="80,137" pivot="0.5,0.5" anchor="true" size="64,42" alpha="0.7" font="ui://2r331opvlwft3" fontSize="30" color="#ffffff" align="center" vAlign="middle" strokeColor="#409142" strokeSize="2" singleLine="true" autoClearText="true" text="精灵">
+      <gearDisplay controller="race_bg" pages="0"/>
+      <gearXY controller="button" pages="0,1,2,3" values="80,137|80,158|80,137|80,158" tween="true" duration=".25"/>
+      <gearLook controller="button" pages="0,2" values="0.7,0,0,0|0.7,0,0,0" default="1,0,0,0" tween="true"/>
+      <gearFontSize controller="button" pages="0,2" values="30|30" default="40"/>
+      <relation target="" sidePair=""/>
+    </text>
+    <text id="n5_p781" name="title02" xy="80,137" pivot="0.5,0.5" anchor="true" size="64,42" alpha="0.7" font="ui://2r331opvlwft3" fontSize="30" color="#ffffff" align="center" vAlign="middle" strokeColor="#405a91" strokeSize="2" singleLine="true" autoClearText="true" text="人族">
+      <gearDisplay controller="race_bg" pages="1"/>
+      <gearXY controller="button" pages="0,1,2,3" values="80,137|80,158|80,137|80,158" tween="true" duration=".25"/>
+      <gearLook controller="button" pages="0,2" values="0.7,0,0,0|0.7,0,0,0" default="1,0,0,0" tween="true"/>
+      <gearFontSize controller="button" pages="0,2" values="30|30" default="40"/>
+      <relation target="" sidePair=""/>
+    </text>
+    <text id="n6_p781" name="title03" xy="80,137" pivot="0.5,0.5" anchor="true" size="64,42" alpha="0.7" font="ui://2r331opvlwft3" fontSize="30" color="#ffffff" align="center" vAlign="middle" strokeColor="#914140" strokeSize="2" singleLine="true" autoClearText="true" text="兽族">
+      <gearDisplay controller="race_bg" pages="2"/>
+      <gearXY controller="button" pages="0,1,2,3" values="80,137|80,158|80,137|80,158" tween="true" duration=".25"/>
+      <gearLook controller="button" pages="0,2" values="0.7,0,0,0|0.7,0,0,0" default="1,0,0,0" tween="true"/>
+      <gearFontSize controller="button" pages="0,2" values="30|30" default="40"/>
+      <relation target="" sidePair=""/>
+    </text>
+    <loader id="n8_p781" name="select" xy="80,74" pivot="0.5,0.5" anchor="true" size="303,303" touchable="false" url="ui://byy9k3ghp7811s">
+      <gearDisplay controller="button" pages="1,3"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio" sound="ui://2r331opvu9ouh4" volume="70"/>
+</component>

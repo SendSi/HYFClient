@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,46" designImageOffsetX="-409" designImageOffsetY="-613">
+  <displayList>
+    <text id="n0_o4uy" name="title" xy="2,11" size="90,29" fontSize="20" color="#a7acae" autoClearText="true" text="行军速度:"/>
+    <text id="n1_o4uy" name="number" xy="92,10" size="108,30" fontSize="21" color="#ffecd0" autoSize="none" autoClearText="true" text="500/1000">
+      <relation target="n0_o4uy" sidePair="leftext-right"/>
+    </text>
+  </displayList>
+</component>

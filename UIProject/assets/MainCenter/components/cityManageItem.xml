@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="925,185" designImage="ui://4ni413lavposhz9cn1" designImageOffsetX="-189" designImageOffsetY="-349" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n0_vpos" name="n0" src="xjmv1qp8vf4" fileName="images/images_new/windowBg_new/negative_bg10.png" pkg="2r331opv" xy="0,0" size="924,186" alpha="0.2"/>
+    <text id="n2_vpos" name="title2" xy="255,4" size="414,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#97794f" align="center" autoSize="none" autoClearText="true" text="迁城"/>
+    <list id="n14_qxve" name="itemList" xy="8,46" size="909,137" lineGap="10" defaultItem="ui://4ni413laqxvehz9coc" autoItemSize="false" align="center" vAlign="middle" autoClearItems="true">
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n14_qxve" sidePair="bottomext-bottom"/>
+</component>

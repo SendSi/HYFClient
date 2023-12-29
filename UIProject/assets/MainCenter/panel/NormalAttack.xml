@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="245,54" pivot="0.5,0.5" anchor="true" opaque="false">
+  <displayList>
+    <component id="n0_st5r" name="n0" src="ya491qp8ve1" fileName="panel/panel_new/main/fighting/FightingHurtNumber2.xml" xy="120,27" size="245,54"/>
+  </displayList>
+  <transition name="normalLeft">
+    <item time="0" type="Alpha" target="n0_st5r" value="1"/>
+    <item time="0" type="Scale" target="n0_st5r" tween="true" startValue="1,1" endValue="2,2" duration="1"/>
+    <item time="0" type="XY" target="n0_st5r" tween="true" startValue="104,27" endValue="106,17" duration="1"/>
+    <item time="1" type="Scale" target="n0_st5r" tween="true" startValue="2,2" endValue="0.6,0.6" duration="3"/>
+    <item time="1" type="XY" target="n0_st5r" tween="true" startValue="106,17" endValue="107,17" duration="3"/>
+    <item time="4" type="Scale" target="n0_st5r" tween="true" startValue="0.6,0.6" endValue="0.6,0.6" duration="3"/>
+    <item time="4" type="XY" target="n0_st5r" tween="true" startValue="107,17" endValue="93,2" duration="5"/>
+    <item time="9" type="XY" target="n0_st5r" tween="true" startValue="93,2" endValue="89,1" duration="1"/>
+    <item time="10" type="XY" target="n0_st5r" tween="true" startValue="89,1" endValue="86,2" duration="1"/>
+    <item time="11" type="XY" target="n0_st5r" tween="true" startValue="86,2" endValue="83,4" duration="1"/>
+    <item time="12" type="XY" target="n0_st5r" tween="true" startValue="83,4" endValue="80,7" duration="1"/>
+    <item time="13" type="XY" target="n0_st5r" tween="true" startValue="80,7" endValue="77,11" duration="1"/>
+    <item time="14" type="XY" target="n0_st5r" tween="true" startValue="77,11" endValue="74,16" duration="1"/>
+    <item time="15" type="Alpha" target="n0_st5r" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="15" type="XY" target="n0_st5r" tween="true" startValue="74,16" endValue="71,21" duration="1"/>
+    <item time="16" type="XY" target="n0_st5r" tween="true" startValue="71,21" endValue="68,26" duration="1"/>
+    <item time="17" type="XY" target="n0_st5r" tween="true" startValue="68,26" endValue="62,40" duration="6"/>
+    <item time="23" type="Scale" target="n0_st5r" value="0.6,0.6"/>
+  </transition>
+  <transition name="normalRight">
+    <item time="0" type="Alpha" target="n0_st5r" value="1"/>
+    <item time="0" type="Scale" target="n0_st5r" tween="true" startValue="1,1" endValue="2,2" duration="1"/>
+    <item time="0" type="XY" target="n0_st5r" tween="true" startValue="140,27" endValue="138,17" duration="1"/>
+    <item time="1" type="Scale" target="n0_st5r" tween="true" startValue="2,2" endValue="0.6,0.6" duration="3"/>
+    <item time="1" type="XY" target="n0_st5r" tween="true" startValue="138,17" endValue="137,17" duration="3"/>
+    <item time="4" type="Scale" target="n0_st5r" tween="true" startValue="0.6,0.6" endValue="0.6,0.6" duration="3"/>
+    <item time="4" type="XY" target="n0_st5r" tween="true" startValue="137,17" endValue="151,2" duration="5"/>
+    <item time="9" type="XY" target="n0_st5r" tween="true" startValue="151,2" endValue="155,1" duration="1"/>
+    <item time="10" type="XY" target="n0_st5r" tween="true" startValue="155,1" endValue="158,2" duration="1"/>
+    <item time="11" type="XY" target="n0_st5r" tween="true" startValue="158,2" endValue="161,4" duration="1"/>
+    <item time="12" type="XY" target="n0_st5r" tween="true" startValue="161,4" endValue="164,7" duration="1"/>
+    <item time="13" type="XY" target="n0_st5r" tween="true" startValue="164,7" endValue="167,11" duration="1"/>
+    <item time="14" type="XY" target="n0_st5r" tween="true" startValue="167,11" endValue="170,16" duration="1"/>
+    <item time="15" type="Alpha" target="n0_st5r" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="15" type="XY" target="n0_st5r" tween="true" startValue="170,16" endValue="173,21" duration="1"/>
+    <item time="16" type="XY" target="n0_st5r" tween="true" startValue="173,21" endValue="176,26" duration="1"/>
+    <item time="17" type="XY" target="n0_st5r" tween="true" startValue="176,26" endValue="182,40" duration="6"/>
+    <item time="23" type="Scale" target="n0_st5r" value="0.6,0.6"/>
+  </transition>
+  <transition name="heal">
+    <item time="0" type="Alpha" target="n0_st5r" tween="true" startValue="0.2" endValue="1" duration="6"/>
+    <item time="0" type="Scale" target="n0_st5r" value="1,1"/>
+    <item time="0" type="XY" target="n0_st5r" tween="true" startValue="45,43" endValue="44,8" duration="6"/>
+    <item time="1" type="Scale" target="n0_st5r" tween="true" startValue="1.3,1.3" endValue="0.7,0.7" duration="2"/>
+    <item time="3" type="Scale" target="n0_st5r" tween="true" startValue="0.7,0.7" endValue="0.6,0.6" duration="4"/>
+    <item time="6" type="XY" target="n0_st5r" tween="true" startValue="44,8" endValue="44,8" duration="6"/>
+    <item time="12" type="XY" target="n0_st5r" tween="true" startValue="44,8" endValue="44,0" duration="9"/>
+    <item time="16" type="Alpha" target="n0_st5r" tween="true" startValue="1" endValue="0" duration="5"/>
+    <item time="21" type="Scale" target="n0_st5r" value="0.6,0.6"/>
+  </transition>
+  <transition name="specialAttackL">
+    <item time="0" type="Alpha" target="n0_st5r" value="1"/>
+    <item time="0" type="Scale" target="n0_st5r" tween="true" startValue="1.5,1.5" endValue="3,3" duration="1"/>
+    <item time="0" type="XY" target="n0_st5r" value="105,27"/>
+    <item time="1" type="Scale" target="n0_st5r" tween="true" startValue="3,3" endValue="1,1" duration="3"/>
+    <item time="1" type="XY" target="n0_st5r" tween="true" startValue="103,7" endValue="103,7" duration="3"/>
+    <item time="4" type="Scale" target="n0_st5r" tween="true" startValue="1,1" endValue="1,1" duration="3"/>
+    <item time="4" type="XY" target="n0_st5r" tween="true" startValue="103,7" endValue="83,-13" duration="5"/>
+    <item time="9" type="XY" target="n0_st5r" tween="true" startValue="83,-13" endValue="77,-15" duration="1"/>
+    <item time="10" type="XY" target="n0_st5r" tween="true" startValue="77,-15" endValue="72,-13" duration="1"/>
+    <item time="11" type="XY" target="n0_st5r" tween="true" startValue="72,-13" endValue="67,-9" duration="1"/>
+    <item time="12" type="XY" target="n0_st5r" tween="true" startValue="67,-9" endValue="62,-5" duration="1"/>
+    <item time="13" type="XY" target="n0_st5r" tween="true" startValue="62,-5" endValue="57,-1" duration="1"/>
+    <item time="14" type="XY" target="n0_st5r" tween="true" startValue="57,-1" endValue="52,3" duration="1"/>
+    <item time="15" type="Alpha" target="n0_st5r" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="15" type="XY" target="n0_st5r" tween="true" startValue="52,3" endValue="47,7" duration="1"/>
+    <item time="16" type="XY" target="n0_st5r" tween="true" startValue="47,7" endValue="42,11" duration="1"/>
+    <item time="17" type="XY" target="n0_st5r" tween="true" startValue="42,11" endValue="38,27" duration="6"/>
+    <item time="23" type="Scale" target="n0_st5r" value="1,1"/>
+  </transition>
+  <transition name="specialAttackR">
+    <item time="0" type="Alpha" target="n0_st5r" value="1"/>
+    <item time="0" type="Scale" target="n0_st5r" tween="true" startValue="1.5,1.5" endValue="3,3" duration="1"/>
+    <item time="0" type="XY" target="n0_st5r" value="135,27"/>
+    <item time="1" type="Scale" target="n0_st5r" tween="true" startValue="3,3" endValue="1,1" duration="3"/>
+    <item time="1" type="XY" target="n0_st5r" tween="true" startValue="137,7" endValue="135,27" duration="3"/>
+    <item time="4" type="Scale" target="n0_st5r" tween="true" startValue="1,1" endValue="1,1" duration="3"/>
+    <item time="4" type="XY" target="n0_st5r" tween="true" startValue="135,27" endValue="155,-13" duration="5"/>
+    <item time="9" type="XY" target="n0_st5r" tween="true" startValue="155,-13" endValue="161,-15" duration="1"/>
+    <item time="10" type="XY" target="n0_st5r" tween="true" startValue="161,-15" endValue="166,-13" duration="1"/>
+    <item time="11" type="XY" target="n0_st5r" tween="true" startValue="166,-13" endValue="171,-9" duration="1"/>
+    <item time="12" type="XY" target="n0_st5r" tween="true" startValue="171,-9" endValue="176,-5" duration="1"/>
+    <item time="13" type="XY" target="n0_st5r" tween="true" startValue="176,-5" endValue="181,-1" duration="1"/>
+    <item time="14" type="XY" target="n0_st5r" tween="true" startValue="181,-1" endValue="186,3" duration="1"/>
+    <item time="15" type="Alpha" target="n0_st5r" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="15" type="XY" target="n0_st5r" tween="true" startValue="186,3" endValue="191,7" duration="1"/>
+    <item time="16" type="XY" target="n0_st5r" tween="true" startValue="191,7" endValue="196,11" duration="1"/>
+    <item time="17" type="XY" target="n0_st5r" tween="true" startValue="196,11" endValue="200,27" duration="6"/>
+    <item time="23" type="Scale" target="n0_st5r" value="1,1"/>
+  </transition>
+</component>

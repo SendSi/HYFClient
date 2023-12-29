@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="705,93" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_lr8b" name="n3" src="tg9h1qp8vhr" fileName="images/chief/chiefPb00.png" xy="72,28" size="633,42"/>
+    <text id="n4_lr8b" name="name" xy="227,4" size="309,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ff757b" vAlign="middle" strokeColor="#3b0200" strokeSize="2" shadowColor="#3b0200" shadowOffset="2,2" autoClearText="true" text="boss名称【归属：联盟名称六字】"/>
+    <component id="n5_lr8b" name="barh_01" src="happ1qp8vh4" fileName="components/components_new/Personal_leader/bar_01.xml" xy="77,33" size="623,32" alpha="0.5">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n6_lr8b" name="bar_01" src="happ1qp8vh4" fileName="components/components_new/Personal_leader/bar_01.xml" xy="77,33" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n7_lr8b" name="pbrLbl" xy="613,33" size="74,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="right" vAlign="middle" autoSize="none" italic="true" strokeColor="#000000" strokeSize="2" autoClearText="true" text="x9"/>
+    <image id="n8_lr8b" name="n8" src="tg9h1qp8vht" fileName="images/chief/boss_bg00.png" xy="6,5"/>
+    <loader id="n9_lr8b" name="icon" xy="13,12" pivot="0.5,0.5" size="74,74" url="ui://4ni413latg9h1qp8vhs" fill="scale"/>
+  </displayList>
+  <Button/>
+</component>

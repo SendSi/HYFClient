@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="332,26">
+  <controller name="channel" pages="4,system,1,world,3,government office,0,union,2,private chat,5,battle" selected="0"/>
+  <displayList>
+    <richtext id="n0_hfih" name="title_name" xy="42,1" size="286,24" restrictSize="50,286,0,0" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffba6f" ubb="true" autoSize="height" singleLine="true" autoClearText="true" text="[聊天的名字字]"/>
+    <graph id="n5_kah2" name="bg_1" xy="6,5" size="36,18" group="n8_kah2" type="rect" lineSize="0" fillColor="#ff5b659d">
+      <relation target="n6_kah2" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n6_kah2" name="title_1" xy="6,2" size="36,24" group="n8_kah2" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" text="联盟"/>
+    <group id="n8_kah2" name="1" xy="6,2" size="36,24" advanced="true">
+      <gearDisplay controller="channel" pages="0"/>
+    </group>
+    <graph id="n9_kah2" name="bg_2" xy="6,5" size="36,18" group="n11_kah2" type="rect" lineSize="0" fillColor="#ff688752">
+      <relation target="n10_kah2" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n10_kah2" name="title_2" xy="6,2" size="36,24" group="n11_kah2" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" text="世界"/>
+    <group id="n11_kah2" name="2" xy="6,2" size="36,24" advanced="true">
+      <gearDisplay controller="channel" pages="1"/>
+    </group>
+    <graph id="n12_kah2" name="bg_3" xy="6,5" size="36,18" group="n14_kah2" type="rect" lineSize="0" fillColor="#ff7c5b9d">
+      <relation target="n13_kah2" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n13_kah2" name="title_3" xy="6,2" size="36,24" group="n14_kah2" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" text="私信"/>
+    <group id="n14_kah2" name="3" xy="6,2" size="36,24" advanced="true">
+      <gearDisplay controller="channel" pages="2"/>
+    </group>
+    <graph id="n15_kah2" name="bg_4" xy="6,5" size="36,18" group="n17_kah2" type="rect" lineSize="0" fillColor="#ff9d6d5b">
+      <relation target="n16_kah2" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n16_kah2" name="title_4" xy="6,2" size="36,24" group="n17_kah2" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" text="州府"/>
+    <group id="n17_kah2" name="4" xy="6,2" size="36,24" advanced="true">
+      <gearDisplay controller="channel" pages="3"/>
+    </group>
+    <graph id="n18_kah2" name="bg_5" xy="6,5" size="36,18" group="n20_kah2" type="rect" lineSize="0" fillColor="#ff9d5757">
+      <relation target="n19_kah2" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n19_kah2" name="title_5" xy="6,2" size="36,24" group="n20_kah2" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" text="系统"/>
+    <group id="n20_kah2" name="5" xy="6,2" size="36,24" advanced="true">
+      <gearDisplay controller="channel" pages="4"/>
+    </group>
+    <graph id="n21_lzro" name="bg_6" xy="6,5" size="36,18" group="n23_lzro" type="rect" lineSize="0" fillColor="#ff9d5757">
+      <relation target="n22_lzro" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n22_lzro" name="title_6" xy="6,2" size="36,24" group="n23_lzro" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" text="战斗"/>
+    <group id="n23_lzro" name="6" xy="6,2" size="36,24" advanced="true">
+      <gearDisplay controller="channel" pages="5"/>
+    </group>
+  </displayList>
+  <relation target="n0_hfih" sidePair="bottomext-bottom"/>
+</component>

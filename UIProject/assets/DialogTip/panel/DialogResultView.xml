@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="45">
+  <displayList>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-2" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n33_ya6w" name="closeButton" src="sfia1ygcfhf" fileName="components/components_new/com_btn_null.xml" pkg="2r331opv" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n31_osur" name="showTopTitle" src="osur1ygcfn3" fileName="components/components_new/showTopTitle.xml" pkg="2r331opv" xy="309,0" size="715,400" touchable="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://2r331opvgww71qp8vec"/>
+    </component>
+    <image id="n3_9232" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,298" pivot="0.5,0.5" size="1334,333" alpha="0.8">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n7_9232" name="lable" xy="547,690" size="239,35" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="0,2" text="-  点击空白关闭  -">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <component id="n8_hs4g" name="btnNext" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n5_9232" name="centerList" src="kxkw1ygcft1" fileName="components/Items_name.xml" xy="150,328" pivot="0.5,0.5">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n31_osur" tween="true" startValue="0" endValue="1" duration="5"/>
+    <item time="0" type="Visible" target="n3_9232" value="false"/>
+    <item time="0" type="Visible" target="n5_9232" value="false"/>
+    <item time="0" type="XY" target="n31_osur" value="309,175"/>
+    <item time="0" type="XY" target="n7_9232" value="547,766"/>
+    <item time="24" type="XY" target="n31_osur" tween="true" startValue="309,175" endValue="309,0" duration="6"/>
+    <item time="31" type="Size" target="n3_9232" tween="true" startValue="1334,27" endValue="1334,333" duration="3"/>
+    <item time="31" type="Visible" target="n3_9232" value="true"/>
+    <item time="34" type="Visible" target="n3_9232" value="true"/>
+    <item time="35" type="Visible" target="n5_9232" value="true"/>
+    <item time="38" type="XY" target="n7_9232" tween="true" startValue="547,766" endValue="547,690" duration="5" ease="Back.Out"/>
+  </transition>
+</component>

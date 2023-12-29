@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="86,78" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_j4kd" name="icon" xy="0,0" pivot="0.5,0.5" size="86,78" url="ui://2r331opvgv9e1ygcgmq" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n4_ts2v" name="title" xy="20,54" size="44,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0" autoPlayRepeat="-1">
+    <item time="0" type="Rotation" target="n3_j4kd" tween="true" startValue="0" endValue="-15" duration="9" ease="Linear"/>
+    <item time="9" type="Rotation" target="n3_j4kd" tween="true" startValue="-15" endValue="0" duration="9" ease="Linear"/>
+    <item time="18" type="Rotation" target="n3_j4kd" tween="true" startValue="0" endValue="15" duration="9" ease="Linear"/>
+    <item time="27" type="Rotation" target="n3_j4kd" tween="true" startValue="15" endValue="0" duration="9" ease="Linear"/>
+    <item time="120" type="Rotation" target="n3_j4kd" value="0"/>
+  </transition>
+</component>

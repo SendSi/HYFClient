@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="118,51" pivot="0.5,0.5" anchor="true" opaque="false" designImage="ui://4ni413lalk93kl" designImageOffsetX="-730" designImageOffsetY="-153">
+  <controller name="color" pages="0,,1,,2,,3,,4," selected="0">
+    <remark page="0" value="黄色"/>
+    <remark page="1" value="白色"/>
+    <remark page="2" value="蓝色"/>
+    <remark page="3" value="绿色"/>
+    <remark page="4" value="红色"/>
+  </controller>
+  <displayList>
+    <text id="n2_u9dn" name="num1" xy="0,0" size="118,51" font="ui://4ni413lao0c91qp8vfj" fontSize="6" color="#ffffff" autoClearText="true" text="123">
+      <gearDisplay controller="color" pages="0"/>
+    </text>
+    <text id="n3_u9dn" name="num2" xy="0,0" size="118,51" font="ui://4ni413lao0c91qp8vfl" fontSize="6" color="#ffffff" autoClearText="true" text="123">
+      <gearDisplay controller="color" pages="1"/>
+    </text>
+    <text id="n4_u9dn" name="num3" xy="0,0" size="118,51" font="ui://4ni413lao0c91qp8vfm" fontSize="6" color="#ffffff" autoClearText="true" text="123">
+      <gearDisplay controller="color" pages="2"/>
+    </text>
+    <text id="n5_u9dn" name="num4" xy="0,0" size="118,51" font="ui://4ni413lao0c91qp8vfn" fontSize="6" color="#ffffff" autoClearText="true" text="123">
+      <gearDisplay controller="color" pages="3"/>
+    </text>
+    <text id="n6_u9dn" name="num5" xy="0,0" size="118,51" font="ui://4ni413lau9dn1qp8vfp" fontSize="6" color="#ffffff" autoClearText="true" text="123">
+      <gearDisplay controller="color" pages="4"/>
+    </text>
+  </displayList>
+  <transition name="t0"/>
+</component>

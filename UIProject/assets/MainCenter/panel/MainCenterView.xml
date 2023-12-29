@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" designImageAlpha="20" designImageLayer="1">
+  <controller name="cityStateCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="城里"/>
+    <remark page="1" value="城外"/>
+  </controller>
+  <displayList>
+    <component id="n101_xoe1" name="funcListEles" src="xoe1mz" fileName="components/funcListEles.xml" xy="744,644" group="n109_pwz3">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </component>
+    <image id="n55_b6o0" name="bottomBg" src="yt2t1ygcg8p" fileName="images4/mainhud_btn_icon013.png" xy="0,677" size="568,73" group="n109_pwz3"/>
+    <component id="n56_b6o0" name="chatBtn" src="kah2a4" fileName="components/main_chat_item(1).xml" xy="86,683" size="388,68" group="n109_pwz3">
+      <relation target="n55_b6o0" sidePair="right-right"/>
+    </component>
+    <component id="n119_j4kd" name="backBtn" src="j4kdhz9clt" fileName="components/main_btn_back.xml" xy="16,631" group="n109_pwz3">
+      <gearDisplay controller="cityStateCtrl" pages="1"/>
+      <Button icon="ui://4ni413lalumy1qp8vde"/>
+    </component>
+    <component id="n123_shxm" name="outBtn" src="j4kdhz9clt" fileName="components/main_btn_back.xml" xy="16,631" group="n109_pwz3">
+      <gearDisplay controller="cityStateCtrl" pages="0"/>
+      <Button title="Go out"/>
+    </component>
+    <list id="n178_eh3a" name="outInList" xy="120,614" size="250,64" group="n109_pwz3" layout="row" scroll="horizontal" margin="0,0,14,0" colGap="13" defaultItem="ui://4ni413layya01qp8vcb" vAlign="middle" scrollItemToViewOnClick="false">
+      <relation target="" sidePair="left-left"/>
+      <item title="采集" icon="ui://4ni413latauyhz9czs" name="search"/>
+      <item title="探索" icon="ui://4ni413latauyhz9czt" name="explore"/>
+      <item title="军团" icon="ui://4ni413latauyhz9czt" name="legion"/>
+    </list>
+    <group id="n109_pwz3" name="bottomEles" xy="0,614" size="1334,140" advanced="true"/>
+    <component id="n34_b6o0" name="topEles" src="xoe1n2" fileName="components/mainTopPlayerInfo.xml" xy="0,0">
+      <relation target="" sidePair="rightext-right"/>
+    </component>
+    <component id="n154_quts" name="rightTeam" src="le3m1qp8vhq" fileName="components/main_team_right.xml" xy="1113,138">
+      <relation target="" sidePair="middle-middle,right-right"/>
+    </component>
+    <component id="n174_eh3a" name="leftTask" src="xoe1n0" fileName="components/main_taskitem.xml" xy="6,153" size="208,347" controller="hideOpen,0"/>
+  </displayList>
+  <transition name="quit" options="2">
+    <item time="0" type="Alpha" target="n101_xoe1" value="1"/>
+    <item time="0" type="Alpha" target="n154_quts" value="1"/>
+    <item time="0" type="Alpha" target="n174_eh3a" value="1"/>
+    <item time="0" type="Alpha" target="n178_eh3a" value="1"/>
+    <item time="0" type="XY" target="n101_xoe1" tween="true" startValue="744,644" endValue="714,644" duration="3" ease="Linear"/>
+    <item time="0" type="XY" target="n154_quts" tween="true" startValue="1113,138" endValue="1084,138" duration="3" ease="Linear"/>
+    <item time="0" type="XY" target="n174_eh3a" tween="true" startValue="6,153" endValue="42,153" duration="3" ease="Linear"/>
+    <item time="0" type="XY" target="n178_eh3a" tween="true" startValue="120,614" endValue="156,614" duration="3" ease="Linear"/>
+    <item time="3" type="Alpha" target="n101_xoe1" tween="true" startValue="1" endValue="0" duration="3" ease="Linear"/>
+    <item time="3" type="Alpha" target="n154_quts" tween="true" startValue="1" endValue="0" duration="3" ease="Linear"/>
+    <item time="3" type="Alpha" target="n174_eh3a" tween="true" startValue="1" endValue="0" duration="3" ease="Linear"/>
+    <item time="3" type="Alpha" target="n178_eh3a" tween="true" startValue="1" endValue="0" duration="3" ease="Linear"/>
+    <item time="3" type="XY" target="n101_xoe1" tween="true" startValue="714,644" endValue="744,644" duration="3" ease="Linear"/>
+    <item time="3" type="XY" target="n154_quts" tween="true" startValue="1084,138" endValue="1113,138" duration="3" ease="Linear"/>
+    <item time="3" type="XY" target="n174_eh3a" tween="true" startValue="42,153" endValue="15,153" duration="3" ease="Linear"/>
+    <item time="3" type="XY" target="n178_eh3a" tween="true" startValue="156,614" endValue="120,614" duration="3" ease="Linear"/>
+    <item time="7" type="XY" target="n174_eh3a" value="-517,153"/>
+  </transition>
+  <transition name="approach">
+    <item time="0" type="Alpha" target="n101_xoe1" tween="true" startValue="0" endValue="0.5" duration="4"/>
+    <item time="0" type="Alpha" target="n154_quts" value="0"/>
+    <item time="0" type="Alpha" target="n174_eh3a" value="0"/>
+    <item time="0" type="Alpha" target="n178_eh3a" tween="true" startValue="0" endValue="0.5" duration="6"/>
+    <item time="0" type="XY" target="n101_xoe1" tween="true" startValue="1000,644" endValue="675,644" duration="6" ease="Linear"/>
+    <item time="0" type="XY" target="n154_quts" value="1300,138"/>
+    <item time="0" type="XY" target="n174_eh3a" value="-209,153"/>
+    <item time="0" type="XY" target="n178_eh3a" value="0,614"/>
+    <item time="3" type="XY" target="n178_eh3a" tween="true" startValue="0,614" endValue="134,614" duration="4"/>
+    <item time="4" type="Alpha" target="n101_xoe1" tween="true" startValue="0.5" endValue="1" duration="8"/>
+    <item time="5" type="Alpha" target="n154_quts" tween="true" startValue="0" endValue="0.5" duration="5" ease="Linear"/>
+    <item time="5" type="Alpha" target="n174_eh3a" tween="true" startValue="0" endValue="0.5" duration="5" ease="Linear"/>
+    <item time="5" type="XY" target="n154_quts" tween="true" startValue="1300,138" endValue="1074,138" duration="5" ease="Linear"/>
+    <item time="5" type="XY" target="n174_eh3a" tween="true" startValue="-209,153" endValue="30,153" duration="5" ease="Linear"/>
+    <item time="6" type="Alpha" target="n178_eh3a" tween="true" startValue="0.5" endValue="1" duration="8"/>
+    <item time="6" type="XY" target="n101_xoe1" tween="true" startValue="675,644" endValue="744,644" duration="4" ease="Back.Out"/>
+    <item time="7" type="XY" target="n178_eh3a" tween="true" startValue="134,614" endValue="120,614" duration="7"/>
+    <item time="10" type="Alpha" target="n154_quts" tween="true" startValue="0.5" endValue="1" duration="6" ease="Linear"/>
+    <item time="10" type="Alpha" target="n174_eh3a" tween="true" startValue="0.5" endValue="1" duration="6" ease="Linear"/>
+    <item time="10" type="XY" target="n154_quts" tween="true" startValue="1074,138" endValue="1113,138" duration="6" ease="Back.Out"/>
+    <item time="10" type="XY" target="n174_eh3a" tween="true" startValue="30,153" endValue="6,153" duration="6" ease="Back.Out"/>
+  </transition>
+  <transition name="a_personalboss">
+    <item time="0" type="Alpha" target="n101_xoe1" tween="true" startValue="0" endValue="0.5" duration="4"/>
+    <item time="0" type="Alpha" target="n154_quts" value="0"/>
+    <item time="0" type="Alpha" target="n178_eh3a" tween="true" startValue="0" endValue="0.5" duration="6"/>
+    <item time="0" type="XY" target="n101_xoe1" tween="true" startValue="1000,644" endValue="700,644" duration="6" ease="Linear"/>
+    <item time="0" type="XY" target="n154_quts" value="1341,138"/>
+    <item time="0" type="XY" target="n178_eh3a" value="120,614"/>
+    <item time="3" type="XY" target="n178_eh3a" tween="true" startValue="1,614" endValue="166,614" duration="4"/>
+    <item time="4" type="Alpha" target="n101_xoe1" tween="true" startValue="0.5" endValue="1" duration="8"/>
+    <item time="5" type="Alpha" target="n154_quts" tween="true" startValue="0" endValue="0.5" duration="5" ease="Linear"/>
+    <item time="5" type="XY" target="n154_quts" tween="true" startValue="1341,138" endValue="1027,138" duration="5" ease="Linear"/>
+    <item time="6" type="Alpha" target="n178_eh3a" tween="true" startValue="0.5" endValue="1" duration="8"/>
+    <item time="6" type="XY" target="n101_xoe1" tween="true" startValue="700,644" endValue="744,644" duration="4" ease="Back.Out"/>
+    <item time="7" type="XY" target="n178_eh3a" tween="true" startValue="166,614" endValue="120,614" duration="7"/>
+    <item time="10" type="Alpha" target="n154_quts" tween="true" startValue="0.5" endValue="1" duration="6" ease="Linear"/>
+    <item time="10" type="XY" target="n154_quts" tween="true" startValue="1027,138" endValue="1113,138" duration="6" ease="Back.Out"/>
+  </transition>
+  <transition name="a_worldboss">
+    <item time="0" type="Alpha" target="n101_xoe1" tween="true" startValue="0" endValue="0.5" duration="4"/>
+    <item time="0" type="Alpha" target="n154_quts" value="0"/>
+    <item time="0" type="Alpha" target="n178_eh3a" tween="true" startValue="0" endValue="0.5" duration="6"/>
+    <item time="0" type="XY" target="n101_xoe1" tween="true" startValue="1000,644" endValue="699,644" duration="6" ease="Linear"/>
+    <item time="0" type="XY" target="n154_quts" value="1300,138"/>
+    <item time="0" type="XY" target="n178_eh3a" value="0,614"/>
+    <item time="3" type="XY" target="n178_eh3a" tween="true" startValue="0,614" endValue="141,614" duration="4"/>
+    <item time="4" type="Alpha" target="n101_xoe1" tween="true" startValue="0.5" endValue="1" duration="8"/>
+    <item time="5" type="Alpha" target="n154_quts" tween="true" startValue="0" endValue="0.5" duration="5" ease="Linear"/>
+    <item time="5" type="XY" target="n154_quts" tween="true" startValue="1300,138" endValue="1071,138" duration="5" ease="Linear"/>
+    <item time="6" type="Alpha" target="n178_eh3a" tween="true" startValue="0.5" endValue="1" duration="8"/>
+    <item time="6" type="XY" target="n101_xoe1" tween="true" startValue="699,644" endValue="744,644" duration="4" ease="Back.Out"/>
+    <item time="7" type="XY" target="n178_eh3a" tween="true" startValue="141,614" endValue="120,614" duration="7"/>
+    <item time="10" type="Alpha" target="n154_quts" tween="true" startValue="0.5" endValue="1" duration="6" ease="Linear"/>
+    <item time="10" type="XY" target="n154_quts" tween="true" startValue="1071,138" endValue="1113,138" duration="6" ease="Back.Out"/>
+  </transition>
+</component>

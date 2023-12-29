@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,460"  extention="Label"  initName="frame">
+  <displayList>
+    <image id="n0_bik7" name="n0" src="lfqnhz9d6y" fileName="images/images_new/com_bg_popup04.png" xy="0,0" size="800,460">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_hywi" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" xy="702,-2" scale="0.8,0.8">
+      <relation target="" sidePair="left-right,top-top"/>
+    </component>
+    <text id="n2_hywi" name="title" xy="207,11" pivot="0.5,0.5" size="406,46" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" text="用户协议与隐私政策">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="216,396" pivot="1,0" opaque="false" designImageOffsetX="-1102" designImageOffsetY="-79">
+  <controller name="styleCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="详情"/>
+    <remark page="1" value="简易"/>
+  </controller>
+  <displayList>
+    <image id="n1_ssbd" name="bg" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,14" pivot="1,0" size="216,382" alpha="0.6" flip="vt">
+      <gearXY controller="styleCtrl" pages="0,1" values="0,14|124,14"/>
+      <gearSize controller="styleCtrl" pages="0,1" values="216,382,1,1|92,332,1,1"/>
+      <relation target="n0_ssbd" sidePair="bottomext-bottom"/>
+    </image>
+    <list id="n0_ssbd" name="teamList" xy="6,58" pivot="1,0" size="204,279" selectionMode="multipleSingleClick" overflow="scroll" lineGap="2" defaultItem="ui://4ni413laoepthz9cpm">
+      <gearXY controller="styleCtrl" pages="0,1" values="6,58|133,58"/>
+      <gearSize controller="styleCtrl" pages="0,1" values="204,279,1,1|74,329,1,1"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n9_oept" name="tabBtn" src="o4i9z9cjv" fileName="components/main_task_hide.xml" xy="-8,11" pivot="0.5,0.5" size="72,54">
+      <gearXY controller="styleCtrl" pages="0,1" values="-8,11|119,11"/>
+      <Button checked="true" controller="styleCtrl" page="0"/>
+    </component>
+    <text id="n11_oept" name="teamNum" xy="35,23" pivot="0.5,0.5" size="140,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="总兵力：9999">
+      <gearDisplay controller="styleCtrl" pages="0"/>
+    </text>
+  </displayList>
+</component>

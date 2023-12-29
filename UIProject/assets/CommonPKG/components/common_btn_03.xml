@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,53" pivot="0.5,0.5" extention="Button" designImage="ui://6mmbdgyi92325" designImageOffsetX="-1181" designImageOffsetY="-677">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1,red_dot" selected="0"/>
+  <displayList>
+    <loader id="n3_9232" name="icon" xy="-1,7" size="40,40" url="ui://2r331opv9232ev" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="left-left"/>
+    </loader>
+    <text id="n4_9232" name="title" xy="36,11" size="48,32" fontSize="22" color="#cebc92" vAlign="middle" autoSize="none" autoClearText="true" text="哈哈">
+      <relation target="" sidePair="width-width"/>
+      <relation target="n3_9232" sidePair="left-left"/>
+    </text>
+    <component id="n5_gmuk" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="86,17" size="20,20" aspect="true">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="n4_9232" sidePair="right-right,top-top"/>
+    </component>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

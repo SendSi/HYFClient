@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame" designImageOffsetX="-165" designImageLayer="1">
+  <displayList>
+    <component id="n16_rv2y" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_9232" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="267,137" group="n17_vidf">
+      <Label title="道具"/>
+    </component>
+    <image id="n19_in8y" name="n19" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="351,212" size="632,353" group="n17_vidf"/>
+    <text id="n13_9232" name="title2" xy="397,415" size="76,50" group="n17_vidf" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" ubb="true" autoSize="none" text="数量"/>
+    <component id="n8_9232" name="btnCut" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="469,416" group="n17_vidf">
+      <Button icon="ui://2r331opvno3vhz9d6c"/>
+    </component>
+    <component id="n15_eigk" name="slider" src="eigkfu" fileName="components/components_new/bag_Slider3.xml" pkg="2r331opv" xy="531,420" size="267,38" group="n17_vidf">
+      <Slider value="3" max="99"/>
+    </component>
+    <component id="n9_9232" name="btnPlus" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="881,416" group="n17_vidf"/>
+    <component id="n11_9232" name="btnYes" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="586,493" group="n17_vidf">
+      <Button title="确定" titleFontSize="36" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+    <text id="n5_9232" name="tipsLbl" xy="416,212" size="501,39" group="n17_vidf" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#50382e" align="center" vAlign="middle" ubb="true" autoSize="none" text="请选择[color=#599e27]1种[/color]你要的道具"/>
+    <image id="n18_q067" name="n18" src="dfgw1ygcfmf" fileName="images/images_new/com_change04.png" pkg="2r331opv" xy="376,282" size="583,109" group="n17_vidf" alpha="0.3" color="#97794f"/>
+    <list id="n14_9232" name="list" xy="301,264" pivot="0.5,0.5" size="732,153" group="n17_vidf" scale="0.7,0.7" layout="row" overflow="scroll" scroll="horizontal" margin="0,0,10,0" colGap="78" defaultItem="ui://2r331opvevvi1ygcgq4" align="center" vAlign="middle">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n20_toec" name="tip" xy="410,252" size="513,29" group="n17_vidf" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" align="center" vAlign="middle" ubb="true" autoSize="none" text="[color=#917349]长按可查看道具详情[/color]"/>
+    <group id="n17_vidf" name="n17" xy="267,137" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="85,39" pivot="0.5,0.5">
+  <displayList>
+    <image id="n0_d37l" name="bg" src="mp5s1ygcgq6" fileName="images/images_new/com_bg_resource02.png" xy="0,0" size="85,39" alpha="0.8">
+      <relation target="n2_d37l" sidePair="width-width"/>
+    </image>
+    <text id="n2_d37l" name="title" xy="7,10" pivot="0.5,0.5" size="71,26" restrictSize="55,105,32,32" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" leading="0" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="+553/时">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <relation target="n0_d37l" sidePair="width-width"/>
+  <transition name="admission">
+    <item time="0" type="Alpha" tween="true" startValue="0" endValue="0.1" duration="2"/>
+    <item time="0" type="XY" tween="true" startValue="0,-20" endValue="0,-20" duration="2"/>
+    <item time="2" type="Alpha" tween="true" startValue="0.1" endValue="0.3" duration="2"/>
+    <item time="2" type="XY" tween="true" startValue="0,-20" endValue="0,10" duration="4"/>
+    <item time="4" type="Alpha" tween="true" startValue="0.3" endValue="1" duration="6"/>
+    <item time="6" type="XY" tween="true" startValue="0,10" endValue="0,0" duration="12"/>
+  </transition>
+</component>

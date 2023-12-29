@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="73,92">
+  <displayList>
+    <image id="n0_pu9r" name="bg" src="ebcwhz9d28" fileName="images/map/soldier_bg.png" xy="0,0" size="73,92" aspect="true" visible="false"/>
+    <loader id="n1_pu9r" name="soldier" xy="3,10" size="67,70" aspect="true" url="ui://4ni413lah55mhz9d2a" align="center" vAlign="middle" fill="scale"/>
+  </displayList>
+</component>

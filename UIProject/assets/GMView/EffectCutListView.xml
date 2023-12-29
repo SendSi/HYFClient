@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImage="ui://mz9og20ld4a6j" designImageOffsetX="-165">
+  <displayList>
+    <component id="n2_ix8t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0"/>
+    <component id="n3_ix8t" name="window" src="d9gi17" fileName="panel/com_little_window.xml" pkg="2r331opv" xy="362,150" size="611,449">
+      <Button title="特效裁剪例子"/>
+    </component>
+    <component id="n21_bflr" name="itemList" src="otedchl" fileName="panel/cutListTest.xml" xy="468,344" size="402,124"/>
+    <richtext id="n22_jt5d" name="tip" xy="502,238" size="364,92" fontSize="40" color="#00ff00" align="center" vAlign="middle" ubb="true" autoSize="none" bold="true" text="别删除"/>
+  </displayList>
+</component>

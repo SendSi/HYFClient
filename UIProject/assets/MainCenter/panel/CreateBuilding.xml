@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="285,200" pivot="0.5,0.6" anchor="true" opaque="false">
+  <displayList>
+    <image id="n12_qdf6" name="n12" src="u6yzhz9cq5" fileName="images/map/main_bg_04.png" xy="-53,-48" pivot="0.5,0.5" size="392,168" group="n11_h7tj" scale="0.5,0.5" alpha="0.8" flip="vt"/>
+    <component id="n9_9rq4" name="cancel" src="qdf6hz9cub" fileName="components/components_new/building/buildingBtn.xml" xy="60,-12" group="n11_h7tj" scale="0.6,0.6">
+      <Button icon="ui://4ni413laildy1ygcfiz"/>
+    </component>
+    <component id="n10_9rq4" name="confirm" src="qdf6hz9cuc" fileName="components/components_new/building/buildingBtn2.xml" xy="125,-12" group="n11_h7tj" scale="0.6,0.6">
+      <Button icon="ui://4ni413laildy1ygcfj1"/>
+    </component>
+    <group id="n11_h7tj" name="n11" xy="-53,-48" size="392,168"/>
+  </displayList>
+</component>

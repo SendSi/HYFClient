@@ -1,0 +1,13 @@
+info size=12 resizable=true colored=true
+char id=43 img=un05gb xoffset=0 yoffset=0 xadvance=0
+char id=48 img=un05gc xoffset=0 yoffset=0 xadvance=0
+char id=49 img=un05gd xoffset=0 yoffset=0 xadvance=0
+char id=50 img=un05ge xoffset=0 yoffset=0 xadvance=0
+char id=51 img=un05gf xoffset=0 yoffset=0 xadvance=0
+char id=52 img=un05gg xoffset=0 yoffset=0 xadvance=0
+char id=53 img=un05gh xoffset=0 yoffset=0 xadvance=0
+char id=54 img=un05gi xoffset=0 yoffset=0 xadvance=0
+char id=55 img=un05gj xoffset=0 yoffset=0 xadvance=0
+char id=56 img=un05gk xoffset=0 yoffset=0 xadvance=0
+char id=57 img=un05gl xoffset=0 yoffset=0 xadvance=0
+char id=45 img=un05gz xoffset=0 yoffset=-7 xadvance=0

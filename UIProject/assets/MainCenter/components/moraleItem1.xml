@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="524,28" designImageOffsetX="-151" designImageOffsetY="-200" designImageLayer="1">
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="1" value="gray"/>
+  </controller>
+  <displayList>
+    <text id="n4_xoe1" name="title" xy="0,0" size="147,29" grayed="true" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" autoClearText="true" text="士气萎靡：0-49">
+      <gearLook controller="state" pages="0" values="1,0,0,0" default="1,0,1,0"/>
+    </text>
+    <text id="n5_xoe1" name="title2" xy="397,0" pivot="1,0" size="127,29" grayed="true" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#b16d33" autoClearText="true" text="30%最终伤害">
+      <gearLook controller="state" pages="1" values="1,0,1,0" default="1,0,0,0"/>
+    </text>
+  </displayList>
+</component>

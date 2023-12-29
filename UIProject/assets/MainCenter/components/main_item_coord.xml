@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="233,41">
+  <displayList>
+    <image id="n0_j4kd" name="n0" src="j4kdhz9clf" fileName="images/main/mainhud_bg03.png" xy="0,7" size="226,34">
+      <relation target="n3_j4kd" sidePair="rightext-right"/>
+    </image>
+    <text id="n2_j4kd" name="coordLbl_x" xy="53,7" size="62,34" fontSize="24" color="#ffffff" align="center" vAlign="middle" letterSpacing="-1" autoSize="none" singleLine="true" autoClearText="true" text="9999" input="true" maxLength="4" keyboardType="4"/>
+    <text id="n3_j4kd" name="coordLbl_y" xy="142,7" size="56,34" fontSize="24" color="#ffffff" vAlign="middle" letterSpacing="-1" autoSize="none" singleLine="true" autoClearText="true" text="9999" input="true" maxLength="4" keyboardType="4"/>
+    <text id="n4_j4kd" name="n4" xy="27,7" size="27,34" fontSize="24" color="#ffffff" autoClearText="true" text="X:">
+      <relation target="n2_j4kd" sidePair="right-left"/>
+    </text>
+    <text id="n5_j4kd" name="n5" xy="117,7" size="27,34" fontSize="24" color="#ffffff" autoClearText="true" text="Y:">
+      <relation target="n3_j4kd" sidePair="right-left"/>
+    </text>
+    <image id="n6_j4kd" name="n6" src="j4kdhz9clm" fileName="images/main/mainhud_bg08.png" xy="205,12"/>
+  </displayList>
+</component>

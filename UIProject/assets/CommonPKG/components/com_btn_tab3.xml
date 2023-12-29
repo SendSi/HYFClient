@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="71,54" extention="Button" designImageOffsetX="-149" designImageOffsetY="-100">
+  <displayList>
+    <loader id="n3_vqdv" name="bg" xy="0,0" size="71,54" aspect="true" url="ui://2r331opv91o91ygcfkr" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4_91o9" name="title" xy="9,10" size="54,26" rotation="6" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" leading="0" letterSpacing="-2" strokeColor="#50382e" text="新建筑"/>
+  </displayList>
+  <Button/>
+</component>

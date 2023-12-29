@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="167,151">
+  <controller name="quality" pages="1,,2,,3,,4," selected="0"/>
+  <controller name="reincanation" alias="转职" pages="0,,1,,2,,3,,4,,5,,6,,9," selected="0">
+    <remark page="5" value="5转"/>
+    <remark page="6" value="6转"/>
+  </controller>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n15_qy50" name="bg0" xy="26,13" size="114,124" url="ui://61bunt4fhxd7g4" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://61bunt4fhxd7g4|ui://61bunt4fhxd7g5|ui://61bunt4fhxd7g6|ui://61bunt4fhxd7g7"/>
+    </loader>
+    <loader id="n17_qy50" name="bg" xy="25,11" size="116,128" aspect="true" visible="false" url="ui://61bunt4fhxd7fw" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="reincanation" pages="1,2,3,4,5,6,9" values="ui://61bunt4fhxd7fx|ui://61bunt4fhxd7fy|ui://61bunt4fhxd7fz|ui://61bunt4fhxd7g0|ui://61bunt4fhxd7g1|ui://61bunt4fhxd7g2|ui://61bunt4fhxd7g2" default="ui://61bunt4fhxd7fw"/>
+    </loader>
+    <loader id="n16_qy50" name="icon" xy="33,10" size="100,128" url="ui://4557t28ky6f5hz9cp3" align="center" vAlign="middle" fill="scale"/>
+    <image id="n18_qy50" name="n18" src="hxd7hz9d7m" fileName="images/images_new/hero_selec02.png" xy="13,0" pkg="2r331opv">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n19_qy50" name="qualityIcon" xy="27,10" size="58,40" visible="false" url="ui://4557t28klfqnhz9cq2" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="1,2,3,4" values="ui://4557t28klfqnhz9cq2|ui://4557t28klfqnhz9cq3|ui://4557t28klfqnhz9cq4|ui://4557t28klfqnhz9cq5"/>
+    </loader>
+    <component id="n20_qy50" name="state" src="oepthz9cp8" fileName="components/general_new/main_teamStae.xml" xy="111,93" size="23,23" aspect="true" visible="false"/>
+  </displayList>
+</component>

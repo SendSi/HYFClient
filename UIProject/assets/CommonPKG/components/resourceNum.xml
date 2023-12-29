@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="125,40" extention="Button">
+  <controller name="c1" pages="0,,1," selected="0">
+    <remark page="0" value="满足"/>
+    <remark page="1" value="未满足"/>
+  </controller>
+  <displayList>
+    <image id="n2_b2gg" name="n2" src="no3vhz9d6a" fileName="images/images_new/com_bg_resource.png" xy="17,3" size="109,36">
+      <relation target="n1_s0mq" sidePair="rightext-right"/>
+    </image>
+    <loader id="n0_s0mq" name="icon" xy="1,0" size="40,40" url="ui://lh4qx1m6lcfj2z" align="center" vAlign="middle" fill="scale">
+      <relation target="n1_s0mq" sidePair="right-left"/>
+    </loader>
+    <text id="n1_s0mq" name="num" xy="36,4" size="83,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="12341万">
+      <gearColor controller="c1" pages="1" values="#ff4343,#000000" default="#ffffff,#000000"/>
+    </text>
+  </displayList>
+  <Button/>
+  <relation target="n1_s0mq" sidePair="rightext-right"/>
+</component>

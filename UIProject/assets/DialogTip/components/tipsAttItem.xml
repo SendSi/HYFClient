@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="476,38">
+  <displayList>
+    <text id="n0_hn57" name="attrname" xy="0,0" size="196,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" vAlign="middle" ubb="true" autoClearText="true" text="最多最多多八个字"/>
+    <text id="n1_hn57" name="number" xy="324,0" pivot="1,0" size="146,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#70a33d" align="right" ubb="true" autoClearText="true" text="+100000000">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <graph id="n2_izxe" name="n2" xy="0,37" size="934,1" alpha="0.2" type="rect" lineSize="0" fillColor="#ff000000"/>
+  </displayList>
+</component>

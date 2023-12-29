@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="500,100" opaque="false">
+  <displayList>
+    <loader id="n1_lbxx" name="icon" xy="13,5" size="60,60" aspect="true" touchable="false" fill="scaleFree"/>
+    <richtext id="n2_lbxx" name="text" xy="87,5" size="402,60" touchable="false" fontSize="45" color="#66ff00" ubb="true" autoSize="none" text=""/>
+  </displayList>
+</component>

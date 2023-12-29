@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="162,50" extention="Button" designImage="ui://6mmbdgyi92323" designImageOffsetX="-193" designImageOffsetY="-76">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_9232" name="n0" pkg="2r331opv" src="9232ed" fileName="images/common_btn_paging_7.png" xy="0,0" size="162,50">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_9ial" name="n2" pkg="2r331opv" src="9232ec" fileName="images/common_bg_16.png" xy="162,2" alpha="0.444">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <text id="n1_9232" name="title" xy="0,7" size="162,35" fontSize="25" color="#858997" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="">
+      <gearColor controller="button" pages="0,1,2,3" values="#858997,#000000|#fff38d,#000000|#858997,#000000|#fff38d,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n3_utpw" name="button_spot" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="150,11" visible="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

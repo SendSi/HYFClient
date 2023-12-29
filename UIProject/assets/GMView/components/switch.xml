@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,81" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <graph id="n0_cu6w" name="n0" xy="0,0" size="100,81" touchable="false" type="regular_polygon" lineSize="0" fillColor="#ff006600" sides="3" startAngle="180">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_cu6w" name="n1" xy="0,0" size="100,81" touchable="false" type="regular_polygon" lineSize="0" fillColor="#ff00cc00" sides="3" startAngle="180">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2_cu6w" name="n2" xy="0,0" size="100,81" touchable="false" type="regular_polygon" lineSize="0" fillColor="#ff0033cc" sides="3">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+  <Button mode="Check"/>
+</component>

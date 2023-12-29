@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,200" opaque="false">
+  <displayList>
+    <image id="n110_k0cc" name="n110" src="xoe1n5" fileName="images/map/main_map.png" xy="0,0" group="n108_xoe1" color="#0093ff"/>
+    <component id="n109_jhtp" name="mapBtn" src="sa6m9cip" fileName="components/common_btn_11.xml" pkg="2r331opv" xy="0,0" size="200,200" group="n108_xoe1"/>
+    <component id="n107_xoe1" name="spot" src="xoe1n8" fileName="components/components_new/main/main_miniMap_spot.xml" xy="91,49" group="n108_xoe1" touchable="false"/>
+    <group id="n108_xoe1" name="miniMap" xy="0,0" size="200,200" advanced="true"/>
+  </displayList>
+</component>

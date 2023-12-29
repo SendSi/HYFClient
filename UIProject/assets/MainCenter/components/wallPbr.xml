@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="580,38" extention="ProgressBar" designImageOffsetX="-524" designImageOffsetY="-465">
+  <controller name="color" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_g9ny" name="n0" src="bumchz9d7v" fileName="images/images_new/windowBg_new/negative_strip01.png" pkg="2r331opv" xy="0,0" size="580,38">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_g9ny" name="bar" src="bumchz9d7w" fileName="images/images_new/windowBg_new/negative_strip02.png" pkg="2r331opv" xy="3,4" size="574,30">
+      <gearDisplay controller="color" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_g9ny" name="title" xy="483,36" pivot="1,0" size="94,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="right" vAlign="middle" autoClearText="true" text="150/1550">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n3_g9ny" name="bar2" src="o5d41qp8ve9" fileName="images/images_new/windowBg_new/negative_strip05.png" pkg="2r331opv" xy="1,1" size="579,21">
+      <gearDisplay controller="color" pages="1"/>
+    </image>
+    <image id="n4_g9ny" name="bg01" src="aibbax" fileName="images/icon_wall.png" xy="465,41" size="12,20" aspect="true" color="#edb471">
+      <relation target="n2_g9ny" sidePair="right-left"/>
+    </image>
+    <text id="n5_krfh" name="n5" xy="1,35" size="104,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" text="城墙状态："/>
+    <text id="n6_krfh" name="n6" xy="98,35" size="44,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" text="完好">
+      <relation target="n5_krfh" sidePair="left-right"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

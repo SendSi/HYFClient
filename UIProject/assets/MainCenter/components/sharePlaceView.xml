@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" designImageOffsetX="-311" designImageOffsetY="-139" designImageLayer="1">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="世界"/>
+    <remark page="1" value="联盟"/>
+  </controller>
+  <controller name="type" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <component id="n27_i1n0" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_xoe1" name="n3" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="267,151" size="800,460" group="n19_xoe1"/>
+    <text id="n6_xoe1" name="titleTxt" xy="464,163" pivot="0.5,0.5" size="406,46" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" text="分享坐标"/>
+    <component id="n17_xoe1" name="yesButton" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="586,499" group="n19_xoe1">
+      <Button title="确定" titleFontSize="28"/>
+    </component>
+    <image id="n22_ejbh" name="n22" src="j9d91qp8vcm" fileName="images/images_new/windowBg_new/negative_bg09.png" pkg="2r331opv" xy="700,348" size="263,25" group="n19_xoe1"/>
+    <image id="n23_ejbh" name="n23" src="j9d91qp8vcm" fileName="images/images_new/windowBg_new/negative_bg09.png" pkg="2r331opv" xy="368,348" size="263,25" group="n19_xoe1" flip="hz"/>
+    <text id="n14_xoe1" name="txtSelectedName" xy="637,341" size="60,39" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#97794f" align="center" text="进攻">
+      <gearText controller="type" pages="0,1,2" values="进攻|集合|防守"/>
+    </text>
+    <list id="n16_xoe1" name="typeList" xy="382,380" pivot="0.5,0.5" size="570,100" group="n19_xoe1" layout="flow_hz" overflow="scroll" scrollBarFlags="32" colGap="14" defaultItem="ui://4ni413laxoe1nc" align="center" selectionController="type">
+      <item icon="ui://4ni413laryma1ygcfnj"/>
+      <item icon="ui://4ni413laryma1ygcfni"/>
+      <item icon="ui://4ni413laryma1ygcfnh"/>
+    </list>
+    <component id="n24_j3d7" name="unionBtn" src="i1n01ygcfnl" fileName="components/components_new/main/shareplace__btn2.xml" xy="684,237" group="n19_xoe1">
+      <Button controller="state" page="1"/>
+    </component>
+    <component id="n25_ryma" name="worldBtn" src="ryma1ygcfnk" fileName="components/components_new/main/shareplace__btn1.xml" xy="468,237" group="n19_xoe1">
+      <Button checked="true" controller="state" page="0"/>
+    </component>
+    <text id="n28_i1n0" name="coords" xy="597,300" pivot="0.5,0.5" size="139,34" group="n19_xoe1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" vars="true" text="X:{x=123} Y:{y=123}"/>
+    <component id="n26_i1n0" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="969,138" group="n19_xoe1" scale="0.8,0.8"/>
+    <group id="n19_xoe1" name="view1" xy="267,138" size="800,473" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

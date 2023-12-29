@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="148,146" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="2"/>
+  <displayList>
+    <loader id="n3_cbn7" name="name" xy="0,0" size="148,146" url="ui://4ni413lacbn71ygcflw" autoSize="true"/>
+    <richtext id="n4_cbn7" name="title" xy="44,59" size="64,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoClearText="true" text="加速"/>
+    <loader id="n5_v3cc" name="mask" xy="33,40" size="80,80" url="ui://2r331opvno3vhz9d66" fill="scaleFree" fillMethod="radial360" fillClockwise="false"/>
+    <richtext id="n6_v3cc" name="time" xy="55,62" size="38,35" font="ui://2r331opvno3vhz9d63" fontSize="25" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" autoClearText="true" text="1s"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue=".8"/>
+</component>

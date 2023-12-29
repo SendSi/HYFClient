@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="86,78" extention="Button">
+  <displayList>
+    <image id="n0_rjgu" name="n0" src="e1m31ygcfn5" fileName="images/images_new/small_btn034.png" xy="0,0"/>
+    <image id="n1_rjgu" name="upgrade" src="rjgu1ygcgoh" fileName="images/images_new/small_btn038.png" xy="14,13"/>
+  </displayList>
+  <Button/>
+  <transition name="upgrade" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Alpha" target="n1_rjgu" tween="true" startValue="1" endValue="0.4" duration="24"/>
+    <item time="0" type="XY" target="n1_rjgu" tween="true" startValue="14,13" endValue="14,3" duration="24" repeat="-1" yoyo="true"/>
+    <item time="24" type="Alpha" target="n1_rjgu" tween="true" startValue="0.4" endValue="1" duration="24" repeat="-1" yoyo="true"/>
+    <item time="24" type="XY" target="n1_rjgu" tween="true" startValue="14,3" endValue="14,13" duration="24"/>
+  </transition>
+</component>

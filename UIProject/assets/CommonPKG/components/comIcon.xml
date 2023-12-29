@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,120" extention="Button" designImage="ui://2r331opvgrwsdq" designImageOffsetX="-978" designImageOffsetY="-377">
+  <displayList>
+    <loader id="n23_nq4j" name="bg" xy="5,6" pivot="0.5,0.5" size="110,112" aspect="true" url="ui://2r331opvh3jujt" fill="scaleFree"/>
+    <loader id="n13_l9d2" name="icon" xy="17,17" pivot="0.5,0.5" size="86,86" align="center" vAlign="middle" fill="scale"/>
+    <text id="n46_rq2j" name="title" xy="-25,108" pivot="0.5,0.5" size="170,33" font="ui://2r331opvno3vhz9d63" fontSize="19" color="#ffffff" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text=""/>
+    <text id="n48_hfi1" name="num" xy="17,76" size="86,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" autoSize="shrink" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text=""/>
+  </displayList>
+  <Button/>
+</component>

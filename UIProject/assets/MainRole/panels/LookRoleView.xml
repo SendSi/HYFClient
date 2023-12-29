@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageLayer="1">
+  <displayList>
+    <component id="n2_z3y8" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_z3y8" name="bg" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n20_z3y8"/>
+    <image id="n27_qwnn" name="n27" src="fk1q1qp8vdi" fileName="images/images_new/windowBg_new/com_bg_popup01.png" pkg="2r331opv" xy="580,127" group="n20_z3y8"/>
+    <image id="n25_qwnn" name="n25" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="211,162" size="414,489" group="n20_z3y8"/>
+    <image id="n26_qwnn" name="n26" src="j3xs9pa" fileName="images/role_bg.png" xy="221,183" pivot="0.5,0.5" group="n20_z3y8"/>
+    <text id="n4_z3y8" name="title" xy="360,70" pivot="0.5,0.5" size="620,46" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="3,3" text="执政官资料"/>
+    <component id="n5_z3y8" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n20_z3y8"/>
+    <component id="n8_z3y8" name="playerIcon" src="ho0c1ygcgnt" fileName="components/components_new/btn_head6.xml" pkg="2r331opv" xy="307,263" size="200,200" group="n20_z3y8" touchable="false"/>
+    <image id="n21_prcz" name="n21" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="690,159" size="434,36" group="n20_z3y8"/>
+    <image id="n32_spad" name="n32" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="690,475" size="434,36" group="n20_z3y8"/>
+    <image id="n35_spad" name="n35" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="734,265" size="343,4" group="n20_z3y8"/>
+    <image id="n37_spad" name="n37" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="734,331" size="343,4" group="n20_z3y8"/>
+    <image id="n38_spad" name="n38" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="734,401" size="343,4" group="n20_z3y8"/>
+    <text id="n12_z3y8" name="nameTitle" xy="731,227" size="100,34" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" singleLine="true" text="执政官："/>
+    <text id="n13_z3y8" name="name" xy="820,224" size="172,39" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#50382e" autoClearText="true" text="名字有六个字"/>
+    <text id="n15_z3y8" name="leagueTitle" xy="731,293" size="98,34" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" text="联    盟："/>
+    <text id="n16_z3y8" name="leagueName" xy="820,290" size="116,39" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#50382e" autoClearText="true" text="联盟名字"/>
+    <text id="n17_z3y8" name="capacityTitle" xy="731,363" size="98,34" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" text="战    力："/>
+    <text id="n18_z3y8" name="capacityNum" xy="820,360" size="87,39" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#50382e" autoClearText="true" text="67778"/>
+    <text id="n33_spad" name="tilte01" xy="701,475" size="100,34" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" strokeColor="#ac8958" strokeSize="2" shadowColor="#ac8958" shadowOffset="2,2" singleLine="true" text="其它信息"/>
+    <text id="n34_spad" name="tilte02" xy="701,160" size="100,34" group="n20_z3y8" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" strokeColor="#ac8958" strokeSize="2" shadowColor="#ac8958" shadowOffset="2,2" singleLine="true" text="基础资料"/>
+    <list id="n19_z3y8" name="list" xy="693,524" size="433,126" group="n20_z3y8" layout="row" overflow="scroll" scrollBarFlags="32" colGap="9" defaultItem="ui://2r331opvmbg322">
+      <item title="更多信息" icon="ui://66sh7tc6j3xs9pb"/>
+      <item title="排行榜" icon="ui://66sh7tc6j3xs9pc"/>
+      <item title="联盟" icon="ui://66sh7tc6spadhz9czk"/>
+      <item title="聊天" icon="ui://66sh7tc6spadhz9czl"/>
+    </list>
+    <component id="n28_qwnn" name="blackBtn" src="spadhz9czp" fileName="components/roleBtn.xml" xy="341,472" group="n31_qwnn">
+      <Button title="黑名单" icon="ui://66sh7tc6spadhz9czn"/>
+    </component>
+    <component id="n29_qwnn" name="friendBtn" src="spadhz9czp" fileName="components/roleBtn.xml" xy="433,473" group="n31_qwnn">
+      <Button title="添加好友" icon="ui://66sh7tc6spadhz9czo"/>
+    </component>
+    <component id="n30_qwnn" name="delBtn" src="spadhz9czp" fileName="components/roleBtn.xml" xy="433,473" group="n31_qwnn">
+      <Button title="删除好友" icon="ui://66sh7tc6spadhz9czm"/>
+    </component>
+    <group id="n31_qwnn" name="n31" xy="341,472" size="153,62" group="n20_z3y8" advanced="true"/>
+    <group id="n20_z3y8" name="n20" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

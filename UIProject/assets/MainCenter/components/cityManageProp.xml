@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="quality" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="白"/>
+    <remark page="1" value="绿"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫"/>
+    <remark page="4" value="金"/>
+    <remark page="5" value="红"/>
+  </controller>
+  <displayList>
+    <loader id="n3_vpos" name="bg" xy="2,2" size="96,96" url="ui://2r331opvh3jujt">
+      <gearIcon controller="quality" pages="1,2,3,4,5" values="ui://2r331opv94956|ui://2r331opv94957|ui://2r331opv94958|ui://2r331opv94959|ui://2r331opv9495a" default="ui://2r331opvh3jujt"/>
+    </loader>
+    <loader id="n4_vpos" name="icon" xy="10,14" size="80,80" url="ui://tsbe09ddmz4w0" align="center" vAlign="middle" fill="scale"/>
+    <image id="n5_vpos" name="n5" pkg="2r331opv" src="vposz9cph" fileName="images/images_new/mainhud_bg13.png" xy="1,2"/>
+    <text id="n6_vpos" name="title" xy="27,2" pivot="0.5,0.5" size="45,24" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoClearText="true" text="8小时"/>
+  </displayList>
+  <Button/>
+</component>

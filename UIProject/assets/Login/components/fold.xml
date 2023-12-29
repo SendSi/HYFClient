@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="737,50" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_tc38" name="bg" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,0" size="737,50">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n1_tc38" name="title" xy="16,8" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" singleLine="true" autoClearText="true" text="S3225">
+      <relation target="" sidePair=""/>
+    </text>
+    <loader id="n2_tc38" name="icon" xy="688,-1" pivot="0.5,0.5" size="44,54" scale="0.6,0.6" url="ui://2r331opvj9d91qp8vcj" align="center" vAlign="middle" autoSize="true">
+      <gearIcon controller="button" pages="0,1,2,3" values="ui://2r331opvj9d91qp8vcj|ui://2r331opvp11n1qp8vfd|ui://2r331opvj9d91qp8vcj|ui://2r331opvp11n1qp8vfd"/>
+      <relation target="" sidePair="right-right"/>
+    </loader>
+  </displayList>
+  <Button mode="Check"/>
+</component>

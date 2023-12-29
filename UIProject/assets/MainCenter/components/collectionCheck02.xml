@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImageOffsetX="-121" designImageOffsetY="-48" designImageAlpha="41">
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="无收藏tips"/>
+  </controller>
+  <displayList>
+    <component id="n20_xoe1" name="n20" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n27_w64j"/>
+    <text id="n22_xoe1" name="titleTxt" xy="365,70" pivot="0.5,0.5" size="604,46" group="n27_w64j" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" text="收藏"/>
+    <list id="n24_xoe1" name="typeList" xy="216,151" size="800,55" group="n27_w64j" layout="row" overflow="scroll" colGap="5" defaultItem="ui://4ni413laxoe1nj">
+      <item title="全部" icon="ui://4ni413laxoe1no"/>
+      <item title="特殊" icon="ui://4ni413laxoe1nk"/>
+      <item title="朋友" icon="ui://4ni413laxoe1nl"/>
+      <item title="敌方" icon="ui://4ni413laxoe1nm"/>
+      <item title="联盟" icon="ui://4ni413laxoe1nn"/>
+    </list>
+    <text id="n25_xoe1" name="numberLbl" xy="1020,161" size="106,34" group="n27_w64j" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="right" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="3/105"/>
+    <list id="n26_w64j" name="placeList" xy="212,212" size="916,429" group="n27_w64j" overflow="scroll" lineGap="8" defaultItem="ui://4ni413laxoe1nq" autoClearItems="true">
+      <gearDisplay controller="state" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n29_n1oz" name="n29" src="n1oz1ygcfoc" fileName="images/images_new/com_icon_huawen.png" pkg="2r331opv" xy="559,319" group="n27_w64j" alpha="0.2" color="#97794f">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <text id="n28_pghb" name="tipsLbl" xy="562,409" pivot="0.5,0.5" size="214,42" group="n27_w64j" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#b16d33" align="center" text="当前无收藏坐标">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <group id="n27_w64j" name="n27" xy="77,38" size="1180,674" advanced="true"/>
+  </displayList>
+</component>

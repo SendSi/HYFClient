@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="739,204" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_b9bj" name="n0" src="b9bj1" fileName="images/images_new/VidepBg.png" xy="0,0" flip="hz">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_b9bj" name="title" xy="488,21" pivot="0.5,0.5" size="193,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,3" singleLine="true" text="他的名字六字">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n3_b9bj" name="contentLbl" xy="95,70" size="585,95" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" leading="0" ubb="true" autoSize="none" text="大人！这黑屋已经弥漫到城口了灾厄军团已经近在咫尺。请下令！">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

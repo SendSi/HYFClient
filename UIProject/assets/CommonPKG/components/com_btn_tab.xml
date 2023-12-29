@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="117,53" extention="Button" designImage="ui://4hio38umc4umcin" designImageOffsetX="-363" designImageOffsetY="-110" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n3_cxix" name="n3" pkg="2r331opv" src="cxixz9cmh" fileName="images/images_new/com_paging01.png" xy="0,0" size="138,54">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n2_tv1v" name="title" xy="0,7" size="137,40" font="ui://2r331opvlwft3" fontSize="26" color="#488e8e" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="列表">
+      <gearDisplay controller="button" pages="0,2"/>
+      <gearColor controller="button" pages="0,1,2,3" values="#488e8e,#000000|#ffffff,#000000|#488e8e,#000000|#ffffff,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n4_tr7w" name="title2" xy="0,7" size="137,40" font="ui://2r331opvlwft3" fontSize="26" color="#ffffff" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="配表">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <component id="n5_eaah" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="135,10">
+      <gearDisplay controller="red" pages="1"/>
+      <relation target="n3_cxix" sidePair="left-right"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

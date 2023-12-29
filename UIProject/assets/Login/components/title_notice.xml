@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="907,290" overflow="scroll" scrollBarFlags="64">
+  <controller name="type" pages="0,content,1,imgOnly" selected="0"/>
+  <displayList>
+    <image id="n32_mpc8" name="n32" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,0" size="907,36"/>
+    <richtext id="n20_7oiz" name="noticeTitle" xy="0,3" size="914,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#d93a3a" autoSize="none" text="本服已进入PK赛季只能继承已有角色">
+      <gearDisplay controller="type" pages="0"/>
+    </richtext>
+    <richtext id="n31_qidv" name="noticeContent" xy="0,40" size="920,482" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" ubb="true" autoSize="height" text="尊敬的主公大人：&#xA;近期我们发现有部分主公使用外挂及辅助软件进行游戏，对游戏的公平公正造成了极其恶劣的影响。为&#xA;了进一步维护绿色健康的游戏环境，给玩家营造公平有序的游戏氛围，《鸿图之下》官方运营团队特此&#xA;声明:&#xA;&#xA;官方将坚决维护游戏公平公正的环境，坚决禁止使用任何形式的外挂及辅助软件，坚决严厉惩罚任何涉&#xA;及使用外挂和辅助软件的帐号（包括但不限于没收游戏内非法收益、封停游戏帐号）;对制作、经营、&#xA;传播各类恶意外挂、程序工具的工作室或个人将坚决追究其法律责任，绝不姑息!&#xA;&#xA;第三方外挂、辅助软件等程序会存在恶意代码，能够轻易窃取手机上的照片、短信内容、手机号码、各&#xA;种密码尤其是支付密码和登录密码，将给您带来严重后果!">
+      <gearDisplay controller="type" pages="0"/>
+    </richtext>
+    <loader id="n30_qidv" name="bgimg" xy="0,0" size="930,1" url="ui://byy9k3ghp7811o" fill="scaleMatchWidth" clearOnPublish="true">
+      <gearDisplay controller="type" pages="1"/>
+    </loader>
+  </displayList>
+</component>

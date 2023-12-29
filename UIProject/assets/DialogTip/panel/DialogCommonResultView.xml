@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="45">
+  <displayList>
+    <image id="n9_il77" name="temp" pkg="61bunt4f" src="9495h" fileName="quailty/general_bg_2.png" xy="0,3" size="1,1"/>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-2" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n31_osur" name="n31" src="osur1ygcfn3" fileName="components/components_new/settlement_com_001.xml" pkg="2r331opv" xy="309,-40" group="n13_pc9t" touchable="false"/>
+    <image id="n3_9232" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,292" size="1334,307" group="n13_pc9t" alpha="0.8"/>
+    <image id="n19_10473" name="n19" src="10473hz9cyg" fileName="images/images_new/settlement2/settlement_bg04.png" pkg="2r331opv" xy="459,272" size="415,29" group="n13_pc9t" alpha="0.8"/>
+    <component id="n11_fsdk" name="EffectHandle_GongXiHuoDe" src="ayljdv" fileName="components/EffectHandle.xml" pkg="2r331opv" xy="643,207" group="n13_pc9t" touchable="false">
+      <relation target="n3_9232" sidePair="top-top"/>
+    </component>
+    <text id="n6_9232" name="txtDesc" xy="313,269" size="708,39" group="n13_pc9t" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#fae66c" align="center" vAlign="middle" autoSize="none" shadowColor="#773a00" shadowOffset="2,3" autoClearText="true" text="恭喜你获得了">
+      <relation target="n3_9232" sidePair="top-top"/>
+    </text>
+    <group id="n13_pc9t" name="n13" xy="0,-40" size="1334,639" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <text id="n7_9232" name="lable" xy="547,710" size="239,35" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="-  点击空白关闭  -">
+      <relation target="n3_9232" sidePair="center-center,top-bottom"/>
+    </text>
+    <image id="n25_gww7" name="n25" src="gww71qp8veb" fileName="images/images_new/decorativePattern.png" pkg="2r331opv" xy="539,320" alpha="0.6">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n8_hs4g" name="btnNext" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n27_rr0d" name="receiveBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="560,623" size="214,74">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="领取" titleFontSize="30"/>
+    </component>
+    <component id="n28_rr0d" name="prop" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="607,383">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n29_rr0d" name="nameLbl" xy="516,349" pivot="0.5,0.5" size="302,34" font="ui://2r331opvno3vhz9d62" fontSize="24" color="#74d0ff" align="center" autoSize="none" autoClearText="true" text="{地图碎片道具名称}">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n30_rr0d" name="describeLbl" xy="519,499" pivot="0.5,0.5" size="302,29" font="ui://2r331opvno3vhz9d62" fontSize="20" color="#74d0ff" align="center" autoSize="none" autoClearText="true" text="搜集进度：1/9">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <transition name="t0"/>
+</component>

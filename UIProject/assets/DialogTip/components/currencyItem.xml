@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="202,40">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="充值"/>
+    <remark page="1" value="其它"/>
+  </controller>
+  <displayList>
+    <image id="n2_t6g9" name="bg1" src="sxlp1ygcg9n" fileName="main_bg04.png" xy="11,4" size="190,32" alpha="0.8"/>
+    <loader id="n1_t6g9" name="icon" xy="0,0" size="40,40" aspect="true" fill="scale"/>
+    <text id="n3_t6g9" name="title" xy="34,7" size="82,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="1500"/>
+    <text id="n5_t6g9" name="firstLbl" xy="114,7" size="85,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" autoClearText="true" text="优先使用">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <component id="n4_t6g9" name="RechargeBtn" src="t6g91ygcfhs" fileName="components/RechargeBtn.xml" xy="112,5" size="85,28">
+      <gearDisplay controller="state" pages="0"/>
+    </component>
+  </displayList>
+</component>

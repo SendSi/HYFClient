@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,68" mask="n1_rsq8">
+  <displayList>
+    <loader id="n0_rsq8" name="icon" xy="-13,-9" size="94,96" url="ui://4557t28kln1d4u" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <graph id="n1_rsq8" name="mask" xy="5,5" size="56,56" aspect="true" type="eclipse">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,68" extention="Button" designImageOffsetX="-149" designImageOffsetY="-100">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="置灰"/>
+  </controller>
+  <displayList>
+    <image id="n0_vqdv" name="n0" src="no3vhz9d66" fileName="images/images_new/com_bg_btn01.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_vqdv" name="n1" src="no3vhz9d67" fileName="images/images_new/com_bg_btn02.png" xy="2,2">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n5_b2gg" name="name" xy="10,16" size="42,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#c8c8c8" text="1转">
+      <gearColor controller="button" pages="0,2" values="#c8c8c8,#000000|#9f9898,#000000" default="#ffffff,#000000"/>
+    </text>
+    <graph id="n7_b2gg" name="mask" xy="6,6" size="54,54" aspect="true" alpha="0.8" type="eclipse" lineSize="0" fillColor="#ff000000">
+      <gearDisplay controller="state" pages="1"/>
+    </graph>
+    <loader id="n6_b2gg" name="n6" xy="20,17" size="25,30" url="ui://2r331opvm79td5">
+      <gearDisplay controller="state" pages="1"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

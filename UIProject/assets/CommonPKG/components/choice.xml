@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="142,142" mask="n42_qj9z" reversedMask="true">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="2"/>
+  <displayList>
+    <image id="n40_9232" name="n40" src="spsrz9ckd" fileName="images/common_select_08.png" xy="4,4" size="134,134"/>
+    <graph id="n42_qj9z" name="n42" xy="24,24" size="94,94" type="rect" lineSize="0"/>
+  </displayList>
+</component>

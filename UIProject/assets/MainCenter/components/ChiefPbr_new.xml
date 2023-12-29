@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="695,132" opaque="false" extention="ProgressBar">
+  <displayList>
+    <image id="n0_qok1" name="n0" src="tg9h1qp8vhr" fileName="images/chief/chiefPb00.png" xy="66,24" size="633,42"/>
+    <text id="n4_qok1" name="nameTilte" xy="127,0" size="309,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ff757b" vAlign="middle" strokeColor="#3b0200" strokeSize="2" shadowColor="#3b0200" shadowOffset="2,2" autoClearText="true" text="boss名称【归属：联盟名称六字】"/>
+    <component id="n23_happ" name="bar_112" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n22_happ" name="bar_111" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n21_happ" name="bar_110" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n20_happ" name="bar_109" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n19_happ" name="bar_108" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n18_happ" name="bar_107" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n17_happ" name="bar_106" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n16_happ" name="bar_105" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n15_happ" name="bar_104" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n14_happ" name="bar_103" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n13_happ" name="bar_102" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n12_happ" name="bar_101" src="suuv1ygcfhu" fileName="components/components_new/Personal_leader/barTweenHalfAlpha.xml" xy="71,29" size="623,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n2_qok1" name="sliderNum" xy="607,29" size="74,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="right" vAlign="middle" autoSize="none" italic="true" strokeColor="#000000" strokeSize="2" autoClearText="true" text="x9"/>
+    <image id="n27_tg9h" name="n27" src="tg9h1qp8vht" fileName="images/chief/boss_bg00.png" xy="0,1"/>
+    <loader id="n28_tg9h" name="icon" xy="7,8" pivot="0.5,0.5" size="74,74" url="ui://4ni413latg9h1qp8vhs" fill="scale"/>
+  </displayList>
+  <ProgressBar/>
+  <transition name="shake"/>
+  <transition name="shakeGroupAnim">
+    <item time="0" type="Shake" value="5,0.25"/>
+  </transition>
+</component>

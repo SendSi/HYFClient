@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="260,30" extention="Label">
+  <displayList>
+    <loader id="n2_ubhv" name="icon" xy="0,0" size="33,30" url="ui://4ni413labnhnjo" align="center" vAlign="middle" fill="scale" playing="false"/>
+    <richtext id="n0_ubhv" name="title" xy="34,0" size="226,30" fontSize="20" color="#ffffff" ubb="true" autoSize="none" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="九江（3712，1584）">
+      <relation target="" sidePair="rightext-right,leftext-left"/>
+    </richtext>
+  </displayList>
+</component>

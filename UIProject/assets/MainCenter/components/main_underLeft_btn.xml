@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="316,100" opaque="false">
+  <controller name="switch" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n2_cv8s" name="n2" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="-6,29" size="304,43" alpha="0.4">
+      <gearSize controller="switch" pages="1" values="140,43,1,1" default="304,43,1,1" tween="true"/>
+    </image>
+    <list id="n0_tauy" name="list" xy="0,11" size="235,78" layout="row" overflow="scroll" scroll="horizontal" margin="4,0,14,0" colGap="15" defaultItem="ui://4ni413layya01qp8vcb" align="center" vAlign="middle" autoClearItems="true" scrollItemToViewOnClick="false">
+      <gearSize controller="switch" pages="0,1" values="235,78,1,1|84,78,1,1" tween="true"/>
+      <item title="军团" icon="ui://4ni413latauyhz9czu" name="legion"/>
+      <item title="采集" icon="ui://4ni413latauyhz9czs" name="res"/>
+      <item title="探索" icon="ui://4ni413latauyhz9czt" name="explore"/>
+      <item title="推关" icon="ui://4ni413lagr261ygcfgr"/>
+    </list>
+    <component id="n1_tauy" name="btn" src="tauyhz9czw" fileName="components/components_new/main/main_left_btnSwitch.xml" xy="248,32">
+      <relation target="n0_tauy" sidePair="left-right"/>
+      <Button controller="switch" page="1"/>
+    </component>
+  </displayList>
+</component>

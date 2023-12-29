@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,120" mask="n29_cl07">
+  <controller name="state" pages="0,,1,,2,,6,,7," selected="0">
+    <remark page="1" value="可升级"/>
+    <remark page="2" value="新获得"/>
+    <remark page="3" value="灰"/>
+    <remark page="4" value="状态"/>
+  </controller>
+  <controller name="empty" pages="0,,1," selected="0"/>
+  <displayList>
+    <loader id="n5_oxy0" name="icon" xy="0,0" size="120,120" url="ui://4557t28ky6f5hz9cpe" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="empty" pages=""/>
+      <gearLook controller="state" pages="6" values="1,0,1,1" default="1,0,0,1"/>
+    </loader>
+    <graph id="n29_cl07" name="mask" xy="2,3" size="116,116" alpha="0.5" type="eclipse">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+</component>

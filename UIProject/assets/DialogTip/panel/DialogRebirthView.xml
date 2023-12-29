@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="45">
+  <displayList>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,-2" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n31_osur" name="topTitle" src="osur1ygcfn3" fileName="components/components_new/showTopTitle.xml" pkg="2r331opv" xy="309,8" touchable="false">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button icon="ui://2r331opvgww71qp8vec"/>
+    </component>
+    <image id="n3_9232" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,314" pivot="0.5,0.5" size="1334,320" alpha="0.8">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n8_hs4g" name="btnNext" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n35_ff11" name="n35" src="dfgw1ygcfmf" fileName="images/images_new/com_change04.png" pkg="2r331opv" xy="67,314" pivot="0.5,0.5" size="1200,178" group="n36_xwcb" visible="false" alpha="0.5" color="#2a4893">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n5_9232" name="centerList" src="ff111ygcft1" fileName="components/RebirthItem1.xml" xy="407,327" group="n36_xwcb">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <list id="n34_ff11" name="attr_list" xy="197,476" pivot="0.5,0.5" size="926,142" group="n36_xwcb" layout="flow_hz" overflow="hidden" lineGap="4" defaultItem="ui://utp01xiaff111ygcft0" align="center" vAlign="middle" autoClearItems="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n7_9232" name="lable" xy="547,690" size="239,35" group="n36_xwcb" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="0,2" text="-  点击空白关闭  -">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n36_xwcb" name="n36" xy="67,314" size="1200,411" advanced="true"/>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n31_osur" tween="true" startValue="0" endValue="1" duration="3"/>
+    <item time="0" type="Visible" target="n36_xwcb" value="false"/>
+    <item time="0" type="Visible" target="n3_9232" value="false"/>
+    <item time="0" type="XY" target="n31_osur" value="309,175"/>
+    <item time="26" type="XY" target="n31_osur" tween="true" startValue="309,175" endValue="309,8" duration="6"/>
+    <item time="33" type="Size" target="n3_9232" tween="true" startValue="1334,26" endValue="1334,320" duration="3"/>
+    <item time="33" type="Visible" target="n3_9232" value="true"/>
+    <item time="36" type="Visible" target="n3_9232" value="true"/>
+    <item time="37" type="Visible" target="n36_xwcb" value="true"/>
+  </transition>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImage="ui://utp01xiac1q93b">
+  <displayList>
+    <component id="n2_m79t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_m79t" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="267,157" group="n14_t0n1"/>
+    <component id="n6_m79t" name="contentTxt" src="tbod38" fileName="components/contentTxt.xml" xy="372,256" size="590,181" group="n14_t0n1"/>
+    <component id="n7_m79t" name="btnLeft" src="yhldz9cod" fileName="components/components_new/com_btn_02_redPoint.xml" pkg="2r331opv" xy="408,487" size="202,78" group="n14_t0n1">
+      <Button title="取消" titleFontSize="32"/>
+    </component>
+    <component id="n8_m79t" name="btnRight" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="718,487" size="202,78" group="n14_t0n1">
+      <Button title="确定&#xA;" titleFontSize="32"/>
+    </component>
+    <group id="n14_t0n1" name="win" xy="267,157" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

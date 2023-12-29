@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="98,98" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2_eh3a" name="iconTwo" xy="4,4" pivot="0.5,0.5" size="90,90" url="ui://4ni413lab6o0kz" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n3_jkzr" name="icon" xy="4,4" pivot="0.5,0.5" size="90,90" url="ui://4ni413lab6o0kz" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n2_eh3a" tween="true" startValue="1" endValue="0" duration="11" ease="Custom" customEase="2,0,0,0.285,0.1825,0.4975,0.9425,1,0,1,1"/>
+    <item time="0" type="ColorFilter" target="n3_jkzr" tween="true" startValue="0,0,0,0" endValue="0.2,0,0,0" duration="3"/>
+    <item time="0" type="Size" target="n2_eh3a" tween="true" startValue="90,90" endValue="158,158" duration="11" ease="Custom" customEase="2,0,0,0.4425,0.095,0.6825,0.8425,1,0,1,1"/>
+    <item time="0" type="Size" target="n3_jkzr" tween="true" startValue="90,90" endValue="102,102" duration="2"/>
+    <item time="2" type="Size" target="n3_jkzr" tween="true" startValue="102,102" endValue="90,90" duration="6"/>
+    <item time="3" type="ColorFilter" target="n3_jkzr" tween="true" startValue="0.2,0,0,0" endValue="0,0,0,0" duration="5"/>
+    <item time="12" type="Alpha" target="n2_eh3a" tween="true" startValue="1" endValue="0" duration="11" ease="Custom" customEase="2,0,0,0.285,0.1825,0.4975,0.9425,1,0,1,1"/>
+    <item time="12" type="Size" target="n2_eh3a" tween="true" startValue="90,90" endValue="158,158" duration="11" ease="Custom" customEase="2,0,0,0.4425,0.095,0.6825,0.8425,1,0,1,1"/>
+    <item time="12" type="Size" target="n3_jkzr" tween="true" startValue="90,90" endValue="102,102" duration="2"/>
+    <item time="13" type="ColorFilter" target="n3_jkzr" tween="true" startValue="0,0,0,0" endValue="0.2,0,0,0" duration="3"/>
+    <item time="14" type="Size" target="n3_jkzr" tween="true" startValue="102,102" endValue="90,90" duration="6"/>
+    <item time="16" type="ColorFilter" target="n3_jkzr" tween="true" startValue="0.2,0,0,0" endValue="0,0,0,0" duration="5"/>
+  </transition>
+</component>

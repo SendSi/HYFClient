@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="414,133" pivot="0.5,0.5" anchor="true">
+  <controller name="state" pages="0,,1," selected="0"/>
+  <displayList>
+    <loader id="n0_svpo" name="icon" xy="51,33" pivot="0.5,0.5" size="311,100" aspect="true" url="ui://4ni413lasvpo1ygcfk0" fill="scaleMatchWidth">
+      <gearIcon controller="state" pages="1" values="ui://4ni413lasvpo1ygcfk1" default="ui://4ni413lasvpo1ygcfk0"/>
+    </loader>
+    <component id="n1_svpo" name="head" src="j3xs9pm" fileName="components/components_new/btn_head4.xml" pkg="2r331opv" xy="101,-64" pivot="0.5,0.5" scale="0.35,0.35"/>
+    <text id="n2_svpo" name="KillLbl" xy="175,104" pivot="0.5,0.5" size="64,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" strokeColor="#13223e" strokeSize="2" shadowColor="#13223e" shadowOffset="1,2" autoClearText="true" text="击杀200"/>
+    <text id="n3_svpo" name="nameLbl" xy="102,72" pivot="0.5,0.5" size="124,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffdd76" align="center" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="他的名字六字">
+      <relation target="n4_svpo" sidePair="left-left"/>
+    </text>
+    <text id="n4_svpo" name="contentLbl" xy="226,72" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffdd76" align="center" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="五连绝世"/>
+  </displayList>
+  <transition name="KillAnim">
+    <item time="0" type="Alpha" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Scale" value="1,1"/>
+    <item time="6" type="Alpha" tween="true" startValue="1" endValue="1" duration="60"/>
+    <item time="66" type="Alpha" tween="true" startValue="1" endValue="0" duration="6"/>
+  </transition>
+  <transition name="KillAnimInUI">
+    <item time="0" type="Alpha" target="n0_svpo" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n1_svpo" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n2_svpo" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n3_svpo" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n4_svpo" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="6" type="Alpha" target="n0_svpo" tween="true" startValue="1" endValue="1" duration="24"/>
+    <item time="6" type="Alpha" target="n1_svpo" tween="true" startValue="1" endValue="1" duration="24"/>
+    <item time="6" type="Alpha" target="n2_svpo" tween="true" startValue="1" endValue="1" duration="24"/>
+    <item time="6" type="Alpha" target="n3_svpo" tween="true" startValue="1" endValue="1" duration="24"/>
+    <item time="6" type="Alpha" target="n4_svpo" tween="true" startValue="1" endValue="1" duration="24"/>
+    <item time="30" type="Alpha" target="n0_svpo" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="30" type="Alpha" target="n1_svpo" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="30" type="Alpha" target="n2_svpo" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="30" type="Alpha" target="n3_svpo" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="30" type="Alpha" target="n4_svpo" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="37" type="Alpha" target="n0_svpo" value="1"/>
+    <item time="37" type="Alpha" target="n1_svpo" value="1"/>
+    <item time="37" type="Alpha" target="n2_svpo" value="1"/>
+    <item time="37" type="Alpha" target="n3_svpo" value="1"/>
+    <item time="37" type="Alpha" target="n4_svpo" value="1"/>
+  </transition>
+  <transition name="BestKillAnim">
+    <item time="0" type="Alpha" tween="true" startValue="1" endValue="1" duration="6"/>
+    <item time="0" type="Scale" tween="true" startValue="3,3" endValue="1,1" duration="6"/>
+    <item time="6" type="Alpha" tween="true" startValue="1" endValue="1" duration="84"/>
+    <item time="6" type="Scale" tween="true" startValue="1,1" endValue="1,1" duration="84"/>
+    <item time="90" type="Alpha" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="90" type="Scale" tween="true" startValue="1,1" endValue="3,3" duration="6"/>
+  </transition>
+</component>

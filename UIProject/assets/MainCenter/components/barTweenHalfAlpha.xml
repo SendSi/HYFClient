@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="44,32" extention="ProgressBar">
+  <controller name="colorCtrl" pages="0,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11," selected="11"/>
+  <displayList>
+    <image id="n2_suuv" name="bar_half" src="happ1qp8vh3" fileName="images/chief/chiefPb12.png" xy="0,0" size="44,32" alpha="0.5">
+      <gearColor controller="colorCtrl" pages="0,1,2,3,4,5,6,7,8,9,10" values="#f2443f|#ffae1f|#f6de1c|#d619c6|#9619d6|#4023f2|#1965d6|#19b5d6|#19d688|#82d036|#d7bf83" default="#ffffff"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_d2so" name="bar" src="happ1qp8vh3" fileName="images/chief/chiefPb12.png" xy="0,0" size="44,32">
+      <gearColor controller="colorCtrl" pages="0,1,2,3,4,5,6,7,8,9,10,11" values="#f2443f|#ffae1f|#f6de1c|#d619c6|#9619d6|#4023f2|#1965d6|#19b5d6|#19d688|#82d036|#d7bf83|#ffffff"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

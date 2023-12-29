@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="254,145">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="可领取"/>
+  </controller>
+  <displayList>
+    <image id="n12_ptr5" name="n12" src="xjmv1qp8vf8" fileName="images/images_new/com_bg_tips02_mask4.png" pkg="2r331opv" xy="0,0" size="254,145" flip="both">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <graph id="n16_k0cc" name="n16" xy="9,9" size="236,29" type="rect" lineSize="0" fillColor="#b22f5499"/>
+    <text id="n10_ptr5" name="title" xy="85,9" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" strokeColor="#061324" shadowColor="#061324" shadowOffset="2,2" singleLine="true" autoClearText="true" text="守卫王城"/>
+    <component id="n14_k0cc" name="fragment01" src="rr0dhz9d1y" fileName="components/fragment01.xml" pkg="sinorujt" xy="65,46" scale="0.63,0.63"/>
+    <component id="n15_k0cc" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="229,-10" size="35,35"/>
+    <text id="n17_k0cc" name="stateLbl" xy="95,71" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#94e957" align="center" strokeColor="#255b20" strokeSize="2" autoClearText="true" text="可领取">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="116,128" extention="Button">
+  <controller name="state" pages="0,,1,,2,,3,,4,,5," selected="5">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="添加"/>
+    <remark page="2" value="锁定"/>
+    <remark page="3" value="不可进入"/>
+    <remark page="4" value="不在城内"/>
+    <remark page="5" value="不可传送"/>
+  </controller>
+  <controller name="quality" pages="2,,3,,4,,5," selected="0"/>
+  <controller name="guard" pages="0,,1," selected="0">
+    <remark page="0" value="不是守卫"/>
+    <remark page="1" value="守卫"/>
+  </controller>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="2"/>
+  <controller name="showBlood" pages="0,,1," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <loader id="n8_krfh" name="bg0" xy="1,3" size="114,124" url="ui://61bunt4fhxd7g4" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <gearIcon controller="quality" pages="2,3,4,5" values="ui://61bunt4fhxd7g4|ui://61bunt4fhxd7g5|ui://61bunt4fhxd7g6|ui://61bunt4fhxd7g7"/>
+    </loader>
+    <loader id="n20_n602" name="bg_black" xy="13,14" size="90,101" alpha="0.6" url="ui://61bunt4fhxd7g7" align="center" vAlign="middle" fill="scale" color="#000000">
+      <gearDisplay controller="state" pages="2,3"/>
+    </loader>
+    <component id="n13_krfh" name="icon" src="krfh1iy5b92" fileName="components/components_new/headmask.xml" xy="13,12" grayed="true">
+      <gearDisplay controller="state" pages="0,3,4,5"/>
+      <gearLook controller="state" pages="3,4,5" values="1,0,1,1|1,0,1,1|1,0,1,1" default="1,0,0,1"/>
+    </component>
+    <loader id="n10_krfh" name="bg" xy="0,0" size="116,128" aspect="true" url="ui://61bunt4fhxd7fx" align="center" vAlign="middle" fill="scale"/>
+    <image id="n16_hdmy" name="select" src="hxd7hz9d7m" fileName="images/images_new/hero_selec02.png" xy="-12,-10">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n11_krfh" name="add" xy="28,31" size="60,60" aspect="true" url="ui://2r331opvlfqnhz9d6u">
+      <gearDisplay controller="state" pages="1"/>
+    </loader>
+    <loader id="n7_js41" name="lock" xy="38,37" size="40,52" aspect="true" alpha="0.5" url="ui://2r331opvu6yzhz9cpx" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="2"/>
+    </loader>
+    <component id="n15_krfh" name="n15" src="o6syz9cqs" fileName="components/ArmsIcon.xml" pkg="jqem9egt" xy="84,9" scale="2,2">
+      <gearDisplay controller="guard" pages="1"/>
+    </component>
+    <text id="n17_n602" name="iInaccessible" xy="32,32" size="52,63" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ff4343" leading="0" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="不可&#xA;进入">
+      <gearDisplay controller="state" pages="3"/>
+    </text>
+    <text id="n22_vntm" name="notInCity" xy="32,31" size="52,63" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ff4343" leading="0" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="不可&#xA;传送">
+      <gearDisplay controller="state" pages="4,5"/>
+      <gearText controller="state" pages="5" values="不可&#xA;传送" default="不在&#xA;城内"/>
+    </text>
+    <component id="n21_vntm" name="bloodPbr" src="vntm1qp8ve3" fileName="components/components_new/troopBloodPbr.xml" xy="118,109" size="86,8" rotation="-90">
+      <gearDisplay controller="showBlood" pages="1"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

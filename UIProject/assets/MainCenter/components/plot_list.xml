@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="230,216">
+  <displayList>
+    <list id="n16_p5sz" name="task_list" xy="0,0" size="230,217" overflow="scroll" lineGap="4" defaultItem="ui://4ni413lap5sz1ygcfn5" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n16_p5sz" sidePair="bottomext-bottom"/>
+</component>

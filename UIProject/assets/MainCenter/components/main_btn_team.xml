@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,61" pivot="0.5,0.5" extention="Button" designImage="ui://4ni413lassbdz9q3" designImageOffsetX="-1265" designImageOffsetY="-124">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4_ssbd" name="icon" xy="7,3" size="36,36" url="ui://4ni413lassbdz9q7" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n3_ssbd" name="title" xy="1,35" size="50,29" fontSize="16" color="#eddca8" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="撤退">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

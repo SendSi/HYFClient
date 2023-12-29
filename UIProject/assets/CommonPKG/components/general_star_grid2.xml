@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="54,52">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6_10473" name="n6" src="lfqnhz9d75" fileName="images/images_new/stars03.png" xy="0,0" size="54,52" group="n5_h545">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_kpbt" name="bar" src="cxixz9cmd" fileName="images/images_new/stars02.png" xy="0,0" size="54,52" group="n5_h545" fillMethod="hz">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <group id="n5_h545" name="n5" xy="0,0" size="54,52"/>
+  </displayList>
+</component>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="36">
+  <controller name="state" pages="0,,1,,2," selected="2">
+    <remark page="0" value="名字可用"/>
+    <remark page="1" value="名字不可用"/>
+    <remark page="2" value="未输入"/>
+  </controller>
+  <displayList>
+    <component id="n2_j3xs" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-1,-1" size="1336,752">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n83_dnyf" name="win" src="d9gi17" fileName="panel/com_little_window.xml" pkg="2r331opv" xy="260,140" size="813,470" group="n33_j3xs">
+      <Button title="角色改名"/>
+    </component>
+    <image id="n90_in8y" name="n90" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="351,228" size="632,330" group="n33_j3xs"/>
+    <image id="n84_dnyf" name="n84" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="478,314" size="360,47" group="n33_j3xs"/>
+    <text id="n85_dnyf" name="txtInput" xy="486,320" size="343,36" group="n33_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#50382e" align="center" autoSize="none" text="" input="true" prompt="在此输入名字" maxLength="6"/>
+    <text id="n86_dnyf" name="wordLlimit" xy="482,361" size="352,29" group="n33_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" align="center" autoSize="none" text="名字长度需要在1-6个字之内">
+      <gearColor controller="state" pages="0,1,2" values="#97794f,#000000|#d93a3a,#000000|#97794f,#000000"/>
+    </text>
+    <component id="n87_dnyf" name="btnSure" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="539,449" size="240,78" group="n33_j3xs">
+      <gearLook controller="state" pages="1,2" values="1,0,1,1|1,0,0,1" default="1,0,0,1"/>
+      <Button title="改名" titleFontSize="36"/>
+    </component>
+    <richtext id="n88_dnyf" name="txtCost" xy="625,528" pivot="0.5,0.5" size="68,29" group="n33_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="center" vAlign="middle" autoClearText="true" text="图标X1"/>
+    <loader id="n89_dnyf" name="resultIcon" xy="843,319" size="37,37" group="n33_j3xs" url="ui://2r331opv12fw9cid" align="center" vAlign="middle" fill="scale" color="#599e27">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearColor controller="state" pages="0,1" values="#ffffff|#ffffff" default="#599e27"/>
+      <gearIcon controller="state" pages="0,1" values="ui://2r331opvgqih1ygcfgz|ui://2r331opv9495y" default="ui://2r331opv12fw9cid"/>
+    </loader>
+    <group id="n33_j3xs" name="view" xy="260,140" size="813,470" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

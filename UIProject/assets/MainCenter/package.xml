@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="4ni413la" hasFavorites="true">
+  <resources>
+    <component id="gzkh8i" name="main_btn_activity.xml" path="/components/"/>
+    <component id="hfih8u" name="main_chat_item2_2.xml" path="/components/"/>
+    <component id="kah2a4" name="main_chat_item_2.xml" path="/components/"/>
+    <image id="aibbax" name="icon_wall.png" path="/images/"/>
+    <component id="et21b9" name="building_introdLbl.xml" path="/components/"/>
+    <component id="et21bb" name="building_levelup_reward_lbl.xml" path="/components/"/>
+    <component id="kwe9c2" name="lbl_building.xml" path="/components/"/>
+    <component id="sdtvcb" name="levelup_needBuilding.xml" path="/components/"/>
+    <component id="m79t2k" name="buidingGrid.xml" path="/components/"/>
+    <component id="8z41cq" name="capture_MaterialItem.xml" path="/components/"/>
+    <component id="nnv4ch" name="CollectNumber.xml" path="/components/"/>
+    <component id="xse5dq" name="ResCollectNumber.xml" path="/components/"/>
+    <component id="xse5dr" name="capture_btnGet.xml" path="/components/"/>
+    <component id="xse5dy" name="capture_icon.xml" path="/components/"/>
+    <component id="xse5e2" name="capture_state.xml" path="/components/"/>
+    <component id="o4uyed" name="capture_Item3.xml" path="/components/"/>
+    <component id="d9fgfx" name="LevelUpBtn.xml" path="/components/"/>
+    <component id="ebn7g3" name="FightingNumber.xml" path="/components/"/>
+    <component id="rsq8gv" name="captureGeneralIcon.xml" path="/components/"/>
+    <component id="ix8ti9" name="warningItem.xml" path="/components/"/>
+    <component id="ntp0ir" name="speedupPbr.xml" path="/components/"/>
+    <component id="i8bsj0" name="speedBuyPropItem.xml" path="/components/"/>
+    <image id="d4a6j5" name="display_icon_02.png" path="/images/main/"/>
+    <image id="bnhnjn" name="city_01.png" path="/images2/"/>
+    <image id="bnhnjo" name="city_02.png" path="/images2/"/>
+    <image id="bnhnjp" name="city_03.png" path="/images2/"/>
+    <image id="bnhnjr" name="city_05.png" path="/images2/"/>
+    <image id="bnhnjs" name="city_06.png" path="/images2/"/>
+    <image id="bnhnjt" name="city_07.png" path="/images2/"/>
+    <image id="bnhnju" name="city_08.png" path="/images2/"/>
+    <component id="ac0wkb" name="speedupProIcon.xml" path="/components/"/>
+    <component id="ubhvkc" name="IconAndText.xml" path="/components/"/>
+    <component id="ubhvke" name="CityViewInfo.xml" path="/components/"/>
+    <component id="hdrqkg" name="QuickBack.xml" path="/panel/"/>
+    <component id="jft2km" name="HurtNumRoot.xml" path="/components/"/>
+    <image id="b6o0kz" name="main_btn_task.png" path="/images/main/"/>
+    <component id="b6o0l0" name="main_btn_buildTeam.xml" path="/components/"/>
+    <movieclip id="b6o0ls" name="main_mov_building.jta" path="/components/" atlas="10"/>
+    <movieclip id="b6o0lt" name="main_mov_explore.jta" path="/components/" atlas="10"/>
+    <component id="b6o0lu" name="main_timeRemaining.xml" path="/components/"/>
+    <component id="b6o0mh" name="main_btn_switch.xml" path="/components/"/>
+    <component id="b6o0mj" name="main_btn_vip.xml" path="/components/"/>
+    <image id="b6o0mk" name="main_btn_backCity2.png" path="/images/map/" disableTrim="true"/>
+    <image id="b6o0ml" name="main_btn_backCity.png" path="/images/map/"/>
+    <component id="b6o0mo" name="main_right_function2.xml" path="/components/"/>
+    <image id="xoe1mx" name="city_btn_collection.png" path="/images2/"/>
+    <image id="xoe1my" name="city_btn_share.png" path="/images2/"/>
+    <component id="xoe1mz" name="FuncListEles.xml" path="/components/" exported="true"/>
+    <component id="xoe1n0" name="main_taskitem.xml" path="/components/"/>
+    <component id="xoe1n1" name="mask_btn_task.xml" path="/components/"/>
+    <component id="xoe1n2" name="TopEles.xml" path="/components/" exported="true"/>
+    <image id="xoe1n5" name="main_map.png" path="/images/map/"/>
+    <image id="xoe1n6" name="spot01.png" path="/images2/"/>
+    <image id="xoe1n7" name="spot02.png" path="/images2/"/>
+    <component id="xoe1n8" name="main_miniMap_spot_2.xml" path="/components/"/>
+    <component id="xoe1n9" name="main_mapMini.xml" path="/components/"/>
+    <component id="xoe1nc" name="main_btn_collection.xml" path="/components/"/>
+    <component id="xoe1ni" name="collectionPlace01.xml" path="/components/"/>
+    <component id="xoe1nj" name="collection_btn_check.xml" path="/components/"/>
+    <image id="xoe1nk" name="collection_icon02.png" path="/images/main/"/>
+    <image id="xoe1nl" name="collection_icon03.png" path="/images/main/"/>
+    <image id="xoe1nm" name="collection_icon04.png" path="/images/main/"/>
+    <image id="xoe1nn" name="collection_icon05.png" path="/images/main/"/>
+    <image id="xoe1no" name="collection_icon01.png" path="/images/main/"/>
+    <component id="xoe1nq" name="collectionPlaceItem.xml" path="/components/"/>
+    <component id="w64jnv" name="collectionCheck02.xml" path="/components/"/>
+    <component id="w64jnx" name="main_exploreBtn_item.xml" path="/components/"/>
+    <component id="k4g9oe" name="main_explore_block.xml" path="/components/"/>
+    <component id="k4g9of" name="main_explore2.xml" path="/components/"/>
+    <component id="ssbdz9q6" name="main_btn_team.xml" path="/components/"/>
+    <component id="ssbdz9qe" name="main_btn_team2.xml" path="/components/"/>
+    <component id="ssbdz9qm" name="main_team_setupBtn.xml" path="/components/" favorite="true"/>
+    <component id="ssbdz9qo" name="main_team_btn.xml" path="/components/"/>
+    <component id="mzi1z9qy" name="main_rightTeam_CloseBtn.xml" path="/components/"/>
+    <component id="nlhcz9r1" name="researchUpIcon.xml" path="/components/"/>
+    <image id="nlhcz9r2" name="main_icon_13.png" path="/images2/"/>
+    <image id="nlhcz9r3" name="main_icon_14.png" path="/images2/"/>
+    <image id="hqb9z9r5" name="main_bg_pbr00.png" path="/images2/" scale="9grid" scale9grid="5,5,3,2"/>
+    <image id="hqb9z9r6" name="main_bg_pbr01.png" path="/images2/" scale="9grid" scale9grid="0,4,67,1"/>
+    <image id="hqb9z9r7" name="main_bg_pbr02.png" path="/images2/" scale="9grid" scale9grid="0,4,67,1"/>
+    <image id="hqb9z9r8" name="main_bg_pbr03.png" path="/images2/" scale="9grid" scale9grid="0,1,65,4"/>
+    <image id="hqb9z9r9" name="main_bg_pbr04.png" path="/images2/" scale="9grid" scale9grid="0,1,67,1"/>
+    <image id="hqb9z9ra" name="main_bg_pbr05.png" path="/images2/" scale="9grid" scale9grid="3,3,3,2"/>
+    <component id="hqb9z9rc" name="fighting_pbr5.xml" path="/components/"/>
+    <component id="hqb9z9rd" name="fighting_pbr6.xml" path="/components/"/>
+    <component id="hqb9z9re" name="fighting_pbr7.xml" path="/components/"/>
+    <component id="hqb9z9rf" name="fighting_pbr8.xml" path="/components/"/>
+    <component id="hqb9z9rg" name="fighting_pbr9.xml" path="/components/"/>
+    <image id="q24lz9cjp" name="fihgt_bg_hurt.png" path="/images2/"/>
+    <component id="o4i9z9cjs" name="btn_task01.xml" path="/components/"/>
+    <component id="o4i9z9cju" name="titleContent.xml" path="/components/"/>
+    <component id="o4i9z9cjv" name="main_task_hide.xml" path="/components/"/>
+    <component id="v96qhz9ck1" name="functionSdr_gri.xml" path="/components/"/>
+    <component id="v96qhz9ck2" name="functionSdr.xml" path="/components/"/>
+    <component id="vey3hz9ck6" name="functionPbr.xml" path="/components/"/>
+    <image id="ojpghz9ckf" name="destination_icon3.png" path="/images/map/"/>
+    <image id="ojpghz9ckg" name="destination_icon1.png" path="/images/map/"/>
+    <image id="ojpghz9ckh" name="destination_icon2.png" path="/images/map/"/>
+    <image id="ihs7hz9ckl" name="destination_icon4.png" path="/images/map/"/>
+    <component id="ceggz9cop" name="searchInforItem.xml" path="/components/"/>
+    <component id="ceggz9coo" name="searchSdr.xml" path="/components/"/>
+    <component id="ceggz9con" name="searchSdr_grip.xml" path="/components/"/>
+    <component id="yhldm" name="searchTypeBtn.xml" path="/components/"/>
+    <image id="j4kdhz9cl3" name="com_prop_add.png" path="/images/"/>
+    <component id="j4kdhz9cl4" name="headPbr.xml" path="/components/"/>
+    <image id="j4kdhz9clb" name="icon_vip1.png" path="/images/main/"/>
+    <image id="j4kdhz9clc" name="mainhud_bg04.png" path="/images/main/"/>
+    <image id="j4kdhz9clf" name="mainhud_bg03.png" path="/images/main/" scale9grid="11,0,112,34"/>
+    <image id="j4kdhz9clg" name="mainhud_btn05.png" path="/images/main/"/>
+    <component id="j4kdhz9cli" name="main_btn_cityManage.xml" path="/components/"/>
+    <image id="j4kdhz9clm" name="mainhud_bg08.png" path="/images/main/"/>
+    <component id="j4kdhz9clo" name="cityBuff_1.xml" path="/components/"/>
+    <image id="j4kdhz9clp" name="mainhud_bg_buff.png" path="/images/main/"/>
+    <component id="j4kdhz9clt" name="main_btn_back.xml" path="/components/"/>
+    <component id="j4kdhz9cm2" name="main_btn.xml" path="/components/" exported="true"/>
+    <image id="bvcehz9cmf" name="main_build_1.png" path="/images/team/"/>
+    <image id="bvcehz9cmg" name="main_build_2.png" path="/images/team/"/>
+    <component id="r616hz9cmj" name="chatBtn.xml" path="/components/"/>
+    <component id="r616hz9cmo" name="main_buff_item.xml" path="/components/"/>
+    <component id="r616hz9cmr" name="buffPbr.xml" path="/components/"/>
+    <image id="r616hz9cmu" name="main_tips_icon01.png" path="/images/map/" scale="9grid" scale9grid="39,7,3,14"/>
+    <image id="r616hz9cmv" name="main_tips_icon02.png" path="/images/map/" scale="9grid" scale9grid="40,7,2,14"/>
+    <image id="r616hz9cmw" name="main_tips_icon03.png" path="/images/map/" scale="9grid" scale9grid="38,7,4,14"/>
+    <image id="r616hz9cmx" name="main_tips_icon04.png" path="/images/map/" scale="9grid" scale9grid="37,7,5,14"/>
+    <image id="r616hz9cmy" name="mainhud_btn07.png" path="/images/map/"/>
+    <component id="vposhz9cn2" name="cityManageItem.xml" path="/components/"/>
+    <component id="vposhz9cn4" name="cityManagePbr.xml" path="/components/"/>
+    <component id="vposhz9cnd" name="cityManageItem2.xml" path="/components/"/>
+    <component id="vposhz9cng" name="cityManageProp.xml" path="/components/"/>
+    <component id="vposhz9cnh" name="buyBtn.xml" path="/components/"/>
+    <component id="m7yvhz9cnm" name="cityBuff.xml" path="/components/"/>
+    <component id="m7yvhz9cnu" name="main_chat_item.xml" path="/components/"/>
+    <component id="m7yvhz9cnv" name="main_chat_item2.xml" path="/components/"/>
+    <component id="m7yvhz9cnw" name="main_item_coord.xml" path="/components/"/>
+    <component id="m47yhz9co4" name="main_btn_coord.xml" path="/components/"/>
+    <component id="pwz3p2" name="main_coordinate.xml" path="/components/"/>
+    <component id="m47yhz9co5" name="main_btn_coord2.xml" path="/components/"/>
+    <image id="shxmhz9co6" name="main_bg.png" path="/images/map/" scale="9grid" scale9grid="6,6,12,12"/>
+    <image id="shxmhz9co9" name="mainhud_btn08.png" path="/images/main/"/>
+    <component id="qxvehz9coc" name="cityManageInnerItem.xml" path="/components/"/>
+    <component id="oepthz9cp5" name="main_teamPbr.xml" path="/components/"/>
+    <image id="oepthz9cp9" name="main_state04.png" path="/images/team/"/>
+    <image id="oepthz9cpa" name="main_state01.png" path="/images/team/"/>
+    <image id="oepthz9cpb" name="main_state02.png" path="/images/team/"/>
+    <image id="oepthz9cpc" name="main_state03.png" path="/images/team/"/>
+    <image id="oepthz9cph" name="team_state04.png" path="/images/team/"/>
+    <image id="oepthz9cpi" name="team_state01.png" path="/images/team/"/>
+    <image id="oepthz9cpj" name="team_state02.png" path="/images/team/"/>
+    <image id="oepthz9cpk" name="team_state03.png" path="/images/team/"/>
+    <component id="oepthz9cpm" name="main_teamItem.xml" path="/components/"/>
+    <image id="oepthz9cpr" name="main_bg_02.png" path="/images/main/" scale="9grid" scale9grid="13,0,8,81"/>
+    <component id="oepthz9cpw" name="main_teamItem0.xml" path="/components/"/>
+    <component id="u6yzhz9cq3" name="ChequerSelectView.xml" path="/panel/" favorite="true"/>
+    <image id="u6yzhz9cq5" name="main_bg_04.png" path="/images/map/" scale="9grid" scale9grid="112,0,84,168"/>
+    <image id="u6yzhz9cq6" name="main_btn_map03.png" path="/images/map/"/>
+    <image id="u6yzhz9cq7" name="main_btn_map01.png" path="/images/map/"/>
+    <image id="u6yzhz9cq8" name="main_btn_map02.png" path="/images/map/"/>
+    <component id="u6yzhz9cq9" name="chequer_btn.xml" path="/components/"/>
+    <image id="u6yzhz9cqq" name="expression_01.png" path="/images/map/"/>
+    <image id="u6yzhz9cqr" name="expression_03.png" path="/images/map/"/>
+    <image id="u6yzhz9cqs" name="expression_05.png" path="/images/map/"/>
+    <image id="u6yzhz9cqt" name="expression_02.png" path="/images/map/"/>
+    <image id="u6yzhz9cqu" name="expression_04.png" path="/images/map/"/>
+    <image id="u6yzhz9cqv" name="expression_06.png" path="/images/map/"/>
+    <image id="u6yzhz9cqx" name="expression_bg03.png" path="/images/map/" scale="9grid" scale9grid="23,0,4,56"/>
+    <image id="u6yzhz9cqy" name="expression_bg01.png" path="/images/map/" scale="9grid" scale9grid="22,0,5,56"/>
+    <image id="u6yzhz9cqz" name="expression_bg02.png" path="/images/map/" scale="9grid" scale9grid="23,0,5,57"/>
+    <component id="u6yzhz9cr0" name="chequerEmjioBtn1.xml" path="/components/"/>
+    <component id="u6yzhz9cr2" name="chequerEmjioBtn3.xml" path="/components/"/>
+    <component id="u6yzhz9cr3" name="chequerEmjioBtn5.xml" path="/components/"/>
+    <component id="u6yzhz9cr4" name="chequerEmjioBtn2.xml" path="/components/"/>
+    <component id="u6yzhz9cr5" name="chequerEmjioBtn4.xml" path="/components/"/>
+    <component id="u6yzhz9cr6" name="chequerEmjioBtn6.xml" path="/components/"/>
+    <image id="u6yzhz9cr7" name="expression_btn01.png" path="/images/map/"/>
+    <image id="u6yzhz9cr8" name="expression_btn.png" path="/images/map/"/>
+    <component id="u6yzhz9cr9" name="chequer_btn2.xml" path="/components/"/>
+    <image id="fz63hz9crd" name="main_btn_map04.png" path="/images/map/"/>
+    <image id="fz63hz9crj" name="mainhud_bg_title1.png" path="/images/map/" scale="9grid" scale9grid="98,0,96,96"/>
+    <component id="fz63hz9crr" name="building_introItem.xml" path="/components/"/>
+    <image id="fz63hz9crt" name="build_bottom04.png" path="/images/main/"/>
+    <image id="fz63hz9crv" name="build_btn_icon01.png" path="/images/main/"/>
+    <image id="fz63hz9crw" name="build_btn_icon1.png" path="/images/main/"/>
+    <image id="fz63hz9crx" name="build_btn_icon02.png" path="/images/main/"/>
+    <image id="fz63hz9cry" name="build_btn_icon2.png" path="/images/main/"/>
+    <image id="fz63hz9crz" name="build_btn_icon03.png" path="/images/main/"/>
+    <image id="fz63hz9cs0" name="build_btn_icon3.png" path="/images/main/"/>
+    <image id="fz63hz9cs1" name="build_btn_icon04.png" path="/images/main/"/>
+    <image id="fz63hz9cs2" name="build_btn_icon4.png" path="/images/main/"/>
+    <image id="fz63hz9cs3" name="build_btn_icon05.png" path="/images/main/"/>
+    <image id="fz63hz9cs4" name="build_btn_icon5.png" path="/images/main/"/>
+    <image id="fz63hz9cs5" name="build_btn_icon06.png" path="/images/main/"/>
+    <image id="fz63hz9cs6" name="build_btn_icon6.png" path="/images/main/"/>
+    <image id="fz63hz9cs7" name="build_btn_icon07.png" path="/images/main/"/>
+    <image id="fz63hz9cs8" name="build_btn_icon08.png" path="/images/main/"/>
+    <image id="fz63hz9cs9" name="build_btn1.png" path="/images/main/"/>
+    <image id="fz63hz9csa" name="build_btn2.png" path="/images/main/"/>
+    <image id="fz63hz9csg" name="build_bottom01.png" path="/images/main/" scale="9grid" scale9grid="5,37,4,98"/>
+    <image id="fz63hz9csh" name="build_bottom02.png" path="/images/main/" scale="9grid" scale9grid="24,36,14,44"/>
+    <image id="fz63hz9csi" name="build_bottom03.png" path="/images/main/" scale9grid="131,119,-9,19"/>
+    <component id="fz63hz9csj" name="building_btn_tab.xml" path="/components/"/>
+    <component id="fz63hz9csk" name="building_btn_tab2.xml" path="/components/"/>
+    <component id="gff6hz9csl" name="chequerEmjioBubble.xml" path="/components/"/>
+    <component id="gp9phz9csm" name="main_miniMap_spot.xml" path="/components/"/>
+    <image id="ixhohz9csy" name="toneup_btn_icon02.png" path="/images/main/"/>
+    <image id="ixhohz9csz" name="toneup_btn_icon03.png" path="/images/main/"/>
+    <image id="ixhohz9ct0" name="toneup_btn_icon04.png" path="/images/main/"/>
+    <image id="ixhohz9ct1" name="toneup_btn_icon01.png" path="/images/main/"/>
+    <image id="f6nohz9ct4" name="gain_bg_01.png" path="/images/main/"/>
+    <image id="f6nohz9ct5" name="gain_bg_02.png" path="/images/main/"/>
+    <image id="f6nohz9ct6" name="gain_bg_03.png" path="/images/main/"/>
+    <image id="f6nohz9ct7" name="gain_bg_04.png" path="/images/main/"/>
+    <image id="f6nohz9ct8" name="gain_bg_icon_01.png" path="/images/main/"/>
+    <image id="f6nohz9ct9" name="gain_bg_icon_02.png" path="/images/main/"/>
+    <image id="f6nohz9cta" name="gain_bg_icon_03.png" path="/images/main/"/>
+    <image id="f6nohz9ctb" name="gain_bg_icon_04.png" path="/images/main/"/>
+    <image id="f6nohz9ctc" name="gain_bg_icon_05.png" path="/images/main/"/>
+    <image id="f6nohz9ctd" name="gain_bg_icon_06.png" path="/images/main/"/>
+    <image id="f6nohz9cte" name="gain_bg_icon_07.png" path="/images/main/"/>
+    <image id="f6nohz9ctf" name="gain_bg_icon_08.png" path="/images/main/"/>
+    <image id="f6nohz9ctg" name="gain_bg_icon_09.png" path="/images/main/"/>
+    <image id="f6nohz9cth" name="gain_bg_icon_010.png" path="/images/main/"/>
+    <component id="f6nohz9ctk" name="toneupItem_lbl.xml" path="/components/"/>
+    <component id="g9nyhz9cty" name="wallPbr.xml" path="/components/"/>
+    <component id="g9nyhz9ctz" name="wallTeamItem.xml" path="/components/"/>
+    <component id="ok6zhz9cu2" name="wallPbr2.xml" path="/components/"/>
+    <component id="ok6zhz9cu3" name="wallInfor.xml" path="/components/"/>
+    <component id="ex0khz9cu3" name="anger_pbr.xml" path="/components/"/>
+    <component id="qdf6hz9cub" name="buildingBtn.xml" path="/components/"/>
+    <component id="qdf6hz9cuc" name="buildingBtn2.xml" path="/components/"/>
+    <image id="qdf6hz9cud" name="building_bg_bubble02.png" path="/images/buliding/" scale="9grid" scale9grid="10,15,25,8"/>
+    <component id="qdf6hz9cuh" name="buildingPbr.xml" path="/components/"/>
+    <component id="c1q9hz9cun" name="cityManageItem3.xml" path="/components/"/>
+    <component id="c1q9hz9cur" name="warningPbr.xml" path="/components/"/>
+    <image id="eyighz9cuw" name="main_btn_warning.png" path="/images/main/"/>
+    <image id="jg06hz9cv2" name="main_btn_task2.png" path="/images/main/"/>
+    <image id="bmedhz9cvg" name="collection_btn4.png" path="/images/main/"/>
+    <image id="bmedhz9cvh" name="collection_btn1.png" path="/images/main/"/>
+    <image id="bmedhz9cvi" name="collection_btn2.png" path="/images/main/"/>
+    <image id="bmedhz9cvj" name="collection_btn3.png" path="/images/main/"/>
+    <component id="lly2hz9cw1" name="FightingSkillName.xml" path="/panel/"/>
+    <image id="nmmihz9cw3" name="city_power_bg00.png" path="/images/main/" scale="9grid" scale9grid="0,86,384,44"/>
+    <image id="nmmihz9cw4" name="city_power_bg01.png" path="/images/main/" scale="9grid" scale9grid="46,12,92,24"/>
+    <component id="nmmihz9cw5" name="btn_lbl.xml" path="/components/"/>
+    <component id="skbghz9cw2" name="anger_pbr_mask.xml" path="/components/"/>
+    <component id="ltnnhz9cw7" name="main_btn_weather.xml" path="/components/"/>
+    <image id="ltnnhz9cw8" name="weather01.png" path="/images/main/"/>
+    <image id="ltnnhz9cw9" name="weather02.png" path="/images/main/"/>
+    <image id="ltnnhz9cwa" name="weather03.png" path="/images/main/"/>
+    <image id="ltnnhz9cwb" name="weather04.png" path="/images/main/"/>
+    <image id="ltnnhz9cwc" name="weather05.png" path="/images/main/"/>
+    <component id="rdcqhz9cwd" name="main_trboard_wrap.xml" path="/components/"/>
+    <component id="qok1hz9cwk" name="chief.xml" path="/components/"/>
+    <image id="tx7r7" name="chiefPb01.png" path="/images/chief/" scale="9grid" scale9grid="15,8,5,4"/>
+    <image id="tx7r8" name="chiefPb02.png" path="/images/chief/" scale="9grid" scale9grid="16,9,4,4"/>
+    <component id="qok1hz9cwn" name="ChiefPbr.xml" path="/components/"/>
+    <component id="oor8hz9cwo" name="main_btn_activity__.xml" path="/components/"/>
+    <image id="oor8hz9cwp" name="main_btn_activity01.png" path="/images/main/"/>
+    <component id="f3dxhz9cyr" name="generalIcon_colleciton.xml" path="/components/"/>
+    <image id="f3dxhz9cwu" name="team_state05.png" path="/images/team/"/>
+    <component id="z3y8hz9cys" name="resource_pbr.xml" path="/components/"/>
+    <image id="z3y8hz9cyt" name="icon_resources05.png" path="/images/collection/"/>
+    <image id="z3y8hz9cyu" name="icon_resources06.png" path="/images/collection/"/>
+    <image id="z3y8hz9cyv" name="icon_resources07.png" path="/images/collection/"/>
+    <image id="z3y8hz9cyw" name="icon_resources08.png" path="/images/collection/"/>
+    <image id="z3y8hz9cyx" name="icon_resources09.png" path="/images/collection/"/>
+    <image id="z3y8hz9cyy" name="icon_resources10.png" path="/images/collection/"/>
+    <image id="z3y8hz9cyz" name="Icon_collection01.png" path="/images/collection/"/>
+    <image id="z3y8hz9cz0" name="Icon_collection02.png" path="/images/collection/"/>
+    <image id="z3y8hz9cz1" name="Icon_collection03.png" path="/images/collection/"/>
+    <image id="z3y8hz9cz2" name="icon_resources01.png" path="/images/collection/"/>
+    <image id="z3y8hz9cz3" name="icon_resources02.png" path="/images/collection/"/>
+    <image id="z3y8hz9cz4" name="icon_resources03.png" path="/images/collection/"/>
+    <image id="z3y8hz9cz5" name="icon_resources04.png" path="/images/collection/"/>
+    <image id="z3y8hz9czb" name="collection_bg01.png" path="/images/collection/"/>
+    <image id="z3y8hz9czg" name="resources01.png" path="/images/collection/"/>
+    <image id="z3y8hz9czh" name="resources02.png" path="/images/collection/"/>
+    <image id="z3y8hz9czi" name="resources03.png" path="/images/collection/"/>
+    <image id="z3y8hz9czj" name="resources04.png" path="/images/collection/"/>
+    <image id="z3y8hz9czk" name="resources05.png" path="/images/collection/"/>
+    <component id="tauyhz9czr" name="main_btn2.xml" path="/components/"/>
+    <image id="tauyhz9czs" name="main_btn_resources.png" path="/images/main/"/>
+    <image id="tauyhz9czt" name="main_btn_explore.png" path="/images/main/"/>
+    <image id="tauyhz9czu" name="main_btn_legion.png" path="/images/main/"/>
+    <component id="tauyhz9czv" name="main_underLeft_btn.xml" path="/components/"/>
+    <component id="tauyhz9czw" name="main_left_btnSwitch.xml" path="/components/"/>
+    <component id="d2sohz9cws" name="bar_red.xml" path="/components/"/>
+    <component id="d2sohz9cwu" name="bar_yellow.xml" path="/components/"/>
+    <component id="ta9jhz9d00" name="Attack_cbtn.xml" path="/components/"/>
+    <image id="ha7x1a" name="com_btnbg02.png" path="/images/worldleaders01/" scale="9grid" scale9grid="18,16,9,13"/>
+    <image id="ha7x1b" name="bg02.png" path="/images/worldleaders01/"/>
+    <component id="pu9rhz9d16" name="BossRankItem.xml" path="/components/"/>
+    <image id="mdy2hz9d17" name="toscout_btn03.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d18" name="toscout_btn04.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d19" name="toscout_bg01.png" path="/images/explore01/" scale="9grid" scale9grid="14,14,7,7"/>
+    <image id="mdy2hz9d1a" name="toscout_bg02.png" path="/images/explore01/" scale="9grid" scale9grid="5,9,171,6"/>
+    <image id="mdy2hz9d1b" name="explore_bg01.png" path="/images/explore01/" scale="9grid" scale9grid="24,13,6,9"/>
+    <image id="mdy2hz9d1c" name="explore_bg02.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d1d" name="explore_bg03.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d1e" name="explore_bg04.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d1f" name="exploreicon02.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d1g" name="toscout_btn01.png" path="/images/explore01/"/>
+    <image id="mdy2hz9d1h" name="toscout_btn02.png" path="/images/explore01/"/>
+    <component id="mdy2hz9d1i" name="toscout_rbtn.xml" path="/components/"/>
+    <image id="mdy2hz9d1p" name="main_state05.png" path="/images/team/"/>
+    <image id="mdy2hz9d1q" name="main_state06.png" path="/images/team/"/>
+    <image id="mdy2hz9d1r" name="team_state06.png" path="/images/team/"/>
+    <image id="mdy2hz9d1s" name="team_state07.png" path="/images/team/"/>
+    <component id="i52uhz9d1v" name="main_explore_block01.xml" path="/components/"/>
+    <component id="i52uhz9d1w" name="main_explore_block02.xml" path="/components/"/>
+    <component id="i52uhz9d1x" name="main_explore_block04.xml" path="/components/"/>
+    <component id="i52uhz9d1y" name="main_explore_block03.xml" path="/components/"/>
+    <component id="i52uhz9d20" name="explore_reward.xml" path="/components/"/>
+    <component id="i52uhz9d21" name="Information.xml" path="/components/"/>
+    <image id="i52uhz9cz4" name="mail_icon.png" path="/images/explore01/"/>
+    <image id="ebcwhz9d27" name="hospital_btn_plus.png" path="/images/map/"/>
+    <image id="ebcwhz9d28" name="soldier_bg.png" path="/images/map/"/>
+    <image id="h55mhz9d2a" name="soldier_avatar.png" path="/images/map/"/>
+    <component id="pu9rhz9d2b" name="SoldierIcon.xml" path="/components/"/>
+    <image id="k06chz9d2e" name="fight_bg_ragevalue.png" path="/images/team/"/>
+    <image id="k06chz9d2f" name="fight_point_ragevalue.png" path="/images/team/" disableTrim="true"/>
+    <image id="7k93hz9d2c" name="fight_begins.png" path="/images/troops/"/>
+    <image id="gflyhz9d2g" name="treasure_chest01.png" path="/images/main/"/>
+    <image id="gflyhz9d2h" name="treasure_chest02.png" path="/images/main/"/>
+    <component id="rjevhz9d2l" name="taskBtn.xml" path="/components/"/>
+    <image id="fc85hz9d2o" name="build_btn3.png" path="/images/main/"/>
+    <image id="skl3hz9d2q" name="bg_main03.png" path="/images/"/>
+    <image id="skl3hz9d2r" name="bg_main04.png" path="/images/"/>
+    <component id="b2gghz9d43" name="CreateBuilding.xml" path="/panel/"/>
+    <component id="b2gghz9d44" name="ExploreBoard.xml" path="/panel/"/>
+    <component id="b2gghz9d45" name="word.xml" path="/panel/"/>
+    <component id="h00fhz9d47" name="generalAdd.xml" path="/components/"/>
+    <component id="1025jhz9d4a" name="BuildCommandItem.xml" path="/panel/"/>
+    <component id="yya01qp8vcb" name="buildQueueBtn.xml" path="/components/"/>
+    <image id="kv611qp8vcx" name="spot03.png" path="/images2/"/>
+    <component id="gjeu1qp8vcy" name="healthPbr.xml" path="/components/"/>
+    <component id="lumy1qp8vd6" name="MainCenterView.xml" path="/panel/" exported="true"/>
+    <image id="lumy1qp8vd7" name="btn_league.png" path="/images4/" exported="true"/>
+    <image id="lumy1qp8vd8" name="mainhud_btn_arrow.png" path="/images4/" exported="true"/>
+    <image id="lumy1qp8vd9" name="btn_bag.png" path="/images4/" exported="true"/>
+    <image id="lumy1qp8vda" name="btn_arm.png" path="/images4/" exported="true"/>
+    <image id="lumy1qp8vdb" name="mainhud_btn_headbg01.png" path="/images4/"/>
+    <image id="lumy1qp8vdc" name="btn_hero.png" path="/images4/"/>
+    <image id="lumy1qp8vdd" name="mainhud_btn_icon011.png" path="/images4/"/>
+    <image id="lumy1qp8vde" name="mainhud_btn_icon012.png" path="/images4/"/>
+    <image id="lumy1qp8vdf" name="mainhud_icon_attack.png" path="/images4/"/>
+    <image id="lumy1qp8vdg" name="mainhud_progress04.png" path="/images4/"/>
+    <image id="lumy1qp8vdh" name="mainhud_progress05.png" path="/images4/"/>
+    <image id="lumy1qp8vdi" name="main_bg_icon.png" path="/images4/"/>
+    <image id="lumy1qp8vdj" name="main_bg_red.png" path="/images4/"/>
+    <image id="lumy1qp8vdk" name="main_bg03.png" path="/images4/" scale="9grid" scale9grid="57,13,9,26"/>
+    <image id="lumy1qp8vdl" name="main_bg04.png" path="/images4/" favorite="true" scale="9grid" scale9grid="8,8,5,4"/>
+    <image id="lumy1qp8vdm" name="main_icon_email.png" path="/images4/"/>
+    <image id="lumy1qp8vdn" name="main_icon_flag.png" path="/images4/"/>
+    <image id="lumy1qp8vdo" name="mainhud_bg_headbg00.png" path="/images4/"/>
+    <image id="lumy1qp8vdp" name="mainhud_bg_vip.png" path="/images4/"/>
+    <component id="qy501qp8vdq" name="main_task_hide1.xml" path="/components/"/>
+    <component id="qy501qp8vdr" name="main_task_hide2.xml" path="/components/"/>
+    <image id="cv8s1qp8vds" name="mainhud_chat_icon02.png" path="/images/main/"/>
+    <image id="cv8s1qp8vdt" name="main_build_icon01.png" path="/images4/"/>
+    <image id="cv8s1qp8vdu" name="mainhud_btn_arrow2.png" path="/images4/" exported="true"/>
+    <component id="cv8s1qp8vdw" name="main_team_right00.xml" path="/components/"/>
+    <component id="quts1qp8vdx" name="buildQueueBtn1.xml" path="/components/"/>
+    <image id="pqav1qp8vdy" name="main_btn_hide05.png" path="/images/team/"/>
+    <image id="pqav1qp8vdz" name="main_btn_hide06.png" path="/images/team/"/>
+    <image id="pqav1qp8ve0" name="btn_email.png" path="/images4/" exported="true"/>
+    <component id="ya491qp8ve1" name="FightingHurtNumber2.xml" path="/panel/"/>
+    <image id="o0c91qp8ve2" name="fighting_double.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve3" name="fighting_excellence.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve4" name="fighting_crit.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve5" name="fighting_destroy.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve6" name="fighting_thump.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve7" name="fighting_lucky.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve8" name="fighting_miss.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ve9" name="fighting_parry.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vea" name="fighting_resist.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8veb" name="fighting_common-.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vec" name="fighting_common0.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ved" name="fighting_common1.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vee" name="fighting_common2.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vef" name="fighting_common3.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8veg" name="fighting_common4.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8veh" name="fighting_common5.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vei" name="fighting_common6.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vej" name="fighting_common7.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vek" name="fighting_common8.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vel" name="fighting_common9.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vem" name="fighting_defense-.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ven" name="fighting_defense0.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8veo" name="fighting_defense1.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vep" name="fighting_defense2.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8veq" name="fighting_defense3.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ver" name="fighting_defense4.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8ves" name="fighting_defense5.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vet" name="fighting_defense6.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8veu" name="fighting_defense7.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vev" name="fighting_defense8.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vew" name="fighting_defense9.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vex" name="fighting_special-.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vey" name="fighting_special0.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vez" name="fighting_special1.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf0" name="fighting_special2.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf1" name="fighting_special3.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf2" name="fighting_special4.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf3" name="fighting_special5.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf4" name="fighting_special6.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf5" name="fighting_special7.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf6" name="fighting_special8.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf7" name="fighting_special9.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf8" name="fighting_treatment+.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vf9" name="fighting_treatment0.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfa" name="fighting_treatment1.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfb" name="fighting_treatment2.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfc" name="fighting_treatment3.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfd" name="fighting_treatment4.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfe" name="fighting_treatment5.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vff" name="fighting_treatment6.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfg" name="fighting_treatment7.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfh" name="fighting_treatment8.png" path="/images/fighting/" atlas="1"/>
+    <image id="o0c91qp8vfi" name="fighting_treatment9.png" path="/images/fighting/" atlas="1"/>
+    <font id="o0c91qp8vfj" name="Fighting_text1.fnt" path="/panel/"/>
+    <font id="o0c91qp8vfk" name="Fighting_text.fnt" path="/panel/"/>
+    <font id="o0c91qp8vfl" name="Fighting_text2.fnt" path="/panel/"/>
+    <font id="o0c91qp8vfm" name="Fighting_text3.fnt" path="/panel/"/>
+    <font id="o0c91qp8vfn" name="Fighting_text4.fnt" path="/panel/"/>
+    <component id="u9dn1qp8vfo" name="FightingHurtNumber3.xml" path="/panel/"/>
+    <font id="u9dn1qp8vfp" name="Fighting_text5.fnt" path="/panel/"/>
+    <image id="u9dn1qp8vfq" name="fighting_r-.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfr" name="fighting_r0.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfs" name="fighting_r1.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vft" name="fighting_r2.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfu" name="fighting_r3.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfv" name="fighting_r4.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfw" name="fighting_r5.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfx" name="fighting_r6.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfy" name="fighting_r7.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vfz" name="fighting_r8.png" path="/images/fighting/" atlas="1"/>
+    <image id="u9dn1qp8vg0" name="fighting_r9.png" path="/images/fighting/" atlas="1"/>
+    <image id="hd501qp8vg1" name="expression_bg06.png" path="/images/map/" scale="9grid" scale9grid="31,0,7,51"/>
+    <image id="hd501qp8vg2" name="expression_bg04.png" path="/images/map/" scale="9grid" scale9grid="57,0,6,81"/>
+    <image id="hd501qp8vg3" name="expression_bg05.png" path="/images/map/"/>
+    <component id="hd501qp8vg4" name="bubbling01.xml" path="/components/"/>
+    <component id="hd501qp8vg5" name="bubbling02.xml" path="/components/"/>
+    <image id="hd501qp8vg6" name="expression_bg07.png" path="/images/map/" scale="9grid" scale9grid="38,0,5,81"/>
+    <image id="hd501qp8vg7" name="expression_bg08.png" path="/images/map/" scale="9grid" scale9grid="37,12,7,24"/>
+    <image id="hd501qp8vg8" name="expression_bg09.png" path="/images/map/"/>
+    <component id="f7rv1qp8vg9" name="NormalAttack.xml" path="/panel/"/>
+    <component id="qx30hz9d6i" name="skin_cbtnDay.xml" path="/components/" favorite="true"/>
+    <component id="qx301qp8vgc" name="skin_quality.xml" path="/components/"/>
+    <component id="qx301qp8vee" name="attribute_item.xml" path="/components/"/>
+    <component id="qx301qp8vgd" name="skin_prop.xml" path="/components/"/>
+    <component id="qx301qp8vge" name="skinCbox.xml" path="/components/"/>
+    <component id="qx301qp8vgf" name="skinCbox_popup.xml" path="/components/"/>
+    <component id="qx301qp8vgg" name="skinCbox_item.xml" path="/components/"/>
+    <component id="mgry1qp8vgh" name="skin_building.xml" path="/components/"/>
+    <component id="mgry1qp8vef" name="skin_tab.xml" path="/components/"/>
+    <component id="mgry1qp8vgl" name="skin_cityName.xml" path="/components/"/>
+    <component id="eulv1qp8veh" name="btn_tab6.xml" path="/components/"/>
+    <component id="smjf1qp8vgn" name="TroopBoardViewChild.xml" path="/panel/"/>
+    <image id="dsd11qp8vgo" name="medal01.png" path="/images/map/"/>
+    <image id="dsd11qp8vgp" name="medal02.png" path="/images/map/"/>
+    <image id="dsd11qp8vgq" name="medal03.png" path="/images/map/"/>
+    <image id="dsd11qp8vgr" name="medal04.png" path="/images/map/"/>
+    <component id="dsd11qp8vgt" name="medal_01.xml" path="/components/"/>
+    <image id="happ1qp8vgu" name="chiefPb03.png" path="/images/chief/" scale="9grid" scale9grid="14,5,8,10"/>
+    <image id="happ1qp8vgv" name="chiefPb04.png" path="/images/chief/" scale="9grid" scale9grid="14,5,8,10"/>
+    <image id="happ1qp8vgw" name="chiefPb05.png" path="/images/chief/" scale="9grid" scale9grid="14,5,9,10"/>
+    <image id="happ1qp8vgx" name="chiefPb06.png" path="/images/chief/" scale="9grid" scale9grid="14,5,6,10"/>
+    <image id="happ1qp8vgy" name="chiefPb07.png" path="/images/chief/" scale="9grid" scale9grid="17,5,4,10"/>
+    <image id="happ1qp8vgz" name="chiefPb08.png" path="/images/chief/" scale="9grid" scale9grid="13,5,9,10"/>
+    <image id="happ1qp8vh0" name="chiefPb09.png" path="/images/chief/" scale="9grid" scale9grid="13,5,9,10"/>
+    <image id="happ1qp8vh1" name="chiefPb10.png" path="/images/chief/" scale="9grid" scale9grid="12,5,12,10"/>
+    <image id="happ1qp8vh2" name="chiefPb11.png" path="/images/chief/" scale="9grid" scale9grid="14,5,7,10"/>
+    <image id="happ1qp8vh3" name="chiefPb12.png" path="/images/chief/" scale="9grid" scale9grid="15,5,8,10"/>
+    <component id="happ1qp8vh4" name="bar_01.xml" path="/components/"/>
+    <component id="happ1qp8vh5" name="bar_02.xml" path="/components/"/>
+    <component id="happ1qp8vh6" name="bar_03.xml" path="/components/"/>
+    <component id="happ1qp8vh7" name="bar_04.xml" path="/components/"/>
+    <component id="happ1qp8vh8" name="bar_05.xml" path="/components/"/>
+    <component id="happ1qp8vh9" name="bar_06.xml" path="/components/"/>
+    <component id="happ1qp8vha" name="bar_07.xml" path="/components/"/>
+    <component id="happ1qp8vhb" name="bar_08.xml" path="/components/"/>
+    <component id="happ1qp8vhc" name="bar_09.xml" path="/components/"/>
+    <component id="happ1qp8vhd" name="bar_10.xml" path="/components/"/>
+    <component id="happ1qp8vhe" name="bar_11.xml" path="/components/"/>
+    <component id="happ1qp8vhf" name="bar_12.xml" path="/components/"/>
+    <component id="pr6b1qp8vhg" name="main_rightTeam_Reple.xml" path="/components/"/>
+    <component id="pr6b1qp8vhh" name="healthPbr2.xml" path="/components/"/>
+    <component id="pr6b1qp8vhi" name="main_deployBtn.xml" path="/components/"/>
+    <component id="pl8o1qp8vhj" name="main_team_btn2.xml" path="/components/"/>
+    <component id="g1s71qp8vhk" name="TroopBoardView.xml" path="/components/"/>
+    <component id="l1sb1qp8vhl" name="ReturnButton.xml" path="/components/"/>
+    <component id="lcq71qp8vhm" name="healthPbr3.xml" path="/components/"/>
+    <component id="p11n1qp8vhn" name="main_btn_right.xml" path="/components/"/>
+    <component id="p11n1qp8vho" name="main_btn_wrong.xml" path="/components/"/>
+    <component id="le3m1qp8vhq" name="main_team_right.xml" path="/components/"/>
+    <image id="tg9h1qp8vhr" name="chiefPb00.png" path="/images/chief/" scale="9grid" scale9grid="17,18,5,6"/>
+    <image id="tg9h1qp8vhs" name="boss_bg.png" path="/images/chief/"/>
+    <image id="cvsphz9czz" name="00.png" path="/images/chief/"/>
+    <image id="cvsphz9czx" name="05.png" path="/images/chief/"/>
+    <image id="tg9h1qp8vht" name="boss_bg00.png" path="/images/chief/"/>
+    <component id="tg9h1qp8vhu" name="mainTaskAdvance.xml" path="/components/"/>
+    <component id="k2fil5" name="SpeedUpItem.xml" path="/components/"/>
+    <component id="tg9hhz9d0o" name="ChallengeBtn.xml" path="/panel/"/>
+    <image id="v2381ygcffa" name="activity_btn.png" path="/images/"/>
+    <component id="zm041ygcffc" name="leaBossBtn.xml" path="/components/"/>
+    <image id="zm041ygcff9" name="activity_icon06.png" path="/images/main/"/>
+    <component id="h0dy1ygcffd" name="closeButton.xml" path="/components/"/>
+    <image id="cwtb1ygcffe" name="com_bg_cityskinicon2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfff" name="com_cityskinbg_level.png" path="/images/cityskin/" scale="9grid" scale9grid="35,0,20,48"/>
+    <image id="cwtb1ygcffg" name="com_cityskinbtn_name1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffh" name="com_bg_cityskinbtn.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffi" name="com_bg_cityskinicon1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffj" name="com_cityskinbtn_skin1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffk" name="com_cityskinicon_chat2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffl" name="com_cityskinicon_chat3.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffm" name="com_cityskinicon_chat4.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffn" name="com_cityskinicon_city.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffo" name="com_cityskinicon_chat.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffp" name="com_cityskinicon_chat1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffq" name="com_cityskinicon_city1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffr" name="com_cityskinicon_new.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffs" name="com_cityskinicon_moon2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfft" name="com_cityskinicon_name.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffu" name="com_cityskinicon_name1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffv" name="com_cityskinicon_name2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffw" name="com_cityskinicon_sun2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffx" name="com_cityskinicon_title2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffy" name="com_cityskinicon_title3.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcffz" name="com_cityskinselect_city.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg0" name="com_cityskinselect_title3.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg1" name="com_cityskinselect_title2.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg2" name="com_cityskinselect_title1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg3" name="com_cityskiselect_name.png" path="/images/cityskin/" scale="9grid" scale9grid="39,0,11,71"/>
+    <image id="cwtb1ygcfg4" name="com_select_03.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg5" name="tcom_cityskinbtn_chat1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg6" name="com_cityskinicon_title.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg7" name="com_cityskinicon_title1.png" path="/images/cityskin/"/>
+    <image id="cwtb1ygcfg8" name="tcom_cityskinbtn_title1.png" path="/images/cityskin/"/>
+    <component id="cwtb1ygcfg9" name="cityskinCbox.xml" path="/components/" favorite="true"/>
+    <component id="cwtb1ygcfga" name="cityskinCbox_item.xml" path="/components/"/>
+    <component id="cwtb1ygcfgb" name="cityskinCbox_popup.xml" path="/components/"/>
+    <component id="cwtb1ygcfgc" name="cityskin_tab.xml" path="/components/"/>
+    <component id="mtwh1ygcfgd" name="skin_cityTitle1.xml" path="/components/"/>
+    <component id="mtwh1ygcfgg" name="skin_cityChat.xml" path="/components/"/>
+    <image id="mtwh1ygcfgi" name="com_cityskinicon_city2.png" path="/images/cityskin/"/>
+    <component id="k0cc1ygcfgj" name="mainMapFragment.xml" path="/components/"/>
+    <component id="ihkp1ygcfgk" name="bar_13.xml" path="/components/"/>
+    <image id="klt51ygcfgl" name="city12.png" path="/images/map/"/>
+    <image id="klt51ygcfgm" name="see_bg02.png" path="/images/map/" scale="9grid" scale9grid="28,0,3,47"/>
+    <image id="klt51ygcfgn" name="see_bg01.png" path="/images/map/"/>
+    <component id="klt51ygcfgo" name="mapNameBtn.xml" path="/components/"/>
+    <image id="klt51ygcfgp" name="see_bg03.png" path="/images/map/" scale="9grid" scale9grid="20,19,5,8"/>
+    <image id="gr261ygcfgr" name="main_btn_map.png" path="/images/main/"/>
+    <component id="ts2v1ygcfgs" name="explorereward_btn.xml" path="/components/"/>
+    <image id="f9h91ygcfgv" name="boss_bg01.png" path="/images/chief/" scale="9grid" scale9grid="9,10,111,26"/>
+    <image id="f9h91ygcfgw" name="boss_bg02.png" path="/images/chief/" scale="9grid" scale9grid="31,9,62,18"/>
+    <image id="gr021ygcfgx" name="main_bg04_1.png" path="/images4/" scale="9grid" scale9grid="9,9,3,3"/>
+    <image id="gr021ygcfgy" name="main_bg04_2.png" path="/images4/" scale="9grid" scale9grid="16,14,4,3"/>
+    <image id="gr021ygcfgz" name="activity_icon_attack.png" path="/images4/"/>
+    <image id="gr021ygcfh0" name="activity_icon_details.png" path="/images4/"/>
+    <component id="fx9i1ygcfh1" name="bar_50.xml" path="/components/"/>
+    <image id="fx9i1ygcfh2" name="chiefPb50.png" path="/images/chief/" scale="9grid" scale9grid="17,6,3,12"/>
+    <image id="fx9i1ygcfh3" name="chiefPb51.png" path="/images/chief/" scale="9grid" scale9grid="25,7,1,14"/>
+    <image id="gx1w1ygcfh4" name="main_icon_assist.png" path="/images4/"/>
+    <image id="8su01ygcfh5" name="build_bottom06.png" path="/images/main/" scale="9grid" scale9grid="3,10,18,20"/>
+    <image id="g38x1ygcfh6" name="main_icon_first.png" path="/images4/"/>
+    <image id="q60q1ygcfh8" name="01.png" path="/images/chief/"/>
+    <image id="q60q1ygcfh9" name="02.png" path="/images/chief/"/>
+    <image id="q60q1ygcfha" name="03.png" path="/images/chief/"/>
+    <image id="q60q1ygcfhb" name="04.png" path="/images/chief/"/>
+    <image id="qz5p1ygcfhf" name="task_bg088.png" path="/images/main/" scale="9grid" scale9grid="20,4,140,5"/>
+    <component id="qz5p1ygcfhh" name="taskBar.xml" path="/components/"/>
+    <component id="bjb51ygcfhk" name="task_main_treasure_part.xml" path="/components/"/>
+    <component id="t6g91ygcfhl" name="blankBtn.xml" path="/components/"/>
+    <component id="t6g91ygcfhm" name="blankBtn01.xml" path="/components/"/>
+    <component id="t6g91ygcfhn" name="Diamonds.xml" path="/components/"/>
+    <image id="t6g91ygcfho" name="mainhud_progress06.png" path="/images4/"/>
+    <image id="t6g91ygcfhp" name="mainhud_progress07.png" path="/images4/" scale="9grid" scale9grid="154,8,2,3"/>
+    <component id="l21a1ygcfht" name="main_taskitem_list.xml" path="/components/"/>
+    <component id="suuv1ygcfhu" name="barTweenHalfAlpha.xml" path="/components/"/>
+    <component id="ctld1ygcfhv" name="ChiefPbr_new.xml" path="/components/"/>
+    <image id="lvbk1ygcfhx" name="explore_bg05.png" path="/images/explore01/"/>
+    <image id="lvbk1ygcfhy" name="toscout_bg03.png" path="/images/explore01/" scale="9grid" scale9grid="26,28,3,212"/>
+    <component id="dmns1ygcfhz" name="main_explore_block05.xml" path="/components/"/>
+    <component id="dmns1ygcfi0" name="main_explore_block06.xml" path="/components/"/>
+    <image id="ildy1ygcfi1" name="chequer_icon_aiAttack.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi2" name="chequer_icon_attack.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi3" name="chequer_icon_back.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi4" name="chequer_icon_emoji.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi5" name="chequer_icon_fire.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi6" name="chequer_icon_go.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi7" name="main_btn_icon01.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi8" name="main_btn_icon02.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfi9" name="main_btn_icon03.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfia" name="main_btn_icon04.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfib" name="main_btn_icon05.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfic" name="main_btn_icon06.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfid" name="main_btn_icon07.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfie" name="main_btn_icon08.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfif" name="main_btn_icon09.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfig" name="main_btn_icon10.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfih" name="main_btn_icon11.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfii" name="main_btn_icon12.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfij" name="main_btn_icon13.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfik" name="main_btn_icon14.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfil" name="main_btn_icon15.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfim" name="main_btn_icon16.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfin" name="main_btn_icon17.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfio" name="main_btn_icon18.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfip" name="main_btn_icon19.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfiq" name="main_btn_icon20.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfir" name="main_btn_icon21.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfis" name="main_btn_icon22.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfit" name="main_btn_icon23.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfiu" name="main_btn_icon24.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfiv" name="main_btn_icon25.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfiw" name="main_btn_icon26.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfix" name="main_btn_icon27.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfiy" name="main_btn_icon28.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfiz" name="main_icon07.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfj0" name="main_icon08.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfj1" name="main_icon09.png" path="/images/btn_icon/"/>
+    <image id="ildy1ygcfj2" name="building_bg_bubble08.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj3" name="building_bg_bubble09.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj4" name="bubble_01.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj5" name="bubble_02.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj6" name="bubble_03.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj7" name="bubble_04.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj8" name="bubble_05.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfj9" name="bubble_06.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfjb" name="bubble_07.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfjc" name="bubble_08.png" path="/images/buliding/"/>
+    <image id="ildy1ygcfjd" name="bubble_09.png" path="/images/buliding/"/>
+    <image id="10t6x1ygcfje" name="mainhud_progress08.png" path="/images4/" scale="9grid" scale9grid="13,32,3,1"/>
+    <image id="10t6x1ygcfjf" name="mainhud_progress09.png" path="/images4/"/>
+    <component id="eh3a1ygcfje" name="main_task_hide3.xml" path="/components/"/>
+    <component id="eh3a1ygcfjf" name="secretcodeBtn.xml" path="/components/"/>
+    <image id="eh3a1ygcfjg" name="mainhud_progress010.png" path="/images4/"/>
+    <image id="eh3a1ygcfjh" name="main_build_icon02.png" path="/images4/"/>
+    <component id="eh3a1ygcfjj" name="btn_tab7.xml" path="/components/"/>
+    <image id="ovf61ygcfje" name="main_btn_activity02.png" path="/images/main/"/>
+    <component id="lr8b1ygcfjo" name="monsterHp.xml" path="/components/"/>
+    <image id="p67q1ygcfjp" name="main_btn_icon30.png" path="/images/btn_icon/"/>
+    <image id="p67q1ygcfjq" name="main_btn_icon31.png" path="/images/btn_icon/"/>
+    <image id="p67q1ygcfjr" name="main_btn_icon29.png" path="/images/btn_icon/"/>
+    <image id="idus1ygcfjy" name="bg_main05.png" path="/images/" scale="9grid" scale9grid="19,22,6,2"/>
+    <image id="svpo1ygcfk0" name="broadcast_bg01.png" path="/images/main/"/>
+    <image id="svpo1ygcfk1" name="broadcast_bg02.png" path="/images/main/"/>
+    <image id="svpo1ygcfk2" name="n0.png" path="/images/main/"/>
+    <image id="svpo1ygcfk3" name="n1.png" path="/images/main/"/>
+    <image id="svpo1ygcfk4" name="n2.png" path="/images/main/"/>
+    <image id="svpo1ygcfk5" name="n3.png" path="/images/main/"/>
+    <image id="svpo1ygcfk6" name="n4.png" path="/images/main/"/>
+    <image id="svpo1ygcfk7" name="n5.png" path="/images/main/"/>
+    <image id="svpo1ygcfk8" name="n6.png" path="/images/main/"/>
+    <image id="svpo1ygcfk9" name="n7.png" path="/images/main/"/>
+    <image id="svpo1ygcfka" name="n8.png" path="/images/main/"/>
+    <image id="svpo1ygcfkb" name="n9.png" path="/images/main/"/>
+    <image id="svpo1ygcfkc" name="numberbg01.png" path="/images/main/"/>
+    <image id="svpo1ygcfkd" name="numberbg02.png" path="/images/main/"/>
+    <component id="svpo1ygcfke" name="Broadcast.xml" path="/components/"/>
+    <component id="svpo1ygcfkf" name="Break.xml" path="/components/"/>
+    <image id="ns8m1ygcfkg" name="bubble_10.png" path="/images/buliding/"/>
+    <component id="al8r1ygcfkh" name="skin_Broadcast.xml" path="/components/"/>
+    <image id="ufp91ygcfkj" name="bubbling_01.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkk" name="bubbling_02.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkl" name="bubbling_03.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkm" name="bubbling_04.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkn" name="bubbling_05.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfko" name="bubbling_06.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkp" name="bubbling_07.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkq" name="bubbling_08.png" path="/images/buliding/"/>
+    <image id="ufp91ygcfkr" name="bubbling_09.png" path="/images/buliding/"/>
+    <image id="p9k91ygcfkt" name="mainhud_bg_hw1.png" path="/images4/"/>
+    <component id="d1gb1ygcfku" name="collectSdr.xml" path="/components/"/>
+    <component id="t2qt1ygcfkv" name="roleIcon.xml" path="/panel/"/>
+    <component id="t2qt1ygcfkw" name="heroItem.xml" path="/panel/"/>
+    <component id="g6qa1ygcfkx" name="siegeItem1.xml" path="/components/"/>
+    <image id="wpdk1ygcfky" name="com_cityskinicon_name3.png" path="/images/cityskin/"/>
+    <component id="wpdk1ygcfkz" name="skin_cityTitle2.xml" path="/components/"/>
+    <component id="wpdk1ygcfl0" name="skin_cityTitle3.xml" path="/components/"/>
+    <component id="l3l81ygcfkz" name="citylist01.xml" path="/components/"/>
+    <component id="l3l81ygcfl0" name="main_mapMini01.xml" path="/components/"/>
+    <component id="pb7c1ygcfky" name="SiegeOrderViewDescText.xml" path="/panel/"/>
+    <image id="9zwe1ygcfl1" name="com_cityskinicon_name0.png" path="/images/cityskin/"/>
+    <component id="9zwe1ygcfl2" name="ToScoutItem.xml" path="/components/"/>
+    <component id="9zwez9cnc" name="ToScoutPbr.xml" path="/components/"/>
+    <image id="9zwe1ygcfl3" name="bubble_11.png" path="/images/buliding/"/>
+    <image id="8lkd1ygcfl4" name="bubbling_010.png" path="/images/buliding/"/>
+    <component id="nm3l1ygcfl5" name="satiate_bar.xml" path="/components/"/>
+    <component id="rpmv1ygcfl6" name="CollectorItem.xml" path="/components/"/>
+    <image id="rpmv1ygcfl8" name="commong_bg.png" path="/images/map/" scale="9grid" scale9grid="113,9,5,2"/>
+    <component id="inp01ygcflo" name="leftRoleItem.xml" path="/components/"/>
+    <component id="inp01ygcflq" name="left_LeagueBoss.xml" path="/components/"/>
+    <component id="hs5t1ygcfls" name="collectorHead.xml" path="/components/"/>
+    <component id="cbn71ygcflv" name="plotSkillBtn.xml" path="/components/"/>
+    <image id="cbn71ygcflw" name="plotSkill1.png" path="/images/plotSkill/"/>
+    <image id="cbn71ygcflx" name="plotSkill2.png" path="/images/plotSkill/"/>
+    <image id="cbn71ygcfly" name="plotSkill3.png" path="/images/plotSkill/"/>
+    <image id="cbn71ygcflz" name="plotSkill4.png" path="/images/plotSkill/"/>
+    <image id="cbn71ygcfm0" name="plotSkill5.png" path="/images/plotSkill/"/>
+    <image id="cbn71ygcfm1" name="plotSkill6.png" path="/images/plotSkill/"/>
+    <image id="cbn71ygcfm2" name="skillBg.png" path="/images/plotSkill/"/>
+    <image id="uppn1ygcfm3" name="main_build_icon03.png" path="/images4/"/>
+    <image id="uppn1ygcfm4" name="main_build_icon04.png" path="/images4/"/>
+    <image id="uppn1ygcfm5" name="main_build_icon05.png" path="/images4/"/>
+    <component id="dxyz1ygcfmh" name="resourcetip_item01.xml" path="/panel/"/>
+    <image id="gw9a1ygcfmj" name="resourcetip_icon01.png" path="/images4/"/>
+    <image id="8rmp1ygcfmn" name="main_bg_levelup001.png" path="/images4/"/>
+    <image id="ta121ygcfmq" name="main_btn_icon32.png" path="/images/btn_icon/"/>
+    <image id="f7na1ygcfms" name="com_bg_cityskinicon3.png" path="/images/cityskin/"/>
+    <image id="f7na1ygcfmt" name="com_bg_cityskinicon4.png" path="/images/cityskin/"/>
+    <image id="p5sz1ygcfn2" name="main_btn_barrier.png" path="/images/main/"/>
+    <component id="p5sz1ygcfn3" name="plot_task.xml" path="/components/"/>
+    <component id="p5sz1ygcfn5" name="plot_btn1.xml" path="/components/"/>
+    <component id="p5sz1ygcfn6" name="plot_list.xml" path="/components/"/>
+    <component id="n9h9k" name="plotSwitchBtn1.xml" path="/components/"/>
+    <image id="w7az1ygcfn8" name="team_state08.png" path="/images/team/"/>
+    <component id="g4fb1ygcfn9" name="main_btn_collectManage.xml" path="/components/"/>
+    <image id="v3a81ygcfnc" name="team_state09.png" path="/images/team/"/>
+    <image id="ne6b1ygcfnd" name="main_btn_icon33.png" path="/images/btn_icon/"/>
+    <component id="ryma1ygcfne" name="sharePlaceView.xml" path="/components/"/>
+    <image id="ryma1ygcfnf" name="shareplace_btn_bg01.png" path="/images/map/" scale="9grid" scale9grid="19,0,6,56"/>
+    <image id="ryma1ygcfng" name="shareplace_btn_bg02.png" path="/images/map/" scale="9grid" scale9grid="9,0,6,56"/>
+    <component id="ryma1ygcfnk" name="shareplace__btn1.xml" path="/components/"/>
+    <image id="ryma1ygcfnh" name="shareplace_btn3.png" path="/images/main/"/>
+    <image id="ryma1ygcfni" name="shareplace_btn1.png" path="/images/main/"/>
+    <image id="ryma1ygcfnj" name="shareplace_btn2.png" path="/images/main/"/>
+    <component id="i1n01ygcfnl" name="shareplace__btn2.xml" path="/components/"/>
+    <image id="11ms71ygcfnm" name="broadcast_bg00.png" path="/images/main/" scale="9grid" scale9grid="81,49,168,37"/>
+    <image id="e8ok1ygcg7t" name="broadcast_bg000.png" path="/images/main/"/>
+    <image id="dsil1ygcg7u" name="bubble_12.png" path="/images/buliding/"/>
+    <image id="dsil1ygcg7v" name="bubble_13.png" path="/images/buliding/"/>
+    <image id="dsil1ygcg7w" name="main_btn_icon34.png" path="/images/btn_icon/"/>
+    <image id="dsil1ygcg7x" name="main_btn_icon35.png" path="/images/btn_icon/"/>
+    <image id="dsil1ygcg7y" name="gain_bg_icon_011.png" path="/images/main/"/>
+    <component id="fpkn1ygcg80" name="building_introItem2.xml" path="/components/"/>
+    <component id="fpkn1ygcg82" name="building_introItem3.xml" path="/components/"/>
+    <image id="fpkn1ygcg84" name="main_build_icon06.png" path="/images4/"/>
+    <image id="d21j1ygcg87" name="building_bg_bubble03.png" path="/images/buliding/" scale="9grid" scale9grid="12,11,8,7"/>
+    <image id="e9l71ygcg88" name="fighting_shield.png" path="/images/fighting/" atlas="1"/>
+    <image id="eh1f1ygcg8f" name="morale_pbr.png" path="/images/morale/"/>
+    <component id="n4pu1ygcg8i" name="build_moraleSdr.xml" path="/components/"/>
+    <component id="m3dm1ygcg8j" name="main_buff_item2.xml" path="/components/"/>
+    <component id="uf4p1ygcg8l" name="moraleItem1.xml" path="/components/"/>
+    <component id="pvy91ygcg8n" name="buildingGrid1.xml" path="/components/"/>
+    <image id="yt2t1ygcg8p" name="mainhud_btn_icon013.png" path="/images4/" scale="9grid" scale9grid="0,16,568,9"/>
+    <image id="yt2t1ygcg8q" name="mainhud_btn_icon014.png" path="/images4/"/>
+    <image id="jxsz1ygcg8r" name="mainhud_btn_icon015.png" path="/images4/"/>
+    <image id="gv9e1ygcg8s" name="main_build_icon07.png" path="/images4/"/>
+    <image id="l5ht1ygcg8x" name="bg_main06.png" path="/images/"/>
+    <image id="dkpj1ygcg90" name="team_state10.png" path="/images/team/"/>
+    <image id="ukvb1ygcg92" name="mainhud_progress011.png" path="/images4/"/>
+    <image id="ukvb1ygcg93" name="mainhud_progress012.png" path="/images4/" scale="9grid" scale9grid="11,12,8,6"/>
+    <image id="exg51ygcg96" name="bubble_14.png" path="/images/buliding/"/>
+    <image id="exg51ygcg97" name="bubble_15.png" path="/images/buliding/"/>
+    <image id="m5yh1ygcg9a" name="fighting_restrain.png" path="/images/explore01/" atlas="1"/>
+    <image id="cgz91ygcg9b" name="fighting_restrain.png" path="/images/fighting/" atlas="1"/>
+    <component id="rhyu1ygcg9e" name="task_main_glory_part.xml" path="/components/"/>
+    <image id="88e61ygcg9g" name="expression_bg13.png" path="/images/map/" scale="9grid" scale9grid="17,39,6,1"/>
+    <image id="88e61ygcg9h" name="expression_bg12.png" path="/images/map/" scale="9grid" scale9grid="44,39,6,1"/>
+    <image id="88e61ygcg9i" name="expression_bg11.png" path="/images/map/" scale="9grid" scale9grid="22,17,4,14"/>
+    <image id="88e61ygcg9j" name="expression_bg10.png" path="/images/map/" scale="9grid" scale9grid="21,40,4,11"/>
+    <image id="nybb1ygcg9k" name="main_btn_icon36.png" path="/images/btn_icon/"/>
+    <component id="zcpe1ygcg9l" name="bubbling02_old.xml" path="/components/"/>
+    <component id="gj4q1ygcg9m" name="topShowPos.xml" path="/panel/"/>
+    <component id="oepthz9cp8" name="main_teamStae.xml" path="/components/" exported="true"/>
+    <component id="g9nyhz9cu0" name="generalIcon.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="hxd7hz9d7l" name="generalIcon01.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="qy501qp8vdt" name="generalIcon1.xml" path="/components/" exported="true"/>
+    <component id="dmmmhz9d2y" name="generalIcon3.xml" path="/components/" exported="true"/>
+    <component id="xyhchz9cv9" name="generalIconBtn.xml" path="/components/" exported="true"/>
+    <component id="ijk71ygcg9n" name="playerIconBtn.xml" path="/components/"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

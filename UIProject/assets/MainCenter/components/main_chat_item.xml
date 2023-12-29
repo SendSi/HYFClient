@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="443,72" extention="Button" designImageOffsetX="-137" designImageOffsetY="-677">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <list id="n4_r616" name="list_chat" xy="96,7" size="352,65" overflow="scroll" defaultItem="ui://4ni413lahfih8u">
+      <relation target="" sidePair="height-height"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n5_r616" name="inforBtn" src="r616hz9cmj" fileName="components/main/chatBtn.xml" xy="11,13"/>
+  </displayList>
+  <Button/>
+</component>

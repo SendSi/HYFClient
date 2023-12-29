@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="910,138" designImage="ui://4ni413lavposhz9cn0" designImageOffsetX="-189" designImageOffsetY="-219" designImageAlpha="0" designImageLayer="1">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="可使用"/>
+    <remark page="1" value="购买使用"/>
+  </controller>
+  <displayList>
+    <image id="n23_fc85" name="n23" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="0,0" size="910,138">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <loader id="n22_qxve" name="iconBg" xy="16,13" size="96,96" url="ui://tsbe09dd65iwhz9d49"/>
+    <loader id="n21_qxve" name="icon" xy="28,23" size="86,86" aspect="true" url="ui://tsbe09ddmz4w0" align="center" vAlign="middle" fill="scale"/>
+    <text id="n4_vpos" name="title" xy="129,20" size="217,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoClearText="true" text="Name (with table)"/>
+    <text id="n5_vpos" name="inforLbl" xy="129,52" size="569,29" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" autoSize="none" autoClearText="true" text="Here is the description of the content, planning their own configuration">
+      <relation target="" sidePair="rightext-left"/>
+    </text>
+    <text id="n14_vpos" name="numTitle" xy="129,80" size="68,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" text="已拥有: "/>
+    <text id="n15_vpos" name="propNum" xy="200,79" size="28,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" autoClearText="true" text="20">
+      <relation target="n14_vpos" sidePair="right-right"/>
+    </text>
+    <component id="n20_vpos" name="buyBtn" src="d5so1ygcfk6" fileName="components/components_new/com_btn_buy1.xml" pkg="2r331opv" xy="705,31" size="180,74">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="right-right"/>
+    </component>
+    <component id="n24_fc85" name="useBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="707,31" size="180,74">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="right-right"/>
+      <Button title="使用"/>
+    </component>
+  </displayList>
+</component>

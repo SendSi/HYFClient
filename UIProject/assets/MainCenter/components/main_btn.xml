@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="94,94" pivot="0.5,0.5" extention="Button" designImageOffsetX="-23" designImageOffsetY="-513" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_j4kd" name="icon" xy="10,8" size="74,74" aspect="true" url="ui://4ni413lalumy1qp8vd9" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+    <image id="n7_jxsz" name="bottomBg" src="jxsz1ygcg8r" fileName="images4/mainhud_btn_icon015.png" xy="13,60" visible="false" alpha="0.8"/>
+    <text id="n5_j4kd" name="title" xy="1,60" pivot="0.5,0.5" size="92,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" leading="0" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="英雄">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n8_upg9" name="redPoint" src="pyiyhz9d6l" fileName="components/components_new/redPoint.xml" pkg="2r331opv" xy="79,15" touchable="false" controller="showCtrl,3"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".98"/>
+</component>

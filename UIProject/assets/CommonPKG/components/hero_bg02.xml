@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <image id="n2_oxy0" name="bg" src="kvv41iy5be0" fileName="images/hero_bg02_dynamic/hero_bg03_001.jpg" pkg="4hio38um" xy="667,375" pivot="0.5,0.5" anchor="true" size="1495,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n10_kvv4" name="n10" src="kvv41iy5be1" fileName="images/hero_bg02_dynamic/hero_bg03_002.png" pkg="4hio38um" xy="-78,55">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </image>
+    <image id="n11_kvv4" name="n11" src="kvv41iy5be2" fileName="images/hero_bg02_dynamic/hero_bg03_003.png" pkg="4hio38um" xy="1119,55">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </image>
+  </displayList>
+</component>

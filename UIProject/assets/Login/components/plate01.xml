@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="593,190" pivot="0.5,0.5" overflow="hidden" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="1" value="显示"/>
+  </controller>
+  <displayList>
+    <image id="n2_g6y7" name="n2" src="g6y723" fileName="images/plate07.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <loader id="n4_g6y7" name="icon" xy="250,1" size="100,100" align="center" vAlign="middle"/>
+    <text id="n3_g6y7" name="title" xy="238,75" size="124,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" vAlign="middle" strokeColor="#006396" strokeSize="2" singleLine="true" text="黎明海岸">
+      <gearColor controller="button" pages="0,1,2,3" values="#dac6a4,#432e21|#ffffff,#006396|#dac6a4,#432e21|#ffffff,#006396"/>
+    </text>
+    <component id="n5_cale" name="recom" src="cale1ygcg9x" fileName="components/landItem1.xml" xy="152,115">
+      <gearDisplay controller="state" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="ColorFilter" target="n2_g6y7" tween="true" startValue="-0.11,0,0,0" endValue="0.13,0,0,0" duration="12"/>
+    <item time="12" type="ColorFilter" target="n2_g6y7" tween="true" startValue="0.13,0,0,0" endValue="-0.11,0,0,0" duration="12"/>
+  </transition>
+</component>

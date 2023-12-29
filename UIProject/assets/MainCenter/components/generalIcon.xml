@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="72,64">
+  <controller name="quality" pages="0,,1,,2,,3,,4," selected="4"/>
+  <controller name="star" alias="星级" pages="0,,1,,2,,3,,4,,5," selected="0">
+    <remark page="0" value="1星"/>
+    <remark page="1" value="2星"/>
+    <remark page="2" value="3星"/>
+    <remark page="3" value="4星"/>
+    <remark page="4" value="5星"/>
+    <remark page="5" value="6星"/>
+  </controller>
+  <displayList>
+    <loader id="n4_oept" name="qualityBg" xy="17,18" pivot="0.5,0.5" size="46,46" aspect="true" visible="false" align="center" vAlign="middle" fill="scale">
+      <gearIcon controller="quality" pages="0,1,2,3,4" values="||||"/>
+    </loader>
+    <loader id="n5_oept" name="starBg" xy="2,3" size="76,76" aspect="true" visible="false" align="center" vAlign="middle" fill="scale" clearOnPublish="true">
+      <gearIcon controller="star" pages="0,1,2,3,4,5" values="|||||"/>
+    </loader>
+    <component id="n6_oept" name="icon" src="oepthz9cp0" fileName="components/general_new/main_teamGeneral.xml" xy="19,20" pivot="0.5,0.5" size="42,42" aspect="true" visible="false" pkg="2r331opv"/>
+    <component id="n15_w2ss" name="headicon" src="qy501qp8vdt" fileName="components/general_new/generalIcon1.xml" xy="-10,-5" scale="0.5,0.5"/>
+    <component id="n14_oept" name="state" src="oepthz9cp8" fileName="components/general_new/main_teamStae.xml" xy="43,38" aspect="true" scale="0.5,0.5"/>
+  </displayList>
+</component>

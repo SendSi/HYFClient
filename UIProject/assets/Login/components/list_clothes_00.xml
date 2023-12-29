@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="760,312" overflow="scroll">
+  <displayList>
+    <list id="n0_7oiz" name="list" xy="0,1" size="760,311" layout="flow_hz" margin="-2,0,0,0" lineGap="-11" colGap="-23" defaultItem="ui://byy9k3ghp7811d" autoItemSize="true" renderOrder="descent" foldInvisibleItems="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n0_7oiz" sidePair="height-height"/>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="361,490" designImageOffsetX="-30" designImageOffsetY="-86" designImageLayer="1">
+  <displayList>
+    <component id="n55_o7ah" name="closeBtn" src="9itdhz9cw3" fileName="components/components_new/btn_lbl.xml" pkg="2r331opv" xy="-1865,-1219" size="4142,3038"/>
+    <image id="n8_vp4i" name="arrow" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="346,245" pivot="0.5,0.5" anchor="true" rotation="-90"/>
+    <image id="n7_vp4i" name="n7" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="28,0" size="300,490" group="n9_vp4i"/>
+    <image id="n10_ry4y" name="n10" src="go05ko" fileName="images/location.png" pkg="2r331opv" xy="72,21" pivot="0.5,0.5" size="14,20" group="n9_vp4i" aspect="true" color="#ff6666"/>
+    <text id="n11_ry4y" name="coordinateLbl" xy="89,19" size="183,22" group="n9_vp4i" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#996749" autoSize="none" autoClearText="true" text="X:1065  Y:285"/>
+    <component id="n13_ry4y" name="fog" src="k4g9of" fileName="components/components_new/main_explore2.xml" xy="56,32" group="n9_vp4i"/>
+    <image id="n49_k4g9" name="n49" src="go05ko" fileName="images/location.png" pkg="2r331opv" xy="271,278" pivot="0.5,0.5" size="14,20" group="n9_vp4i" aspect="true" color="#2db4ff"/>
+    <text id="n50_k4g9" name="coordinateLbl2" xy="48,277" size="222,22" group="n9_vp4i" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#996749" align="right" autoSize="none" autoClearText="true" text="X:1065  Y:285"/>
+    <text id="n51_k4g9" name="lbl" xy="57,307" size="242,37" group="n9_vp4i" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#523922" leading="-1" autoSize="none" text="未知的世界笼罩在迷雾之下，快派出斥候来探清其中的谜团吧。"/>
+    <component id="n52_k4g9" name="exploreBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="77,359" size="202,70" group="n9_vp4i">
+      <Button title="探索" titleFontSize="30"/>
+    </component>
+    <component id="n53_k4g9" name="checkBtn" src="m79tco" fileName="components/com_btn_check.xml" pkg="2r331opv" xy="59,438" group="n9_vp4i" scale="0.5,0.5"/>
+    <text id="n54_k4g9" name="checkTitle" xy="86,441" size="214,22" group="n9_vp4i" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#523922" leading="-1" ubb="true" autoSize="none" text="探索结束后在原地驻扎5分钟"/>
+    <group id="n9_vp4i" name="explore" xy="28,0" size="300,492" advanced="true"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1" autoPlayDelay="1"/>
+</component>

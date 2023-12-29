@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="54,7" extention="ProgressBar" designImageOffsetX="-524" designImageOffsetY="-465">
+  <controller name="color" pages="0,,1,,3," selected="0"/>
+  <displayList>
+    <image id="n0_g9ny" name="n0" src="pr6b1qp8ves" fileName="images/images_new/windowBg_new/negative_strip002.png" pkg="2r331opv" xy="0,0" size="54,7">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_g9ny" name="bar" src="pr6b1qp8vet" fileName="images/images_new/windowBg_new/negative_strip07.png" pkg="2r331opv" xy="0,0" size="54,7">
+      <gearDisplay controller="color" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_g9ny" name="bar2" src="pr6b1qp8veu" fileName="images/images_new/windowBg_new/negative_strip08.png" pkg="2r331opv" xy="0,0" size="54,7">
+      <gearDisplay controller="color" pages="1"/>
+      <relation target="n1_g9ny" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n6_xjmv" name="bar3" src="d5681qp8vex" fileName="images/images_new/windowBg_new/negative_strip09.png" pkg="2r331opv" xy="0,0" size="54,7">
+      <gearDisplay controller="color" pages="3"/>
+      <relation target="n1_g9ny" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="452,94" pivot="1,0" overflow="hidden" designImage="ui://4ni413laj4kdhz9cm5" designImageOffsetX="-897" designImageOffsetY="-627">
+  <displayList>
+    <list id="n12_j4kd" name="list" xy="0,0" pivot="1,0" size="452,94" layout="row" overflow="hidden" colGap="-6" defaultItem="ui://4ni413laj4kdhz9cm2" align="right" foldInvisibleItems="true">
+      <item title="英雄" icon="ui://4ni413lalumy1qp8vdc" name="0"/>
+      <item title="联盟" icon="ui://4ni413lalumy1qp8vd7" name="1"/>
+      <item title="背包" icon="ui://4ni413lalumy1qp8vd9" name="2"/>
+      <item title="邮件" icon="ui://4ni413lapqav1qp8ve0" name="3"/>
+      <item title="部队" icon="ui://4ni413lalumy1qp8vda" name="4"/>
+    </list>
+  </displayList>
+</component>

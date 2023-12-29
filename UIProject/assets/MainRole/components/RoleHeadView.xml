@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" designImage="ui://4ni413laj3xs9pn" designImageOffsetX="-311" designImageOffsetY="-81" designImageLayer="1">
+  <controller name="state" pages="0,,1,,13," selected="1">
+    <remark page="0" value="头像已启用"/>
+    <remark page="1" value="条件满足"/>
+    <remark page="2" value="条件不满足"/>
+  </controller>
+  <controller name="tab" pages="0,,1," selected="1">
+    <remark page="0" value="头像"/>
+    <remark page="1" value="头像框"/>
+  </controller>
+  <controller name="label" pages="1,,2,,3,,4," selected="2">
+    <remark page="0" value="蓝"/>
+    <remark page="1" value="紫"/>
+    <remark page="2" value="橙"/>
+    <remark page="3" value="红"/>
+  </controller>
+  <displayList>
+    <component id="n0_j3xs" name="bgBtn" src="gqih1ygcfgk" fileName="panel/com_little_window01.xml" pkg="2r331opv" xy="0,0" group="n26_v3q3">
+      <Button title="头像选择"/>
+    </component>
+    <image id="n8_gqih" name="n8" src="bumchz9d7s" fileName="images/images_new/windowBg_new/negative_bg06.png" pkg="2r331opv" xy="500,156" size="630,492" group="n26_v3q3"/>
+    <image id="n15_gqih" name="n15" src="gww71qp8veb" fileName="images/images_new/decorativePattern.png" pkg="2r331opv" xy="227,159" group="n26_v3q3" alpha="0.6" color="#ff4242"/>
+    <image id="n9_gqih" name="n9" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="542,206" size="546,4" group="n26_v3q3"/>
+    <image id="n17_gqih" name="n17" src="bumchz9d7t" fileName="images/images_new/windowBg_new/negative_bg07.png" pkg="2r331opv" xy="238,579" size="233,50" group="n26_v3q3">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <component id="n5_j3xs" name="btnModify" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="249,566" size="210,78" group="n26_v3q3">
+      <gearDisplay controller="state" pages="1,13"/>
+      <gearLook controller="state" pages="13" values="1,0,1,1" default="1,0,0,1"/>
+      <Button title="使用" titleFontSize="36" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+    <list id="n6_j3xs" name="iconList" xy="531,207" size="852,586" group="n26_v3q3" scale="0.7,0.7" layout="flow_hz" overflow="scroll" lineGap="-12" colGap="-1" lineItemCount="4" defaultItem="ui://2r331opvj3xs9pm">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n7_j3xs" name="conditionLbl_01" xy="216,500" pivot="0.5,0.5" size="278,59" group="n26_v3q3" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" align="center" leading="0" autoSize="none" text="可以通过购买“龙之忍通”&#xD;礼包获得">
+      <gearDisplay controller="state" pages="13"/>
+      <gearColor controller="tab" pages="1" values="#97794f,#000000" default="#50382e,#000000"/>
+    </text>
+    <text id="n25_gqih" name="conditionLbl_02" xy="216,503" pivot="0.5,0.5" size="278,59" group="n26_v3q3" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" align="center" leading="0" autoSize="none" text="执政官的初始头像框">
+      <gearDisplay controller="state" pages="0,1"/>
+      <gearDisplay2 controller="tab" pages="1" condition="0"/>
+    </text>
+    <text id="n10_gqih" name="quantityLbl_01" xy="716,169" pivot="0.5,0.5" size="100,34" group="n26_v3q3" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" singleLine="true" text="已获得：">
+      <relation target="n11_gqih" sidePair="left-left"/>
+    </text>
+    <text id="n11_gqih" name="quantityLbl_02" xy="804,169" pivot="0.5,0.5" size="84,34" group="n26_v3q3" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" text="20/220"/>
+    <component id="n12_gqih" name="tabHeadBtn" src="prcz1qp8vfc" fileName="components/components_new/com_btn_tab04.xml" pkg="2r331opv" xy="8,146" group="n26_v3q3">
+      <Button title="头像" controller="tab" page="0"/>
+    </component>
+    <component id="n13_gqih" name="tabFrameBtn" src="prcz1qp8vfc" fileName="components/components_new/com_btn_tab04.xml" pkg="2r331opv" xy="8,259" group="n26_v3q3">
+      <Button checked="true" title="头像框" controller="tab" page="1"/>
+    </component>
+    <component id="n14_gqih" name="showHead" src="j3xs9pm" fileName="components/components_new/btn_head4.xml" pkg="2r331opv" xy="249,181" group="n26_v3q3"/>
+    <text id="n16_gqih" name="txtCondition01" xy="280,587" pivot="0.5,0.5" size="148,34" group="n26_v3q3" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#599e27" ubb="true" vars="true" text="头像框已启用">
+      <gearDisplay controller="state" pages="0"/>
+      <gearText controller="tab" pages="1" values="头像框已启用" default="头像已启用"/>
+    </text>
+    <image id="n19_gqih" name="label_bg01" src="gqih1ygcfgy" fileName="images/images_new/windowBg_new/negative_bg20.png" pkg="2r331opv" xy="316,397" group="n24_gqih" color="#db6f00">
+      <gearColor controller="label" pages="1,2,3,4" values="#3aa2cf|#a439cb|#db6f00|#ce3b3b"/>
+    </image>
+    <image id="n23_gqih" name="n23" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="229,466" size="252,4" group="n24_gqih"/>
+    <text id="n20_gqih" name="n20" xy="330,398" pivot="0.5,0.5" size="48,32" group="n24_gqih" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" singleLine="true" text="史诗">
+      <gearText controller="label" pages="1,2,4" values="普通|优秀|传奇" default="史诗"/>
+    </text>
+    <text id="n21_gqih" name="title" xy="305,432" pivot="0.5,0.5" size="100,34" group="n24_gqih" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" text="无终旋律"/>
+    <group id="n24_gqih" name="tab_1" xy="229,397" size="252,73" group="n26_v3q3" advanced="true">
+      <gearDisplay controller="tab" pages="1"/>
+    </group>
+    <group id="n26_v3q3" name="n26" xy="0,0" size="1383,793" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

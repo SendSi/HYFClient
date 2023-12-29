@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="28,28" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,攻击,1,详情" selected="0"/>
+  <displayList>
+    <image id="n0_ta9j" name="bg" src="gr021ygcfgz" fileName="images4/activity_icon_attack.png" xy="0,0">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <image id="n1_ta9j" name="bg01" src="gr021ygcfh0" fileName="images4/activity_icon_details.png" xy="0,0">
+      <gearDisplay controller="state" pages="1,3"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

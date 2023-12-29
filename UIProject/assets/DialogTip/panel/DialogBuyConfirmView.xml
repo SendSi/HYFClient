@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImage="ui://mz9og20ld4a6j" designImageOffsetX="-165">
+  <displayList>
+    <component id="n2_ix8t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n21_arx1" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_ix8t" name="window" src="d9gi17" fileName="panel/com_little_window.xml" pkg="2r331opv" xy="267,145" group="n22_arx1">
+      <Button title="购买道具"/>
+    </component>
+    <image id="n25_in8y" name="n25" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="350,229" size="632,330" group="n22_arx1"/>
+    <component id="n23_lyph" name="propIcon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="383,252" group="n22_arx1"/>
+    <text id="n16_d4a6" name="title" xy="506,274" size="353,34" group="n22_arx1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="道具名称"/>
+    <text id="n17_d4a6" name="title2" xy="506,308" size="443,90" group="n22_arx1" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" autoSize="none" autoClearText="true" text="用于提升……"/>
+    <text id="n20_d4a6" name="tips" xy="495,402" size="340,34" group="n22_arx1" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#599e27" align="center" vAlign="middle" autoSize="height" text="执政官，你确定购买此道具吗？"/>
+    <component id="n24_skgw" name="buyBtn" src="d5so1ygcfk6" fileName="components/components_new/com_btn_buy1.xml" pkg="2r331opv" xy="571,495" size="193,72" group="n22_arx1"/>
+    <group id="n22_arx1" name="n22" xy="267,145" size="800,460" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

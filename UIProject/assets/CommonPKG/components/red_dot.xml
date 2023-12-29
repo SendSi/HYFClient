@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,48" pivot="0.5,0.5" anchor="true" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="title" pages="0,no,1,yes" selected="1"/>
+  <displayList>
+    <loader id="n0_dix6" name="icon" xy="25,25" pivot="0.5,0.5" anchor="true" size="66,35" aspect="true" url="ui://2r331opvj4kdz9cp4" align="center" vAlign="middle" fill="scale">
+      <gearSize controller="title" pages="0,1" values="56,30,1,1|66,35,1,1"/>
+      <gearIcon controller="title" pages="1" values="ui://2r331opvj4kdz9cp4" default="ui://2r331opvdix6fj"/>
+      <relation target="n1_dix6" sidePair="width-width,height-height"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n1_dix6" name="title" xy="26,22" pivot="0.5,0.5" anchor="true" size="35,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" letterSpacing="-2" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="99+">
+      <gearDisplay controller="title" pages="1"/>
+      <relation target="n0_dix6" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

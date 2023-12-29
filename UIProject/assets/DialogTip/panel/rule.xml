@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="566,301" overflow="scroll">
+  <displayList>
+    <text id="n21_poaz" name="contentTitle" xy="0,0" size="566,301" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" leading="9" ubb="true" autoSize="none" autoClearText="true" text="1:每种礼包每日限购[color=#e77917]一次[/color]（每日X点刷新）&#xA;2:中断会导致[color=#e77917]超值套餐[/color]恢复原价&#xA;3:购买[color=#e77917]超值套餐[/color]等于买了当天的[color=#e77917]全部[/color]直购礼包&#xA;4:第一挡免费礼包[color=#e77917]每日[/color]刷新">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

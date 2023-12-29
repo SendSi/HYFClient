@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,300">
+  <displayList>
+    <loader id="n9_p781" name="bg" xy="0,0" size="300,300" url="ui://byy9k3ghp7811o" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n8_p781" name="head01" xy="48,48" size="203,203" aspect="true" url="ui://byy9k3ghp7811k" fill="scaleFree"/>
+  </displayList>
+</component>

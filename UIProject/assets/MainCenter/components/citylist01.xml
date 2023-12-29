@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="75,52" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <loader id="n6_nuh7" name="icon" xy="2,7" size="40,40" aspect="true" url="ui://lh4qx1m6kxfyba"/>
+    <text id="n5_nuh7" name="title" xy="35,13" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="本人"/>
+  </displayList>
+  <Button/>
+  <relation target="n5_nuh7" sidePair="rightext-right"/>
+</component>

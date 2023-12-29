@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="452,72" extention="Button" designImageOffsetX="-547" designImageOffsetY="-216">
+  <displayList>
+    <image id="n7_fpkn" name="n7" src="ebe5z9cn2" fileName="images/images_new/line_01.png" pkg="2r331opv" xy="0,67" size="452,4" alpha="0.1" color="#50382e"/>
+    <text id="n5_fz63" name="title" xy="0,12" pivot="0.5,0.5" size="110,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="11分钟"/>
+    <list id="n6_fpkn" name="icon" xy="149,0" size="600,120" scale="0.5,0.5" layout="row" overflow="scroll" scroll="horizontal" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,84">
+  <controller name="select" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n1_h7e5" name="n1" src="vkfrehc" fileName="NewImg/btn/button_small_blue.png" pkg="wzm94w0z" xy="0,0" size="200,84">
+      <gearDisplay controller="select" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_h7e5" name="n2" src="vkfrehc" fileName="NewImg/btn/button_small_blue.png" pkg="wzm94w0z" xy="0,0" size="200,84">
+      <gearDisplay controller="select" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n0_h7e5" name="n0" xy="0,1" size="200,84" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="12341234123412341">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

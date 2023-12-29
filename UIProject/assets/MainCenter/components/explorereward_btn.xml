@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="94,94" pivot="0.5,0.5" extention="Button" designImageOffsetX="-23" designImageOffsetY="-513" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="0">
+    <remark page="0" value="无"/>
+    <remark page="1" value="有"/>
+  </controller>
+  <displayList>
+    <loader id="n3_j4kd" name="icon" xy="0,0" size="94,94" aspect="true" url="ui://4ni413lalumy1qp8vd9" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </loader>
+    <text id="n5_j4kd" name="title" xy="25,32" pivot="0.5,0.5" size="44,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" leading="0" autoClearText="true" text="英雄">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n6_bvce" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="81,19">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Check"/>
+</component>

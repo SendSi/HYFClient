@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="121,170" designImageOffsetX="-183" designImageOffsetY="-173" designImageLayer="1">
+  <displayList>
+    <graph id="n2_cwtb" name="bg" xy="0,0" size="121,170" alpha="0.8" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="n1_oxy0" sidePair="height-height"/>
+    </graph>
+    <list id="n1_oxy0" name="list" xy="0,0" size="121,170" overflow="scroll" lineGap="2" defaultItem="ui://4ni413lacwtb1ygcfga">
+      <relation target="" sidePair="width-width"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n1_oxy0" sidePair="height-height"/>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="156,199" designImageOffsetX="-660" designImageOffsetY="-463">
+  <controller name="state" pages="0,,1,,2," selected="1">
+    <remark page="0" value="建筑"/>
+    <remark page="1" value="技能"/>
+    <remark page="2" value="升级中"/>
+  </controller>
+  <displayList>
+    <loader id="n0_sdtv" name="need_icon_building" xy="-1,-2" pivot="0.5,0.5" size="158,139" touchable="false" url="ui://2r331opvlwxi1ygcfka" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="0,2"/>
+      <relation target="" sidePair="width-width"/>
+    </loader>
+    <component id="n1_sdtv" name="btn_building" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="23,121" size="115,48">
+      <gearDisplay controller="state" pages="0,1"/>
+      <Button title="前往" titleFontSize="22"/>
+    </component>
+    <text id="n2_sdtv" name="lbl_building" xy="1,171" size="156,26" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ff4343" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="等级10城墙"/>
+    <image id="n4_uppn" name="n4" src="itkw1ygcfke" fileName="images/images_new/windowBg_new/bottomframe_01.png" pkg="2r331opv" xy="37,22" size="83,85" group="n5_uppn"/>
+    <loader id="n3_uppn" name="skill" xy="49,38" size="58,58" group="n5_uppn" aspect="true" url="ui://madu8sceiusrz9clx" fill="scale" clearOnPublish="true"/>
+    <group id="n5_uppn" name="n5" xy="37,22" size="83,85" advanced="true">
+      <gearDisplay controller="state" pages="1"/>
+    </group>
+    <component id="n6_8rmp" name="LevelupBtn" src="d9fgfx" fileName="components/LevelUpBtn.xml" xy="15,126">
+      <gearDisplay controller="state" pages="2"/>
+    </component>
+  </displayList>
+</component>

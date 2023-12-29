@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="254,377" opaque="false">
+  <displayList>
+    <image id="n0_qok1" name="n0" src="ukvb1ygcg93" fileName="images4/mainhud_progress012.png" xy="0,0" size="254,377" alpha="0.9" flip="both">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_qok1" name="nameLbl" xy="9,9" size="86,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffe765" autoSize="none" singleLine="true" autoClearText="true" text="伤害排名"/>
+    <image id="n12_ta9j" name="rankinglbl" src="klrg1qp8vd3" fileName="images/images_new/common_lines_9.png" pkg="2r331opv" xy="13,38" size="228,7" alpha="0.4" color="#ffe765"/>
+    <list id="n14_ta9j" name="rankingList" xy="10,48" size="234,265" overflow="scroll" lineGap="2" defaultItem="ui://4ni413lainp01ygcflo" autoClearItems="true">
+      <relation target="" sidePair="center-center"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n17_wvyx" name="focusBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="70,317">
+      <Button title="首领位置"/>
+    </component>
+  </displayList>
+</component>

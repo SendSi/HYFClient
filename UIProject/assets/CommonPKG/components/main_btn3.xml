@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,88" pivot="0.5,0.5" extention="Button">
+  <controller name="red" pages="0,,1," selected="0">
+    <remark page="0" value="无"/>
+    <remark page="1" value="有"/>
+  </controller>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n8_ya6w" name="n8" src="ya6w1ygcgpu" fileName="images/images_new/windowBg_new/welfare_btn_bg28.png" xy="-20,-22" pivot="0.5,0.5" alpha="0.7">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </image>
+    <loader id="n3_j4kd" name="icon" xy="9,10" pivot="0.5,0.5" size="74,74" align="center" vAlign="middle" fill="scale" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n5_j4kd" name="title" xy="41,62" pivot="0.5,0.5" size="10,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" leading="0" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n6_bvce" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="75,17">
+      <gearDisplay controller="red" pages="1"/>
+    </component>
+    <text id="n9_ya6w" name="textLbl" xy="-26,89" pivot="0.5,0.5" size="144,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#76c1ec" align="center" autoClearText="true" text="提升英雄战斗力">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n10_ya6w" name="describeLbl" xy="-16,-49" pivot="0.5,0.5" size="124,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ff9b42" align="center" singleLine="true" autoClearText="true" text="守城经验效率">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="scal">
+    <item time="0" type="Alpha" tween="true" startValue="0.1" endValue="1" duration="6"/>
+    <item time="0" type="Scale" tween="true" startValue="0.5,0.5" endValue="1.2,1.2" duration="6"/>
+    <item time="6" type="Scale" tween="true" startValue="1.2,1.2" endValue="1,1" duration="3"/>
+  </transition>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="144,100" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n3_mbg3" name="title" xy="0,0" size="144,100" fontSize="20" color="#a7acae" align="center" vAlign="middle" ubb="true" autoSize="none" autoClearText="true" text="">
+      <relation target="" sidePair="width-width,height-height,center-center"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

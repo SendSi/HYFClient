@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="98,43" pivot="0.5,0.5" extention="Button">
+  <controller name="select" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n2_vpei" name="bg" pkg="2r331opv" src="w84whz9cxa" fileName="images/images_new/com_btn_bg09.png" xy="0,0" size="99,43">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_ssbd" name="title" xy="2,1" size="92,39" font="ui://2r331opvlwft3" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="全选">
+      <gearColor controller="select" pages="1" values="#ffffff,#000000" default="#ffffff,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

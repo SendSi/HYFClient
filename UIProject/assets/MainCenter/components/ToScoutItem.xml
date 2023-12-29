@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="450,72">
+  <controller name="state" pages="0,,1,,2,,4," selected="0">
+    <remark page="0" value="前往"/>
+    <remark page="1" value="探索"/>
+    <remark page="2" value="未解锁"/>
+    <remark page="3" value="派遣"/>
+  </controller>
+  <controller name="txtCtrl" alias="暂时" pages="0,,1,,2,,3,,5," selected="0">
+    <remark page="0" value="探索中..."/>
+    <remark page="1" value="驻扎中..."/>
+    <remark page="2" value="返回中..."/>
+    <remark page="3" value="待命中..."/>
+    <remark page="4" value="未解锁"/>
+  </controller>
+  <displayList>
+    <image id="n13_t18r" name="n2" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,5" size="448,63" alpha="0.4"/>
+    <component id="n6_9zwe" name="icon" src="mdy2hz9d1i" fileName="components/components_new/explore/toscout_rbtn.xml" xy="-20,-24" scale="0.6,0.6" touchable="false"/>
+    <component id="n9_9zwe" name="tosPbr" src="9zwez9cnc" fileName="components/components_new/explore/ToScoutPbr.xml" xy="76,31" size="240,28">
+      <ProgressBar value="81" max="14"/>
+    </component>
+    <text id="n4_mdy2" name="title" xy="74,6" size="120,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#845744" autoSize="none" singleLine="true" autoClearText="true" text="1号猎鹰"/>
+    <component id="n7_9zwe" name="goBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="327,10" aspect="true">
+      <gearDisplay controller="state" pages="0"/>
+      <Button title="前往"/>
+    </component>
+    <component id="n8_9zwe" name="exploreBtn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="327,10">
+      <gearDisplay controller="state" pages="1,2"/>
+      <gearLook controller="state" pages="2" values="1,0,1,0" default="1,0,0,1"/>
+      <gearText controller="state" pages="1" values="探索" default="未解锁"/>
+      <Button title="未解锁"/>
+    </component>
+    <component id="n10_rjgl" name="explore1Btn" src="dfgw1ygcfmg" fileName="components/components_new/com_btn_0001.xml" pkg="2r331opv" xy="327,10" aspect="true">
+      <gearDisplay controller="state" pages="4"/>
+      <Button title="派遣"/>
+    </component>
+    <text id="n11_hxc3" name="stateLbl" xy="81,29" pivot="0.5,0.5" size="230,32" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="探索中...">
+      <gearText controller="txtCtrl" pages="0,1,2,3,5" values="探索中...|驻扎中...|返回中...|待命中...|"/>
+    </text>
+  </displayList>
+</component>

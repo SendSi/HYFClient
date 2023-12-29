@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="64,62" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4_n1oz" name="n4" src="b2gghz9d6g" fileName="images/images_new/com_btn_bg02.png" xy="0,0" size="64,62"/>
+    <loader id="n2_9495" name="icon" xy="10,10" size="40,40" aspect="true" url="ui://2r331opvn1oz1ygcfob" align="center" vAlign="middle" fill="scaleFree" autoSize="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button sound="ui://2r331opvu9ouh8" downEffect="scale" downEffectValue=".95"/>
+</component>
