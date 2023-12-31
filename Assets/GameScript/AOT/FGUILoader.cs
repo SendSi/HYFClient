@@ -29,12 +29,12 @@ public class FGUILoader : BaseInstance<FGUILoader>
             return;
         }
 
-        CoreUtil.Instance.StartCoroutine(LoadUIPackage(pkgName, () => { finishCB?.Invoke(); }));
+        GameMain.Instance.StartCoroutine(LoadUIPackage(pkgName, () => { finishCB?.Invoke(); }));
     }
 
     public void LoadDependencies(List<string> pkgDeep, Action finishCB)
     {
-        CoreUtil.Instance.StartCoroutine(LoadDependencies_Bundle(pkgDeep, finishCB));
+        GameMain.Instance.StartCoroutine(LoadDependencies_Bundle(pkgDeep, finishCB));
     }
 
     public IEnumerator LoadUIPackage(string pkgName, Action finishCB)
@@ -46,7 +46,7 @@ public class FGUILoader : BaseInstance<FGUILoader>
         var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty,
             (name, extension, type, packageItem) =>
             {
-                CoreUtil.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type, packageItem));
+                GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type, packageItem));
             });
         tUIPackage.LoadAllAssets();
 
@@ -100,11 +100,11 @@ public class FGUILoader : BaseInstance<FGUILoader>
                         var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty,
                             (name, extension, type, packageItem) =>
                             {
-                                CoreUtil.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type,
+                                GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type,
                                     packageItem));
                             });
                         tUIPackage.LoadAllAssets();
-                        
+
                         mLoadedPKG[pkgName] = tUIPackage;
                         Debug.LogWarning("加入_依赖包:" + pkgName);
                     }

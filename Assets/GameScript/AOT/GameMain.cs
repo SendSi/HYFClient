@@ -7,7 +7,6 @@ using YooAsset;
 using System;
 using HybridCLR;
 using System.Linq;
-using System.Timers;
 
 public class GameMain : MonoBehaviour
 {
@@ -16,9 +15,10 @@ public class GameMain : MonoBehaviour
     /// </summary>
     public EPlayMode PlayMode = EPlayMode.HostPlayMode;
 
-
+    public static GameMain Instance;
     void Awake()
     {
+        Instance = this;
         Debug.Log($"资源系统运行模式：{PlayMode}");
         Application.targetFrameRate = 60;
         Application.runInBackground = true;
@@ -27,9 +27,6 @@ public class GameMain : MonoBehaviour
 
     IEnumerator Start()
     {
-        // 游戏管理器
-        // CoreUtil.Instance.Behaviour = this;
-
         // 初始化事件系统
         UniEvent.Initalize();
 
@@ -37,47 +34,35 @@ public class GameMain : MonoBehaviour
         YooAssets.Initialize();
 
         // 加载更新页面
-        // var res = Resources.Load<GameObject>("PatchWindow");
-        // var view = GameObject.Instantiate(res);
-        //todo
         ProxyHotPKGModule.GetInstance().OpenHFView();
-        
 
         // 开始补丁更新流程
-        PatchOperation operation = new PatchOperation("DefaultPackage",
-            EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
+        PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation);
         yield return operation;
 
-        //todo  更新热更代码
-        PatchOperation operation_hotFix = new PatchOperation("HotFixPackage",
-            EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
+        //更新热更代码
+        PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation_hotFix);
         yield return operation_hotFix;
 
-        //todo 加载元数据 和 热更代码
+        //加载元数据 和 热更代码
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssemblies();
-
 
         // 设置默认的资源包
         var gamePackage = YooAssets.GetPackage("DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
 
-        // 切换到主页面场景
-        // SceneEventDefine.ChangeToHomeScene.SendEventMessage();
-
-        //todo 反射调用入口 
+        // 反射调用入口 
         Type uiType = _hotUpdateAss.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
-        
+
         Type entryType = _hotUpdateAss.GetType("FGUIStart");
         entryType.GetMethod("Run").Invoke(null, null);
-        Debug.LogError("反射调用入口 完成");
 
-        FairyGUI.Timers.inst.Add(1,1, (a) =>
+        FairyGUI.Timers.inst.Add(1, 1, (a) =>
         {
-            // Destroy(view);
             ProxyHotPKGModule.GetInstance().CloseHFView();
         });
     }
@@ -126,11 +111,10 @@ public class GameMain : MonoBehaviour
             LoadImageErrorCode err = RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);
             Debug.Log($"LoadMetadataForAOTAssembly:{aotDllName}. mode:{mode} ret:{err}");
         }
-#if !UNITY_EDITOR
-         _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll.bytes"));
+#if UNITY_EDITOR
+        _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
 #else
-        // Editor下无需加载，直接查找获得HotUpdate程序集
-        _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate");
+        _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll.bytes"));
 #endif
     }
 
