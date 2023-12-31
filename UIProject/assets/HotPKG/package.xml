@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="lq16fm3b">
+  <resources>
+    <component id="swm21ygcga0" name="HFView.xml" path="/panel/" exported="true"/>
+    <image id="swm21" name="strip01.png" path="/image/" exported="true" scale="9grid" scale9grid="17,15,4,3"/>
+    <image id="swm22" name="strip02.png" path="/image/" exported="true" scale="9grid" scale9grid="15,15,9,3"/>
+    <component id="swm23" name="hotProgress.xml" path="/component/"/>
+    <component id="pf2g1ygcga1" name="btnYes.xml" path="/component/"/>
+  </resources>
+  <publish name="" path="../Assets/Resources" packageCount="2" genCode="true" codePath="../Assets/GameScript/AOT/UIGen"/>
+</packageDescription>

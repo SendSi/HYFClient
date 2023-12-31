@@ -7,6 +7,7 @@ using YooAsset;
 using System;
 using HybridCLR;
 using System.Linq;
+using System.Timers;
 
 public class GameMain : MonoBehaviour
 {
@@ -36,8 +37,11 @@ public class GameMain : MonoBehaviour
         YooAssets.Initialize();
 
         // 加载更新页面
-        var go = Resources.Load<GameObject>("PatchWindow");
-        var goo = GameObject.Instantiate(go);
+        // var res = Resources.Load<GameObject>("PatchWindow");
+        // var view = GameObject.Instantiate(res);
+        //todo
+        ProxyHotPKGModule.GetInstance().OpenHFView();
+        
 
         // 开始补丁更新流程
         PatchOperation operation = new PatchOperation("DefaultPackage",
@@ -71,7 +75,11 @@ public class GameMain : MonoBehaviour
         entryType.GetMethod("Run").Invoke(null, null);
         Debug.LogError("反射调用入口 完成");
 
-        Destroy(goo);
+        FairyGUI.Timers.inst.Add(1,1, (a) =>
+        {
+            // Destroy(view);
+            ProxyHotPKGModule.GetInstance().CloseHFView();
+        });
     }
 
     private IEnumerator LoadHotFixRes()

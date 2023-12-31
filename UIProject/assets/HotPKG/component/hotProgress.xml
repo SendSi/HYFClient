@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="900,40" extention="ProgressBar">
+  <displayList>
+    <image id="n0_swm2" name="n0" src="swm21" fileName="image/strip01.png" xy="0,0" size="900,40">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_swm2" name="bar" src="swm22" fileName="image/strip02.png" xy="0,0" size="900,32"/>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

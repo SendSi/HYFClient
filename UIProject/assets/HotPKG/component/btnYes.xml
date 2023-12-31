@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <graph id="n0_pf2g" name="n0" xy="0,0" size="300,100" touchable="false" type="rect" lineSize="0" lineColor="#ff009900" fillColor="#ffcc3300">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3_pf2g" name="title" xy="0,0" size="300,100" fontSize="40" align="center" vAlign="middle" autoSize="none" singleLine="true" text="文本">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>
