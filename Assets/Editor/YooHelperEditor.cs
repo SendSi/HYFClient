@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using YooAsset.Editor;
 
 //对yooAsset不熟 先手动写死吧
 public class YooHelperEditor : MonoBehaviour
@@ -40,12 +41,13 @@ public class YooHelperEditor : MonoBehaviour
         {
             Directory.CreateDirectory(targetPath); //先删除  再copy
         }
+
         var formRoot = $"{YooAsset.Editor.AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()}/{UnityEditor.EditorUserBuildSettings.activeBuildTarget}";
-        var soreceList = new List<string>()
+        var soreceList = new List<string>();
+        foreach (var item in AssetBundleCollectorSettingData.Setting.Packages)
         {
-            $"{formRoot}/DefaultPackage/{AppConfig.resVersion}",
-            $"{formRoot}/HotFixPackage/{AppConfig.resVersion}"
-        };
+            soreceList.Add($"{formRoot}/{item.PackageName}/{AppConfig.resVersion}");
+        }
 
         for (int i = 0; i < soreceList.Count; i++)
         {
@@ -53,9 +55,10 @@ public class YooHelperEditor : MonoBehaviour
             {
                 string fileName = Path.GetFileName(filePath);
                 string destinationPath = Path.Combine(targetPath, fileName);
-                File.Copy(filePath, destinationPath, true);   // 如果目标文件已经存在，覆盖
+                File.Copy(filePath, destinationPath, true); // 如果目标文件已经存在，覆盖
             }
         }
+        
 
         AssetDatabase.Refresh();
         Debug.Log("无报错 则成功");
