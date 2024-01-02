@@ -1,6 +1,9 @@
 using System.Collections.Generic;
-using System.IO;
 using Newtonsoft.Json;
+using UnityEngine;
+using YooAsset;
+
+
 //导表工具 默认使用字典模式     不使用array
 //真正apk 到时应该把其打成ab包的  再看看怎么加载吧
 public class ConfigMgr : BaseInstance<ConfigMgr>
@@ -26,7 +29,7 @@ public class ConfigMgr : BaseInstance<ConfigMgr>
     }
 
 
-    private const string editorPath = "Assets/Config/json/{0}.json"; //开发时用的路径
+
     private Dictionary<string, string> _dicTabString = new Dictionary<string, string>();
 
     /// <summary> 取出字典的jsonString </summary>
@@ -40,7 +43,9 @@ public class ConfigMgr : BaseInstance<ConfigMgr>
         }
         else
         {
-            jsonStr = File.ReadAllText(string.Format(editorPath, name));
+            var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+            var handle = assetPackage.LoadAssetSync(name);
+            jsonStr = handle.AssetObject.ToString();
             _dicTabString[name] = jsonStr;
             return jsonStr;
         }

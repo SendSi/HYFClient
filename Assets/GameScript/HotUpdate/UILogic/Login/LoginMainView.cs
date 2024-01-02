@@ -81,12 +81,13 @@ namespace Login
             if (infos.TryGetValue("2", out config))
             {
                 Debug.LogError(config.name + "  " + config.iconDesecribe);
+                ProxyCommonPKGModule.GetInstance().AddToastStr($"load config dicTable {config.name}   {config.iconDesecribe}");
             }
-
-            var config2 = ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>("1");
-            if (config2 != null)
+            var oneItem = ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>("404801");
+            if (oneItem != null)
             {
-                Debug.LogError(config2.name + "  " + config2.iconDesecribe);
+                Debug.LogError(oneItem.name + "  " + oneItem.iconDesecribe);
+                ProxyCommonPKGModule.GetInstance().AddToastStr($"load config oneLineCfg {oneItem.name}   {oneItem.iconDesecribe}");
             }
         }
 

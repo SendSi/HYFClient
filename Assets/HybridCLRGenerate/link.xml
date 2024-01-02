@@ -126,7 +126,6 @@
     <type fullname="System.Enum" preserve="all" />
     <type fullname="System.Exception" preserve="all" />
     <type fullname="System.IDisposable" preserve="all" />
-    <type fullname="System.IO.File" preserve="all" />
     <type fullname="System.Int32" preserve="all" />
     <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Object" preserve="all" />
