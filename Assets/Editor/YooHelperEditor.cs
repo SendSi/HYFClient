@@ -61,6 +61,8 @@ public class YooHelperEditor : MonoBehaviour
         
 
         AssetDatabase.Refresh();
-        Debug.Log("无报错 则成功");
+        Debug.Log("无报错 则成功      http-server --port 80 -b --cors       已copy");
+        GUIUtility.systemCopyBuffer = "http-server --port 80 -b --cors";
+        System.Diagnostics.Process.Start(AppConfig.localCDN.Replace("CDN",""));
     }
 }

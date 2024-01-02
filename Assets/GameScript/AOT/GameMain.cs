@@ -46,7 +46,10 @@ public class GameMain : MonoBehaviour
         Type entryType = _hotUpdateAss.GetType("FGUIStart");
         entryType.GetMethod("Run").Invoke(null, null);
         
-        ProxyHotPKGModule.GetInstance().CloseHFView();//移除
+        FairyGUI.Timers.inst.Add(1,1, obj =>
+        {
+            ProxyHotPKGModule.GetInstance().CloseHFView();//移除
+        });
     }
 
     //加载热更页面
