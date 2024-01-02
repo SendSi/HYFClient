@@ -10,12 +10,11 @@ using System.Linq;
 
 public class GameMain : MonoBehaviour
 {
-    /// <summary>
-    /// 资源系统运行模式
-    /// </summary>
+    /// <summary> 资源系统运行模式 </summary>
     public EPlayMode PlayMode = EPlayMode.HostPlayMode;
 
     public static GameMain Instance;
+
     void Awake()
     {
         Instance = this;
@@ -29,42 +28,59 @@ public class GameMain : MonoBehaviour
     {
         // 初始化事件系统
         UniEvent.Initalize();
-
         // 初始化资源系统
         YooAssets.Initialize();
 
-        // 加载更新页面
-        ProxyHotPKGModule.GetInstance().OpenHFView();
-
-        // 开始补丁更新流程
-        PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
-        YooAssets.StartOperation(operation);
-        yield return operation;
-
-        //更新热更代码
-        PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
-        YooAssets.StartOperation(operation_hotFix);
-        yield return operation_hotFix;
-
-        //加载元数据 和 热更代码
-        yield return LoadHotFixRes();
-        LoadMetadataForAOTAssemblies();
-
-        // 设置默认的资源包
-        var gamePackage = YooAssets.GetPackage("DefaultPackage");
-        YooAssets.SetDefaultPackage(gamePackage);
+#if UNITY_EDITOR
+        yield return CheckSkipHFView();//跳过 热更页面    开发时  就是要快一点见到页面
+#else
+        yield return CheckLoadYooHF();
+#endif
+        
+        // yield return CheckLoadYooHF();//UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
 
         // 反射调用入口 
         Type uiType = _hotUpdateAss.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
-
+        
         Type entryType = _hotUpdateAss.GetType("FGUIStart");
         entryType.GetMethod("Run").Invoke(null, null);
+        
+        ProxyHotPKGModule.GetInstance().CloseHFView();//移除
+    }
 
-        FairyGUI.Timers.inst.Add(1, 1, (a) =>
-        {
-            ProxyHotPKGModule.GetInstance().CloseHFView();
-        });
+    //加载热更页面
+    private IEnumerator CheckLoadYooHF()
+    {
+        // 加载更新页面
+        ProxyHotPKGModule.GetInstance().OpenHFView();
+        // 开始补丁更新流程
+        PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
+        YooAssets.StartOperation(operation);
+        yield return operation;
+        //更新热更代码
+        PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
+        YooAssets.StartOperation(operation_hotFix);
+        yield return operation_hotFix;
+        
+        //加载元数据 和 热更代码
+        yield return LoadHotFixRes();
+        LoadMetadataForAOTAssemblies();
+        
+        var gamePackage = YooAssets.GetPackage("DefaultPackage");
+        YooAssets.SetDefaultPackage(gamePackage);
+    }
+
+    //跳过热更页面
+    private IEnumerator CheckSkipHFView()
+    {
+        var package = YooAssets.CreatePackage("DefaultPackage");
+        YooAssets.SetDefaultPackage(package);
+        var createParameters = new EditorSimulateModeParameters();
+        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild( EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage");
+        var initializationOperation = package.InitializeAsync(createParameters);
+        yield return initializationOperation;
+        _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
     }
 
     private IEnumerator LoadHotFixRes()
@@ -102,7 +118,6 @@ public class GameMain : MonoBehaviour
     {
         /// 注意，补充元数据是给AOT dll补充元数据，而不是给热更新dll补充元数据。
         /// 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
-        /// 
         HomologousImageMode mode = HomologousImageMode.SuperSet;
         foreach (var aotDllName in AOTMetaAssemblyFiles)
         {
