@@ -16,11 +16,12 @@ public class FGUILoader : BaseInstance<FGUILoader>
     };
 
 
-    /// <summary> 已load出来的 package </summary>
+    /// <summary> 已load出来的 fgui的package </summary>
     private Dictionary<string, UIPackage> mLoadedPKG = new Dictionary<string, UIPackage>();
+    /// <summary> 已load出来的 yooAsset的package </summary>
+    private Dictionary<string, AssetHandle> mLoadedHandle = new Dictionary<string, AssetHandle>();
 
-
-    public void AddPackage(string pkgName, Action finishCB) //
+    public void AddPackage(string pkgName, Action finishCB)
     {
         UIPackage pkgED = null;
         if (mLoadedPKG.TryGetValue(pkgName, out pkgED))
@@ -32,10 +33,6 @@ public class FGUILoader : BaseInstance<FGUILoader>
         GameMain.Instance.StartCoroutine(LoadUIPackage(pkgName, () => { finishCB?.Invoke(); }));
     }
 
-    public void LoadDependencies(List<string> pkgDeep, Action finishCB)
-    {
-        GameMain.Instance.StartCoroutine(LoadDependencies_Bundle(pkgDeep, finishCB));
-    }
 
     public IEnumerator LoadUIPackage(string pkgName, Action finishCB)
     {
@@ -51,13 +48,13 @@ public class FGUILoader : BaseInstance<FGUILoader>
         tUIPackage.LoadAllAssets();
 
         mLoadedPKG[pkgName] = tUIPackage; //加入字典
+        mLoadedHandle[pkgName] = handle;
         Debug.LogWarning("加入_业务包:" + pkgName);
-        var pkgDeep = GetDependencies(tUIPackage);
-        LoadDependencies(pkgDeep, () => { finishCB?.Invoke(); });
+        var pkgDeep = GetDependencies(tUIPackage);//获得  此包的 依赖包   名字s
+        GameMain.Instance.StartCoroutine(LoadDependencies(pkgDeep, finishCB));//加载依赖包
     }
 
-    private IEnumerator LoadUIExtensions(string package, string name, string extension, Type type,
-        PackageItem packageItem)
+    private IEnumerator LoadUIExtensions(string package, string name, string extension, Type type, PackageItem packageItem)
     {
         var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
         var targetObj = assetPackage.LoadAssetAsync($"{package}_{name}");
@@ -66,7 +63,7 @@ public class FGUILoader : BaseInstance<FGUILoader>
     }
 
 
-    /// <summary>  此包的 依赖包</summary>
+    /// <summary>获得  此包的 依赖包   名字s</summary>
     private List<string> GetDependencies(UIPackage pkgName)
     {
         var tDependencies = pkgName.dependencies;
@@ -80,8 +77,8 @@ public class FGUILoader : BaseInstance<FGUILoader>
         return list;
     }
 
-
-    private IEnumerator LoadDependencies_Bundle(List<string> pkgDeep, Action loaded)
+    /// <summary> 加载依赖包 </summary>
+    private IEnumerator LoadDependencies(List<string> pkgDeep, Action loaded)
     {
         var num = pkgDeep.Count;
         if (num > 0)
@@ -106,6 +103,7 @@ public class FGUILoader : BaseInstance<FGUILoader>
                         tUIPackage.LoadAllAssets();
 
                         mLoadedPKG[pkgName] = tUIPackage;
+                        mLoadedHandle[pkgName] = handle;
                         Debug.LogWarning("加入_依赖包:" + pkgName);
                     }
                     else
@@ -132,6 +130,7 @@ public class FGUILoader : BaseInstance<FGUILoader>
             {
                 UIPackage.RemovePackage(pkgName);
                 mLoadedPKG.Remove(pkgName);
+                mLoadedHandle[pkgName].Release();
                 Debug.LogWarning("移除包: " + pkgName + ",          后续加个定时器?多少秒内再不用 就真RemovePackage吧");
             }
         }
