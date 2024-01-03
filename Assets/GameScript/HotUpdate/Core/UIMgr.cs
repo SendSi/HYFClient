@@ -1,22 +1,15 @@
 using FairyGUI;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
-public class UIMgr
+public class UIMgr : BaseInstance<UIMgr>
 {
-    private static UIMgr _instance;
-
-    public static UIMgr GetInstance()
+    public override void OnInit()
     {
-        if (_instance == null)
-        {
-            GRoot.inst.SetContentScaleFactor(1334, 750, UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
-            _instance = new UIMgr();
-        }
-
-        return _instance;
+        base.OnInit();
+        GRoot.inst.SetContentScaleFactor(1334, 750, UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
     }
+
 
     /// <summary> key-viewNameStr,,,,value-GComponent </summary>
     private Dictionary<string, GComponent> mShoGCompDic = new Dictionary<string, GComponent>();

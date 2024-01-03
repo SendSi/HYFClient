@@ -37,17 +37,17 @@ public class BagManager : BaseInstance<BagManager>
 
     public List<ItemDto> GetBagViewListItem()
     {
-        List<ItemDto> sortItem = new List<ItemDto>();
+        List<ItemDto> sortDtos = new List<ItemDto>();
         foreach (var item in mServerDtos)
         {
             var cfg = ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>(item.cfgId.ToString());
             if (cfg != null && cfg.type > 1)
             {
-                sortItem.Add(item);
+                sortDtos.Add(item);
             }
         }
 
-        return sortItem;
+        return sortDtos;
     }
 }
 

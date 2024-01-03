@@ -1,11 +1,9 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using UnityEngine;
 using YooAsset;
 
 
 //导表工具 默认使用字典模式     不使用array
-//真正apk 到时应该把其打成ab包的  再看看怎么加载吧
 public class ConfigMgr : BaseInstance<ConfigMgr>
 {
     /// <summary> T是表类型    返回整个导表</summary>

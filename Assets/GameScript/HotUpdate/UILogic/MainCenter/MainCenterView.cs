@@ -47,7 +47,7 @@ namespace MainCenter
             Debug.LogWarning("调用 Dispose MainCenterView");
             EventCenter.GetInstance().UnBind<string>(EventEnum.EE_test,OnEventTest);
             EventCenter.GetInstance().UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
-            // EventSystem.Instance.Remove<string>(MainCenterEvents.Test1, OnEventTest1);
+
         }
 
 

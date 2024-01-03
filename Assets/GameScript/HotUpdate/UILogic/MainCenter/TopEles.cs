@@ -1,5 +1,4 @@
 using FairyGUI;
-// using Framework;
 using UnityEngine;
 
 namespace MainCenter
@@ -12,7 +11,6 @@ namespace MainCenter
             _mainPlayerBtn.onClick.Set(OnClickMainPlayerBtn);
 
             EventCenter.GetInstance().Bind<string>(EventEnum.EE_test, OnEventTest);
-            // EventSystem.Instance.Add<string>(MainCenterEvents.Test1, OnEventTest1);
         }
 
         private void OnEventTest(string arg0)
@@ -34,7 +32,6 @@ namespace MainCenter
         {
             base.Dispose();
             EventCenter.GetInstance().UnBind<string>(EventEnum.EE_test, OnEventTest);
-            // EventSystem.Instance.Remove<string>(MainCenterEvents.Test1, OnEventTest1);
         }
     }
 }

@@ -1,22 +1,27 @@
-# HYFClient_学习哦
 yooAsset学习_hybridCLR学习_fairyGUI学习
 
-## https://hybridclr.doc.code-philosophy.com/docs/beginner/quickstart 官方文档
+#### https://hybridclr.doc.code-philosophy.com/docs/beginner/quickstart 官方文档
+#### https://www.yooasset.com/docs/guide-editor/QuickStart  官方文档
+#### https://fairygui.com/docs/editor 官方文档 
+#### https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习
+#### https://www.bilibili.com/video/BV1G5411z7d1/?spm_id_from=333.999.0.0  自己录的视频记录
 
-## https://www.yooasset.com/docs/guide-editor/QuickStart  官方文档
 
-## https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看B站视频学习
+##### AOT目录下的脚本是不能热更的
+##### Init场景挂了GameMain.cs脚本 若要在UnityEditor下测试CDN更新流程,看Start()方法,有注解的
+##### 菜单栏HybridCLR YooAsset添加了copy 打包时 可能使其精准copy
+##### AppConfig.lua 有打包的参数
+##### 导表,在根目录的Excel与excel2json_tool,使用导出DictObject类型的json文件,使用var cfg=ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>("id");取得一行数据
 
-### A.看官方文档
-### B.代码分离
-	1.增加AOT文件夹.AssemblyDefinition.引用程序集.YooAsset.UniFramework._,HyBridCLR.Runtime,,,增加脚本CoreUtil.cs.增加单例.把原PatchLogic.StreamingAssetsHelper....等引用拖到AOT中来Boot也要拖在AOT中去
-	2.其余就作为HotUpdate咯.增加HotUpdate.AssemblyDefinition 引用程序集*
-	3.解决各报错
-	4.Boot_FGUI.cs增加代码,把AOT代码加入
-	5.增加GameResHotFix热更的dll.bytes文件夹.
-	6.YooAsset新建一个包
-### C.HybridCLR生成All与目标平台.把 AOTGenericReferences.cs指示中的dll copy到此文件夹.源文件在 HybridCLRData\AssembliesPostIl2CppStrip\StandaloneWindows64 目标文件是GameResHotFix 
-### D.YooAsset打出资源		
+##### UI模块
+	一个包 对应 一个UI模块 
+	目录结构 (eg:ProxyAAAModule  AAAManager  可以有n个页面  n个弹窗win  要在UIGenBinder.cs绑定下模块)
+    ProxyAAAModule  添加CheckLoad方法下,打开(页面弹窗)都需检测下
 
-### E.拼通了fairyGUI(fgui)
-### F.cdn服务器暂用 node.js与git右键的(git bash Here)    http-server --port 80 -b --cors     注意80端口 代码(GetHostServerURL())
+    页面.脚本默认起成Fgui的名字的部分类,继承GComponent-->public partial class *A*:GComponent
+        打开UIMgr.GetInstance().OpenUIViewCom<*A*>(pkgName)
+        关闭UIMgr.GetInstance().CloseUIViewCom<*A**>();
+
+    弹窗.脚本默认起成Fgui名字的Win,继承Window-->public class *A*Win:Window  
+        打开UIMgr.GetInstance().OpenWindow<*A*>()
+        关闭UIMgr.GetInstance().CloseWindow<*A*>();
