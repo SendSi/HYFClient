@@ -2,7 +2,6 @@
 using CommonPKG;
 using FairyGUI;
 using UnityEngine;
-using CommonPKG;
 
 namespace Bag
 {
@@ -10,6 +9,8 @@ namespace Bag
     {
         private List<ItemDto> mPropDtos;
         private ItemDto mSelectItemDto;
+        private GList mCurrencyList_UI;
+        private List<int> mCurrencyIds = new List<int>() { 1, 2, 5 };
 
         public override void OnInit()
         {
@@ -26,11 +27,20 @@ namespace Bag
             {
                 _propList.numItems = mPropDtos.Count;
                 _hasDataCtrl.selectedIndex = 0;
+                _propList.selectedIndex = 0;
             }
             else
             {
                 _hasDataCtrl.selectedIndex = 1;
             }
+
+            mCurrencyList_UI = _currencyList.GetChild("currencyList").asList;
+            mCurrencyList_UI.itemRenderer = (index, obj) =>
+            {
+                Item_Currency item = (Item_Currency)obj;
+                item.SetData(mCurrencyIds[index]);
+            };
+            mCurrencyList_UI.numItems = 3;
         }
 
         private void OnClickItemPropList(EventContext context)
@@ -48,7 +58,7 @@ namespace Bag
         {
             ComItem_bag item = (ComItem_bag)obj;
             item.SetData(mPropDtos[index]);
-            if (index == 0)
+            if (index == 0 && mSelectItemDto != null) //首次打开页面 无值时 给其赋个值
             {
                 mSelectItemDto = mPropDtos[index];
                 ShowRightInfo();
@@ -85,6 +95,8 @@ namespace Bag
         public override void Dispose()
         {
             base.Dispose();
+            mSelectItemDto = null;
+            mCurrencyList_UI = null;
             EventCenter.GetInstance().UnBind<string>(EventEnum.EE_test, OnEventTest);
         }
     }

@@ -15,6 +15,7 @@ namespace Login
         public override void OnInit()
         {
             base.OnInit();
+            FGUILoader.GetInstance().CheckLoadComPKG();//加载公共依赖包
 
             _loginBtn.onClick.Set(OnClickLoginEnter);
 

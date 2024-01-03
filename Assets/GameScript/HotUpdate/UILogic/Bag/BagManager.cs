@@ -8,7 +8,8 @@ public class BagManager : BaseInstance<BagManager>
         new ItemDto(1, 2, "ab6c"),
         new ItemDto(2, 22, "abc"),
         new ItemDto(3, 32, "a6bc"),
-        new ItemDto(4, 32, "a6bc"),
+        new ItemDto(5, 99, "a6gsdbc"),
+        new ItemDto(5, 32, "a6bc"),
         new ItemDto(58, 32, "a6bc"),
         new ItemDto(59, 32, "a6bc"),
         new ItemDto(2401, 72, "abc"),
@@ -22,7 +23,16 @@ public class BagManager : BaseInstance<BagManager>
 
     public int GetServerItemSum(int cfgId)
     {
-        return 0;
+        var sumT = 0;
+        foreach (var item in mServerDtos)
+        {
+            if (item.cfgId==cfgId)
+            {
+                sumT += item.sum;
+            }
+        }
+
+        return sumT;
     }
 
     public List<ItemDto> GetBagViewListItem()

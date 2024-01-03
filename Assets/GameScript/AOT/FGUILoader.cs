@@ -7,7 +7,7 @@ using YooAsset;
 
 public class FGUILoader : BaseInstance<FGUILoader>
 {
-    /// <summary> 常驻包 不移除销毁的 </summary>
+    /// <summary> 常驻包 不移除销毁的  依赖公共包 </summary>
     private readonly Dictionary<string, bool> mForeverPKG = new Dictionary<string, bool>()
     {
         ["CommonPKG"] = true,
@@ -118,7 +118,7 @@ public class FGUILoader : BaseInstance<FGUILoader>
                 }
 
                 if (i + 1 == num)
-                    loaded.Invoke();
+                    loaded?.Invoke();
             }
         }
         else
@@ -141,6 +141,18 @@ public class FGUILoader : BaseInstance<FGUILoader>
                 Debug.LogWarning("移除包: " + pkgName + ",          后续加个定时器?多少秒内再不用 就真RemovePackage吧");
             }
         }
+    }
+
+
+    //把公共包 都先load出来   之后使用ui://包名/图片名  就能正常了
+    public void CheckLoadComPKG()
+    {
+        var list = new List<string>();
+        foreach (var item in mForeverPKG)
+        {
+           list.Add(item.Key);
+        }
+        GameMain.Instance.StartCoroutine(LoadDependencies(list, null)); //加载 依赖公共包
     }
 
 
