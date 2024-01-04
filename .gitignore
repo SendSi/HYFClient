@@ -53,6 +53,7 @@ HybridCLRData/
 exe/
 yoo/
 Bundles/
+Toolkit/CSFiles/
 
 # Unity3D generated meta files
 *.pidb.meta
