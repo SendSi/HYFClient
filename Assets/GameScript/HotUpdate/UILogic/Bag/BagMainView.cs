@@ -17,12 +17,12 @@ namespace Bag
             base.OnInit();
 
             _closeButton.onClick.Set(OnClickCloseMainView);
-            EventCenter.GetInstance().Bind<string>(EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.Bind<string>(EventEnum.EE_test, OnEventTest);
 
             _propList.itemRenderer = OnRenderPropList;
             _propList.onClickItem.Add(OnClickItemPropList);
             _propList.SetVirtual();
-            mPropDtos = BagManager.GetInstance().GetBagViewListItem();
+            mPropDtos = BagManager.Instance.GetBagViewListItem();
             if (mPropDtos.Count > 0)
             {
                 _propList.numItems = mPropDtos.Count;
@@ -71,7 +71,7 @@ namespace Bag
             {
                 var rightIcon = (ComItem_bag)_iconProp;
                 rightIcon.SetData(mSelectItemDto);
-                var cfg = ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>(mSelectItemDto.cfgId.ToString());
+                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.cfgId.ToString());
                 _titlePropTxt.text = cfg.name;
                 _descTxt.text = cfg.iconDesecribe;
                 _hasTxt.text = mSelectItemDto.sum.ToString();
@@ -85,7 +85,7 @@ namespace Bag
 
         private void OnClickCloseMainView()
         {
-            ProxyBagModule.GetInstance().CloseBagMainView();
+            ProxyBagModule.Instance.CloseBagMainView();
         }
 
         public void SetData()
@@ -97,7 +97,7 @@ namespace Bag
             base.Dispose();
             mSelectItemDto = null;
             mCurrencyList_UI = null;
-            EventCenter.GetInstance().UnBind<string>(EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.UnBind<string>(EventEnum.EE_test, OnEventTest);
         }
     }
 }

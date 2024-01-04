@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEngine;
 using YooAsset;
 
-public class FGUILoader : BaseInstance<FGUILoader>
+public class FGUILoader : Singleton<FGUILoader>
 {
     private int mReleaseTime = 20; //当无引用时 多少秒后 释放
     private int mCurTimeNum = 0; //当前运行的时间

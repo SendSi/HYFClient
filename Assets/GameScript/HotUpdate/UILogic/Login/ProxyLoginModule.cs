@@ -1,12 +1,12 @@
 using System;
 using Login;
 
-public class ProxyLoginModule : BaseInstance<ProxyLoginModule>,IProxy
+public class ProxyLoginModule : Singleton<ProxyLoginModule>,IProxy
 {
     private const string pkgName = "Login";
     public void CheckLoad(Action finishCB)
     {
-        FGUILoader.GetInstance().AddPackage(pkgName, finishCB);
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 
 
@@ -14,14 +14,14 @@ public class ProxyLoginModule : BaseInstance<ProxyLoginModule>,IProxy
     {
         CheckLoad(() =>
         {
-            var targetView = UIMgr.GetInstance().OpenUIViewCom<LoginMainView>("Login");
+            var targetView = UIMgr.Instance.OpenUIViewCom<LoginMainView>("Login");
             targetView.SetData("打开页面数据传递");
         });
     }
 
     public void CloseLoginMainView()
     {
-        UIMgr.GetInstance().CloseUIViewCom<LoginMainView>();
+        UIMgr.Instance.CloseUIViewCom<LoginMainView>();
     }
 
 
@@ -30,12 +30,12 @@ public class ProxyLoginModule : BaseInstance<ProxyLoginModule>,IProxy
 
     public void OpenGameAgeViewWin()
     {
-        CheckLoad(() => { UIMgr.GetInstance().OpenWindow<GameAgeViewWin>(); });
+        CheckLoad(() => { UIMgr.Instance.OpenWindow<GameAgeViewWin>(); });
     }
 
     public void CloseGameAgeViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<GameAgeViewWin>();
+        UIMgr.Instance.CloseWindow<GameAgeViewWin>();
     }
 
     #endregion
@@ -44,12 +44,12 @@ public class ProxyLoginModule : BaseInstance<ProxyLoginModule>,IProxy
 
     public void OpenGameNoticeViewWin()
     {
-        CheckLoad(() => { UIMgr.GetInstance().OpenWindow<GameNoticeViewWin>(); });
+        CheckLoad(() => { UIMgr.Instance.OpenWindow<GameNoticeViewWin>(); });
     }
 
     public void CloseGameNoticeViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<GameNoticeViewWin>();
+        UIMgr.Instance.CloseWindow<GameNoticeViewWin>();
     }
 
     #endregion
@@ -58,12 +58,12 @@ public class ProxyLoginModule : BaseInstance<ProxyLoginModule>,IProxy
 
     public void OpenServerListDetailViewWin()
     {
-        CheckLoad(() => { UIMgr.GetInstance().OpenWindow<ServerListDetailViewWin>(); });
+        CheckLoad(() => { UIMgr.Instance.OpenWindow<ServerListDetailViewWin>(); });
     }
 
     public void CloseServerListDetailViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<ServerListDetailViewWin>();
+        UIMgr.Instance.CloseWindow<ServerListDetailViewWin>();
     }
 
     #endregion
@@ -72,12 +72,12 @@ public class ProxyLoginModule : BaseInstance<ProxyLoginModule>,IProxy
 
     public void OpenServerListRemoteViewWin()
     {
-        CheckLoad(() => { UIMgr.GetInstance().OpenWindow<ServerListRemoteViewWin>(); });
+        CheckLoad(() => { UIMgr.Instance.OpenWindow<ServerListRemoteViewWin>(); });
     }
 
     public void CloseServerListRemoteViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<ServerListRemoteViewWin>();
+        UIMgr.Instance.CloseWindow<ServerListRemoteViewWin>();
     }
 
     #endregion

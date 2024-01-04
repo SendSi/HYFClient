@@ -14,8 +14,8 @@ namespace MainCenter
 
             InitEles();
 
-            EventCenter.GetInstance().Bind<string>(EventEnum.EE_test,OnEventTest);
-            EventCenter.GetInstance().Bind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
+            EventCenter.Instance.Bind<string>(EventEnum.EE_test,OnEventTest);
+            EventCenter.Instance.Bind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
        }
 
         private void OnEventLoginIn(int arg0)
@@ -36,8 +36,8 @@ namespace MainCenter
 
         private void OnClickQuit()
         {
-            ProxyLoginModule.GetInstance().OpenLoginMainView();
-            ProxyMainCenterModule.GetInstance().CloseMainCenterView();
+            ProxyLoginModule.Instance.OpenLoginMainView();
+            ProxyMainCenterModule.Instance.CloseMainCenterView();
         }
 
         public override void Dispose()
@@ -45,8 +45,8 @@ namespace MainCenter
             base.Dispose();
             DisposeEles();
             Debug.LogWarning("调用 Dispose MainCenterView");
-            EventCenter.GetInstance().UnBind<string>(EventEnum.EE_test,OnEventTest);
-            EventCenter.GetInstance().UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
+            EventCenter.Instance.UnBind<string>(EventEnum.EE_test,OnEventTest);
+            EventCenter.Instance.UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
 
         }
 

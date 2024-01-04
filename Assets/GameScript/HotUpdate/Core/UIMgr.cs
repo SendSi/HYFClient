@@ -2,7 +2,7 @@ using FairyGUI;
 using System.Collections.Generic;
 using System.Linq;
 
-public class UIMgr : BaseInstance<UIMgr>
+public class UIMgr : Singleton<UIMgr>
 {
     public override void OnInit()
     {
@@ -110,7 +110,7 @@ public class UIMgr : BaseInstance<UIMgr>
 
         if (isNeedGCom)
         {
-            FGUILoader.GetInstance().RemoveUIPackage(pkgName);
+            FGUILoader.Instance.RemoveUIPackage(pkgName);
         }
     }
 

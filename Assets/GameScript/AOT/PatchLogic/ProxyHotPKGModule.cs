@@ -1,13 +1,13 @@
 using FairyGUI;
 using HotPKG;
-public class ProxyHotPKGModule : BaseInstance<ProxyHotPKGModule>
+public class ProxyHotPKGModule : Singleton<ProxyHotPKGModule>
 {
     private const string pkgName = "HotPKG";
     private HFView mView; //只有一个页面
     public void OpenHFView()
     {
         UIPackage.AddPackage("HotPKG");
-        HotPKG.HotPKGBinder.BindAll(); //绑定脚本
+        HotPKGBinder.BindAll(); //绑定脚本
         var gCom = UIPackage.CreateObject(pkgName, "HFView").asCom;
         gCom.MakeFullScreen();
         GRoot.inst.AddChild(gCom);

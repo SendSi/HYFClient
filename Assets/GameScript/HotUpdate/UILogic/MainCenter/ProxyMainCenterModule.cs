@@ -2,20 +2,20 @@
 using System;
 using UnityEngine;
 
-public class ProxyMainCenterModule : BaseInstance<ProxyMainCenterModule>, IProxy
+public class ProxyMainCenterModule : Singleton<ProxyMainCenterModule>, IProxy
 {
     private const string pkgName = "MainCenter";
 
     public void CheckLoad(Action finishCB)
     {
-        FGUILoader.GetInstance().AddPackage(pkgName, finishCB);
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 
     public void OpenMainCenterView()
     {
         CheckLoad(() =>
         {
-            var view = UIMgr.GetInstance().OpenUIViewCom<MainCenterView>(pkgName);
+            var view = UIMgr.Instance.OpenUIViewCom<MainCenterView>(pkgName);
             if (view != null)
             {
                 view.SetData();
@@ -29,6 +29,6 @@ public class ProxyMainCenterModule : BaseInstance<ProxyMainCenterModule>, IProxy
 
     public void CloseMainCenterView()
     {
-        UIMgr.GetInstance().CloseUIViewCom<MainCenterView>();
+        UIMgr.Instance.CloseUIViewCom<MainCenterView>();
     }
 }

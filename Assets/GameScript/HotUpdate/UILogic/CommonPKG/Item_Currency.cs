@@ -8,8 +8,8 @@ namespace CommonPKG
         private int mCurrencyId = 0;
         public void SetData(int pCfgId)
         {
-            _hasNumTxt.text = BagManager.GetInstance().GetServerItemSum(pCfgId).ToString();
-            var cfg = ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>(pCfgId.ToString());
+            _hasNumTxt.text = BagManager.Instance.GetServerItemSum(pCfgId).ToString();
+            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(pCfgId.ToString());
             _icon.icon =cfg.smallIcon;
             _addCtrl.selectedIndex = cfg.showAdd;
             mCurrencyId = pCfgId;

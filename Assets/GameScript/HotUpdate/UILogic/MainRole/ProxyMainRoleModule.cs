@@ -1,12 +1,12 @@
 ﻿
     using System;
 
-    public class ProxyMainRoleModule:BaseInstance<ProxyMainRoleModule>,IProxy
+    public class ProxyMainRoleModule:Singleton<ProxyMainRoleModule>,IProxy
     {
         private const string pkgName = "MainRole";
         public void CheckLoad(Action finishCB)
         {
-            FGUILoader.GetInstance().AddPackage(pkgName,finishCB);
+            FGUILoader.Instance.AddPackage(pkgName,finishCB);
         }
 
 
@@ -14,12 +14,12 @@
 
         public void OpenRoleMainViewWin()
         {
-            CheckLoad(() => { UIMgr.GetInstance().OpenWindow<RoleMainViewWin>(); });
+            CheckLoad(() => { UIMgr.Instance.OpenWindow<RoleMainViewWin>(); });
         }
 
         public void CloseRoleMainViewWin()
         {
-            UIMgr.GetInstance().CloseWindow<RoleMainViewWin>();
+            UIMgr.Instance.CloseWindow<RoleMainViewWin>();
         }
 
         #endregion

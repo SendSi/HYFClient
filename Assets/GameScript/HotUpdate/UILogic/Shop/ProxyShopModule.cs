@@ -1,11 +1,11 @@
 ﻿using System;
 
-public class ProxyShopModule : BaseInstance<ProxyShopModule>, IProxy
+public class ProxyShopModule : Singleton<ProxyShopModule>, IProxy
 {
     private const string pkgName = "Shop";
 
     public void CheckLoad(Action finishCB)
     {
-        FGUILoader.GetInstance().AddPackage(pkgName, finishCB);
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 }
