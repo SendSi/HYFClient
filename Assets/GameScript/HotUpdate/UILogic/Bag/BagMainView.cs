@@ -2,6 +2,7 @@
 using CommonPKG;
 using FairyGUI;
 using UnityEngine;
+using HYFServer;
 
 namespace Bag
 {
@@ -71,10 +72,10 @@ namespace Bag
             {
                 var rightIcon = (ComItem_bag)_iconProp;
                 rightIcon.SetData(mSelectItemDto);
-                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.cfgId.ToString());
+                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
                 _titlePropTxt.text = cfg.name;
                 _descTxt.text = cfg.iconDesecribe;
-                _hasTxt.text = mSelectItemDto.sum.ToString();
+                _hasTxt.text = mSelectItemDto.Sum.ToString();
             }
         }
 

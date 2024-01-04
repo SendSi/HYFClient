@@ -1,4 +1,5 @@
 ﻿using FairyGUI;
+using HYFServer;
 
 namespace CommonPKG
 {
@@ -10,9 +11,9 @@ namespace CommonPKG
         {
             if (data != null)
             {
-                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(data.cfgId.ToString());
-                _hasNumTxt.text =
-                    data.sum.ToString(); //BagManager.Instance.GetServerItemSum(data.cfgId).ToString();
+                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(data.CfgId.ToString());
+                _hasNumTxt.text = data.Sum.ToString();
+                //BagManager.Instance.GetServerItemSum(data.cfgId).ToString();
                 _itemIcon.icon = cfg.icon;
                 _qualityCtrl.selectedIndex = cfg.quality - 1;
             }

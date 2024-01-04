@@ -3,18 +3,20 @@ using HYFServer;
 using UnityEngine;
 
 // public class ServicePushInfo : MonoBehaviour
-public class ServicePushInfo :Singleton<ServicePushInfo>
+public class ServicePushInfo : Singleton<ServicePushInfo>
 {
     public void Start()
     {
         Run();
+
     }
 
 
     //服务端 推送过来的
     public async void Run()
     {
-       GrpcChannelManager.Instance.InitMainChannel(AppConfig.serverURL);
+        GrpcChannelManager.Instance.InitMainChannel(AppConfig.serverURL);
+        ProtocalBag.Instance.TT();
         using (ServiceManager.Instance.GetClient<PushService.PushServiceClient>(out var pushClient))
         {
             var serverPush = pushClient.ServerPush(new PushReq());
@@ -27,10 +29,11 @@ public class ServicePushInfo :Singleton<ServicePushInfo>
                 while (await responseStream.MoveNext(cancel.Token))
                 {
                     var current = responseStream.Current;
+                    EventCenter.Instance.Fire<PushRsp>(EventEnum.EE_Server_Items, current);
                     Debug.LogError(current);
-        
                 }
             }
         }
+
     }
 }
