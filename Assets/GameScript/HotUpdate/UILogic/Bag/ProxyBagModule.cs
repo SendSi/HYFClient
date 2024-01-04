@@ -2,13 +2,13 @@
 using Bag;
 
 
-public class ProxyBagModule : BaseInstance<ProxyBagModule>
+public class ProxyBagModule : Singleton<ProxyBagModule>
 {
     private const string pkgName = "Bag";
 
     public void CheckLoad(Action finishCB)
     {
-        FGUILoader.GetInstance().AddPackage(pkgName, finishCB);
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 
 
@@ -16,12 +16,12 @@ public class ProxyBagModule : BaseInstance<ProxyBagModule>
 
     public void OpenBagMainView()
     {
-        CheckLoad(() => { UIMgr.GetInstance().OpenUIViewCom<BagMainView>(pkgName); });
+        CheckLoad(() => { UIMgr.Instance.OpenUIViewCom<BagMainView>(pkgName); });
     }
 
     public void CloseBagMainView()
     {
-        UIMgr.GetInstance().CloseUIViewCom<BagMainView>();
+        UIMgr.Instance.CloseUIViewCom<BagMainView>();
     }
 
     #endregion
@@ -31,12 +31,12 @@ public class ProxyBagModule : BaseInstance<ProxyBagModule>
 
     public void OpenBagComposeViewWin()
     {
-        CheckLoad(() => { UIMgr.GetInstance().OpenWindow<BagComposeViewWin>(); });
+        CheckLoad(() => { UIMgr.Instance.OpenWindow<BagComposeViewWin>(); });
     }
 
     public void CloseBagComposeViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<BagComposeViewWin>();
+        UIMgr.Instance.CloseWindow<BagComposeViewWin>();
     }
 
     #endregion

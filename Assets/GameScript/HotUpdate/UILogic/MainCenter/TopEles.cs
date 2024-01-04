@@ -10,7 +10,7 @@ namespace MainCenter
             base.OnInit();
             _mainPlayerBtn.onClick.Set(OnClickMainPlayerBtn);
 
-            EventCenter.GetInstance().Bind<string>(EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.Bind<string>(EventEnum.EE_test, OnEventTest);
         }
 
         private void OnEventTest(string arg0)
@@ -25,13 +25,13 @@ namespace MainCenter
 
         private void OnClickMainPlayerBtn()
         {
-            ProxyMainRoleModule.GetInstance().OpenRoleMainViewWin();
+            ProxyMainRoleModule.Instance.OpenRoleMainViewWin();
         }
 
         public override void Dispose()
         {
             base.Dispose();
-            EventCenter.GetInstance().UnBind<string>(EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.UnBind<string>(EventEnum.EE_test, OnEventTest);
         }
     }
 }

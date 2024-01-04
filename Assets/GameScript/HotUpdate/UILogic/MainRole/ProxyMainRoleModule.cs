@@ -1,27 +1,30 @@
-﻿
-    using System;
+﻿using System;
 
-    public class ProxyMainRoleModule:BaseInstance<ProxyMainRoleModule>,IProxy
+public class ProxyMainRoleModule : Singleton<ProxyMainRoleModule>, IProxy
+{
+    private const string pkgName = "MainRole";
+
+    public void CheckLoad(Action finishCB)
     {
-        private const string pkgName = "MainRole";
-        public void CheckLoad(Action finishCB)
-        {
-            FGUILoader.GetInstance().AddPackage(pkgName,finishCB);
-        }
-
-
-        #region RoleMainView打开关闭Window
-
-        public void OpenRoleMainViewWin()
-        {
-            CheckLoad(() => { UIMgr.GetInstance().OpenWindow<RoleMainViewWin>(); });
-        }
-
-        public void CloseRoleMainViewWin()
-        {
-            UIMgr.GetInstance().CloseWindow<RoleMainViewWin>();
-        }
-
-        #endregion
-
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
+
+
+    #region RoleMainView打开关闭Window
+
+    public void OpenRoleMainViewWin()
+    {
+        CheckLoad(() =>
+        {
+            var win = UIMgr.Instance.OpenWindow<RoleMainViewWin>();
+            win.SetData();
+        });
+    }
+
+    public void CloseRoleMainViewWin()
+    {
+        UIMgr.Instance.CloseWindow<RoleMainViewWin>();
+    }
+
+    #endregion
+}

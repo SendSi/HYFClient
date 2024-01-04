@@ -2,13 +2,13 @@
 using CommonPKG;
 
 
-public class ProxyCommonPKGModule : BaseInstance<ProxyCommonPKGModule>, IProxy
+public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
 {
     private const string pkgName = "CommonPKG";
 
     public void CheckLoad(Action finishCB)
     {
-        FGUILoader.GetInstance().AddPackage(pkgName, finishCB);
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 
 
@@ -32,7 +32,7 @@ public class ProxyCommonPKGModule : BaseInstance<ProxyCommonPKGModule>, IProxy
     {
         CheckLoad(() =>
         {
-            _toastTipView = UIMgr.GetInstance().OpenUIViewCom<ToastTipView>(pkgName);
+            _toastTipView = UIMgr.Instance.OpenUIViewCom<ToastTipView>(pkgName);
             _toastTipView.SetData(valueStr);
         });
     }

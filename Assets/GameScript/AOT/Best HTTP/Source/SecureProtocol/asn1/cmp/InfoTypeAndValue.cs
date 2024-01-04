@@ -1,0 +1,116 @@
+#if !BESTHTTP_DISABLE_ALTERNATE_SSL && (!UNITY_WEBGL || UNITY_EDITOR)
+#pragma warning disable
+using System;
+
+using BestHTTP.SecureProtocol.Org.BouncyCastle.Utilities;
+
+namespace BestHTTP.SecureProtocol.Org.BouncyCastle.Asn1.Cmp
+{
+    /**
+     * Example InfoTypeAndValue contents include, but are not limited
+     * to, the following (un-comment in this ASN.1 module and use as
+     * appropriate for a given environment):
+     * <pre>
+     *   id-it-caProtEncCert    OBJECT IDENTIFIER ::= {id-it 1}
+     *      CAProtEncCertValue      ::= CMPCertificate
+     *   id-it-signKeyPairTypes OBJECT IDENTIFIER ::= {id-it 2}
+     *     SignKeyPairTypesValue   ::= SEQUENCE OF AlgorithmIdentifier
+     *   id-it-encKeyPairTypes  OBJECT IDENTIFIER ::= {id-it 3}
+     *     EncKeyPairTypesValue    ::= SEQUENCE OF AlgorithmIdentifier
+     *   id-it-preferredSymmAlg OBJECT IDENTIFIER ::= {id-it 4}
+     *      PreferredSymmAlgValue   ::= AlgorithmIdentifier
+     *   id-it-caKeyUpdateInfo  OBJECT IDENTIFIER ::= {id-it 5}
+     *      CAKeyUpdateInfoValue    ::= CAKeyUpdAnnContent
+     *   id-it-currentCRL       OBJECT IDENTIFIER ::= {id-it 6}
+     *      CurrentCRLValue         ::= CertificateList
+     *   id-it-unsupportedOIDs  OBJECT IDENTIFIER ::= {id-it 7}
+     *      UnsupportedOIDsValue    ::= SEQUENCE OF OBJECT IDENTIFIER
+     *   id-it-keyPairParamReq  OBJECT IDENTIFIER ::= {id-it 10}
+     *      KeyPairParamReqValue    ::= OBJECT IDENTIFIER
+     *   id-it-keyPairParamRep  OBJECT IDENTIFIER ::= {id-it 11}
+     *      KeyPairParamRepValue    ::= AlgorithmIdentifer
+     *   id-it-revPassphrase    OBJECT IDENTIFIER ::= {id-it 12}
+     *      RevPassphraseValue      ::= EncryptedValue
+     *   id-it-implicitConfirm  OBJECT IDENTIFIER ::= {id-it 13}
+     *      ImplicitConfirmValue    ::= NULL
+     *   id-it-confirmWaitTime  OBJECT IDENTIFIER ::= {id-it 14}
+     *      ConfirmWaitTimeValue    ::= GeneralizedTime
+     *   id-it-origPKIMessage   OBJECT IDENTIFIER ::= {id-it 15}
+     *      OrigPKIMessageValue     ::= PKIMessages
+     *   id-it-suppLangTags     OBJECT IDENTIFIER ::= {id-it 16}
+     *      SuppLangTagsValue       ::= SEQUENCE OF UTF8String
+     *
+     * where
+     *
+     *   id-pkix OBJECT IDENTIFIER ::= {
+     *      iso(1) identified-organization(3)
+     *      dod(6) internet(1) security(5) mechanisms(5) pkix(7)}
+     * and
+     *      id-it   OBJECT IDENTIFIER ::= {id-pkix 4}
+     * </pre>
+     */
+    public class InfoTypeAndValue
+        : Asn1Encodable
+    {
+        private readonly DerObjectIdentifier m_infoType;
+        private readonly Asn1Encodable m_infoValue;
+
+        private InfoTypeAndValue(Asn1Sequence seq)
+        {
+            m_infoType = DerObjectIdentifier.GetInstance(seq[0]);
+
+            if (seq.Count > 1)
+            {
+                m_infoValue = seq[1];
+            }
+        }
+
+        public static InfoTypeAndValue GetInstance(object obj)
+        {
+            if (obj is InfoTypeAndValue infoTypeAndValue)
+                return infoTypeAndValue;
+
+            if (obj != null)
+                return new InfoTypeAndValue(Asn1Sequence.GetInstance(obj));
+
+            return null;
+        }
+
+        public InfoTypeAndValue(DerObjectIdentifier infoType)
+            : this(infoType, null)
+        {
+        }
+
+        public InfoTypeAndValue(DerObjectIdentifier infoType, Asn1Encodable infoValue)
+        {
+            if (infoType == null)
+                throw new ArgumentNullException(nameof(infoType));
+
+            m_infoType = infoType;
+            m_infoValue = infoValue;
+        }
+
+        public virtual DerObjectIdentifier InfoType => m_infoType;
+
+        public virtual Asn1Encodable InfoValue => m_infoValue;
+
+        /**
+         * <pre>
+         * InfoTypeAndValue ::= SEQUENCE {
+         *                         infoType               OBJECT IDENTIFIER,
+         *                         infoValue              ANY DEFINED BY infoType  OPTIONAL
+         * }
+         * </pre>
+         * @return a basic ASN.1 object representation.
+         */
+        public override Asn1Object ToAsn1Object()
+        {
+            if (m_infoValue == null)
+                return new DerSequence(m_infoType);
+
+            return new DerSequence(m_infoType, m_infoValue);
+        }
+    }
+}
+#pragma warning restore
+#endif

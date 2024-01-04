@@ -1,6 +1,6 @@
 using FairyGUI;
 using HotPKG;
-public class ProxyHotPKGModule : BaseInstance<ProxyHotPKGModule>
+public class ProxyHotPKGModule : Singleton<ProxyHotPKGModule>
 {
     private const string pkgName = "HotPKG";
     private HFView mView; //只有一个页面

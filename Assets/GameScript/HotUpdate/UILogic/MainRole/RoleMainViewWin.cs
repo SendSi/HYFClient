@@ -1,5 +1,6 @@
 ﻿using FairyGUI;
 using MainRole;
+using UnityEngine;
 
 
 public class RoleMainViewWin : Window
@@ -22,9 +23,12 @@ public class RoleMainViewWin : Window
         this.CloseWindowExpand();
     }
 
-    public void SetData()
+    public async void SetData()
     {
+        var info =await ProtocalRole.Instance.RoleUpLvRequest(101);
+        Debug.LogError($"RoleUpLvRequest 返回结果 : {info}");
+        
+        var info2 =await ProtocalRole.Instance.RoleAddVipRequest();
+        Debug.LogError($"RoleAddVipRequest 返回结果 : {info2}");
     }
-
-
 }

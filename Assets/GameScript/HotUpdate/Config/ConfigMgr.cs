@@ -4,7 +4,7 @@ using YooAsset;
 
 
 //导表工具 默认使用字典模式     不使用array
-public class ConfigMgr : BaseInstance<ConfigMgr>
+public class ConfigMgr : Singleton<ConfigMgr>
 {
     /// <summary> T是表类型    返回整个导表</summary>
     public Dictionary<string, T> LoadConfigDics<T>()

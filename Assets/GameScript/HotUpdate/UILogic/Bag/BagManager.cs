@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-public class BagManager : BaseInstance<BagManager>
+public class BagManager : Singleton<BagManager>
 {
     //假设服务器下发的这些数据
     private List<ItemDto> mServerDtos = new List<ItemDto>()
@@ -40,7 +40,7 @@ public class BagManager : BaseInstance<BagManager>
         List<ItemDto> sortDtos = new List<ItemDto>();
         foreach (var item in mServerDtos)
         {
-            var cfg = ConfigMgr.GetInstance().LoadConfigOne<ItemConfig>(item.cfgId.ToString());
+            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.cfgId.ToString());
             if (cfg != null && cfg.type > 1)
             {
                 sortDtos.Add(item);

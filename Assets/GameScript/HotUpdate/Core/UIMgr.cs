@@ -2,9 +2,9 @@ using FairyGUI;
 using System.Collections.Generic;
 using System.Linq;
 
-public class UIMgr : BaseInstance<UIMgr>
+public class UIMgr : Singleton<UIMgr>
 {
-    public override void OnInit()
+    protected override void OnInit()
     {
         base.OnInit();
         GRoot.inst.SetContentScaleFactor(1334, 750, UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
@@ -110,7 +110,7 @@ public class UIMgr : BaseInstance<UIMgr>
 
         if (isNeedGCom)
         {
-            FGUILoader.GetInstance().RemoveUIPackage(pkgName);
+            FGUILoader.Instance.RemoveUIPackage(pkgName);
         }
     }
 

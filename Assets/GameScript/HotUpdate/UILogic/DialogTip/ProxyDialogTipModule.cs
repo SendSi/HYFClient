@@ -1,13 +1,13 @@
 ﻿using DialogTip;
 using System;
 
-public class ProxyDialogTipModule : BaseInstance<ProxyDialogTipModule>,IProxy
+public class ProxyDialogTipModule : Singleton<ProxyDialogTipModule>,IProxy
 {
     private const string pkgName = "DialogTip";
 
     public void CheckLoad(Action finishCB)
     {
-        FGUILoader.GetInstance().AddPackage(pkgName, finishCB);
+        FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 
     #region DialogTip1View打开关闭Window
@@ -16,14 +16,14 @@ public class ProxyDialogTipModule : BaseInstance<ProxyDialogTipModule>,IProxy
     {
         CheckLoad(() =>
         {
-            var view = UIMgr.GetInstance().OpenWindow<DialogTip1ViewWin>();
+            var view = UIMgr.Instance.OpenWindow<DialogTip1ViewWin>();
             view.SetData(title, content, btnTitle, sureCB);
         });
     }
 
     public void CloseDialogTip1ViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<DialogTip1ViewWin>();
+        UIMgr.Instance.CloseWindow<DialogTip1ViewWin>();
     }
 
     #endregion
@@ -35,14 +35,14 @@ public class ProxyDialogTipModule : BaseInstance<ProxyDialogTipModule>,IProxy
     {
         CheckLoad(() =>
         {
-            var view = UIMgr.GetInstance().OpenWindow<DialogTip2ViewWin>();
+            var view = UIMgr.Instance.OpenWindow<DialogTip2ViewWin>();
             view.SetData(title, content, leftBtnTitle, leftCB,rightBtnTitle,rightCB);
         });
     }
 
     public void CloseDialogTip2ViewWin()
     {
-        UIMgr.GetInstance().CloseWindow<DialogTip2ViewWin>();
+        UIMgr.Instance.CloseWindow<DialogTip2ViewWin>();
     }
 
     #endregion

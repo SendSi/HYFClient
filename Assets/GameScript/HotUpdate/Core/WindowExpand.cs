@@ -8,7 +8,7 @@ public static class WindowExpand
     /// </summary>
     public static void CloseWindowExpand(this Window win)
     {
-        UIMgr.GetInstance().CloseWindowExpand(win);
+        UIMgr.Instance.CloseWindowExpand(win);
     }
 
 }

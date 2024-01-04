@@ -43,12 +43,12 @@ public class GameMain : MonoBehaviour
         Type uiType = _hotUpdateAss.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
         
-        Type entryType = _hotUpdateAss.GetType("FGUIStart");
+        Type entryType = _hotUpdateAss.GetType("HotFixReflex");
         entryType.GetMethod("Run").Invoke(null, null);
         
         FairyGUI.Timers.inst.Add(1,1, obj =>
         {
-            ProxyHotPKGModule.GetInstance().CloseHFView();//移除
+            ProxyHotPKGModule.Instance.CloseHFView();//移除
         });
     }
 
@@ -56,7 +56,7 @@ public class GameMain : MonoBehaviour
     private IEnumerator CheckLoadYooHF()
     {
         // 加载更新页面
-        ProxyHotPKGModule.GetInstance().OpenHFView();
+        ProxyHotPKGModule.Instance.OpenHFView();
         // 开始补丁更新流程
         PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation);
@@ -104,15 +104,19 @@ public class GameMain : MonoBehaviour
     private static List<string> AOTMetaAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll.bytes",
+        "Grpc.Core.Api.dll.bytes",
         "UnityEngine.CoreModule.dll.bytes",
         "YooAsset.dll.bytes",
         "mscorlib.dll.bytes",
         "Newtonsoft.Json.dll.bytes",
         "System.Core.dll.bytes",
-
+        "UniFramework.Event.dll.bytes",
+        "Google.Protobuf.dll.bytes",
+        
         "HotUpdate.dll.bytes",
     };
-
+   
+    
     /// <summary>
     /// 为aot assembly加载原始metadata， 这个代码放aot或者热更新都行。
     /// 一旦加载后，如果AOT泛型函数对应native实现不存在，则自动替换为解释模式执行

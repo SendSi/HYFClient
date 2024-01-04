@@ -6,9 +6,9 @@ using System.Linq;
 using UnityEngine;
 using YooAsset;
 
-public class FGUILoader : BaseInstance<FGUILoader>
+public class FGUILoader : Singleton<FGUILoader>
 {
-    private int mReleaseTime = 20; //当无引用时 多少秒后 释放
+    private const int mReleaseTime = 20; //当无引用时 多少秒后 释放
     private int mCurTimeNum = 0; //当前运行的时间
 
     /// <summary> 常驻包 不移除销毁的  依赖公共包 </summary>
@@ -19,7 +19,7 @@ public class FGUILoader : BaseInstance<FGUILoader>
         ["ItemPKG"] = true,
     };
 
-    public override void OnInit()
+    protected override void OnInit()
     {
         base.OnInit();
         FairyGUI.Timers.inst.Add(1, -1, (cb) =>
