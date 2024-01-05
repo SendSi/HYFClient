@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using Grpc.Net.Client;
 using HYFServer;
@@ -20,7 +18,7 @@ public class ProtocalShop : Singleton<ProtocalShop>
             while (await responseStream.MoveNext(cancel.Token))
             {
                 var current = responseStream.Current;
-                Debug.LogError($"shop:{current}");
+                Debug.LogError($"shop->stream:{current}");
             }
         }
     }

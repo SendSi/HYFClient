@@ -24,18 +24,18 @@ namespace HYFServer {
     static BagReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgliYWcucHJvdG8SA2JhZyIMCgpCYWdSZXF1ZXN0IjkKC0JhZ1Jlc3BvbnNl",
-            "EiAKCGFsbEl0ZW1zGAIgASgLMgwuYmFnLkl0ZW1EdG9IAEIICgZCYWdNc2ci",
-            "EwoRQmFnQWxsSW5mb1JlcXVlc3QiNwoSQmFnQWxsSW5mb1Jlc3BvbnNlEiEK",
-            "C2FsbEl0ZW1JbmZvGAEgAygLMgwuYmFnLkl0ZW1EdG8iIgoRQmFnT25lSW5m",
-            "b1JlcXVlc3QSDQoFY2ZnSWQYASABKAUiMwoSQmFnT25lSW5mb1Jlc3BvbnNl",
-            "Eh0KB2l0ZW1EdG8YBSABKAsyDC5iYWcuSXRlbUR0byIxChNCYWdVc2luZ0l0",
-            "ZW1SZXF1ZXN0Eg0KBWNmZ0lkGAEgASgFEgsKA251bRgCIAEoBSIyChRCYWdV",
-            "c2luZ0l0ZW1SZXNwb25zZRINCgVjZmdJZBgBIAEoBRILCgNzdW0YAiABKAUi",
-            "EAoOT3BlbkJhZ1JlcXVlc3QiLgoPT3BlbkJhZ1Jlc3BvbnNlEhsKBWl0ZW1z",
-            "GAEgAygLMgwuYmFnLkl0ZW1EdG8iMgoHSXRlbUR0bxINCgVjZmdJZBgBIAEo",
-            "BRILCgNzdW0YAiABKAUSCwoDdWlkGAMgASgJIi0KCEl0ZW1EdG9zEiEKC2Fs",
-            "bEl0ZW1JbmZvGAEgAygLMgwuYmFnLkl0ZW1EdG8yuwIKCkJhZ1NlcnZpY2US",
+            "CgliYWcucHJvdG8SA2JhZyIMCgpCYWdSZXF1ZXN0IjsKC0JhZ1Jlc3BvbnNl",
+            "EiIKCWl0ZW1JbmZvcxgEIAEoCzINLmJhZy5JdGVtRHRvc0gAQggKBkJhZ01z",
+            "ZyITChFCYWdBbGxJbmZvUmVxdWVzdCI3ChJCYWdBbGxJbmZvUmVzcG9uc2US",
+            "IQoLYWxsSXRlbUluZm8YASADKAsyDC5iYWcuSXRlbUR0byIiChFCYWdPbmVJ",
+            "bmZvUmVxdWVzdBINCgVjZmdJZBgBIAEoBSIzChJCYWdPbmVJbmZvUmVzcG9u",
+            "c2USHQoHaXRlbUR0bxgFIAEoCzIMLmJhZy5JdGVtRHRvIjEKE0JhZ1VzaW5n",
+            "SXRlbVJlcXVlc3QSDQoFY2ZnSWQYASABKAUSCwoDbnVtGAIgASgFIjIKFEJh",
+            "Z1VzaW5nSXRlbVJlc3BvbnNlEg0KBWNmZ0lkGAEgASgFEgsKA3N1bRgCIAEo",
+            "BSIQCg5PcGVuQmFnUmVxdWVzdCIuCg9PcGVuQmFnUmVzcG9uc2USGwoFaXRl",
+            "bXMYASADKAsyDC5iYWcuSXRlbUR0byIyCgdJdGVtRHRvEg0KBWNmZ0lkGAEg",
+            "ASgFEgsKA3N1bRgCIAEoBRILCgN1aWQYAyABKAkiKwoISXRlbUR0b3MSHwoJ",
+            "aXRlbUluZm9zGAIgAygLMgwuYmFnLkl0ZW1EdG8yuwIKCkJhZ1NlcnZpY2US",
             "MAoJTGlzdGVuQmFnEg8uYmFnLkJhZ1JlcXVlc3QaEC5iYWcuQmFnUmVzcG9u",
             "c2UwARI9CgpCYWdBbGxJbmZvEhYuYmFnLkJhZ0FsbEluZm9SZXF1ZXN0Ghcu",
             "YmFnLkJhZ0FsbEluZm9SZXNwb25zZRI9CgpCYWdPbmVJbmZvEhYuYmFnLkJh",
@@ -48,7 +48,7 @@ namespace HYFServer {
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagRequest), global::HYFServer.BagRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagResponse), global::HYFServer.BagResponse.Parser, new[]{ "AllItems" }, new[]{ "BagMsg" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagResponse), global::HYFServer.BagResponse.Parser, new[]{ "ItemInfos" }, new[]{ "BagMsg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagAllInfoRequest), global::HYFServer.BagAllInfoRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagAllInfoResponse), global::HYFServer.BagAllInfoResponse.Parser, new[]{ "AllItemInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagOneInfoRequest), global::HYFServer.BagOneInfoRequest.Parser, new[]{ "CfgId" }, null, null, null, null),
@@ -58,7 +58,7 @@ namespace HYFServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.OpenBagRequest), global::HYFServer.OpenBagRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.OpenBagResponse), global::HYFServer.OpenBagResponse.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.ItemDto), global::HYFServer.ItemDto.Parser, new[]{ "CfgId", "Sum", "Uid" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.ItemDtos), global::HYFServer.ItemDtos.Parser, new[]{ "AllItemInfo" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.ItemDtos), global::HYFServer.ItemDtos.Parser, new[]{ "ItemInfos" }, null, null, null, null)
           }));
     }
     #endregion
@@ -258,8 +258,8 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BagResponse(BagResponse other) : this() {
       switch (other.BagMsgCase) {
-        case BagMsgOneofCase.AllItems:
-          AllItems = other.AllItems.Clone();
+        case BagMsgOneofCase.ItemInfos:
+          ItemInfos = other.ItemInfos.Clone();
           break;
       }
 
@@ -272,15 +272,15 @@ namespace HYFServer {
       return new BagResponse(this);
     }
 
-    /// <summary>Field number for the "allItems" field.</summary>
-    public const int AllItemsFieldNumber = 2;
+    /// <summary>Field number for the "itemInfos" field.</summary>
+    public const int ItemInfosFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::HYFServer.ItemDto AllItems {
-      get { return bagMsgCase_ == BagMsgOneofCase.AllItems ? (global::HYFServer.ItemDto) bagMsg_ : null; }
+    public global::HYFServer.ItemDtos ItemInfos {
+      get { return bagMsgCase_ == BagMsgOneofCase.ItemInfos ? (global::HYFServer.ItemDtos) bagMsg_ : null; }
       set {
         bagMsg_ = value;
-        bagMsgCase_ = value == null ? BagMsgOneofCase.None : BagMsgOneofCase.AllItems;
+        bagMsgCase_ = value == null ? BagMsgOneofCase.None : BagMsgOneofCase.ItemInfos;
       }
     }
 
@@ -288,7 +288,7 @@ namespace HYFServer {
     /// <summary>Enum of possible cases for the "BagMsg" oneof.</summary>
     public enum BagMsgOneofCase {
       None = 0,
-      AllItems = 2,
+      ItemInfos = 4,
     }
     private BagMsgOneofCase bagMsgCase_ = BagMsgOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -319,7 +319,7 @@ namespace HYFServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(AllItems, other.AllItems)) return false;
+      if (!object.Equals(ItemInfos, other.ItemInfos)) return false;
       if (BagMsgCase != other.BagMsgCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -328,7 +328,7 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (bagMsgCase_ == BagMsgOneofCase.AllItems) hash ^= AllItems.GetHashCode();
+      if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) hash ^= ItemInfos.GetHashCode();
       hash ^= (int) bagMsgCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -348,9 +348,9 @@ namespace HYFServer {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (bagMsgCase_ == BagMsgOneofCase.AllItems) {
-        output.WriteRawTag(18);
-        output.WriteMessage(AllItems);
+      if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ItemInfos);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -362,9 +362,9 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (bagMsgCase_ == BagMsgOneofCase.AllItems) {
-        output.WriteRawTag(18);
-        output.WriteMessage(AllItems);
+      if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ItemInfos);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -376,8 +376,8 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (bagMsgCase_ == BagMsgOneofCase.AllItems) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AllItems);
+      if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemInfos);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -392,11 +392,11 @@ namespace HYFServer {
         return;
       }
       switch (other.BagMsgCase) {
-        case BagMsgOneofCase.AllItems:
-          if (AllItems == null) {
-            AllItems = new global::HYFServer.ItemDto();
+        case BagMsgOneofCase.ItemInfos:
+          if (ItemInfos == null) {
+            ItemInfos = new global::HYFServer.ItemDtos();
           }
-          AllItems.MergeFrom(other.AllItems);
+          ItemInfos.MergeFrom(other.ItemInfos);
           break;
       }
 
@@ -415,13 +415,13 @@ namespace HYFServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 18: {
-            global::HYFServer.ItemDto subBuilder = new global::HYFServer.ItemDto();
-            if (bagMsgCase_ == BagMsgOneofCase.AllItems) {
-              subBuilder.MergeFrom(AllItems);
+          case 34: {
+            global::HYFServer.ItemDtos subBuilder = new global::HYFServer.ItemDtos();
+            if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) {
+              subBuilder.MergeFrom(ItemInfos);
             }
             input.ReadMessage(subBuilder);
-            AllItems = subBuilder;
+            ItemInfos = subBuilder;
             break;
           }
         }
@@ -439,13 +439,13 @@ namespace HYFServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 18: {
-            global::HYFServer.ItemDto subBuilder = new global::HYFServer.ItemDto();
-            if (bagMsgCase_ == BagMsgOneofCase.AllItems) {
-              subBuilder.MergeFrom(AllItems);
+          case 34: {
+            global::HYFServer.ItemDtos subBuilder = new global::HYFServer.ItemDtos();
+            if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) {
+              subBuilder.MergeFrom(ItemInfos);
             }
             input.ReadMessage(subBuilder);
-            AllItems = subBuilder;
+            ItemInfos = subBuilder;
             break;
           }
         }
@@ -2278,7 +2278,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ItemDtos(ItemDtos other) : this() {
-      allItemInfo_ = other.allItemInfo_.Clone();
+      itemInfos_ = other.itemInfos_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2288,15 +2288,15 @@ namespace HYFServer {
       return new ItemDtos(this);
     }
 
-    /// <summary>Field number for the "allItemInfo" field.</summary>
-    public const int AllItemInfoFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::HYFServer.ItemDto> _repeated_allItemInfo_codec
-        = pb::FieldCodec.ForMessage(10, global::HYFServer.ItemDto.Parser);
-    private readonly pbc::RepeatedField<global::HYFServer.ItemDto> allItemInfo_ = new pbc::RepeatedField<global::HYFServer.ItemDto>();
+    /// <summary>Field number for the "itemInfos" field.</summary>
+    public const int ItemInfosFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::HYFServer.ItemDto> _repeated_itemInfos_codec
+        = pb::FieldCodec.ForMessage(18, global::HYFServer.ItemDto.Parser);
+    private readonly pbc::RepeatedField<global::HYFServer.ItemDto> itemInfos_ = new pbc::RepeatedField<global::HYFServer.ItemDto>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::HYFServer.ItemDto> AllItemInfo {
-      get { return allItemInfo_; }
+    public pbc::RepeatedField<global::HYFServer.ItemDto> ItemInfos {
+      get { return itemInfos_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2314,7 +2314,7 @@ namespace HYFServer {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!allItemInfo_.Equals(other.allItemInfo_)) return false;
+      if(!itemInfos_.Equals(other.itemInfos_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2322,7 +2322,7 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= allItemInfo_.GetHashCode();
+      hash ^= itemInfos_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2341,7 +2341,7 @@ namespace HYFServer {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      allItemInfo_.WriteTo(output, _repeated_allItemInfo_codec);
+      itemInfos_.WriteTo(output, _repeated_itemInfos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2352,7 +2352,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      allItemInfo_.WriteTo(ref output, _repeated_allItemInfo_codec);
+      itemInfos_.WriteTo(ref output, _repeated_itemInfos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2363,7 +2363,7 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += allItemInfo_.CalculateSize(_repeated_allItemInfo_codec);
+      size += itemInfos_.CalculateSize(_repeated_itemInfos_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2376,7 +2376,7 @@ namespace HYFServer {
       if (other == null) {
         return;
       }
-      allItemInfo_.Add(other.allItemInfo_);
+      itemInfos_.Add(other.itemInfos_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2392,8 +2392,8 @@ namespace HYFServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            allItemInfo_.AddEntriesFrom(input, _repeated_allItemInfo_codec);
+          case 18: {
+            itemInfos_.AddEntriesFrom(input, _repeated_itemInfos_codec);
             break;
           }
         }
@@ -2411,8 +2411,8 @@ namespace HYFServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            allItemInfo_.AddEntriesFrom(ref input, _repeated_allItemInfo_codec);
+          case 18: {
+            itemInfos_.AddEntriesFrom(ref input, _repeated_itemInfos_codec);
             break;
           }
         }

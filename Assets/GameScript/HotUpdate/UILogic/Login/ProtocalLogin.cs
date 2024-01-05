@@ -34,7 +34,7 @@ public class ProtocalLogin : Singleton<ProtocalLogin>
 
     public async Task<int> LoginIn(string nickName)
     {
-        var res = await mService.LoginAsync(new LoginReq()
+        var res = await mService.LoginInAsync(new LoginReq()
         {
             NickName = nickName
         });

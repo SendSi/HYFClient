@@ -29,12 +29,12 @@ namespace HYFServer {
             "QgoKCExvZ2luTXNnIhwKCExvZ2luUmVxEhAKCG5pY2tOYW1lGAogASgJIhoK",
             "CVJlc3VsdFJzcBINCgVzdGF0ZRgBIAEoBSJLCghMb2dpblJzcBIQCghuaWNr",
             "TmFtZRgKIAEoCRIQCghwYXNzd29yZBgCIAEoCRILCgN1aWQYAyABKAMSDgoG",
-            "Z2VuZGVyGAQgASgIIgsKCUxvZ291dFJlcSILCglMb2dvdXRSc3AypAEKDExv",
+            "Z2VuZGVyGAQgASgIIgsKCUxvZ291dFJlcSILCglMb2dvdXRSc3AypgEKDExv",
             "Z2luU2VydmljZRI6CgtMaXN0ZW5Mb2dpbhITLmxvZ2luLkxvZ2luUmVxdWVz",
-            "dBoULmxvZ2luLkxvZ2luUmVzcG9uc2UwARIqCgVMb2dpbhIPLmxvZ2luLkxv",
-            "Z2luUmVxGhAubG9naW4uUmVzdWx0UnNwEiwKBkxvZ291dBIQLmxvZ2luLkxv",
-            "Z291dFJlcRoQLmxvZ2luLkxvZ291dFJzcEIMqgIJSFlGU2VydmVyYgZwcm90",
-            "bzM="));
+            "dBoULmxvZ2luLkxvZ2luUmVzcG9uc2UwARIsCgdMb2dpbkluEg8ubG9naW4u",
+            "TG9naW5SZXEaEC5sb2dpbi5SZXN1bHRSc3ASLAoGTG9nb3V0EhAubG9naW4u",
+            "TG9nb3V0UmVxGhAubG9naW4uTG9nb3V0UnNwQgyqAglIWUZTZXJ2ZXJiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
