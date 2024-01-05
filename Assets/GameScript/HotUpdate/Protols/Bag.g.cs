@@ -24,31 +24,31 @@ namespace HYFServer {
     static BagReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgliYWcucHJvdG8SA2JhZyIMCgpCYWdSZXF1ZXN0IjsKC0JhZ1Jlc3BvbnNl",
-            "EiIKCWl0ZW1JbmZvcxgEIAEoCzINLmJhZy5JdGVtRHRvc0gAQggKBkJhZ01z",
-            "ZyITChFCYWdBbGxJbmZvUmVxdWVzdCI3ChJCYWdBbGxJbmZvUmVzcG9uc2US",
-            "IQoLYWxsSXRlbUluZm8YASADKAsyDC5iYWcuSXRlbUR0byIiChFCYWdPbmVJ",
-            "bmZvUmVxdWVzdBINCgVjZmdJZBgBIAEoBSIzChJCYWdPbmVJbmZvUmVzcG9u",
-            "c2USHQoHaXRlbUR0bxgFIAEoCzIMLmJhZy5JdGVtRHRvIjEKE0JhZ1VzaW5n",
-            "SXRlbVJlcXVlc3QSDQoFY2ZnSWQYASABKAUSCwoDbnVtGAIgASgFIjIKFEJh",
-            "Z1VzaW5nSXRlbVJlc3BvbnNlEg0KBWNmZ0lkGAEgASgFEgsKA3N1bRgCIAEo",
-            "BSIQCg5PcGVuQmFnUmVxdWVzdCIuCg9PcGVuQmFnUmVzcG9uc2USGwoFaXRl",
-            "bXMYASADKAsyDC5iYWcuSXRlbUR0byIyCgdJdGVtRHRvEg0KBWNmZ0lkGAEg",
-            "ASgFEgsKA3N1bRgCIAEoBRILCgN1aWQYAyABKAkiKwoISXRlbUR0b3MSHwoJ",
-            "aXRlbUluZm9zGAIgAygLMgwuYmFnLkl0ZW1EdG8yuwIKCkJhZ1NlcnZpY2US",
-            "MAoJTGlzdGVuQmFnEg8uYmFnLkJhZ1JlcXVlc3QaEC5iYWcuQmFnUmVzcG9u",
-            "c2UwARI9CgpCYWdBbGxJbmZvEhYuYmFnLkJhZ0FsbEluZm9SZXF1ZXN0Ghcu",
-            "YmFnLkJhZ0FsbEluZm9SZXNwb25zZRI9CgpCYWdPbmVJbmZvEhYuYmFnLkJh",
-            "Z09uZUluZm9SZXF1ZXN0GhcuYmFnLkJhZ09uZUluZm9SZXNwb25zZRJDCgxC",
-            "YWdVc2luZ0l0ZW0SGC5iYWcuQmFnVXNpbmdJdGVtUmVxdWVzdBoZLmJhZy5C",
-            "YWdVc2luZ0l0ZW1SZXNwb25zZRI4CgdPcGVuQmFnEhMuYmFnLk9wZW5CYWdS",
-            "ZXF1ZXN0GhQuYmFnLk9wZW5CYWdSZXNwb25zZSgBMAFCDKoCCUhZRlNlcnZl",
-            "cmIGcHJvdG8z"));
+            "CgliYWcucHJvdG8SA2JhZyIMCgpCYWdSZXF1ZXN0IlAKC0JhZ1Jlc3BvbnNl",
+            "EiIKCWl0ZW1JbmZvcxgEIAEoCzINLmJhZy5JdGVtRHRvc0gAEhMKCVRlc3RW",
+            "YWx1ZRgFIAEoBUgAQggKBkJhZ01zZyITChFCYWdBbGxJbmZvUmVxdWVzdCI3",
+            "ChJCYWdBbGxJbmZvUmVzcG9uc2USIQoLYWxsSXRlbUluZm8YASADKAsyDC5i",
+            "YWcuSXRlbUR0byIiChFCYWdPbmVJbmZvUmVxdWVzdBINCgVjZmdJZBgBIAEo",
+            "BSIzChJCYWdPbmVJbmZvUmVzcG9uc2USHQoHaXRlbUR0bxgFIAEoCzIMLmJh",
+            "Zy5JdGVtRHRvIjEKE0JhZ1VzaW5nSXRlbVJlcXVlc3QSDQoFY2ZnSWQYASAB",
+            "KAUSCwoDbnVtGAIgASgFIjIKFEJhZ1VzaW5nSXRlbVJlc3BvbnNlEg0KBWNm",
+            "Z0lkGAEgASgFEgsKA3N1bRgCIAEoBSIQCg5PcGVuQmFnUmVxdWVzdCIuCg9P",
+            "cGVuQmFnUmVzcG9uc2USGwoFaXRlbXMYASADKAsyDC5iYWcuSXRlbUR0byIy",
+            "CgdJdGVtRHRvEg0KBWNmZ0lkGAEgASgFEgsKA3N1bRgCIAEoBRILCgN1aWQY",
+            "AyABKAkiKwoISXRlbUR0b3MSHwoJaXRlbUluZm9zGAIgAygLMgwuYmFnLkl0",
+            "ZW1EdG8yuwIKCkJhZ1NlcnZpY2USMAoJTGlzdGVuQmFnEg8uYmFnLkJhZ1Jl",
+            "cXVlc3QaEC5iYWcuQmFnUmVzcG9uc2UwARI9CgpCYWdBbGxJbmZvEhYuYmFn",
+            "LkJhZ0FsbEluZm9SZXF1ZXN0GhcuYmFnLkJhZ0FsbEluZm9SZXNwb25zZRI9",
+            "CgpCYWdPbmVJbmZvEhYuYmFnLkJhZ09uZUluZm9SZXF1ZXN0GhcuYmFnLkJh",
+            "Z09uZUluZm9SZXNwb25zZRJDCgxCYWdVc2luZ0l0ZW0SGC5iYWcuQmFnVXNp",
+            "bmdJdGVtUmVxdWVzdBoZLmJhZy5CYWdVc2luZ0l0ZW1SZXNwb25zZRI4CgdP",
+            "cGVuQmFnEhMuYmFnLk9wZW5CYWdSZXF1ZXN0GhQuYmFnLk9wZW5CYWdSZXNw",
+            "b25zZSgBMAFCDKoCCUhZRlNlcnZlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagRequest), global::HYFServer.BagRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagResponse), global::HYFServer.BagResponse.Parser, new[]{ "ItemInfos" }, new[]{ "BagMsg" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagResponse), global::HYFServer.BagResponse.Parser, new[]{ "ItemInfos", "TestValue" }, new[]{ "BagMsg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagAllInfoRequest), global::HYFServer.BagAllInfoRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagAllInfoResponse), global::HYFServer.BagAllInfoResponse.Parser, new[]{ "AllItemInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.BagOneInfoRequest), global::HYFServer.BagOneInfoRequest.Parser, new[]{ "CfgId" }, null, null, null, null),
@@ -261,6 +261,9 @@ namespace HYFServer {
         case BagMsgOneofCase.ItemInfos:
           ItemInfos = other.ItemInfos.Clone();
           break;
+        case BagMsgOneofCase.TestValue:
+          TestValue = other.TestValue;
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -284,11 +287,38 @@ namespace HYFServer {
       }
     }
 
+    /// <summary>Field number for the "TestValue" field.</summary>
+    public const int TestValueFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int TestValue {
+      get { return HasTestValue ? (int) bagMsg_ : 0; }
+      set {
+        bagMsg_ = value;
+        bagMsgCase_ = BagMsgOneofCase.TestValue;
+      }
+    }
+    /// <summary>Gets whether the "TestValue" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTestValue {
+      get { return bagMsgCase_ == BagMsgOneofCase.TestValue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "TestValue" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTestValue() {
+      if (HasTestValue) {
+        ClearBagMsg();
+      }
+    }
+
     private object bagMsg_;
     /// <summary>Enum of possible cases for the "BagMsg" oneof.</summary>
     public enum BagMsgOneofCase {
       None = 0,
       ItemInfos = 4,
+      TestValue = 5,
     }
     private BagMsgOneofCase bagMsgCase_ = BagMsgOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -320,6 +350,7 @@ namespace HYFServer {
         return true;
       }
       if (!object.Equals(ItemInfos, other.ItemInfos)) return false;
+      if (TestValue != other.TestValue) return false;
       if (BagMsgCase != other.BagMsgCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -329,6 +360,7 @@ namespace HYFServer {
     public override int GetHashCode() {
       int hash = 1;
       if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) hash ^= ItemInfos.GetHashCode();
+      if (HasTestValue) hash ^= TestValue.GetHashCode();
       hash ^= (int) bagMsgCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -352,6 +384,10 @@ namespace HYFServer {
         output.WriteRawTag(34);
         output.WriteMessage(ItemInfos);
       }
+      if (HasTestValue) {
+        output.WriteRawTag(40);
+        output.WriteInt32(TestValue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -366,6 +402,10 @@ namespace HYFServer {
         output.WriteRawTag(34);
         output.WriteMessage(ItemInfos);
       }
+      if (HasTestValue) {
+        output.WriteRawTag(40);
+        output.WriteInt32(TestValue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -378,6 +418,9 @@ namespace HYFServer {
       int size = 0;
       if (bagMsgCase_ == BagMsgOneofCase.ItemInfos) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemInfos);
+      }
+      if (HasTestValue) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TestValue);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -397,6 +440,9 @@ namespace HYFServer {
             ItemInfos = new global::HYFServer.ItemDtos();
           }
           ItemInfos.MergeFrom(other.ItemInfos);
+          break;
+        case BagMsgOneofCase.TestValue:
+          TestValue = other.TestValue;
           break;
       }
 
@@ -424,6 +470,10 @@ namespace HYFServer {
             ItemInfos = subBuilder;
             break;
           }
+          case 40: {
+            TestValue = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -446,6 +496,10 @@ namespace HYFServer {
             }
             input.ReadMessage(subBuilder);
             ItemInfos = subBuilder;
+            break;
+          }
+          case 40: {
+            TestValue = input.ReadInt32();
             break;
           }
         }

@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class ProtocalRole : Singleton<ProtocalRole>
 {
-    private RoleService.RoleServiceClient mService;
+    private RoleService.RoleServiceClient mClient;
     private bool isStart = true;
     public async void ListenRole(GrpcChannel channel)
     {
-        mService = new RoleService.RoleServiceClient(channel);
-        using var shopClient = mService.ListenRole(new RoleRequest());
+        mClient = new RoleService.RoleServiceClient(channel);
+        using var shopClient = mClient.ListenRole(new RoleRequest());
         var responseStream = shopClient.ResponseStream;
         var cancel = new CancellationTokenSource();
         while (isStart)
@@ -32,7 +32,7 @@ public class ProtocalRole : Singleton<ProtocalRole>
     public async Task<RoleUpLvResponse> RoleUpLvRequest(int lv)
     {
         Debug.LogError($"proto请求 角色升级:{lv}");
-        var res = await mService.RoleUpLvAsync(new RoleUpLvRequest()
+        var res = await mClient.RoleUpLvAsync(new RoleUpLvRequest()
         {
             Uid = "abc", Lv = lv
         });
@@ -42,7 +42,7 @@ public class ProtocalRole : Singleton<ProtocalRole>
     public async Task<RoleAddVipResponse> RoleAddVipRequest()
     {
         Debug.LogError($"proto请求 角色vip");
-        var res = await mService.RoleAddVipAsync(new RoleAddVipRequest()
+        var res = await mClient.RoleAddVipAsync(new RoleAddVipRequest()
         {
             Uid = "abc"
         });

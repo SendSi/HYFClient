@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class ProtocalBag : Singleton<ProtocalBag>
 {
-    private BagService.BagServiceClient mService;
+    private BagService.BagServiceClient mClient;
     private bool isStart = true;
 
     public async void ListenBag(GrpcChannel channel)
     {
-        mService = new BagService.BagServiceClient(channel);
+        mClient = new BagService.BagServiceClient(channel);
 
-        using var shopClient = mService.ListenBag(new BagRequest());
+        using var shopClient = mClient.ListenBag(new BagRequest());
         var responseStream = shopClient.ResponseStream;
         var cancel = new CancellationTokenSource();
         while (isStart)
@@ -48,7 +48,7 @@ public class ProtocalBag : Singleton<ProtocalBag>
     public async Task OpenBag()
     {
         Debug.LogError($"proto请求 OpenBag");
-        var bagT = mService.OpenBag();
+        var bagT = mClient.OpenBag();
         var cancel = new CancellationToken();
         var responseReaderTask = Task.Run(async () =>
         {
@@ -62,5 +62,11 @@ public class ProtocalBag : Singleton<ProtocalBag>
         // 完成请求
         await bagT.RequestStream.CompleteAsync();
         await responseReaderTask;
+    }
+
+    public async Task<BagUsingItemResponse> BagUsingItem(int cfgId, int num)
+    {
+        var usCall = await mClient.BagUsingItemAsync(new BagUsingItemRequest() { CfgId = cfgId, Num = num });
+        return usCall;
     }
 }

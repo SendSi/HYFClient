@@ -11,6 +11,7 @@ public class ProtocalBinder
 
     public static void UnBind()
     {
+        GrpcChannelManager.Instance.Dispose();
         ProtocalLogin.Instance.Dispose();
         ProtocalShop.Instance.Dispose();
         ProtocalRole.Instance.Dispose();

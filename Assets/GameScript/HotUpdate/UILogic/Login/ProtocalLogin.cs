@@ -7,12 +7,12 @@ using UnityEngine;
 public class ProtocalLogin : Singleton<ProtocalLogin>
 {
     private bool isStart = true;
-    private LoginService.LoginServiceClient mService;
+    private LoginService.LoginServiceClient mClient;
     public async void ListenLogin(GrpcChannel channel)
     {
-        mService = new LoginService.LoginServiceClient(channel);
+        mClient = new LoginService.LoginServiceClient(channel);
         
-        using var shopClient = mService.ListenLogin(new LoginRequest());
+        using var shopClient = mClient.ListenLogin(new LoginRequest());
         var responseStream = shopClient.ResponseStream;
         var cancel = new CancellationTokenSource();
         while (isStart)
@@ -34,7 +34,7 @@ public class ProtocalLogin : Singleton<ProtocalLogin>
 
     public async Task<int> LoginIn(string nickName)
     {
-        var res = await mService.LoginInAsync(new LoginReq()
+        var res = await mClient.LoginInAsync(new LoginReq()
         {
             NickName = nickName
         });

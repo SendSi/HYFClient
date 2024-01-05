@@ -9,7 +9,7 @@ public static class AppConfig
 
     
     #region editor下使用的
-    public static string resVersion = "v1.2"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
+    public static string resVersion = "v1.3"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
     public static string localCDN = "D:/WWW_hyfclient/CDN/";//本地cdn资源服务器 磁盘路径
     #endregion
 

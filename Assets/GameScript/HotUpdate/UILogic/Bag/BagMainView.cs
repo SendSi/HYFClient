@@ -42,7 +42,10 @@ namespace Bag
                 item.SetData(mCurrencyIds[index]);
             };
             mCurrencyList_UI.numItems = 3;
+
+            _btnCanUsing.onClick.Set(OnClickUsing);
         }
+
 
         private void OnClickItemPropList(EventContext context)
         {
@@ -99,6 +102,12 @@ namespace Bag
             mSelectItemDto = null;
             mCurrencyList_UI = null;
             EventCenter.Instance.UnBind<string>(EventEnum.EE_test, OnEventTest);
+        }
+
+        private async void OnClickUsing()
+        {
+            var result = await ProtocalBag.Instance.BagUsingItem(1, 1);
+            Debug.LogError(result);
         }
     }
 }
