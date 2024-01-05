@@ -8,7 +8,6 @@ public class ServicePushInfo : Singleton<ServicePushInfo>
     public void Start()
     {
         Run();
-
     }
 
 
@@ -16,7 +15,6 @@ public class ServicePushInfo : Singleton<ServicePushInfo>
     public async void Run()
     {
         GrpcChannelManager.Instance.InitMainChannel(AppConfig.serverURL);
-        ProtocalBag.Instance.TT();
         using (ServiceManager.Instance.GetClient<PushService.PushServiceClient>(out var pushClient))
         {
             var serverPush = pushClient.ServerPush(new PushReq());

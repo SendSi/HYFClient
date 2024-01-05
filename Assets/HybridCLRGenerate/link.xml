@@ -66,6 +66,7 @@
     <type fullname="Google.Protobuf.WriteContext" preserve="all" />
   </assembly>
   <assembly fullname="Grpc.Core.Api">
+    <type fullname="Grpc.Core.AsyncDuplexStreamingCall`2" preserve="all" />
     <type fullname="Grpc.Core.AsyncServerStreamingCall`1" preserve="all" />
     <type fullname="Grpc.Core.AsyncUnaryCall`1" preserve="all" />
     <type fullname="Grpc.Core.BindServiceMethodAttribute" preserve="all" />
@@ -78,7 +79,9 @@
     <type fullname="Grpc.Core.ClientBase`1" preserve="all" />
     <type fullname="Grpc.Core.ContextPropagationToken" preserve="all" />
     <type fullname="Grpc.Core.DeserializationContext" preserve="all" />
+    <type fullname="Grpc.Core.DuplexStreamingServerMethod`2" preserve="all" />
     <type fullname="Grpc.Core.IAsyncStreamReader`1" preserve="all" />
+    <type fullname="Grpc.Core.IClientStreamWriter`1" preserve="all" />
     <type fullname="Grpc.Core.IServerStreamWriter`1" preserve="all" />
     <type fullname="Grpc.Core.Marshaller`1" preserve="all" />
     <type fullname="Grpc.Core.Marshallers" preserve="all" />
@@ -218,6 +221,7 @@
     <type fullname="System.Reflection.MemberInfo" preserve="all" />
     <type fullname="System.Reflection.TypeInfo" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncStateMachineAttribute" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" preserve="all" />
@@ -227,6 +231,7 @@
     <type fullname="System.Runtime.CompilerServices.IteratorStateMachineAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.TaskAwaiter" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
     <type fullname="System.RuntimeTypeHandle" preserve="all" />

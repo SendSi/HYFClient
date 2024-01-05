@@ -24,23 +24,28 @@ namespace HYFServer {
     static RoleReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cgpyb2xlLnByb3RvEgRyb2xlIh4KD1JvbGVJbmZvUmVxdWVzdBILCgN1aWQY",
-            "CiABKAkiMAoQUm9sZUluZm9SZXNwb25zZRIcCgRpbmZvGAkgASgLMg4ucm9s",
-            "ZS5Sb2xlSW5mbyIqCg9Sb2xlVXBMdlJlcXVlc3QSCwoDdWlkGAEgASgJEgoK",
-            "Amx2GAIgASgFIjAKEFJvbGVVcEx2UmVzcG9uc2USHAoEaW5mbxgJIAEoCzIO",
-            "LnJvbGUuUm9sZUluZm8iIAoRUm9sZUFkZFZpcFJlcXVlc3QSCwoDdWlkGAEg",
-            "ASgJIjIKElJvbGVBZGRWaXBSZXNwb25zZRIcCgRpbmZvGAkgASgLMg4ucm9s",
-            "ZS5Sb2xlSW5mbyIdCg9Sb2xlTGV2ZWxVcGRhdGUSCgoCbHYYASABKAUiUgoI",
-            "Um9sZUluZm8SCwoDdWlkGAcgASgJEhAKCG5pY2tuYW1lGAIgASgJEgsKA2Fn",
-            "ZRgDIAEoBRIKCgJsdhgEIAEoBRIOCgZnZW5kZXIYBSABKAUyxAEKC1JvbGVT",
-            "ZXJ2aWNlEjkKCFJvbGVJbmZvEhUucm9sZS5Sb2xlSW5mb1JlcXVlc3QaFi5y",
-            "b2xlLlJvbGVJbmZvUmVzcG9uc2USOQoIUm9sZVVwTHYSFS5yb2xlLlJvbGVV",
-            "cEx2UmVxdWVzdBoWLnJvbGUuUm9sZVVwTHZSZXNwb25zZRI/CgpSb2xlQWRk",
-            "VmlwEhcucm9sZS5Sb2xlQWRkVmlwUmVxdWVzdBoYLnJvbGUuUm9sZUFkZFZp",
-            "cFJlc3BvbnNlQgyqAglIWUZTZXJ2ZXJiBnByb3RvMw=="));
+            "Cgpyb2xlLnByb3RvEgRyb2xlIg0KC1JvbGVSZXF1ZXN0IjkKDFJvbGVSZXNw",
+            "b25zZRIeCgRpbmZvGAEgASgLMg4ucm9sZS5Sb2xlSW5mb0gAQgkKB1JvbGVN",
+            "c2ciHgoPUm9sZUluZm9SZXF1ZXN0EgsKA3VpZBgKIAEoCSIwChBSb2xlSW5m",
+            "b1Jlc3BvbnNlEhwKBGluZm8YCSABKAsyDi5yb2xlLlJvbGVJbmZvIioKD1Jv",
+            "bGVVcEx2UmVxdWVzdBILCgN1aWQYASABKAkSCgoCbHYYAiABKAUiMAoQUm9s",
+            "ZVVwTHZSZXNwb25zZRIcCgRpbmZvGAkgASgLMg4ucm9sZS5Sb2xlSW5mbyIg",
+            "ChFSb2xlQWRkVmlwUmVxdWVzdBILCgN1aWQYASABKAkiMgoSUm9sZUFkZFZp",
+            "cFJlc3BvbnNlEhwKBGluZm8YCSABKAsyDi5yb2xlLlJvbGVJbmZvIh0KD1Jv",
+            "bGVMZXZlbFVwZGF0ZRIKCgJsdhgBIAEoBSJSCghSb2xlSW5mbxILCgN1aWQY",
+            "ByABKAkSEAoIbmlja25hbWUYAiABKAkSCwoDYWdlGAMgASgFEgoKAmx2GAQg",
+            "ASgFEg4KBmdlbmRlchgFIAEoBTL7AQoLUm9sZVNlcnZpY2USNQoKTGlzdGVu",
+            "Um9sZRIRLnJvbGUuUm9sZVJlcXVlc3QaEi5yb2xlLlJvbGVSZXNwb25zZTAB",
+            "EjkKCFJvbGVJbmZvEhUucm9sZS5Sb2xlSW5mb1JlcXVlc3QaFi5yb2xlLlJv",
+            "bGVJbmZvUmVzcG9uc2USOQoIUm9sZVVwTHYSFS5yb2xlLlJvbGVVcEx2UmVx",
+            "dWVzdBoWLnJvbGUuUm9sZVVwTHZSZXNwb25zZRI/CgpSb2xlQWRkVmlwEhcu",
+            "cm9sZS5Sb2xlQWRkVmlwUmVxdWVzdBoYLnJvbGUuUm9sZUFkZFZpcFJlc3Bv",
+            "bnNlQgyqAglIWUZTZXJ2ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.RoleRequest), global::HYFServer.RoleRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.RoleResponse), global::HYFServer.RoleResponse.Parser, new[]{ "Info" }, new[]{ "RoleMsg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.RoleInfoRequest), global::HYFServer.RoleInfoRequest.Parser, new[]{ "Uid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.RoleInfoResponse), global::HYFServer.RoleInfoResponse.Parser, new[]{ "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.RoleUpLvRequest), global::HYFServer.RoleUpLvRequest.Parser, new[]{ "Uid", "Lv" }, null, null, null, null),
@@ -55,6 +60,396 @@ namespace HYFServer {
 
   }
   #region Messages
+  /// <summary>
+  ///加入监听 请求
+  /// </summary>
+  public sealed partial class RoleRequest : pb::IMessage<RoleRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RoleRequest> _parser = new pb::MessageParser<RoleRequest>(() => new RoleRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RoleRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleRequest(RoleRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleRequest Clone() {
+      return new RoleRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RoleRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RoleRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RoleRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///加入监听 响应
+  /// </summary>
+  public sealed partial class RoleResponse : pb::IMessage<RoleResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RoleResponse> _parser = new pb::MessageParser<RoleResponse>(() => new RoleResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RoleResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleResponse(RoleResponse other) : this() {
+      switch (other.RoleMsgCase) {
+        case RoleMsgOneofCase.Info:
+          Info = other.Info.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleResponse Clone() {
+      return new RoleResponse(this);
+    }
+
+    /// <summary>Field number for the "info" field.</summary>
+    public const int InfoFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::HYFServer.RoleInfo Info {
+      get { return roleMsgCase_ == RoleMsgOneofCase.Info ? (global::HYFServer.RoleInfo) roleMsg_ : null; }
+      set {
+        roleMsg_ = value;
+        roleMsgCase_ = value == null ? RoleMsgOneofCase.None : RoleMsgOneofCase.Info;
+      }
+    }
+
+    private object roleMsg_;
+    /// <summary>Enum of possible cases for the "RoleMsg" oneof.</summary>
+    public enum RoleMsgOneofCase {
+      None = 0,
+      Info = 1,
+    }
+    private RoleMsgOneofCase roleMsgCase_ = RoleMsgOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RoleMsgOneofCase RoleMsgCase {
+      get { return roleMsgCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRoleMsg() {
+      roleMsgCase_ = RoleMsgOneofCase.None;
+      roleMsg_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RoleResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RoleResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Info, other.Info)) return false;
+      if (RoleMsgCase != other.RoleMsgCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (roleMsgCase_ == RoleMsgOneofCase.Info) hash ^= Info.GetHashCode();
+      hash ^= (int) roleMsgCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (roleMsgCase_ == RoleMsgOneofCase.Info) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Info);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (roleMsgCase_ == RoleMsgOneofCase.Info) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Info);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (roleMsgCase_ == RoleMsgOneofCase.Info) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RoleResponse other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.RoleMsgCase) {
+        case RoleMsgOneofCase.Info:
+          if (Info == null) {
+            Info = new global::HYFServer.RoleInfo();
+          }
+          Info.MergeFrom(other.Info);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::HYFServer.RoleInfo subBuilder = new global::HYFServer.RoleInfo();
+            if (roleMsgCase_ == RoleMsgOneofCase.Info) {
+              subBuilder.MergeFrom(Info);
+            }
+            input.ReadMessage(subBuilder);
+            Info = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::HYFServer.RoleInfo subBuilder = new global::HYFServer.RoleInfo();
+            if (roleMsgCase_ == RoleMsgOneofCase.Info) {
+              subBuilder.MergeFrom(Info);
+            }
+            input.ReadMessage(subBuilder);
+            Info = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   /// <summary>
   ///查看某一角色的 请求
   /// </summary>
@@ -72,7 +467,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[0]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -264,7 +659,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[1]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -465,7 +860,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[2]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -694,7 +1089,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[3]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -895,7 +1290,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[4]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1087,7 +1482,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[5]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1285,7 +1680,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[6]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1477,7 +1872,7 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[7]; }
+      get { return global::HYFServer.RoleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

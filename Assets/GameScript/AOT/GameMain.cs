@@ -52,6 +52,15 @@ public class GameMain : MonoBehaviour
         });
     }
 
+    private void OnDestroy()
+    {
+        if (_hotUpdateAss!=null)
+        {
+            Type entryType = _hotUpdateAss.GetType("HotFixReflex");
+            entryType.GetMethod("Destroy").Invoke(null, null);
+        }
+    }
+
     //加载热更页面
     private IEnumerator CheckLoadYooHF()
     {

@@ -1,17 +1,56 @@
-﻿using HYFServer;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Grpc.Net.Client;
+using HYFServer;
 using UnityEngine;
 
 public class ProtocalBag : Singleton<ProtocalBag>
 {
     private BagService.BagServiceClient mService;
-
-    protected override void OnInit()
+    private bool isStart = true;
+    public async void ListenBag(GrpcChannel channel)
     {
-        base.OnInit();
-        mService = new BagService.BagServiceClient(GrpcChannelManager.Instance.MainChannel);
-        EventCenter.Instance.Bind<PushRsp>(EventEnum.EE_Server_Items,OnEventServicePush);
-        Debug.LogError("oninit");
+        mService = new BagService.BagServiceClient(channel);
+        
+        using var shopClient = mService.ListenBag(new BagRequest());
+        var responseStream = shopClient.ResponseStream;
+        var cancel = new CancellationTokenSource();
+        while (isStart)
+        {
+            while (await responseStream.MoveNext(cancel.Token))
+            {
+                var current = responseStream.Current;
+                Debug.LogError($"bag:{current}");
+            }
+        }
     }
+    protected override void OnDispose()
+    {
+        base.OnDispose();
+        isStart = false;
+    }
+
+
+    public async Task  OpenBag()
+    {
+        Debug.LogError($"proto请求 OpenBag");
+        var bagT = mService.OpenBag();
+        var cancel = new CancellationToken();
+        var responseReaderTask = Task.Run(async () =>
+        {
+            while (await bagT.ResponseStream.MoveNext(cancel))
+            {
+                var response = bagT.ResponseStream.Current;
+                Debug.LogError(response);
+            }
+        });
+        
+        // 完成请求
+        await bagT.RequestStream.CompleteAsync();
+        await responseReaderTask;
+    }
+
+
 
     private void OnEventServicePush(PushRsp rsp)
     {
@@ -24,12 +63,6 @@ public class ProtocalBag : Singleton<ProtocalBag>
         }
     }
 
-    public void TT()
-    {
-        
-    }
 
-
-        
 
 }
