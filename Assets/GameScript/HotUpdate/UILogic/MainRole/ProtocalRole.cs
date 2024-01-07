@@ -1,40 +1,49 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
+using Grpc.Core;
 using Grpc.Net.Client;
 using HYFServer;
 using UnityEngine;
 
 public class ProtocalRole : Singleton<ProtocalRole>
 {
-    private RoleService.RoleServiceClient mClient;
-    private bool isStart = true;
-    public async void ListenRole(GrpcChannel channel)
+    private RoleService.RoleServiceClient mService;
+
+
+    public async void ListenRole(GrpcChannel channel,CancellationTokenSource tokenCancel)
     {
-        mClient = new RoleService.RoleServiceClient(channel);
-        using var shopClient = mClient.ListenRole(new RoleRequest());
-        var responseStream = shopClient.ResponseStream;
-        var cancel = new CancellationTokenSource();
-        while (isStart)
+        mService = new RoleService.RoleServiceClient(channel);
+        using var roleClient = mService.ListenRole(new RoleRequest());
+        var responseStream = roleClient.ResponseStream;
+        try
         {
-            while (await responseStream.MoveNext(cancel.Token))
+            while (await responseStream.MoveNext(tokenCancel.Token))
             {
                 var current = responseStream.Current;
                 Debug.LogError($"role:{current}");
             }
         }
+        catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled && tokenCancel.IsCancellationRequested)
+        {
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
     }
     protected override void OnDispose()
     {
         base.OnDispose();
-        isStart = false;
     }
 
     public async Task<RoleUpLvResponse> RoleUpLvRequest(int lv)
     {
         Debug.LogError($"proto请求 角色升级:{lv}");
-        var res = await mClient.RoleUpLvAsync(new RoleUpLvRequest()
+        var res = await mService.RoleUpLvAsync(new RoleUpLvRequest()
         {
-            Uid = "abc", Lv = lv
+            Uid = "abc",
+            Lv = lv
         });
         return res;
     }
@@ -42,7 +51,7 @@ public class ProtocalRole : Singleton<ProtocalRole>
     public async Task<RoleAddVipResponse> RoleAddVipRequest()
     {
         Debug.LogError($"proto请求 角色vip");
-        var res = await mClient.RoleAddVipAsync(new RoleAddVipRequest()
+        var res = await mService.RoleAddVipAsync(new RoleAddVipRequest()
         {
             Uid = "abc"
         });

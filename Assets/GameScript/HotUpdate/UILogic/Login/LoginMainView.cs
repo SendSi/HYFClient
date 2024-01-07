@@ -1,4 +1,5 @@
 using FairyGUI;
+using HYFServer;
 using UnityEngine;
 
 namespace Login
@@ -30,7 +31,7 @@ namespace Login
             });
 
             this._sanningBtn.onClick.Set(OnClickSanningBtn);
-        }
+       }
 
 
 
@@ -51,9 +52,10 @@ namespace Login
 
         async void LoginMySql(string nickName)
         {
-            var State =await ProtocalLogin.Instance.LoginIn(nickName);
-            if (State > 0)
+            var rsp =await ProtocalLogin.Instance.LoginIn(nickName);
+            if (rsp?.Id > 0)
             {
+                ServiceManager.Instance.SetMetaData(rsp.NickName,rsp.Id);
                 ProxyMainCenterModule.Instance.OpenMainCenterView();
                 ProxyLoginModule.Instance.CloseLoginMainView();
             }

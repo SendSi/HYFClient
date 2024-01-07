@@ -83,4 +83,18 @@ public class ServiceManager : Singleton<ServiceManager>
             Instance?.RemoveClient(client);
         }
     }
+    
+    private Metadata _metaData;
+
+    //登录时 存好元数据
+    public void SetMetaData(string metaNickName, int roleId)
+    {
+        _metaData = new Metadata {{ "roleId", roleId.ToString() }, { "nickName", metaNickName }  };
+    }
+
+    public Metadata GetMetaData()
+    {
+        return _metaData;
+    }
+    
 }

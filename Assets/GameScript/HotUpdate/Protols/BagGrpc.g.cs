@@ -100,7 +100,7 @@ namespace HYFServer {
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::HYFServer.OpenBagRequest, global::HYFServer.OpenBagResponse> __Method_OpenBag = new grpc::Method<global::HYFServer.OpenBagRequest, global::HYFServer.OpenBagResponse>(
-        grpc::MethodType.DuplexStreaming,
+        grpc::MethodType.Unary,
         __ServiceName,
         "OpenBag",
         __Marshaller_bag_OpenBagRequest,
@@ -141,7 +141,7 @@ namespace HYFServer {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task OpenBag(grpc::IAsyncStreamReader<global::HYFServer.OpenBagRequest> requestStream, grpc::IServerStreamWriter<global::HYFServer.OpenBagResponse> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HYFServer.OpenBagResponse> OpenBag(global::HYFServer.OpenBagRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -246,14 +246,24 @@ namespace HYFServer {
         return CallInvoker.AsyncUnaryCall(__Method_BagUsingItem, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncDuplexStreamingCall<global::HYFServer.OpenBagRequest, global::HYFServer.OpenBagResponse> OpenBag(grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::HYFServer.OpenBagResponse OpenBag(global::HYFServer.OpenBagRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return OpenBag(new grpc::CallOptions(headers, deadline, cancellationToken));
+        return OpenBag(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncDuplexStreamingCall<global::HYFServer.OpenBagRequest, global::HYFServer.OpenBagResponse> OpenBag(grpc::CallOptions options)
+      public virtual global::HYFServer.OpenBagResponse OpenBag(global::HYFServer.OpenBagRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncDuplexStreamingCall(__Method_OpenBag, null, options);
+        return CallInvoker.BlockingUnaryCall(__Method_OpenBag, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::HYFServer.OpenBagResponse> OpenBagAsync(global::HYFServer.OpenBagRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return OpenBagAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::HYFServer.OpenBagResponse> OpenBagAsync(global::HYFServer.OpenBagRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_OpenBag, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -287,7 +297,7 @@ namespace HYFServer {
       serviceBinder.AddMethod(__Method_BagAllInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.BagAllInfoRequest, global::HYFServer.BagAllInfoResponse>(serviceImpl.BagAllInfo));
       serviceBinder.AddMethod(__Method_BagOneInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.BagOneInfoRequest, global::HYFServer.BagOneInfoResponse>(serviceImpl.BagOneInfo));
       serviceBinder.AddMethod(__Method_BagUsingItem, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.BagUsingItemRequest, global::HYFServer.BagUsingItemResponse>(serviceImpl.BagUsingItem));
-      serviceBinder.AddMethod(__Method_OpenBag, serviceImpl == null ? null : new grpc::DuplexStreamingServerMethod<global::HYFServer.OpenBagRequest, global::HYFServer.OpenBagResponse>(serviceImpl.OpenBag));
+      serviceBinder.AddMethod(__Method_OpenBag, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.OpenBagRequest, global::HYFServer.OpenBagResponse>(serviceImpl.OpenBag));
     }
 
   }

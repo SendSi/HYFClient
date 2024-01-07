@@ -1,36 +1,42 @@
-﻿using System.Threading;
+﻿using System;
+using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using Grpc.Core;
 using Grpc.Net.Client;
 using HYFServer;
 using UnityEngine;
 
 public class ProtocalBag : Singleton<ProtocalBag>
 {
-    private BagService.BagServiceClient mClient;
-    private bool isStart = true;
+    private BagService.BagServiceClient mService;
 
-    public async void ListenBag(GrpcChannel channel)
+    public async void ListenBag(GrpcChannel channel, CancellationTokenSource tokenCancel)
     {
-        mClient = new BagService.BagServiceClient(channel);
-
-        using var shopClient = mClient.ListenBag(new BagRequest());
-        var responseStream = shopClient.ResponseStream;
-        var cancel = new CancellationTokenSource();
-        while (isStart)
+        mService = new BagService.BagServiceClient(channel);
+        using var bagClient = mService.ListenBag(new BagRequest());
+        var responseStream = bagClient.ResponseStream;
+        try
         {
-            while (await responseStream.MoveNext(cancel.Token))
+            while (await responseStream.MoveNext(tokenCancel.Token))
             {
                 var current = responseStream.Current;
                 Debug.LogError($"bag-stream-->{current}");
                 OnEventServicePush(current);
             }
         }
+        catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled && tokenCancel.IsCancellationRequested)
+        {
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
     }
 
     protected override void OnDispose()
     {
         base.OnDispose();
-        isStart = false;
     }
 
     private void OnEventServicePush(BagResponse rsp)
@@ -38,7 +44,6 @@ public class ProtocalBag : Singleton<ProtocalBag>
         switch (rsp.BagMsgCase)
         {
             case BagResponse.BagMsgOneofCase.ItemInfos:
-                Debug.LogError(rsp.ItemInfos);
                 BagManager.Instance.SetServerItems(rsp.ItemInfos);
                 break;
         }
@@ -47,26 +52,21 @@ public class ProtocalBag : Singleton<ProtocalBag>
 
     public async Task OpenBag()
     {
-        Debug.LogError($"proto请求 OpenBag");
-        var bagT = mClient.OpenBag();
-        var cancel = new CancellationToken();
-        var responseReaderTask = Task.Run(async () =>
-        {
-            while (await bagT.ResponseStream.MoveNext(cancel))
-            {
-                var response = bagT.ResponseStream.Current;
-                Debug.LogError(response);
-            }
-        });
+        var meta = ServiceManager.Instance.GetMetaData();
+        Debug.LogError($"ProtocalBag请求OpenBag--登录完之后 都要顺发送metaData");
+        var res = await mService.OpenBagAsync(new OpenBagRequest(), meta);
 
-        // 完成请求
-        await bagT.RequestStream.CompleteAsync();
-        await responseReaderTask;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < res.Items.Count; i++)
+        {
+            sb.Append(res.Items[i].ToString()+"<<-->>");
+        }
+        Debug.LogError(sb.ToString());
     }
 
     public async Task<BagUsingItemResponse> BagUsingItem(int cfgId, int num)
     {
-        var usCall = await mClient.BagUsingItemAsync(new BagUsingItemRequest() { CfgId = cfgId, Num = num });
+        var usCall = await mService.BagUsingItemAsync(new BagUsingItemRequest() { CfgId = cfgId, Num = num });
         return usCall;
     }
 }

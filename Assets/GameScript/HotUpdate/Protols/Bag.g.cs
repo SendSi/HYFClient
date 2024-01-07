@@ -25,7 +25,7 @@ namespace HYFServer {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgliYWcucHJvdG8SA2JhZyIMCgpCYWdSZXF1ZXN0IlAKC0JhZ1Jlc3BvbnNl",
-            "EiIKCWl0ZW1JbmZvcxgEIAEoCzINLmJhZy5JdGVtRHRvc0gAEhMKCVRlc3RW",
+            "EiIKCWl0ZW1JbmZvcxgEIAEoCzINLmJhZy5JdGVtRHRvc0gAEhMKCXRlc3RW",
             "YWx1ZRgFIAEoBUgAQggKBkJhZ01zZyITChFCYWdBbGxJbmZvUmVxdWVzdCI3",
             "ChJCYWdBbGxJbmZvUmVzcG9uc2USIQoLYWxsSXRlbUluZm8YASADKAsyDC5i",
             "YWcuSXRlbUR0byIiChFCYWdPbmVJbmZvUmVxdWVzdBINCgVjZmdJZBgBIAEo",
@@ -36,14 +36,14 @@ namespace HYFServer {
             "cGVuQmFnUmVzcG9uc2USGwoFaXRlbXMYASADKAsyDC5iYWcuSXRlbUR0byIy",
             "CgdJdGVtRHRvEg0KBWNmZ0lkGAEgASgFEgsKA3N1bRgCIAEoBRILCgN1aWQY",
             "AyABKAkiKwoISXRlbUR0b3MSHwoJaXRlbUluZm9zGAIgAygLMgwuYmFnLkl0",
-            "ZW1EdG8yuwIKCkJhZ1NlcnZpY2USMAoJTGlzdGVuQmFnEg8uYmFnLkJhZ1Jl",
+            "ZW1EdG8ytwIKCkJhZ1NlcnZpY2USMAoJTGlzdGVuQmFnEg8uYmFnLkJhZ1Jl",
             "cXVlc3QaEC5iYWcuQmFnUmVzcG9uc2UwARI9CgpCYWdBbGxJbmZvEhYuYmFn",
             "LkJhZ0FsbEluZm9SZXF1ZXN0GhcuYmFnLkJhZ0FsbEluZm9SZXNwb25zZRI9",
             "CgpCYWdPbmVJbmZvEhYuYmFnLkJhZ09uZUluZm9SZXF1ZXN0GhcuYmFnLkJh",
             "Z09uZUluZm9SZXNwb25zZRJDCgxCYWdVc2luZ0l0ZW0SGC5iYWcuQmFnVXNp",
-            "bmdJdGVtUmVxdWVzdBoZLmJhZy5CYWdVc2luZ0l0ZW1SZXNwb25zZRI4CgdP",
+            "bmdJdGVtUmVxdWVzdBoZLmJhZy5CYWdVc2luZ0l0ZW1SZXNwb25zZRI0CgdP",
             "cGVuQmFnEhMuYmFnLk9wZW5CYWdSZXF1ZXN0GhQuYmFnLk9wZW5CYWdSZXNw",
-            "b25zZSgBMAFCDKoCCUhZRlNlcnZlcmIGcHJvdG8z"));
+            "b25zZUIMqgIJSFlGU2VydmVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -287,7 +287,7 @@ namespace HYFServer {
       }
     }
 
-    /// <summary>Field number for the "TestValue" field.</summary>
+    /// <summary>Field number for the "testValue" field.</summary>
     public const int TestValueFieldNumber = 5;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -298,13 +298,13 @@ namespace HYFServer {
         bagMsgCase_ = BagMsgOneofCase.TestValue;
       }
     }
-    /// <summary>Gets whether the "TestValue" field is set</summary>
+    /// <summary>Gets whether the "testValue" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTestValue {
       get { return bagMsgCase_ == BagMsgOneofCase.TestValue; }
     }
-    /// <summary> Clears the value of the oneof if it's currently set to "TestValue" </summary>
+    /// <summary> Clears the value of the oneof if it's currently set to "testValue" </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTestValue() {

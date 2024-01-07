@@ -1,45 +1,54 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
+using Grpc.Core;
 using Grpc.Net.Client;
 using HYFServer;
 using UnityEngine;
 
 public class ProtocalLogin : Singleton<ProtocalLogin>
 {
-    private bool isStart = true;
-    private LoginService.LoginServiceClient mClient;
-    public async void ListenLogin(GrpcChannel channel)
+    private LoginService.LoginServiceClient mService;
+
+    public async void ListenLogin(GrpcChannel channel,CancellationTokenSource tokenCancel)
     {
-        mClient = new LoginService.LoginServiceClient(channel);
-        
-        using var shopClient = mClient.ListenLogin(new LoginRequest());
-        var responseStream = shopClient.ResponseStream;
-        var cancel = new CancellationTokenSource();
-        while (isStart)
+        mService = new LoginService.LoginServiceClient(channel);
+
+        using var loginClient = mService.ListenLogin(new LoginRequest());
+        var responseStream = loginClient.ResponseStream;
+
+        try
         {
-            while (await responseStream.MoveNext(cancel.Token))
+            while (await responseStream.MoveNext(tokenCancel.Token))
             {
                 var current = responseStream.Current;
                 Debug.LogWarning($"login:{current}");
             }
+        }
+        catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled && tokenCancel.IsCancellationRequested)
+        {
+            // Debug.LogError("Cancelled");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
         }
     }
 
     protected override void OnDispose()
     {
         base.OnDispose();
-        isStart = false;
     }
 
 
-    public async Task<int> LoginIn(string nickName)
+    public async Task<LoginRsp> LoginIn(string nickName)
     {
-        var res = await mClient.LoginInAsync(new LoginReq()
+        var res = await mService.LoginInAsync(new LoginReq()
         {
             NickName = nickName
         });
-        Debug.LogWarning($"1成功,其他都失败_____所以_登录结果:{res.State}");
-        return res.State;
+        Debug.LogWarning($"大于0成功,其他都失败_____所以_登录结果:{res.Id}");
+        return res;
     }
 
 

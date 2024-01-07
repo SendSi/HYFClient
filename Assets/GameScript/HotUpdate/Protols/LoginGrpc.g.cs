@@ -52,7 +52,7 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::HYFServer.LoginReq> __Marshaller_login_LoginReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::HYFServer.LoginReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::HYFServer.ResultRsp> __Marshaller_login_ResultRsp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::HYFServer.ResultRsp.Parser));
+    static readonly grpc::Marshaller<global::HYFServer.LoginRsp> __Marshaller_login_LoginRsp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::HYFServer.LoginRsp.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::HYFServer.LogoutReq> __Marshaller_login_LogoutReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::HYFServer.LogoutReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -67,12 +67,12 @@ namespace HYFServer {
         __Marshaller_login_LoginResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::HYFServer.LoginReq, global::HYFServer.ResultRsp> __Method_LoginIn = new grpc::Method<global::HYFServer.LoginReq, global::HYFServer.ResultRsp>(
+    static readonly grpc::Method<global::HYFServer.LoginReq, global::HYFServer.LoginRsp> __Method_LoginIn = new grpc::Method<global::HYFServer.LoginReq, global::HYFServer.LoginRsp>(
         grpc::MethodType.Unary,
         __ServiceName,
         "LoginIn",
         __Marshaller_login_LoginReq,
-        __Marshaller_login_ResultRsp);
+        __Marshaller_login_LoginRsp);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::HYFServer.LogoutReq, global::HYFServer.LogoutRsp> __Method_Logout = new grpc::Method<global::HYFServer.LogoutReq, global::HYFServer.LogoutRsp>(
@@ -99,7 +99,7 @@ namespace HYFServer {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::HYFServer.ResultRsp> LoginIn(global::HYFServer.LoginReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::HYFServer.LoginRsp> LoginIn(global::HYFServer.LoginReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -150,22 +150,22 @@ namespace HYFServer {
         return CallInvoker.AsyncServerStreamingCall(__Method_ListenLogin, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::HYFServer.ResultRsp LoginIn(global::HYFServer.LoginReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::HYFServer.LoginRsp LoginIn(global::HYFServer.LoginReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return LoginIn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::HYFServer.ResultRsp LoginIn(global::HYFServer.LoginReq request, grpc::CallOptions options)
+      public virtual global::HYFServer.LoginRsp LoginIn(global::HYFServer.LoginReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_LoginIn, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::HYFServer.ResultRsp> LoginInAsync(global::HYFServer.LoginReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::HYFServer.LoginRsp> LoginInAsync(global::HYFServer.LoginReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return LoginInAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::HYFServer.ResultRsp> LoginInAsync(global::HYFServer.LoginReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::HYFServer.LoginRsp> LoginInAsync(global::HYFServer.LoginReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_LoginIn, null, options, request);
       }
@@ -216,7 +216,7 @@ namespace HYFServer {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, LoginServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_ListenLogin, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::HYFServer.LoginRequest, global::HYFServer.LoginResponse>(serviceImpl.ListenLogin));
-      serviceBinder.AddMethod(__Method_LoginIn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.LoginReq, global::HYFServer.ResultRsp>(serviceImpl.LoginIn));
+      serviceBinder.AddMethod(__Method_LoginIn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.LoginReq, global::HYFServer.LoginRsp>(serviceImpl.LoginIn));
       serviceBinder.AddMethod(__Method_Logout, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::HYFServer.LogoutReq, global::HYFServer.LogoutRsp>(serviceImpl.Logout));
     }
 

@@ -27,14 +27,13 @@ namespace HYFServer {
             "Cgtsb2dpbi5wcm90bxIFbG9naW4iDgoMTG9naW5SZXF1ZXN0IkAKDUxvZ2lu",
             "UmVzcG9uc2USIwoIYWxsSXRlbXMYASABKAsyDy5sb2dpbi5Mb2dpblJzcEgA",
             "QgoKCExvZ2luTXNnIhwKCExvZ2luUmVxEhAKCG5pY2tOYW1lGAogASgJIhoK",
-            "CVJlc3VsdFJzcBINCgVzdGF0ZRgBIAEoBSJLCghMb2dpblJzcBIQCghuaWNr",
-            "TmFtZRgKIAEoCRIQCghwYXNzd29yZBgCIAEoCRILCgN1aWQYAyABKAMSDgoG",
-            "Z2VuZGVyGAQgASgIIgsKCUxvZ291dFJlcSILCglMb2dvdXRSc3AypgEKDExv",
-            "Z2luU2VydmljZRI6CgtMaXN0ZW5Mb2dpbhITLmxvZ2luLkxvZ2luUmVxdWVz",
-            "dBoULmxvZ2luLkxvZ2luUmVzcG9uc2UwARIsCgdMb2dpbkluEg8ubG9naW4u",
-            "TG9naW5SZXEaEC5sb2dpbi5SZXN1bHRSc3ASLAoGTG9nb3V0EhAubG9naW4u",
-            "TG9nb3V0UmVxGhAubG9naW4uTG9nb3V0UnNwQgyqAglIWUZTZXJ2ZXJiBnBy",
-            "b3RvMw=="));
+            "CVJlc3VsdFJzcBINCgVzdGF0ZRgBIAEoBSIoCghMb2dpblJzcBIQCghuaWNr",
+            "TmFtZRgKIAEoCRIKCgJpZBgMIAEoBSILCglMb2dvdXRSZXEiCwoJTG9nb3V0",
+            "UnNwMqUBCgxMb2dpblNlcnZpY2USOgoLTGlzdGVuTG9naW4SEy5sb2dpbi5M",
+            "b2dpblJlcXVlc3QaFC5sb2dpbi5Mb2dpblJlc3BvbnNlMAESKwoHTG9naW5J",
+            "bhIPLmxvZ2luLkxvZ2luUmVxGg8ubG9naW4uTG9naW5Sc3ASLAoGTG9nb3V0",
+            "EhAubG9naW4uTG9nb3V0UmVxGhAubG9naW4uTG9nb3V0UnNwQgyqAglIWUZT",
+            "ZXJ2ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -42,7 +41,7 @@ namespace HYFServer {
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.LoginResponse), global::HYFServer.LoginResponse.Parser, new[]{ "AllItems" }, new[]{ "LoginMsg" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.LoginReq), global::HYFServer.LoginReq.Parser, new[]{ "NickName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.ResultRsp), global::HYFServer.ResultRsp.Parser, new[]{ "State" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.LoginRsp), global::HYFServer.LoginRsp.Parser, new[]{ "NickName", "Password", "Uid", "Gender" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.LoginRsp), global::HYFServer.LoginRsp.Parser, new[]{ "NickName", "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.LogoutReq), global::HYFServer.LogoutReq.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::HYFServer.LogoutRsp), global::HYFServer.LogoutRsp.Parser, null, null, null, null, null)
           }));
@@ -681,7 +680,7 @@ namespace HYFServer {
     public const int StateFieldNumber = 1;
     private int state_;
     /// <summary>
-    ///1成功
+    ///>0则成功
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -860,9 +859,7 @@ namespace HYFServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LoginRsp(LoginRsp other) : this() {
       nickName_ = other.nickName_;
-      password_ = other.password_;
-      uid_ = other.uid_;
-      gender_ = other.gender_;
+      id_ = other.id_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -884,39 +881,15 @@ namespace HYFServer {
       }
     }
 
-    /// <summary>Field number for the "password" field.</summary>
-    public const int PasswordFieldNumber = 2;
-    private string password_ = "";
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 12;
+    private int id_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Password {
-      get { return password_; }
+    public int Id {
+      get { return id_; }
       set {
-        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "uid" field.</summary>
-    public const int UidFieldNumber = 3;
-    private long uid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long Uid {
-      get { return uid_; }
-      set {
-        uid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gender" field.</summary>
-    public const int GenderFieldNumber = 4;
-    private bool gender_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Gender {
-      get { return gender_; }
-      set {
-        gender_ = value;
+        id_ = value;
       }
     }
 
@@ -936,9 +909,7 @@ namespace HYFServer {
         return true;
       }
       if (NickName != other.NickName) return false;
-      if (Password != other.Password) return false;
-      if (Uid != other.Uid) return false;
-      if (Gender != other.Gender) return false;
+      if (Id != other.Id) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -947,9 +918,7 @@ namespace HYFServer {
     public override int GetHashCode() {
       int hash = 1;
       if (NickName.Length != 0) hash ^= NickName.GetHashCode();
-      if (Password.Length != 0) hash ^= Password.GetHashCode();
-      if (Uid != 0L) hash ^= Uid.GetHashCode();
-      if (Gender != false) hash ^= Gender.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -968,21 +937,13 @@ namespace HYFServer {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Password.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Password);
-      }
-      if (Uid != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(Uid);
-      }
-      if (Gender != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(Gender);
-      }
       if (NickName.Length != 0) {
         output.WriteRawTag(82);
         output.WriteString(NickName);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -994,21 +955,13 @@ namespace HYFServer {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Password.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Password);
-      }
-      if (Uid != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(Uid);
-      }
-      if (Gender != false) {
-        output.WriteRawTag(32);
-        output.WriteBool(Gender);
-      }
       if (NickName.Length != 0) {
         output.WriteRawTag(82);
         output.WriteString(NickName);
+      }
+      if (Id != 0) {
+        output.WriteRawTag(96);
+        output.WriteInt32(Id);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1023,14 +976,8 @@ namespace HYFServer {
       if (NickName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(NickName);
       }
-      if (Password.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
-      }
-      if (Uid != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Uid);
-      }
-      if (Gender != false) {
-        size += 1 + 1;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1047,14 +994,8 @@ namespace HYFServer {
       if (other.NickName.Length != 0) {
         NickName = other.NickName;
       }
-      if (other.Password.Length != 0) {
-        Password = other.Password;
-      }
-      if (other.Uid != 0L) {
-        Uid = other.Uid;
-      }
-      if (other.Gender != false) {
-        Gender = other.Gender;
+      if (other.Id != 0) {
+        Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1071,20 +1012,12 @@ namespace HYFServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 18: {
-            Password = input.ReadString();
-            break;
-          }
-          case 24: {
-            Uid = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            Gender = input.ReadBool();
-            break;
-          }
           case 82: {
             NickName = input.ReadString();
+            break;
+          }
+          case 96: {
+            Id = input.ReadInt32();
             break;
           }
         }
@@ -1102,20 +1035,12 @@ namespace HYFServer {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 18: {
-            Password = input.ReadString();
-            break;
-          }
-          case 24: {
-            Uid = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            Gender = input.ReadBool();
-            break;
-          }
           case 82: {
             NickName = input.ReadString();
+            break;
+          }
+          case 96: {
+            Id = input.ReadInt32();
             break;
           }
         }
