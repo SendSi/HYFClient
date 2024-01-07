@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="157,118" overflow="hidden" extention="Button" designImage="ui://2r331opvcxixz9cm6" designImageOffsetY="-91">
-  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
-  <controller name="red" pages="0,,1," selected="0"/>
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
   <displayList>
     <image id="n0_tv1v" name="sel" src="1025jhz9d4f" fileName="images/images_new/com_icon_selected.png" xy="0,0" size="164,118" alpha="0.8">
       <gearDisplay controller="button" pages="1,3"/>
       <relation target="" sidePair="width-width,height-height"/>
     </image>
-    <text id="n1_tv1v" name="title" xy="-4,69" size="140,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#d0f4ff" align="center" autoSize="none" shadowColor="#3e3f41" shadowOffset="1,2" singleLine="true" text="声音">
+    <loader id="n3_jyqr" name="icon" xy="27,6" size="80,80" aspect="true" url="ui://b7676vbqpoazkt" align="center" fill="scale"/>
+    <text id="n1_tv1v" name="title" xy="-4,69" size="140,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#f6dcac" align="center" autoSize="none" shadowColor="#3e3f41" shadowOffset="1,2" singleLine="true" text="声音">
       <gearColor controller="button" pages="0,1,2,3" values="#d0f4ff,#000000|#f6dcac,#000000|#d0f4ff,#000000|#f6dcac,#3e3f41"/>
     </text>
-    <component id="n2_eaah" name="red" src="dix6fm" fileName="components/components_new/red_dot.xml" xy="126,17">
-      <gearDisplay controller="red" pages="1"/>
+    <component id="n2_eaah" name="redPoint" src="pyiyhz9d6l" fileName="components/RedPoint.xml" xy="126,17" controller="showCtrl,3">
       <relation target="" sidePair="left-right"/>
     </component>
-    <loader id="n3_jyqr" name="icon" xy="27,6" size="80,80" aspect="true" align="center" fill="scale"/>
   </displayList>
   <Button mode="Radio"/>
 </component>

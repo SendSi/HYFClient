@@ -12,6 +12,50 @@ public class BagManager : Singleton<BagManager>
     // new ItemDto(30001, 62, "abc"),new ItemDto(10001, 12, "a6bc"),
     // };
 
+    public void Begin()
+    {
+        
+    }
+    
+    protected override void OnInit()
+    {
+        base.OnInit();
+        RedDotTreeNode bagFatherRoot = new RedDotTreeNode
+            { node = RedDotDefine.BagRoot, logicHander = OnBagRootRedDotLogicHandler };
+        RedDotTreeNode bag_All_Node = new RedDotTreeNode
+        {
+            parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_all, logicHander = OnBagAllRedDotLogicHandler
+        };
+        RedDotTreeNode bag_Equ_Node = new RedDotTreeNode
+        {
+            parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_equ, logicHander = OnBagEquRedDotLogicHandler
+        };
+        RedDotManager.Instance.InitRedDotTree(new List<RedDotTreeNode> { bagFatherRoot, bag_All_Node, bag_Equ_Node });
+        Debug.LogError("onInit");
+    }
+
+
+    private void OnBagRootRedDotLogicHandler(RedDotTreeNode redNode)
+    {
+        redNode.redDotActive = GetRootRedDot();
+
+        Debug.Log("OnBagRootRedDotLogicHandler:" + redNode.redDotActive);
+    }
+
+    private void OnBagAllRedDotLogicHandler(RedDotTreeNode redNode)
+    {
+        redNode.redDotActive = GetAllRedDot();
+        Debug.Log("OnBagAllRedDotLogicHandler:" + redNode.redDotActive);
+    }
+
+
+    private void OnBagEquRedDotLogicHandler(RedDotTreeNode redNode)
+    {
+        redNode.redDotActive = GetEquRedDot();
+        Debug.Log("OnBagEquRedDotLogicHandler:" + redNode.redDotActive);
+    }
+
+
     private List<ItemDto> mServerDtos = new List<ItemDto>();
 
     public int GetServerItemSum(int cfgId)
@@ -19,7 +63,7 @@ public class BagManager : Singleton<BagManager>
         var sumT = 0;
         foreach (var item in mServerDtos)
         {
-            if (item.CfgId==cfgId)
+            if (item.CfgId == cfgId)
             {
                 sumT += item.Sum;
             }
@@ -38,7 +82,6 @@ public class BagManager : Singleton<BagManager>
             {
                 sortDtos.Add(item);
             }
-
         }
 
         return sortDtos;
@@ -50,5 +93,23 @@ public class BagManager : Singleton<BagManager>
         {
             mServerDtos.Add(rspItemDots.ItemInfos[i]);
         }
+    }
+
+    private bool all = true;
+    private bool equ = true;
+
+    public bool GetRootRedDot()
+    {
+        return all || equ;
+    }
+
+    private bool GetAllRedDot()
+    {
+        return all;
+    }
+
+    private bool GetEquRedDot()
+    {
+        return equ;
     }
 }

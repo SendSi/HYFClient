@@ -5,15 +5,15 @@ using FairyGUI.Utils;
 
 namespace MainCenter
 {
-    public partial class main_btn : GButton
+    public partial class Main_btn : GButton
     {
         public GImage _bottomBg;
-        public GButton _redPoint;
+        public GComponent _redPoint;
         public const string URL = "ui://4ni413laj4kdhz9cm2";
 
-        public static main_btn CreateInstance()
+        public static Main_btn CreateInstance()
         {
-            return (main_btn)UIPackage.CreateObject("MainCenter", "main_btn");
+            return (Main_btn)UIPackage.CreateObject("MainCenter", "Main_btn");
         }
 
         public override void ConstructFromXML(XML xml)
@@ -21,7 +21,7 @@ namespace MainCenter
             base.ConstructFromXML(xml);
 
             _bottomBg = (GImage)GetChild("bottomBg");
-            _redPoint = (GButton)GetChild("redPoint");
+            _redPoint = (GComponent)GetChild("redPoint");
         }
     }
 }

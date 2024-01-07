@@ -10,12 +10,13 @@ namespace MainCenter
 
         private List<FuncBtnData> _listData = new List<FuncBtnData>()
         {
-            new FuncBtnData("ui://MainCenter/btn_hero", "英雄",
+            new FuncBtnData(1001, "ui://MainCenter/btn_hero", "英雄",
                 () => { EventCenter.Instance.Fire<string>(EventEnum.EE_test, "event可能是dto"); }),
-            new FuncBtnData("ui://MainCenter/btn_league", "联盟", () => { }),
-            new FuncBtnData("ui://MainCenter/btn_bag", "背包", () => { ProxyBagModule.Instance.OpenBagMainView(); }),
-            new FuncBtnData("ui://MainCenter/btn_email", "邮件", () => { }),
-            new FuncBtnData("ui://MainCenter/btn_arm", "部队",
+            new FuncBtnData(1002, "ui://MainCenter/btn_league", "联盟", () => { }),
+            new FuncBtnData(1003, "ui://MainCenter/btn_bag", "背包",
+                () => { ProxyBagModule.Instance.OpenBagMainView(); }),
+            new FuncBtnData(1004, "ui://MainCenter/btn_email", "邮件", () => { }),
+            new FuncBtnData(1005, "ui://MainCenter/btn_arm", "部队",
                 () => { ProxyCommonPKGModule.Instance.AddToastStr("~~~~简易 飘字---挺长的飘字哦...."); }),
         };
 
@@ -29,8 +30,8 @@ namespace MainCenter
 
         private void ListItemRenderer(int index, GObject obj)
         {
-            main_btn item = (main_btn)obj;
-            item.SetData(_listData[index]);
+            Main_btn item = (Main_btn)obj;
+            item.SetData(_listData[index]); //Main_btn.cs
         }
 
         public override void Dispose()
@@ -41,21 +42,23 @@ namespace MainCenter
 
     public class FuncBtnData
     {
-        public string _iconURL;
-        public string _titleTxt;
-        public Action _clikcAct;
+        public int fId { get; set; } //1001英雄  1002联盟 1003背包 1004邮件 1005部队
+        public string iconURL { get; set; }
+        public string titleTxt { get; set; }
+        public Action clikcAct { get; set; }
 
         public FuncBtnData(string iconURL, string titleTxt)
         {
-            _iconURL = iconURL;
-            _titleTxt = titleTxt;
+            this.iconURL = iconURL;
+            this.titleTxt = titleTxt;
         }
 
-        public FuncBtnData(string iconURL, string titleTxt, Action clickAct)
+        public FuncBtnData(int id, string iconURL, string titleTxt, Action clickAct)
         {
-            _iconURL = iconURL;
-            _titleTxt = titleTxt;
-            _clikcAct = clickAct;
+            this.fId = id;
+            this.iconURL = iconURL;
+            this.titleTxt = titleTxt;
+            this.clikcAct = clickAct;
         }
     }
 }

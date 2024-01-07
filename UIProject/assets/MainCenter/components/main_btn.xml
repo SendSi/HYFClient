@@ -9,7 +9,7 @@
     <text id="n5_j4kd" name="title" xy="1,60" pivot="0.5,0.5" size="92,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" leading="0" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="英雄">
       <relation target="" sidePair="center-center"/>
     </text>
-    <component id="n8_upg9" name="redPoint" src="pyiyhz9d6l" fileName="components/components_new/redPoint.xml" pkg="2r331opv" xy="79,15" touchable="false" controller="showCtrl,3"/>
+    <component id="n8_upg9" name="redPoint" src="pyiyhz9d6l" fileName="components/RedPoint.xml" pkg="2r331opv" xy="79,15" touchable="false" controller="showCtrl,3"/>
   </displayList>
   <Button downEffect="scale" downEffectValue=".98"/>
 </component>

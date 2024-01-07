@@ -44,6 +44,14 @@ namespace Bag
             mCurrencyList_UI.numItems = 3;
 
             _btnCanUsing.onClick.Set(OnClickUsing);
+            
+            
+            
+            RedPoint redAll = (RedPoint)_tab01.GetChild("redPoint");
+            redAll.SetData(RedDotDefine.Bag_all);
+            
+            RedPoint redEqu = (RedPoint)_tab03.GetChild("redPoint");
+            redEqu.SetData(RedDotDefine.Bag_equ);
         }
 
 
@@ -62,7 +70,7 @@ namespace Bag
         {
             ComItem_bag item = (ComItem_bag)obj;
             item.SetData(mPropDtos[index]);
-            if (index == 0 && mSelectItemDto != null) //首次打开页面 无值时 给其赋个值
+            if (index == 0 && mSelectItemDto == null) //首次打开页面 无值时 给其赋个值
             {
                 mSelectItemDto = mPropDtos[index];
                 ShowRightInfo();
@@ -98,10 +106,10 @@ namespace Bag
 
         public override void Dispose()
         {
-            base.Dispose();
             mSelectItemDto = null;
             mCurrencyList_UI = null;
             EventCenter.Instance.UnBind<string>(EventEnum.EE_test, OnEventTest);
+            base.Dispose();
         }
 
         private async void OnClickUsing()

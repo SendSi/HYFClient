@@ -115,7 +115,7 @@
     <component id="j4kdhz9clo" name="cityBuff_1.xml" path="/components/"/>
     <image id="j4kdhz9clp" name="mainhud_bg_buff.png" path="/images/main/"/>
     <component id="j4kdhz9clt" name="main_btn_back.xml" path="/components/"/>
-    <component id="j4kdhz9cm2" name="main_btn.xml" path="/components/" exported="true"/>
+    <component id="j4kdhz9cm2" name="Main_btn.xml" path="/components/" exported="true"/>
     <image id="bvcehz9cmf" name="main_build_1.png" path="/images/team/"/>
     <image id="bvcehz9cmg" name="main_build_2.png" path="/images/team/"/>
     <component id="r616hz9cmj" name="chatBtn.xml" path="/components/"/>
