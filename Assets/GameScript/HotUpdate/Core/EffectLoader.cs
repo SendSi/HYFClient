@@ -6,57 +6,77 @@ using YooAsset;
 
 public class EffectLoader : Singleton<EffectLoader>
 {
-    private Dictionary<string, AssetHandle> _handlesYooDic = new Dictionary<string, AssetHandle>();
-    private Dictionary<string, GameObject> _handlesGoDic = new Dictionary<string, GameObject>();
+    private List<EffectObject> mEffectObjs = new List<EffectObject>();
 
-    //返回的是guid
-    public string LoadUIEffect(string effName, GComponent parent, float x = 0f, float y = 0f)
+    /// <summary> 加载特效 </summary>
+    /// <param name="actionCB">返回一个特效  EffectObject</param>
+    public void LoadUIEffect(string effName, GComponent parent, Action<EffectObject> actionCB = null, float posX = 0f, float posY = 0f, float sizeX = 1f, float sizeY = 1f)
     {
-        var guid = Guid.NewGuid().ToString();
         var handle = YooAssets.LoadAssetAsync<GameObject>(effName);
         handle.Completed += (AssetHandle actGO) =>
         {
             var instGO = actGO.InstantiateSync();
-     
-            var gGraph = new GGraph();
-            var wrapper = new GoWrapper(instGO);
-            gGraph.SetNativeObject(wrapper);
-            parent.AddChild(gGraph);
-            gGraph.SetXY(x, y);
-
-            _handlesGoDic[guid] = instGO;
+            var eObj = new EffectObject(handle, instGO, parent, posX, posY, sizeX, sizeY);
+            mEffectObjs.Add(eObj);
+            actionCB?.Invoke(eObj);
         };
+    }
 
-        _handlesYooDic[guid] = handle;
-        return guid;
+    public void Dispose(EffectObject effObj)
+    {
+        if (effObj != null)
+        {
+            effObj.Dispose();
+            mEffectObjs.Remove(effObj);
+        }
     }
 
 
-    public void Dispose(string guId)
+    public void Clear()
     {
-        if (_handlesYooDic.TryGetValue(guId, out var handle))
+        foreach (var item in mEffectObjs)
+        {
+            item.Dispose(); //能用foreach?
+        }
+
+        mEffectObjs.Clear();
+    }
+}
+
+public class EffectObject
+{
+    public AssetHandle handle { get; set; }
+    public GameObject instGo { get; set; }
+    public GGraph gGraph { get; set; }
+
+    public EffectObject(AssetHandle tAH, GameObject tGo, GComponent parent, float posX, float posY, float sizeX, float sizeY)
+    {
+        handle = tAH;
+        instGo = tGo;
+
+        gGraph = new GGraph();
+        var wrapper = new GoWrapper(tGo);
+        gGraph.SetNativeObject(wrapper);
+        parent.AddChild(gGraph);
+        gGraph.SetXY(posX, posY);
+        gGraph.SetSize(sizeX, sizeY);
+    }
+
+    public void Dispose()
+    {
+        if (handle != null)
         {
             handle.Release();
         }
 
-        if (_handlesGoDic.TryGetValue(guId, out var go))
+        if (instGo != null)
         {
-            GameObject.Destroy(go);
+            GameObject.Destroy(instGo);
         }
 
-        _handlesGoDic.Remove(guId);
-        _handlesYooDic.Remove(guId);
-    }
-    
-    
-
-    public void Clear()
-    {
-        foreach (var item in _handlesYooDic)
+        if (gGraph != null)
         {
-            item.Value.Release(); //能用foreach?
+            gGraph.Dispose();
         }
-
-        _handlesYooDic.Clear();
     }
 }

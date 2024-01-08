@@ -1,12 +1,11 @@
 using FairyGUI;
-using HYFServer;
 using UnityEngine;
 
 namespace Login
 {
     public partial class LoginMainView : GComponent
     {
-        private string guidStr1;
+        private EffectObject effObject1;
 
         public override void OnInit()
         {
@@ -19,7 +18,7 @@ namespace Login
             {
                 // ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
                 Debug.LogError("测试Dispose");
-                EffectLoader.Instance.Dispose(guidStr1);
+                EffectLoader.Instance.Dispose(effObject1);
             });
 
             this._noticeBtn.onClick.Set(() =>
@@ -27,7 +26,7 @@ namespace Login
                 // ProxyLoginModule.Instance.OpenGameNoticeViewWin();
                 Debug.LogError("测试加载");
 
-                guidStr1 = EffectLoader.Instance.LoadUIEffect("UI_zhuangbeiFR", _noticeBtn, 0, 0);
+                EffectLoader.Instance.LoadUIEffect("UI_zhuangbeiFR", _noticeBtn, (obj) => { effObject1 = obj; }, 0, 0);
             });
 
             this._ageBtn.onClick.Set(() => { ProxyLoginModule.Instance.OpenGameAgeViewWin(); });
