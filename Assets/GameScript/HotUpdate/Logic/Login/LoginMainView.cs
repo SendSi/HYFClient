@@ -6,19 +6,29 @@ namespace Login
 {
     public partial class LoginMainView : GComponent
     {
+        private string guidStr1;
+
         public override void OnInit()
         {
             base.OnInit();
-            FGUILoader.Instance.CheckLoadComPKG();//加载公共依赖包
+            FGUILoader.Instance.CheckLoadComPKG(); //加载公共依赖包
 
             _loginBtn.onClick.Set(OnClickLoginEnter);
 
             this._accountBtn.onClick.Set(() =>
             {
-                ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
+                // ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
+                Debug.LogError("测试Dispose");
+                EffectLoader.Instance.Dispose(guidStr1);
             });
 
-            this._noticeBtn.onClick.Set(() => { ProxyLoginModule.Instance.OpenGameNoticeViewWin(); });
+            this._noticeBtn.onClick.Set(() =>
+            {
+                // ProxyLoginModule.Instance.OpenGameNoticeViewWin();
+                Debug.LogError("测试加载");
+
+                guidStr1 = EffectLoader.Instance.LoadUIEffect("UI_renwulan_1", _noticeBtn, 0, 0);
+            });
 
             this._ageBtn.onClick.Set(() => { ProxyLoginModule.Instance.OpenGameAgeViewWin(); });
 
@@ -31,8 +41,7 @@ namespace Login
             });
 
             this._sanningBtn.onClick.Set(OnClickSanningBtn);
-       }
-
+        }
 
 
         //登录按钮
@@ -52,10 +61,10 @@ namespace Login
 
         async void LoginMySql(string nickName)
         {
-            var rsp =await ProtocalLogin.Instance.LoginIn(nickName);
+            var rsp = await ProtocalLogin.Instance.LoginIn(nickName);
             if (rsp?.Id > 0)
             {
-                ServiceManager.Instance.SetMetaData(rsp.NickName,rsp.Id);
+                ServiceManager.Instance.SetMetaData(rsp.NickName, rsp.Id);
                 ProxyMainCenterModule.Instance.OpenMainCenterView();
                 ProxyLoginModule.Instance.CloseLoginMainView();
             }
@@ -67,15 +76,16 @@ namespace Login
 
         private void OnClickSanningBtn()
         {
-             Debug.LogError("测试 加载配置文件  conifg");
-            var infos = ConfigMgr.Instance.LoadConfigDics<ItemConfig>();
+            Debug.LogError("测试 加载配置文件  conifg");
+            var infos = ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表
             ItemConfig config = null;
             if (infos.TryGetValue("2", out config))
             {
                 Debug.LogError(config.name + "  " + config.iconDesecribe);
                 ProxyCommonPKGModule.Instance.AddToastStr($"load config dicTable {config.name}   {config.iconDesecribe}");
             }
-            var oneItem = ConfigMgr.Instance.LoadConfigOne<ItemConfig>("404801");
+
+            var oneItem = ConfigMgr.Instance.LoadConfigOne<ItemConfig>("404801"); //表里的 某行数据
             if (oneItem != null)
             {
                 Debug.LogError(oneItem.name + "  " + oneItem.iconDesecribe);

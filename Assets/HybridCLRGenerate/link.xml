@@ -7,6 +7,7 @@
   </assembly>
   <assembly fullname="FairyGUI">
     <type fullname="FairyGUI.Controller" preserve="all" />
+    <type fullname="FairyGUI.DisplayObject" preserve="all" />
     <type fullname="FairyGUI.EventCallback0" preserve="all" />
     <type fullname="FairyGUI.EventCallback1" preserve="all" />
     <type fullname="FairyGUI.EventContext" preserve="all" />
@@ -29,6 +30,7 @@
     <type fullname="FairyGUI.GTextInput" preserve="all" />
     <type fullname="FairyGUI.GTree" preserve="all" />
     <type fullname="FairyGUI.GTweener" preserve="all" />
+    <type fullname="FairyGUI.GoWrapper" preserve="all" />
     <type fullname="FairyGUI.ListItemRenderer" preserve="all" />
     <type fullname="FairyGUI.PackageItem" preserve="all" />
     <type fullname="FairyGUI.PlayCompleteCallback" preserve="all" />
