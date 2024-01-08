@@ -44,14 +44,23 @@ namespace Bag
             mCurrencyList_UI.numItems = 3;
 
             _btnCanUsing.onClick.Set(OnClickUsing);
-            
-            
-            
+
             RedPoint redAll = (RedPoint)_tab01.GetChild("redPoint");
             redAll.SetData(RedDotDefine.Bag_all);
-            
+
+            RedPoint redRes = (RedPoint)_tab02.GetChild("redPoint");
+            redRes.SetData(RedDotDefine.Bag_res);
+
             RedPoint redEqu = (RedPoint)_tab03.GetChild("redPoint");
             redEqu.SetData(RedDotDefine.Bag_equ);
+
+            _tabCtrl.onChanged.Add(OnLeftTabChaged);
+        }
+
+        private void OnLeftTabChaged()
+        {
+            var sIndex = _tabCtrl.selectedIndex;
+            BagManager.Instance.BagTabReadIndex(sIndex);
         }
 
 

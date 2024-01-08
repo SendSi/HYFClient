@@ -34,7 +34,7 @@ public class RedDotManager : Singleton<RedDotManager>
         if (mRedDotLogicDic.TryGetValue(redKey, out redDotNode))
         {
             redDotNode.OnRedDotActiveChange -= changeEvent;
-            Debug.LogError($"减注 key:{redKey}  成功");
+            // Debug.LogError($"减注 key:{redKey}  成功");
         }
         else
         {
@@ -44,7 +44,7 @@ public class RedDotManager : Singleton<RedDotManager>
 
     public void UpdateRedDotState(RedDotDefine redKey)
     {
-        if (redKey != RedDotDefine.None)
+        if (redKey == RedDotDefine.None)
         {
             return;
         }
@@ -52,12 +52,13 @@ public class RedDotManager : Singleton<RedDotManager>
         RedDotTreeNode redDotNode = null;
         if (mRedDotLogicDic.TryGetValue(redKey, out redDotNode))
         {
+
             redDotNode.RefreshRedDotState(); //更新本节点
             UpdateRedDotState(redDotNode.parentNode); //更新 父节点
         }
         else
         {
-            Debug.LogError($"减注 key:{redKey} 不存在  查一下吧");
+            Debug.LogError($"UpdateRedDotState key:{redKey} 不存在  查一下吧");
         }
     }
 
@@ -78,7 +79,7 @@ public class RedDotManager : Singleton<RedDotManager>
                 if (item.redDotActive)
                 {
                     childRedDotCount += item.redDotCount;
-                    if (item.redDotEnum != RedDotEnum.RedData)
+                    if (item.redDotType != RedDotEnum.DataAdd)
                     {
                         ComputeChildRedDotCount(item.node, ref childRedDotCount);
                     }
@@ -90,14 +91,14 @@ public class RedDotManager : Singleton<RedDotManager>
 
 public enum RedDotEnum
 {
-    Normal = 1, //仅红点
-    RedNum = 2, //数字红点
-    RedData = 3, //数字+
+    Normal, //仅红点
+    NodeNum , //数字红点
+    DataAdd , //数字+
 }
 
 public enum RedDotDefine
 {
-    None = 1,
+    None = 0,
 
     BagRoot,
     Bag_all, //全部
@@ -108,7 +109,7 @@ public enum RedDotDefine
 
 public class RedDotTreeNode
 {
-    public RedDotEnum redDotEnum; //红点类型
+    public RedDotEnum redDotType; //红点类型   默认normal
     public RedDotDefine parentNode; //父节点
     public RedDotDefine node; //当前节点
 
@@ -121,7 +122,7 @@ public class RedDotTreeNode
     public virtual bool RefreshRedDotState()
     {
         redDotCount = 0;
-        if (redDotEnum == RedDotEnum.RedNum)
+        if (redDotType == RedDotEnum.NodeNum)
         {
             //获取子节点 显示的红点个数   去显示红点个数
             redDotCount = RedDotManager.Instance.GetChildNodeRedDotCount(node);
@@ -134,12 +135,11 @@ public class RedDotTreeNode
 
         logicHander?.Invoke(this);
 
-        if (redDotEnum == RedDotEnum.RedData)
+        if (redDotType == RedDotEnum.DataAdd)
         {
             redDotActive = (redDotCount > 0);
         }
-
-        OnRedDotActiveChange?.Invoke(redDotEnum, redDotActive, redDotCount);
+        OnRedDotActiveChange?.Invoke(redDotType, redDotActive, redDotCount);
 
         return redDotActive;
     }

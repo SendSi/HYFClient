@@ -4,41 +4,37 @@ using UnityEngine;
 
 public class BagManager : Singleton<BagManager>
 {
-    //假设服务器下发的这些数据
-    // private List<ItemDto> mServerDtos = new List<ItemDto>()
-    // {
-    // new ItemDto(1, 2, "ab6c"),new ItemDto(2, 22, "abc"),new ItemDto(3, 32, "a6bc"),new ItemDto(5, 99, "a6gsdbc"),new ItemDto(5, 32, "a6bc"),new ItemDto(58, 32, "a6bc"),
-    // new ItemDto(59, 32, "a6bc"),new ItemDto(2401, 72, "abc"),new ItemDto(2434, 72, "abc"),new ItemDto(2435, 702, "abc"),new ItemDto(10001, 12, "a6bc"),new ItemDto(40001, 2, "abc"),
-    // new ItemDto(30001, 62, "abc"),new ItemDto(10001, 12, "a6bc"),
-    // };
-
-    public void Begin()
+    public void ListenBag()
     {
-        
-    }
-    
-    protected override void OnInit()
-    {
-        base.OnInit();
-        RedDotTreeNode bagFatherRoot = new RedDotTreeNode
+        var bagFatherRoot = new RedDotTreeNode
             { node = RedDotDefine.BagRoot, logicHander = OnBagRootRedDotLogicHandler };
-        RedDotTreeNode bag_All_Node = new RedDotTreeNode
+        var bag_All_Node = new RedDotTreeNode
         {
             parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_all, logicHander = OnBagAllRedDotLogicHandler
         };
-        RedDotTreeNode bag_Equ_Node = new RedDotTreeNode
+        var bag_Res_Node = new RedDotTreeNode
+        {
+            parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_res, logicHander = OnBagResRedDotLogicHandler
+        };
+        var bag_Equ_Node = new RedDotTreeNode
         {
             parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_equ, logicHander = OnBagEquRedDotLogicHandler
         };
-        RedDotManager.Instance.InitRedDotTree(new List<RedDotTreeNode> { bagFatherRoot, bag_All_Node, bag_Equ_Node });
-        Debug.LogError("onInit");
+        RedDotManager.Instance.InitRedDotTree(new List<RedDotTreeNode>
+            { bagFatherRoot, bag_All_Node, bag_Res_Node, bag_Equ_Node });
+        Debug.LogWarning("BagManager ListenBag");
+    }
+
+    private void OnBagResRedDotLogicHandler(RedDotTreeNode redNode)
+    {
+        redNode.redDotActive = GetResRedDot();
+        Debug.Log("OnBagResRedDotLogicHandler:" + redNode.redDotActive);
     }
 
 
     private void OnBagRootRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetRootRedDot();
-
         Debug.Log("OnBagRootRedDotLogicHandler:" + redNode.redDotActive);
     }
 
@@ -96,11 +92,12 @@ public class BagManager : Singleton<BagManager>
     }
 
     private bool all = true;
+    private bool res = true;
     private bool equ = true;
 
     public bool GetRootRedDot()
     {
-        return all || equ;
+        return all || equ || res;
     }
 
     private bool GetAllRedDot()
@@ -108,8 +105,32 @@ public class BagManager : Singleton<BagManager>
         return all;
     }
 
+    private bool GetResRedDot()
+    {
+        return res;
+    }
+
     private bool GetEquRedDot()
     {
         return equ;
+    }
+
+    public void BagTabReadIndex(int sIndex)
+    {
+        if (sIndex == 0)
+        {
+            all = false;
+            RedDotManager.Instance.UpdateRedDotState(RedDotDefine.Bag_all);
+        }
+        else if (sIndex == 1)
+        {
+            res = false;
+            RedDotManager.Instance.UpdateRedDotState(RedDotDefine.Bag_res);
+        }
+        else if (sIndex == 2)
+        {
+            equ = false;
+            RedDotManager.Instance.UpdateRedDotState(RedDotDefine.Bag_equ);
+        }
     }
 }

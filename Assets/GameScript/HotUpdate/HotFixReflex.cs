@@ -7,14 +7,15 @@ public class HotFixReflex
     public static void Run()
     {
         Debug.LogWarning("HotFixReflex-->Run");
-        
         ProxyLoginModule.Instance.OpenLoginMainView();
         ProtocalBinder.BindAll();
+        ManagerBinder.BindAll();
     }
 
     public static void Destroy()
     {
         Debug.LogWarning("HotFixReflex-->Destroy");
         ProtocalBinder.UnBind();
+        ManagerBinder.UnBind();
     }
 }
