@@ -66,7 +66,6 @@
     <type fullname="Google.Protobuf.WriteContext" preserve="all" />
   </assembly>
   <assembly fullname="Grpc.Core.Api">
-    <type fullname="Grpc.Core.AsyncDuplexStreamingCall`2" preserve="all" />
     <type fullname="Grpc.Core.AsyncServerStreamingCall`1" preserve="all" />
     <type fullname="Grpc.Core.AsyncUnaryCall`1" preserve="all" />
     <type fullname="Grpc.Core.BindServiceMethodAttribute" preserve="all" />
@@ -79,9 +78,7 @@
     <type fullname="Grpc.Core.ClientBase`1" preserve="all" />
     <type fullname="Grpc.Core.ContextPropagationToken" preserve="all" />
     <type fullname="Grpc.Core.DeserializationContext" preserve="all" />
-    <type fullname="Grpc.Core.DuplexStreamingServerMethod`2" preserve="all" />
     <type fullname="Grpc.Core.IAsyncStreamReader`1" preserve="all" />
-    <type fullname="Grpc.Core.IClientStreamWriter`1" preserve="all" />
     <type fullname="Grpc.Core.IServerStreamWriter`1" preserve="all" />
     <type fullname="Grpc.Core.Marshaller`1" preserve="all" />
     <type fullname="Grpc.Core.Marshallers" preserve="all" />
@@ -179,6 +176,7 @@
     <type fullname="System.Action" preserve="all" />
     <type fullname="System.Action`1" preserve="all" />
     <type fullname="System.Action`2" preserve="all" />
+    <type fullname="System.Action`3" preserve="all" />
     <type fullname="System.Activator" preserve="all" />
     <type fullname="System.Array" preserve="all" />
     <type fullname="System.Attribute" preserve="all" />
@@ -190,6 +188,8 @@
     <type fullname="System.Byte" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2/Enumerator" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2/ValueCollection" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerable`1" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerator`1" preserve="all" />
     <type fullname="System.Collections.Generic.IList`1" preserve="all" />
@@ -212,7 +212,6 @@
     <type fullname="System.IDisposable" preserve="all" />
     <type fullname="System.IEquatable`1" preserve="all" />
     <type fullname="System.Int32" preserve="all" />
-    <type fullname="System.Int64" preserve="all" />
     <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Nullable`1" preserve="all" />
     <type fullname="System.Object" preserve="all" />
@@ -231,11 +230,11 @@
     <type fullname="System.Runtime.CompilerServices.IteratorStateMachineAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
-    <type fullname="System.Runtime.CompilerServices.TaskAwaiter" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
     <type fullname="System.RuntimeTypeHandle" preserve="all" />
     <type fullname="System.String" preserve="all" />
+    <type fullname="System.Text.StringBuilder" preserve="all" />
     <type fullname="System.Threading.CancellationToken" preserve="all" />
     <type fullname="System.Threading.CancellationTokenSource" preserve="all" />
     <type fullname="System.Threading.Tasks.Task" preserve="all" />
