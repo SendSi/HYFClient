@@ -36,25 +36,25 @@ public class GameMain : MonoBehaviour
 #else
         yield return CheckLoadYooHF();
 #endif
-        
-        // yield return CheckLoadYooHF();//UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
+
+        // yield return CheckLoadYooHF(); //UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
 
         // 反射调用入口 
         Type uiType = _hotUpdateAss.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
-        
+
         Type entryType = _hotUpdateAss.GetType("HotFixReflex");
         entryType.GetMethod("Run").Invoke(null, null);
-        
-        FairyGUI.Timers.inst.Add(1,1, obj =>
+
+        FairyGUI.Timers.inst.Add(1, 1, obj =>
         {
-            ProxyHotPKGModule.Instance.CloseHFView();//移除
+            ProxyHotPKGModule.Instance.CloseHFView(); //移除
         });
     }
 
     private void OnDestroy()
     {
-        if (_hotUpdateAss!=null)
+        if (_hotUpdateAss != null)
         {
             Type entryType = _hotUpdateAss.GetType("HotFixReflex");
             entryType.GetMethod("Destroy").Invoke(null, null);
@@ -74,11 +74,11 @@ public class GameMain : MonoBehaviour
         PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation_hotFix);
         yield return operation_hotFix;
-        
+
         //加载元数据 和 热更代码
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssemblies();
-        
+
         var gamePackage = YooAssets.GetPackage("DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
     }
@@ -89,7 +89,7 @@ public class GameMain : MonoBehaviour
         var package = YooAssets.CreatePackage("DefaultPackage");
         YooAssets.SetDefaultPackage(package);
         var createParameters = new EditorSimulateModeParameters();
-        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild( EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage");
+        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage");
         var initializationOperation = package.InitializeAsync(createParameters);
         yield return initializationOperation;
         _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
@@ -110,6 +110,7 @@ public class GameMain : MonoBehaviour
     private static Dictionary<string, byte[]> s_assetDatas = new Dictionary<string, byte[]>();
     private static Assembly _hotUpdateAss;
 
+    //PatchedAOTAssemblyList
     private static List<string> AOTMetaAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll.bytes",
@@ -121,11 +122,11 @@ public class GameMain : MonoBehaviour
         "System.Core.dll.bytes",
         "UniFramework.Event.dll.bytes",
         "Google.Protobuf.dll.bytes",
-        
+
         "HotUpdate.dll.bytes",
     };
-   
-    
+
+
     /// <summary>
     /// 为aot assembly加载原始metadata， 这个代码放aot或者热更新都行。
     /// 一旦加载后，如果AOT泛型函数对应native实现不存在，则自动替换为解释模式执行

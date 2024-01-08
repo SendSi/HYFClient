@@ -31,8 +31,8 @@ namespace HotPKG
         {
             if (message is PatchEventDefine.InitializeFailed)
             {
-                System.Action callback = () => { UserEventDefine.UserTryInitialize.SendEventMessage(); };
-                ShowMessageBox($"Failed to initialize package !", callback);
+                Action callback = () => { UserEventDefine.UserTryInitialize.SendEventMessage(); };
+                ShowMessageBox($"未能初始化包！", callback); //ShowMessageBox($"Failed to initialize package !", callback);
             }
             else if (message is PatchEventDefine.PatchStatesChange)
             {
@@ -41,21 +41,19 @@ namespace HotPKG
             }
             else if (message is PatchEventDefine.FoundUpdateFiles)
             {
-                var msg = message as PatchEventDefine.FoundUpdateFiles;
-                System.Action callback = () => { UserEventDefine.UserBeginDownloadWebFiles.SendEventMessage(); };
-                float sizeMB = msg.TotalSizeBytes / 1048576f;
-                sizeMB = Mathf.Clamp(sizeMB, 0.1f, float.MaxValue);
-                string totalSizeMB = sizeMB.ToString("f1");
-                ShowMessageBox($"Found update patch files, Total count {msg.TotalCount} Total szie {totalSizeMB}MB",
-                    callback);
+                UserEventDefine.UserBeginDownloadWebFiles.SendEventMessage(); //直接 发送 事件  不给弹框了
+                // var msg = message as PatchEventDefine.FoundUpdateFiles;  //别删 留着
+                // Action callback = () => { UserEventDefine.UserBeginDownloadWebFiles.SendEventMessage(); };
+                // float sizeMB = msg.TotalSizeBytes / 1048576f;
+                // sizeMB = Mathf.Clamp(sizeMB, 0.1f, float.MaxValue);
+                // string totalSizeMB = sizeMB.ToString("f1");
+                // ShowMessageBox($"找到个更新修补程序文件，总数{msg.TotalCount} 总的大小 {totalSizeMB}MB", callback); //      ShowMessageBox($"Found update patch files, Total count {msg.TotalCount} Total szie {totalSizeMB}MB",callback);
             }
             else if (message is PatchEventDefine.DownloadProgressUpdate)
             {
                 var msg = message as PatchEventDefine.DownloadProgressUpdate;
                 _slider.max = msg.TotalDownloadCount;
-                _slider.value =msg.CurrentDownloadCount;
-                //var tmp=msg.CurrentDownloadCount / msg.TotalDownloadCount;
-                // Debug.LogError($"max:{msg.TotalDownloadCount},CurrentDownloadCount:{msg.CurrentDownloadCount},value:{tmp}");
+                _slider.value = msg.CurrentDownloadCount;
                 string currentSizeMB = (msg.CurrentDownloadSizeBytes / 1048576f).ToString("f1");
                 string totalSizeMB = (msg.TotalDownloadSizeBytes / 1048576f).ToString("f1");
                 _tips.text = $"{msg.CurrentDownloadCount}/{msg.TotalDownloadCount} {currentSizeMB}MB/{totalSizeMB}MB";
@@ -63,18 +61,18 @@ namespace HotPKG
             else if (message is PatchEventDefine.PackageVersionUpdateFailed)
             {
                 System.Action callback = () => { UserEventDefine.UserTryUpdatePackageVersion.SendEventMessage(); };
-                ShowMessageBox($"Failed to update static version, please check the network status.", callback);
+                ShowMessageBox($"无法更新资源版本，请检查网络状态。", callback);//  ShowMessageBox($"Failed to update static version, please check the network status.", callback);
             }
             else if (message is PatchEventDefine.PatchManifestUpdateFailed)
             {
                 System.Action callback = () => { UserEventDefine.UserTryUpdatePatchManifest.SendEventMessage(); };
-                ShowMessageBox($"Failed to update patch manifest, please check the network status.", callback);
+                ShowMessageBox($"无法更新修补程序清单，请检查网络状态。", callback); //ShowMessageBox($"Failed to update patch manifest, please check the network status.", callback);
             }
             else if (message is PatchEventDefine.WebFileDownloadFailed)
             {
                 var msg = message as PatchEventDefine.WebFileDownloadFailed;
                 System.Action callback = () => { UserEventDefine.UserTryDownloadWebFiles.SendEventMessage(); };
-                ShowMessageBox($"Failed to download file : {msg.FileName}", callback);
+                ShowMessageBox($"未能下载文件：{msg.FileName}", callback); //ShowMessageBox($"Failed to download file : {msg.FileName}", callback);
             }
             else
             {
@@ -95,7 +93,7 @@ namespace HotPKG
 
         private void OnClickBtnSure()
         {
-            if (mClickSure!=null)
+            if (mClickSure != null)
             {
                 mClickSure.Invoke();
                 _dialogCtrl.selectedIndex = 0;
