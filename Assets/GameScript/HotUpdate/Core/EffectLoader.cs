@@ -13,16 +13,14 @@ public class EffectLoader : Singleton<EffectLoader>
     public string LoadUIEffect(string effName, GComponent parent, float x = 0f, float y = 0f)
     {
         var guid = Guid.NewGuid().ToString();
-
         var handle = YooAssets.LoadAssetAsync<GameObject>(effName);
-
         handle.Completed += (AssetHandle actGO) =>
         {
             var instGO = actGO.InstantiateSync();
-            var wrapper = new GoWrapper(instGO);
+     
             var gGraph = new GGraph();
+            var wrapper = new GoWrapper(instGO);
             gGraph.SetNativeObject(wrapper);
-
             parent.AddChild(gGraph);
             gGraph.SetXY(x, y);
 
@@ -30,7 +28,6 @@ public class EffectLoader : Singleton<EffectLoader>
         };
 
         _handlesYooDic[guid] = handle;
-
         return guid;
     }
 

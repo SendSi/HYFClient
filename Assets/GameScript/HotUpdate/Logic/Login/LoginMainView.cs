@@ -27,7 +27,7 @@ namespace Login
                 // ProxyLoginModule.Instance.OpenGameNoticeViewWin();
                 Debug.LogError("测试加载");
 
-                guidStr1 = EffectLoader.Instance.LoadUIEffect("UI_renwulan_1", _noticeBtn, 0, 0);
+                guidStr1 = EffectLoader.Instance.LoadUIEffect("UI_zhuangbeiFR", _noticeBtn, 0, 0);
             });
 
             this._ageBtn.onClick.Set(() => { ProxyLoginModule.Instance.OpenGameAgeViewWin(); });
