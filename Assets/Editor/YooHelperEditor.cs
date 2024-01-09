@@ -9,11 +9,11 @@ public class YooHelperEditor : MonoBehaviour
 {
     static string GetPlatform()
     {
-        if (Application.platform == RuntimePlatform.Android)
+        if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == BuildTarget.Android)
             return "Android";
-        else if (Application.platform == RuntimePlatform.IPhonePlayer)
+        else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == BuildTarget.iOS)
             return "IPhone";
-        else if (Application.platform == RuntimePlatform.WebGLPlayer)
+        else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == BuildTarget.WebGL)
             return "WebGL";
         else
             return "PC";
@@ -49,6 +49,7 @@ public class YooHelperEditor : MonoBehaviour
             soreceList.Add($"{formRoot}/{item.PackageName}/{AppConfig.resVersion}");
         }
 
+        //Debug.LogError($"formRoot:{formRoot} -->     targetPath: {targetPath}");
         for (int i = 0; i < soreceList.Count; i++)
         {
             foreach (string filePath in Directory.GetFiles(soreceList[i]))
