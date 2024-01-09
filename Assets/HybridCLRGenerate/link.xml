@@ -35,6 +35,8 @@
     <type fullname="FairyGUI.PackageItem" preserve="all" />
     <type fullname="FairyGUI.PlayCompleteCallback" preserve="all" />
     <type fullname="FairyGUI.RelationType" preserve="all" />
+    <type fullname="FairyGUI.TimerCallback" preserve="all" />
+    <type fullname="FairyGUI.Timers" preserve="all" />
     <type fullname="FairyGUI.Transition" preserve="all" />
     <type fullname="FairyGUI.UIContentScaler" preserve="all" />
     <type fullname="FairyGUI.UIContentScaler/ScreenMatchMode" preserve="all" />
@@ -127,11 +129,18 @@
   <assembly fullname="UniFramework.Utility">
     <type fullname="UniFramework.Utility.UniTimer" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.AnimationModule">
+    <type fullname="UnityEngine.Animation" preserve="all" />
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.AnimatorStateInfo" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AudioModule">
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.Behaviour" preserve="all" />
     <type fullname="UnityEngine.Component" preserve="all" />
     <type fullname="UnityEngine.Coroutine" preserve="all" />
     <type fullname="UnityEngine.Debug" preserve="all" />
@@ -155,6 +164,13 @@
   </assembly>
   <assembly fullname="UnityEngine.InputLegacyModule">
     <type fullname="UnityEngine.Input" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem/EmissionModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem/MainModule" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem/MinMaxCurve" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystem/Particle" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.PhysicsModule">
     <type fullname="UnityEngine.Collider" preserve="all" />

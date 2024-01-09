@@ -15,7 +15,10 @@ namespace MainCenter
             new FuncBtnData(1002, "ui://MainCenter/btn_league", "联盟", () => { }),
             new FuncBtnData(1003, "ui://MainCenter/btn_bag", "背包",
                 () => { ProxyBagModule.Instance.OpenBagMainView(); }),
-            new FuncBtnData(1004, "ui://MainCenter/btn_email", "邮件", () => { }),
+            new FuncBtnData(1004, "ui://MainCenter/btn_email", "邮件", () =>
+            {
+                EffectLoader.Instance.LoadSceneEffectSimple("TX_BYCH_Skill");
+            }),
             new FuncBtnData(1005, "ui://MainCenter/btn_arm", "部队",
                 () => { ProxyCommonPKGModule.Instance.AddToastStr("~~~~简易 飘字---挺长的飘字哦...."); }),
         };
