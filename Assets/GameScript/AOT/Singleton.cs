@@ -22,4 +22,13 @@ public  class Singleton<T> where T : Singleton<T>,new()
     {
     }
 
+    public virtual void Dispose()
+    {
+        OnDispose();
+    }
+
+    protected void OnDispose()
+    {
+
+    }
 }

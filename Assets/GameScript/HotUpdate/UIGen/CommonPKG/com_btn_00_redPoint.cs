@@ -7,7 +7,7 @@ namespace CommonPKG
 {
     public partial class com_btn_00_redPoint : GButton
     {
-        public redPoint _redElement;
+        public RedPoint _redElement;
         public const string URL = "ui://2r331opvitkw1ygcfkf";
 
         public static com_btn_00_redPoint CreateInstance()
@@ -19,7 +19,7 @@ namespace CommonPKG
         {
             base.ConstructFromXML(xml);
 
-            _redElement = (redPoint)GetChild("redElement");
+            _redElement = (RedPoint)GetChild("redElement");
         }
     }
 }

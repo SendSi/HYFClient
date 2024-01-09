@@ -416,7 +416,7 @@
     <component id="ozu2hz9d48" name="comIconTween.xml" path="/components/" exported="true"/>
     <image id="pdfthz9d6k" name="com_btn_close2.png" path="/images/images_new/" exported="true"/>
     <component id="aokv9" name="btnClose.xml" path="/components/" exported="true" favorite="true"/>
-    <component id="pyiyhz9d6l" name="redPoint.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="pyiyhz9d6l" name="RedPoint.xml" path="/components/" exported="true" favorite="true"/>
     <image id="lfqnhz9d6u" name="common_btn_plus1.png" path="/images/images_new/" exported="true"/>
     <image id="lfqnhz9d6w" name="com_bg_popup02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="60,58,7,10"/>
     <image id="lfqnhz9d6y" name="com_bg_popup04.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="211,156,7,52"/>

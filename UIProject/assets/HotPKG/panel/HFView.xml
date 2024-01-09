@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750" initName="frame" designImageOffsetX="-165" designImageAlpha="29" designImageLayer="1">
-  <controller name="dialogCtrl" pages="0,,1," selected="1">
+  <controller name="dialogCtrl" pages="0,,1," selected="0">
     <remark page="0" value="正常"/>
     <remark page="1" value="对话框"/>
   </controller>
   <displayList>
-    <graph id="n45_swm2" name="bg" xy="-340,-140" size="2000,1000" type="rect" lineSize="0" fillColor="#ff003300">
+    <image id="n51_kw1g" name="bg" src="kw1g1ygcga2" fileName="image/load.jpg" xy="-168,0">
       <relation target="" sidePair="width-width,height-height"/>
-    </graph>
+    </image>
     <text id="n36_qg41" name="topDescTxt" xy="252,45" pivot="0.5,0.5" size="840,54" font="ui://2r331opvno3vhz9d63" fontSize="40" color="#ffffff" align="center" ubb="true" autoSize="height" strokeColor="#333333" shadowColor="#333333" shadowOffset="0,1" text="资源更新">
       <relation target="" sidePair="center-center,top-top"/>
     </text>

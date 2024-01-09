@@ -21,6 +21,7 @@ namespace Login
 
             this._accountBtn.onClick.Set(() =>
             {
+                EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", _accountBtn ,true,EffectPos.Center);
                 ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
             });
 

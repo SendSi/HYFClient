@@ -8,7 +8,7 @@ namespace CommonPKG
     public partial class com_limit_btn1 : GButton
     {
         public Controller _newRed;
-        public redPoint _redpoint;
+        public RedPoint _redpoint;
         public Transition _t0;
         public const string URL = "ui://2r331opv8lkd1ygcfm3";
 
@@ -22,7 +22,7 @@ namespace CommonPKG
             base.ConstructFromXML(xml);
 
             _newRed = GetController("newRed");
-            _redpoint = (redPoint)GetChild("redpoint");
+            _redpoint = (RedPoint)GetChild("redpoint");
             _t0 = GetTransition("t0");
         }
     }

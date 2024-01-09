@@ -116,7 +116,7 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(equiTitle.URL, typeof(equiTitle));
             UIObjectFactory.SetPackageItemExtension(com_btn_tab04.URL, typeof(com_btn_tab04));
             UIObjectFactory.SetPackageItemExtension(comItem3.URL, typeof(comItem3));
-            UIObjectFactory.SetPackageItemExtension(redPoint.URL, typeof(redPoint));
+            UIObjectFactory.SetPackageItemExtension(RedPoint.URL, typeof(RedPoint));
             UIObjectFactory.SetPackageItemExtension(com_prop_icon4.URL, typeof(com_prop_icon4));
             UIObjectFactory.SetPackageItemExtension(fighting_headPortrait.URL, typeof(fighting_headPortrait));
             UIObjectFactory.SetPackageItemExtension(chiefbtn.URL, typeof(chiefbtn));

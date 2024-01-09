@@ -13,7 +13,7 @@ namespace MainCenter
             UIObjectFactory.SetPackageItemExtension(main_btn_activity.URL, typeof(main_btn_activity));
             UIObjectFactory.SetPackageItemExtension(main_chat_item2_2.URL, typeof(main_chat_item2_2));
             UIObjectFactory.SetPackageItemExtension(generalIcon01.URL, typeof(generalIcon01));
-            UIObjectFactory.SetPackageItemExtension(main_btn.URL, typeof(main_btn));
+            UIObjectFactory.SetPackageItemExtension(Main_btn.URL, typeof(Main_btn));
             UIObjectFactory.SetPackageItemExtension(main_chat_item_2.URL, typeof(main_chat_item_2));
             UIObjectFactory.SetPackageItemExtension(main_taskitem_list.URL, typeof(main_taskitem_list));
             UIObjectFactory.SetPackageItemExtension(main_team_right.URL, typeof(main_team_right));

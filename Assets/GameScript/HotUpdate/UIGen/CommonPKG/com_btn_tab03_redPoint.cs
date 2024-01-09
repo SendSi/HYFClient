@@ -10,7 +10,7 @@ namespace CommonPKG
         public GLoader _bg;
         public GTextField _title0;
         public GTextField _title1;
-        public redPoint _redElement;
+        public RedPoint _redElement;
         public const string URL = "ui://2r331opvmw3o1ygcflo";
 
         public static com_btn_tab03_redPoint CreateInstance()
@@ -25,7 +25,7 @@ namespace CommonPKG
             _bg = (GLoader)GetChild("bg");
             _title0 = (GTextField)GetChild("title0");
             _title1 = (GTextField)GetChild("title1");
-            _redElement = (redPoint)GetChild("redElement");
+            _redElement = (RedPoint)GetChild("redElement");
         }
     }
 }

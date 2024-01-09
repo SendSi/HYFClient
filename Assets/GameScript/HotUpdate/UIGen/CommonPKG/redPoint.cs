@@ -5,14 +5,16 @@ using FairyGUI.Utils;
 
 namespace CommonPKG
 {
-    public partial class redPoint : GButton
+    public partial class RedPoint : GComponent
     {
         public Controller _showCtrl;
+        public GImage _img;
+        public GTextField _title;
         public const string URL = "ui://2r331opvpyiyhz9d6l";
 
-        public static redPoint CreateInstance()
+        public static RedPoint CreateInstance()
         {
-            return (redPoint)UIPackage.CreateObject("CommonPKG", "redPoint");
+            return (RedPoint)UIPackage.CreateObject("CommonPKG", "RedPoint");
         }
 
         public override void ConstructFromXML(XML xml)
@@ -20,6 +22,8 @@ namespace CommonPKG
             base.ConstructFromXML(xml);
 
             _showCtrl = GetController("showCtrl");
+            _img = (GImage)GetChild("img");
+            _title = (GTextField)GetChild("title");
         }
     }
 }
