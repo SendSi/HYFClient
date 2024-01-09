@@ -82,6 +82,6 @@ public class TextureImporterSetting : AssetPostprocessor
 
     static bool Is_Ignore(string path)
     {
-        return path.Contains("/Editor/") || path.Contains("/3rd/");
+        return path.Contains("/Editor/") || path.Contains("/3rd/") || path.Contains("/Unity-Logs-Viewer/");
     }
 }

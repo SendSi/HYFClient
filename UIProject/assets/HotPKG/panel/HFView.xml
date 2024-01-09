@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750" initName="frame" designImageOffsetX="-165" designImageAlpha="29" designImageLayer="1">
-  <controller name="dialogCtrl" pages="0,,1," selected="0">
+  <controller name="dialogCtrl" pages="0,,1," selected="1">
     <remark page="0" value="正常"/>
     <remark page="1" value="对话框"/>
   </controller>
@@ -8,27 +8,29 @@
     <image id="n51_kw1g" name="bg" src="kw1g1ygcga2" fileName="image/load.jpg" xy="-168,0">
       <relation target="" sidePair="width-width,height-height"/>
     </image>
-    <text id="n36_qg41" name="topDescTxt" xy="252,45" pivot="0.5,0.5" size="840,54" font="ui://2r331opvno3vhz9d63" fontSize="40" color="#ffffff" align="center" ubb="true" autoSize="height" strokeColor="#333333" shadowColor="#333333" shadowOffset="0,1" text="资源更新">
+    <text id="n36_qg41" name="topDescTxt" xy="252,85" pivot="0.5,0.5" size="840,73" font="ui://2r331opvno3vhz9d63" fontSize="55" color="#ffffff" align="center" ubb="true" autoSize="height" strokeColor="#333333" text="资源更新">
       <relation target="" sidePair="center-center,top-top"/>
     </text>
     <component id="n44_swm2" name="slider" src="swm23" fileName="component/hotProgress.xml" xy="210,651" size="934,32">
       <relation target="" sidePair="center-center,bottom-bottom"/>
       <ProgressBar max="100"/>
     </component>
-    <text id="n46_swm2" name="tips" xy="247,592" pivot="0.5,0.5" size="840,60" font="ui://2r331opvno3vhz9d63" fontSize="25" color="#ffffff" align="center" vAlign="bottom" ubb="true" autoSize="none" strokeColor="#333333" shadowColor="#333333" shadowOffset="0,1" text="描述">
-      <relation target="" sidePair="center-center,top-top"/>
+    <text id="n46_swm2" name="tips" xy="247,592" pivot="0.5,0.5" size="840,60" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" vAlign="bottom" ubb="true" autoSize="none" strokeColor="#333333" shadowColor="#333333" shadowOffset="0,1" text="描述">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
     </text>
-    <graph id="n48_pf2g" name="dialogBg" xy="295,56" size="753,470" group="n49_pf2g" type="rect" lineSize="0" fillColor="#ff006699">
+    <image id="n52_zo6m" name="dialogBg" src="zo6m1ygcgrs" fileName="image/dialog.png" xy="297,93" pivot="0.5,0.5" size="778,572" group="n49_pf2g">
       <relation target="" sidePair="width-width,height-height"/>
-    </graph>
-    <text id="n50_pf2g" name="diaContentTxt" xy="384,79" pivot="0.5,0.5" size="594,310" group="n49_pf2g" font="ui://2r331opvno3vhz9d63" fontSize="40" color="#ffffff" align="center" ubb="true" autoSize="none" strokeColor="#333333" shadowColor="#333333" shadowOffset="0,1" text="资源更新">
-      <relation target="" sidePair="center-center,top-top"/>
+    </image>
+    <text id="n50_pf2g" name="diaContentTxt" xy="324,115" pivot="0.5,0.5" size="722,421" group="n49_pf2g" font="ui://2r331opvno3vhz9d63" fontSize="45" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" text="资源更新">
+      <relation target="n52_zo6m" sidePair="width-width,center-center,top-top"/>
     </text>
-    <component id="n47_pf2g" name="btnSure" src="pf2g1ygcga1" fileName="component/btnYes.xml" xy="571,398" size="197,104" group="n49_pf2g">
-      <Button title="确定"/>
+    <component id="n47_pf2g" name="btnSure" src="pf2g1ygcga1" fileName="component/btnYes.xml" xy="564,545" pivot="0.5,0.5" size="200,100" group="n49_pf2g">
+      <relation target="n52_zo6m" sidePair="center-center,bottom-bottom"/>
+      <Button title="确定" titleColor="#cc3300"/>
     </component>
-    <group id="n49_pf2g" name="n49" xy="295,56" size="753,470" advanced="true">
+    <group id="n49_pf2g" name="dia" xy="297,93" size="778,572" advanced="true">
       <gearDisplay controller="dialogCtrl" pages="1"/>
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
     </group>
   </displayList>
 </component>
