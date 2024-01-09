@@ -6,22 +6,11 @@ public class BagManager : Singleton<BagManager>
 {
     public void ListenBag()
     {
-        var bagFatherRoot = new RedDotTreeNode
-            { node = RedDotDefine.BagRoot, logicHander = OnBagRootRedDotLogicHandler };
-        var bag_All_Node = new RedDotTreeNode
-        {
-            parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_all, logicHander = OnBagAllRedDotLogicHandler
-        };
-        var bag_Res_Node = new RedDotTreeNode
-        {
-            parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_res, logicHander = OnBagResRedDotLogicHandler
-        };
-        var bag_Equ_Node = new RedDotTreeNode
-        {
-            parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_equ, logicHander = OnBagEquRedDotLogicHandler
-        };
-        RedDotManager.Instance.InitRedDotTree(new List<RedDotTreeNode>
-            { bagFatherRoot, bag_All_Node, bag_Res_Node, bag_Equ_Node });
+        var bagFatherRoot = new RedDotTreeNode { node = RedDotDefine.BagRoot, logicHander = OnBagRootRedDotLogicHandler };
+        var bag_All_Node = new RedDotTreeNode { parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_all, logicHander = OnBagAllRedDotLogicHandler };
+        var bag_Res_Node = new RedDotTreeNode { parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_res, logicHander = OnBagResRedDotLogicHandler };
+        var bag_Equ_Node = new RedDotTreeNode { parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_equ, logicHander = OnBagEquRedDotLogicHandler };
+        RedDotManager.Instance.InitRedDotTree(new List<RedDotTreeNode> { bagFatherRoot, bag_All_Node, bag_Res_Node, bag_Equ_Node });
         Debug.LogWarning("BagManager ListenBag");
     }
 

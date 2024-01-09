@@ -16,9 +16,7 @@ namespace Login
 
             this._accountBtn.onClick.Set(() =>
             {
-                // ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
-                Debug.LogError("测试Dispose");
-                EffectLoader.Instance.Dispose(effObject1);
+                ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);       
             });
 
             this._noticeBtn.onClick.Set(() =>
@@ -26,10 +24,17 @@ namespace Login
                 // ProxyLoginModule.Instance.OpenGameNoticeViewWin();
                 Debug.LogError("测试加载");
 
-                EffectLoader.Instance.LoadUIEffect("UI_zhuangbeiFR", _noticeBtn, (obj) => { effObject1 = obj; }, 0, 0);
+                EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", _noticeBtn,false,EffectPos.Center, (obj) =>
+                {
+                    effObject1 = obj;
+                });
             });
 
-            this._ageBtn.onClick.Set(() => { ProxyLoginModule.Instance.OpenGameAgeViewWin(); });
+            this._ageBtn.onClick.Set(() =>
+            {
+                ProxyLoginModule.Instance.OpenGameAgeViewWin();
+                //effObject1.Stop();
+            });
 
             this._serviceBtn.onClick.Set(() =>
             {

@@ -23,6 +23,10 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     弹窗*.*脚本默认起成Fgui名字的Win,继承Window-->public class *A*Win:Window  
         打开UIMgr.Instance.OpenWindow<*A*>()
         关闭UIMgr.Instance.CloseWindow<*A*>();
+##### 其它
+    红点使用 RedDotManager.cs  在模块的初始化加入监听,在UI页面(或组件)RedPoint.SetData(类型),估计后续得扩展,可看背包示例
+    特效使用 EffectLoader.cs 加载使用LoadUIEffect()或LoadUIEffectEPos(),非auto的记得释放,估计后续得扩展,得用传入导表id的形式进行加载吧
+
 #####  服务端
     使用gRPC进行通信协议 测试了exe是正常热更的,,,,无需服务端,则使用另一分支noServer
     HYFServer要与HYFClient同一个文件夹下 (Toolkit\ProtoGen.bat有定义路径)
