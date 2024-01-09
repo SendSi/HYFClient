@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: lanmei_skill_006
+  m_Shader: {fileID: 4800000, guid: 652f902b869219443a20fe4e334dac91, type: 3}
+  m_ShaderKeywords: _MAINALPHA_ON _MAIN_ON _NOISEMASK_ON _NOISE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f40b3ee0cc36e244c9e6d732bb2ce2af, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 5a118772f7b0ab94ca1ac3c9758c34d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaMask: 0
+    - _CVS_UV: 0
+    - _CVS_UV2: 0
+    - _CVS_V: 0
+    - _CVS_W: 0
+    - _CVS_Z: 0
+    - _ColorOffset: 0
+    - _ContrastToggle: 0
+    - _Cull: 0
+    - _Cutoff: 0.5
+    - _DestBlend: 10
+    - _DissolveColType: 0
+    - _DissolveEdge: 0
+    - _DissolveInt: 0
+    - _DissolveStep: 0
+    - _DissolveTex: 0
+    - _DissolveToggle: 0
+    - _Exp: 1
+    - _Fresnel: 0
+    - _FresnelChanel: 0
+    - _InvFade: 1
+    - _Main: 1
+    - _MainAlpha: 1
+    - _MainAlphaCut: 0
+    - _MainContrast: 1
+    - _MainMask: 0
+    - _MainPolarCoord: 0
+    - _Mainoffset: 0
+    - _Mask: 0
+    - _Mask02: 0
+    - _MaskAlphaCut: 0
+    - _MaskPolarCoord: 0
+    - _Noise: 1
+    - _NoiseInt: 0.05
+    - _NoiseMask: 1
+    - _NoisePolarCoord: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _Texture02: 0
+    - _VertexOffset: 0
+    - _VertexOffsetInt: 0
+    - _ZWrite: 0
+    - _Zoffset: 0
+    m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _EdgeColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Intensity: {r: 1, g: 1, b: 1, a: 1}
+    - _MainSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _MaskSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseSpeed: {r: -0.3, g: -0.3, b: 0, a: 0}
+    - _Tex02Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _TintColor: {r: 1.3350785, g: 1.3350785, b: 1.3350785, a: 1}
