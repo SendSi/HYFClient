@@ -8,7 +8,7 @@ namespace HotPKG
     public partial class HFView : GComponent
     {
         public Controller _dialogCtrl;
-        public GGraph _bg;
+        public GImage _bg;
         public GTextField _topDescTxt;
         public GProgressBar _slider;
         public GTextField _tips;
@@ -28,7 +28,7 @@ namespace HotPKG
             base.ConstructFromXML(xml);
 
             _dialogCtrl = GetController("dialogCtrl");
-            _bg = (GGraph)GetChild("bg");
+            _bg = (GImage)GetChild("bg");
             _topDescTxt = (GTextField)GetChild("topDescTxt");
             _slider = (GProgressBar)GetChild("slider");
             _tips = (GTextField)GetChild("tips");

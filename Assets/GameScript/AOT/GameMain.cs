@@ -30,8 +30,7 @@ public class GameMain : MonoBehaviour
         UniEvent.Initalize();
         // 初始化资源系统
         YooAssets.Initialize();
-
-       FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
+        FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
 #if UNITY_EDITOR
         yield return CheckSkipHFView();//跳过 热更页面    开发时  就是要快一点见到页面
 #else
