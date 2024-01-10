@@ -7,9 +7,7 @@ public class UIMgr : Singleton<UIMgr>
     public override void OnInit()
     {
         base.OnInit();
-        GRoot.inst.SetContentScaleFactor(1334, 750, UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
     }
-
 
     /// <summary> key-viewNameStr,,,,value-GComponent </summary>
     private Dictionary<string, GComponent> mShoGCompDic = new Dictionary<string, GComponent>();
