@@ -32,8 +32,6 @@
     <type fullname="FairyGUI.PlayCompleteCallback" preserve="all" />
     <type fullname="FairyGUI.RelationType" preserve="all" />
     <type fullname="FairyGUI.Transition" preserve="all" />
-    <type fullname="FairyGUI.UIContentScaler" preserve="all" />
-    <type fullname="FairyGUI.UIContentScaler/ScreenMatchMode" preserve="all" />
     <type fullname="FairyGUI.UIObjectFactory" preserve="all" />
     <type fullname="FairyGUI.UIPackage" preserve="all" />
     <type fullname="FairyGUI.Utils.XML" preserve="all" />
@@ -79,7 +77,10 @@
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.Quaternion" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
+    <type fullname="UnityEngine.Rect" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
+    <type fullname="UnityEngine.Screen" preserve="all" />
+    <type fullname="UnityEngine.ScreenOrientation" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />
@@ -141,6 +142,7 @@
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
     <type fullname="System.RuntimeTypeHandle" preserve="all" />
+    <type fullname="System.Single" preserve="all" />
     <type fullname="System.String" preserve="all" />
     <type fullname="System.Type" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />
