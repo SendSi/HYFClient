@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750" extention="Label" initName="frame" designImageAlpha="36">
   <displayList>
-    <component id="n2_j3xs" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-1,-1" size="1336,752">
-      <relation target="" sidePair="width-width,height-height"/>
+    <component id="n3_j3xs" name="frame" src="hdmy1iy5b95" fileName="components/WindowFrame.xml" pkg="2r331opv" xy="126,40" size="1136,668" group="n25_j3xs">
+      <Label title="角色信息"/>
     </component>
-    <component id="n3_j3xs" name="frame" src="hdmy1iy5b95" fileName="components/components_new/WindowFrame.xml" pkg="2r331opv" xy="126,40" size="1136,668" group="n25_j3xs"/>
     <image id="n52_gqih" name="n52" src="fk1q1qp8vdi" fileName="images/images_new/windowBg_new/com_bg_popup01.png" pkg="2r331opv" xy="598,123" size="174,555" group="n25_j3xs"/>
     <image id="n53_gqih" name="n53" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="218,157" size="414,489" group="n25_j3xs"/>
     <image id="n7_j3xs" name="n7" src="j3xs9pa" fileName="images/role_bg.png" xy="228,196" group="n25_j3xs"/>
-    <component id="n50_cz1o" name="btnHead" src="j3xs9pm" fileName="components/components_new/btn_head4.xml" pkg="2r331opv" xy="319,301" group="n25_j3xs" aspect="true"/>
+    <component id="n50_cz1o" name="btnHead" src="j3xs9pm" fileName="components/btn_head4.xml" pkg="2r331opv" xy="319,301" group="n25_j3xs" aspect="true"/>
     <text id="n11_j3xs" name="txtRoleName" xy="340,511" pivot="0.5,0.5" size="144,29" group="n25_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#1b4967" align="center" shadowColor="#90c8e4" shadowOffset="1,2" singleLine="true" autoClearText="true" text="暮色三千五个去"/>
     <component id="n10_j3xs" name="btnRenaming" src="j3xs9pe" fileName="components/changeNameBtn.xml" xy="522,524" pivot="0.88,0.5" anchor="true" group="n25_j3xs">
       <relation target="n11_j3xs" sidePair="right-right"/>
@@ -20,14 +19,14 @@
     <component id="n51_q790" name="btnPbr" src="pwz3ci7" fileName="components/common_btn.xml" pkg="2r331opv" xy="717,238" group="n25_j3xs">
       <Button icon="ui://66sh7tc6pm2o9cjl"/>
     </component>
-    <component id="n15_j3xs" name="btnBuy" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="1101,242" size="41,36" group="n25_j3xs" aspect="true"/>
+    <component id="n15_j3xs" name="btnBuy" src="ceggz9cor" fileName="components/com_btn_plus.xml" pkg="2r331opv" xy="1101,242" size="41,36" group="n25_j3xs" aspect="true"/>
     <component id="n61_loe9" name="pbr2" src="j3xs9pf" fileName="components/role_pbr.xml" xy="772,295" size="326,38" group="n25_j3xs">
       <ProgressBar value="50" max="100"/>
     </component>
     <component id="n62_loe9" name="btnPbr2" src="pwz3ci7" fileName="components/common_btn.xml" pkg="2r331opv" xy="717,290" group="n25_j3xs">
       <Button icon="ui://66sh7tc6pm2o9cjl"/>
     </component>
-    <component id="n63_loe9" name="btnBuy2" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="1101,294" size="41,36" group="n25_j3xs" aspect="true"/>
+    <component id="n63_loe9" name="btnBuy2" src="ceggz9cor" fileName="components/com_btn_plus.xml" pkg="2r331opv" xy="1101,294" size="41,36" group="n25_j3xs" aspect="true"/>
     <text id="n16_j3xs" name="n16" xy="715,199" size="70,32" group="n25_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" singleLine="true" text="联盟："/>
     <text id="n17_j3xs" name="n17" xy="928,199" size="70,32" group="n25_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" singleLine="true" text="战力："/>
     <text id="n18_j3xs" name="txtLeague" xy="770,198" size="163,34" group="n25_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="24200"/>
@@ -38,13 +37,13 @@
       <item title="铁矿" icon="ui://tsbe09ddmz4w2"/>
       <item title="黄金" icon="ui://tsbe09ddmz4w4"/>
     </list>
-    <component id="n22_j3xs" name="btn1" src="mbg322" fileName="components/components_new/com_btn_03.xml" pkg="2r331opv" xy="713,546" group="n25_j3xs">
+    <component id="n22_j3xs" name="btn1" src="mbg322" fileName="components/com_btn_03.xml" pkg="2r331opv" xy="713,546" group="n25_j3xs">
       <Button title="更多信息" icon="ui://66sh7tc6j3xs9pb"/>
     </component>
-    <component id="n23_j3xs" name="btn2" src="mbg322" fileName="components/components_new/com_btn_03.xml" pkg="2r331opv" xy="821,546" group="n25_j3xs">
+    <component id="n23_j3xs" name="btn2" src="mbg322" fileName="components/com_btn_03.xml" pkg="2r331opv" xy="821,546" group="n25_j3xs">
       <Button title="排行榜" icon="ui://66sh7tc6j3xs9pc"/>
     </component>
-    <component id="n24_j3xs" name="btn3" src="mbg322" fileName="components/components_new/com_btn_03.xml" pkg="2r331opv" xy="929,546" group="n25_j3xs">
+    <component id="n24_j3xs" name="btn3" src="mbg322" fileName="components/com_btn_03.xml" pkg="2r331opv" xy="929,546" group="n25_j3xs">
       <Button title="设置" icon="ui://66sh7tc6j3xs9pd"/>
     </component>
     <image id="n54_gqih" name="n54" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="705,157" size="434,36" group="n25_j3xs"/>
