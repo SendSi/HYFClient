@@ -279,7 +279,9 @@ namespace FairyGUI
         void CreateModalLayer()
         {
             _modalLayer = new GGraph();
-            _modalLayer.DrawRect(this.width, this.height, 0, Color.white, UIConfig.modalLayerColor);
+            // _modalLayer.DrawRect(this.width, this.height, 0, Color.white, UIConfig.modalLayerColor);
+            _modalLayer.DrawRect(this.width*1.2f, this.height*1.2f, 0, Color.white, UIConfig.modalLayerColor);//为了适配 浏海
+            _modalLayer.SetXY(-200,-80);//为了适配 浏海
             _modalLayer.AddRelation(this, RelationType.Size);
             _modalLayer.name = _modalLayer.gameObjectName = "ModalLayer";
             _modalLayer.SetHome(this);
