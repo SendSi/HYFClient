@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="250,198" designImageOffsetX="-1641" designImageOffsetY="-126">
+  <displayList>
+    <image id="n0_j2i2" name="n0" src="jrst1ygcga5" fileName="images/img_zz_di2.png" xy="125,101" pivot="0.5,1" anchor="true" size="238,105" visible="false" alpha="0.8">
+      <relation target="" sidePair="width-width,topext-top"/>
+    </image>
+    <image id="n2_re9u" name="n2" src="jrst1ygcga5" fileName="images/img_zz_di2.png" xy="125,101" pivot="0.5,0" anchor="true" size="238,105" visible="false" alpha="0.8" flip="vt">
+      <relation target="" sidePair="width-width,bottomext-bottom"/>
+    </image>
+    <graph id="n4_ql03" name="n4" xy="1,-11" size="248,220" alpha="0.85" type="rect" lineSize="0" fillColor="#ff24263b" corner="30">
+      <relation target="" sidePair="width-width,topext-top,bottomext-bottom"/>
+    </graph>
+    <list id="n1_j2i2" name="list" xy="125,5" pivot="0.5,0" anchor="true" size="226,186" lineGap="16" defaultItem="ui://byy9k3ghlsme1ygcga6" align="center" autoClearItems="true">
+      <relation target="" sidePair="width-width"/>
+      <item title="rth"/>
+      <item title="zxcb"/>
+      <item title="awe"/>
+    </list>
+  </displayList>
+  <relation target="n1_j2i2" sidePair="height-height"/>
+</component>

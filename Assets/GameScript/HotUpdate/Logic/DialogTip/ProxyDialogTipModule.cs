@@ -1,7 +1,7 @@
 ﻿using DialogTip;
 using System;
 
-public class ProxyDialogTipModule : Singleton<ProxyDialogTipModule>,IProxy
+public class ProxyDialogTipModule : Singleton<ProxyDialogTipModule>, IProxy
 {
     private const string pkgName = "DialogTip";
 
@@ -31,12 +31,14 @@ public class ProxyDialogTipModule : Singleton<ProxyDialogTipModule>,IProxy
 
     #region DialogTip2View打开关闭Window  默认左边取消  右边确定
 
-    public void OpenDialogTip2ViewWin(string title, string content, string leftBtnTitle, Action leftCB,string rightBtnTitle,Action rightCB)
+    public void OpenDialogTip2ViewWin(string title, string content, string leftBtnTitle, Action leftCB, string rightBtnTitle, Action rightCB)
     {
+        leftBtnTitle = string.IsNullOrEmpty(leftBtnTitle) ? "取消" : leftBtnTitle;
+        rightBtnTitle = string.IsNullOrEmpty(rightBtnTitle) ? "确定" : rightBtnTitle;
         CheckLoad(() =>
         {
             var view = UIMgr.Instance.OpenWindow<DialogTip2ViewWin>();
-            view.SetData(title, content, leftBtnTitle, leftCB,rightBtnTitle,rightCB);
+            view.SetData(title, content, leftBtnTitle, leftCB, rightBtnTitle, rightCB);
         });
     }
 

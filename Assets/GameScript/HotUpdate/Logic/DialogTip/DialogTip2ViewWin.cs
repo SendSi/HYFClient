@@ -23,7 +23,10 @@ public class DialogTip2ViewWin : Window
         _contentChild = (GRichTextField)mView._contentTxt.GetChild("contentTxt");
         mView._btnLeft.onClick.Set(OnClickBtnLeft);
         mView._btnRight.onClick.Set(OnClickBtnRight);
+        this.closeButton.onClick.Set(OnClickBtnLeft);
     }
+    
+
 
 //默认左边取消
     private void OnClickBtnLeft()

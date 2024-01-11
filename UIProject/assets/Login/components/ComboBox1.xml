@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="250,83" extention="ComboBox" designImage="ui://d773nlphmnx6ei4" designImageOffsetX="-1641" designImageOffsetY="-755">
+  <controller name="button" pages="2,up,3,down,4,over,5,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n0_j2i2" name="icon" xy="124,41" pivot="0.5,0.5" anchor="true" size="240,72" url="ui://byy9k3ghjrst1ygcga2" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </loader>
+    <richtext id="n1_j2i2" name="title" xy="127,41" pivot="0.5,0.5" anchor="true" size="240,72" fontSize="34" color="#67e1cd" align="center" vAlign="middle" leading="14" letterSpacing="-1" ubb="true" autoSize="shrink" singleLine="true" text="简体中文">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </richtext>
+  </displayList>
+  <ComboBox dropdown="ui://byy9k3ghjrst1ygcga1"/>
+</component>

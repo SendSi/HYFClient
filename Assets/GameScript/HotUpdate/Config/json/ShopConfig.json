@@ -1,0 +1,37 @@
+{
+  "1001": {
+    "id": 1001,
+    "name": 1001,
+    "icon": "ui://ItemPKG/item_1"
+  },
+  "1002": {
+    "id": 1002,
+    "name": 1002,
+    "icon": "ui://ItemPKG/item_2"
+  },
+  "1003": {
+    "id": 1003,
+    "name": 1003,
+    "icon": "ui://ItemPKG/item_3"
+  },
+  "1004": {
+    "id": 1004,
+    "name": 1004,
+    "icon": "ui://ItemPKG/item_4"
+  },
+  "1005": {
+    "id": 1005,
+    "name": 1005,
+    "icon": "ui://ItemPKG/item_4"
+  },
+  "1006": {
+    "id": 1006,
+    "name": 1006,
+    "icon": "ui://ItemPKG/item_5"
+  },
+  "1007": {
+    "id": 1007,
+    "name": 1007,
+    "icon": "ui://ItemPKG/item_8"
+  }
+}

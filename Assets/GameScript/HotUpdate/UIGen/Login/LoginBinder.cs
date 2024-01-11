@@ -24,6 +24,8 @@ namespace Login
             UIObjectFactory.SetPackageItemExtension(plate02.URL, typeof(plate02));
             UIObjectFactory.SetPackageItemExtension(plate03.URL, typeof(plate03));
             UIObjectFactory.SetPackageItemExtension(tab01.URL, typeof(tab01));
+            UIObjectFactory.SetPackageItemExtension(ComboBox1_popup.URL, typeof(ComboBox1_popup));
+            UIObjectFactory.SetPackageItemExtension(ComboBox1_item.URL, typeof(ComboBox1_item));
             UIObjectFactory.SetPackageItemExtension(list_clothes_05.URL, typeof(list_clothes_05));
             UIObjectFactory.SetPackageItemExtension(clothes_btn_01.URL, typeof(clothes_btn_01));
             UIObjectFactory.SetPackageItemExtension(clothes_btn.URL, typeof(clothes_btn));

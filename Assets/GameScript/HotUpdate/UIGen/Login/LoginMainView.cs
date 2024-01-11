@@ -22,6 +22,7 @@ namespace Login
         public GGroup _info;
         public GTextField _title_03;
         public GTextField _title_04;
+        public GComboBox _languCom;
         public const string URL = "ui://byy9k3gh7oize";
 
         public static LoginMainView CreateInstance()
@@ -48,6 +49,7 @@ namespace Login
             _info = (GGroup)GetChild("info");
             _title_03 = (GTextField)GetChild("title_03");
             _title_04 = (GTextField)GetChild("title_04");
+            _languCom = (GComboBox)GetChild("languCom");
         }
     }
 }
