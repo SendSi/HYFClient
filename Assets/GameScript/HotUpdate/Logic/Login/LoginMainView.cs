@@ -13,8 +13,8 @@ namespace Login
             base.OnInit();
             FGUILoader.Instance.CheckLoadComPKG(); //加载公共依赖包
 
-            Debug.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
-            Debug.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));
+            // Debug.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
+            // Debug.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));
 
             _loginBtn.onClick.Set(OnClickLoginEnter);
 
@@ -58,8 +58,6 @@ namespace Login
             _languCom.selectedIndex = _currComValue;
             this._languCom.items = new[] { "简体中文", "繁體中文", "English" };
             this._languCom.onChanged.Set(OnChangedLanguage);
-
-            Debug.LogError($"login {_languCom.dropdown.x}  {_languCom.dropdown.y}");
         }
 
         private void OnChangedLanguage()
@@ -69,14 +67,11 @@ namespace Login
                 return; //本就选中 当前语言
             }
 
-            Debug.LogError($"值 {_currComValue}");
-
             var content = $"您确定要切换成{this._languCom.title},\r\n游戏将退出,重启后再成为目标语言";
             ProxyDialogTipModule.Instance.OpenDialogTip2ViewWin("提示", content, null, delegate
             {
                 _languCom.selectedIndex = _currComValue;
                 _languCom.title = this._languCom.items[_currComValue];
-                Debug.LogError($"值 {_currComValue}    {_languCom.title}");
             }, null, delegate
             {
                 if (this._languCom.selectedIndex == 0) { LanguageUtils.Instance.ChangeLanguage("SimChinese"); }
