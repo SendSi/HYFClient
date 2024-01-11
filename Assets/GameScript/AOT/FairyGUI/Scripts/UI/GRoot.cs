@@ -505,7 +505,7 @@ namespace FairyGUI
                     xx += size.x / 2;
                 }
             }
-
+            xx -= SafeAreaUtils.Instance.OffsetLeftX;//GComboBox弹出来的位置 不是很对  需要做处理
             return new Vector2(Mathf.RoundToInt(xx), Mathf.RoundToInt(yy));
         }
 

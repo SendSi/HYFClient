@@ -6,17 +6,21 @@ namespace Login
     public partial class LoginMainView : GComponent
     {
         private EffectObject effObject1;
+        private int _currComValue = 0;
 
         public override void OnInit()
         {
             base.OnInit();
             FGUILoader.Instance.CheckLoadComPKG(); //加载公共依赖包
 
+            // Debug.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
+            // Debug.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));
+
             _loginBtn.onClick.Set(OnClickLoginEnter);
 
             this._accountBtn.onClick.Set(() =>
             {
-                ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);       
+                ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
             });
 
             this._noticeBtn.onClick.Set(() =>
@@ -24,7 +28,7 @@ namespace Login
                 // ProxyLoginModule.Instance.OpenGameNoticeViewWin();
                 Debug.LogError("测试加载");
 
-                EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", _noticeBtn,false,EffectPos.Center, (obj) =>
+                EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", _noticeBtn, false, EffectPos.Center, (obj) =>
                 {
                     effObject1 = obj;
                 });
@@ -44,7 +48,36 @@ namespace Login
                 ProxyLoginModule.Instance.CloseLoginMainView();
             });
 
+
             this._sanningBtn.onClick.Set(OnClickSanningBtn);
+            // 简体中文SimChinese  繁体中文TraChinese  英文English 
+            if (AppConfig.currLang == "SimChinese") { _currComValue = 0; }
+            else if (AppConfig.currLang == "TraChinese") { _currComValue = 1; }
+            else if (AppConfig.currLang == "English ") { _currComValue = 2; }
+
+            _languCom.selectedIndex = _currComValue;
+            this._languCom.items = new[] { "简体中文", "繁體中文", "English" };
+            this._languCom.onChanged.Set(OnChangedLanguage);
+        }
+
+        private void OnChangedLanguage()
+        {
+            if (_currComValue == _languCom.selectedIndex)
+            {
+                return; //本就选中 当前语言
+            }
+
+            var content = $"您确定要切换成{this._languCom.title},\r\n游戏将退出,重启后再成为目标语言";
+            ProxyDialogTipModule.Instance.OpenDialogTip2ViewWin("提示", content, null, delegate
+            {
+                _languCom.selectedIndex = _currComValue;
+                _languCom.title = this._languCom.items[_currComValue];
+            }, null, delegate
+            {
+                if (this._languCom.selectedIndex == 0) { LanguageUtils.Instance.ChangeLanguage("SimChinese"); }
+                else if (this._languCom.selectedIndex == 1) { LanguageUtils.Instance.ChangeLanguage("TraChinese"); }
+                else if (this._languCom.selectedIndex == 2) { LanguageUtils.Instance.ChangeLanguage("English"); }
+            });
         }
 
 
