@@ -30,29 +30,30 @@ public class GameMain : MonoBehaviour
         UniEvent.Initalize();
         // 初始化资源系统
         YooAssets.Initialize();
-        FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
-        this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();
+
+       FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
+       this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();
 #if UNITY_EDITOR
         yield return CheckSkipHFView();//跳过 热更页面    开发时  就是要快一点见到页面
 #else
         yield return CheckLoadYooHF();
 #endif
-        
-        // yield return CheckLoadYooHF();//UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
+
+        // yield return CheckLoadYooHF(); //UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
 
         // 反射调用入口 
         Type uiType = _hotUpdateAss.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
-        
+
         Type entryType = _hotUpdateAss.GetType("HotFixReflex");
         entryType.GetMethod("Run").Invoke(null, null);
-        
-        FairyGUI.Timers.inst.Add(1,1, obj =>
+
+        FairyGUI.Timers.inst.Add(1, 1, obj =>
         {
-            ProxyHotPKGModule.Instance.CloseHFView();//移除
+            ProxyHotPKGModule.Instance.CloseHFView(); //移除
         });
     }
-    
+
     private void OnDestroy()
     {
         if (_hotUpdateAss != null)
@@ -75,11 +76,11 @@ public class GameMain : MonoBehaviour
         PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation_hotFix);
         yield return operation_hotFix;
-        
+
         //加载元数据 和 热更代码
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssemblies();
-        
+
         var gamePackage = YooAssets.GetPackage("DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
     }
@@ -90,7 +91,7 @@ public class GameMain : MonoBehaviour
         var package = YooAssets.CreatePackage("DefaultPackage");
         YooAssets.SetDefaultPackage(package);
         var createParameters = new EditorSimulateModeParameters();
-        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild( EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage");
+        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage");
         var initializationOperation = package.InitializeAsync(createParameters);
         yield return initializationOperation;
         _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
@@ -110,18 +111,23 @@ public class GameMain : MonoBehaviour
 
     private static Dictionary<string, byte[]> s_assetDatas = new Dictionary<string, byte[]>();
     private static Assembly _hotUpdateAss;
+
     //PatchedAOTAssemblyList
     private static List<string> AOTMetaAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll.bytes",
+        "Grpc.Core.Api.dll.bytes",
         "UnityEngine.CoreModule.dll.bytes",
         "YooAsset.dll.bytes",
         "mscorlib.dll.bytes",
         "Newtonsoft.Json.dll.bytes",
         "System.Core.dll.bytes",
+        "UniFramework.Event.dll.bytes",
+        "Google.Protobuf.dll.bytes",
 
         "HotUpdate.dll.bytes",
     };
+
 
     /// <summary>
     /// 为aot assembly加载原始metadata， 这个代码放aot或者热更新都行。
