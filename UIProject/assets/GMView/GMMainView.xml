@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <controller name="showCtrl" pages="0,,1," selected="0">
+    <remark page="1" value="隐藏"/>
+  </controller>
+  <displayList>
+    <graph id="n11_h7e5" name="bg" xy="0,0" size="1334,750" group="n12_cu6w" type="rect" lineSize="0" fillColor="#ff003958">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n0_h7e5" name="typeList" xy="12,72" size="248,527" group="n12_cu6w" overflow="scroll" defaultItem="ui://21uyefv8e3cq8">
+      <relation target="" sidePair="rightext-right%,bottomext-bottom,leftext-left%"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n2_h7e5" name="centerList" xy="267,72" size="473,527" group="n12_cu6w" overflow="scroll" lineGap="5" defaultItem="ui://21uyefv8h7e53">
+      <relation target="" sidePair="rightext-right%,bottomext-bottom,leftext-left%"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n3_h7e5" name="oldReList" xy="747,72" size="573,527" group="n12_cu6w" overflow="scroll" margin="0,0,10,10" lineGap="5" defaultItem="ui://21uyefv8h7e54">
+      <relation target="" sidePair="rightext-right%,bottomext-bottom,leftext-left%"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n6_h7e5" name="inputBg" xy="15,644" size="1147,72" group="n12_cu6w" type="rect">
+      <relation target="" sidePair="bottom-bottom,rightext-right"/>
+    </graph>
+    <text id="n5_h7e5" name="inputTxt" xy="13,642" size="1145,72" restrictSize="600,0,0,0" group="n12_cu6w" fontSize="35" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" autoClearText="true" text="gm gm gm " input="true">
+      <relation target="" sidePair="bottom-bottom,rightext-right"/>
+    </text>
+    <component id="n10_h7e5" name="closeButton" src="ovmzchq" fileName="components/closeBtn.xml" xy="1262,0" size="72,72" group="n12_cu6w" aspect="true">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="X" titleFontSize="60"/>
+    </component>
+    <text id="n21_he9p" name="descTxt" xy="16,599" size="1300,36" group="n12_cu6w" fontSize="24" color="#ff0000" ubb="true" autoSize="none" autoClearText="true" text="league_1(1为要创建联盟,0不创) guide_1(1为要发请求所有指引,0不发) general_200(200为武将等级,若30为30级)">
+      <relation target="" sidePair="bottom-bottom,rightext-right"/>
+    </text>
+    <group id="n12_cu6w" name="group" xy="0,0" size="1334,750" advanced="true">
+      <gearXY controller="showCtrl" pages="0,1" values="0,0,0,-0.001|-1383,0,-1.037,0" tween="true" positionsInPercent="true"/>
+      <relation target="" sidePair="left-left%,top-top%"/>
+    </group>
+    <component id="n15_cu6w" name="leftRightBtn" src="cu6w7" fileName="components/switchButton.xml" xy="684,5" size="99,59">
+      <relation target="" sidePair="top-top%,rightext-right%,leftext-left%"/>
+      <Button controller="showCtrl" page="1"/>
+    </component>
+    <component id="n9_h7e5" name="sendBtn" src="h7e55" fileName="components/btnSend.xml" xy="1167,650" size="140,72">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </component>
+    <component id="n16_e3cq" name="checkCloseBtn" src="ovmzchr" fileName="components/ToggleButton.xml" xy="82,12">
+      <relation target="" sidePair="left-left"/>
+      <Button title="发送后关闭GM页面" titleColor="#00ff00"/>
+    </component>
+  </displayList>
+</component>

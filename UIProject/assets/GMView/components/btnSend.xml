@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="150,72" extention="Button">
+  <displayList>
+    <graph id="n0_h7e5" name="n2" xy="0,0" size="150,72" type="rect" lineSize="0" lineColor="#ff8a7246" fillColor="#ffa5895c"/>
+    <text id="n1_h7e5" name="title" xy="0,0" size="150,72" fontSize="30" align="center" vAlign="middle" autoSize="none" text="发送"/>
+  </displayList>
+</component>
