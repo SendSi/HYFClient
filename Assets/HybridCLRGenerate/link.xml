@@ -13,6 +13,7 @@
     <type fullname="FairyGUI.EventContext" preserve="all" />
     <type fullname="FairyGUI.EventListener" preserve="all" />
     <type fullname="FairyGUI.GButton" preserve="all" />
+    <type fullname="FairyGUI.GComboBox" preserve="all" />
     <type fullname="FairyGUI.GComponent" preserve="all" />
     <type fullname="FairyGUI.GGraph" preserve="all" />
     <type fullname="FairyGUI.GGroup" preserve="all" />
@@ -38,8 +39,6 @@
     <type fullname="FairyGUI.TimerCallback" preserve="all" />
     <type fullname="FairyGUI.Timers" preserve="all" />
     <type fullname="FairyGUI.Transition" preserve="all" />
-    <type fullname="FairyGUI.UIContentScaler" preserve="all" />
-    <type fullname="FairyGUI.UIContentScaler/ScreenMatchMode" preserve="all" />
     <type fullname="FairyGUI.UIObjectFactory" preserve="all" />
     <type fullname="FairyGUI.UIPackage" preserve="all" />
     <type fullname="FairyGUI.Utils.XML" preserve="all" />
@@ -140,6 +139,7 @@
     <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule">
+    <type fullname="UnityEngine.Application" preserve="all" />
     <type fullname="UnityEngine.Behaviour" preserve="all" />
     <type fullname="UnityEngine.Component" preserve="all" />
     <type fullname="UnityEngine.Coroutine" preserve="all" />
@@ -153,9 +153,11 @@
     <type fullname="UnityEngine.Mathf" preserve="all" />
     <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.PlayerPrefs" preserve="all" />
     <type fullname="UnityEngine.Quaternion" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />

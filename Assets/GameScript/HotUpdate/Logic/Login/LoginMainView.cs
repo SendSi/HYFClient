@@ -12,6 +12,7 @@ namespace Login
         {
             base.OnInit();
             FGUILoader.Instance.CheckLoadComPKG(); //加载公共依赖包
+            AudioMgr.Instance.PlayBGM("music_background");
 
             // Debug.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
             // Debug.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));

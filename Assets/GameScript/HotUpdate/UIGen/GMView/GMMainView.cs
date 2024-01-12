@@ -5,40 +5,44 @@ using FairyGUI.Utils;
 
 namespace GMView
 {
-    public partial class gmView : GComponent
+    public partial class GMMainView : GComponent
     {
-        public Controller _c1;
+        public Controller _showCtrl;
+        public GGraph _bg;
         public GList _typeList;
         public GList _centerList;
         public GList _oldReList;
         public GGraph _inputBg;
-        public GTextInput _input;
+        public GTextInput _inputTxt;
         public GButton _closeButton;
         public GTextField _descTxt;
+        public GGroup _group;
         public GButton _leftRightBtn;
-        public btn _sendBtn;
+        public GButton _sendBtn;
         public GButton _checkCloseBtn;
         public const string URL = "ui://21uyefv8h7e50";
 
-        public static gmView CreateInstance()
+        public static GMMainView CreateInstance()
         {
-            return (gmView)UIPackage.CreateObject("GMView", "gmView");
+            return (GMMainView)UIPackage.CreateObject("GMView", "GMMainView");
         }
 
         public override void ConstructFromXML(XML xml)
         {
             base.ConstructFromXML(xml);
 
-            _c1 = GetController("c1");
+            _showCtrl = GetController("showCtrl");
+            _bg = (GGraph)GetChild("bg");
             _typeList = (GList)GetChild("typeList");
             _centerList = (GList)GetChild("centerList");
             _oldReList = (GList)GetChild("oldReList");
             _inputBg = (GGraph)GetChild("inputBg");
-            _input = (GTextInput)GetChild("input");
+            _inputTxt = (GTextInput)GetChild("inputTxt");
             _closeButton = (GButton)GetChild("closeButton");
             _descTxt = (GTextField)GetChild("descTxt");
+            _group = (GGroup)GetChild("group");
             _leftRightBtn = (GButton)GetChild("leftRightBtn");
-            _sendBtn = (btn)GetChild("sendBtn");
+            _sendBtn = (GButton)GetChild("sendBtn");
             _checkCloseBtn = (GButton)GetChild("checkCloseBtn");
         }
     }
