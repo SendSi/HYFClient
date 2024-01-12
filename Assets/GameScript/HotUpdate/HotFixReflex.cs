@@ -15,6 +15,10 @@ public class HotFixReflex
         ManagerBinder.BindAll();
         
         // if (gameMain != null) { gameMain.AddComponent<SafeAreaUtils>(); }
+        
+        AudioMgr.Instance.Begin();
+        
+        AudioMgr.Instance.PlayBGM("music_background");
     }
 
     public static void Destroy()
@@ -22,5 +26,7 @@ public class HotFixReflex
         Debug.LogWarning("HotFixReflex-->Destroy");
         ProtocalBinder.UnBind();
         ManagerBinder.UnBind();
+        
+        AudioMgr.Instance.Dispose();
     }
 }

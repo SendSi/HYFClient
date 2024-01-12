@@ -29,6 +29,7 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     导表使用 在根目录处有Excel与excel2json_tool,导出时用DictObject类型的json文件,使用ConfigMgr.cs的LoadConfigOne<ItemConfig>("id")取得一行数据
     浏海屏幕 SafeAreaUtils.cs处理了左右横屏,制作fgui工程时需注意一下大背景得左右两边往外伸一点即可
 	多国语言 LanguageUtils.cs可查看文件头部注释.导表映射.fgui内置字..切换语言时,会退出应用.重启生效
+	声音播放 AudioMgr.cs 播放背景PlayBGM(),播放音效PlayMusic() 后续做成导表形式吧
 
 ####  服务端
     使用gRPC进行通信协议 测试了exe是正常热更的,,,,无需服务端,则使用另一分支noServer
