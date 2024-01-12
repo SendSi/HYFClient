@@ -7,6 +7,9 @@ public static class AppConfig
 
     public static int designResolutionX = 1334;//ui设计尺寸 宽
     public static int designResolutionY= 750;//ui设计尺寸 高
+    
+    public static string currLang = "SimChinese";//当前出APK时的语言 简体中文SimChinese  繁体中文TraChinese  英文English          //初次启动  改变后再次启动
+
 
     
     #region editor下使用的

@@ -75,6 +75,13 @@
     <component id="cale1ygcg9x" name="landItem1.xml" path="/components/" exported="true"/>
     <component id="a9my1ygcg9y" name="GameAgeView.xml" path="/panel/" exported="true"/>
     <component id="a9my1ygcg9z" name="title_notice1.xml" path="/components/" exported="true"/>
+    <component id="jrst1ygcga0" name="ComboBox1.xml" path="/components/" exported="true"/>
+    <component id="jrst1ygcga1" name="ComboBox1_popup.xml" path="/components/" exported="true"/>
+    <image id="jrst1ygcga2" name="button_line1.png" path="/images/" scale="9grid" scale9grid="41,31,6,7"/>
+    <image id="jrst1ygcga3" name="button_line1_arrow.png" path="/images/"/>
+    <image id="jrst1ygcga4" name="button_line1_arrow2.png" path="/images/"/>
+    <image id="jrst1ygcga5" name="img_zz_di2.png" path="/images/" exported="true"/>
+    <component id="lsme1ygcga6" name="ComboBox1_item.xml" path="/components/"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

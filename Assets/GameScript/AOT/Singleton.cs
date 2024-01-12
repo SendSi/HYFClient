@@ -31,4 +31,9 @@ public  class Singleton<T> where T : Singleton<T>,new()
     {
 
     }
+    //写上空方法 为了调用 OnInit
+    public void Begin()
+    {
+
+    }
 }

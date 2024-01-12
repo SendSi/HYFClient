@@ -33,6 +33,8 @@ public class ProxyDialogTipModule : Singleton<ProxyDialogTipModule>,IProxy
 
     public void OpenDialogTip2ViewWin(string title, string content, string leftBtnTitle, Action leftCB,string rightBtnTitle,Action rightCB)
     {
+        leftBtnTitle = string.IsNullOrEmpty(leftBtnTitle) ? "取消" : leftBtnTitle;
+        rightBtnTitle = string.IsNullOrEmpty(rightBtnTitle) ? "确定" : rightBtnTitle;
         CheckLoad(() =>
         {
             var view = UIMgr.Instance.OpenWindow<DialogTip2ViewWin>();

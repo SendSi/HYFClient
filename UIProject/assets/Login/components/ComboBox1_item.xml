@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="208,72" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <loader id="n3_j811" name="bg" xy="0,0" pivot="0.5,0.5" size="208,72" url="ui://byy9k3ghjrst1ygcga2" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </loader>
+    <richtext id="n1_j2i2" name="title" xy="104,36" pivot="0.5,0.5" anchor="true" size="208,72" fontSize="34" color="#67e1cd" align="center" vAlign="middle" letterSpacing="-1" autoSize="shrink" singleLine="true" autoClearText="true" text="稀有度 &lt;img src = &apos;ui://Login/button_line1_arrow2&apos;/&gt;">
+      <relation target="" sidePair="width-width,height-height"/>
+    </richtext>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

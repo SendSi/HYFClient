@@ -28,4 +28,4 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     特效使用 EffectLoader.cs 加载UI特效使用LoadUIEffect()或LoadUIEffectEPos(),加载场景特效使用LoadSceneEffectSimple()或LoadSceneEffect(),,非auto的记得释放,估计后续得扩展,得用传入导表id的形式进行加载吧
     导表使用 在根目录处有Excel与excel2json_tool,导出时用DictObject类型的json文件,使用ConfigMgr.cs的LoadConfigOne<ItemConfig>("id")取得一行数据
     浏海屏幕 SafeAreaUtils.cs处理与左右横屏,制作fgui工程时需注意一下大背景得左右两边往外伸一点
-
+    多国语言 LanguageUtils.cs可查看文件头部注释.导表映射.fgui内置字..切换语言时,会退出应用.重启生效
