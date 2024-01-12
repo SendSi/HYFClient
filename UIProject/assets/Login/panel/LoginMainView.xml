@@ -43,5 +43,13 @@
     <text id="n39_116rd" name="title_04" xy="287,685" size="759,52" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" ubb="true" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="出版单位：河北冠林数字出版有限公司  运营单位：广州市漫灵软件有限公司&#xA;新广出审[2017]8853号   ISBN 978-7-498-01811-3">
       <relation target="" sidePair="center-center"/>
     </text>
+    <component id="n43_lsme" name="languCom" src="jrst1ygcga0" fileName="components/ComboBox1.xml" xy="1044,80" size="250,83">
+      <relation target="" sidePair="right-right,top-top"/>
+      <ComboBox visibleItemCount="10" direction="down">
+        <item title="简体中文"/>
+        <item title="繁体中文"/>
+        <item title="英文"/>
+      </ComboBox>
+    </component>
   </displayList>
 </component>

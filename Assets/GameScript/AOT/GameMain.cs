@@ -32,7 +32,7 @@ public class GameMain : MonoBehaviour
         YooAssets.Initialize();
 
        FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
-       this.gameObject.AddComponent<SafeAreaUtils>();
+       this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();
 #if UNITY_EDITOR
         yield return CheckSkipHFView();//跳过 热更页面    开发时  就是要快一点见到页面
 #else
