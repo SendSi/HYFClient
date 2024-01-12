@@ -8,6 +8,8 @@ public class ManagerBinder
         BagManager.Instance.ListenBag();
         RoleManager.Instance.ListenRole();
         ShopManager.Instance.ListenShop();
+
+        GMManager.Instance.ListenGM();
     }
 
     public static void UnBind()

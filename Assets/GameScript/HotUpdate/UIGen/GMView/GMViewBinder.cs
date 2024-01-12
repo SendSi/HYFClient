@@ -8,8 +8,7 @@ namespace GMView
     {
         public static void BindAll()
         {
-            UIObjectFactory.SetPackageItemExtension(gmView.URL, typeof(gmView));
-            UIObjectFactory.SetPackageItemExtension(btn.URL, typeof(btn));
+            UIObjectFactory.SetPackageItemExtension(GMMainView.URL, typeof(GMMainView));
         }
     }
 }

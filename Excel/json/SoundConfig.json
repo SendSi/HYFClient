@@ -1,0 +1,26 @@
+{
+  "1001": {
+    "id": 1001,
+    "yooPath": "music_background"
+  },
+  "1002": {
+    "id": 1002,
+    "yooPath": "sound_explosion_asteroid"
+  },
+  "1003": {
+    "id": 1003,
+    "yooPath": "sound_explosion_enemy"
+  },
+  "1004": {
+    "id": 1004,
+    "yooPath": "sound_explosion_player"
+  },
+  "1005": {
+    "id": 1005,
+    "yooPath": "sound_weapon_enemy"
+  },
+  "1006": {
+    "id": 1006,
+    "yooPath": "sound_weapon_player"
+  }
+}

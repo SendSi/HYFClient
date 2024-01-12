@@ -156,10 +156,7 @@
     <type fullname="UnityEngine.PlayerPrefs" preserve="all" />
     <type fullname="UnityEngine.Quaternion" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
-    <type fullname="UnityEngine.Rect" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
-    <type fullname="UnityEngine.Screen" preserve="all" />
-    <type fullname="UnityEngine.ScreenOrientation" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />

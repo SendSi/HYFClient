@@ -8,17 +8,15 @@ public class HotFixReflex
     {
         Debug.LogWarning("HotFixReflex-->Run");
         //var gameMain = GameObject.Find("GameMain");//Find元素
+        // if (gameMain != null) { gameMain.AddComponent<SafeAreaUtils>(); }
+        
         LanguageUtils.Instance.Begin();//时序有要求
         
         ProxyLoginModule.Instance.OpenLoginMainView();//时序有要求
         ProtocalBinder.BindAll();
         ManagerBinder.BindAll();
-        
-        // if (gameMain != null) { gameMain.AddComponent<SafeAreaUtils>(); }
-        
+
         AudioMgr.Instance.Begin();
-        
-        AudioMgr.Instance.PlayBGM("music_background");
     }
 
     public static void Destroy()
