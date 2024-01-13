@@ -12,15 +12,18 @@
       <relation target="n91_ukvb" sidePair="right-right"/>
     </text>
     <text id="n91_ukvb" name="lvLbl" xy="126,16" size="39,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" text="50级"/>
-    <list id="n93_ijk7" name="activityList" xy="664,44" size="668,104" layout="row" selectionMode="none" scroll="both" colGap="-7" defaultItem="ui://4ni413lagzkh8i" autoItemSize="false" align="right" autoClearItems="true">
+    <list id="n93_ijk7" name="activityList" xy="664,44" size="668,104" layout="row" selectionMode="none" scroll="both" colGap="-7" defaultItem="ui://4ni413lagzkh8i" autoItemSize="false" align="right">
       <relation target="" sidePair="right-right,top-top"/>
       <item icon="ui://2r331opvil9y1ygcfjf"/>
       <item title="功能预告" icon="ui://2r331opvil9y1ygcfjg"/>
       <item icon="ui://2r331opvil9y1ygcfjh"/>
     </list>
-    <component id="n94_ijk7" name="currencyListCom" src="ykwwkx" fileName="components/components_new/currencyListCom.xml" pkg="2r331opv" xy="632,1">
+    <component id="n94_ijk7" name="currencyListCom" src="ykwwkx" fileName="components/currencyListCom.xml" pkg="2r331opv" xy="561,1">
       <relation target="" sidePair="right-right,top-top"/>
     </component>
-    <component id="n96_ijk7" name="coordItemBtn" src="m47yhz9co4" fileName="components/main_btn_coord.xml" xy="412,11"/>
+    <component id="n95_wru6" name="settingBtn" src="wru61ygcgrs" fileName="_new/Button_icon.xml" pkg="2r331opv" xy="1279,4" size="50,50">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button icon="ui://2r331opvj3xs9pd"/>
+    </component>
   </displayList>
 </component>

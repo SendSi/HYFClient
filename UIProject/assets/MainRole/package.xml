@@ -9,7 +9,6 @@
     <image id="j3xs9pa" name="role_bg.png" path="/images/" exported="true"/>
     <image id="j3xs9pb" name="role_icon01.png" path="/images/" exported="true"/>
     <image id="j3xs9pc" name="role_icon02.png" path="/images/" exported="true"/>
-    <image id="j3xs9pd" name="role_icon03.png" path="/images/" exported="true"/>
     <image id="j3xs9p9" name="role_modify.png" path="/images/" exported="true"/>
     <component id="rv2y9pr" name="roleInfoItem.xml" path="/components/"/>
     <image id="nqnq9cjh" name="league_city_he.png" path="/images/" exported="true"/>

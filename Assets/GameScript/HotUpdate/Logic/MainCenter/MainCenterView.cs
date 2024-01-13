@@ -36,8 +36,7 @@ namespace MainCenter
 
         private void OnClickQuit()
         {
-            ProxyLoginModule.Instance.OpenLoginMainView();
-            ProxyMainCenterModule.Instance.CloseMainCenterView();
+
         }
 
         public override void Dispose()

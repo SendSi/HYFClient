@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="129,71" extention="Button" designImage="ui://dh3hukhzg30w2" designImageOffsetX="-424" designImageOffsetY="-134">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n9_jyqr" name="n9" src="jas1hz9d85" fileName="images/images_new/com_btn_switch01.png" pkg="2r331opv" xy="7,7">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n10_jyqr" name="n10" src="jas1hz9d82" fileName="images/images_new/com_btn_switch02.png" pkg="2r331opv" xy="17,7">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n12_hddb" name="off" xy="68,17" pivot="0.5,0.5" size="28,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" text="关">
+      <gearXY controller="button" pages="0,1" values="68,17|68,17"/>
+      <gearColor controller="button" pages="0,1" values="#50382e,#000000|#8c7356,#000000"/>
+    </text>
+    <text id="n11_hddb" name="on" xy="21,17" pivot="0.5,0.5" size="28,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#b16d33" text="开">
+      <gearXY controller="button" pages="0,1" values="21,17|21,17"/>
+      <gearColor controller="button" pages="1" values="#50382e,#000000" default="#b16d33,#000000"/>
+    </text>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="close"/>
+  <transition name="open"/>
+</component>

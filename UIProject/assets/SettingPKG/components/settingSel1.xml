@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="216,50" extention="Button" designImage="ui://dh3hukhzg30w2" designImageOffsetX="-424" designImageOffsetY="-134">
+  <controller name="button" pages="0,,1," selected="0">
+    <remark page="0" value="one"/>
+    <remark page="1" value="two"/>
+  </controller>
+  <displayList>
+    <image id="n17_jyqr" name="n17" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="0,0" size="216,50">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n21_jyqr" name="selbtn" src="jyqri" fileName="components/settingSelBtn.xml" xy="0,-1">
+      <gearXY controller="button" pages="0,1" values="0,-1|110,3"/>
+      <Button title="标准"/>
+    </component>
+    <component id="n22_ax40" name="selbtn1" src="jyqri" fileName="components/settingSelBtn.xml" xy="112,-1">
+      <gearXY controller="button" pages="0,1" values="112,-1|110,3"/>
+      <Button title="流畅"/>
+    </component>
+  </displayList>
+  <Button/>
+  <transition name="close"/>
+  <transition name="open"/>
+</component>

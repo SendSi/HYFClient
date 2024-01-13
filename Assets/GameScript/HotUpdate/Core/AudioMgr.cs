@@ -48,9 +48,14 @@ public class AudioMgr : Singleton<AudioMgr>
     protected override void OnDispose()
     {
         base.OnDispose();
-        var bgm_music_volume = $"{AppConfig.bgmVolume};{AppConfig.musicVolume}";
-        PlayerPrefs.GetString(_prefsKey, bgm_music_volume);
+        SaveSoundPrefsKey();
         ReleaseAll();
+    }
+
+    public void SaveSoundPrefsKey()
+    {
+        var bgm_music_volume = $"{AppConfig.bgmVolume};{AppConfig.musicVolume}";
+        PlayerPrefs.SetString(_prefsKey, bgm_music_volume);
     }
 
     private AudioSource GetOrCreateSound()

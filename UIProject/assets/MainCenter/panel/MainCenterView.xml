@@ -5,11 +5,11 @@
     <remark page="1" value="城外"/>
   </controller>
   <displayList>
-    <component id="n101_xoe1" name="funcListEles" src="xoe1mz" fileName="components/funcListEles.xml" xy="744,644" group="n109_pwz3">
+    <component id="n101_xoe1" name="funcListEles" src="xoe1mz" fileName="components/FuncListEles.xml" xy="744,644" group="n109_pwz3">
       <relation target="" sidePair="right-right,bottom-bottom"/>
     </component>
     <image id="n55_b6o0" name="bottomBg" src="yt2t1ygcg8p" fileName="images4/mainhud_btn_icon013.png" xy="0,677" size="568,73" group="n109_pwz3"/>
-    <component id="n56_b6o0" name="chatBtn" src="kah2a4" fileName="components/main_chat_item(1).xml" xy="86,683" size="388,68" group="n109_pwz3">
+    <component id="n56_b6o0" name="chatBtn" src="kah2a4" fileName="components/main_chat_item_2.xml" xy="86,683" size="388,68" group="n109_pwz3">
       <relation target="n55_b6o0" sidePair="right-right"/>
     </component>
     <component id="n119_j4kd" name="backBtn" src="j4kdhz9clt" fileName="components/main_btn_back.xml" xy="16,631" group="n109_pwz3">
@@ -27,7 +27,7 @@
       <item title="军团" icon="ui://4ni413latauyhz9czt" name="legion"/>
     </list>
     <group id="n109_pwz3" name="bottomEles" xy="0,614" size="1334,140" advanced="true"/>
-    <component id="n34_b6o0" name="topEles" src="xoe1n2" fileName="components/mainTopPlayerInfo.xml" xy="0,0">
+    <component id="n34_b6o0" name="topEles" src="xoe1n2" fileName="components/TopEles.xml" xy="0,0">
       <relation target="" sidePair="rightext-right"/>
     </component>
     <component id="n154_quts" name="rightTeam" src="le3m1qp8vhq" fileName="components/main_team_right.xml" xy="1113,138">

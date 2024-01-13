@@ -44,7 +44,7 @@
       <Button title="排行榜" icon="ui://66sh7tc6j3xs9pc"/>
     </component>
     <component id="n24_j3xs" name="btn3" src="mbg322" fileName="components/com_btn_03.xml" pkg="2r331opv" xy="929,546" group="n25_j3xs">
-      <Button title="设置" icon="ui://66sh7tc6j3xs9pd"/>
+      <Button title="设置" icon="ui://2r331opvj3xs9pd"/>
     </component>
     <image id="n54_gqih" name="n54" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="705,157" size="434,36" group="n25_j3xs"/>
     <text id="n55_gqih" name="n55" xy="716,158" size="112,34" group="n25_j3xs" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" autoSize="none" strokeColor="#ac8958" strokeSize="2" shadowColor="#ac8958" shadowOffset="2,2" text="基础信息"/>

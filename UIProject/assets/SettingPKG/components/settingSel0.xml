@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="326,50" extention="Button" designImage="ui://dh3hukhzg30w2" designImageOffsetX="-424" designImageOffsetY="-134">
+  <controller name="button" pages="0,,1,,2," selected="0">
+    <remark page="0" value="one"/>
+    <remark page="1" value="two"/>
+    <remark page="2" value="three"/>
+  </controller>
+  <displayList>
+    <image id="n11_jyqr" name="n11" src="bumchz9d7p" fileName="images/images_new/windowBg_new/negative_bg03.png" pkg="2r331opv" xy="0,0" size="326,50">
+      <relation target="" sidePair="width-width%,height-height"/>
+    </image>
+    <component id="n15_jyqr" name="selbtn" src="jyqri" fileName="components/settingSelBtn.xml" xy="1,-1">
+      <Button title="均衡" controller="button" page="0"/>
+    </component>
+    <component id="n16_ax40" name="selbtn1" src="jyqri" fileName="components/settingSelBtn.xml" xy="112,-1">
+      <Button title="优质" controller="button" page="1"/>
+    </component>
+    <component id="n17_ax40" name="selbtn2" src="jyqri" fileName="components/settingSelBtn.xml" xy="223,-1">
+      <Button title="完美" controller="button" page="2"/>
+    </component>
+  </displayList>
+  <Button/>
+  <transition name="close"/>
+  <transition name="open"/>
+</component>

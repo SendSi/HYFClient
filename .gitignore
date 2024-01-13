@@ -54,6 +54,9 @@ exe/
 yoo/
 Bundles/
 Toolkit/CSFiles/
+Excel/cs/
+Excel/json/
+Excel/___init___.bat
 
 # Unity3D generated meta files
 *.pidb.meta
