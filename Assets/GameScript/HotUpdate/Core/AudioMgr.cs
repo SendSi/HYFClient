@@ -45,7 +45,6 @@ public class AudioMgr : Singleton<AudioMgr>
         });
     }
 
-
     protected override void OnDispose()
     {
         base.OnDispose();
@@ -54,7 +53,6 @@ public class AudioMgr : Singleton<AudioMgr>
         ReleaseAll();
     }
 
-
     private AudioSource GetOrCreateSound()
     {
         AudioSource tAudio;
@@ -62,8 +60,7 @@ public class AudioMgr : Singleton<AudioMgr>
         if (poolCount > 0)
         {
             tAudio = _audioPools.Dequeue(); //取出队列
-        }
-        else
+        } else
         {
             var sound = new GameObject("sound");
             sound.transform.SetParent(_soundRootTr);
@@ -92,7 +89,6 @@ public class AudioMgr : Singleton<AudioMgr>
         mLoadAssetHandes.Clear();
     }
 
-
     public void PlayBGM(string name, bool isLoop = true)
     {
         if (_audioBGM != null)
@@ -101,7 +97,10 @@ public class AudioMgr : Singleton<AudioMgr>
             _audioBGM.loop = isLoop;
             _audioBGM.mute = false; //非静音
 
-            if (_audioBGM.clip != null && _bgmAssHandle != null) { _bgmAssHandle.Release(); } //bgm可以切换的呀
+            if (_audioBGM.clip != null && _bgmAssHandle != null)
+            {
+                _bgmAssHandle.Release();
+            } //bgm可以切换的呀
 
             LoadSound(name, delegate(AssetHandle ah)
             {
@@ -110,6 +109,15 @@ public class AudioMgr : Singleton<AudioMgr>
                 _bgmAssHandle = ah;
                 _audioBGM.Play(); //load成功才能播放哦
             });
+        }
+    }
+
+    public void PlayBGM_Id(string id, bool isLoop = true)
+    {
+        var cfg = ConfigMgr.Instance.LoadConfigOne<SoundConfig>(id);
+        if (cfg != null)
+        {
+            PlayBGM(cfg.yooPath, isLoop);
         }
     }
 
@@ -129,7 +137,7 @@ public class AudioMgr : Singleton<AudioMgr>
             LoadSound(name, delegate(AssetHandle ah)
             {
                 var clip = ah.AssetObject as AudioClip;
-               // Debug.LogError($"音效时长:{clip.length}");
+                // Debug.LogError($"音效时长:{clip.length}");
                 music.clip = clip;
                 music.Play(); //load成功才能播放哦
 
@@ -138,6 +146,14 @@ public class AudioMgr : Singleton<AudioMgr>
         }
     }
 
+    public void PlayMusic_Id(string id)
+    {
+        var cfg = ConfigMgr.Instance.LoadConfigOne<SoundConfig>(id);
+        if (cfg != null)
+        {
+            PlayMusic(cfg.yooPath);
+        }
+    }
 
     private void CheckTimeDicUpdate(AudioSource tAudio, float timeClip, AssetHandle ah)
     {

@@ -41,29 +41,24 @@ public class EffectLoader : Singleton<EffectLoader>
         {
             x = 0;
             y = 0;
-        }
-        else if (ePos == EffectPos.LeftBottom)
+        } else if (ePos == EffectPos.LeftBottom)
         {
             x = 0;
             y = parent.height;
-        }
-        else if (ePos == EffectPos.RightTop)
+        } else if (ePos == EffectPos.RightTop)
         {
             y = 0;
             x = parent.width;
-        }
-        else if (ePos == EffectPos.RightBottom)
+        } else if (ePos == EffectPos.RightBottom)
         {
             x = parent.width;
             y = parent.height;
-        }
-        else
+        } else
         {
             x = parent.width * 0.5f;
             y = parent.height * 0.5f;
         }
     }
-
 
     //默认的场景特效 父节点
     private GameObject _sceneEffectRoot;
@@ -90,7 +85,10 @@ public class EffectLoader : Singleton<EffectLoader>
     /// <param name="actionCB">返回一个特效  EffectObject</param>
     public void LoadSceneEffect(string effName, GameObject parent, bool isAutoDispose, Action<EffectObject> actionCB, Vector3 vPos, Vector3 vScale, Vector3 vRotate)
     {
-        if (parent == null) { parent = sceneEffectRoot; }
+        if (parent == null)
+        {
+            parent = sceneEffectRoot;
+        }
 
         var handle = YooAssets.LoadAssetAsync<GameObject>(effName);
         handle.Completed += (AssetHandle actGO) =>
@@ -101,13 +99,11 @@ public class EffectLoader : Singleton<EffectLoader>
             actionCB?.Invoke(eObj);
         };
     }
+
     /// <summary>加载场景特效  </summary>
     /// <param name="isAutoDispose">特效 播放完毕后  是否自动释放     另:需要重复播放的,就得设置false,记得得释放</param>
     /// <param name="actionCB">返回一个特效  EffectObject</param>
-    public void LoadSceneEffectSimple(string effName, GameObject parent=null, bool isAutoDispose=true, Action<EffectObject> actionCB=null)
-    {
-        LoadSceneEffect(effName, parent, isAutoDispose, actionCB, Vector3.zero, Vector3.one, Vector3.zero);
-    }
+    public void LoadSceneEffectSimple(string effName, GameObject parent = null, bool isAutoDispose = true, Action<EffectObject> actionCB = null) { LoadSceneEffect(effName, parent, isAutoDispose, actionCB, Vector3.zero, Vector3.one, Vector3.zero); }
 
     public void Dispose(EffectObject effObj)
     {
@@ -118,7 +114,6 @@ public class EffectLoader : Singleton<EffectLoader>
         }
     }
 
-
     public void Clear()
     {
         foreach (var item in mEffectObjs)
@@ -127,6 +122,23 @@ public class EffectLoader : Singleton<EffectLoader>
         }
 
         mEffectObjs.Clear();
+    }
+
+    public void LoadEffect_Id(string id)
+    {
+        var cfg = ConfigMgr.Instance.LoadConfigOne<EffectConfig>(id);
+        if (cfg != null)
+        {
+            if (cfg.eType == 1)
+            {
+                LoadSceneEffectSimple(cfg.yooPath);
+            } 
+            else
+            {
+                var topView = ProxyCommonPKGModule.Instance.GetToastView();
+                LoadUIEffectEPos(cfg.yooPath, topView, true);
+            }
+        }
     }
 }
 
@@ -152,7 +164,10 @@ public class EffectObject
         parent.AddChild(gGraph);
         gGraph.SetXY(posX, posY);
         gGraph.SetSize(sizeX, sizeY);
-        if (isAutoDispose) { SetStartTimer(); }
+        if (isAutoDispose)
+        {
+            SetStartTimer();
+        }
     }
 
     public EffectObject(AssetHandle tAH, GameObject tGo, GameObject parent, bool isAutoDispose, Vector3 vPos, Vector3 vScale, Vector3 vRotate)
@@ -167,7 +182,10 @@ public class EffectObject
         instGo.transform.localScale = vScale;
         instGo.transform.localEulerAngles = vRotate;
 
-        if (isAutoDispose) { SetStartTimer(); }
+        if (isAutoDispose)
+        {
+            SetStartTimer();
+        }
     }
 
     private void SetStartTimer()
@@ -179,10 +197,7 @@ public class EffectObject
         }
     }
 
-    private void DestroyObj(object param)
-    {
-        Dispose();
-    }
+    private void DestroyObj(object param) { Dispose(); }
 
     //再次播放
     public void Play()
@@ -259,6 +274,7 @@ public class EffectObject
             instGo.transform.localPosition = new Vector3(x, y, z);
         }
     }
+
     /// <summary> 场景特效 设置位置 </summary>
     public void SetPosLocal(Vector3 vPos)
     {
@@ -268,7 +284,6 @@ public class EffectObject
         }
     }
 }
-
 
 public enum EffectPos
 {

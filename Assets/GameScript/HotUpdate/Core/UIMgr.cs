@@ -1,6 +1,7 @@
 using FairyGUI;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class UIMgr : Singleton<UIMgr>
 {
@@ -21,7 +22,7 @@ public class UIMgr : Singleton<UIMgr>
         gCom.AddRelation(GRoot.inst, RelationType.Size);
         gCom.fairyBatching = true;
         gCom.OnInit(); //继承方法 onClick itemRenderer *** 在此声明呗
-
+      
         mShoGCompDic[viewName] = gCom;
         return gCom as T1;
     }
