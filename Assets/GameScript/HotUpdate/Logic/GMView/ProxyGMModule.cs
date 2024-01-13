@@ -1,4 +1,5 @@
 ﻿using System;
+using GMView;
 
 
 public class ProxyGMModule : Singleton<ProxyGMModule>
@@ -9,18 +10,31 @@ public class ProxyGMModule : Singleton<ProxyGMModule>
     {
         FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
-    
-    
+
+
     #region GMMainView打开关闭View
+
+    private GMMainView _gmView;
 
     public void OpenGMMainView()
     {
-        CheckLoad(() => { UIMgr.Instance.OpenUIViewCom<GMView.GMMainView>(pkgName); });
+        //若有引用 就显示咯 
+        if (_gmView == null)
+        {
+            CheckLoad(() => { _gmView = UIMgr.Instance.OpenUIViewCom<GMMainView>(pkgName); });
+        }
+        else
+        {
+            UIMgr.Instance.ShowUIViewCom<GMMainView>();
+        }
     }
 
-    public void CloseGMMainView()
+    public void HideGMMainView()
     {
-        UIMgr.Instance.CloseUIViewCom<GMView.GMMainView>();
+        if (_gmView!=null)
+        {
+            UIMgr.Instance.HideUIViewCom<GMMainView>();
+        }
     }
 
     #endregion

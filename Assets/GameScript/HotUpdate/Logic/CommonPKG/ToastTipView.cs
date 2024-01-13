@@ -5,6 +5,11 @@ namespace CommonPKG
 {
     public partial class ToastTipView : GComponent
     {
+        public override void OnInit()
+        {
+            base.OnInit();
+            sortingOrder = 999;
+        }
 
         private Queue<ToastItem> _tipItemPool = new Queue<ToastItem>();//池
         private Queue<ToastItem> _useItemPool = new Queue<ToastItem>();//使用中的池
