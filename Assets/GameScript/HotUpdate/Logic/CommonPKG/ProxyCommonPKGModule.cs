@@ -1,19 +1,13 @@
 ﻿using System;
 using CommonPKG;
 
-
 public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
 {
     private const string pkgName = "CommonPKG";
 
-    public void CheckLoad(Action finishCB)
-    {
-        FGUILoader.Instance.AddPackage(pkgName, finishCB);
-    }
-
+    public void CheckLoad(Action finishCB) { FGUILoader.Instance.AddPackage(pkgName, finishCB); }
 
     #region 飘字调用 ***AddToastStr()
-
     private ToastTipView _toastTipView;
 
     public void AddToastStr(string valueStr)
@@ -21,8 +15,7 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         if (_toastTipView == null)
         {
             OpenToastTipView(valueStr);
-        }
-        else
+        } else
         {
             _toastTipView.SetData(valueStr);
         }
@@ -37,5 +30,8 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         });
     }
 
+    public void LoadToastTipView() { CheckLoad(() => { _toastTipView = UIMgr.Instance.OpenUIViewCom<ToastTipView>(pkgName); }); }
     #endregion
+
+    public ToastTipView GetToastView() { return _toastTipView; }
 }

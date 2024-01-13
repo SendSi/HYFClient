@@ -1,0 +1,22 @@
+{
+  "1001": {
+    "id": 1001,
+    "yooPath": "TX_BYCH_Skill",
+    "eType": 1
+  },
+  "1002": {
+    "id": 1002,
+    "yooPath": "TX_BYLBH_Skill1_Hit",
+    "eType": 1
+  },
+  "1003": {
+    "id": 1003,
+    "yooPath": "UI_renwulan_1",
+    "eType": 2
+  },
+  "1004": {
+    "id": 1004,
+    "yooPath": "UI_zhuangbeiFR",
+    "eType": 2
+  }
+}
