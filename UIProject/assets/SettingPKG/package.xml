@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="dh3hukhz" hasFavorites="true">
+  <resources>
+    <component id="g30w1" name="SettingMainView.xml" path="/panel/" exported="true"/>
+    <component id="g30w7" name="settingSbr_grip.xml" path="/components/" exported="true"/>
+    <component id="g30w8" name="settingSbr.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="jyqrg" name="settingSwitchBtn1.xml" path="/components/" exported="true"/>
+    <component id="jyqrh" name="settingSel0.xml" path="/components/" exported="true"/>
+    <component id="jyqri" name="settingSelBtn.xml" path="/components/" exported="true"/>
+    <component id="jyqrj" name="settingSel1.xml" path="/components/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

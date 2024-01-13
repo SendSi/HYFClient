@@ -1,31 +1,25 @@
 ﻿using FairyGUI;
+using Login;
 
-namespace Login
+public class ServerListRemoteViewWin : Window
 {
-    public class ServerListRemoteViewWin : Window
+    private ServerListRemoteView mView;
+
+    protected override void OnInit()
     {
-        private ServerListRemoteView mView;
+        base.OnInit();
+        this.contentPane = ServerListRemoteView.CreateInstance();
+        this.Center();
+        this.modal = true;
 
-        protected override void OnInit()
-        {
-            base.OnInit();
-            this.contentPane = ServerListRemoteView.CreateInstance();
-            this.Center();
-            this.modal = true;
-
-            mView = this.contentPane as ServerListRemoteView;
-        }
-
-        protected override void closeEventHandler(EventContext context)
-        {
-            base.closeEventHandler(context);
-            this.CloseWindowExpand();
-        }
-
-        public void SetData()
-        {
-
-        }
-
+        mView = this.contentPane as ServerListRemoteView;
     }
+
+    protected override void closeEventHandler(EventContext context)
+    {
+        base.closeEventHandler(context);
+        this.CloseWindowExpand();
+    }
+
+    public void SetData() { }
 }

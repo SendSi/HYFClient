@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame" designImageAlpha="26">
+  <controller name="stateCtrl" pages="0,,5," selected="0">
+    <remark page="0" value="设置"/>
+    <remark page="1" value="礼包兑换"/>
+  </controller>
+  <displayList>
+    <component id="n2_g30w" name="frame" src="hdmy1iy5b95" fileName="components/WindowFrame.xml" pkg="2r331opv" xy="161,38" size="1107,682">
+      <Label title="设置"/>
+    </component>
+    <component id="n6_g30w" name="tab01" src="prcz1qp8vfc" fileName="components/com_btn_tab04.xml" pkg="2r331opv" xy="46,135">
+      <Button checked="true" title="设置" controller="stateCtrl" page="0"/>
+    </component>
+    <component id="n49_b6o0" name="tab02" src="prcz1qp8vfc" fileName="components/com_btn_tab04.xml" pkg="2r331opv" xy="46,240">
+      <Button title="礼包兑换" controller="stateCtrl" page="5"/>
+    </component>
+    <image id="n105_8su0" name="n105" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="263,566" size="911,4" group="n107_8su0">
+      <gearDisplay controller="stateCtrl" pages="0,1,3"/>
+    </image>
+    <image id="n103_8su0" name="n103" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="264,125" size="910,36" group="n107_8su0">
+      <gearDisplay controller="stateCtrl" pages="0,1,3"/>
+    </image>
+    <text id="n3_g30w" name="title_advanced" xy="280,126" size="100,34" group="n107_8su0" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="bottom" strokeColor="#ac8958" strokeSize="2" shadowColor="#ac8958" shadowOffset="3,3" text="声音设置">
+      <gearDisplay controller="stateCtrl" pages="0,1,3"/>
+      <gearText controller="stateCtrl" default="声音设置"/>
+    </text>
+    <text id="n11_g30w" name="music" xy="280,170" size="48,32" group="n68_xw9c" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="音乐"/>
+    <component id="n15_g30w" name="musicSwitch" src="jyqrg" fileName="components/settingSwitchBtn1.xml" xy="354,151" group="n68_xw9c"/>
+    <text id="n12_g30w" name="sound" xy="280,233" size="48,32" group="n68_xw9c" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="音效"/>
+    <component id="n16_g30w" name="voiceSwitch" src="jyqrg" fileName="components/settingSwitchBtn1.xml" xy="354,213" group="n68_xw9c"/>
+    <text id="n13_g30w" name="musicvol" xy="606,170" size="92,32" group="n68_xw9c" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="音乐音量"/>
+    <text id="n14_g30w" name="soundvol" xy="606,233" size="92,32" group="n68_xw9c" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="音效音量"/>
+    <component id="n20_g30w" name="bgmSbr" src="g30w8" fileName="components/settingSbr.xml" xy="714,167" group="n68_xw9c">
+      <Slider value="25" max="100"/>
+    </component>
+    <component id="n23_g30w" name="musicSbr" src="g30w8" fileName="components/settingSbr.xml" xy="714,231" group="n68_xw9c">
+      <Slider value="50" max="100"/>
+    </component>
+    <group id="n68_xw9c" name="n68" xy="280,151" size="816,133" group="n107_8su0"/>
+    <image id="n104_8su0" name="n104" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="264,291" size="910,36" group="n63_b6o0"/>
+    <text id="n99_jyqr" name="title_voice" xy="280,293" size="100,34" group="n63_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="bottom" strokeColor="#ac8958" strokeSize="2" shadowColor="#ac8958" shadowOffset="3,3" text="其他设置">
+      <gearText controller="stateCtrl" pages="0" values="其他设置" default="画面设置"/>
+    </text>
+    <text id="n52_b6o0" name="visual" xy="271,344" size="92,32" group="n63_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="画面效果"/>
+    <component id="n56_b6o0" name="pictureBtn1" src="jyqrh" fileName="components/settingSel0.xml" xy="389,336" group="n63_b6o0">
+      <Button title="均衡"/>
+    </component>
+    <text id="n53_b6o0" name="frameTxt" xy="800,344" size="92,32" group="n63_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="帧率选择"/>
+    <component id="n59_b6o0" name="framesBtn1" src="jyqrj" fileName="components/settingSel1.xml" xy="920,334" group="n63_b6o0">
+      <Button title="标准"/>
+    </component>
+    <text id="n54_b6o0" name="shielding" xy="687,420" size="92,32" group="n63_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="屏蔽特效"/>
+    <text id="n108_kb0i" name="hurtText" xy="271,418" size="136,32" group="n63_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="全部伤害飘字"/>
+    <component id="n61_b6o0" name="effectsSwitch" src="jyqrg" fileName="components/settingSwitchBtn1.xml" xy="792,398" group="n63_b6o0"/>
+    <component id="n109_kb0i" name="hurtTextSwitch" src="jyqrg" fileName="components/settingSwitchBtn1.xml" xy="424,398" group="n63_b6o0"/>
+    <text id="n111_9xph" name="troopNumText" xy="269,489" size="136,32" group="n63_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" text="部队真实模型"/>
+    <component id="n113_jic0" name="troopNumBtn" src="jyqrh" fileName="components/settingSel0.xml" xy="431,479" group="n63_b6o0">
+      <Button title="均衡"/>
+    </component>
+    <group id="n63_b6o0" name="tab1" xy="264,291" size="910,238" group="n107_8su0" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+    </group>
+    <component id="n43_b6o0" name="playerIcon" src="j3xs9pm" fileName="components/btn_head4.xml" pkg="2r331opv" xy="255,563" size="205,205" group="n51_b6o0" aspect="true" scale="0.5,0.5" touchable="false"/>
+    <text id="n44_b6o0" name="playerName" xy="363,586" size="100,34" group="n51_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoClearText="true" text="角色名字"/>
+    <text id="n45_b6o0" name="serverName" xy="363,611" size="114,32" group="n51_b6o0" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#97794f" autoSize="none" autoClearText="true" text="服务器名字"/>
+    <component id="n46_b6o0" name="announcementBtn" src="c4umz9cnc" fileName="components/com_btn_001.xml" pkg="2r331opv" xy="617,583" size="161,62" group="n51_b6o0">
+      <Button title="游戏公告"/>
+    </component>
+    <component id="n47_b6o0" name="customerServiceBtn" src="c4umz9cnc" fileName="components/com_btn_001.xml" pkg="2r331opv" xy="812,583" size="161,62" group="n51_b6o0">
+      <Button title="客服"/>
+    </component>
+    <component id="n48_b6o0" name="switchSccountsBtn" src="c4umz9cnc" fileName="components/com_btn_001.xml" pkg="2r331opv" xy="1007,583" size="161,62" group="n51_b6o0">
+      <Button title="切换账号"/>
+    </component>
+    <group id="n51_b6o0" name="bottom" xy="255,563" size="913,205" group="n107_8su0" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0,1,3"/>
+    </group>
+    <group id="n107_8su0" name="setting" xy="255,125" size="919,643" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n115_qlgs" name="addCopyBtn" src="c4umz9cnc" fileName="components/com_btn_001.xml" pkg="2r331opv" xy="420,450" size="212,78" group="n121_qlgs">
+      <Button title="粘贴" titleFontSize="32"/>
+    </component>
+    <component id="n116_qlgs" name="awardBtn" src="eaahz9cob" fileName="components/com_btn_01.xml" pkg="2r331opv" xy="780,450" size="212,78" group="n121_qlgs">
+      <Button title="领取" titleFontSize="32" icon="ui://2r331opveaahz9co9"/>
+    </component>
+    <image id="n117_qlgs" name="n117" src="bumchz9d7x" fileName="images/images_new/windowBg_new/negative_bg01.png" pkg="2r331opv" xy="339,312" size="727,64" group="n121_qlgs"/>
+    <text id="n118_qlgs" name="n118" xy="400,216" size="460,34" group="n121_qlgs" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" singleLine="true" text="关注微信公众号，每周领取微信福利礼包。"/>
+    <text id="n120_qlgs" name="inputCodeTxt" xy="349,323" size="702,42" group="n121_qlgs" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#50382e" autoSize="none" text="" input="true"/>
+    <component id="n119_qlgs" name="txtCopyBtn" src="c4umz9cnc" fileName="components/com_btn_001.xml" pkg="2r331opv" xy="854,200" size="183,62" group="n121_qlgs">
+      <Button title="复制公众号"/>
+    </component>
+    <group id="n121_qlgs" name="gift" xy="339,200" size="727,328" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="5"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="382,38" extention="Slider" designImage="ui://dh3hukhzxw9cc" designImageOffsetX="-750" designImageOffsetY="-116">
+  <displayList>
+    <image id="n0_g30w" name="n0" src="bumchz9d7v" fileName="images/images_new/windowBg_new/negative_strip01.png" pkg="2r331opv" xy="0,0" size="382,38">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_g30w" name="bar" src="bumchz9d7w" fileName="images/images_new/windowBg_new/negative_strip02.png" pkg="2r331opv" xy="3,2" size="372,32">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n2_g30w" name="grip" src="g30w7" fileName="components/settingSbr_grip.xml" xy="349,-11" pivot="0.5,0.5">
+      <relation target="n1_g30w" sidePair="right-right"/>
+    </component>
+    <image id="n4_jyqr" name="n4" src="bumchz9d7x" fileName="images/images_new/windowBg_new/negative_bg01.png" pkg="2r331opv" xy="391,0" size="70,38">
+      <relation target="" sidePair="right-right"/>
+    </image>
+    <text id="n3_b6o0" name="title" xy="398,2" size="56,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" autoSize="none" text="100">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Slider titleType="value" wholeNumbers="true"/>
+</component>

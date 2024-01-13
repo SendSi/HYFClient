@@ -5,10 +5,10 @@ using MainCenter;
 using MainRole;
 using CommonPKG;
 using GMView;
+using SettingPKG;
 using UnityEngine;
 
 public class UIGenBinder
-
 {
     /// <summary> FairyGUI-Editor编辑器发布出的  要先绑定哦 </summary>
     public static void BindAll()
@@ -21,5 +21,6 @@ public class UIGenBinder
         MainRoleBinder.BindAll();
         CommonPKGBinder.BindAll();
         GMViewBinder.BindAll();
+        SettingPKGBinder.BindAll();
     }
 }

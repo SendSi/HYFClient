@@ -9,6 +9,12 @@
     <component id="e3cq8" name="TypeButton_1.xml" path="/components/" exported="true"/>
     <component id="ovmzchq" name="closeBtn.xml" path="/components/" exported="true"/>
     <component id="ovmzchr" name="ToggleButton.xml" path="/components/" exported="true"/>
+    <component id="ncmochs" name="EffectCutListView.xml" path="/"/>
+    <component id="ncmocht" name="cutListTest.xml" path="/components/"/>
+    <component id="ncmochu" name="gmBtn1.xml" path="/components/"/>
+    <component id="ncmochv" name="gmBtn2.xml" path="/components/"/>
+    <component id="ncmochw" name="GmSend.xml" path="/components/"/>
+    <component id="ncmochx" name="switchBtn.xml" path="/components/"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
