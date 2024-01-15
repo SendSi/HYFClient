@@ -55,7 +55,7 @@ namespace Login
             // 简体中文SimChinese  繁体中文TraChinese  英文English 
             if (AppConfig.currLang == "SimChinese") { _currComValue = 0; }
             else if (AppConfig.currLang == "TraChinese") { _currComValue = 1; }
-            else if (AppConfig.currLang == "English ") { _currComValue = 2; }
+            else if (AppConfig.currLang == "English") { _currComValue = 2; }
 
             _languCom.selectedIndex = _currComValue;
             this._languCom.items = new[] { "简体中文", "繁體中文", "English" };

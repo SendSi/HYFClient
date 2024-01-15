@@ -305,7 +305,7 @@
     <component id="n8nhhz9cw2" name="buildingPbr01.xml" path="/components/" exported="true"/>
     <component id="9itdhz9cw3" name="btn_lbl.xml" path="/components/" exported="true"/>
     <component id="9itdz9cnx" name="TroopGenItem.xml" path="/components/" exported="true"/>
-    <image id="r9f638" name="bg_chat_09.png" path="/images_new/" exported="true" scale="9grid" scale9grid="240,16,6,5"/>
+    <image id="r9f638" name="bg_chat_09.png" path="/images/" exported="true" scale="9grid" scale9grid="240,16,6,5"/>
     <image id="o4i9z9cjt" name="icon.png" path="/images/images_new/" exported="true"/>
     <component id="f4o9z9cnw" name="troopGeneralIcon.xml" path="/components/" exported="true"/>
     <component id="gjl8hz9cx4" name="comItem2.xml" path="/components/" exported="true"/>
@@ -1094,6 +1094,8 @@
     <component id="g17g1ygcfn7" name="plot_btn2.xml" path="/_new/"/>
     <component id="tixj1ygcg9p" name="ToastTipView.xml" path="/panel/" exported="true"/>
     <component id="tixj1ygcg9o" name="ToastItem.xml" path="/components_new/" exported="true"/>
+    <component id="wru61ygcgrs" name="Button_icon.xml" path="/_new/" exported="true"/>
+    <image id="j3xs9pd" name="role_icon03.png" path="/_new/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

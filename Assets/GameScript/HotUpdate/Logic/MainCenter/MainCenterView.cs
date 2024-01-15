@@ -9,24 +9,21 @@ namespace MainCenter
         {
             base.OnInit();
 
-            _backBtn.onClick.Set(OnClickQuit);
-            _outBtn.onClick.Set(OnClickQuit);
-
             InitEles();
 
-            EventCenter.Instance.Bind<string>(EventEnum.EE_test,OnEventTest);
-            EventCenter.Instance.Bind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
-       }
+            EventCenter.Instance.Bind<string>(EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.Bind<int>(EventEnum.EE_loginIn, OnEventLoginIn);
+        }
 
         private void OnEventLoginIn(int arg0)
         {
-            Debug.LogError("OnEventGameOver 值 "+arg0);
+            Debug.LogError("OnEventGameOver 值 " + arg0);
         }
 
 
         private void OnEventTest(string arg0)
         {
-            Debug.LogError("MainCenterView 监听了  EN_test_"+arg0);
+            Debug.LogError("MainCenterView 监听了  EN_test_" + arg0);
         }
 
         private void OnEventTest1(string text)
@@ -34,20 +31,14 @@ namespace MainCenter
             Debug.LogError("MainCenterView 监听    EN_test:" + text);
         }
 
-        private void OnClickQuit()
-        {
-            ProxyLoginModule.Instance.OpenLoginMainView();
-            ProxyMainCenterModule.Instance.CloseMainCenterView();
-        }
 
         public override void Dispose()
         {
             base.Dispose();
             DisposeEles();
             Debug.LogWarning("调用 Dispose MainCenterView");
-            EventCenter.Instance.UnBind<string>(EventEnum.EE_test,OnEventTest);
-            EventCenter.Instance.UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
-
+            EventCenter.Instance.UnBind<string>(EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.UnBind<int>(EventEnum.EE_loginIn, OnEventLoginIn);
         }
 
 

@@ -9,8 +9,13 @@ namespace MainCenter
         {
             base.OnInit();
             _mainPlayerBtn.onClick.Set(OnClickMainPlayerBtn);
+            _settingBtn.onClick.Set(OnClickSettingBtn);
 
             EventCenter.Instance.Bind<string>(EventEnum.EE_test, OnEventTest);
+        }
+        private void OnClickSettingBtn(EventContext context)
+        {
+            ProxySettingPKGModule.Instance.OpenSettingPKGViewWin();
         }
 
         private void OnEventTest(string arg0)

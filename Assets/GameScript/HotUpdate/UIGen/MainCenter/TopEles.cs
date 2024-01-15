@@ -14,7 +14,7 @@ namespace MainCenter
         public GTextField _lvLbl;
         public GList _activityList;
         public GComponent _currencyListCom;
-        public main_btn_coord _coordItemBtn;
+        public GButton _settingBtn;
         public const string URL = "ui://4ni413laxoe1n2";
 
         public static TopEles CreateInstance()
@@ -33,7 +33,7 @@ namespace MainCenter
             _lvLbl = (GTextField)GetChild("lvLbl");
             _activityList = (GList)GetChild("activityList");
             _currencyListCom = (GComponent)GetChild("currencyListCom");
-            _coordItemBtn = (main_btn_coord)GetChild("coordItemBtn");
+            _settingBtn = (GButton)GetChild("settingBtn");
         }
     }
 }

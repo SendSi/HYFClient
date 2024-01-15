@@ -18,7 +18,6 @@ namespace MainCenter
             UIObjectFactory.SetPackageItemExtension(main_taskitem_list.URL, typeof(main_taskitem_list));
             UIObjectFactory.SetPackageItemExtension(main_team_right.URL, typeof(main_team_right));
             UIObjectFactory.SetPackageItemExtension(MainCenterView.URL, typeof(MainCenterView));
-            UIObjectFactory.SetPackageItemExtension(main_btn_coord.URL, typeof(main_btn_coord));
             UIObjectFactory.SetPackageItemExtension(btn_task01.URL, typeof(btn_task01));
             UIObjectFactory.SetPackageItemExtension(titleContent.URL, typeof(titleContent));
             UIObjectFactory.SetPackageItemExtension(main_teamStae.URL, typeof(main_teamStae));
