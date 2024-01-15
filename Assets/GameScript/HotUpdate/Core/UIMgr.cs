@@ -1,15 +1,9 @@
 using FairyGUI;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 public class UIMgr : Singleton<UIMgr>
 {
-    public override void OnInit()
-    {
-        base.OnInit();
-    }
-
     /// <summary> key-viewNameStr,,,,value-GComponent </summary>
     private Dictionary<string, GComponent> mShoGCompDic = new Dictionary<string, GComponent>();
 

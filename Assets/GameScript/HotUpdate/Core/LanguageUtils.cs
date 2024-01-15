@@ -12,7 +12,7 @@ public class LanguageUtils : Singleton<LanguageUtils>
 {
     private const string prefsKey = "currLang1";
 
-    public override void OnInit()
+    protected override void OnInit()
     {
         base.OnInit();
         var initLang = PlayerPrefs.GetString(prefsKey, "SimChinese");

@@ -19,7 +19,7 @@ public class FGUILoader : Singleton<FGUILoader>
         ["ItemPKG"] = true,
     };
 
-    public override void OnInit()
+    protected override void OnInit()
     {
         base.OnInit();
         FairyGUI.Timers.inst.Add(1, -1, (cb) =>
