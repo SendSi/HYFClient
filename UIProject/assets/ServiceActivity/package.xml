@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="e290e74s">
+  <resources>
+    <component id="11e631ygcfir" name="serviceactivityBtn1.xml" path="/components/" exported="true"/>
+    <component id="11e631ygcfiu" name="serviceactivity_classification.xml" path="/components/" exported="true"/>
+    <component id="fdrb1ygcfiz" name="EightDayBtn1.xml" path="/components/" exported="true"/>
+    <component id="fdrb1ygcfj0" name="EightDayBtn2.xml" path="/components/" exported="true"/>
+    <image id="ho401ygcfje" name="serviceactivity_1.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjf" name="serviceactivity_2.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjg" name="serviceactivity_3.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjh" name="serviceactivity_4.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfji" name="serviceactivity_5.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjj" name="serviceactivity_6.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjk" name="serviceactivity_7.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjl" name="serviceactivity_8.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjm" name="serviceactivity_9.png" path="/images/number/" exported="true"/>
+    <image id="ho401ygcfjn" name="serviceactivity_0.png" path="/images/number/" exported="true"/>
+    <font id="ho401ygcfjo" name="serviceactivity_font.fnt" path="/components/" exported="true"/>
+    <component id="ho401ygcfjp" name="dayTabItem.xml" path="/components/" exported="true"/>
+    <component id="ho401ygcfjq" name="taskTypeItem.xml" path="/components/" exported="true"/>
+    <component id="ho401ygcfjr" name="daysTaskItem.xml" path="/components/" exported="true"/>
+    <component id="ho401ygcfly" name="daysTaskAward.xml" path="/components/" exported="true"/>
+    <component id="ho401ygcfjs" name="taskAwardItem.xml" path="/components/" exported="true"/>
+    <image id="ho401ygcfjv" name="serviceactivity_bg_label1.png" path="/images/new/" exported="true"/>
+    <image id="ho401ygcfjw" name="serviceactivity_bg_label2.png" path="/images/new/" exported="true"/>
+    <image id="ho401ygcfjx" name="serviceactivity_bg_label3.png" path="/images/new/" exported="true"/>
+    <component id="ho401ygcfk8" name="serviceactivityItem2.xml" path="/components/" exported="true"/>
+    <component id="ho401ygcfka" name="serviceactivityItem1.xml" path="/components/" exported="true"/>
+    <component id="ho401ygcfkb" name="serviceactivityLabel.xml" path="/components/" exported="true"/>
+    <component id="mzrr1ygcfmo" name="OSGotoBtn01.xml" path="/components/" exported="true"/>
+    <component id="mzrr1ygcfmd" name="dayBtn.xml" path="/components/" exported="true"/>
+    <component id="mzrr1ygcfmp" name="Lbl02.xml" path="/components/" exported="true"/>
+    <component id="mzrr1ygcfme" name="rewardBtn.xml" path="/components/" exported="true"/>
+    <component id="rs9w1ygcfmq" name="serviceactivity_btn1.xml" path="/components/"/>
+    <image id="qx1k1ygcfmr" name="carnival_com_bg01.png" path="/images/new/" exported="true" scale="9grid" scale9grid="485,24,832,48" atlas="alone"/>
+    <image id="qx1k1ygcfmu" name="carnival_bg13.png" path="/images/new/" exported="true" scale="9grid" scale9grid="62,96,7,1"/>
+    <image id="qx1k1ygcfmv" name="carnival_bg14.png" path="/images/new/" exported="true" scale="9grid" scale9grid="45,46,2,5"/>
+    <image id="qx1k1ygcfmw" name="carnival_bg15.png" path="/images/new/" exported="true" scale="9grid" scale9grid="17,10,2,20"/>
+    <image id="qx1k1ygcfmx" name="carnival_bg16.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfmy" name="carnival_bg17.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfmz" name="carnival_bg18.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn0" name="carnival_bg19.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn1" name="carnival_bg20.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn2" name="carnival_bg21.png" path="/images/new/" exported="true" scale="9grid" scale9grid="24,30,4,3"/>
+    <image id="qx1k1ygcfn3" name="carnival_bg22.png" path="/images/new/" exported="true" scale="9grid" scale9grid="0,41,755,52"/>
+    <image id="qx1k1ygcfn4" name="bg01.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn5" name="bg02.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn6" name="bg03.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn7" name="bg04.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn8" name="bg05.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfn9" name="carnival_bg12.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfna" name="carnival_bg11.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnb" name="carnival_bg10.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnc" name="carnival_bg04.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnd" name="carnival_bg09.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfne" name="carnival_bg07.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfng" name="carnival_bg08.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnh" name="carnival_bg05.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfni" name="carnival_bg03.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnj" name="carnival_bg02.png" path="/images/new/" exported="true" scale="9grid" scale9grid="35,8,939,55"/>
+    <image id="qx1k1ygcfnk" name="carnival_bg01.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnl" name="bg07.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnm" name="bg06.png" path="/images/new/" exported="true"/>
+    <image id="qx1k1ygcfnn" name="carnival_bg06.png" path="/images/new/" exported="true"/>
+    <component id="qx1k1ygcfnp" name="ServiceActivityView.xml" path="/panel/" exported="true"/>
+    <component id="qx1k1ygcfm6" name="healthPbr.xml" path="/components/" exported="true"/>
+    <image id="jcby1ygcfnv" name="carnival_bg00.png" path="/images/new/" exported="true"/>
+    <component id="e8ok1ygcfpe" name="DaysTaskActView.xml" path="/panel/" exported="true"/>
+    <component id="e8ok1ygcfpf" name="EightDayGiftView.xml" path="/panel/" exported="true"/>
+    <component id="e8ok1ygcfpg" name="OpenServiceView.xml" path="/panel/" exported="true"/>
+    <component id="e8ok1ygcfph" name="MonthlyCardPanel.xml" path="/panel/" exported="true"/>
+    <image id="t7yt1ygcfpi" name="carnival_bg23.png" path="/images/new/" exported="true"/>
+    <component id="tkvp1ygcfpj" name="RechargePanelView.xml" path="/panel/" exported="true"/>
+    <component id="tkvp1ygcfpk" name="MonthCardItem.xml" path="/components/" exported="true"/>
+    <image id="rrq31ygcfpl" name="carnival_bg24.png" path="/images/new/" exported="true" scale="9grid" scale9grid="644,56,3,148"/>
+    <image id="rrq31ygcfpm" name="carnival_bg25.png" path="/images/new/" exported="true"/>
+    <image id="rrq31ygcfpn" name="carnival_bg26.png" path="/images/new/" exported="true"/>
+    <image id="rrq31ygcfpo" name="carnival_point.png" path="/images/new/" exported="true"/>
+    <image id="rrq31ygcfpp" name="carnival_labelbg.png" path="/images/new/" exported="true"/>
+    <image id="rrq31ygcfpq" name="carnival_label10.png" path="/images/new/" exported="true"/>
+    <image id="rrq31ygcfpr" name="carnival_label16.png" path="/images/new/" exported="true"/>
+    <component id="rrq31ygcfps" name="MonthCardlabel1.xml" path="/components/" exported="true"/>
+    <component id="rrq31ygcfpt" name="MonthCardlabel2.xml" path="/components/" exported="true"/>
+    <image id="rrq31ygcfpu" name="carnival_labelbg1.png" path="/images/new/" exported="true"/>
+    <image id="gmbr1ygcfpv" name="carnival_monthly0.png" path="/images/new/" exported="true"/>
+    <image id="gmbr1ygcfpw" name="carnival_monthly1.png" path="/images/new/" exported="true"/>
+    <component id="nkto1ygcfpx" name="rechargeItem.xml" path="/components/" exported="true"/>
+    <component id="qf2s1ygcfpy" name="daysTaskItem1.xml" path="/components/" exported="true"/>
+    <image id="y8rv1ygcfpz" name="carnival_btn01.png" path="/images/new/" exported="true"/>
+    <image id="y8rv1ygcfq0" name="carnival_btn02.png" path="/images/new/" exported="true"/>
+    <image id="cale1ygcfq1" name="carnival_bg071.png" path="/images/new/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

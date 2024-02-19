@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" extention="Label" initName="frame">
+  <displayList>
+    <loader id="n59_qx1k" name="bg" xy="309,30" size="972,226" group="n60_dfim" url="ui://e290e74sqx1k1ygcfnn"/>
+    <component id="n20_ewrz" name="day1" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="316,253" group="n60_dfim"/>
+    <component id="n21_ewrz" name="day2" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="562,253" group="n60_dfim">
+      <Button title="第二天"/>
+    </component>
+    <component id="n22_ewrz" name="day3" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="808,253" group="n60_dfim">
+      <Button title="第三天"/>
+    </component>
+    <component id="n23_ewrz" name="day4" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="1054,253" group="n60_dfim">
+      <Button title="第四天"/>
+    </component>
+    <component id="n24_ewrz" name="day5" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="316,485" group="n60_dfim">
+      <Button title="第五天"/>
+    </component>
+    <component id="n25_ewrz" name="day6" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="562,485" group="n60_dfim">
+      <Button title="第六天"/>
+    </component>
+    <component id="n26_ewrz" name="day7" src="fdrb1ygcfiz" fileName="components/EightDayBtn1.xml" xy="808,485" group="n60_dfim">
+      <Button title="第七天"/>
+    </component>
+    <component id="n54_efo2" name="day8" src="fdrb1ygcfj0" fileName="components/EightDayBtn2.xml" xy="1047,477" group="n60_dfim">
+      <Button title="第八天"/>
+    </component>
+    <text id="n56_fdrb" name="title" xy="502,99" size="244,79" group="n60_dfim" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="60" color="#ffffff" vAlign="middle" strokeColor="#b26105" strokeSize="2" shadowColor="#b26105" shadowOffset="2,2" singleLine="true" text="八日好礼">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n57_fdrb" name="title1" xy="325,151" size="224,29" group="n60_dfim" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffe765" vAlign="middle" strokeColor="#b26105" strokeSize="2" shadowColor="#b26105" shadowOffset="2,2" singleLine="true" text="八日登录，领极品英雄！">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n58_fdrb" name="timeText" xy="327,212" size="256,26" group="n60_dfim" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" autoClearText="true" text="活动时间：2022/2/2-2022/3/3"/>
+    <group id="n60_dfim" name="window" xy="309,30" size="973,687" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Scale" target="n20_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="0" type="Scale" target="n21_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n21_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n22_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n22_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n22_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n23_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n23_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n23_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n23_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n24_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n24_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n24_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n24_ewrz" value="1,1"/>
+    <item time="0" type="Scale" target="n24_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n25_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n25_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n25_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n25_ewrz" value="1,1"/>
+    <item time="0" type="Scale" target="n25_ewrz" value="1,1"/>
+    <item time="0" type="Scale" target="n25_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n26_ewrz" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="0" type="Scale" target="n54_efo2" value="0,0"/>
+    <item time="2" type="Scale" target="n21_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="4" type="Scale" target="n20_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="4" type="Scale" target="n22_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="6" type="Scale" target="n21_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="6" type="Scale" target="n23_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="8" type="Scale" target="n22_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="8" type="Scale" target="n24_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="10" type="Scale" target="n23_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="10" type="Scale" target="n25_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="12" type="Scale" target="n24_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="12" type="Scale" target="n26_ewrz" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="14" type="Scale" target="n25_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="14" type="Scale" target="n54_efo2" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>
+    <item time="16" type="Scale" target="n26_ewrz" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+    <item time="18" type="Scale" target="n54_efo2" tween="true" startValue="1.1,1.1" endValue="1,1" duration="2"/>
+  </transition>
+</component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="818,1222">
+  <displayList>
+    <image id="n0_f36a" name="heng1" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,0" size="2,816" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n1_f36a" name="heng2" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,28" size="2,816" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n2_f36a" name="heng3" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,56" size="2,816" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n3_f36a" name="heng4" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,83" size="2,692" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n4_f36a" name="heng41" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="549,112" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n5_f36a" name="heng42" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="549,139" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n6_f36a" name="heng43" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="549,168" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n7_f36a" name="heng411" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,112" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n8_f36a" name="heng412" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,139" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n9_f36a" name="heng413" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,168" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n10_f36a" name="heng5" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,196" size="2,690" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n11_f36a" name="heng6" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,309" size="2,690" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n12_f36a" name="heng7" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,418" size="2,690" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n57_f36a" name="heng8" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,532" size="2,690" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n13_f36a" name="heng51" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="549,224" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n14_f36a" name="heng52" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="549,251" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n15_f36a" name="heng53" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="549,280" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n16_f36a" name="heng511" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,224" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n17_f36a" name="hen512" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,251" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n18_f36a" name="heng513" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="815,280" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n19_f36a" name="heng61" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="550,336" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n20_f36a" name="heng62" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="550,363" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n21_f36a" name="heng63" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="550,392" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n22_f36a" name="heng611" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,336" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n23_f36a" name="heng612" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,363" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n24_f36a" name="heng613" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,392" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n25_f36a" name="heng71" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="550,447" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n26_f36a" name="heng72" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="550,474" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n27_f36a" name="heng73" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="550,503" size="2,256" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n28_f36a" name="heng711" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,447" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n29_f36a" name="heng712" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,474" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n30_f36a" name="heng713" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="816,503" size="2,140" group="n38_f36a" rotation="90" color="#d8b69e"/>
+    <image id="n31_f36a" name="n31" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="0,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <image id="n32_f36a" name="n32" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="124,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <image id="n33_f36a" name="n33" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="292,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <image id="n34_f36a" name="n34" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="420,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <image id="n35_f36a" name="n35" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="548,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <image id="n36_f36a" name="n36" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="676,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <image id="n37_f36a" name="n37" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="814,0" size="2,534" group="n38_f36a" color="#d8b69e"/>
+    <group id="n38_f36a" name="line" xy="0,0" size="818,1222"/>
+  </displayList>
+</component>

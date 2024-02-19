@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="526,90">
+  <displayList>
+    <component id="n13_qm6y" name="generalIcon" src="g9nyhz9cu0" fileName="components/general_new/generalIcon.xml" pkg="2r331opv" xy="9,1" size="80,80" aspect="true" scale="1.3,1.3"/>
+    <text id="n8_itho" name="gradelbl" xy="101,9" size="95,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" leading="0" text="部队等级: "/>
+    <component id="n7_itho" name="slider" src="ithokq" fileName="components/strip_TroopAllocation.xml" xy="101,41" size="414,36">
+      <Slider value="2000" max="2500"/>
+    </component>
+    <image id="n10_gptw" name="line" src="fz63hz9cnk" fileName="images/images_new/line_00.png" pkg="2r331opv" xy="22,85" pivot="0.5,0.5" size="518,4" visible="false" alpha="0.3"/>
+    <text id="n11_6lai" name="levelLbl" xy="197,7" size="32,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" strokeColor="#000000" autoClearText="true" text="20"/>
+    <text id="n14_qm6y" name="reviveTimeLbl" xy="19,13" size="63,65" fontSize="49" color="#cc0000" align="center" vAlign="middle" leading="0" autoSize="shrink" text=""/>
+  </displayList>
+</component>

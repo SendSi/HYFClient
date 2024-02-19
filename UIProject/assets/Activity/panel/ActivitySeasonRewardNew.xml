@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="841,962" overflow="scroll">
+  <displayList>
+    <text id="n39_f36a" name="title1" xy="4,3" pivot="0.5,0.5" size="112,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" text="阵营胜负"/>
+    <text id="n40_f36a" name="title2" xy="121,3" pivot="0.5,0.5" size="112,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" text="联盟排名"/>
+    <text id="n41_f36a" name="title3" xy="237,3" pivot="0.5,0.5" size="114,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" text="联盟官员"/>
+    <text id="n42_f36a" name="title4" xy="354,3" pivot="0.5,0.5" size="322,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" text="职位奖励"/>
+    <text id="n43_f36a" name="title5" xy="680,3" pivot="0.5,0.5" size="158,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" autoSize="none" singleLine="true" text="赛季奖励"/>
+    <text id="n200_jwxa" name="title50" xy="156,77" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="首盟"/>
+    <text id="n201_jwxa" name="title51" xy="156,184" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="二盟"/>
+    <text id="n202_jwxa" name="title52" xy="156,274" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="三盟"/>
+    <text id="n203_jwxa" name="title53" xy="147,333" pivot="0.5,0.5" size="58,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="其它盟"/>
+    <text id="n204_jwxa" name="title54" xy="156,408" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="首盟"/>
+    <text id="n205_jwxa" name="title55" xy="156,498" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="二盟"/>
+    <text id="n206_jwxa" name="title56" xy="156,557" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="三盟"/>
+    <text id="n207_jwxa" name="title57" xy="147,603" pivot="0.5,0.5" size="58,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="其它盟"/>
+    <text id="n208_jwxa" name="title58" xy="156,679" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="首盟"/>
+    <text id="n209_jwxa" name="title59" xy="156,784" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="二盟"/>
+    <text id="n210_jwxa" name="title60" xy="156,874" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="三盟"/>
+    <text id="n211_jwxa" name="title61" xy="147,933" pivot="0.5,0.5" size="58,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="其它盟"/>
+    <text id="n212_jwxa" name="title62" xy="40,184" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" text="胜方"/>
+    <text id="n213_jwxa" name="title63" xy="40,497" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" text="负方"/>
+    <text id="n214_jwxa" name="title64" xy="4,772" pivot="0.5,0.5" size="112,47" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" leading="0" text="平手&#xA;（双方阵营）"/>
+    <image id="n31_f36a" name="n1" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="0,0" size="2,961" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n32_f36a" name="n2" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="117,0" size="2,961" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n33_f36a" name="n3" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="234,0" size="2,961" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n34_f36a" name="n4" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="351,0" size="2,961" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n36_f36a" name="n5" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="677,0" size="2,961" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n37_f36a" name="n6" src="f36a1ygcfmd" fileName="images/new/activity_bg4.png" xy="839,0" size="2,961" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n121_jwxa" name="1" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="0,0" size="840,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n122_jwxa" name="2" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,870" size="444,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n123_jwxa" name="3" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,840" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n125_jwxa" name="4" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,810" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n126_jwxa" name="5" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,780" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n127_jwxa" name="6" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,750" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n128_jwxa" name="7" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,720" size="444,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n129_jwxa" name="8" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,690" size="444,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n130_jwxa" name="9" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,660" size="444,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n131_jwxa" name="10" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="0,630" size="840,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n132_jwxa" name="11" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,600" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n133_jwxa" name="12" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,570" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n134_jwxa" name="13" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,540" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n135_jwxa" name="14" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="236,510" size="442,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n136_jwxa" name="15" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,480" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n137_jwxa" name="16" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,450" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n138_jwxa" name="17" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,420" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n139_jwxa" name="18" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,390" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n140_jwxa" name="19" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="0,360" size="840,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n141_jwxa" name="20" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,330" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n142_jwxa" name="21" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,300" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n143_jwxa" name="22" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,270" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n144_jwxa" name="23" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,240" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n145_jwxa" name="24" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,210" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n146_jwxa" name="25" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,180" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n147_jwxa" name="26" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,150" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n148_jwxa" name="27" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,120" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n149_jwxa" name="28" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,90" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n150_jwxa" name="29" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,60" size="443,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n151_jwxa" name="30" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="0,30" size="840,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n152_jwxa" name="31" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="235,900" size="444,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n153_jwxa" name="32" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="0,960" size="840,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <image id="n156_jwxa" name="33" src="jwxa1ygcft6" fileName="images/new/activity_bg5.png" xy="118,930" size="722,2" group="n247_jwxa" alpha="0.7" color="#91705a"/>
+    <group id="n247_jwxa" name="n247" xy="0,0" size="841,962"/>
+    <list id="n248_easa" name="post_list" xy="238,33" pivot="0.5,0.5" size="111,929" lineGap="4" defaultItem="ui://sinorujteasa1ygcft7" align="center">
+      <item title="盟主"/>
+      <item title="官员"/>
+      <item title="精英"/>
+      <item title="成员"/>
+      <item title="盟主"/>
+      <item title="官员/精英"/>
+      <item title="成员"/>
+      <item title="盟主"/>
+      <item title="官员/精英"/>
+      <item title="成员"/>
+      <item title="全体"/>
+      <item title="盟主"/>
+      <item title="官员"/>
+      <item title="精英"/>
+      <item title="成员"/>
+      <item title="盟主"/>
+      <item title="其余成员"/>
+      <item title="盟主"/>
+      <item title="其余成员"/>
+      <item title="全体"/>
+      <item title="盟主"/>
+      <item title="官员"/>
+      <item title="精英"/>
+      <item title="成员"/>
+      <item title="盟主"/>
+      <item title="官员/精英"/>
+      <item title="成员"/>
+      <item title="盟主"/>
+      <item title="官员/精英"/>
+      <item title="成员"/>
+      <item title="全体"/>
+    </list>
+    <list id="n249_easa" name="award_list" xy="354,33" pivot="0.5,0.5" size="323,929" lineGap="4" defaultItem="ui://sinorujteasa1ygcft7" align="center">
+      <item title="高级启灵珠*5，红色雕像*5"/>
+      <item title="高级启灵珠*4，红色雕像*4"/>
+      <item title="高级启灵珠*3，红色雕像*3"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*3，红色雕像*3"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*3，红色雕像*3"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*3，红色雕像*3"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*1"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*1"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*1"/>
+      <item title="高级启灵珠*1"/>
+      <item title="高级启灵珠*4，红色雕像*4"/>
+      <item title="高级启灵珠*3，红色雕像*3"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*1"/>
+      <item title="高级启灵珠*2，红色雕像*2"/>
+      <item title="高级启灵珠*1，红色雕像*1"/>
+      <item title="高级启灵珠*1"/>
+      <item title="高级启灵珠*1"/>
+    </list>
+    <list id="n251_easa" name="recruit_list" xy="679,33" size="160,929" visible="false" lineGap="4" defaultItem="ui://sinorujteasa1ygcft7">
+      <item/>
+      <item title="限定启灵珠*20"/>
+      <item/>
+      <item/>
+      <item/>
+      <item title="启灵珠*20"/>
+      <item/>
+      <item/>
+      <item title="启灵珠*20"/>
+      <item/>
+      <item title="启灵珠*20"/>
+      <item/>
+      <item title="限定启灵珠*10"/>
+      <item/>
+      <item/>
+      <item title="启灵珠*10"/>
+      <item/>
+      <item title="启灵珠*10"/>
+      <item/>
+      <item title="启灵珠*10"/>
+      <item/>
+      <item title="限定启灵珠*15"/>
+      <item/>
+      <item/>
+      <item/>
+      <item title="启灵珠*15"/>
+      <item/>
+      <item/>
+      <item title="启灵珠*15"/>
+      <item/>
+      <item title="启灵珠*15"/>
+    </list>
+    <text id="n188_jwxa" name="title38" xy="695,76" pivot="0.5,0.5" size="124,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="限定启灵珠*20"/>
+    <text id="n189_jwxa" name="title39" xy="713,183" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*20"/>
+    <text id="n190_jwxa" name="title40" xy="713,273" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*20"/>
+    <text id="n191_jwxa" name="title41" xy="713,333" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*20"/>
+    <text id="n192_jwxa" name="title42" xy="695,408" pivot="0.5,0.5" size="124,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="限定启灵珠*10"/>
+    <text id="n193_jwxa" name="title43" xy="713,498" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*10"/>
+    <text id="n194_jwxa" name="title44" xy="713,558" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*10"/>
+    <text id="n195_jwxa" name="title45" xy="713,603" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*10"/>
+    <text id="n196_jwxa" name="title46" xy="695,678" pivot="0.5,0.5" size="124,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="限定启灵珠*15"/>
+    <text id="n197_jwxa" name="title47" xy="713,783" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*15"/>
+    <text id="n198_jwxa" name="title48" xy="713,873" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*15"/>
+    <text id="n199_jwxa" name="title49" xy="713,933" pivot="0.5,0.5" size="88,26" group="n252_easa" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="启灵珠*15"/>
+    <group id="n252_easa" name="n252" xy="695,76" size="124,883" advanced="true"/>
+  </displayList>
+</component>

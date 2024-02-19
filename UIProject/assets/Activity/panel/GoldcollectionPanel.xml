@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="769,538">
+  <displayList>
+    <loader id="n2_w84w" name="Personal_leader" xy="0,0" size="769,538" group="n20_mizd" touchable="false" url="ui://sinorujtl7h11ygcfsa" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n14_f0ei" name="prospect" xy="23,333" size="712,183" group="n20_mizd" fill="scaleFree"/>
+    <loader id="n15_f0ei" name="icon" xy="355,122" size="496,406" group="n20_mizd" aspect="true" visible="false" fill="scale"/>
+    <text id="n9_w84w" name="title_name" xy="20,16" size="245,79" group="n20_mizd" font="ui://2r331opvno3vhz9d63" fontSize="60" color="#ffffff" autoSize="none" singleLine="true" text="金矿采集"/>
+    <text id="n10_w84w" name="describelbl" xy="20,253" size="368,76" group="n20_mizd" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" vAlign="bottom" leading="0" autoSize="none" strokeColor="#333333" autoClearText="true" text="可能是描述可能是描可能是描述可能可能是描述可能是描可能是描述可能述可能是描可能是描述可能"/>
+    <list id="n11_w84w" name="rewardList" xy="16,323" size="475,117" group="n20_mizd" scale="0.8,0.8" layout="row" overflow="hidden" scroll="horizontal" colGap="-3" defaultItem="ui://2r331opvj842hz9cyi" autoClearItems="true">
+      <relation target="n10_w84w" sidePair="topext-bottom"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n12_w84w" name="goToBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="101,425" group="n20_mizd">
+      <Button title="前往" titleFontSize="28"/>
+    </component>
+    <text id="n17_8lkd" name="time1" xy="20,80" size="271,34" group="n20_mizd" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" leading="0" autoSize="none" strokeColor="#333333" singleLine="true" autoClearText="true" text="每天12、16、18点刷新"/>
+    <text id="n18_ljzo" name="time2" xy="20,105" size="271,34" group="n20_mizd" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" leading="0" autoSize="none" strokeColor="#333333" singleLine="true" autoClearText="true" text="剩余时间: 20天10:22:11"/>
+    <component id="n19_ljzo" name="explainBtn" src="ngv8ft" fileName="components/components_new/com_btn_explain.xml" pkg="2r331opv" xy="707,18" group="n20_mizd"/>
+    <group id="n20_mizd" name="window" xy="0,0" size="851,538" advanced="true"/>
+    <image id="n21_mizd" name="n21" src="mizd1ygcfry" fileName="images/activity_00.png" xy="0,0" size="769,538" group="n22_mizd"/>
+    <component id="n24_mizd" name="returnBtn" src="z3v61w" fileName="components/activity_btn0.xml" xy="38,23" group="n22_mizd"/>
+    <text id="n25_mizd" name="name" xy="38,79" size="116,39" group="n22_mizd" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#322b64" autoClearText="true" text="活动名称"/>
+    <text id="n26_mizd" name="stress" xy="38,119" size="344,29" group="n22_mizd" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5a59bb" autoClearText="true" text="活动大概描述，只用一两句话描述重点"/>
+    <text id="n27_mizd" name="describe" xy="38,178" size="215,29" group="n22_mizd" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5a59bb" autoClearText="true" text="活动具体玩法规则说明: "/>
+    <list id="n28_mizd" name="des_list" xy="38,207" size="676,292" group="n22_mizd" overflow="scroll" defaultItem="ui://sinorujtmizd1ygcfs2">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n22_mizd" name="desTip" xy="0,0" size="769,538" advanced="true"/>
+  </displayList>
+  <relation target="n2_w84w" sidePair="width-width,height-height"/>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n20_mizd" tween="true" startValue="1" endValue="0" duration="10"/>
+    <item time="0" type="XY" target="n20_mizd" tween="true" startValue="0,0" endValue="-20,0" duration="12"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Alpha" target="n22_mizd" tween="true" startValue="1" endValue="0" duration="10"/>
+    <item time="0" type="XY" target="n22_mizd" tween="true" startValue="0,0" endValue="20,0" duration="12"/>
+  </transition>
+</component>

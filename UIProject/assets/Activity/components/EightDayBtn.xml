@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="166,190" pivot="0.5,0.08" opaque="false" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1,,2,,4,,3," selected="3">
+    <remark page="0" value="待领"/>
+    <remark page="1" value="可领取"/>
+    <remark page="2" value="再次领取"/>
+    <remark page="3" value="补签"/>
+    <remark page="4" value="已领"/>
+  </controller>
+  <displayList>
+    <loader id="n2_b0uj" name="icon" xy="24,0" size="135,151" url="ui://340eighfb0uj1ygcfil" align="center" vAlign="middle" fill="scale">
+      <gearColor controller="state" pages="3" values="#999999" default="#ffffff"/>
+      <gearIcon controller="state" pages="1,2" values="ui://340eighfb0uj1ygcfik|ui://340eighfb0uj1ygcfik" default="ui://340eighfb0uj1ygcfil"/>
+    </loader>
+    <text id="n1_b0uj" name="title" xy="29,104" size="126,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#af7e54" align="center" vAlign="middle" autoSize="none" singleLine="true" text="第一天">
+      <gearDisplay controller="state" pages="0"/>
+    </text>
+    <component id="n4_b0uj" name="propBtn" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="33,-2" pivot="0.5,0.5" scale="0.8,0.8"/>
+    <image id="n5_b0uj" name="n5" src="h3jujt" fileName="images/images_new/common_frame_quality_0.png" pkg="2r331opv" xy="37,3" pivot="0.5,0.5" size="114,116" aspect="true" scale="0.8,0.8" alpha="0.5" color="#000000">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+    <image id="n9_b0uj" name="n9" src="b0uj1ygcfim" fileName="images/SignIn/SignIn_bg03.png" xy="40,105" pkg="340eighf">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+    <text id="n7_b0uj" name="stateLbl" xy="29,104" size="126,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#599e27" align="center" vAlign="middle" autoSize="none" singleLine="true" text="补签">
+      <gearDisplay controller="state" pages="1,2,4,3"/>
+      <gearColor controller="state" pages="1,2,4,3" values="#da731d,#000000|#da731d,#000000|#599e27,#000000|#644f3d,#000000" default="#af7e54,#000000"/>
+      <gearText controller="state" pages="2,4,3" values="再次领取|补签|已领取" default="可领取"/>
+    </text>
+    <image id="n8_b0uj" name="n8" src="klrg1qp8vd5" fileName="images/images_new/com_btn_correct.png" pkg="2r331opv" xy="54,22" pivot="0.5,0.5" scale="0.7,0.7">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <controller name="tab" pages="1,,3," selected="0">
+    <remark page="0" value="活动日历"/>
+    <remark page="1" value="自定义面板，留在最后一个"/>
+  </controller>
+  <controller name="state01" pages="0,,1," selected="0">
+    <remark page="0" value="显示"/>
+    <remark page="1" value="不显示"/>
+  </controller>
+  <controller name="state02" pages="0,,1," selected="0">
+    <remark page="1" value="不显示"/>
+  </controller>
+  <controller name="week" pages="0,,1,,2,,3,,4,,5,,6," selected="0">
+    <remark page="0" value="星期1"/>
+    <remark page="1" value="星期2"/>
+    <remark page="2" value="星期3"/>
+    <remark page="3" value="星期4"/>
+    <remark page="4" value="星期5"/>
+    <remark page="5" value="星期6"/>
+    <remark page="6" value="星期7"/>
+  </controller>
+  <controller name="requesting" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n123_8lkd" name="n123" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-168,0" size="1670,750">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <loader id="n69_f0ei" name="bg" xy="-145,0" pivot="0.5,0.5" size="1625,750" url="ui://sinorujtsp1i1ygcfmz" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n125_l7h1" name="n125" src="l7h11ygcfs8" fileName="images/activity002.png" xy="8,20" size="1318,730" group="n8_w84w"/>
+    <text id="n1_w84w" name="title" xy="409,65" pivot="0.5,0.5" size="497,44" group="n8_w84w" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="32" color="#ffffff" align="center" vAlign="middle" letterSpacing="5" autoSize="none" shadowColor="#b65513" shadowOffset="3,3" singleLine="true" text="日常活动"/>
+    <image id="n72_f0ei" name="n72" src="tx7rg" fileName="images/activity_bg02.png" xy="412,117" size="761,530" group="n101_f0ei"/>
+    <image id="n75_f0ei" name="n75" src="tx7rh" fileName="images/activity_bg03.png" xy="523,120" size="2,66" group="n101_f0ei"/>
+    <image id="n76_f0ei" name="n76" src="tx7rh" fileName="images/activity_bg03.png" xy="631,120" size="2,66" group="n101_f0ei"/>
+    <image id="n77_f0ei" name="n77" src="tx7rh" fileName="images/activity_bg03.png" xy="739,120" size="2,66" group="n101_f0ei"/>
+    <image id="n78_f0ei" name="n78" src="tx7rh" fileName="images/activity_bg03.png" xy="847,120" size="2,66" group="n101_f0ei"/>
+    <image id="n108_f0ei" name="n108" src="tx7rh" fileName="images/activity_bg03.png" xy="1063,120" size="2,66" group="n101_f0ei"/>
+    <image id="n79_f0ei" name="n79" src="tx7rh" fileName="images/activity_bg03.png" xy="955,120" size="2,66" group="n101_f0ei"/>
+    <image id="n80_f0ei" name="n80" src="tx7rj" fileName="images/activity_bg05.png" xy="523,186" size="3,458" group="n101_f0ei" alpha="0.6"/>
+    <image id="n81_f0ei" name="n81" src="tx7rj" fileName="images/activity_bg05.png" xy="631,186" size="3,458" group="n101_f0ei" alpha="0.6"/>
+    <image id="n82_f0ei" name="n82" src="tx7rj" fileName="images/activity_bg05.png" xy="847,186" size="3,458" group="n101_f0ei" alpha="0.6"/>
+    <image id="n83_f0ei" name="n83" src="tx7rj" fileName="images/activity_bg05.png" xy="739,186" size="3,458" group="n101_f0ei" alpha="0.6"/>
+    <image id="n84_f0ei" name="n84" src="tx7rj" fileName="images/activity_bg05.png" xy="955,186" size="3,458" group="n101_f0ei" alpha="0.6"/>
+    <image id="n85_f0ei" name="n85" src="tx7rj" fileName="images/activity_bg05.png" xy="1063,186" size="3,458" group="n101_f0ei" alpha="0.6"/>
+    <graph id="n113_v9ov" name="n113" xy="523,120" size="110,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="1"/>
+    </graph>
+    <graph id="n114_v9ov" name="n114" xy="415,120" size="110,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="0"/>
+    </graph>
+    <graph id="n115_v9ov" name="n115" xy="631,120" size="110,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="2"/>
+    </graph>
+    <graph id="n116_v9ov" name="n116" xy="739,120" size="110,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="3"/>
+    </graph>
+    <graph id="n117_v9ov" name="n117" xy="847,120" size="110,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="4"/>
+    </graph>
+    <graph id="n118_v9ov" name="n118" xy="955,120" size="110,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="5"/>
+    </graph>
+    <graph id="n119_v9ov" name="n119" xy="1063,120" size="107,524" group="n101_f0ei" alpha="0.3" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffdbb100">
+      <gearDisplay controller="week" pages="6"/>
+    </graph>
+    <text id="n86_f0ei" name="Monday" xy="439,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期一"/>
+    <text id="n87_f0ei" name="Tuesday" xy="547,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期二"/>
+    <text id="n88_f0ei" name="Wednesday" xy="655,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期三"/>
+    <text id="n89_f0ei" name="Thursday" xy="763,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期四"/>
+    <text id="n90_f0ei" name="Friday" xy="871,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期五"/>
+    <text id="n91_f0ei" name="Saturday" xy="979,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期六"/>
+    <text id="n92_f0ei" name="Sunday" xy="1087,128" pivot="0.5,0.5" size="64,29" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#631300" text="星期日"/>
+    <text id="n93_f0ei" name="title_date01" xy="439,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" singleLine="true" autoClearText="true" text="8月22日"/>
+    <text id="n94_f0ei" name="title_date02" xy="547,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" singleLine="true" autoClearText="true" text="8月23日"/>
+    <text id="n95_f0ei" name="title_date03" xy="655,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" singleLine="true" autoClearText="true" text="8月24日"/>
+    <text id="n96_f0ei" name="title_date04" xy="763,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" singleLine="true" autoClearText="true" text="8月25日"/>
+    <text id="n97_f0ei" name="title_date05" xy="871,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" singleLine="true" autoClearText="true" text="8月26日"/>
+    <text id="n98_f0ei" name="title_date06" xy="979,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" singleLine="true" autoClearText="true" text="8月27日"/>
+    <text id="n99_f0ei" name="title_date07" xy="1087,149" pivot="0.5,0.5" size="64,24" group="n101_f0ei" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#fff08e" align="center" autoClearText="true" text="8月28日"/>
+    <list id="n100_f0ei" name="list01" xy="415,202" size="755,442" group="n101_f0ei" overflow="scroll" scrollBarFlags="128" lineGap="17" defaultItem="ui://sinorujtd2so15" autoItemSize="false">
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+      <item/>
+      <item url="ui://sinorujttx7ri"/>
+    </list>
+    <group id="n101_f0ei" name="calendar" xy="412,117" size="761,530" group="n8_w84w" visible="false" advanced="true">
+      <gearDisplay controller="tab" pages="1"/>
+    </group>
+    <component id="n65_lyph" name="panel" src="lyph18" fileName="panel/ActPanel.xml" xy="420,114" size="769,538" group="n8_w84w">
+      <gearDisplay controller="tab" pages="3"/>
+    </component>
+    <list id="n7_w84w" name="list" xy="146,116" size="294,528" group="n8_w84w" overflow="scroll" lineGap="4" defaultItem="ui://sinorujtw84wp">
+      <item title="活动日历" icon="ui://2r331opvil9y1ygcfjm"/>
+      <item url="ui://sinorujtw84wq"/>
+      <item title="个人首领" icon="ui://2r331opvil9y1ygcfjh"/>
+      <item title="世界首领" icon="ui://2r331opvil9y1ygcfji"/>
+      <item title="联盟首领" icon="ui://2r331opvil9y1ygcfjj"/>
+      <item title="守卫王城" icon="ui://2r331opvil9y1ygcfht"/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n112_cvsp" name="illustrationBtn" src="cvsphz9d01" fileName="components/activityDoubtBtn.xml" xy="837,51" group="n8_w84w" visible="false">
+      <gearDisplay controller="state02" pages="0"/>
+    </component>
+    <component id="n124_khh6" name="recoverBtn" src="khh61ygcfmr" fileName="components/recoverBtn.xml" xy="1242,589" group="n8_w84w"/>
+    <graph id="n120_ius7" name="n120" xy="150,121" size="256,524" group="n122_ius7" type="rect" lineSize="0" fillColor="#7f000000"/>
+    <text id="n121_ius7" name="n121" xy="236,369" pivot="0.5,0.5" size="84,29" group="n122_ius7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" text="请求中..."/>
+    <group id="n122_ius7" name="n122" xy="150,121" size="256,524" group="n8_w84w" advanced="true">
+      <gearDisplay controller="requesting" pages="1"/>
+    </group>
+    <component id="n3_w84w" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1160,43" group="n8_w84w"/>
+    <group id="n8_w84w" name="activity" xy="8,20" size="1346,730" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n68_zrss" name="actBtn" src="zrsshz9czg" fileName="components/actBtn.xml" xy="1123,506" pivot="1,0.5" scale="0.8,0.8" visible="false">
+      <gearDisplay controller="state01" pages="0"/>
+      <gearXY controller="tab" pages="1,3" values="1123,506|1128,122"/>
+      <relation target="" sidePair="center-center"/>
+    </component>
+  </displayList>
+</component>

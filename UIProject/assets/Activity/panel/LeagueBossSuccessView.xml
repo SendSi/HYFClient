@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="26" designImageLayer="1">
+  <displayList>
+    <component id="n2_9232" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,756">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n94_y6ps" name="closeButton" src="sfia1ygcfhf" fileName="components/components_new/com_btn_null.xml" pkg="2r331opv" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n98_osur" name="n98" src="osur1ygcfn3" fileName="components/components_new/settlement_com_001.xml" pkg="2r331opv" xy="306,-36" group="n87_ekmx">
+      <Button icon="ui://2r331opv10473hz9cyn"/>
+    </component>
+    <image id="n44_w2ss" name="window" src="10473hz9cyf" fileName="images/images_new/settlement2/settlement_bg03.png" pkg="2r331opv" xy="0,295" size="1334,316" group="n87_ekmx" alpha="0.8"/>
+    <image id="n45_w2ss" name="n45" src="10473hz9cyg" fileName="images/images_new/settlement2/settlement_bg04.png" pkg="2r331opv" xy="451,275" size="415,29" group="n87_ekmx" alpha="0.8"/>
+    <image id="n95_nm3l" name="n95" src="nm3l1ygcfm5" fileName="images/images_new/windowBg_new/title_bg03.png" pkg="2r331opv" xy="151,320" pivot="0.5,0.5" size="1016,41" group="n87_ekmx"/>
+    <component id="n46_w2ss" name="EffectHandle_GongXiHuoDe" src="ayljdv" fileName="components/EffectHandle.xml" pkg="2r331opv" xy="635,212" group="n87_ekmx" touchable="false">
+      <relation target="n44_w2ss" sidePair="top-top"/>
+    </component>
+    <text id="n48_w2ss" name="txtDesc" xy="305,274" size="708,39" group="n87_ekmx" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#fae66c" align="center" vAlign="middle" autoSize="none" shadowColor="#58301f" shadowOffset="2,3" text="成功击杀联盟首领">
+      <relation target="n44_w2ss" sidePair="top-top"/>
+    </text>
+    <group id="n87_ekmx" name="vic" xy="0,-36" size="1334,647" group="n57_w2ss"/>
+    <text id="n61_w2ss" name="rankTxt" xy="364,323" size="601,36" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#74d0ff" align="center" ubb="true" autoSize="none" autoClearText="true" text="您的排名:2"/>
+    <list id="n58_w2ss" name="ranking_list" xy="339,410" size="408,171" group="n72_w2ss" overflow="scroll" lineGap="2" defaultItem="ui://sinorujtw2ss1ygcfg8">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n59_w2ss" name="rankinglbl" xy="348,380" size="70,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d62" fontSize="20" color="#74d0ff" text="总排名:"/>
+    <text id="n90_y6ps" name="reward1" xy="753,380" size="224,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d62" fontSize="20" color="#74d0ff" ubb="true" text="参与奖[color=#94e957]（通过邮件发放）[/color]"/>
+    <image id="n93_y6ps" name="horn1" src="nm3l1ygcfm6" fileName="images/images_new/windowBg_new/label_05.png" pkg="2r331opv" xy="962,372" size="49,36" group="n72_w2ss" aspect="true">
+      <relation target="n90_y6ps" sidePair="right-right"/>
+    </image>
+    <list id="n89_y6ps" name="rewardList1" xy="753,409" size="554,121" group="n72_w2ss" scale="0.5,0.5" layout="row" overflow="scroll" scroll="horizontal" lineGap="-30" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n65_w2ss" name="reward2" xy="753,493" size="264,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d62" fontSize="20" color="#74d0ff" ubb="true" text="联盟奖励[color=#94e957]（由联盟管理分配）[/color]"/>
+    <list id="n64_w2ss" name="rewardList2" xy="753,523" size="554,121" group="n72_w2ss" scale="0.5,0.5" layout="row" overflow="scroll" scroll="horizontal" lineGap="-30" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n67_w2ss" name="tips" xy="474,715" pivot="0.5,0.5" size="396,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" autoSize="none" text="-  点击空白关闭   -"/>
+    <image id="n96_pahr" name="horn2" src="nm3l1ygcfm6" fileName="images/images_new/windowBg_new/label_05.png" pkg="2r331opv" xy="1004,486" size="49,36" group="n72_w2ss" aspect="true">
+      <relation target="n90_y6ps" sidePair="right-right"/>
+      <relation target="n65_w2ss" sidePair="right-right"/>
+    </image>
+    <text id="n97_gsmg" name="rankinglbl2" xy="622,380" pivot="0.5,0.5" size="84,29" group="n72_w2ss" font="ui://2r331opvno3vhz9d62" fontSize="20" color="#74d0ff" align="center" singleLine="true" text="伤害输出"/>
+    <group id="n72_w2ss" name="com" xy="339,323" size="968,421" group="n57_w2ss"/>
+    <group id="n57_w2ss" name="panel" xy="0,-36" size="1334,780" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

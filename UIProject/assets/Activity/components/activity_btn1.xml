@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="170,126" extention="Button">
+  <controller name="state" pages="0,,1,,2,,3," selected="0">
+    <remark page="0" value="未开启"/>
+    <remark page="1" value="失败"/>
+    <remark page="2" value="进行中"/>
+    <remark page="3" value="完成"/>
+  </controller>
+  <displayList>
+    <loader id="n2_p9k9" name="bg" xy="64,15" size="96,96" url="ui://sinorujtp9k91ygcfji" autoSize="true">
+      <gearXY controller="state" pages="0,1,2,3" values="64,15|64,0|64,0|64,0"/>
+      <gearIcon controller="state" pages="0,1,2" values="ui://sinorujtp9k91ygcfji|ui://sinorujtp9k91ygcfje|ui://sinorujtp9k91ygcfjc" default="ui://sinorujtp9k91ygcfjd"/>
+    </loader>
+    <image id="n5_p9k9" name="n5" src="p9k91ygcfjk" fileName="images/new/activity_bg2.png" xy="0,80"/>
+    <image id="n1_p9k9" name="n1" src="p9k91ygcfjj" fileName="images/new/activity_bg3.png" xy="105,65">
+      <gearXY controller="state" pages="0,1,2,3" values="105,65|105,68|105,68|105,68"/>
+    </image>
+    <text id="n0_p9k9" name="title" xy="32,93" pivot="0.5,0.5" size="161,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" text="揭竿而起"/>
+    <text id="n3_p9k9" name="stateTxt" xy="55,22" pivot="0.5,0.5" size="119,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#445775" strokeSize="2" text="">
+      <gearDisplay controller="state" pages="0,1,3"/>
+      <gearColor controller="state" default="#ffffff,#445775"/>
+      <gearText controller="state" pages="0,1,2" values="|失败|进行中" default="完成"/>
+    </text>
+    <text id="n4_p9k9" name="ongoing" xy="55,22" pivot="0.5,0.5" size="119,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#ff6565" strokeSize="2" text="进行中">
+      <gearDisplay controller="state" pages="2"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

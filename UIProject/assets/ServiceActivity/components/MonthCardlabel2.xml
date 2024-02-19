@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="108,43">
+  <displayList>
+    <image id="n0_ho40" name="n0" src="rrq31ygcfpu" fileName="images/new/carnival_labelbg1.png" xy="0,0"/>
+    <text id="n9_rrq3" name="title" xy="10,-3" size="90,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" shadowColor="#000000" shadowOffset="1,1" text="剩余3天"/>
+  </displayList>
+</component>

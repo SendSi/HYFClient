@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <loader id="n19_k0ke" name="bg" xy="277,55" size="1005,688" group="n21_k0ke" touchable="false" url="ui://340eighfmb2b1ygcfn1" fill="scale"/>
+    <loader id="n20_k0ke" name="icon" xy="833,5" pivot="0,1" size="553,607" group="n21_k0ke" touchable="false" url="ui://340eighfmb2b1ygcfn0" vAlign="bottom"/>
+    <text id="n9_w84w" name="title_name" xy="758,186" size="298,79" group="n21_k0ke" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="60" color="#ffffff" autoSize="none" strokeColor="#b16d33" strokeSize="2" shadowColor="#b16d33" shadowOffset="2,4" singleLine="true" text="Boss首通"/>
+    <text id="n10_w84w" name="describelbl" xy="369,173" size="536,39" group="n21_k0ke" font="ui://2r331opvno3vhz9d63" fontSize="28" leading="-3" shadowColor="#dc6f6f" shadowOffset="1,3" text="丰厚奖励，赶紧来参加吧，手慢就没有了！"/>
+    <list id="n11_w84w" name="bossList" xy="327,577" size="916,138" group="n21_k0ke" layout="row" overflow="scroll" scroll="horizontal" margin="6,0,0,0" colGap="-3" defaultItem="ui://340eighfsnky1ygcfhx" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n17_q60q" name="server" src="q60q1ygcfhg" fileName="components/activity_firstboss1.xml" xy="371,254" size="256,296" group="n21_k0ke"/>
+    <component id="n18_q60q" name="person" src="q60q1ygcfhh" fileName="components/activity_firstboss2.xml" xy="658,254" size="256,296" group="n21_k0ke"/>
+    <group id="n21_k0ke" name="n21" xy="277,5" size="1109,738" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="quit">
+    <item time="0" type="Alpha" tween="true" startValue="1" endValue="0.7" duration="5"/>
+    <item time="0" type="XY" tween="true" startValue="0,0,0,0" endValue="30,0,0.022,0" duration="5"/>
+    <item time="5" type="Alpha" tween="true" startValue="0.7" endValue="0" duration="3"/>
+    <item time="5" type="XY" tween="true" startValue="30,0,0.022,0" endValue="200,0,0.15,0" duration="4"/>
+  </transition>
+  <transition name="in" autoPlay="true">
+    <item time="0" type="Alpha" target="n10_w84w" tween="true" startValue="0" endValue="0" duration="4"/>
+    <item time="0" type="Alpha" target="n11_w84w" tween="true" startValue="0" endValue="0" duration="4"/>
+    <item time="0" type="Alpha" target="n17_q60q" value="0"/>
+    <item time="0" type="Alpha" target="n18_q60q" value="0"/>
+    <item time="0" type="Alpha" target="n19_k0ke" tween="true" startValue="0.1" endValue="0.7" duration="9"/>
+    <item time="0" type="Alpha" target="n20_k0ke" tween="true" startValue="0" endValue="0.7" duration="9"/>
+    <item time="0" type="Visible" target="n17_q60q" value="false"/>
+    <item time="0" type="Visible" target="n18_q60q" value="false"/>
+    <item time="0" type="XY" target="n10_w84w" tween="true" startValue="149,173,0.112,0.231" endValue="349,173,0.262,0.231" duration="6"/>
+    <item time="0" type="XY" target="n11_w84w" tween="true" startValue="-855,577,-0.641,0.769" endValue="107,577,0.08,0.769" duration="6"/>
+    <item time="0" type="XY" target="n17_q60q" tween="true" startValue="201,254,0.151,0.339" endValue="201,254,0.151,0.339" duration="7"/>
+    <item time="0" type="XY" target="n18_q60q" tween="true" startValue="478,254,0.358,0.339" endValue="478,254,0.358,0.339" duration="7"/>
+    <item time="0" type="XY" target="n19_k0ke" tween="true" startValue="900,55,0.675,0.073" endValue="297,55,0.223,0.073" duration="11"/>
+    <item time="0" type="XY" target="n20_k0ke" tween="true" startValue="1435,5,1.076,0.007" endValue="853,5,0.639,0.007" duration="11"/>
+    <item time="4" type="Alpha" target="n10_w84w" tween="true" startValue="0" endValue="0.7" duration="4"/>
+    <item time="4" type="Alpha" target="n11_w84w" tween="true" startValue="0" endValue="0.7" duration="4"/>
+    <item time="6" type="Alpha" target="n17_q60q" tween="true" startValue="0" endValue="0.3" duration="6"/>
+    <item time="6" type="Alpha" target="n18_q60q" tween="true" startValue="0" endValue="0.3" duration="6"/>
+    <item time="6" type="Visible" target="n17_q60q" value="true"/>
+    <item time="6" type="Visible" target="n18_q60q" value="true"/>
+    <item time="6" type="XY" target="n10_w84w" tween="true" startValue="349,173,0.262,0.231" endValue="369,173,0.277,0.231" duration="6"/>
+    <item time="6" type="XY" target="n11_w84w" tween="true" startValue="107,577,0.08,0.769" endValue="327,577,0.245,0.769" duration="6"/>
+    <item time="7" type="XY" target="n17_q60q" tween="true" startValue="201,254,0.151,0.339" endValue="361,254,0.271,0.339" duration="5"/>
+    <item time="7" type="XY" target="n18_q60q" tween="true" startValue="478,254,0.358,0.339" endValue="648,254,0.486,0.339" duration="5"/>
+    <item time="8" type="Alpha" target="n10_w84w" tween="true" startValue="0.7" endValue="1" duration="3"/>
+    <item time="8" type="Alpha" target="n11_w84w" tween="true" startValue="0.7" endValue="1" duration="3"/>
+    <item time="9" type="Alpha" target="n19_k0ke" tween="true" startValue="0.7" endValue="1" duration="3"/>
+    <item time="9" type="Alpha" target="n20_k0ke" tween="true" startValue="0.7" endValue="1" duration="3"/>
+    <item time="11" type="XY" target="n19_k0ke" tween="true" startValue="297,55,0.223,0.073" endValue="277,55,0.208,0.073" duration="3"/>
+    <item time="11" type="XY" target="n20_k0ke" tween="true" startValue="853,5,0.639,0.007" endValue="833,5,0.624,0.007" duration="3"/>
+    <item time="12" type="Alpha" target="n17_q60q" tween="true" startValue="0.3" endValue="1" duration="3"/>
+    <item time="12" type="Alpha" target="n18_q60q" tween="true" startValue="0.3" endValue="1" duration="3"/>
+    <item time="12" type="XY" target="n17_q60q" tween="true" startValue="361,254,0.271,0.339" endValue="371,254,0.278,0.339" duration="4"/>
+    <item time="12" type="XY" target="n18_q60q" tween="true" startValue="648,254,0.486,0.339" endValue="658,254,0.493,0.339" duration="4"/>
+  </transition>
+</component>

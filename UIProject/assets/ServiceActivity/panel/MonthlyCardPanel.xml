@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" extention="Label" initName="frame">
+  <displayList>
+    <loader id="n82_rrq3" name="bg" xy="321,22" size="987,226" group="n74_dfim" url="ui://e290e74srrq31ygcfpl" fill="scaleFree"/>
+    <text id="n83_equg" name="title" xy="339,202" size="224,29" group="n74_dfim" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffe765" text="激活福利卡赠送战令经验"/>
+    <list id="n64_ho40" name="cardList" xy="328,258" size="967,468" group="n74_dfim" layout="row" overflow="hidden" lineGap="6" colGap="76" defaultItem="ui://e290e74stkvp1ygcfpk" align="center">
+      <item/>
+      <item/>
+    </list>
+    <component id="n81_tkvp" name="btnExplain" src="j4kdz9cp3" fileName="components/components_new/com_btn_icon.xml" pkg="2r331opv" xy="1237,63" size="72,72" group="n74_dfim" aspect="true" alpha="0.8">
+      <Button icon="ui://2r331opvcmlrhz9cyn"/>
+    </component>
+    <group id="n74_dfim" name="windows" xy="321,22" size="988,704" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1"/>
+</component>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="未找回"/>
+    <remark page="1" value="一键已找回"/>
+    <remark page="2" value="没有内容找回"/>
+  </controller>
+  <displayList>
+    <component id="n6_w84w" name="n6" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n67_g6ic" name="n67" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n8_w84w"/>
+    <component id="n106_rtzg" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n8_w84w"/>
+    <component id="n114_d7a6" name="explainBtn" src="cvsphz9d01" fileName="components/activityDoubtBtn.xml" xy="739,58" group="n8_w84w">
+      <gearDisplay controller="state" pages="0,1"/>
+      <Button icon="ui://2r331opvvb7khz9czo"/>
+    </component>
+    <text id="n107_rtzg" name="title" xy="597,70" pivot="0.5,0.5" size="140,46" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,4" text="资源找回"/>
+    <text id="n108_d7a6" name="descTxt" xy="503,149" size="306,34" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" text="可找回       天未参与活动资源">
+      <gearDisplay controller="state" pages="0,1"/>
+    </text>
+    <text id="n115_10d20" name="day" xy="579,128" size="34,66" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="50" color="#e77917" autoClearText="true" text="3">
+      <gearDisplay controller="state" pages="0,1"/>
+    </text>
+    <image id="n116_gfp2" name="n116" src="m1hb1ygcgm2" fileName="images/images_new/windowBg_new/negative_bg081.png" pkg="2r331opv" xy="206,553" size="923,114" group="n8_w84w" visible="false">
+      <gearDisplay controller="state" pages="0,1"/>
+    </image>
+    <list id="n76_g6ic" name="resList" xy="206,192" size="922,356" group="n8_w84w" layout="flow_hz" overflow="scroll" lineGap="4" defaultItem="ui://sinorujtd7a61ygcfix">
+      <gearDisplay controller="state" pages="0,1"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n110_d7a6" name="moneyBtn" src="vvwchz9d3h" fileName="components/components_new/com_btn_buy4.xml" pkg="2r331opv" xy="747,580" group="n117_gfp2"/>
+    <component id="n111_d7a6" name="freeBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="397,580" group="n117_gfp2">
+      <Button title="免费"/>
+    </component>
+    <text id="n112_d7a6" name="freeTxt" xy="336,642" size="282,34" group="n117_gfp2" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="center" vAlign="middle" leading="0" autoSize="none" autoClearText="true" text="找回50%奖励"/>
+    <text id="n113_d7a6" name="moneyTxt" xy="673,642" size="309,34" group="n117_gfp2" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="center" leading="0" autoSize="none" autoClearText="true" text="找回100%奖励"/>
+    <group id="n117_gfp2" name="sta1" xy="336,580" size="646,96" group="n8_w84w" advanced="true">
+      <gearDisplay controller="state" pages="0"/>
+    </group>
+    <text id="n118_gfp2" name="recoverTxt" xy="523,590" size="256,39" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#4c9129" singleLine="true" text="今日资源已全部找回">
+      <gearDisplay controller="state" pages="1"/>
+    </text>
+    <image id="n122_qc0o" name="n122" src="qc0o1ygcfms" fileName="images/activity_bg021.png" xy="630,168" group="n123_qc0o"/>
+    <image id="n120_qc0o" name="n120" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="339,327" size="356,91" group="n123_qc0o"/>
+    <image id="n121_qc0o" name="n121" src="c4umz9cne" fileName="images/images_new/com_bg_tips_arrow.png" pkg="2r331opv" xy="687,399" size="47,35" group="n123_qc0o" aspect="true" rotation="-90"/>
+    <text id="n119_qc0o" name="recoverTxt1" xy="380,352" size="274,42" group="n123_qc0o" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#b26105" singleLine="true" text="今日资源已全部找回"/>
+    <group id="n123_qc0o" name="sta2" xy="339,168" size="630,423" group="n8_w84w" advanced="true">
+      <gearDisplay controller="state" pages="2"/>
+    </group>
+    <group id="n8_w84w" name="activity" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <controller name="state" pages="1,,0," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示"/>
+  </controller>
+  <controller name="attach" pages="0,,1," selected="0">
+    <remark page="0" value="三日成长"/>
+  </controller>
+  <displayList>
+    <component id="n120_tevj" name="n120" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" visible="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <loader id="n69_f0ei" name="bg" xy="-168,0" pivot="0.5,0.5" size="1670,750" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <component id="n65_lyph" name="panel" src="lyph18" fileName="panel/ActPanel.xml" pkg="sinorujt" xy="0,0" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n128_ho40" name="time" xy="900,70" pivot="1,0" size="360,29" group="n129_mzrr" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" autoSize="none" singleLine="true" autoClearText="true" text="活动时间：2022/3/3—2022/4/3">
+      <gearDisplay controller="attach" pages="0"/>
+    </text>
+    <group id="n129_mzrr" name="n129" xy="900,70" size="360,29" advanced="true">
+      <gearDisplay controller="state" pages="0"/>
+    </group>
+    <image id="n130_qx1k" name="n130" src="8ur01ygcfmm" fileName="images/images_new/windowBg_new/welfare_btn_bg10.png" pkg="2r331opv" xy="0,0" size="290,750" group="n131_i1d9">
+      <relation target="" sidePair="height-height"/>
+    </image>
+    <image id="n123_ho40" name="n123" src="qx1k1ygcfmr" fileName="images/new/carnival_com_bg01.png" xy="0,0" group="n131_i1d9">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <component id="n3_w84w" name="closeButton" src="ovc9hz9cvh" fileName="components/components_new/com_btn_close4.xml" pkg="2r331opv" xy="0,0" group="n131_i1d9">
+      <Button icon="ui://e290e74stevj1"/>
+    </component>
+    <list id="n7_w84w" name="list" xy="21,100" size="261,650" group="n131_i1d9" overflow="scroll" lineGap="3" defaultItem="ui://e290e74s11e631ygcfir" autoClearItems="true">
+      <relation target="" sidePair="bottomext-bottom"/>
+      <item title="活动日历" icon="ui://2r331opvil9y1ygcfjm"/>
+      <item url="ui://e290e74s11e631ygcfiu"/>
+      <item title="个人首领" icon="ui://2r331opvil9y1ygcfjh"/>
+      <item title="世界首领" icon="ui://2r331opvil9y1ygcfji"/>
+      <item title="联盟首领" icon="ui://2r331opvil9y1ygcfjj"/>
+      <item title="守卫王城" icon="ui://2r331opvil9y1ygcfht"/>
+      <item url="ui://e290e74s11e631ygcfiu"/>
+      <item/>
+    </list>
+    <component id="n112_cvsp" name="illustrationBtn" src="cvsphz9d01" fileName="components/activityDoubtBtn.xml" pkg="sinorujt" xy="473,-17" group="n131_i1d9" visible="false"/>
+    <loader id="n125_ho40" name="n122" xy="946,188" size="494,606" group="n131_i1d9" visible="false" fill="scale" autoSize="true">
+      <gearDisplay controller="state" pages="0"/>
+      <gearDisplay2 controller="attach" pages="1" condition="0"/>
+    </loader>
+    <group id="n131_i1d9" name="left" xy="0,-17" size="1440,811" advanced="true">
+      <relation target="" sidePair="width-width"/>
+    </group>
+  </displayList>
+</component>

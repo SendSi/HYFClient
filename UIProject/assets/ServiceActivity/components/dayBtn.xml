@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="145,83" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <controller name="state" pages="0,,2,,3," selected="0">
+    <remark page="0" value="进行中"/>
+    <remark page="1" value="已结束"/>
+    <remark page="2" value="未开启"/>
+  </controller>
+  <displayList>
+    <loader id="n2_mzrr" name="icon" xy="0,0" size="145,83" url="ui://e290e74sqx1k1ygcfni" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="button" pages="1,3"/>
+      <gearColor controller="state" default="#ffffff"/>
+    </loader>
+    <text id="n1_mzrr" name="title" xy="1,8" pivot="0.5,0.5" size="145,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#712b2b" align="center" vAlign="middle" autoSize="none" singleLine="true" text="第一天">
+      <gearColor controller="button" pages="0,1,2,3" values="#ffdc88,#000000|#712b2b,#000000|#ffdc88,#000000|#712b2b,#000000"/>
+    </text>
+    <text id="n3_mzrr" name="title01" xy="1,34" pivot="0.5,0.5" size="145,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffdc88" align="center" vAlign="middle" autoSize="none" singleLine="true" text="进行中">
+      <gearDisplay controller="button" pages="0,2"/>
+      <gearColor controller="state" pages="0,2,3" values="#ffdc88,#000000|#909090,#000000|#909090,#000000"/>
+      <gearText controller="state" pages="2,3" values="已结束|未开启" default="进行中"/>
+    </text>
+    <text id="n5_qx1k" name="title02" xy="1,34" pivot="0.5,0.5" size="145,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#aa4f0c" align="center" vAlign="middle" autoSize="none" singleLine="true" text="进行中">
+      <gearDisplay controller="button" pages="1,3"/>
+      <gearColor controller="state" pages="0,2,3" values="#aa4f0c,#000000|#909090,#000000|#7c7c7c,#000000"/>
+      <gearText controller="state" pages="2,3" values="已结束|未开启" default="进行中"/>
+    </text>
+    <image id="n4_rdeb" name="n4" src="hxd7hz9d7o" fileName="images/images_new/lock_10.png" pkg="2r331opv" xy="123,-4" aspect="true">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

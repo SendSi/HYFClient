@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="226,377">
+  <controller name="state" pages="3,,1," selected="0">
+    <remark page="0" value="未领取"/>
+    <remark page="1" value="已领取"/>
+  </controller>
+  <controller name="select" pages="0,,1," selected="0">
+    <remark page="0" value="未选中"/>
+    <remark page="1" value="选中"/>
+  </controller>
+  <controller name="day" pages="0,,1,,2," selected="0">
+    <remark page="0" value="SSR英雄"/>
+    <remark page="1" value="绝版称号"/>
+    <remark page="2" value="极品雕像"/>
+  </controller>
+  <displayList>
+    <loader id="n22_qx1k" name="bg" xy="0,0" size="226,377" url="ui://e290e74sqx1k1ygcfnh"/>
+    <component id="n13_ho40" name="label" src="ho401ygcfkb" fileName="components/serviceactivityLabel.xml" xy="2,17"/>
+    <loader id="n17_ho40" name="name" xy="23,119" pivot="0.5,0.5" size="180,108" url="ui://e290e74sho401ygcfjv" fill="scale" autoSize="true">
+      <gearIcon controller="day" pages="0,1,2" values="ui://e290e74sho401ygcfjv|ui://e290e74sho401ygcfjv|ui://e290e74sho401ygcfjx"/>
+    </loader>
+    <image id="n18_ho40" name="n18" src="qx1k1ygcfmx" fileName="images/new/carnival_bg16.png" xy="111,10">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <text id="n23_qx1k" name="dayLbl" xy="65,230" pivot="0.5,0.5" size="97,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#5c1313" align="center" shadowColor="#e45f56" shadowOffset="0,2" text="第       天"/>
+    <text id="n24_qx1k" name="dayLbl01" xy="98,210" pivot="0.5,0.5" size="31,62" font="ui://2r331opvno3vhz9d63" fontSize="46" color="#5c1313" align="center" shadowColor="#e45f56" shadowOffset="0,2" text="3">
+      <gearText controller="day" pages="0,2" values="3|1" default="2"/>
+    </text>
+    <image id="n12_ho40" name="n12" src="qx1k1ygcfmu" fileName="images/new/carnival_bg13.png" xy="-23,-19" size="265,409">
+      <gearDisplay controller="select" pages="1"/>
+    </image>
+    <list id="n25_qx1k" name="icon01" xy="-88,251" pivot="0.5,0.5" size="400,135" scale="0.5,0.5" layout="row" scroll="horizontal" defaultItem="ui://2r331opvj842hz9cyi" align="center">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n21_u5ke" name="icon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="53,49"/>
+  </displayList>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="262,38">
+  <controller name="state" pages="2,,3,,1," selected="2">
+    <remark page="0" value="右边"/>
+    <remark page="1" value="不显示"/>
+    <remark page="2" value="左边"/>
+  </controller>
+  <displayList>
+    <graph id="n8_ho40" name="bg" xy="0,0" size="262,38" alpha="0.5" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ff6a3119"/>
+    <loader id="n7_ho40" name="icon" xy="72,7" size="118,24" url="ui://e290e74sho401ygcfjy" fill="scale" autoSize="true"/>
+    <graph id="n9_ho40" name="left" xy="0,2" size="2,34" alpha="0.5" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffd38748">
+      <gearDisplay controller="state" pages="1"/>
+    </graph>
+    <graph id="n10_ho40" name="right" xy="260,2" size="2,34" alpha="0.5" type="rect" lineSize="0" lineColor="#ffffffff" fillColor="#ffd38748">
+      <gearDisplay controller="state" pages="2"/>
+    </graph>
+  </displayList>
+</component>

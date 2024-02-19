@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImage="ui://utp01xiac1q93b">
+  <displayList>
+    <component id="n2_m79t" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n3_m79t" name="bg" src="hxd7hz9d7h" fileName="images/images_new/com_bg_tips03_2.png" pkg="2r331opv" xy="239,143" size="828,463" group="n14_t0n1"/>
+    <image id="n21_w2ss" name="n21" src="hxd7hz9d7i" fileName="images/images_new/com_bg_tips02_mask2.png" pkg="2r331opv" xy="272,216" pivot="0.5,0.5" size="762,220" group="n14_t0n1"/>
+    <image id="n19_prcz" name="n19" src="vb7khz9czn" fileName="images/images_new/com_btn_explain01_1.png" pkg="2r331opv" xy="273,553" group="n14_t0n1"/>
+    <text id="n17_g7n7" name="tipslbl" xy="308,553" pivot="0.5,0.5" size="264,29" group="n14_t0n1" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#6794d0" singleLine="true" text="只有城里的军队才能挑战领袖"/>
+    <text id="n11_t0n1" name="titleTxt" xy="583,161" pivot="0.5,0.5" size="140,46" group="n14_t0n1" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="2,4" singleLine="true" text="部队选择"/>
+    <component id="n7_m79t" name="cancelBtn" src="yhldz9cod" fileName="components/components_new/com_btn_02.xml" pkg="2r331opv" xy="328,460" group="n14_t0n1">
+      <Button title="取消"/>
+    </component>
+    <component id="n8_m79t" name="sureBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="821,460" group="n14_t0n1">
+      <Button title="确定"/>
+    </component>
+    <component id="n20_f6wa" name="editBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="568,460" group="n14_t0n1">
+      <Button title="队伍编辑"/>
+    </component>
+    <list id="n18_g7n7" name="troopsList" xy="356,243" pivot="0.5,0.5" size="594,182" group="n14_t0n1" layout="row" selectionMode="multipleSingleClick" overflow="hidden" scroll="horizontal" colGap="-28" defaultItem="ui://2r331opvhxd7hz9d7l" align="center">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n14_t0n1" name="win" xy="239,143" size="828,463" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

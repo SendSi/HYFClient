@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1484,126">
+  <displayList>
+    <image id="n0_fdrb" name="customsbg" src="p9k91ygcfln" fileName="images/images_new/windowBg_new/negative_strip003.png" pkg="2r331opv" xy="0,76" size="1446,16">
+      <relation target="n1_fdrb" sidePair="rightext-right"/>
+    </image>
+    <list id="n1_fdrb" name="customs_list" xy="0,0" size="1481,126" layout="row" overflow="scroll" scroll="horizontal" colGap="-50" defaultItem="ui://sinorujtp9k91ygcfjg">
+      <item title="招兵买马"/>
+      <item title="烽火四起"/>
+      <item title="血月召唤"/>
+      <item title="重返荣光"/>
+      <item title="同心协力"/>
+      <item title="浴血奋战"/>
+      <item title="全军出击"/>
+      <item title="战无不胜"/>
+      <item title="世间人屠"/>
+      <item title="全民皆兵"/>
+    </list>
+  </displayList>
+</component>

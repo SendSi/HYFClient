@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="280,292">
+  <displayList>
+    <image id="n1_cmbv" name="n1" src="jnfz1ygcfqv" fileName="images/LimitShop/LimitShop_btn11.png" xy="0,0"/>
+    <text id="n7_cmbv" name="title" xy="105,226" pivot="0.5,0.5" size="70,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="center" vAlign="middle" autoClearText="true" text="招募卡"/>
+    <loader id="n9_r924" name="icon" xy="80,53" pivot="0.5,0.5" size="120,140" aspect="true" url="ui://01_CommonPackage/comItem" fill="scaleFree" autoSize="true"/>
+  </displayList>
+</component>

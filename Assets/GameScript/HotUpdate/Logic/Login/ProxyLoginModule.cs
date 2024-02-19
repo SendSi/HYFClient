@@ -14,7 +14,7 @@ public class ProxyLoginModule : Singleton<ProxyLoginModule>,IProxy
     {
         CheckLoad(() =>
         {
-            var targetView = UIMgr.Instance.OpenUIViewCom<LoginMainView>("Login");
+            var targetView = UIMgr.Instance.OpenUIViewCom<LoginMainView>(pkgName);
             targetView.SetData("打开页面数据传递");
         });
     }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="108,94">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="10"/>
+    <remark page="1" value="16"/>
+  </controller>
+  <displayList>
+    <image id="n0_ho40" name="n0" src="rrq31ygcfpp" fileName="images/new/carnival_labelbg.png" xy="7,0"/>
+    <loader id="n8_rrq3" name="icon" xy="0,6" size="108,77" url="ui://e290e74srrq31ygcfpq" fill="scale" autoSize="true">
+      <gearIcon controller="state" pages="1" values="ui://e290e74srrq31ygcfpr" default="ui://e290e74srrq31ygcfpq"/>
+    </loader>
+  </displayList>
+</component>

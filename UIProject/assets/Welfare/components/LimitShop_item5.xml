@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,56">
+  <displayList>
+    <image id="n4_cmbv" name="n4" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,0" size="892,55" alpha="0.3">
+      <relation target="" sidePair="rightext-right"/>
+    </image>
+    <text id="n0_cmbv" name="time" xy="0,11" size="246,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoClearText="true" text="2022-02-18  14:51:58"/>
+    <text id="n1_cmbv" name="title" xy="384,11" pivot="0.5,0.5" size="124,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" autoClearText="true" text="出售小虎糕"/>
+    <loader id="n2_cmbv" name="icon" xy="664,6" size="44,44" aspect="true" url="ui://tsbe09ddmz4w3" fill="scaleFree"/>
+    <text id="n3_cmbv" name="number" xy="709,11" size="61,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoClearText="true" text="+100"/>
+  </displayList>
+</component>

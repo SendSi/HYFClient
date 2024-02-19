@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="761,54" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="isIcon" pages="0,,1,,4,,5," selected="0"/>
+  <displayList>
+    <image id="n10_cvsp" name="n10" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="0,50" size="761,4">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <text id="n6_cvsp" name="title" xy="78,9" pivot="0.5,0.5" size="18,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" autoClearText="true" text="1">
+      <gearDisplay controller="isIcon" pages="0"/>
+    </text>
+    <loader id="n4_cvsp" name="icon" xy="66,6" pivot="0.5,0.5" size="40,40" url="ui://2r331opvsvx3hz9d77" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="isIcon" pages="1,4,5"/>
+      <gearIcon controller="isIcon" pages="1,4" values="ui://2r331opvsvx3hz9d75|ui://2r331opvsvx3hz9d76" default="ui://2r331opvsvx3hz9d77"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n5_cvsp" name="nameLbl" xy="256,10" pivot="0.5,0.5" size="206,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="center" singleLine="true" autoClearText="true" text="[abcd]联盟的名字吧"/>
+    <text id="n8_cvsp" name="GradeLbl" xy="617,10" pivot="0.5,0.5" size="65,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="center" singleLine="true" autoClearText="true" text="999级">
+      <relation target="" sidePair="right-right"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

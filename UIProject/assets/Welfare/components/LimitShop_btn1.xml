@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="157,84" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="2,up,3,down,4,over,5,selectedOver" selected="3"/>
+  <displayList>
+    <image id="n0_w84w" name="n0" src="rjiw1ygcfiv" fileName="images/LimitShop/LimitShop_btn1.png" xy="0,0">
+      <gearDisplay controller="button" pages="3,5"/>
+    </image>
+    <text id="n2_w84w" name="title" xy="31,23" pivot="0.5,0.5" size="94,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#fff331" align="center" vAlign="middle" shadowColor="#107883" shadowOffset="0,2" singleLine="true" text="营业中">
+      <gearDisplay controller="button" pages="3,5"/>
+    </text>
+    <text id="n9_rjiw" name="title1" xy="31,23" pivot="0.5,0.5" size="94,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#3c465a" align="center" vAlign="middle" shadowColor="#8691a5" shadowOffset="0,2" singleLine="true" text="休息中">
+      <gearDisplay controller="button" pages="2,4"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <image id="n10_p4ya" name="btn" src="p4ya1ygcgow" fileName="images/LimitShop/LimitShop_btn12.png" xy="126,53">
+      <gearDisplay controller="button" pages="3,5"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

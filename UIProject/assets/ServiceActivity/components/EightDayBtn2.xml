@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="235,240" pivot="0.5,0.5" extention="Button">
+  <controller name="state" pages="3,,1,,0," selected="0">
+    <remark page="0" value="不可领取"/>
+    <remark page="1" value="可领取"/>
+    <remark page="2" value="已领取"/>
+  </controller>
+  <controller name="sel" pages="0,不选中 ,1,选中" selected="0"/>
+  <displayList>
+    <loader id="n4_gwzj" name="bg" xy="0,0" size="235,240" url="ui://e290e74sqx1k1ygcfng" autoSize="true"/>
+    <component id="n7_gwzj" name="icon" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="60,55" size="110,112"/>
+    <text id="n6_gwzj" name="stateTxt" xy="71,192" pivot="0.5,0.5" size="92,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#590919" align="center" vAlign="middle" text="不可领取">
+      <gearColor controller="state" pages="3,1,0" values="#590919,#000000|#fffd64,#50382e|#590919,#50382e"/>
+      <gearText controller="state" pages="3,1,0" values="不可领取|可领取|已领取"/>
+    </text>
+    <text id="n5_gwzj" name="time" xy="76,12" pivot="0.5,0.5" size="82,36" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#fffd64" align="center" vAlign="middle" text="第八天"/>
+    <image id="n8_p9k9" name="gray" src="qx1k1ygcfng" fileName="images/new/carnival_bg08.png" xy="0,0" alpha="0.7" color="#000000">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <graph id="n10_xfss" name="mask" xy="0,0" size="235,240" type="rect" lineSize="0" fillColor="#00ffffff">
+      <gearDisplay controller="state" pages="1"/>
+    </graph>
+    <image id="n9_wpdk" name="n9" src="qx1k1ygcfmv" fileName="images/new/carnival_bg14.png" xy="-18,-19" size="271,275">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".96"/>
+</component>

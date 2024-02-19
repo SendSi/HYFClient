@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n2_eznb" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n3_eznb" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n4_eznb" name="n4" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="393,42" size="547,665" group="n13_eznb"/>
+    <image id="n28_klt5" name="n28" src="klt51ygcffx" fileName="images/images_new/windowBg_new/activity_bg010.png" pkg="2r331opv" xy="416,60" group="n13_eznb"/>
+    <text id="n11_eznb" name="apLbl" xy="455,100" pivot="0.5,0.5" size="43,32" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" leading="0" strokeColor="#732686" strokeSize="2" autoClearText="true" text="999"/>
+    <text id="n14_klt5" name="nameLbl" xy="543,65" size="124,34" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#845744" align="center" leading="0" autoSize="none" singleLine="true" text="玩法活跃度"/>
+    <text id="n29_klt5" name="wordLbl07" xy="449,122" pivot="0.5,0.5" size="52,24" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" leading="0" strokeColor="#732686" strokeSize="2" text="活跃度"/>
+    <text id="n15_klt5" name="wordLbl01" xy="543,93" size="364,68" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" leading="0" text="可通过活跃类玩法的获得，活跃度不会每日重&#xD;置；消耗活跃度参与守卫王城玩法，获得大量&#xD;英雄经验！"/>
+    <list id="n31_klt5" name="list01" xy="423,210" size="486,288" group="n13_eznb" overflow="scroll" lineGap="3" defaultItem="ui://sinorujtklt51iy5bbt">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n32_klt5" name="titleLbl" xy="616,175" pivot="0.5,0.5" size="100,34" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#845744" align="center" leading="0" singleLine="true" text="获取途径"/>
+    <text id="n33_klt5" name="titleLbl01" xy="604,512" pivot="0.5,0.5" size="124,34" group="n13_eznb" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#845744" align="center" leading="0" singleLine="true" text="活跃度玩法"/>
+    <list id="n34_klt5" name="list02" xy="423,547" size="486,126" group="n13_eznb" overflow="scroll" defaultItem="ui://sinorujtklt51iy5bbu">
+      <item/>
+      <item/>
+    </list>
+    <group id="n13_eznb" name="n13" xy="393,42" size="547,665" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

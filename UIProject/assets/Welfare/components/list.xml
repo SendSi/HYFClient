@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="212,55">
+  <displayList>
+    <component id="n18_hsk6" name="propBtn" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="0,2" size="120,128" scale="0.42,0.42"/>
+    <text id="n19_hsk6" name="nameLbl" xy="48,15" size="107,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#765337" letterSpacing="-1" singleLine="true" autoClearText="true" text="他的名字六字"/>
+    <text id="n20_hsk6" name="quantityLbl" xy="150,15" pivot="1,0" size="53,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#765337" align="right" letterSpacing="-1" singleLine="true" autoClearText="true" text="10000"/>
+  </displayList>
+</component>

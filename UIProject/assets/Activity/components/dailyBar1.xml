@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="288,329" extention="ProgressBar">
+  <displayList>
+    <image id="n0_wz5e" name="n0" src="wz5e1ygcfia" fileName="images/DailyTask/dailytask_bg04.png" xy="0,0" size="288,329">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_wz5e" name="bar" src="wz5e1ygcfib" fileName="images/DailyTask/dailytask_bg05.png" xy="47,64" fillMethod="vt" fillOrigin="1"/>
+    <image id="n3_wz5e" name="n3" src="wz5e1ygcfic" fileName="images/DailyTask/dailytask_bg06.png" xy="47,0"/>
+    <component id="n6_qcir" name="mask" src="qcir1ygcfn2" fileName="components/cutDailyBar1.xml" xy="47,64">
+      <relation target="" sidePair="width-width%,height-height%"/>
+    </component>
+    <text id="n2_wz5e" name="title" xy="79,136" pivot="0.5,0.5" size="129,56" font="ui://2r331opvno3vhz9d63" fontSize="42" color="#ffffff" align="center" vAlign="middle" leading="1" letterSpacing="-3" strokeColor="#0e560e" strokeSize="4" autoClearText="true" text="60/100">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

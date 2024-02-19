@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="280,292">
+  <controller name="fresh" pages="0,,2,,1," selected="0">
+    <remark page="0" value="点击翻开.道具"/>
+    <remark page="1" value="可领取.刷新"/>
+    <remark page="2" value="已领取"/>
+  </controller>
+  <displayList>
+    <image id="n1_cmbv" name="n1" src="jnfz1ygcfqv" fileName="images/LimitShop/LimitShop_btn11.png" xy="0,0"/>
+    <text id="n0_cmbv" name="name" xy="93,95" pivot="0.5,0.5" size="94,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#9d632a" align="center" vAlign="middle" leading="0" autoSize="none" text="道具卡&#xA;">
+      <gearDisplay controller="fresh" pages="0"/>
+    </text>
+    <component id="n5_cmbv" name="openBtn" src="cmbv1ygcfjf" fileName="components/LimitShop_btn10.xml" xy="40,224" size="200,45">
+      <gearDisplay controller="fresh" pages="0"/>
+      <Button titleFontSize="24"/>
+    </component>
+    <component id="n6_cmbv" name="receivedBtn" src="cmbv1ygcfjh" fileName="components/LimitShop_btn11.xml" xy="40,224" size="200,45">
+      <gearDisplay controller="fresh" pages="1"/>
+    </component>
+    <component id="n3_cmbv" name="receiveBtn" src="cmbv1ygcfje" fileName="components/LimitShop_btn9.xml" xy="23,224">
+      <gearDisplay controller="fresh" pages="2"/>
+      <Button titleFontSize="22"/>
+    </component>
+    <component id="n4_cmbv" name="freshBtn" src="cmbv1ygcfjc" fileName="components/LimitShop_btn8.xml" xy="144,224">
+      <gearDisplay controller="fresh" pages="2"/>
+    </component>
+    <text id="n7_cmbv" name="title" xy="107,188" pivot="0.5,0.5" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" align="center" vAlign="middle" text="招募卡">
+      <gearDisplay controller="fresh" pages="2,1"/>
+    </text>
+    <loader id="n8_cmbv" name="icon" xy="80,53" pivot="0.5,0.5" size="120,140" aspect="true" url="ui://01_CommonPackage/comItem" fill="scaleFree" autoSize="true" clearOnPublish="true">
+      <gearDisplay controller="fresh" pages="2,1"/>
+    </loader>
+  </displayList>
+</component>

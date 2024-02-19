@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="40,26" pivot="0.5,0.5">
+  <displayList>
+    <text id="n48_x5ob" name="title" xy="0,0" pivot="0.5,0.5" size="40,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#97794f" align="center" vAlign="middle" autoClearText="true" text="任意">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

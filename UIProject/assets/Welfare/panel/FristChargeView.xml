@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <loader3D id="n0_d1gb" name="spine" xy="310,515" size="100,100" animation="" skin="" loop="true"/>
+    <text id="n9_d1gb" name="title" xy="453,30" size="423,56" fontSize="40" align="center" autoSize="none" strokeColor="#000000" text="首充豪礼大放送"/>
+    <text id="n10_d1gb" name="des" xy="582,100" size="184,39" fontSize="28" align="center" autoSize="none" text="充值任意金额"/>
+    <text id="n11_d1gb" name="des1" xy="699,143" size="391,39" fontSize="28" align="center" autoSize="none" text="连续三天登陆即领极品豪礼！"/>
+    <component id="n6_d1gb" name="rewardBtn" src="itkw1ygcfkf" fileName="components/components_new/com_btn_00_redPoint.xml" pkg="2r331opv" xy="820,615" size="205,66">
+      <Button title="充值领奖"/>
+    </component>
+    <text id="n7_d1gb" name="time" xy="1032,697" size="293,43" fontSize="25" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="活动剩余时间：00:00:00"/>
+    <list id="n8_d1gb" name="list" xy="522,228" size="785,357" layout="row" overflow="scroll" colGap="10" defaultItem="ui://340eighfd1gb1ygcflv" align="center">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

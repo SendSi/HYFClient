@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="234,84" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="iconCtrl" pages="3,,0,,1,,2," selected="0">
+    <remark page="0" value="空"/>
+  </controller>
+  <controller name="reddot" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n1_w84w" name="n1" src="11e631ygcfit" fileName="images/serviceactivity_btn1.png" xy="0,0" size="234,82">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n11_p9k9" name="n11" src="bumchz9d7r" fileName="images/images_new/windowBg_new/negative_bg05.png" pkg="2r331opv" xy="0,80" size="234,4"/>
+    <loader id="n3_w84w" name="icon" xy="27,15" size="52,52" aspect="true" url="ui://2r331opvil9y1ygcfjh" align="center" vAlign="middle" fill="scale"/>
+    <text id="n2_w84w" name="title" xy="69,23" size="160,36" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#b9a07c" align="center" vAlign="middle" autoSize="none" singleLine="true" text="世界首领首通">
+      <gearColor controller="button" pages="0,1,2,3" values="#b9a07c,#cfa273|#50382e,#dd6720|#b9a07c,#cfa273|#50382e,#dd6720"/>
+      <relation target="" sidePair="rightext-right"/>
+    </text>
+    <loader id="n7_klt5" name="label" xy="0,0" size="34,74">
+      <gearIcon controller="iconCtrl" pages="3,1,2" values="|ui://2r331opvklt51qp8vid|ui://2r331opvklt51qp8vie" default="ui://2r331opvklt51qp8vic"/>
+    </loader>
+    <component id="n8_pvdu" name="reddot" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="221,14">
+      <gearDisplay controller="reddot" pages="1"/>
+    </component>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

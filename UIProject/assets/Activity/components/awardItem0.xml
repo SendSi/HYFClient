@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="686,72">
+  <displayList>
+    <text id="n32_itho" name="num" xy="17,19" size="18,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" singleLine="true" text="1"/>
+    <list id="n35_g6ic" name="icon_list" xy="294,1" size="597,109" scale="0.6,0.6" layout="row" selectionMode="none" overflow="hidden" colGap="10" defaultItem="ui://2r331opvee2ik0">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n36_g6ic" name="n36" xy="13,71" size="660,1" alpha="0.2" type="rect" lineSize="0" fillColor="#ff97794f"/>
+  </displayList>
+</component>

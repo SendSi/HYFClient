@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="84,84" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="redCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="无红点"/>
+    <remark page="1" value="有红点"/>
+  </controller>
+  <controller name="titleCtrl" pages="0,,1,,2,,3," selected="0">
+    <remark page="0" value="正常"/>
+    <remark page="1" value="时间倒计时"/>
+    <remark page="2" value="功能预告"/>
+    <remark page="3" value="功能提示"/>
+  </controller>
+  <displayList>
+    <loader id="n2_gzkh" name="icon" xy="2,6" pivot="0.5,0.5" size="80,80" aspect="true" url="ui://2r331opvil9y1ygcfjk" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <component id="n3_dix6" name="button_spot" src="dix6fm" fileName="components/red_dot.xml" pkg="2r331opv" xy="67,18" scale="0.75,0.75">
+      <gearDisplay controller="redCtrl" pages="1"/>
+    </component>
+    <text id="n1_gzkh" name="title" xy="1,57" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" vAlign="middle" autoSize="shrink" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" text="活动">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n4_il9y" name="title01" xy="10,75" pivot="0.5,0.5" size="63,22" font="ui://2r331opvno3vhz9d63" fontSize="14" color="#94e957" align="center" vAlign="middle" strokeColor="#005319" shadowColor="#005319" shadowOffset="1,2" singleLine="true" autoClearText="true" text="50:30:60">
+      <gearDisplay controller="titleCtrl" pages="1"/>
+      <relation target="n1_gzkh" sidePair="bottom-top"/>
+    </text>
+    <text id="n5_il9y" name="title02" xy="8,78" pivot="0.5,0.5" size="68,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#94e957" align="center" vAlign="middle" strokeColor="#005319" strokeSize="2" shadowColor="#005319" shadowOffset="1,2" singleLine="true" text="即将开启">
+      <gearDisplay controller="titleCtrl" pages="2"/>
+      <relation target="n1_gzkh" sidePair="bottom-top"/>
+    </text>
+    <richtext id="n7_hwml" name="title03" xy="43,90" pivot="0.5,0.5" anchor="true" size="90,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#94e957" align="center" vAlign="middle" ubb="true" strokeColor="#005319" shadowColor="#005319" shadowOffset="1,2" autoClearText="true" text="+ 20经验/分">
+      <gearDisplay controller="titleCtrl" pages="3"/>
+    </richtext>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

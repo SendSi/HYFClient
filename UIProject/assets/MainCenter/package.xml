@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="4ni413la" hasFavorites="true">
   <resources>
-    <component id="gzkh8i" name="main_btn_activity.xml" path="/components/"/>
+    <component id="gzkh8i" name="Main_FuncTop.xml" path="/components/"/>
     <component id="hfih8u" name="main_chat_item2_2.xml" path="/components/"/>
     <component id="kah2a4" name="main_chat_item_2.xml" path="/components/"/>
     <image id="aibbax" name="icon_wall.png" path="/images/"/>

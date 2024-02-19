@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="966,382" overflow="hidden" mask="n87_s1xf">
+  <displayList>
+    <graph id="n87_s1xf" name="mask" xy="0,0" size="966,382" type="rect"/>
+    <list id="n86_hsk6" name="list" xy="0,0" size="966,382" layout="row" overflow="scroll" scroll="horizontal" colGap="23" defaultItem="ui://340eighfhsk61ygcflo">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <transition name="admission">
+    <item time="0" type="Alpha" target="n86_hsk6" tween="true" startValue="0" endValue="0.3" duration="6"/>
+    <item time="0" type="XY" target="n86_hsk6" tween="true" startValue="334,0" endValue="0,0" duration="12"/>
+    <item time="6" type="Alpha" target="n86_hsk6" tween="true" startValue="0.3" endValue="1" duration="4"/>
+  </transition>
+</component>

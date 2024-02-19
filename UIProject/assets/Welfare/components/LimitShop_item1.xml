@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="299,34">
+  <displayList>
+    <text id="n0_cmbv" name="title" xy="0,0" size="299,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" autoClearText="true" text="1.31登录可领10抽巴拉巴拉"/>
+  </displayList>
+  <relation target="n0_cmbv" sidePair="width-width,height-height"/>
+</component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="871,60" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="isIcon" pages="0,,1,,4,,5," selected="0"/>
+  <displayList>
+    <graph id="n12_qx1k" name="n12" xy="0,58" size="871,2" alpha="0.5" type="rect" lineSize="0" fillColor="#ff3c6de8"/>
+    <text id="n6_cvsp" name="title" xy="55,13" pivot="0.5,0.5" size="18,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#2b1f51" align="center" singleLine="true" autoClearText="true" text="1">
+      <gearDisplay controller="isIcon" pages="0"/>
+    </text>
+    <loader id="n4_cvsp" name="icon" xy="46,12" pivot="0.5,0.5" size="36,36" url="ui://2r331opvsvx3hz9d77" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="isIcon" pages="1,4,5"/>
+      <gearIcon controller="isIcon" pages="1,4" values="ui://2r331opvsvx3hz9d75|ui://2r331opvsvx3hz9d76" default="ui://2r331opvsvx3hz9d77"/>
+    </loader>
+    <text id="n5_cvsp" name="nameLbl" xy="177,14" pivot="0.5,0.5" size="206,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#2b1f51" align="center" singleLine="true" autoClearText="true" text="[abcd]联盟的名字吧"/>
+    <text id="n8_cvsp" name="GradeLbl" xy="478,14" pivot="0.5,0.5" size="65,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#2b1f51" align="center" singleLine="true" autoClearText="true" text="999级">
+      <relation target="" sidePair="right-right"/>
+    </text>
+    <list id="n11_mzrr" name="prop" xy="395,-32" pivot="0.5,0.5" size="676,122" scale="0.4,0.4" layout="row" overflow="scroll" scroll="horizontal" defaultItem="ui://2r331opvj842hz9cyi" align="center">
+      <relation target="" sidePair="right-right"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <Button/>
+</component>

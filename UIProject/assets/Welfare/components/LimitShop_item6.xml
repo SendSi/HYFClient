@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,44" designImageLayer="1">
+  <displayList>
+    <image id="n8_jnfz" name="n8" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,4" size="892,36"/>
+    <text id="n0_cmbv" name="title" xy="15,5" size="860,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" autoSize="none" autoClearText="true" text="1级卡池"/>
+  </displayList>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="147,34" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n10_g6ic" name="check" xy="0,0" size="147,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#70a33d" text="查看奖励详情"/>
+    <graph id="n11_g6ic" name="n11" xy="0,33" size="146,1" type="rect" lineSize="0" fillColor="#ff70a33d"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

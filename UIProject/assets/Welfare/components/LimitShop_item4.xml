@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,98">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="营业"/>
+    <remark page="1" value="休息"/>
+  </controller>
+  <displayList>
+    <image id="n4_cmbv" name="n4" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,0" size="892,97" alpha="0.3">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_cmbv" name="headicon" src="ho0c1ygcgnt" fileName="components/components_new/btn_head6.xml" pkg="2r331opv" xy="17,-4" aspect="true" scale="0.5,0.5"/>
+    <text id="n0_cmbv" name="nameTxt" xy="117,31" size="188,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="玩家名字六字"/>
+    <text id="n2_cmbv" name="openTxt" xy="396,31" size="99,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" text="营业中...">
+      <gearText controller="state" pages="1" values="休息中..." default="营业中..."/>
+    </text>
+    <component id="n3_cmbv" name="visitBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="696,17">
+      <gearDisplay controller="state" pages="0"/>
+      <Button title="串门"/>
+    </component>
+  </displayList>
+</component>

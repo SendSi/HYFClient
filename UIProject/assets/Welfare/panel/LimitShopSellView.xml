@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <displayList>
+    <component id="n2_cmbv" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cmbv" name="n1" src="hdmy1iy5b95" fileName="components/components_new/Popup_bg2.xml" pkg="2r331opv" xy="269,138" group="n12_cmbv"/>
+    <image id="n40_jnfz" name="n40" src="jnfz1ygcgnq" fileName="images/images_new/windowBg_new/welfare_btn_bg26.png" pkg="2r331opv" xy="567,208" pivot="0.5,0.5" size="204,204" group="n12_cmbv" aspect="true" alpha="0.2" color="#cc8f4e"/>
+    <text id="n3_cmbv" name="title" xy="599,151" pivot="0.5,0.5" size="140,46" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" text="批量出售"/>
+    <loader id="n33_cmbv" name="icon" xy="622,263" size="94,94" group="n12_cmbv" url="ui://tsbe09ddmz4w8" fill="scaleFree" autoSize="true"/>
+    <component id="n34_cmbv" name="sellBtn" src="vvwchz9d3i" fileName="components/components_new/com_btn_buy5.xml" pkg="2r331opv" xy="579,481" size="180,68" group="n12_cmbv">
+      <Button titleFontSize="26"/>
+    </component>
+    <component id="n35_cmbv" name="btnCut" src="kwe92x" fileName="components/components_new/com_btn_cut.xml" pkg="2r331opv" xy="445,412" group="n12_cmbv"/>
+    <component id="n37_cmbv" name="btnPlus" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="852,412" group="n12_cmbv"/>
+    <component id="n39_cmbv" name="numberSlider" src="cmbv1ygcfl2" fileName="components/LimitShop_Slider.xml" xy="507,417" size="324,36" group="n12_cmbv">
+      <Slider value="70" max="100"/>
+    </component>
+    <component id="n11_cmbv" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="940,100" size="140,130" group="n12_cmbv" scale="0.8,0.8"/>
+    <group id="n12_cmbv" name="window" xy="269,100" size="811,498" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

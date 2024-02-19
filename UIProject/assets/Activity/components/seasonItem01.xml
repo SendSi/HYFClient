@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,26" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n3_easa" name="title" xy="45,0" pivot="0.5,0.5" size="10,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#50382e" align="center" vAlign="middle" singleLine="true" text="">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

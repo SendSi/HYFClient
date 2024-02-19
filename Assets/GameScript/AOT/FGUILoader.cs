@@ -17,6 +17,7 @@ public class FGUILoader : Singleton<FGUILoader>
         ["CommonPKG"] = true,
         ["Emoji"] = true,
         ["ItemPKG"] = true,
+        ["Activity"] = true,//先把此 设置为公用 
     };
 
     protected override void OnInit()

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <controller name="tabCtrl" pages="0,,1," selected="1">
+    <remark page="0" value="英雄卡"/>
+    <remark page="1" value="道具卡"/>
+  </controller>
+  <displayList>
+    <component id="n2_cmbv" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cmbv" name="n1" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n12_cmbv"/>
+    <text id="n3_cmbv" name="title" xy="597,70" pivot="0.5,0.5" size="140,46" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,4" text="奖池预览"/>
+    <list id="n7_cmbv" name="buildList" xy="221,159" size="892,487" group="n12_cmbv" layout="flow_hz" selectionMode="multipleSingleClick" overflow="scroll" colGap="-3" defaultItem="ui://340eighfcmbv1ygcfjm" autoClearItems="true" treeView="true" indent="0" clickToExpand="0">
+      <item url="ui://340eighfns8m1ygcfl3" level="0"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item url="ui://340eighfns8m1ygcfl3" title="2级卡池" level="0"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+      <item level="1"/>
+    </list>
+    <component id="n23_cmbv" name="heroBtn" src="prcz1qp8vfc" fileName="components/components_new/com_btn_tab04.xml" pkg="2r331opv" xy="9,158" group="n12_cmbv">
+      <Button title="英雄卡池" controller="tabCtrl" page="0"/>
+    </component>
+    <component id="n25_cmbv" name="stageBtn" src="prcz1qp8vfc" fileName="components/components_new/com_btn_tab04.xml" pkg="2r331opv" xy="9,276" group="n12_cmbv">
+      <Button checked="true" title="道具卡池" controller="tabCtrl" page="1"/>
+    </component>
+    <component id="n11_cmbv" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n12_cmbv"/>
+    <group id="n12_cmbv" name="window" xy="9,38" size="1248,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

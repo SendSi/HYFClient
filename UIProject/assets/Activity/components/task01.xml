@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="71,25">
+  <controller name="state" pages="0,,1,,2,,3,,4,,5,,6,,7," selected="1">
+    <remark page="0" value="资源"/>
+    <remark page="1" value="装备"/>
+    <remark page="2" value="经验"/>
+    <remark page="3" value="突破"/>
+    <remark page="4" value="技能"/>
+    <remark page="5" value="科技"/>
+    <remark page="6" value="钻石"/>
+    <remark page="7" value="活跃度"/>
+  </controller>
+  <displayList>
+    <image id="n38_k6h8" name="n38" src="k6h81ygcfi6" fileName="images/DailyTask/dailytask_bg03.png" xy="0,0" size="71,25" color="#4297be">
+      <gearColor controller="state" pages="0,1,2,3,4,5,6,7" values="#ba7d35|#4297be|#5d9530|#9d35ba|#536677|#97794f|#d93a3a|#ba6635"/>
+    </image>
+    <text id="n39_k6h8" name="title001" xy="14,-2" pivot="0.5,0.5" size="42,28" font="ui://2r331opvno3vhz9d63" fontSize="19" color="#9ef5ff" text="装备">
+      <gearColor controller="state" pages="0,1,2,3,4,5,6,7" values="#fffc67,#000000|#9ef5ff,#000000|#fffc67,#000000|#fffc67,#000000|#d0f4ff,#000000|#fffc67,#000000|#fffc67,#000000|#fffc67,#000000"/>
+      <gearText controller="state" pages="0,1,2,3,4,5,6,7" values="资源|装备|经验|突破|技能|科技|钻石|活跃度"/>
+    </text>
+  </displayList>
+</component>

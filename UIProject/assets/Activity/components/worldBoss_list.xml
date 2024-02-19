@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="940,114">
+  <displayList>
+    <image id="n7_eznb" name="n7" src="yya01iy5b9h" fileName="images/images_new/windowBg_new/negative_bg08.png" pkg="2r331opv" xy="1,0" size="938,114" alpha="0.6"/>
+    <component id="n12_eznb" name="neglectBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="666,31" size="128,52">
+      <Button title="忽略" titleFontSize="24"/>
+    </component>
+    <component id="n32_gr02" name="helpBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="802,31" size="128,52">
+      <Button title="帮助" titleFontSize="24"/>
+    </component>
+    <component id="n33_gr02" name="headp" src="b6o0cho" fileName="components/components_new/btn_head.xml" pkg="2r331opv" xy="2,4"/>
+    <text id="n34_gr02" name="title" xy="112,23" size="157,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="这里玩家名字"/>
+    <text id="n35_gr02" name="n35" xy="112,62" size="34,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" text="Lv."/>
+    <text id="n36_gr02" name="lvnum" xy="147,60" size="122,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="11"/>
+    <text id="n37_gr02" name="bossname" xy="278,22" size="374,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" autoSize="none" autoClearText="true" text="世界首领-嗜血青铜龙"/>
+    <text id="n38_gr02" name="n38" xy="278,61" size="133,34" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" autoSize="none" text="当前援助队伍: "/>
+    <text id="n39_gr02" name="teamnum" xy="408,61" size="51,34" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" autoSize="none" autoClearText="true" text="6/10"/>
+    <text id="n40_gr02" name="n40" xy="472,61" size="133,34" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" autoSize="none" text="首领当前血量: "/>
+    <text id="n41_gr02" name="bloodvol" xy="602,61" size="60,34" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d93a3a" autoSize="none" autoClearText="true" text="100%"/>
+  </displayList>
+</component>

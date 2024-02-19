@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <displayList>
+    <component id="n2_cmbv" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cmbv" name="n1" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n12_cmbv"/>
+    <text id="n3_cmbv" name="title" xy="631,71" pivot="0.5,0.5" size="72,46" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" text="串门"/>
+    <image id="n32_cmbv" name="n32" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="221,162" size="892,36" group="n12_cmbv"/>
+    <text id="n29_cmbv" name="menber" xy="329,164" pivot="0.5,0.5" size="100,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="联盟成员"/>
+    <text id="n30_cmbv" name="sta" xy="626,164" pivot="0.5,0.5" size="52,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="状态"/>
+    <text id="n31_cmbv" name="operation" xy="968,164" pivot="0.5,0.5" size="52,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="操作"/>
+    <list id="n28_cmbv" name="playerList" xy="221,206" size="892,440" group="n12_cmbv" overflow="scroll" lineGap="5" defaultItem="ui://340eighfcmbv1ygcfjq" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n11_cmbv" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n12_cmbv"/>
+    <group id="n12_cmbv" name="window" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

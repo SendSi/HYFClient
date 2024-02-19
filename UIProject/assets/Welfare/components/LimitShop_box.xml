@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="730,118" designImageOffsetX="-414" designImageOffsetY="-600">
+  <displayList>
+    <component id="n0_eaah" name="pbr" src="lcq71qp8vhm" fileName="components/components_new/main/healthPbr3.xml" pkg="4ni413la" xy="9,50" size="720,32">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n18_eaah" name="rewBtn0" src="cmbvhz9cya" fileName="components/LimitShopRewBtn.xml" xy="6,-2">
+      <Button title="1级" icon="ui://tsbe09ddlcfjz"/>
+    </component>
+    <component id="n19_eaah" name="rewBtn1" src="cmbvhz9cya" fileName="components/LimitShopRewBtn.xml" xy="178,1">
+      <Button title="2级" icon="ui://tsbe09ddlcfjz"/>
+    </component>
+    <component id="n20_eaah" name="rewBtn2" src="cmbvhz9cya" fileName="components/LimitShopRewBtn.xml" xy="329,1">
+      <Button title="3级" icon="ui://tsbe09ddlcfjz"/>
+    </component>
+    <component id="n21_eaah" name="rewBtn3" src="cmbvhz9cya" fileName="components/LimitShopRewBtn.xml" xy="489,-3">
+      <Button title="4级" icon="ui://tsbe09ddlcfjz"/>
+    </component>
+    <component id="n22_eaah" name="rewBtn4" src="cmbvhz9cya" fileName="components/LimitShopRewBtn.xml" xy="633,-4">
+      <Button title="5级" icon="ui://tsbe09ddlcfjz"/>
+    </component>
+    <loader id="n26_lcq7" name="n26" xy="26,82" size="18,9" group="n25_lcq7" url="ui://340eighfd5f21ygcfl4" autoSize="true"/>
+    <group id="n25_lcq7" name="num1" xy="21,82" size="28,34" advanced="true"/>
+    <text id="n24_lcq7" name="title1" xy="21,87" pivot="0.5,0.5" size="28,29" group="n25_lcq7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#7b5f37" align="center" vAlign="middle" text="20"/>
+    <group id="n29_lcq7" name="num2" xy="198,82" size="28,34" advanced="true"/>
+    <loader id="n27_lcq7" name="n27" xy="203,82" size="18,9" group="n29_lcq7" url="ui://340eighfd5f21ygcfl4" autoSize="true"/>
+    <text id="n28_lcq7" name="title2" xy="198,87" pivot="0.5,0.5" size="28,29" group="n29_lcq7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#7b5f37" align="center" vAlign="middle" text="40"/>
+    <group id="n32_lcq7" name="num3" xy="349,82" size="28,34" advanced="true"/>
+    <loader id="n36_lcq7" name="n36" xy="695,82" size="18,9" group="n38_lcq7" url="ui://340eighfd5f21ygcfl4" autoSize="true"/>
+    <text id="n37_lcq7" name="title5" xy="684,87" pivot="0.5,0.5" size="39,29" group="n38_lcq7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#7b5f37" align="center" vAlign="middle" text="100"/>
+    <group id="n38_lcq7" name="num5" xy="684,82" size="39,34" advanced="true"/>
+    <loader id="n33_lcq7" name="n33" xy="528,82" size="18,9" group="n35_lcq7" url="ui://340eighfd5f21ygcfl4" autoSize="true"/>
+    <group id="n35_lcq7" name="num4" xy="523,82" size="28,34" advanced="true"/>
+    <text id="n34_lcq7" name="title4" xy="523,87" pivot="0.5,0.5" size="28,29" group="n35_lcq7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#7b5f37" align="center" vAlign="middle" text="80"/>
+    <loader id="n30_lcq7" name="n30" xy="354,82" size="18,9" group="n32_lcq7" url="ui://340eighfd5f21ygcfl4" autoSize="true"/>
+    <text id="n31_lcq7" name="title3" xy="349,87" pivot="0.5,0.5" size="28,29" group="n32_lcq7" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#7b5f37" align="center" vAlign="middle" text="60"/>
+  </displayList>
+</component>

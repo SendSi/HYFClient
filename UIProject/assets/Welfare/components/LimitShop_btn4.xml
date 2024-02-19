@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="139,125" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_k0ke" name="icon" xy="0,0" size="151,62" url="ui://340eighfrjiw1ygcfix"/>
+    <text id="n2_w84w" name="title" xy="19,12" pivot="0.5,0.5" size="100,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" shadowColor="#71336f" shadowOffset="0,1" singleLine="true" text="我的市集"/>
+  </displayList>
+  <Button/>
+</component>

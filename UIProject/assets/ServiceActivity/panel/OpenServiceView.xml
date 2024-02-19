@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" extention="Label" initName="frame">
+  <controller name="state" pages="0,,1,,2,,3,,4,,5,,6," selected="0"/>
+  <controller name="modal" pages="0,,1," selected="0"/>
+  <controller name="state001" pages="0,,1,,2," selected="2">
+    <remark page="1" value="未开启"/>
+    <remark page="2" value="前往BOSS首通"/>
+  </controller>
+  <displayList>
+    <loader id="n111_qx1k" name="bg" xy="309,73" size="972,648" group="n115_dfim" aspect="true" url="ui://e290e74sqx1k1ygcfnk" fill="scale"/>
+    <loader id="n73_mzrr" name="icon" xy="321,83" size="948,136" group="n103_mzrr" url="ui://e290e74sqx1k1ygcfn5" fill="scale">
+      <gearIcon controller="state" pages="0,2,3,4,5,6" values="ui://e290e74sqx1k1ygcfn5|ui://e290e74sqx1k1ygcfn6|ui://e290e74sqx1k1ygcfn7|ui://e290e74sqx1k1ygcfn8|ui://e290e74sqx1k1ygcfnm|ui://e290e74sqx1k1ygcfnl" default="ui://e290e74sqx1k1ygcfn4"/>
+    </loader>
+    <text id="n74_mzrr" name="describeLbl_01" xy="374,100" size="172,56" group="n103_mzrr" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="42" color="#ffffff" strokeColor="#2891d2" shadowColor="#2891d2" shadowOffset="0,4" singleLine="true" text="建城立地"/>
+    <text id="n75_mzrr" name="describeLbl_02" xy="549,126" size="172,56" group="n103_mzrr" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="42" color="#ffffff" strokeColor="#2891d2" shadowColor="#2891d2" shadowOffset="0,4" singleLine="true" text="逐鹿天下"/>
+    <text id="n76_mzrr" name="timeText" xy="329,184" size="169,26" group="n103_mzrr" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" autoClearText="true" text="剩余时间：00:55:17"/>
+    <component id="n78_mzrr" name="gotoBtn" src="mzrr1ygcfmo" fileName="components/OSGotoBtn01.xml" xy="1173,102" group="n103_mzrr">
+      <gearDisplay controller="state001" pages="0,1"/>
+      <Button icon="ui://e290e74sqx1k1ygcfmy"/>
+    </component>
+    <text id="n101_mzrr" name="n101" xy="1085,50" pivot="1,0" size="184,26" group="n103_mzrr" font="ui://2r331opvno3vhz9d63" fontSize="18" align="right" singleLine="true" text="排名奖励通过邮件发送"/>
+    <image id="n102_mzrr" name="n102" src="vb7khz9czn" fileName="images/images_new/com_btn_explain01_1.png" pkg="2r331opv" xy="1063,53" size="20,20" group="n103_mzrr" aspect="true">
+      <relation target="n101_mzrr" sidePair="left-left"/>
+    </image>
+    <group id="n103_mzrr" name="n103" xy="321,50" size="948,169" group="n115_dfim"/>
+    <text id="n80_mzrr" name="rankLbl" xy="404,287" size="44,29" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5563b9" align="center" singleLine="true" text="排名"/>
+    <text id="n81_mzrr" name="nameLbl" xy="625,287" size="44,29" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5563b9" align="center" singleLine="true" text="名字"/>
+    <text id="n82_mzrr" name="gradeLbl" xy="826,287" size="84,29" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5563b9" align="center" singleLine="true" text="主城等级"/>
+    <text id="n83_mzrr" name="awardLbl" xy="1050,287" size="84,29" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5563b9" align="center" singleLine="true" text="排名奖励"/>
+    <list id="n95_mzrr" name="rankList" xy="360,338" size="871,295" group="n109_rdeb" overflow="scroll" lineGap="3" defaultItem="ui://e290e74smzrr1ygcfmp" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n96_mzrr" name="myGradeLbl" xy="432,659" size="104,29" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffdc88" align="center" singleLine="true" text="我的等级："/>
+    <text id="n97_mzrr" name="myGradeText" xy="524,657" size="56,32" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" singleLine="true" autoClearText="true" text="5000">
+      <relation target="n96_mzrr" sidePair="left-right"/>
+    </text>
+    <text id="n98_mzrr" name="myRankLbl" xy="709,659" size="104,29" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffdc88" align="center" singleLine="true" text="我的排名："/>
+    <text id="n99_mzrr" name="myRankText" xy="801,657" size="56,32" group="n109_rdeb" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" singleLine="true" autoClearText="true" text="5000">
+      <relation target="n98_mzrr" sidePair="left-right"/>
+    </text>
+    <component id="n100_mzrr" name="previewBtn" src="mzrr1ygcfme" fileName="components/rewardBtn.xml" xy="1024,652" size="140,41" group="n109_rdeb"/>
+    <group id="n109_rdeb" name="n109" xy="360,287" size="871,406" group="n115_dfim" advanced="true">
+      <gearDisplay controller="state001" pages="0"/>
+    </group>
+    <loader id="n113_jcby" name="bg02" xy="321,260" size="948,447" group="n115_dfim" url="ui://e290e74sjcby1ygcfnv">
+      <gearDisplay controller="state001" pages="2"/>
+    </loader>
+    <loader id="n112_qx1k" name="bg01" xy="290,209" size="1008,77" group="n115_dfim" url="ui://e290e74sqx1k1ygcfnj"/>
+    <list id="n87_mzrr" name="day" xy="318,211" size="983,79" group="n115_dfim" layout="row" scroll="horizontal" colGap="-10" defaultItem="ui://e290e74smzrr1ygcfmd" selectionController="state">
+      <item title="第一天"/>
+      <item title="第二天"/>
+      <item title="第三天"/>
+      <item title="第四天"/>
+      <item title="第五天"/>
+      <item title="第六天"/>
+      <item title="第七天"/>
+    </list>
+    <text id="n110_rdeb" name="Lbl01" xy="686,467" pivot="0.5,0.5" size="217,29" group="n115_dfim" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#2b1f51" align="center" singleLine="true" text="将在开服第X天开启榜单">
+      <gearDisplay controller="state001" pages="1"/>
+    </text>
+    <graph id="n106_c5k9" name="modal" xy="340,320" size="911,330" group="n108_c5k9" alpha="0.9" type="rect" lineSize="0" fillColor="#7f000000"/>
+    <text id="n107_c5k9" name="modalLbl" xy="673,471" pivot="0.5,0.5" size="244,28" group="n108_c5k9" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" shadowColor="#000000" shadowOffset="0,1" singleLine="true" text="请求中…">
+      <gearDisplay controller="modal" pages=""/>
+    </text>
+    <group id="n108_c5k9" name="n108" xy="340,320" size="911,330" group="n115_dfim" advanced="true">
+      <gearDisplay controller="modal" pages="1"/>
+    </group>
+    <component id="n114_jcby" name="bossBtn" src="sd0v1ygcfky" fileName="components/components_new/com_btn_01_redPoint.xml" pkg="2r331opv" xy="661,615" size="267,78" group="n115_dfim">
+      <gearDisplay controller="state001" pages="2"/>
+      <Button title="前往BOSS首通"/>
+    </component>
+    <text id="n116_rzzr" name="tipText" xy="328,558" pivot="0.5,0.5" size="932,36" group="n115_dfim" font="ui://2r331opvno3vhz9d63" fontSize="26" color="#ffffff" align="center" autoSize="none" strokeColor="#633131" strokeSize="2" shadowColor="#633131" shadowOffset="1,3" singleLine="true" autoClearText="true" text="新增文本这里显示一句话的内容">
+      <gearDisplay controller="state001" pages="2"/>
+    </text>
+    <group id="n115_dfim" name="window" xy="290,50" size="1011,671" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

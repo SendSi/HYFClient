@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="203,49" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="2,up,3,down,4,over,5,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n68_zrss" name="n68" src="f0eihz9czq" fileName="images/activity_btn_bg011.png" xy="-2,1" size="204,49">
+      <relation target="n67_zrss" sidePair="leftext-left"/>
+    </image>
+    <text id="n66_zrss" name="actNum" xy="159,7" pivot="1,0" size="32,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="right" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" text="40"/>
+    <text id="n67_zrss" name="txt" xy="25,7" size="132,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" singleLine="true" text="剩余活跃度:">
+      <relation target="n66_zrss" sidePair="left-left"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="英雄卡"/>
+    <remark page="1" value="道具卡"/>
+  </controller>
+  <displayList>
+    <component id="n2_cmbv" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cmbv" name="n1" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n12_cmbv"/>
+    <image id="n29_jnfz" name="n29" src="lfqnhz9d6w" fileName="images/images_new/com_bg_popup02.png" pkg="2r331opv" xy="220,170" size="894,472" group="n12_cmbv"/>
+    <text id="n3_cmbv" name="title" xy="631,70" pivot="0.5,0.5" size="72,46" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="3,3" text="刷新"/>
+    <component id="n23_cmbv" name="retainBtn" src="itkw1ygcfkf" fileName="components/components_new/com_btn_00_redPoint.xml" pkg="2r331opv" xy="351,546" size="202,78" group="n12_cmbv">
+      <Button title="保留" controller="state" page="0"/>
+    </component>
+    <component id="n25_cmbv" name="replaceBtn" src="sd0v1ygcfky" fileName="components/components_new/com_btn_01_redPoint.xml" pkg="2r331opv" xy="778,546" size="202,78" group="n12_cmbv">
+      <Button title="替换" controller="state" page="1"/>
+    </component>
+    <component id="n26_cmbv" name="item1" src="cmbv1ygcfjo" fileName="components/LimitShop_item3.xml" xy="316,241" group="n12_cmbv"/>
+    <image id="n19_cmbv" name="nameTxt" src="aibb2e" fileName="images/images_new/common_arrow_4.png" pkg="2r331opv" xy="640,343" pivot="0.5,0.5" group="n12_cmbv" rotation="90"/>
+    <component id="n27_cmbv" name="item2" src="cmbv1ygcfjo" fileName="components/LimitShop_item3.xml" xy="741,241" group="n12_cmbv"/>
+    <text id="n28_ns8m" name="descTxt" xy="585,196" pivot="0.5,0.5" size="164,29" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" align="center" vAlign="middle" autoClearText="true" text="这里打字巴拉巴拉"/>
+    <component id="n11_cmbv" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n12_cmbv"/>
+    <group id="n12_cmbv" name="window" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

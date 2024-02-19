@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="273,375" extention="Button">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="常规"/>
+    <remark page="1" value="查看宝箱"/>
+  </controller>
+  <controller name="getState" pages="0,,1," selected="0"/>
+  <controller name="num" pages="0,,1," selected="0">
+    <remark page="0" value="没有数字"/>
+    <remark page="1" value="有数字"/>
+  </controller>
+  <displayList>
+    <text id="n3_hsk6" name="title" xy="0,0" size="273,375" fontSize="20" align="center" vAlign="middle" autoSize="none" singleLine="true" text=""/>
+    <loader id="n4_hsk6" name="bg" xy="-9,-8" size="289,391" touchable="false" url="ui://340eighfs1uz1ygcfla" align="center" vAlign="middle">
+      <gearIcon controller="state" pages="1" values="ui://340eighfs1uz1ygcflb" default="ui://340eighfs1uz1ygcfla"/>
+    </loader>
+    <component id="n5_hsk6" name="icon" src="hsk61ygcflq" fileName="components/TreasureChestBtn01.xml" xy="36,4" size="200,200"/>
+    <text id="n6_hsk6" name="n6" xy="23,191" size="97,34" group="n16_hsk6" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffdb4d" letterSpacing="-1" shadowColor="#a51d0a" shadowOffset="1,2" singleLine="true" text="立即获得"/>
+    <image id="n23_mlhy" name="n23" src="mlhy1ygcfqn" fileName="images/Daily_direct_purchase/everyday_bg06.png" xy="17,199" size="238,37" group="n16_hsk6" alpha="0.5" color="#902222"/>
+    <component id="n10_hsk6" name="receiveBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="44,250" size="190,72" group="n16_hsk6">
+      <gearLook controller="getState" pages="1" values="1,0,1,0" default="1,0,0,1"/>
+      <gearText controller="getState" pages="1" values="已领取" default="领取"/>
+      <Button title="领取" titleFontSize="28"/>
+    </component>
+    <text id="n11_hsk6" name="describeLbl" xy="48,330" pivot="0.5,0.5" size="177,26" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ff9a50" align="center" letterSpacing="-1" shadowColor="#a51d0a" shadowOffset="1,2" singleLine="true" autoClearText="true" text="豪礼总价值超过88元！"/>
+    <text id="n7_hsk6" name="contentLbl" xy="42,203" pivot="0.5,0.5" size="119,29" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" letterSpacing="-1" singleLine="true" autoClearText="true" text="英雄经验经验">
+      <gearDisplay controller="num" pages="1"/>
+      <relation target="n15_hsk6" sidePair="left-left"/>
+    </text>
+    <text id="n15_hsk6" name="numberLbl" xy="161,199" pivot="1,0" size="70,34" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="right" letterSpacing="-1" singleLine="true" autoClearText="true" text="x1000">
+      <gearDisplay controller="num" pages="1"/>
+    </text>
+    <text id="n25_rsdr" name="contentLbl1" xy="60,204" pivot="0.5,0.5" size="157,29" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" letterSpacing="-1" singleLine="true" autoClearText="true" text="英雄经验经验经验">
+      <gearDisplay controller="num" pages="0"/>
+    </text>
+    <group id="n16_hsk6" name="n16" xy="17,191" size="238,165" advanced="true">
+      <gearDisplay controller="state" pages="0,2"/>
+    </group>
+    <component id="n17_hsk6" name="returnBtn" src="hsk61ygcflp" fileName="components/returnBtn.xml" xy="5,7" size="67,62">
+      <gearDisplay controller="state" pages="1"/>
+      <Button controller="state" page="0"/>
+    </component>
+    <list id="n21_hsk6" name="list" xy="32,168" size="210,164" overflow="scroll" lineGap="-4" defaultItem="ui://340eighfhsk61ygcflr" autoClearItems="true">
+      <gearDisplay controller="state" pages="1"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n22_rjgl" name="itemList" xy="14,29" size="488,243" scale="0.5,0.5" visible="false" layout="flow_hz" overflow="scroll" defaultItem="ui://2r331opvj842hz9cyi" align="center">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n22_rjgl" tween="true" startValue="0.1,0.1" endValue="0.5,0.5" duration="6"/>
+    <item time="0" type="Visible" target="n22_rjgl" value="true"/>
+    <item time="0" type="XY" target="n22_rjgl" tween="true" startValue="112,83" endValue="15,-21" duration="6"/>
+    <item time="6" type="Scale" target="n22_rjgl" tween="true" startValue="0.5,0.5" endValue="0.5,0.5" duration="6"/>
+    <item time="6" type="XY" target="n22_rjgl" tween="true" startValue="15,-21" endValue="14,-24" duration="6"/>
+    <item time="12" type="Scale" target="n22_rjgl" tween="true" startValue="0.5,0.5" endValue="0.1,0.1" duration="6"/>
+    <item time="12" type="XY" target="n22_rjgl" tween="true" startValue="14,-24" endValue="303,315" duration="6"/>
+    <item time="18" type="Visible" target="n22_rjgl" value="false"/>
+  </transition>
+</component>
