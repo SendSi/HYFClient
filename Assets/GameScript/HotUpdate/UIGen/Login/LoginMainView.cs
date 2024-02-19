@@ -10,8 +10,10 @@ namespace Login
         public GLoader _bg;
         public GButton _noticeBtn;
         public GButton _accountBtn;
-        public GButton _sanningBtn;
+        public GButton _cfgBtn;
         public GButton _serviceBtn;
+        public GButton _effectBtn;
+        public GButton _stopBtn;
         public GGroup _left;
         public GTextField _title_version;
         public GButton _ageBtn;
@@ -37,8 +39,10 @@ namespace Login
             _bg = (GLoader)GetChild("bg");
             _noticeBtn = (GButton)GetChild("noticeBtn");
             _accountBtn = (GButton)GetChild("accountBtn");
-            _sanningBtn = (GButton)GetChild("sanningBtn");
+            _cfgBtn = (GButton)GetChild("cfgBtn");
             _serviceBtn = (GButton)GetChild("serviceBtn");
+            _effectBtn = (GButton)GetChild("effectBtn");
+            _stopBtn = (GButton)GetChild("stopBtn");
             _left = (GGroup)GetChild("left");
             _title_version = (GTextField)GetChild("title_version");
             _ageBtn = (GButton)GetChild("ageBtn");

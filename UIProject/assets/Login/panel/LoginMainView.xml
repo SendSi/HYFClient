@@ -8,15 +8,21 @@
       <Button title="公告" icon="ui://byy9k3gh7oiz9"/>
     </component>
     <component id="n9_7oiz" name="accountBtn" src="7oizh" fileName="components/interactive.xml" xy="16,152" size="98,98" group="n22_qbmb">
-      <Button title="账号" icon="ui://byy9k3gh7oiz7"/>
+      <Button title="离线" icon="ui://byy9k3gh7oiz7"/>
     </component>
-    <component id="n11_7oiz" name="sanningBtn" src="7oizh" fileName="components/interactive.xml" xy="16,252" size="98,98" group="n22_qbmb">
-      <Button title="协议" icon="ui://byy9k3gh7oiza"/>
+    <component id="n11_7oiz" name="cfgBtn" src="7oizh" fileName="components/interactive.xml" xy="16,252" size="98,98" group="n22_qbmb">
+      <Button title="导表" icon="ui://byy9k3gh7oiza"/>
     </component>
     <component id="n32_mpc8" name="serviceBtn" src="7oizh" fileName="components/interactive.xml" xy="16,352" size="98,98" group="n22_qbmb">
       <Button title="客服" icon="ui://byy9k3ghmpc836"/>
     </component>
-    <group id="n22_qbmb" name="left" xy="16,52" size="98,398" advanced="true">
+    <component id="n45_f54x" name="effectBtn" src="7oizh" fileName="components/interactive.xml" xy="16,452" size="98,98" group="n22_qbmb">
+      <Button title="特效" icon="ui://byy9k3gh7oiza"/>
+    </component>
+    <component id="n46_f54x" name="stopBtn" src="7oizh" fileName="components/interactive.xml" xy="16,552" size="98,98" group="n22_qbmb">
+      <Button title="特停" icon="ui://byy9k3ghmpc836"/>
+    </component>
+    <group id="n22_qbmb" name="left" xy="16,52" size="98,598" advanced="true">
       <relation target="" sidePair="left-left"/>
     </group>
     <text id="n37_qg41" name="title_version" xy="16,13" size="108,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="当前版本V1">
