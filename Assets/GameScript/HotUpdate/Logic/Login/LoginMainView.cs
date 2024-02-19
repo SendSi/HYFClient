@@ -13,53 +13,68 @@ namespace Login
             base.OnInit();
             FGUILoader.Instance.CheckLoadComPKG(); //加载公共依赖包
             AudioMgr.Instance.PlayBGM("music_background");
-            ProxyCommonPKGModule.Instance.LoadToastTipView();//要加载出来 tip
+            ProxyCommonPKGModule.Instance.LoadToastTipView(); //要加载出来 tip
 
             // Debug.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
             // Debug.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));
 
-            _loginBtn.onClick.Set(OnClickLoginEnter);
+            this._loginBtn.onClick.Set(OnClickLoginEnter);
+            this._ageBtn.onClick.Set(OnClickAgeBtn);
 
-            this._accountBtn.onClick.Set(() =>
-            {
-                ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
-            });
+            this._noticeBtn.onClick.Set(OnClickNoticeBtn);
+            this._accountBtn.onClick.Set(OnClickAccountBtn);
+            this._cfgBtn.onClick.Set(OnClickCfgBtn);
+            this._serviceBtn.onClick.Set(OnClickServiceBtn);
+            this._effectBtn.onClick.Set(OnClickEffectBtn);
+            this._stopBtn.onClick.Set(OnClickStopBtn);
 
-            this._noticeBtn.onClick.Set(() =>
-            {
-                // ProxyLoginModule.Instance.OpenGameNoticeViewWin();
-                Debug.LogError("测试加载");
-
-                EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", _noticeBtn, false, EffectPos.Center, (obj) =>
-                {
-                    effObject1 = obj;
-                });
-            });
-
-            this._ageBtn.onClick.Set(() =>
-            {
-                ProxyLoginModule.Instance.OpenGameAgeViewWin();
-                //effObject1.Stop();
-            });
-
-            this._serviceBtn.onClick.Set(() =>
-            {
-                ProxyLoginModule.Instance.OpenServerListRemoteViewWin();
-
-                ProxyMainCenterModule.Instance.OpenMainCenterView();
-                ProxyLoginModule.Instance.CloseLoginMainView();
-            });
-
-
-            this._sanningBtn.onClick.Set(OnClickSanningBtn);
             // 简体中文SimChinese  繁体中文TraChinese  英文English 
             if (AppConfig.currLang == "SimChinese") { _currComValue = 0; }
             else if (AppConfig.currLang == "TraChinese") { _currComValue = 1; }
-            else if (AppConfig.currLang == "English ") { _currComValue = 2; }
+            else if (AppConfig.currLang == "English") { _currComValue = 2; }
 
-            _languCom.selectedIndex = _currComValue;
+            this._languCom.selectedIndex = _currComValue;
             this._languCom.items = new[] { "简体中文", "繁體中文", "English" };
             this._languCom.onChanged.Set(OnChangedLanguage);
+        }
+
+        private void OnClickNoticeBtn()
+        {
+            ProxyLoginModule.Instance.OpenGameNoticeViewWin();
+        }
+
+        private void OnClickEffectBtn()
+        {
+            EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", this._stopBtn, false, EffectPos.Center, (obj) =>
+            {
+                effObject1 = obj;
+            });
+        }
+
+        private void OnClickStopBtn()
+        {
+            if (effObject1 != null)
+            {
+                effObject1.Stop();
+                effObject1 = null;
+            }
+        }
+
+        private void OnClickAgeBtn()
+        {
+            ProxyLoginModule.Instance.OpenGameAgeViewWin();
+        }
+
+        private void OnClickServiceBtn()
+        {
+            ProxyDialogTipModule.Instance.OpenDialogTip1ViewWin("提示", "正在编辑内容", "确定", null);
+            ProxyLoginModule.Instance.OpenServerListRemoteViewWin();
+        }
+
+        private void OnClickAccountBtn()
+        {
+            ProxyMainCenterModule.Instance.OpenMainCenterView();
+            ProxyLoginModule.Instance.CloseLoginMainView();
         }
 
         private void OnChangedLanguage()
@@ -113,7 +128,7 @@ namespace Login
             }
         }
 
-        private void OnClickSanningBtn()
+        private void OnClickCfgBtn()
         {
             Debug.LogError("测试 加载配置文件  conifg");
             var infos = ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表

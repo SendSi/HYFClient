@@ -7,13 +7,13 @@
   <string name="b7676vbq9232k-n5_9232" mz="tipsLbl">请选择[color=#599e27]1种[/color]你要的道具</string>
   <string name="b7676vbq9232k-n20_toec" mz="tip">[color=#917349]长按可查看道具详情[/color]</string>
   <!-- Bag/panel/BagMainView.xml -->
-  <string name="b7676vbqxbayc-n4_xbay" mz="title_advanced">背包-简体中文</string>
-  <string name="b7676vbqxbayc-n8_xbay" mz="tab01">全部?</string>
+  <string name="b7676vbqxbayc-n4_xbay" mz="title_advanced">背包</string>
+  <string name="b7676vbqxbayc-n8_xbay" mz="tab01">全部</string>
   <string name="b7676vbqxbayc-n9_xbay" mz="tab02">资源</string>
   <string name="b7676vbqxbayc-n10_xbay" mz="tab03">装备</string>
   <string name="b7676vbqxbayc-n11_xbay" mz="tab04">其他</string>
   <string name="b7676vbqxbayc-n12_xbay" mz="tab05">其他</string>
-  <string name="b7676vbqxbayc-n47_aylj" mz="nothingLbl">您的背包空空如也-简体中文</string>
+  <string name="b7676vbqxbayc-n47_aylj" mz="nothingLbl">您的背包空空如也</string>
   <string name="b7676vbqxbayc-n98_nkto" mz="equipmentGoToBtn">前往锻造</string>
   <string name="b7676vbqxbayc-n30_grws" mz="lbl01">拥有数量：</string>
   <string name="b7676vbqxbayc-n50_f3wx" mz="btnCanUsing">使用</string>
@@ -305,17 +305,22 @@
   <string name="y768eypafvaib-n14_mwdy" mz="btnSend2">Send</string>
   <string name="y768eypafvaib-n17_mwdy" mz="n17">Case 2: Support to input emoji by using the native IOS keyboard.</string>
   <string name="y768eypafvaib-n18_mwdy" mz="n18">Case 1: Support to input emoji by using UBB code.</string>
-  <!-- GMView/components/btn.xml -->
-  <string name="21uyefv8h7e55-n1_h7e5" mz="n1">发送</string>
-  <!-- GMView/components/com_toggleBtn_1.xml -->
-  <string name="21uyefv8ovmzchr-n2_yq8n" mz="title">此次登录不再提示</string>
-  <!-- GMView/components/gmButton1.xml -->
-  <string name="21uyefv8e3cq8-n2_e3cq" mz="title">自动收缩 字太小</string>
-  <!-- GMView/components/gmButton2.xml -->
-  <string name="21uyefv8h7e53-n2_h7e5" mz="title">自动收缩 字太小</string>
-  <!-- GMView/gmView.xml -->
+  <!-- GMView/EffectCutListView.xml -->
+  <string name="21uyefv8ncmochs-n3_ix8t" mz="window">特效裁剪例子</string>
+  <string name="21uyefv8ncmochs-n22_jt5d" mz="tip">别删除</string>
+  <!-- GMView/GMMainView.xml -->
   <string name="21uyefv8h7e50-n10_h7e5" mz="closeButton">X</string>
   <string name="21uyefv8h7e50-n16_e3cq" mz="checkCloseBtn">发送后关闭GM页面</string>
+  <!-- GMView/components/CenterButton_2.xml -->
+  <string name="21uyefv8h7e53-n2_h7e5" mz="title">自动收缩 字太小</string>
+  <!-- GMView/components/ToggleButton.xml -->
+  <string name="21uyefv8ovmzchr-n2_yq8n" mz="title">此次登录不再提示</string>
+  <!-- GMView/components/TypeButton_1.xml -->
+  <string name="21uyefv8e3cq8-n2_e3cq" mz="title">自动收缩 字太小</string>
+  <!-- GMView/components/btnSend.xml -->
+  <string name="21uyefv8h7e55-n1_h7e5" mz="title">发送</string>
+  <!-- GMView/components/gmBtn1.xml -->
+  <string name="21uyefv8ncmochu-n2_e3cq" mz="title">我是内容</string>
   <!-- HotPKG/component/btnYes.xml -->
   <string name="lq16fm3bpf2g1ygcga1-n3_pf2g" mz="title">文本</string>
   <!-- HotPKG/panel/HFView.xml -->
@@ -323,6 +328,8 @@
   <string name="lq16fm3bswm21ygcga0-n46_swm2" mz="tips">描述</string>
   <string name="lq16fm3bswm21ygcga0-n50_pf2g" mz="diaContentTxt">资源更新</string>
   <string name="lq16fm3bswm21ygcga0-n47_pf2g" mz="btnSure">确定</string>
+  <!-- Login/components/ComboBox1.xml -->
+  <string name="byy9k3ghjrst1ygcga0-n1_j2i2" mz="title">简体中文</string>
   <!-- Login/components/button_game_start.xml -->
   <string name="byy9k3ghp78115-n1_p781" mz="title">开始游戏</string>
   <!-- Login/components/clothes_btn_01.xml -->
@@ -380,9 +387,11 @@
   <string name="byy9k3ghv4de34-n4_7oiz" mz="frame">游戏公告</string>
   <!-- Login/panel/LoginMainView.xml -->
   <string name="byy9k3gh7oize-n12_7oiz" mz="noticeBtn">公告</string>
-  <string name="byy9k3gh7oize-n9_7oiz" mz="accountBtn">账号</string>
-  <string name="byy9k3gh7oize-n11_7oiz" mz="sanningBtn">协议</string>
+  <string name="byy9k3gh7oize-n9_7oiz" mz="accountBtn">离线</string>
+  <string name="byy9k3gh7oize-n11_7oiz" mz="cfgBtn">导表</string>
   <string name="byy9k3gh7oize-n32_mpc8" mz="serviceBtn">客服</string>
+  <string name="byy9k3gh7oize-n45_f54x" mz="effectBtn">特效</string>
+  <string name="byy9k3gh7oize-n46_f54x" mz="stopBtn">特停</string>
   <string name="byy9k3gh7oize-n37_qg41" mz="title_version">当前版本V1</string>
   <string name="byy9k3gh7oize-n8_7oiz" mz="loginBtn">开始游戏</string>
   <string name="byy9k3gh7oize-n42_uhjh" mz="lbl">账号登录:</string>
@@ -391,6 +400,9 @@
   <string name="byy9k3gh7oize-n36_qg41" mz="title_03">感谢您使用本游戏，我们非常重视您的个人信息和隐私保 护。为了更好地保障您的个人权益,在您使用本游戏的服务 前，请务必《用户服务协议》及《用户隐私协议》的各条款。如果您同意并接受，若不同意，请退出游戏。</string>
   <string name="byy9k3gh7oize-n39_116rd" mz="title_04">出版单位：河北冠林数字出版有限公司  运营单位：广州市漫灵软件有限公司
 新广出审[2017]8853号   ISBN 978-7-498-01811-3</string>
+  <string name="byy9k3gh7oize-n43_lsme-0" mz="languCom">简体中文</string>
+  <string name="byy9k3gh7oize-n43_lsme-1" mz="languCom">繁体中文</string>
+  <string name="byy9k3gh7oize-n43_lsme-2" mz="languCom">英文</string>
   <!-- Login/panel/ServerListDetailView.xml -->
   <string name="byy9k3gh7oizi-n4_7oiz" mz="frame">选择服务器</string>
   <string name="byy9k3gh7oizi-n7_7oiz" mz="sureBtn">确定</string>
@@ -444,6 +456,7 @@
   <!-- MainCenter/components/TopEles.xml -->
   <string name="4ni413laxoe1n2-n90_ukvb" mz="nameLbl">我的名字六字</string>
   <string name="4ni413laxoe1n2-n91_ukvb" mz="lvLbl">50级</string>
+  <string name="4ni413laxoe1n2-n93_ijk7-1" mz="activityList">功能预告</string>
   <!-- MainCenter/components/buildingGrid1.xml -->
   <string name="4ni413lapvy91ygcg8n-n9_m79t" mz="lbl00">建造时间</string>
   <string name="4ni413lapvy91ygcg8n-n10_m79t" mz="lbl02">已建造</string>
@@ -636,8 +649,7 @@
   <!-- MainRole/components/RoleHeadView.xml -->
   <string name="66sh7tc6j3xs9ph-n0_j3xs" mz="bgBtn">头像选择</string>
   <string name="66sh7tc6j3xs9ph-n5_j3xs" mz="btnModify">使用</string>
-  <string name="66sh7tc6j3xs9ph-n7_j3xs" mz="conditionLbl_01">可以通过购买“龙之忍通”
-礼包获得</string>
+  <string name="66sh7tc6j3xs9ph-n7_j3xs" mz="conditionLbl_01">可以通过购买“龙之忍通”礼包获得</string>
   <string name="66sh7tc6j3xs9ph-n25_gqih" mz="conditionLbl_02">执政官的初始头像框</string>
   <string name="66sh7tc6j3xs9ph-n10_gqih" mz="quantityLbl_01">已获得：</string>
   <string name="66sh7tc6j3xs9ph-n12_gqih" mz="tabHeadBtn">头像</string>
@@ -691,4 +703,44 @@
   <string name="66sh7tc6j3xs9p7-n55_gqih" mz="n55">基础信息</string>
   <string name="66sh7tc6j3xs9p7-n58_gqih" mz="n58">我的资源</string>
   <string name="66sh7tc6j3xs9p7-n60_gqih" mz="n60">其它</string>
+  <!-- SettingPKG/components/settingSel0.xml -->
+  <string name="dh3hukhzjyqrh-n15_jyqr" mz="selbtn">均衡</string>
+  <string name="dh3hukhzjyqrh-n16_ax40" mz="selbtn1">优质</string>
+  <string name="dh3hukhzjyqrh-n17_ax40" mz="selbtn2">完美</string>
+  <!-- SettingPKG/components/settingSel1.xml -->
+  <string name="dh3hukhzjyqrj-n21_jyqr" mz="selbtn">标准</string>
+  <string name="dh3hukhzjyqrj-n22_ax40" mz="selbtn1">流畅</string>
+  <!-- SettingPKG/components/settingSelBtn.xml -->
+  <string name="dh3hukhzjyqri-n12_jyqr" mz="title">完美</string>
+  <!-- SettingPKG/components/settingSwitchBtn1.xml -->
+  <string name="dh3hukhzjyqrg-n12_hddb" mz="off">关</string>
+  <string name="dh3hukhzjyqrg-n11_hddb" mz="on">开</string>
+  <!-- SettingPKG/panel/SettingMainView.xml -->
+  <string name="dh3hukhzg30w1-n2_g30w" mz="frame">设置</string>
+  <string name="dh3hukhzg30w1-n6_g30w" mz="tab01">设置</string>
+  <string name="dh3hukhzg30w1-n49_b6o0" mz="tab02">礼包兑换</string>
+  <string name="dh3hukhzg30w1-n3_g30w" mz="title_advanced">声音设置</string>
+  <string name="dh3hukhzg30w1-n3_g30w-texts_def" mz="title_advanced">声音设置</string>
+  <string name="dh3hukhzg30w1-n11_g30w" mz="music">音乐</string>
+  <string name="dh3hukhzg30w1-n12_g30w" mz="sound">音效</string>
+  <string name="dh3hukhzg30w1-n13_g30w" mz="musicvol">音乐音量</string>
+  <string name="dh3hukhzg30w1-n14_g30w" mz="soundvol">音效音量</string>
+  <string name="dh3hukhzg30w1-n99_jyqr" mz="title_voice">其他设置</string>
+  <string name="dh3hukhzg30w1-n99_jyqr-texts_0" mz="title_voice">其他设置</string>
+  <string name="dh3hukhzg30w1-n99_jyqr-texts_def" mz="title_voice">画面设置</string>
+  <string name="dh3hukhzg30w1-n52_b6o0" mz="visual">画面效果</string>
+  <string name="dh3hukhzg30w1-n56_b6o0" mz="pictureBtn1">均衡</string>
+  <string name="dh3hukhzg30w1-n53_b6o0" mz="frameTxt">帧率选择</string>
+  <string name="dh3hukhzg30w1-n59_b6o0" mz="framesBtn1">标准</string>
+  <string name="dh3hukhzg30w1-n54_b6o0" mz="shielding">屏蔽特效</string>
+  <string name="dh3hukhzg30w1-n108_kb0i" mz="hurtText">全部伤害飘字</string>
+  <string name="dh3hukhzg30w1-n111_9xph" mz="troopNumText">部队真实模型</string>
+  <string name="dh3hukhzg30w1-n113_jic0" mz="troopNumBtn">均衡</string>
+  <string name="dh3hukhzg30w1-n46_b6o0" mz="announcementBtn">游戏公告</string>
+  <string name="dh3hukhzg30w1-n47_b6o0" mz="customerServiceBtn">客服</string>
+  <string name="dh3hukhzg30w1-n48_b6o0" mz="switchSccountsBtn">切换账号</string>
+  <string name="dh3hukhzg30w1-n115_qlgs" mz="addCopyBtn">粘贴</string>
+  <string name="dh3hukhzg30w1-n116_qlgs" mz="awardBtn">领取</string>
+  <string name="dh3hukhzg30w1-n118_qlgs" mz="n118">关注微信公众号，每周领取微信福利礼包。</string>
+  <string name="dh3hukhzg30w1-n119_qlgs" mz="txtCopyBtn">复制公众号</string>
 </resources>
