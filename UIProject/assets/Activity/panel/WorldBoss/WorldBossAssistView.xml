@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n84_gr02" name="mask" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n42_gr02" name="bg" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n83_gr02"/>
+    <component id="n43_gr02" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n83_gr02"/>
+    <text id="n44_gr02" name="title" xy="364,70" pivot="0.5,0.5" size="596,46" group="n83_gr02" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,4" text="首领协助"/>
+    <list id="n72_gr02" name="targetList" xy="199,144" size="940,472" group="n83_gr02" overflow="scroll" lineGap="4" defaultItem="ui://sinorujtgr021ygcfg3">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n85_gr02" name="tipte" xy="258,630" size="304,29" group="n83_gr02" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#50382e" text="协助玩家不会消耗自己的攻击次数"/>
+    <image id="n86_gr02" name="n86" src="vb7khz9czn" fileName="images/images_new/com_btn_explain01_1.png" pkg="2r331opv" xy="222,630" group="n83_gr02"/>
+    <group id="n83_gr02" name="window" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="t0" autoPlay="true"/>
+</component>

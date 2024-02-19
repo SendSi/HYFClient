@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="320,95" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_w84w" name="n0" src="rjiw1ygcfiy" fileName="images/LimitShop/LimitShop_btn5.png" xy="0,0"/>
+    <text id="n2_w84w" name="sell" xy="29,14" pivot="0.5,0.5" size="262,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#fff331" align="center" vAlign="middle" autoSize="none" singleLine="true" text="售卖"/>
+    <text id="n3_rjiw" name="title" xy="28,51" pivot="0.5,0.5" size="263,29" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="该市集可出售个数：666"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".96"/>
+</component>

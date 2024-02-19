@@ -12,7 +12,7 @@ namespace MainCenter
         public GTextField _powerNum;
         public GTextField _nameLbl;
         public GTextField _lvLbl;
-        public GList _activityList;
+        public GList _funcList;
         public GComponent _currencyListCom;
         public GButton _settingBtn;
         public const string URL = "ui://4ni413laxoe1n2";
@@ -31,7 +31,7 @@ namespace MainCenter
             _powerNum = (GTextField)GetChild("powerNum");
             _nameLbl = (GTextField)GetChild("nameLbl");
             _lvLbl = (GTextField)GetChild("lvLbl");
-            _activityList = (GList)GetChild("activityList");
+            _funcList = (GList)GetChild("funcList");
             _currencyListCom = (GComponent)GetChild("currencyListCom");
             _settingBtn = (GButton)GetChild("settingBtn");
         }

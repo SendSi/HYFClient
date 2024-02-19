@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="344,120">
+  <displayList>
+    <image id="n0_to9j" name="n0" src="to9jhz9d4y" fileName="images/num/league_crit.png" pkg="lp3m5cuh" xy="11,31"/>
+    <image id="n1_to9j" name="n1" src="to9jhz9d59" fileName="images/num/league_crit_multiply.png" pkg="lp3m5cuh" xy="191,33" group="n3_to9j" rotation="-8"/>
+    <text id="n4_vsu6" name="title" xy="236,14" size="98,72" group="n3_to9j" rotation="-6" font="ui://2r331opvvsu61ygcgni" fontSize="20" color="#ffffff" text="22"/>
+    <group id="n3_to9j" name="number" xy="191,14" size="143,72" advanced="true"/>
+  </displayList>
+</component>

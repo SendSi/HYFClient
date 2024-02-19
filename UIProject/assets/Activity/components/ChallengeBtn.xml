@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="130,131" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_tg9h" name="n0" src="tg9hhz9d0p" fileName="images/activity_btn_bg012.png" xy="0,0"/>
+    <text id="n1_tg9h" name="title" xy="0,100" size="130,38" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#7f2222" strokeSize="2" shadowColor="#7f2222" shadowOffset="2,2" singleLine="true" text="开启挑战">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

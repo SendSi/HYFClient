@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="890,149" overflow="scroll">
+  <displayList>
+    <text id="n119_cvsp" name="ruleLbl" xy="0,0" size="890,149" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" ubb="true" autoSize="none" autoClearText="true" text="1.联盟为单位参加，每日有3次机会挑战 &#xA;2.联盟排行奖励，每日0点结算，奖励会通过邮件发送">
+      <relation target="" sidePair="width-width,middle-middle"/>
+    </text>
+  </displayList>
+</component>

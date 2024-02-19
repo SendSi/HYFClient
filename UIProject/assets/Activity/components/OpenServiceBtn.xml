@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="134,166" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="已开启"/>
+    <remark page="1" value="已结束"/>
+    <remark page="2" value="未开启"/>
+  </controller>
+  <displayList>
+    <loader id="n2_ewrz" name="icon" xy="0,0" size="134,166" url="ui://sinorujtcsb41ygcfhs" align="center" vAlign="middle">
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearColor controller="state" pages="1,2" values="#ffffff|#ffffff" default="#ffffff"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <component id="n3_ewrz" name="propBtn" src="uovc1ygcfhm" fileName="components/components_new/comIcon.xml" pkg="2r331opv" xy="7,27" pivot="0.5,0.5" scale="0.66,0.66">
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearColor controller="state" default="#000000"/>
+    </component>
+    <text id="n1_ewrz" name="title" xy="18,20" size="97,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#9b4223" strokeSize="2" shadowColor="#9b4223" shadowOffset="1,2" singleLine="true" text="第一天">
+      <gearColor controller="state" pages="0,1,2" values="#ffffff,#9b4223|#ffffff,#723c29|#ffffff,#723c29"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n4_ewrz" name="n4" src="csb41ygcfhs" fileName="images/open_service/openservice_bg00.png" xy="0,0" alpha="0.7" color="#000000">
+      <gearDisplay controller="state" pages="1,2"/>
+    </image>
+    <image id="n5_ewrz" name="n5" src="u6yzhz9cpx" fileName="images/images_new/com_icon_lock.png" pkg="2r331opv" xy="52,71" pivot="0.5,0.5" size="29,39" aspect="true" color="#666666">
+      <gearDisplay controller="state" pages="2"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

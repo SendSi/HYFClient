@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="140,41" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_mzrr" name="icon" xy="0,0" size="140,41" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n4_mzrr" name="n4" xy="24,4" pivot="0.5,0.5" size="92,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#94e957" align="center" underline="true" singleLine="true" text="奖池预览">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

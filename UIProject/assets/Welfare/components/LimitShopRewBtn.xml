@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="102,62" pivot="0.5,0.5" extention="Button" designImage="ui://zezobey9z04phz9cxk" designImageOffsetX="-445" designImageOffsetY="-585">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="可领取"/>
+    <remark page="1" value="已领取"/>
+    <remark page="2" value="不可领取"/>
+  </controller>
+  <displayList>
+    <loader id="n4_eaah" name="icon" xy="0,2" pivot="0.5,0.5" size="64,64" aspect="true" url="ui://tsbe09ddlcfjz" align="center" vAlign="middle" fill="scale">
+      <gearLook controller="state" pages="2" values="1,0,1,1" default="1,0,0,1"/>
+      <gearIcon controller="state" pages="1" values="ui://tsbe09ddz04p9ck4" default="ui://tsbe09ddlcfjz"/>
+    </loader>
+    <text id="n6_w7qq" name="title" xy="57,23" size="42,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" strokeColor="#844d30" shadowColor="#844d30" shadowOffset="1,1" text="1级"/>
+    <loader id="n8_m6fl" name="red" xy="51,16" pivot="0.5,0.5" anchor="true" size="25,25" aspect="true" url="ui://2r331opvdix6fj" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="t0">
+    <item time="0" type="Rotation" target="n4_eaah" tween="true" startValue="0" endValue="8" duration="2"/>
+    <item time="2" type="Rotation" target="n4_eaah" tween="true" startValue="8" endValue="-8" duration="2"/>
+    <item time="4" type="Rotation" target="n4_eaah" tween="true" startValue="-8" endValue="0" duration="2"/>
+    <item time="6" type="Rotation" target="n4_eaah" tween="true" startValue="0" endValue="5" duration="2"/>
+    <item time="8" type="Rotation" target="n4_eaah" tween="true" startValue="5" endValue="-5" duration="2"/>
+    <item time="10" type="Rotation" target="n4_eaah" tween="true" startValue="-5" endValue="0" duration="2"/>
+    <item time="12" type="Size" target="n4_eaah" tween="true" startValue="66,66" endValue="80,80" duration="6"/>
+    <item time="18" type="Size" target="n4_eaah" tween="true" startValue="80,80" endValue="66,66" duration="7"/>
+    <item time="25" type="Size" target="n4_eaah" tween="true" startValue="66,66" endValue="80,80" duration="4"/>
+    <item time="29" type="Size" target="n4_eaah" tween="true" startValue="80,80" endValue="66,66" duration="3"/>
+  </transition>
+</component>

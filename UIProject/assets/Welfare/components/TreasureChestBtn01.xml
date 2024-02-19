@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,200" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="5,,6,,7,,8,,9," selected="0">
+    <action type="play_transition" fromPage="0" toPage="5" transition="t0" delay="1"/>
+  </controller>
+  <displayList>
+    <loader id="n3_hsk6" name="icon" xy="0,0" pivot="0.5,0.5" size="200,200" url="ui://340eighfs1uz1ygcfld" align="center" fill="scaleFree">
+      <gearIcon controller="state" pages="6,7,8,9" values="ui://340eighfs1uz1ygcflf|ui://340eighfs1uz1ygcflh|ui://340eighfs1uz1ygcflj|ui://340eighfs1uz1ygcfll" default="ui://340eighfs1uz1ygcfld"/>
+    </loader>
+    <loader id="n5_hsk6" name="iconOpen" xy="0,0" pivot="0.5,0.5" size="200,200" url="ui://340eighfs1uz1ygcfle" align="center" fill="scaleFree">
+      <gearIcon controller="state" pages="5,6,7,8,9" values="ui://340eighfs1uz1ygcfle|ui://340eighfs1uz1ygcflg|ui://340eighfs1uz1ygcfli|ui://340eighfs1uz1ygcflk|ui://340eighfs1uz1ygcflm"/>
+    </loader>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+  <transition name="open">
+    <item time="0" type="Size" target="n3_hsk6" tween="true" startValue="200,200" endValue="200,176" duration="12" ease="Custom" customEase="2,0,0,0.2925,0.1875,0.7175,0.7575,1,0,1,1"/>
+    <item time="0" type="Visible" target="n5_hsk6" value="false"/>
+    <item time="13" type="Size" target="n5_hsk6" value="200,200"/>
+    <item time="13" type="Size" target="n5_hsk6" tween="true" startValue="200,200" endValue="184,254" duration="4"/>
+    <item time="13" type="Visible" target="n3_hsk6" value="false"/>
+    <item time="13" type="Visible" target="n5_hsk6" value="true"/>
+    <item time="17" type="Size" target="n5_hsk6" tween="true" startValue="184,254" endValue="200,230" duration="2"/>
+  </transition>
+</component>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame" designImageAlpha="30" designImageLayer="1">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="首通"/>
+    <remark page="1" value="已首通"/>
+  </controller>
+  <controller name="challenge" pages="0,,1,,2," selected="0">
+    <remark page="0" value="挑战"/>
+    <remark page="1" value="前往"/>
+    <remark page="2" value="刷新倒计时"/>
+  </controller>
+  <displayList>
+    <loader id="n7_w84w" name="bg" xy="-168,0" size="1670,750" url="ui://sinorujttx7rd" align="center" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n27_qt63" name="bossModel" xy="0,0" size="1334,750" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </loader>
+    <image id="n28_fmww" name="n28" src="hxd7hz9d7j" fileName="images/images_new/title_bg01.png" pkg="2r331opv" xy="0,0" size="524,65" group="n20_s9vk" alpha="0.6"/>
+    <text id="n1_w84w" name="title" xy="136,-2" size="351,66" group="n20_s9vk" font="ui://2r331opvno3vhz9d63" fontSize="40" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#232675" strokeSize="2" shadowColor="#232675" shadowOffset="4,4" singleLine="true" text="地狱恶犬"/>
+    <component id="n3_w84w" name="closeButton" src="tv1v1a" fileName="components/components_new/com_btn_close.xml" pkg="2r331opv" xy="0,0" size="110,68" group="n20_s9vk"/>
+    <list id="n35_m7tg" name="list_chief" xy="25,93" size="123,620" group="n20_s9vk" overflow="scroll" lineGap="-17" defaultItem="ui://2r331opvqajo1ygcfok" treeView="true" indent="27" clickToExpand="1">
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+      <item level="0"/>
+    </list>
+    <group id="n20_s9vk" name="Left" xy="0,-2" size="524,715" advanced="true"/>
+    <image id="n100_x3en" name="n100" src="x3en1ygcfsv" fileName="images/activity_bg023.png" xy="1052,681" pivot="0.5,0.5" size="246,42" group="n88_m7tg">
+      <gearDisplay controller="challenge" pages="2"/>
+      <relation target="n101_x3en" sidePair="width-width"/>
+    </image>
+    <text id="n101_x3en" name="timeLbl" xy="1074,684" pivot="0.5,0.5" size="162,32" group="n88_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" letterSpacing="-2" strokeColor="#780000" shadowColor="#780000" shadowOffset="1,3" singleLine="true" text="00:00:58后可挑战">
+      <gearDisplay controller="challenge" pages="2"/>
+    </text>
+    <text id="n63_m7tg" name="introductiontitle" xy="999,102" size="205,34" group="n88_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="24" vAlign="middle" singleLine="true" text="血月入侵-中级首领"/>
+    <richtext id="n64_m7tg" name="name" xy="999,130" size="212,69" group="n88_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="52" ubb="true" autoClearText="true" text="索塔兰达"/>
+    <list id="n65_m7tg" name="label_list" xy="1000,199" size="317,23" group="n88_m7tg" layout="row" colGap="10" defaultItem="ui://sinorujts4xx1ygcfoj">
+      <item/>
+      <item/>
+    </list>
+    <text id="n66_m7tg" name="textPower" xy="999,233" size="124,34" group="n88_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="24" text="推荐兵种："/>
+    <image id="n97_qajo" name="n97" src="ia6s1ygcfn1" fileName="images/images_new/com_bg_tips02_mask.png" pkg="2r331opv" xy="997,282" size="325,158" group="n79_m7tg" alpha="0.7" flip="both"/>
+    <image id="n98_qajo" name="n98" src="qajo1ygcgm4" fileName="images/images_new/windowBg_new/welfare_btn_bg12.png" pkg="2r331opv" xy="1003,289" size="312,35" group="n79_m7tg"/>
+    <text id="n75_m7tg" name="awardtitle" xy="1015,290" size="248,34" group="n79_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" letterSpacing="-2" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" text="首次三星通关奖励预览：">
+      <gearText controller="state" pages="0,1" values="首次三星通关奖励预览：|三星通关奖励预览："/>
+    </text>
+    <list id="n89_m7tg" name="award_list" xy="1008,330" size="363,118" group="n79_m7tg" scale="0.8,0.8" layout="row" overflow="hidden" colGap="-3" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <group id="n79_m7tg" name="award" xy="997,282" size="374,166" group="n88_m7tg"/>
+    <component id="n85_m7tg" name="challengeBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="1016,582" size="288,97" group="n86_m7tg">
+      <gearDisplay controller="challenge" pages="0,2"/>
+      <gearLook controller="challenge" pages="2" values="1,0,1,1" default="1,0,0,1"/>
+      <Button title="挑战" titleFontSize="38" icon="ui://2r331opvqajo1ygcgm3"/>
+    </component>
+    <component id="n96_jo46" name="gotoBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="1016,583" size="288,97" group="n86_m7tg">
+      <gearDisplay controller="challenge" pages="1"/>
+      <Button title="前往" titleFontSize="38" icon="ui://2r331opvqajo1ygcgm3"/>
+    </component>
+    <text id="n91_m7tg" name="texttip" xy="1070,682" size="178,29" group="n86_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#468ab6" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,2" text="tip:首通不消耗次数">
+      <gearDisplay controller="state" pages="0"/>
+      <gearDisplay2 controller="challenge" pages="0,1" condition="0"/>
+    </text>
+    <group id="n86_m7tg" name="challenge" xy="1016,582" size="288,129" group="n88_m7tg"/>
+    <image id="n99_qajo" name="n99" src="qajo1ygcgm7" fileName="images/images_new/windowBg_new/welfare_btn_bg15.png" pkg="2r331opv" xy="1062,10" size="240,32" group="n88_m7tg"/>
+    <text id="n84_m7tg" name="textnum" xy="1073,13" size="177,26" group="n88_m7tg" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="今日剩余挑战次数：2"/>
+    <list id="n87_m7tg" name="label_list2" xy="1109,230" size="209,38" group="n88_m7tg" layout="row" overflow="scroll" colGap="10" defaultItem="ui://sinorujts4xx1ygcfok">
+      <item/>
+      <item/>
+    </list>
+    <component id="n90_m7tg" name="addBtn" src="ceggz9cor" fileName="components/components_new/com_btn_plus.xml" pkg="2r331opv" xy="1249,-21" size="91,94" group="n88_m7tg" scale="0.72,0.72">
+      <Button icon="ui://2r331opvceggz9cop"/>
+    </component>
+    <group id="n88_m7tg" name="right" xy="997,-21" size="374,744" advanced="true">
+      <relation target="" sidePair="middle-middle,left-right"/>
+    </group>
+    <image id="n92_m7tg" name="n92" src="o5d41qp8ve6" fileName="images/images_new/com_bg_tips02_mask3.png" pkg="2r331opv" xy="368,652" size="422,65" group="n95_m7tg" color="#000000"/>
+    <list id="n94_m7tg" name="star_list" xy="360,659" pivot="0.5,0.5" size="436,52" group="n95_m7tg" layout="row" overflow="hidden" colGap="22" defaultItem="ui://2r331opvcxixz9cmd" align="center" vAlign="middle">
+      <item title="3星"/>
+      <item title="4星"/>
+      <item title="5星"/>
+    </list>
+    <group id="n95_m7tg" name="middle" xy="360,652" size="436,65" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n95_m7tg" tween="true" startValue="0" endValue="0.7" duration="6"/>
+    <item time="0" type="XY" target="n20_s9vk" tween="true" startValue="-526,-2" endValue="0,-2" duration="11" ease="Back.Out"/>
+    <item time="0" type="XY" target="n88_m7tg" tween="true" startValue="1421,-15" endValue="997,-15" duration="11" ease="Back.Out"/>
+    <item time="6" type="Alpha" target="n95_m7tg" tween="true" startValue="0.7" endValue="1" duration="5"/>
+  </transition>
+</component>

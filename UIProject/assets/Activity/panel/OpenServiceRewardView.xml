@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <displayList>
+    <component id="n13_tg9h" name="n13" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0" size="1665,750">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <component id="n11_xv8w" name="closeButton" src="arx1z9cjj" fileName="components/components_new/com_btn_closeBlank.xml" pkg="2r331opv" xy="0,-1" size="1334,750">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <image id="n0_w84w" name="n0" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="392,94" size="549,578" group="n19_tg9h"/>
+    <image id="n14_tg9h" name="n14" src="kajr1qp8vf5" fileName="images/images_new/windowBg_new/title_bg01.png" pkg="2r331opv" xy="385,84" pivot="0.5,0.5" size="563,85" group="n19_tg9h" visible="false"/>
+    <text id="n2_w84w" name="title_name" xy="419,116" pivot="0.5,0.5" size="496,39" group="n19_tg9h" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#845744" align="center" autoSize="none" text="排行奖励"/>
+    <list id="n18_tg9h" name="list" xy="420,164" size="494,479" group="n19_tg9h" overflow="scroll" lineGap="4" defaultItem="ui://sinorujttg9hhz9d0j">
+      <relation target="n0_w84w" sidePair="bottom-bottom"/>
+      <item title="第1名" icon="ui://sinorujttg9hhz9d0d"/>
+      <item title="第2名" icon="ui://sinorujttg9hhz9d0e"/>
+      <item title="第3名" icon="ui://sinorujttg9hhz9d0f"/>
+      <item title="第4名" icon="ui://sinorujttg9hhz9d0g"/>
+      <item title="第5名" icon="ui://sinorujttg9hhz9d0g"/>
+      <item title="第6名" icon="ui://sinorujttg9hhz9d0g"/>
+      <item title="第7名" icon="ui://sinorujttg9hhz9d0g"/>
+    </list>
+    <group id="n19_tg9h" name="n19" xy="385,84" size="563,588" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

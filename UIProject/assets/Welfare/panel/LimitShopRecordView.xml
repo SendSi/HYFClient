@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <displayList>
+    <component id="n2_cmbv" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cmbv" name="n1" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n12_cmbv"/>
+    <text id="n3_cmbv" name="title" xy="628,70" pivot="0.5,0.5" size="72,46" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,4" text="账本"/>
+    <image id="n22_cmbv" name="n22" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="221,222" size="892,36" group="n12_cmbv"/>
+    <text id="n29_cmbv" name="timeTxt" xy="318,223" pivot="0.5,0.5" size="52,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="时间"/>
+    <text id="n30_cmbv" name="sourceTxt" xy="618,223" pivot="0.5,0.5" size="100,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="获得来源"/>
+    <text id="n31_cmbv" name="richerTxt" xy="920,223" pivot="0.5,0.5" size="52,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="进账"/>
+    <text id="n19_cmbv" name="sellTxt" xy="224,168" size="124,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" text="售卖所得："/>
+    <image id="n26_cmbv" name="n26" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="4ni413la" xy="337,165" size="161,40" group="n12_cmbv" alpha="0.5"/>
+    <text id="n27_cmbv" name="sellNum" xy="379,168" pivot="0.5,0.5" size="115,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#b26105" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="+1000"/>
+    <loader id="n28_cmbv" name="iconsell" xy="340,165" size="40,40" group="n12_cmbv" aspect="true" url="ui://tsbe09ddmz4w3" fill="scaleFree"/>
+    <text id="n32_cmbv" name="profitTxt" xy="607,168" size="124,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" text="今日利润："/>
+    <image id="n33_cmbv" name="n33" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="4ni413la" xy="720,165" size="161,40" group="n12_cmbv" alpha="0.5"/>
+    <text id="n34_cmbv" name="profitNum" xy="762,168" pivot="0.5,0.5" size="115,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#b26105" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="+1000"/>
+    <loader id="n35_cmbv" name="iconprofit" xy="723,165" size="40,40" group="n12_cmbv" aspect="true" url="ui://tsbe09ddmz4w3" fill="scaleFree"/>
+    <list id="n7_cmbv" name="buildList" xy="221,265" size="892,382" group="n12_cmbv" layout="flow_hz" selectionMode="multipleSingleClick" overflow="scroll" lineGap="5" defaultItem="ui://340eighfcmbv1ygcfjs" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n11_cmbv" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n12_cmbv"/>
+    <group id="n12_cmbv" name="window" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="202,78" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="buy" pages="0,,1," selected="0">
+    <remark page="0" value="原价"/>
+    <remark page="1" value="折扣"/>
+  </controller>
+  <displayList>
+    <image id="n0_hsk6" name="n0" src="c4umz9cna" fileName="images/images_new/com_btn_bg01.png" pkg="2r331opv" xy="0,0" size="202,78">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_hsk6" name="title" xy="47,19" pivot="0.5,0.5" size="107,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="2,3" singleLine="true" text="￥68.00">
+      <gearXY controller="buy" pages="0" values="47,19" default="52,30"/>
+    </text>
+    <text id="n2_hsk6" name="title01" xy="63,7" pivot="0.5,0.5" size="85,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="2,3" singleLine="true" text="￥36.00">
+      <gearDisplay controller="buy" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <graph id="n4_hsk6" name="n4" xy="32,22" size="137,3" type="rect" lineSize="0" lineColor="#00000000" fillColor="#ffe43523">
+      <gearDisplay controller="buy" pages="1"/>
+    </graph>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

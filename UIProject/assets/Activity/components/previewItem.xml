@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="892,82">
+  <displayList>
+    <image id="n36_g6ic" name="n36" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="0,0" size="892,82" alpha="0.3">
+      <relation target="" sidePair="height-height"/>
+    </image>
+    <text id="n32_itho" name="title" xy="67,24" size="18,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" singleLine="true" autoClearText="true" text="1"/>
+    <text id="n33_itho" name="description" xy="251,24" pivot="0.5,0.5" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" leading="0" autoClearText="true" text="盟主"/>
+    <list id="n34_g6ic" name="icon_list" xy="476,0" size="592,117" scale="0.7,0.7" layout="row" selectionMode="none" overflow="hidden" colGap="4" defaultItem="ui://2r331opvee2ik0">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

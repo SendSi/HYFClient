@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <loader id="n2_w84w" name="Personal_leader" xy="311,74" size="970,646" group="n27_o79k" touchable="false" url="ui://340eighfb0uj1ygcfij" align="center" vAlign="middle" fill="scaleFree"/>
+    <text id="n26_b0uj" name="describelbl01" xy="420,87" pivot="0.5,0.5" size="753,42" group="n27_o79k" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#fdff55" align="center" leading="0" autoSize="none" shadowColor="#f46200" shadowOffset="0,2" singleLine="true" text="充值任意金额可领取本日双倍签到奖励！"/>
+    <text id="n10_w84w" name="describelbl" xy="420,124" pivot="0.5,0.5" size="753,29" group="n27_o79k" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" leading="0" autoSize="none" shadowColor="#422a81" shadowOffset="0,2" singleLine="true" text="剩余时间：1天02:20:30"/>
+    <component id="n24_b0uj" name="list" src="rs9w1ygcfmt" fileName="components/CheckInPanelListCut.xml" xy="316,171" size="960,548" group="n27_o79k"/>
+    <text id="n28_av6e" name="fresh" xy="1106,124" pivot="1,0" size="156,29" group="n27_o79k" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="right" leading="0" shadowColor="#422a81" shadowOffset="0,2" singleLine="true" text="每日凌晨5点刷新"/>
+    <group id="n27_o79k" name="n27" xy="311,74" size="970,646" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

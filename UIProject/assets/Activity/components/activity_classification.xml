@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="273,32">
+  <displayList>
+    <text id="n0_w84w" name="title" xy="94,7" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#29286e" align="center" text="日常活动"/>
+    <image id="n1_w84w" name="n1" src="tx7rf" fileName="images/activity_bg01.png" xy="12,18" size="80,9" flip="hz">
+      <relation target="n0_w84w" sidePair="rightext-left"/>
+    </image>
+    <image id="n2_w84w" name="n2" src="tx7rf" fileName="images/activity_bg01.png" xy="181,18" pivot="1,0" size="80,9">
+      <relation target="n0_w84w" sidePair="leftext-right"/>
+    </image>
+  </displayList>
+</component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="309,66" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="刷新"/>
+    <remark page="1" value="时间"/>
+  </controller>
+  <displayList>
+    <image id="n0_z3v6" name="n0" src="r616z9cp6" fileName="images/images_new/com_bg_tips02_mask.png" pkg="2r331opv" xy="0,0" size="309,66">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_z3v6" name="n1" src="ha7x1c" fileName="images/choice_bg.png" xy="0,0" size="309,66" alpha="0.9">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_z3v6" name="title" xy="5,19" size="298,26" fontSize="18" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="Chief · Lion King">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <loader id="n3_z3v6" name="icon" xy="15,5" size="61,54" align="center" vAlign="middle">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n4_z3v6" name="statelbl" xy="154,41" size="152,24" fontSize="16" color="#72faff" align="right" vAlign="middle" autoSize="none" singleLine="true" text="Refreshed">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n5_n41a" name="timelbl" xy="154,41" size="152,24" fontSize="16" color="#72faff" align="right" vAlign="middle" autoSize="none" singleLine="true" text="25:41">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

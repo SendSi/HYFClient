@@ -1,4 +1,5 @@
-﻿using Bag;
+﻿using Activity;
+using Bag;
 using DialogTip;
 using Login;
 using MainCenter;
@@ -7,6 +8,7 @@ using CommonPKG;
 using GMView;
 using SettingPKG;
 using UnityEngine;
+using Welfare;
 
 public class UIGenBinder
 {
@@ -22,5 +24,7 @@ public class UIGenBinder
         CommonPKGBinder.BindAll();
         GMViewBinder.BindAll();
         SettingPKGBinder.BindAll();
+        WelfareBinder.BindAll();
+        ActivityBinder.BindAll();
     }
 }

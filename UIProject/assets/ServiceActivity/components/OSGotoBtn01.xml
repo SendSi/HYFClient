@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="82,83" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_tg9h" name="n0" src="qx1k1ygcfmy" fileName="images/new/carnival_bg17.png" xy="3,1">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_tg9h" name="title" xy="-1,66" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" leading="0" shadowColor="#346581" shadowOffset="1,2" singleLine="true" text="前往提升">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

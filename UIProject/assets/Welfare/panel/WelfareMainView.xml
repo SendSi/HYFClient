@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" initName="frame">
+  <displayList>
+    <loader id="n38_g2er" name="bg" xy="-168,0" size="1670,750" url="ui://340eighf9sqn1ygcfic" align="center" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n39_m5j8" name="n39" src="8ur01ygcfmm" fileName="images/images_new/windowBg_new/welfare_btn_bg10.png" pkg="2r331opv" xy="0,0" size="290,750" group="n20_s9vk">
+      <relation target="" sidePair="height-height"/>
+    </image>
+    <image id="n34_mqls" name="n34" src="mqls1iy5bed" fileName="_new/activity_bg019.png" pkg="2r331opv" xy="0,0" pivot="1,0" size="260,750" group="n20_s9vk" visible="false" alpha="0.7"/>
+    <list id="n29_pc5k" name="leftTabList" xy="21,79" size="261,671" group="n20_s9vk" overflow="scroll" lineGap="3" defaultItem="ui://2r331opvmqls1ygcfi8">
+      <relation target="" sidePair="bottomext-bottom"/>
+      <item title="成长基金"/>
+      <item title="首充大礼包"/>
+      <item title="每日特惠"/>
+      <item title="特惠礼包"/>
+      <item url="ui://340eighfdfim1ygcfpi"/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n3_w84w" name="closeButton" src="tv1v1a" fileName="components/com_btn_close.xml" pkg="2r331opv" xy="0,0" size="110,68" group="n20_s9vk"/>
+    <group id="n20_s9vk" name="Left" xy="0,0" size="290,750" advanced="true"/>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="XY" target="n20_s9vk" tween="true" startValue="-526,0" endValue="0,0" duration="11" ease="Back.Out"/>
+  </transition>
+</component>

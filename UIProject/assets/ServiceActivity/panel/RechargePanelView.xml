@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" extention="Label" initName="frame">
+  <displayList>
+    <component id="n72_qx1k" name="bg" src="nkto1ygcfpx" fileName="components/rechargeItem.xml" xy="307,75">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>

@@ -17,10 +17,12 @@ namespace FairyGUI
         /// Root container.
         /// </summary>
         public Container rootContainer { get; private set; }
+
         /// <summary>
         /// Content container. If the component is not clipped, then container==rootContainer.
         /// </summary>
         public Container container { get; protected set; }
+
         /// <summary>
         /// ScrollPane of the component. If the component is not scrollable, the value is null.
         /// </summary>
@@ -80,8 +82,7 @@ namespace FairyGUI
                 c.Dispose();
             }
 
-            if (scrollPane != null)
-                scrollPane.Dispose();
+            if (scrollPane != null) scrollPane.Dispose();
 
             base.Dispose(); //Dispose native tree first, avoid DisplayObject.RemoveFromParent call
 
@@ -191,8 +192,7 @@ namespace FairyGUI
                 {
                     _apexIndex = value;
 
-                    if (_childrenRenderOrder == ChildrenRenderOrder.Arch)
-                        BuildNativeDisplayList();
+                    if (_childrenRenderOrder == ChildrenRenderOrder.Arch) BuildNativeDisplayList();
                 }
             }
         }
@@ -244,8 +244,7 @@ namespace FairyGUI
                     }
                     else if (_sortingChildCount > 0)
                     {
-                        if (index > (cnt - _sortingChildCount))
-                            index = cnt - _sortingChildCount;
+                        if (index > (cnt - _sortingChildCount)) index = cnt - _sortingChildCount;
                     }
 
                     if (index == cnt)
@@ -256,6 +255,7 @@ namespace FairyGUI
                     ChildStateChanged(child);
                     SetBoundsChangedFlag();
                 }
+
                 return child;
             }
             else
@@ -271,12 +271,11 @@ namespace FairyGUI
             for (i = 0; i < cnt; i++)
             {
                 GObject child = _children[i];
-                if (child == target)
-                    continue;
+                if (child == target) continue;
 
-                if (target.sortingOrder < child.sortingOrder)
-                    break;
+                if (target.sortingOrder < child.sortingOrder) break;
             }
+
             return i;
         }
 
@@ -303,6 +302,7 @@ namespace FairyGUI
             {
                 RemoveChildAt(childIndex, dispose);
             }
+
             return child;
         }
 
@@ -330,8 +330,7 @@ namespace FairyGUI
 
                 child.InternalSetParent(null);
 
-                if (child.sortingOrder != 0)
-                    _sortingChildCount--;
+                if (child.sortingOrder != 0) _sortingChildCount--;
 
                 _children.RemoveAt(index);
                 child.group = null;
@@ -345,8 +344,7 @@ namespace FairyGUI
                     }
                 }
 
-                if (dispose)
-                    child.Dispose();
+                if (dispose) child.Dispose();
 
                 SetBoundsChangedFlag();
                 return child;
@@ -371,11 +369,9 @@ namespace FairyGUI
         /// <param name="dispose">If true, the child will be disposed right away.</param>
         public void RemoveChildren(int beginIndex, int endIndex, bool dispose)
         {
-            if (endIndex < 0 || endIndex >= numChildren)
-                endIndex = numChildren - 1;
+            if (endIndex < 0 || endIndex >= numChildren) endIndex = numChildren - 1;
 
-            for (int i = beginIndex; i <= endIndex; ++i)
-                RemoveChildAt(beginIndex, dispose);
+            for (int i = beginIndex; i <= endIndex; ++i) RemoveChildAt(beginIndex, dispose);
         }
 
         /// <summary>
@@ -401,8 +397,7 @@ namespace FairyGUI
             int cnt = _children.Count;
             for (int i = 0; i < cnt; ++i)
             {
-                if (_children[i].name == name)
-                    return _children[i];
+                if (_children[i].name == name) return _children[i];
             }
 
             return null;
@@ -417,8 +412,7 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 obj = gcom.GetChild(arr[i]);
-                if (obj == null)
-                    break;
+                if (obj == null) break;
 
                 if (i != cnt - 1)
                 {
@@ -446,8 +440,7 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 GObject child = _children[i];
-                if (child.internalVisible && child.internalVisible2 && child.name == name)
-                    return child;
+                if (child.internalVisible && child.internalVisible2 && child.name == name) return child;
             }
 
             return null;
@@ -465,8 +458,7 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 GObject child = _children[i];
-                if (child.group == group && child.name == name)
-                    return child;
+                if (child.group == group && child.name == name) return child;
             }
 
             return null;
@@ -477,8 +469,7 @@ namespace FairyGUI
             int cnt = _children.Count;
             for (int i = 0; i < cnt; ++i)
             {
-                if (_children[i].id == id)
-                    return _children[i];
+                if (_children[i].id == id) return _children[i];
             }
 
             return null;
@@ -511,8 +502,7 @@ namespace FairyGUI
         public void SetChildIndex(GObject child, int index)
         {
             int oldIndex = _children.IndexOf(child);
-            if (oldIndex == -1)
-                throw new ArgumentException("Not a child of this container");
+            if (oldIndex == -1) throw new ArgumentException("Not a child of this container");
 
             if (child.sortingOrder != 0) //no effect
                 return;
@@ -520,8 +510,7 @@ namespace FairyGUI
             if (_sortingChildCount > 0)
             {
                 int cnt = _children.Count;
-                if (index > (cnt - _sortingChildCount - 1))
-                    index = cnt - _sortingChildCount - 1;
+                if (index > (cnt - _sortingChildCount - 1)) index = cnt - _sortingChildCount - 1;
             }
 
             _SetChildIndex(child, oldIndex, index);
@@ -536,8 +525,7 @@ namespace FairyGUI
         public int SetChildIndexBefore(GObject child, int index)
         {
             int oldIndex = _children.IndexOf(child);
-            if (oldIndex == -1)
-                throw new ArgumentException("Not a child of this container");
+            if (oldIndex == -1) throw new ArgumentException("Not a child of this container");
 
             if (child.sortingOrder != 0) //no effect
                 return oldIndex;
@@ -545,8 +533,7 @@ namespace FairyGUI
             int cnt = _children.Count;
             if (_sortingChildCount > 0)
             {
-                if (index > (cnt - _sortingChildCount - 1))
-                    index = cnt - _sortingChildCount - 1;
+                if (index > (cnt - _sortingChildCount - 1)) index = cnt - _sortingChildCount - 1;
             }
 
             if (oldIndex < index)
@@ -558,11 +545,9 @@ namespace FairyGUI
         int _SetChildIndex(GObject child, int oldIndex, int index)
         {
             int cnt = _children.Count;
-            if (index > cnt)
-                index = cnt;
+            if (index > cnt) index = cnt;
 
-            if (oldIndex == index)
-                return oldIndex;
+            if (oldIndex == index) return oldIndex;
 
             _children.RemoveAt(oldIndex);
             if (index >= cnt)
@@ -578,9 +563,9 @@ namespace FairyGUI
                     for (int i = 0; i < index; i++)
                     {
                         GObject g = _children[i];
-                        if (g.inContainer)
-                            displayIndex++;
+                        if (g.inContainer) displayIndex++;
                     }
+
                     container.SetChildIndex(child.displayObject, displayIndex);
                 }
                 else if (_childrenRenderOrder == ChildrenRenderOrder.Descent)
@@ -588,9 +573,9 @@ namespace FairyGUI
                     for (int i = cnt - 1; i > index; i--)
                     {
                         GObject g = _children[i];
-                        if (g.inContainer)
-                            displayIndex++;
+                        if (g.inContainer) displayIndex++;
                     }
+
                     container.SetChildIndex(child.displayObject, displayIndex);
                 }
                 else
@@ -614,8 +599,7 @@ namespace FairyGUI
         {
             int index1 = _children.IndexOf(child1);
             int index2 = _children.IndexOf(child2);
-            if (index1 == -1 || index2 == -1)
-                throw new Exception("Not a child of this container");
+            if (index1 == -1 || index2 == -1) throw new Exception("Not a child of this container");
             SwapChildrenAt(index1, index2);
         }
 
@@ -648,17 +632,16 @@ namespace FairyGUI
         /// <returns></returns>
         public bool IsAncestorOf(GObject obj)
         {
-            if (obj == null)
-                return false;
+            if (obj == null) return false;
 
             GComponent p = obj.parent;
             while (p != null)
             {
-                if (p == this)
-                    return true;
+                if (p == this) return true;
 
                 p = p.parent;
             }
+
             return false;
         }
 
@@ -673,11 +656,11 @@ namespace FairyGUI
             for (int i = 0; i < cnt; i++)
             {
                 GObject obj = objs[i];
-                if (obj.parent != this)
-                    throw new Exception("Not a child of this container");
+                if (obj.parent != this) throw new Exception("Not a child of this container");
 
                 _children[i] = obj;
             }
+
             BuildNativeDisplayList();
             SetBoundsChangedFlag();
         }
@@ -714,8 +697,7 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 Controller c = _controllers[i];
-                if (c.name == name)
-                    return c;
+                if (c.name == name) return c;
             }
 
             return null;
@@ -728,8 +710,7 @@ namespace FairyGUI
         public void RemoveController(Controller c)
         {
             int index = _controllers.IndexOf(c);
-            if (index == -1)
-                throw new Exception("controller not exists: " + c.name);
+            if (index == -1) throw new Exception("controller not exists: " + c.name);
 
             c.parent = null;
             _controllers.RemoveAt(index);
@@ -772,8 +753,7 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 Transition trans = _transitions[i];
-                if (trans.name == name)
-                    return trans;
+                if (trans.name == name) return trans;
             }
 
             return null;
@@ -790,8 +770,7 @@ namespace FairyGUI
 
         internal void ChildStateChanged(GObject child)
         {
-            if (_buildingDisplayList)
-                return;
+            if (_buildingDisplayList) return;
 
             int cnt = _children.Count;
 
@@ -800,14 +779,13 @@ namespace FairyGUI
                 for (int i = 0; i < cnt; ++i)
                 {
                     GObject g = _children[i];
-                    if (g.group == child)
-                        ChildStateChanged(g);
+                    if (g.group == child) ChildStateChanged(g);
                 }
+
                 return;
             }
 
-            if (child.displayObject == null)
-                return;
+            if (child.displayObject == null) return;
 
             if (child.internalVisible)
             {
@@ -819,12 +797,11 @@ namespace FairyGUI
                         for (int i = 0; i < cnt; i++)
                         {
                             GObject g = _children[i];
-                            if (g == child)
-                                break;
+                            if (g == child) break;
 
-                            if (g.displayObject != null && g.displayObject.parent != null)
-                                index++;
+                            if (g.displayObject != null && g.displayObject.parent != null) index++;
                         }
+
                         container.AddChildAt(child.displayObject, index);
                     }
                     else if (_childrenRenderOrder == ChildrenRenderOrder.Descent)
@@ -833,12 +810,11 @@ namespace FairyGUI
                         for (int i = cnt - 1; i >= 0; i--)
                         {
                             GObject g = _children[i];
-                            if (g == child)
-                                break;
+                            if (g == child) break;
 
-                            if (g.displayObject != null && g.displayObject.parent != null)
-                                index++;
+                            if (g.displayObject != null && g.displayObject.parent != null) index++;
                         }
+
                         container.AddChildAt(child.displayObject, index);
                     }
                     else
@@ -866,52 +842,47 @@ namespace FairyGUI
 
         void BuildNativeDisplayList()
         {
-            if (displayObject == null || displayObject.isDisposed)
-                return;
+            if (displayObject == null || displayObject.isDisposed) return;
 
             int cnt = _children.Count;
-            if (cnt == 0)
-                return;
+            if (cnt == 0) return;
 
             switch (_childrenRenderOrder)
             {
                 case ChildrenRenderOrder.Ascent:
+                {
+                    for (int i = 0; i < cnt; i++)
                     {
-                        for (int i = 0; i < cnt; i++)
-                        {
-                            GObject child = _children[i];
-                            if (child.displayObject != null && child.internalVisible)
-                                container.AddChild(child.displayObject);
-                        }
+                        GObject child = _children[i];
+                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
                     }
+                }
                     break;
                 case ChildrenRenderOrder.Descent:
+                {
+                    for (int i = cnt - 1; i >= 0; i--)
                     {
-                        for (int i = cnt - 1; i >= 0; i--)
-                        {
-                            GObject child = _children[i];
-                            if (child.displayObject != null && child.internalVisible)
-                                container.AddChild(child.displayObject);
-                        }
+                        GObject child = _children[i];
+                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
                     }
+                }
                     break;
 
                 case ChildrenRenderOrder.Arch:
+                {
+                    int apex = Mathf.Clamp(_apexIndex, 0, cnt);
+                    for (int i = 0; i < apex; i++)
                     {
-                        int apex = Mathf.Clamp(_apexIndex, 0, cnt);
-                        for (int i = 0; i < apex; i++)
-                        {
-                            GObject child = _children[i];
-                            if (child.displayObject != null && child.internalVisible)
-                                container.AddChild(child.displayObject);
-                        }
-                        for (int i = cnt - 1; i >= apex; i--)
-                        {
-                            GObject child = _children[i];
-                            if (child.displayObject != null && child.internalVisible)
-                                container.AddChild(child.displayObject);
-                        }
+                        GObject child = _children[i];
+                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
                     }
+
+                    for (int i = cnt - 1; i >= apex; i--)
+                    {
+                        GObject child = _children[i];
+                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
+                    }
+                }
                     break;
             }
         }
@@ -925,6 +896,7 @@ namespace FairyGUI
                 GObject child = _children[i];
                 child.HandleControllerChanged(c);
             }
+
             _applyingController = null;
 
             c.RunActions();
@@ -953,17 +925,15 @@ namespace FairyGUI
                 {
                     myIndex = i;
                 }
-                else if ((child is GButton)
-                    && ((GButton)child).relatedController == c)
+                else if ((child is GButton) && ((GButton)child).relatedController == c)
                 {
-                    if (i > maxIndex)
-                        maxIndex = i;
+                    if (i > maxIndex) maxIndex = i;
                 }
             }
+
             if (myIndex < maxIndex)
             {
-                if (_applyingController != null)
-                    _children[maxIndex].HandleControllerChanged(_applyingController);
+                if (_applyingController != null) _children[maxIndex].HandleControllerChanged(_applyingController);
                 this.SwapChildrenAt(myIndex, maxIndex);
             }
         }
@@ -995,8 +965,7 @@ namespace FairyGUI
             set
             {
                 container.mask = value;
-                if (value != null && value.parent != container)
-                    container.AddChild(value);
+                if (value != null && value.parent != container) container.AddChild(value);
             }
         }
 
@@ -1035,8 +1004,7 @@ namespace FairyGUI
             }
             else if (rootContainer.clipRect != null)
             {
-                return child.x + child.width >= 0 && child.x <= this.width
-                    && child.y + child.height >= 0 && child.y <= this.height;
+                return child.x + child.width >= 0 && child.x <= this.width && child.y + child.height >= 0 && child.y <= this.height;
             }
             else
                 return true;
@@ -1048,9 +1016,9 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 GObject child = _children[i];
-                if (IsChildInView(child))
-                    return i;
+                if (IsChildInView(child)) return i;
             }
+
             return -1;
         }
 
@@ -1107,10 +1075,8 @@ namespace FairyGUI
         {
             base.HandleSizeChanged();
 
-            if (scrollPane != null)
-                scrollPane.OnOwnerSizeChanged();
-            if (rootContainer.clipRect != null)
-                UpdateClipRect();
+            if (scrollPane != null) scrollPane.OnOwnerSizeChanged();
+            if (rootContainer.clipRect != null) UpdateClipRect();
         }
 
         override protected void HandleGrayedChanged()
@@ -1126,8 +1092,7 @@ namespace FairyGUI
         {
             base.HandleControllerChanged(c);
 
-            if (scrollPane != null)
-                scrollPane.HandleControllerChanged(c);
+            if (scrollPane != null) scrollPane.HandleControllerChanged(c);
         }
 
         /// <summary>
@@ -1135,8 +1100,7 @@ namespace FairyGUI
         /// </summary>
         public void SetBoundsChangedFlag()
         {
-            if (scrollPane == null && !_trackBounds)
-                return;
+            if (scrollPane == null && !_trackBounds) return;
 
             _boundsChanged = true;
         }
@@ -1148,8 +1112,7 @@ namespace FairyGUI
         /// </summary>
         public void EnsureBoundsCorrect()
         {
-            if (_boundsChanged)
-                UpdateBounds();
+            if (_boundsChanged) UpdateBounds();
         }
 
         virtual protected void UpdateBounds()
@@ -1167,18 +1130,15 @@ namespace FairyGUI
                 {
                     GObject child = _children[i];
                     tmp = child.x;
-                    if (tmp < ax)
-                        ax = tmp;
+                    if (tmp < ax) ax = tmp;
                     tmp = child.y;
-                    if (tmp < ay)
-                        ay = tmp;
+                    if (tmp < ay) ay = tmp;
                     tmp = child.x + child.actualWidth;
-                    if (tmp > ar)
-                        ar = tmp;
+                    if (tmp > ar) ar = tmp;
                     tmp = child.y + child.actualHeight;
-                    if (tmp > ab)
-                        ab = tmp;
+                    if (tmp > ab) ab = tmp;
                 }
+
                 aw = ar - ax;
                 ah = ab - ay;
             }
@@ -1196,8 +1156,7 @@ namespace FairyGUI
         protected void SetBounds(float ax, float ay, float aw, float ah)
         {
             _boundsChanged = false;
-            if (scrollPane != null)
-                scrollPane.SetContentSize(Mathf.RoundToInt(ax + aw), Mathf.RoundToInt(ay + ah));
+            if (scrollPane != null) scrollPane.SetContentSize(Mathf.RoundToInt(ax + aw), Mathf.RoundToInt(ay + ah));
         }
 
         /// <summary>
@@ -1251,9 +1210,7 @@ namespace FairyGUI
 
         protected bool ShouldSnapToNext(float dir, float delta, float size)
         {
-            return dir < 0 && delta > UIConfig.defaultScrollSnappingThreshold * size
-                || dir > 0 && delta > (1 - UIConfig.defaultScrollSnappingThreshold) * size
-                || dir == 0 && delta > size / 2;
+            return dir < 0 && delta > UIConfig.defaultScrollSnappingThreshold * size || dir > 0 && delta > (1 - UIConfig.defaultScrollSnappingThreshold) * size || dir == 0 && delta > size / 2;
         }
 
         /**
@@ -1262,8 +1219,7 @@ namespace FairyGUI
         virtual public void GetSnappingPositionWithDir(ref float xValue, ref float yValue, float xDir, float yDir)
         {
             int cnt = _children.Count;
-            if (cnt == 0)
-                return;
+            if (cnt == 0) return;
 
             EnsureBoundsCorrect();
 
@@ -1294,14 +1250,12 @@ namespace FairyGUI
                     }
                 }
 
-                if (i == cnt)
-                    yValue = obj.y;
+                if (i == cnt) yValue = obj.y;
             }
 
             if (xValue != 0)
             {
-                if (i > 0)
-                    i--;
+                if (i > 0) i--;
                 for (; i < cnt; i++)
                 {
                     obj = _children[i];
@@ -1323,8 +1277,8 @@ namespace FairyGUI
                         }
                     }
                 }
-                if (i == cnt)
-                    xValue = obj.x;
+
+                if (i == cnt) xValue = obj.x;
             }
         }
 
@@ -1337,8 +1291,7 @@ namespace FairyGUI
             }
             else
             {
-                if (oldValue == 0)
-                    _sortingChildCount++;
+                if (oldValue == 0) _sortingChildCount++;
 
                 int oldIndex = _children.IndexOf(child);
                 int index = GetInsertPosForSortingChild(child);
@@ -1356,8 +1309,7 @@ namespace FairyGUI
         /// </summary>
         virtual protected void OnUpdate()
         {
-            if (_boundsChanged)
-                UpdateBounds();
+            if (_boundsChanged) UpdateBounds();
         }
 
         override public void ConstructFromResource()
@@ -1524,8 +1476,7 @@ namespace FairyGUI
                 child = _children[i];
                 child.Setup_AfterAdd(buffer, buffer.position);
                 child.underConstruct = false;
-                if (child.displayObject != null)
-                    child.displayObject.cachedTransform.SetParent(this.displayObject.cachedTransform, false);
+                if (child.displayObject != null) child.displayObject.cachedTransform.SetParent(this.displayObject.cachedTransform, false);
 
                 buffer.position = nextPos;
             }
@@ -1538,8 +1489,7 @@ namespace FairyGUI
             if (maskId != -1)
             {
                 container.mask = GetChildAt(maskId).displayObject;
-                if (buffer.ReadBool())
-                    container.reversedMask = true;
+                if (buffer.ReadBool()) container.reversedMask = true;
             }
 
             {
@@ -1549,8 +1499,7 @@ namespace FairyGUI
                 if (hitTestId != null)
                 {
                     PackageItem pi = contentItem.owner.GetItem(hitTestId);
-                    if (pi != null && pi.pixelHitTestData != null)
-                        rootContainer.hitArea = new PixelHitTest(pi.pixelHitTestData, i1, i2, sourceWidth, sourceHeight);
+                    if (pi != null && pi.pixelHitTestData != null) rootContainer.hitArea = new PixelHitTest(pi.pixelHitTestData, i1, i2, sourceWidth, sourceHeight);
                 }
                 else if (i1 != 0 && i2 != -1)
                 {
@@ -1561,12 +1510,10 @@ namespace FairyGUI
             if (buffer.version >= 5)
             {
                 string str = buffer.ReadS();
-                if (!string.IsNullOrEmpty(str))
-                    this.onAddedToStage.Add(() => __playSound(str, 1));
+                if (!string.IsNullOrEmpty(str)) this.onAddedToStage.Add(() => __playSound(str, 1));
 
                 string str2 = buffer.ReadS();
-                if (!string.IsNullOrEmpty(str2))
-                    this.onRemovedFromStage.Add(() => __playSound(str2, 1));
+                if (!string.IsNullOrEmpty(str2)) this.onRemovedFromStage.Add(() => __playSound(str2, 1));
             }
 
             buffer.Seek(0, 5);
@@ -1598,8 +1545,7 @@ namespace FairyGUI
             BuildNativeDisplayList();
             SetBoundsChangedFlag();
 
-            if (contentItem.objectType != ObjectType.Component)
-                ConstructExtension(buffer);
+            if (contentItem.objectType != ObjectType.Component) ConstructExtension(buffer);
 
             ConstructFromXML(null);
 
@@ -1631,16 +1577,14 @@ namespace FairyGUI
             buffer.Seek(beginPos, 4);
 
             int pageController = buffer.ReadShort();
-            if (pageController != -1 && scrollPane != null && scrollPane.pageMode)
-                scrollPane.pageController = parent.GetControllerAt(pageController);
+            if (pageController != -1 && scrollPane != null && scrollPane.pageMode) scrollPane.pageController = parent.GetControllerAt(pageController);
 
             int cnt = buffer.ReadShort();
             for (int i = 0; i < cnt; i++)
             {
                 Controller cc = GetController(buffer.ReadS());
                 string pageId = buffer.ReadS();
-                if (cc != null)
-                    cc.selectedPageId = pageId;
+                if (cc != null) cc.selectedPageId = pageId;
             }
 
             if (buffer.version >= 2)
@@ -1656,8 +1600,7 @@ namespace FairyGUI
                     {
                         if (propertyId == 0)
                             obj.text = value;
-                        else if (propertyId == 1)
-                            obj.icon = value;
+                        else if (propertyId == 1) obj.icon = value;
                     }
                 }
             }
@@ -1666,22 +1609,19 @@ namespace FairyGUI
         void __playSound(string soundRes, float volumeScale)
         {
             NAudioClip sound = UIPackage.GetItemAssetByURL(soundRes) as NAudioClip;
-            if (sound != null && sound.nativeClip != null)
-                Stage.inst.PlayOneShotSound(sound.nativeClip, volumeScale);
+            if (sound != null && sound.nativeClip != null) Stage.inst.PlayOneShotSound(sound.nativeClip, volumeScale);
         }
 
         void __addedToStage()
         {
             int cnt = _transitions.Count;
-            for (int i = 0; i < cnt; ++i)
-                _transitions[i].OnOwnerAddedToStage();
+            for (int i = 0; i < cnt; ++i) _transitions[i].OnOwnerAddedToStage();
         }
 
         void __removedFromStage()
         {
             int cnt = _transitions.Count;
-            for (int i = 0; i < cnt; ++i)
-                _transitions[i].OnOwnerRemovedFromStage();
+            for (int i = 0; i < cnt; ++i) _transitions[i].OnOwnerRemovedFromStage();
         }
 
 #if FAIRYGUI_TOLUA
@@ -1725,7 +1665,7 @@ namespace FairyGUI
 
         public virtual void OnInit()
         {
-
+        //若走不到 此方法   UIGenBinder.cs看看 注册了此模块没
         }
     }
 }

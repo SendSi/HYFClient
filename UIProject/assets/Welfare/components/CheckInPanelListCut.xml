@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,548" mask="n25_vnkq">
+  <displayList>
+    <graph id="n25_vnkq" name="n25" xy="0,9" size="960,503" type="rect"/>
+    <list id="n24_b0uj" name="list" xy="14,9" size="950,503" layout="flow_hz" overflow="scroll" lineGap="-8" colGap="-5" defaultItem="ui://340eighfrs9w1ygcfmu" vAlign="middle" autoClearItems="true">
+      <relation target="" sidePair="width-width,height-height"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

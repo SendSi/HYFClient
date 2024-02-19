@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="756,126" pivot="0.5,0.5">
+  <controller name="state" pages="0,前往,1,领取,3,已领取,2,未解锁" selected="0"/>
+  <displayList>
+    <image id="n0_ho40" name="n0" src="qx1k1ygcfn3" fileName="images/new/carnival_bg22.png" xy="0,0" size="756,126"/>
+    <text id="n3_ho40" name="title" xy="19,7" size="334,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#245e79" autoSize="none" autoClearText="true" text="任意英雄提升至25级"/>
+    <text id="n4_ho40" name="num" xy="356,9" size="366,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#245e79" align="right" autoSize="none" autoClearText="true" text="11/25">
+      <gearDisplay controller="state" pages="0,1,3"/>
+    </text>
+    <component id="n5_ho40" name="goBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="596,50" size="131,55">
+      <gearDisplay controller="state" pages="0,2"/>
+      <gearXY controller="state" pages="0,2" values="596,50|596,31" default="596,42"/>
+      <gearLook controller="state" pages="2" values="1,0,1,1" default="1,0,0,1"/>
+      <Button title="前往" titleFontSize="24"/>
+    </component>
+    <list id="n6_ho40" name="icon_list" xy="16,34" size="760,129" scale="0.7,0.7" layout="row" overflow="hidden" scroll="horizontal" colGap="1" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n7_ik3v" name="receiveBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="596,42" size="131,55">
+      <gearDisplay controller="state" pages="1,3"/>
+      <gearLook controller="state" pages="3" values="1,0,1,1" default="1,0,0,1"/>
+      <gearText controller="state" pages="3" values="已领取" default="领取"/>
+      <Button title="领取"/>
+    </component>
+  </displayList>
+  <transition name="quit">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="1.1,1.1" duration="2"/>
+    <item time="2" type="Alpha" tween="true" startValue="1" endValue="0" duration="4"/>
+    <item time="2" type="Scale" tween="true" startValue="1.1,1.1" endValue="0.2,0.2" duration="4"/>
+  </transition>
+  <transition name="admission">
+    <item time="0" type="Alpha" value="0"/>
+    <item time="0" type="XY" tween="true" startValue="-40,0" endValue="0,0" duration="6"/>
+    <item time="1" type="Alpha" tween="true" startValue="0.2" endValue="0.4" duration="2"/>
+    <item time="3" type="Alpha" tween="true" startValue="0.4" endValue="1" duration="2"/>
+  </transition>
+</component>

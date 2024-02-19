@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label">
+  <displayList>
+    <component id="n2_cmbv" name="n2" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n1_cmbv" name="n1" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,56" group="n12_cmbv"/>
+    <text id="n3_cmbv" name="title" xy="630,88" pivot="0.5,0.5" size="72,46" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,4" text="奖励"/>
+    <image id="n4_cmbv" name="n4" src="jnfz1ygcgns" fileName="images/images_new/windowBg_new/welfare_btn_bg25.png" pkg="2r331opv" xy="185,176" size="964,101" group="n12_cmbv"/>
+    <text id="n23_m6fl" name="descTxt" xy="367,186" size="563,65" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#8a471e" vAlign="middle" leading="-1" ubb="true" autoSize="none" text="增加刷新次数可提高礼盒等级&#xA;礼盒等级高可解锁高级奖池"/>
+    <component id="n13_cmbv" name="awardBtn" src="cmbv1ygcfjb" fileName="components/LimitShop_btn7.xml" xy="933,184" size="68,70" group="n12_cmbv"/>
+    <component id="n14_cmbv" name="explainBtn" src="cmbv1ygcfjb" fileName="components/LimitShop_btn7.xml" xy="1001,184" size="68,70" group="n12_cmbv">
+      <Button icon="ui://340eighfjnfz1ygcfqw"/>
+    </component>
+    <image id="n15_cmbv" name="n15" src="lumy1qp8vdl" fileName="images4/main_bg04.png" pkg="4ni413la" xy="941,206" size="188,40" group="n12_cmbv" visible="false" alpha="0.3" color="#50382e"/>
+    <text id="n16_cmbv" name="num" xy="982,206" size="144,39" group="n12_cmbv" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="1.123.666"/>
+    <loader id="n17_cmbv" name="icon1" xy="926,191" size="64,64" group="n12_cmbv" aspect="true" visible="false" url="ui://tsbe09ddmz4wb" fill="scale"/>
+    <image id="n18_cmbv" name="n18" src="cmbv1ygcfj9" fileName="images/LimitShop/LimitShop_icon2.png" xy="252,164" pivot="0.5,0.5" group="n12_cmbv"/>
+    <text id="n20_cmbv" name="level" xy="259,171" pivot="0.5,0.5" size="100,100" group="n12_cmbv" scale="0.7,0.7" font="ui://340eighflto01ygcgot" fontSize="72" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="1"/>
+    <text id="n19_cmbv" name="giftTxt" xy="255,236" size="110,39" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" autoSize="none" strokeColor="#844d30" strokeSize="2" shadowColor="#844d30" shadowOffset="2,2" text="礼盒等级"/>
+    <list id="n7_cmbv" name="buildList" xy="186,277" pivot="0.5,0.5" size="966,298" group="n12_cmbv" layout="row" selectionMode="multipleSingleClick" overflow="scroll" scroll="horizontal" lineGap="6" colGap="25" defaultItem="ui://340eighfcmbv1ygcfji" align="center" vAlign="middle" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n9_cmbv" name="freshTxt" xy="238,599" pivot="0.5,0.5" size="114,32" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="center" text="已刷新次数"/>
+    <text id="n10_cmbv" name="number" xy="257,622" pivot="0.5,0.5" size="75,54" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="40" color="#ffffff" align="center" autoSize="none" strokeColor="#844d30" strokeSize="2" shadowColor="#844d30" shadowOffset="2,2" autoClearText="true" text="123"/>
+    <component id="n21_cmbv" name="box" src="cmbvhz9cy9" fileName="components/LimitShop_box.xml" xy="378,575" group="n12_cmbv"/>
+    <component id="n11_cmbv" name="closeButton" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,60" group="n12_cmbv"/>
+    <group id="n12_cmbv" name="window" xy="77,56" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n24_jnfz" name="propTopList" src="ykwwkx" fileName="components/components_new/TokenListView.xml" pkg="2r331opv" xy="616,11" size="700,40">
+      <relation target="" sidePair="right-right"/>
+    </component>
+  </displayList>
+</component>

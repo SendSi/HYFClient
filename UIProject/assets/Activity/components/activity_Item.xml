@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="64,23" bgColor="#9f9898">
+  <controller name="state" pages="0,,1,,4,,5,,6,,7," selected="0">
+    <remark page="0" value="红色"/>
+    <remark page="1" value="绿色"/>
+    <remark page="2" value="蓝"/>
+    <remark page="3" value="紫色"/>
+    <remark page="4" value="黄色"/>
+    <remark page="5" value="灰色"/>
+  </controller>
+  <displayList>
+    <graph id="n4_m7tg" name="bg" xy="0,0" size="64,23" type="rect" lineSize="0" fillColor="#ffd93a3a" corner="5">
+      <gearColor controller="state" pages="1,4,5,6,7" values="#599e27|#3991d3|#b333d9|#b26105|#666666" default="#d93a3a"/>
+    </graph>
+    <text id="n0_hn57" name="title" xy="3,-2" pivot="0.5,0.5" size="58,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" vAlign="middle" leading="0" singleLine="true" autoClearText="true" text="高攻击">
+      <gearText controller="state" pages="0,1,4,5,7" values="高攻击|高回血|高防御|高攻速|高护盾" default="数量多"/>
+    </text>
+  </displayList>
+</component>

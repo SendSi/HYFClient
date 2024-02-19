@@ -1096,6 +1096,8 @@
     <component id="tixj1ygcg9o" name="ToastItem.xml" path="/components_new/" exported="true"/>
     <component id="wru61ygcgrs" name="Button_icon.xml" path="/_new/" exported="true"/>
     <image id="j3xs9pd" name="role_icon03.png" path="/_new/" exported="true"/>
+    <image id="mqls1iy5bed" name="activity_bg019.png" path="/_new/" exported="true" scale="9grid" scale9grid="4,0,4,662"/>
+    <image id="11e631ygcfiv" name="serviceactivity_bg01.png" path="/_new/" exported="true" scale="9grid" scale9grid="0,2,61,4"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

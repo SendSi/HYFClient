@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" extention="Label">
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="奖励"/>
+    <remark page="1" value="分享"/>
+    <remark page="2" value="串门"/>
+  </controller>
+  <controller name="selfOtherCtrl" pages="0,,1," selected="0">
+    <remark page="0" value="我的市集"/>
+    <remark page="1" value="别人的市集"/>
+  </controller>
+  <displayList>
+    <component id="n17_l3cb" name="n17" src="ykwwkx" fileName="components/components_new/TokenListView.xml" pkg="2r331opv" xy="634,5">
+      <relation target="" sidePair="right-right"/>
+    </component>
+    <list id="n9_rjiw" name="awardList" xy="1171,224" size="171,254" group="n4_rjiw" overflow="hidden" lineGap="-7" defaultItem="ui://340eighfrjiw1ygcfj5" selectionController="state">
+      <gearDisplay controller="selfOtherCtrl" pages="0"/>
+      <item/>
+      <item title="分享"/>
+      <item title="串门"/>
+    </list>
+    <loader id="n20_mb2b" name="bg01" xy="411,158" size="741,387" group="n4_rjiw" touchable="false" url="ui://340eighfmb2b1ygcfmx"/>
+    <loader id="n21_mb2b" name="role" xy="391,335" size="234,281" group="n4_rjiw" touchable="false" url="ui://340eighfmb2b1ygcfmy"/>
+    <loader id="n18_mb2b" name="bg" xy="276,45" size="1011,705" group="n4_rjiw" touchable="false" url="ui://340eighfrjiw1ygcfiu"/>
+    <text id="n0_rjiw" name="title" xy="629,72" pivot="0.5,0.5" size="310,46" group="n4_rjiw" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" strokeColor="#112347" strokeSize="2" shadowColor="#112347" shadowOffset="0,3" singleLine="true" autoClearText="true" text="我的市集最多九个字"/>
+    <text id="n8_rjiw" name="time" xy="695,166" pivot="0.5,0.5" size="177,34" group="n4_rjiw" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#6c442f" align="center" vAlign="middle" shadowColor="#baa078" shadowOffset="0,2" singleLine="true" autoClearText="true" text="01:22:55后重置"/>
+    <component id="n15_rjiw" name="bookBtn" src="rjiw1ygcfj2" fileName="components/LimitShop_btn3.xml" xy="531,485" group="n4_rjiw">
+      <gearDisplay controller="selfOtherCtrl" pages="0"/>
+    </component>
+    <component id="n5_rjiw" name="openBtn" src="rjiw1ygcfj1" fileName="components/LimitShop_btn1.xml" xy="328,240" group="n4_rjiw"/>
+    <component id="n10_rjiw" name="sellBtn" src="rjiw1ygcfj4" fileName="components/LimitShop_btn5.xml" xy="627,602" group="n4_rjiw">
+      <relation target="n23_kci6" sidePair="top-bottom"/>
+    </component>
+    <component id="n11_rjiw" name="fairBtn" src="mizd1ygcfqm" fileName="components/LimitShop_btn14.xml" xy="1145,625" group="n4_rjiw">
+      <gearDisplay controller="selfOtherCtrl" pages="1"/>
+      <Button title="我的市集" icon="ui://340eighfmizd1ygcfql"/>
+    </component>
+    <component id="n16_ns8m" name="explainBtn" src="ngv8ft" fileName="components/components_new/com_btn_explain.xml" pkg="2r331opv" xy="1162,97" size="79,80" group="n4_rjiw">
+      <Button icon="ui://340eighfk0ke1ygcfn9"/>
+    </component>
+    <text id="n12_rjiw" name="price" xy="935,433" size="104,29" group="n4_rjiw" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" text="当前收购价"/>
+    <text id="n13_rjiw" name="num" xy="966,454" size="85,39" group="n4_rjiw" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="100"/>
+    <loader id="n14_rjiw" name="icon" xy="934,458" size="32,32" group="n4_rjiw" aspect="true" url="ui://tsbe09ddmz4wb" fill="scale" shrinkOnly="true"/>
+    <group id="n4_rjiw" name="window" xy="276,45" size="1066,705" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <graph id="n23_kci6" name="n23" xy="677,503" size="230,100" alpha="0" touchable="false" type="rect">
+      <gearSize controller="selfOtherCtrl" pages="1" values="230,72,1,1" default="230,100,1,1"/>
+      <relation target="n4_rjiw" sidePair="bottom-bottom"/>
+    </graph>
+    <component id="n22_k0ke" name="Bubbling001" src="k0ke1ygcfn7" fileName="components/Bubbling001.xml" xy="607,319" pivot="0,1" touchable="false"/>
+  </displayList>
+  <transition name="appear" autoPlay="true">
+    <item time="0" type="Alpha" target="n22_k0ke" tween="true" startValue="0" endValue="0" duration="25"/>
+    <item time="0" type="Alpha" target="n23_kci6" tween="true" startValue="0" endValue="0" duration="129"/>
+    <item time="0" type="Alpha" target="n4_rjiw" tween="true" startValue="0" endValue="0.3" duration="4"/>
+    <item time="0" type="XY" target="n4_rjiw" tween="true" startValue="276,-400" endValue="276,25" duration="6"/>
+    <item time="4" type="Alpha" target="n4_rjiw" tween="true" startValue="0.3" endValue="1" duration="5"/>
+    <item time="6" type="XY" target="n4_rjiw" tween="true" startValue="276,25" endValue="276,45" duration="6"/>
+    <item time="26" type="Alpha" target="n22_k0ke" value="1"/>
+    <item time="26" type="Rotation" target="n22_k0ke" tween="true" startValue="25" endValue="0" duration="5"/>
+    <item time="31" type="Alpha" target="n22_k0ke" value="1"/>
+    <item time="31" type="Scale" target="n22_k0ke" tween="true" startValue="1,1" endValue="1.2,1.2" duration="4"/>
+    <item time="35" type="Scale" target="n22_k0ke" tween="true" startValue="1.2,1.2" endValue="1,1" duration="4"/>
+    <item time="72" type="Alpha" target="n22_k0ke" tween="true" startValue="1" endValue="0" duration="57"/>
+  </transition>
+</component>

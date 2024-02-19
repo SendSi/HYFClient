@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="310,76" extention="Button">
+  <controller name="expanded" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n12_ts2v" name="n12" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="3,3" size="302,72"/>
+    <image id="n4_z3v6" name="n4" src="ha7x1i" fileName="images/worldleaders_arrow.png" xy="315,63" rotation="180">
+      <gearDisplay controller="expanded" pages="1"/>
+    </image>
+    <image id="n5_z3v6" name="n5" src="ha7x1i" fileName="images/worldleaders_arrow.png" xy="271,20" alpha="0.4">
+      <gearDisplay controller="expanded" pages="0"/>
+    </image>
+    <text id="n11_ts2v" name="title" xy="4,12" size="268,53" font="ui://2r331opvlwft3" fontSize="24" color="#9f9898" align="center" vAlign="middle" autoSize="none" singleLine="true" text="龙鳞（0转）">
+      <gearColor controller="expanded" pages="1" values="#ffffff,#000000" default="#9f9898,#000000"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button mode="Check"/>
+</component>

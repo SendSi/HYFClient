@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="151,78" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="3"/>
+  <displayList>
+    <loader id="n4_rjiw" name="bg" xy="0,7" pivot="0.5,0.5" size="151,62" url="ui://340eighfrjiw1ygcfix" fill="scale"/>
+    <text id="n2_w84w" name="title" xy="50,20" pivot="0.5,0.5" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#fff17d" align="center" vAlign="middle" shadowColor="#693075" shadowOffset="0,1" singleLine="true" text="奖励"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".96"/>
+</component>

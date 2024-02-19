@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="280,350" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n9_d1gb" name="n9" src="cmlrhz9cym" fileName="images/images_new/com_bg_tips01.png" pkg="2r331opv" xy="0,0" size="280,350">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n3_d1gb" name="title1" xy="18,9" size="154,42" fontSize="30" color="#ffffff" text="首充即送！"/>
+    <text id="n4_d1gb" name="title2" xy="72,48" size="194,42" fontSize="30" color="#ffffff" text="SSR 极品英雄"/>
+    <component id="n5_d1gb" name="reward" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="81,92" aspect="true"/>
+    <text id="n7_d1gb" name="timeCount" xy="103,225" size="79,35" fontSize="25" color="#ffffff" text="第一天"/>
+    <list id="n8_d1gb" name="list" xy="11,262" size="405,127" scale="0.65,0.65" layout="row" overflow="scroll" colGap="19" defaultItem="ui://2r331opvj842hz9cyi">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <Button/>
+</component>

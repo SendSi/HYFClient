@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,468">
+  <controller name="buyCtrl" pages="3,,1,,4,,5," selected="0">
+    <remark page="0" value="未购买"/>
+    <remark page="1" value="已购买.未领取"/>
+    <remark page="2" value="已购买.已领取"/>
+    <remark page="3" value="续费"/>
+  </controller>
+  <controller name="state" pages="0,,1," selected="1">
+    <remark page="0" value="周卡"/>
+    <remark page="1" value="月卡"/>
+  </controller>
+  <displayList>
+    <loader id="n22_qx1k" name="bg" xy="0,0" size="400,468" url="ui://e290e74srrq31ygcfpn" fill="scale" autoSize="true">
+      <gearIcon controller="state" pages="1" values="ui://e290e74srrq31ygcfpn" default="ui://e290e74srrq31ygcfpm"/>
+    </loader>
+    <text id="n23_qx1k" name="titleLbl" xy="24,284" pivot="0.5,0.5" size="351,49" font="ui://2r331opvno3vhz9d63" fontSize="36" color="#ffffff" align="center" ubb="true" shadowColor="#061324" shadowOffset="2,2" text="累计获得                钻石"/>
+    <text id="n31_rrq3" name="titleNum" xy="171,269" pivot="0.5,0.5" size="127,69" font="ui://2r331opvno3vhz9d63" fontSize="52" color="#ffffff" align="center" ubb="true" shadowColor="#061324" shadowOffset="2,2" text="3000">
+      <gearText controller="state" pages="1" values="3000" default="960"/>
+    </text>
+    <text id="n27_tkvp" name="descLbl" xy="36,331" size="341,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#902222" ubb="true" autoSize="none" text="激活后30天内，每天可领取90钻石">
+      <gearColor controller="state" pages="1" values="#902222,#000000" default="#322b64,#000000"/>
+      <gearText controller="state" pages="0,1" values="激活后7天内，每天可领取30钻石|激活后30天内，每天可领取90钻石"/>
+    </text>
+    <image id="n29_rrq3" name="n29" src="rrq31ygcfpo" fileName="images/new/carnival_point.png" xy="23,340" scale="0.5,0.5" color="#902222">
+      <gearColor controller="state" pages="0,1" values="#322b64|#902222"/>
+    </image>
+    <component id="n30_rrq3" name="label" src="rrq31ygcfps" fileName="components/MonthCardlabel1.xml" xy="0,57"/>
+    <component id="n32_rrq3" name="label2" src="rrq31ygcfpt" fileName="components/MonthCardlabel2.xml" xy="290,6">
+      <gearDisplay controller="buyCtrl" pages="1,4"/>
+    </component>
+    <component id="n26_tkvp" name="btnClaimed" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="119,374" grayed="true">
+      <gearDisplay controller="buyCtrl" pages="4"/>
+      <gearDisplay2 controller="state" pages="0,1" condition="0"/>
+      <Button title="已领取" titleColor="#c8c8c8" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+    <component id="n28_tkvp" name="btnReward" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="119,374">
+      <gearDisplay controller="buyCtrl" pages="1"/>
+      <gearLook controller="buyCtrl" pages="4" values="1,0,0,1" default="1,0,0,1"/>
+      <gearDisplay2 controller="state" pages="0,1" condition="0"/>
+      <Button title="领取" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+    <component id="n33_rrq3" name="BtnBuy" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="119,374">
+      <gearDisplay controller="buyCtrl" pages="3"/>
+      <gearText controller="buyCtrl" pages="1" values="领取" default="30元"/>
+      <Button title="30元"/>
+    </component>
+    <component id="n35_ke8i" name="BtnBuy_next" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="119,374">
+      <gearDisplay controller="buyCtrl" pages="5"/>
+      <Button title="续费"/>
+    </component>
+    <image id="n37_gmbr" name="n37" src="gmbr1ygcfpv" fileName="images/new/carnival_monthly0.png" xy="122,234">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <image id="n38_gmbr" name="n38" src="gmbr1ygcfpw" fileName="images/new/carnival_monthly1.png" xy="123,234">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+  </displayList>
+</component>

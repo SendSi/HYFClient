@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="78,70" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n7_jnfz" name="icon" xy="16,11" pivot="0.5,0.5" size="46,48" url="ui://340eighfcmbv1ygcfj8">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <text id="n2_w84w" name="title" xy="33,38" pivot="0.5,0.5" size="10,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" strokeColor="#4e2910" shadowColor="#4e2910" shadowOffset="1,1" singleLine="true" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

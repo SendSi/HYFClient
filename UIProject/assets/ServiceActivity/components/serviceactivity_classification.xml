@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="234,34" extention="Button">
+  <displayList>
+    <text id="n0_w84w" name="title" xy="75,3" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d3d3d3" align="center" text="日常活动"/>
+    <image id="n1_w84w" name="n1" src="11e631ygcfiv" fileName="images/new/serviceactivity_bg01.png" xy="8,13" size="63,9" alpha="0.5" pkg="2r331opv">
+      <relation target="n0_w84w" sidePair="rightext-left"/>
+    </image>
+    <image id="n2_w84w" name="n2" src="11e631ygcfiv" fileName="images/new/serviceactivity_bg01.png" xy="163,13" pivot="1,0" size="60,9" alpha="0.5" flip="hz" pkg="2r331opv">
+      <relation target="n0_w84w" sidePair="leftext-right"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

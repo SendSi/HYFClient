@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" extention="Label" initName="frame">
+  <displayList>
+    <component id="n6_w84w" name="n6" src="itz029" fileName="panel/com_mask.xml" pkg="2r331opv" xy="-165,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n67_g6ic" name="n67" src="izxehz9d74" fileName="components/components_new/Popup_bg1.xml" pkg="2r331opv" xy="77,38" group="n8_w84w"/>
+    <list id="n76_g6ic" name="rule_list" xy="221,206" size="892,440" group="n8_w84w" overflow="scroll" lineGap="5" defaultItem="ui://sinorujtg6ichz9cz9">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n101_g6ic" name="n101" src="bumchz9d7y" fileName="images/images_new/windowBg_new/negative_bg02.png" pkg="2r331opv" xy="221,162" size="892,36" group="n8_w84w"/>
+    <text id="n103_g6ic" name="rank" xy="233,163" pivot="0.5,0.5" size="100,34" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="联盟排名"/>
+    <text id="n104_g6ic" name="official" xy="457,163" pivot="0.5,0.5" size="100,34" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="联盟官员"/>
+    <text id="n105_g6ic" name="preview" xy="846,163" pivot="0.5,0.5" size="100,34" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="联盟预览"/>
+    <component id="n106_rtzg" name="n106" src="d9gi23" fileName="components/components_new/com_btn_close3.xml" pkg="2r331opv" xy="1116,42" group="n8_w84w"/>
+    <text id="n107_rtzg" name="title" xy="597,71" pivot="0.5,0.5" size="140,46" group="n8_w84w" font="ui://2r331opvno3vhz9d63" fontSize="34" color="#ffffff" align="center" vAlign="middle" strokeColor="#322b64" strokeSize="2" shadowColor="#322b64" shadowOffset="1,4" text="奖励预览"/>
+    <group id="n8_w84w" name="activity" xy="77,38" size="1180,674" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+  </displayList>
+</component>

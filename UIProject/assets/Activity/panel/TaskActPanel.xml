@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="769,538">
+  <displayList>
+    <loader id="n2_w84w" name="Personal_leader" xy="0,0" size="769,538" touchable="false" url="ui://sinorujtf0eihz9czl" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n14_f0ei" name="prospect" xy="-51,333" size="982,272" fill="scaleFree"/>
+    <text id="n9_w84w" name="title_name" xy="20,16" size="245,54" font="ui://2r331opvno3vhz9d63" fontSize="40" color="#c45c33" autoSize="none" singleLine="true" autoClearText="true" text="任务临时界面"/>
+    <text id="n10_w84w" name="describelbl" xy="21,63" size="260,100" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#662f1a" leading="-3" autoSize="none" autoClearText="true" text="可能是描述可能是描可能是描述可能"/>
+    <list id="n11_w84w" name="rewardList" xy="19,442" size="800,125" scale="0.6,0.6" layout="row" overflow="scroll" scroll="horizontal" colGap="-3" defaultItem="ui://2r331opvj842hz9cyi" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n12_w84w" name="goToBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="523,425" size="210,78">
+      <Button title="去做任务" titleFontSize="28"/>
+    </component>
+    <text id="n15_8lkd" name="lbl01" xy="22,402" size="271,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" leading="0" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="奖励预览："/>
+  </displayList>
+  <relation target="n2_w84w" sidePair="width-width,height-height"/>
+</component>

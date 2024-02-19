@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="306,86">
+  <displayList>
+    <image id="n22_k0ke" name="n22" src="mb2b1ygcfmz" fileName="images/LimitShop/LimitShop_bg5.png" xy="0,0" size="306,86"/>
+    <text id="n23_k0ke" name="n23" xy="38,12" size="250,59" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#82614a" align="center" leading="-1" autoSize="none" text="可在他人市集出售玄石，快将你的市集分享到世界吧！"/>
+  </displayList>
+</component>

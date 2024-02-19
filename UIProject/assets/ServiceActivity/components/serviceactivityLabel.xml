@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,43">
+  <displayList>
+    <loader id="n7_ho40" name="icon" xy="0,0" size="100,43" url="ui://e290e74sqx1k1ygcfmw" fill="scaleFree">
+      <relation target="n11_ho40" sidePair="rightext-right"/>
+    </loader>
+    <text id="n11_ho40" name="title" xy="8,1" size="76,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" autoSize="none" autoClearText="true" text="首充即送"/>
+  </displayList>
+</component>

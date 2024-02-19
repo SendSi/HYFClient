@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="220,225" pivot="0.5,0.5" extention="Button">
+  <controller name="sel" pages="2,不选中,3,选中" selected="0"/>
+  <controller name="state" pages="2,,1,,0," selected="1">
+    <remark page="0" value="不可领取"/>
+    <remark page="1" value="可领取"/>
+    <remark page="2" value="已领取"/>
+  </controller>
+  <controller name="number" pages="0,,1,,2,,3," selected="0">
+    <remark page="0" value="1个"/>
+    <remark page="1" value="2个"/>
+    <remark page="2" value="3个"/>
+    <remark page="3" value="4个"/>
+  </controller>
+  <controller name="special" pages="0,,1," selected="1">
+    <remark page="0" value="nor"/>
+    <remark page="1" value="red"/>
+  </controller>
+  <displayList>
+    <loader id="n4_gwzj" name="bg" xy="0,0" size="220,225" url="ui://e290e74scale1ygcfq1" autoSize="true">
+      <gearIcon controller="special" pages="1" values="ui://e290e74scale1ygcfq1" default="ui://e290e74sqx1k1ygcfne"/>
+    </loader>
+    <image id="n24_wpdk" name="n24" src="qx1k1ygcfmv" fileName="images/new/carnival_bg14.png" xy="-19,-20" size="259,262">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <component id="n20_ciac" name="icon1" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="56,51" size="120,140" scale="0.9,0.9">
+      <gearXY controller="number" pages="0,1,2,3" values="56,51|26,65|80,50|50,50"/>
+      <gearSize controller="number" pages="0,1,2,3" values="120,140,0.9,0.9|120,140,0.7,0.7|120,140,0.5,0.5|110,112,0.5,0.5"/>
+    </component>
+    <component id="n21_ciac" name="icon2" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="20,52" size="110,112">
+      <gearDisplay controller="number" pages="1,2,3"/>
+      <gearXY controller="number" pages="0,1,2,3" values="20,52|110,65|111,110|111,50"/>
+      <gearSize controller="number" pages="1,2,3" values="120,140,0.7,0.7|120,140,0.5,0.5|110,112,0.5,0.5" default="110,112,1,1"/>
+    </component>
+    <component id="n22_ciac" name="icon3" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="20,52" size="110,112">
+      <gearDisplay controller="number" pages="2,3"/>
+      <gearXY controller="number" pages="0,1,2,3" values="20,52|-10,46|50,110|50,110"/>
+      <gearSize controller="number" pages="1,2,3" values="110,112,0.5,0.5|120,140,0.5,0.5|110,112,0.5,0.5" default="110,112,1,1"/>
+    </component>
+    <component id="n23_ciac" name="icon4" src="j842hz9cyi" fileName="components/components_new/comItem.xml" pkg="2r331opv" xy="20,42" size="110,112">
+      <gearDisplay controller="number" pages="3"/>
+      <gearXY controller="number" pages="1,2,3" values="78,70|78,42|111,110" default="20,42"/>
+      <gearSize controller="number" pages="1,2,3" values="110,112,0.5,0.5|110,112,0.5,0.5|110,112,0.5,0.5" default="110,112,1,1"/>
+    </component>
+    <text id="n6_gwzj" name="stateTxt" xy="78,181" pivot="0.5,0.5" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#fff267" align="center" vAlign="middle" text="可领取">
+      <gearDisplay controller="special" pages="0"/>
+      <gearColor controller="state" pages="2,1,0" values="#212a52,#000000|#fff267,#000000|#212a52,#000000"/>
+      <gearText controller="state" pages="2,1" values="不可领取|可领取" default="已领取"/>
+    </text>
+    <text id="n7_gwzj" name="title" xy="72,12" pivot="0.5,0.5" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#7577b3" align="center" vAlign="middle" text="第一天">
+      <gearDisplay controller="special" pages="0"/>
+    </text>
+    <text id="n26_cale" name="stateTxt1" xy="78,181" pivot="0.5,0.5" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#fff267" align="center" vAlign="middle" text="可领取">
+      <gearDisplay controller="special" pages="1"/>
+      <gearColor controller="state" pages="2,1,0" values="#590919,#000000|#fff267,#000000|#590919,#000000"/>
+      <gearText controller="state" pages="2,1" values="不可领取|可领取" default="已领取"/>
+    </text>
+    <text id="n27_cale" name="title1" xy="72,12" pivot="0.5,0.5" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#fffd64" align="center" vAlign="middle" text="第二天">
+      <gearDisplay controller="special" pages="1"/>
+    </text>
+    <image id="n19_p9k9" name="gray" src="qx1k1ygcfne" fileName="images/new/carnival_bg07.png" xy="0,0" alpha="0.7" color="#000000">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <graph id="n25_xfss" name="mask" xy="0,0" size="220,225" type="rect" lineSize="0" fillColor="#00ffffff">
+      <gearDisplay controller="state" pages="1"/>
+    </graph>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".96"/>
+</component>

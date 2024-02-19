@@ -10,7 +10,7 @@ namespace MainCenter
         {
             UIObjectFactory.SetPackageItemExtension(generalIcon3.URL, typeof(generalIcon3));
             UIObjectFactory.SetPackageItemExtension(generalIcon.URL, typeof(generalIcon));
-            UIObjectFactory.SetPackageItemExtension(main_btn_activity.URL, typeof(main_btn_activity));
+            UIObjectFactory.SetPackageItemExtension(Main_FuncTop.URL, typeof(Main_FuncTop));
             UIObjectFactory.SetPackageItemExtension(main_chat_item2_2.URL, typeof(main_chat_item2_2));
             UIObjectFactory.SetPackageItemExtension(generalIcon01.URL, typeof(generalIcon01));
             UIObjectFactory.SetPackageItemExtension(Main_btn.URL, typeof(Main_btn));

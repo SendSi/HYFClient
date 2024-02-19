@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="486,80">
+  <displayList>
+    <image id="n7_eznb" name="n7" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="4ni413la" xy="0,0" size="486,80" alpha="0.2" color="#97794f">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n12_eznb" name="btnCenter" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="352,13" size="129,52">
+      <relation target="" sidePair="middle-middle"/>
+      <Button title="前往" titleFontSize="24"/>
+    </component>
+    <text id="n32_fzz1" name="title" xy="34,25" pivot="0.5,0.5" size="124,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#4c9129" align="center" leading="0" autoClearText="true" text="前往提升标题">
+      <relation target="" sidePair="middle-middle"/>
+    </text>
+  </displayList>
+</component>

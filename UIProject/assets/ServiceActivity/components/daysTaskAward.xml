@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="770,76" designImageOffsetX="-414" designImageOffsetY="-600">
+  <displayList>
+    <component id="n0_eaah" name="pbr" src="qx1k1ygcfm6" fileName="components/healthPbr.xml" xy="0,17" size="728,34">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <list id="n39_ho40" name="icon_list" xy="7,0" size="736,76" layout="row" selectionMode="none" margin="6,0,0,0" colGap="70" defaultItem="ui://e290e74sho401ygcfjs" align="right" autoClearItems="true">
+      <relation target="" sidePair="left-left"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

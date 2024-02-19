@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="114,130" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <component id="n7_cmbv" name="icon" src="ee2ik0" fileName="components/general_new/equipmentIcon.xml" pkg="2r331opv" xy="0,0"/>
+    <text id="n2_w84w" name="title" xy="1,101" pivot="0.5,0.5" size="112,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#97794f" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="道具卡"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

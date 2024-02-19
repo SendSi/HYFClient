@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="243,108" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="red" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n0_w84w" name="n0" src="mqls1ygcfi5" fileName="images/welfare_btn_bg06.png" xy="0,0" size="208,108">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_w84w" name="n1" src="mqls1ygcfi6" fileName="images/welfare_btn_bg07.png" xy="0,0" size="243,108">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n2_w84w" name="title" xy="18,36" pivot="0.5,0.5" size="168,36" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#9f9898" align="center" vAlign="middle" autoSize="none" singleLine="true" text="首充礼包">
+      <gearColor controller="button" pages="0,1,2,3" values="#9f9898,#cfa273|#50382e,#dd6720|#9f9898,#cfa273|#50382e,#dd6720"/>
+      <relation target="" sidePair="rightext-right"/>
+    </text>
+    <loader id="n7_klt5" name="label" xy="1,5" size="34,74"/>
+    <component id="n8_pvdu" name="reddot" src="dix6fm" fileName="components/components_new/red_dot.xml" pkg="2r331opv" xy="191,20">
+      <gearDisplay controller="red" pages="1"/>
+      <relation target="n0_w84w" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <Button mode="Radio" downEffect="scale" downEffectValue=".95"/>
+</component>

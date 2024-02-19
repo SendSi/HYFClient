@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="52,56" pivot="0.5,0.5" extention="Button">
+  <controller name="state" pages="2,数字,3,打勾" selected="0"/>
+  <controller name="select" pages="0,,1," selected="0">
+    <remark page="0" value="未选中"/>
+    <remark page="1" value="选中"/>
+  </controller>
+  <controller name="size" pages="0,,1," selected="0">
+    <remark page="0" value="small"/>
+    <remark page="1" value="big"/>
+  </controller>
+  <displayList>
+    <image id="n11_y8rv" name="bg1" src="y8rv1ygcfpz" fileName="images/new/carnival_btn01.png" xy="-8,-6" pivot="0.5,0.5" scale="0.8,0.8">
+      <gearDisplay controller="size" pages="0"/>
+    </image>
+    <image id="n12_y8rv" name="bg2" src="y8rv1ygcfq0" fileName="images/new/carnival_btn02.png" xy="-8,-6">
+      <gearDisplay controller="size" pages="1"/>
+    </image>
+    <loader id="n9_y8rv" name="icon1" xy="-22,-20" pivot="0.5,0.5" size="96,96" scale="0.6,0.6" url="ui://tsbe09ddmz4w3" autoSize="true">
+      <gearSize controller="size" pages="0" values="96,96,0.6,0.6" default="96,96,0.8,0.8"/>
+    </loader>
+    <image id="n7_ho40" name="n7" src="y8rv1ygcgqt" fileName="images/images_new/com_select_03.png" pkg="2r331opv" xy="-20,-19" pivot="0.5,0.5" size="93,95" aspect="true" scale="0.8,0.8">
+      <gearDisplay controller="select" pages="1"/>
+      <gearSize controller="size" pages="0" values="93,95,0.8,0.8" default="93,95,1,1"/>
+    </image>
+    <image id="n5_ho40" name="n5" src="bumchz9d7t" fileName="images/images_new/windowBg_new/negative_bg07.png" pkg="2r331opv" xy="0,28" pivot="0.5,0.5" size="101,50" scale="0.5,0.5"/>
+    <image id="n6_ho40" name="n6" src="klrg1qp8vd5" fileName="images/images_new/com_btn_correct.png" pkg="2r331opv" xy="38,38" scale="0.3,0.3">
+      <gearDisplay controller="state" pages="1,3"/>
+    </image>
+    <text id="n3_ho40" name="title" xy="29,41" pivot="0.5,0.5" size="43,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#50382e" align="center" vAlign="middle" leading="0" letterSpacing="-2" autoClearText="true" text="99891">
+      <gearDisplay controller="state" pages="0,2"/>
+    </text>
+  </displayList>
+  <Button/>
+  <transition name="scale">
+    <item time="0" type="Alpha" tween="true" startValue="0.1" endValue="1" duration="6"/>
+    <item time="0" type="Scale" tween="true" startValue="0.5,0.5" endValue="1.2,1.2" duration="6"/>
+    <item time="6" type="Scale" tween="true" startValue="1.2,1.2" endValue="1,1" duration="3"/>
+  </transition>
+</component>

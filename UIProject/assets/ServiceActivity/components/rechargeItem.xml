@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1085,653" overflow="hidden">
+  <controller name="state" pages="2,,0,,1," selected="0">
+    <remark page="0" value="未开启"/>
+    <remark page="1" value="领取"/>
+    <remark page="2" value="已领取"/>
+  </controller>
+  <displayList>
+    <loader id="n72_qx1k" name="bg" xy="0,138" size="972,515" url="ui://e290e74sqx1k1ygcfnc"/>
+    <image id="n59_ho40" name="n59" src="qx1k1ygcfnb" fileName="images/new/carnival_bg10.png" xy="602,0"/>
+    <list id="n64_ho40" name="icon_list" xy="32,169" size="697,372" layout="row" lineGap="6" colGap="6" defaultItem="ui://e290e74sho401ygcfka">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n70_ho40" name="n70" src="qx1k1ygcfna" fileName="images/new/carnival_bg11.png" xy="14,28"/>
+    <image id="n69_ho40" name="n69" src="qx1k1ygcfn9" fileName="images/new/carnival_bg12.png" xy="50,575" pivot="0.5,0.5" size="32,32"/>
+    <component id="n71_ho40" name="receiveBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="518,557" size="180,68">
+      <gearLook controller="state" pages="1" values="1,0,1,1" default="1,0,0,1"/>
+      <gearText controller="state" pages="2,1" values="充值领奖|次日领取" default="领取"/>
+      <Button title="充值领奖"/>
+    </component>
+    <text id="n66_ho40" name="title2" xy="89,566" size="435,26" group="n73_ncsc" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffe066" vAlign="middle" autoSize="none" singleLine="true" text="30分钟内获得首冲奖励新区优势大幅提升！"/>
+    <text id="n68_ho40" name="time" xy="88,585" size="436,32" group="n73_ncsc" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" autoClearText="true" text="活动剩余时间：00:00:00"/>
+    <group id="n73_ncsc" name="time_des" xy="88,566" size="436,51" advanced="true"/>
+    <graph id="n77_t7yt" name="boosbg" xy="739,500" size="266,44" group="n79_t7yt" type="rect" lineSize="0" fillColor="#ff540f09" corner="5"/>
+    <text id="n75_t7yt" name="smash" xy="765,463" size="214,34" group="n79_t7yt" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffe765" shadowColor="#50382e" shadowOffset="2,4" text="击碎护盾 | 武器附魔"/>
+    <text id="n76_t7yt" name="boss" xy="771,501" size="220,42" group="n79_t7yt" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" text="地狱恶犬轻松3S"/>
+    <image id="n78_t7yt" name="n78" src="t7yt1ygcfpi" fileName="images/new/carnival_bg23.png" xy="752,512" group="n79_t7yt" scale="0.5,0.5"/>
+    <group id="n79_t7yt" name="text" xy="739,463" size="266,88" advanced="true"/>
+  </displayList>
+  <transition name="admission">
+    <item time="0" type="Alpha" target="n64_ho40" tween="true" startValue="0" endValue="1" duration="7"/>
+    <item time="0" type="Alpha" target="n69_ho40" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n70_ho40" tween="true" startValue="0" endValue="1" duration="8"/>
+    <item time="0" type="Alpha" target="n71_ho40" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Alpha" target="n73_ncsc" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Visible" target="n79_t7yt" value="false"/>
+    <item time="0" type="XY" target="n59_ho40" tween="true" startValue="862,0" endValue="602,0" duration="5"/>
+    <item time="0" type="XY" target="n64_ho40" tween="true" startValue="-168,169" endValue="32,169" duration="10"/>
+    <item time="0" type="XY" target="n69_ho40" tween="true" startValue="50,645" endValue="50,575" duration="7"/>
+    <item time="0" type="XY" target="n70_ho40" tween="true" startValue="14,-120" endValue="14,28" duration="10"/>
+    <item time="0" type="XY" target="n71_ho40" tween="true" startValue="518,627" endValue="518,557" duration="7"/>
+    <item time="0" type="XY" target="n72_qx1k" tween="true" startValue="-300,138" endValue="0,138" duration="3"/>
+    <item time="0" type="XY" target="n73_ncsc" tween="true" startValue="88,636" endValue="88,566" duration="7"/>
+    <item time="5" type="Alpha" target="n79_t7yt" tween="true" startValue="0" endValue="1" duration="9"/>
+    <item time="5" type="Visible" target="n79_t7yt" value="true"/>
+  </transition>
+</component>

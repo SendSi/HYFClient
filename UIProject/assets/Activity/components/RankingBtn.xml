@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,117" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4_cvsp" name="icon" xy="0,-16" size="100,117" url="ui://sinorujtf0eihz9czp" align="center" vAlign="middle">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n3_cvsp" name="title" xy="0,88" pivot="0.5,0.5" size="100,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#421c0b" align="center" vAlign="middle" autoSize="none" singleLine="true" text="排行榜">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue=".95"/>
+</component>

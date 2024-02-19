@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="172,81" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="已解锁"/>
+    <remark page="1" value="未解锁"/>
+  </controller>
+  <controller name="reddot" pages="0,,1," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="显示红点"/>
+  </controller>
+  <displayList>
+    <image id="n1_ho40" name="n1" src="qx1k1ygcfmz" fileName="images/new/carnival_bg18.png" xy="17,0">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n0_ho40" name="n0" src="qx1k1ygcfn0" fileName="images/new/carnival_bg19.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n3_ho40" name="title" xy="58,20" pivot="0.5,0.5" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" text="第一天">
+      <gearXY controller="button" pages="0,2,3" values="58,20|58,20|51,20" default="51,20"/>
+      <gearColor controller="button" pages="0,2" values="#ffffff,#000000|#ffffff,#000000" default="#712b2b,#000000"/>
+    </text>
+    <component id="n5_ho40" name="redElement" src="pyiyhz9d6l" fileName="components/components_new/redPoint.xml" pkg="2r331opv" xy="109,11" size="32,32" aspect="true" scale="0.7,0.7">
+      <gearDisplay controller="reddot" pages="1"/>
+    </component>
+    <image id="n6_qx1k" name="n6" src="hxd7hz9d7o" fileName="images/images_new/lock_10.png" pkg="2r331opv" xy="36,5">
+      <gearDisplay controller="state" pages="1"/>
+      <gearXY controller="button" pages="1,3" values="24,5|25,5" default="36,5"/>
+    </image>
+    <loader id="n7_ik3v" name="red" xy="143,26" pivot="0.5,0.5" anchor="true" size="36,36" aspect="true" scale="0.7,0.7" url="ui://2r331opvdix6fj" align="center" vAlign="middle" fill="scale">
+      <gearDisplay controller="reddot" pages="1"/>
+      <relation target="n3_ho40" sidePair="left-right"/>
+    </loader>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="admisson">
+    <item time="0" type="Alpha" tween="true" startValue="0.1" endValue="1" duration="5"/>
+    <item time="0" type="XY" tween="true" startValue="-30,0" endValue="0,0" duration="6"/>
+  </transition>
+</component>

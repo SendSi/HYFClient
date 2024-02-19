@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="340eighf" hasFavorites="true">
+  <resources>
+    <component id="mqls1ygcfi7" name="WelfareMainView.xml" path="/panel/" exported="true"/>
+    <component id="ikk01ygcfi9" name="WishView.xml" path="/panel/" exported="true"/>
+    <component id="sogo1ygcfia" name="closeButton.xml" path="/components/CityView/"/>
+    <component id="9sqn1ygcfib" name="DiamondMallView.xml" path="/panel/" exported="true"/>
+    <image id="9sqn1ygcfic" name="diamonds_bg_00.jpg" path="/images/" exported="true" atlas="alone"/>
+    <image id="9sqn1ygcfid" name="diamonds_bg_01.png" path="/images/diamond_mall/" exported="true" scale="9grid" scale9grid="200,38,751,76"/>
+    <image id="9sqn1ygcfie" name="diamonds_bg_02.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfif" name="diamonds_bg_03.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfig" name="diamonds_bg_04.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfih" name="diamonds_bg_05.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfii" name="diamonds_bg_06.png" path="/images/diamond_mall/" exported="true"/>
+    <component id="9sqn1ygcfij" name="ProgressBar1.xml" path="/components/" exported="true"/>
+    <image id="9sqn1ygcfil" name="icon_01.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfim" name="icon_02.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfin" name="icon_03.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfio" name="icon_04.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfip" name="icon_05.png" path="/images/diamond_mall/" exported="true"/>
+    <image id="9sqn1ygcfiq" name="icon_06.png" path="/images/diamond_mall/" exported="true"/>
+    <component id="9sqn1ygcfir" name="Recharge_btn.xml" path="/components/" exported="true"/>
+    <image id="rjiw1ygcfiu" name="LimitShop_bg2.png" path="/images/LimitShop/" exported="true"/>
+    <image id="rjiw1ygcfiv" name="LimitShop_btn1.png" path="/images/LimitShop/" exported="true"/>
+    <image id="rjiw1ygcfiw" name="LimitShop_btn3.png" path="/images/LimitShop/" exported="true"/>
+    <image id="rjiw1ygcfix" name="LimitShop_btn4.png" path="/images/LimitShop/" exported="true"/>
+    <image id="rjiw1ygcfiy" name="LimitShop_btn5.png" path="/images/LimitShop/" exported="true"/>
+    <component id="rjiw1ygcfj1" name="LimitShop_btn1.xml" path="/components/" exported="true"/>
+    <component id="rjiw1ygcfj2" name="LimitShop_btn3.xml" path="/components/" exported="true"/>
+    <component id="rjiw1ygcfj3" name="LimitShop_btn4.xml" path="/components/" exported="true"/>
+    <component id="rjiw1ygcfj4" name="LimitShop_btn5.xml" path="/components/" exported="true"/>
+    <component id="rjiw1ygcfj5" name="LimitShop_btn6.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfj6" name="LimitShopRewardView.xml" path="/panel/" exported="true"/>
+    <image id="cmbv1ygcfj7" name="LimitShop_btn9.png" path="/images/LimitShop/" exported="true" scale="9grid" scale9grid="13,0,4,45"/>
+    <image id="cmbv1ygcfj8" name="LimitShop_icon1.png" path="/images/LimitShop/" exported="true"/>
+    <image id="cmbv1ygcfj9" name="LimitShop_icon2.png" path="/images/LimitShop/" exported="true"/>
+    <image id="cmbv1ygcfja" name="LimitShop_btn8.png" path="/images/LimitShop/" exported="true" scale="9grid" scale9grid="13,0,4,45"/>
+    <component id="cmbv1ygcfjb" name="LimitShop_btn7.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjc" name="LimitShop_btn8.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjd" name="LimitShop_item1.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfje" name="LimitShop_btn9.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjf" name="LimitShop_btn10.xml" path="/components/" exported="true"/>
+    <image id="cmbv1ygcfjg" name="LimitShop_btn10.png" path="/images/LimitShop/" exported="true" scale="9grid" scale9grid="13,0,4,45"/>
+    <component id="cmbv1ygcfjh" name="LimitShop_btn11.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfji" name="LimitShop_item2.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjj" name="LimitShop_btn2.xml" path="/components/" exported="true"/>
+    <component id="cmbvhz9cy9" name="LimitShop_box.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="cmbvhz9cya" name="LimitShopRewBtn.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjk" name="LimitShopPreviewView.xml" path="/panel/" exported="true"/>
+    <component id="cmbv1ygcfjl" name="LimitShop_btn12.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjm" name="LimitShop_btn13.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjn" name="LimitShopReplaceView.xml" path="/panel/" exported="true"/>
+    <component id="cmbv1ygcfjo" name="LimitShop_item3.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjp" name="LimitShopBrowseView.xml" path="/panel/" exported="true"/>
+    <component id="cmbv1ygcfjq" name="LimitShop_item4.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjr" name="LimitShopSellView.xml" path="/panel/" exported="true"/>
+    <component id="cmbv1ygcfl2" name="LimitShop_Slider.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjs" name="LimitShop_item5.xml" path="/components/" exported="true"/>
+    <component id="cmbv1ygcfjt" name="LimitShopRecordView.xml" path="/panel/" exported="true"/>
+    <component id="ns8m1ygcfl3" name="LimitShop_item6.xml" path="/components/" exported="true"/>
+    <image id="d5f21ygcfl4" name="LimitShop_arrow.png" path="/images/" exported="true"/>
+    <component id="al8r1ygcfl5" name="artPanle.xml" path="/panel/"/>
+    <component id="al8r1ygcfl6" name="artPanle1.xml" path="/panel/"/>
+    <component id="s1uz1ygcfl7" name="DailyDirectPurchaseView.xml" path="/panel/" exported="true"/>
+    <image id="s1uz1ygcfl8" name="everyday_bg01.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcfl9" name="everyday_bg02.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcfla" name="everyday_bg03.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflb" name="everyday_bg04.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflc" name="everyday_bg05.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcfld" name="treasure_chest_01.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcfle" name="treasure_chest_02.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflf" name="treasure_chest_03.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflg" name="treasure_chest_04.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflh" name="treasure_chest_05.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcfli" name="treasure_chest_06.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflj" name="treasure_chest_07.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflk" name="treasure_chest_08.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcfll" name="treasure_chest_09.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <image id="s1uz1ygcflm" name="treasure_chest_10.png" path="/images/Daily_direct_purchase/" exported="true"/>
+    <component id="hsk61ygcfln" name="PriceBtn.xml" path="/components/" exported="true"/>
+    <component id="hsk61ygcflo" name="TreasureChestBtn.xml" path="/components/" exported="true"/>
+    <component id="hsk61ygcflp" name="returnBtn.xml" path="/components/" exported="true"/>
+    <component id="hsk61ygcflq" name="TreasureChestBtn01.xml" path="/components/" exported="true"/>
+    <component id="hsk61ygcflr" name="list.xml" path="/components/" exported="true"/>
+    <image id="d1gb1ygcfls" name="diamonds_bg_00.jpg" path="/images/diamond_mall/" exported="true"/>
+    <component id="d1gb1ygcflu" name="FristChargeView.xml" path="/panel/" exported="true"/>
+    <component id="d1gb1ygcflv" name="chargeItem.xml" path="/components/"/>
+    <component id="dy2k1ygcflx" name="costItem.xml" path="/components/CityView/" exported="true"/>
+    <component id="loe91ygcflw" name="rbtn01.xml" path="/components/"/>
+    <component id="g2er1ygcfm0" name="WorldBossPassView.xml" path="/panel/" exported="true"/>
+    <component id="rs9w1ygcfmu" name="everydayBtn.xml" path="/components/" exported="true"/>
+    <component id="rs9w1ygcfmt" name="CheckInPanelListCut.xml" path="/components/" exported="true"/>
+    <component id="rs9w1ygcfmv" name="CheckInPanelView.xml" path="/panel/" exported="true"/>
+    <image id="b0uj1ygcfij" name="SignIn_bg.png" path="/images/SignIn/" exported="true" scale="9grid" scale9grid="133,156,731,453"/>
+    <image id="b0uj1ygcfik" name="SignIn_bg01.png" path="/images/SignIn/" exported="true"/>
+    <image id="b0uj1ygcfil" name="SignIn_bg02.png" path="/images/SignIn/" exported="true"/>
+    <image id="b0uj1ygcfim" name="SignIn_bg03.png" path="/images/SignIn/" exported="true"/>
+    <image id="mb2b1ygcfmx" name="LimitShop_bg3.png" path="/images/LimitShop/" exported="true"/>
+    <image id="mb2b1ygcfmy" name="LimitShop_bg4.png" path="/images/LimitShop/" exported="true"/>
+    <image id="mb2b1ygcfmz" name="LimitShop_bg5.png" path="/images/LimitShop/" exported="true" scale="9grid" scale9grid="48,22,159,19"/>
+    <image id="mb2b1ygcfn0" name="welfare_bg_004.png" path="/images/worldLeaders/" exported="true"/>
+    <image id="mb2b1ygcfn1" name="welfare_bg_005.png" path="/images/worldLeaders/" exported="true"/>
+    <image id="mb2b1ygcfn3" name="welfare_bg_007.png" path="/images/worldLeaders/" exported="true"/>
+    <image id="mb2b1ygcfn4" name="welfare_bg_008.png" path="/images/worldLeaders/" exported="true"/>
+    <image id="mb2b1ygcfn5" name="welfare_bg_009.png" path="/images/worldLeaders/" exported="true" scale="9grid" scale9grid="17,15,4,5"/>
+    <image id="mb2b1ygcfn6" name="welfare_bg_010.png" path="/images/worldLeaders/" exported="true"/>
+    <component id="k0ke1ygcfn7" name="Bubbling001.xml" path="/components/" exported="true"/>
+    <image id="k0ke1ygcfn8" name="SignIn_bg04.png" path="/images/SignIn/"/>
+    <image id="k0ke1ygcfn9" name="LimitShop_bg6.png" path="/images/LimitShop/" exported="true"/>
+    <component id="q60q1ygcfhg" name="activity_firstboss1.xml" path="/components/" exported="true"/>
+    <component id="q60q1ygcfhh" name="activity_firstboss2.xml" path="/components/" exported="true"/>
+    <component id="snky1ygcfhx" name="worldBossPassItem.xml" path="/components/" exported="true"/>
+    <image id="ik3v1ygcfnb" name="LimitShop_bg1.jpg" path="/images/LimitShop/"/>
+    <image id="ik3v1ygcfnc" name="LimitShop_btn6.png" path="/images/LimitShop/"/>
+    <image id="ik3v1ygcfnd" name="LimitShop_btn7.png" path="/images/LimitShop/"/>
+    <component id="qysg1ygcfne" name="ThanatorView.xml" path="/panel/" exported="true"/>
+    <image id="qysg1ygcfnf" name="thanator_bg.jpg" path="/images/" exported="true" atlas="alone"/>
+    <image id="mizd1ygcfql" name="limitshop_btn_bg1.png" path="/images/" exported="true"/>
+    <component id="mizd1ygcfqm" name="LimitShop_btn14.xml" path="/components/" exported="true"/>
+    <component id="dfim1ygcfpi" name="Welfare_classification.xml" path="/components/" exported="true"/>
+    <image id="mlhy1ygcfqn" name="everyday_bg06.png" path="/images/Daily_direct_purchase/" exported="true" scale="9grid" scale9grid="25,0,3,37"/>
+    <component id="vsu61ygcfoc" name="WishCrit.xml" path="/components/" exported="true"/>
+    <image id="vsu61ygcfqp" name="welfare_bg002.jpg" path="/images/" exported="true" atlas="alone"/>
+    <image id="vsu61ygcfqq" name="welfare_btn_bg1.png" path="/images/" exported="true"/>
+    <image id="vsu61ygcfqr" name="welfare_btn_bg2.png" path="/images/" exported="true"/>
+    <image id="vsu61ygcfqs" name="welfare_btn_bg3.png" path="/images/" exported="true" scale="9grid" scale9grid="45,0,52,34"/>
+    <component id="vsu61ygcfqt" name="welfare_Btn.xml" path="/components/" exported="true"/>
+    <image id="jnfz1ygcfqv" name="LimitShop_btn11.png" path="/images/LimitShop/" exported="true"/>
+    <image id="jnfz1ygcfqw" name="LimitShop_icon3.png" path="/images/LimitShop/" exported="true"/>
+    <image id="lto01ygcgoj" name="0.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgok" name="1.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgol" name="2.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgom" name="3.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgon" name="4.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgoo" name="5.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgop" name="6.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgoq" name="7.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgor" name="8.png" path="/components/font_reward/"/>
+    <image id="lto01ygcgos" name="9.png" path="/components/font_reward/"/>
+    <font id="lto01ygcgot" name="gold_font_reward.fnt" path="/components/font_reward/" exported="true"/>
+    <component id="nkto1ygcgou" name="DailyDirectItem.xml" path="/components/" exported="true"/>
+    <component id="xfrq1ygcgov" name="LimitShopMainView.xml" path="/panel/" exported="true"/>
+    <image id="p4ya1ygcgow" name="LimitShop_btn12.png" path="/images/LimitShop/" exported="true"/>
+    <component id="c4bb1ygcft9" name="ActPanel.xml" path="/components/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

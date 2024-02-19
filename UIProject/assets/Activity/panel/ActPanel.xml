@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="860,580">
+  <controller name="tab" pages="1,,2,,3," selected="2">
+    <remark page="0" value="活动日历"/>
+    <remark page="1" value="个人首领"/>
+    <remark page="2" value="自定义面板，留在最后一个"/>
+  </controller>
+  <displayList>
+    <graph id="n65_lyph" name="panel" xy="0,0" size="860,580">
+      <gearDisplay controller="tab" pages="3"/>
+    </graph>
+  </displayList>
+</component>

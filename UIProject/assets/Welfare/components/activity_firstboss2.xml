@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="256,296">
+  <controller name="state" pages="1,,2,,5," selected="0">
+    <remark page="0" value="已首通"/>
+    <remark page="1" value="未首通"/>
+    <remark page="2" value="已领取"/>
+  </controller>
+  <displayList>
+    <image id="n0_rr0d" name="n0" src="mb2b1ygcfn4" fileName="images/worldLeaders/welfare_bg_008.png" xy="-32,-23" alpha="0.94"/>
+    <text id="n1_rr0d" name="quanfu" xy="66,7" pivot="0.5,0.5" size="124,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#ffffff" align="center" shadowColor="#228cc6" shadowOffset="0,3" text="个人首通"/>
+    <list id="n4_rr0d" name="rewardList" xy="-72,65" pivot="0.5,0.5" size="401,119" scale="0.7,0.7" layout="row" overflow="hidden" colGap="-10" defaultItem="ui://2r331opvj842hz9cyi" align="center">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n6_rr0d" name="receiveBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="30,192" size="201,78">
+      <gearDisplay controller="state" pages="1,5"/>
+      <gearLook controller="state" pages="1,2" values="1,0,0,1|1,0,0,1" default="1,0,1,1"/>
+      <gearText controller="state" pages="5" values="已领取" default="领取"/>
+      <Button title="领取"/>
+    </component>
+    <component id="n7_snky" name="challengeBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="30,192" size="201,78">
+      <gearDisplay controller="state" pages="2"/>
+      <Button title="前往"/>
+    </component>
+  </displayList>
+</component>

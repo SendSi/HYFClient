@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="195,232">
+  <controller name="state" pages="0,,1,,2," selected="0">
+    <remark page="0" value="前往探索"/>
+    <remark page="1" value="领取"/>
+    <remark page="2" value="已领取"/>
+  </controller>
+  <displayList>
+    <image id="n0_rr0d" name="n0" src="8klu1ygcffc" fileName="images/TreasureMap/bg01.png" xy="0,0" size="195,232" alpha="0.94" pkg="340eighf"/>
+    <text id="n1_rr0d" name="title" xy="59,9" pivot="0.5,0.5" size="76,26" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" align="center" autoClearText="true" text="标题名字"/>
+    <component id="n2_rr0d" name="fragment01" src="rr0dhz9d1y" fileName="components/fragment01.xml" xy="35,41" scale="0.63,0.63"/>
+    <list id="n4_rr0d" name="rewardList" xy="-88,87" pivot="0.5,0.5" size="370,119" scale="0.4,0.4" layout="row" overflow="scroll" colGap="-4" defaultItem="ui://2r331opvj842hz9cyi" align="center">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n5_rr0d" name="gotoBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_00.xml" pkg="2r331opv" xy="36,173" size="123,48">
+      <gearDisplay controller="state" pages="0"/>
+      <Button title="前往探索" titleFontSize="22"/>
+    </component>
+    <component id="n6_rr0d" name="receiveBtn" src="eaahz9cob" fileName="components/components_new/com_btn_01.xml" pkg="2r331opv" xy="35,173" size="123,48">
+      <gearDisplay controller="state" pages="1"/>
+      <Button title="领取" titleFontSize="22"/>
+    </component>
+    <text id="n7_krs6" name="n7" xy="65,63" size="64,29" fontSize="20" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" text="已领取">
+      <gearDisplay controller="state" pages="2"/>
+    </text>
+  </displayList>
+</component>
