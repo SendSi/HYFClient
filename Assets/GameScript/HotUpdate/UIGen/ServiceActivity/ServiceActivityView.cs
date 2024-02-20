@@ -14,7 +14,7 @@ namespace ServiceActivity
         public GTextField _time;
         public GButton _closeButton;
         public GList _list;
-        public GButton _illustrationBtn;
+        public GComponent _illustrationBtn;
         public GGroup _left;
         public const string URL = "ui://e290e74sqx1k1ygcfnp";
 
@@ -34,7 +34,7 @@ namespace ServiceActivity
             _time = (GTextField)GetChild("time");
             _closeButton = (GButton)GetChild("closeButton");
             _list = (GList)GetChild("list");
-            _illustrationBtn = (GButton)GetChild("illustrationBtn");
+            _illustrationBtn = (GComponent)GetChild("illustrationBtn");
             _left = (GGroup)GetChild("left");
         }
     }

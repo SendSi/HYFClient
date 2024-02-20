@@ -6,7 +6,7 @@
     <remark page="1" value="未完成"/>
   </controller>
   <displayList>
-    <image id="n5_10t6x" name="n5" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" pivot="0.5,0.5" size="230,69" alpha="0.6">
+    <image id="n5_10t6x" name="n5" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="0,0" pivot="0.5,0.5" size="230,69" alpha="0.6" pkg="2r331opv">
       <relation target="n6_p5sz" sidePair="bottomext-bottom"/>
     </image>
     <text id="n6_p5sz" name="title" xy="33,10" size="188,46" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffffff" leading="-1" ubb="true" autoSize="height" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" autoClearText="true" text="击败5支队伍队伍队伍队伍队伍队伍(1/5)">

@@ -2,7 +2,7 @@
 <component size="156,53" extention="Button" designImageOffsetX="-198" designImageOffsetY="-131" designImageLayer="1">
   <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
   <displayList>
-    <image id="n5_xoe1" name="n5" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="0,2" size="156,49" alpha="0.3" color="#97794f"/>
+    <image id="n5_xoe1" name="n5" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="0,2" size="156,49" alpha="0.3" color="#97794f" pkg="2r331opv"/>
     <text id="n3_xoe1" name="title" xy="85,9" size="55,35" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" vAlign="middle" autoSize="none" singleLine="true" text="全部">
       <relation target="" sidePair="middle-middle"/>
     </text>

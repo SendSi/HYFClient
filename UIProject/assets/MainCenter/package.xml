@@ -351,7 +351,6 @@
     <image id="lumy1qp8vdi" name="main_bg_icon.png" path="/images4/"/>
     <image id="lumy1qp8vdj" name="main_bg_red.png" path="/images4/"/>
     <image id="lumy1qp8vdk" name="main_bg03.png" path="/images4/" scale="9grid" scale9grid="57,13,9,26"/>
-    <image id="lumy1qp8vdl" name="main_bg04.png" path="/images4/" favorite="true" scale="9grid" scale9grid="8,8,5,4"/>
     <image id="lumy1qp8vdm" name="main_icon_email.png" path="/images4/"/>
     <image id="lumy1qp8vdn" name="main_icon_flag.png" path="/images4/"/>
     <image id="lumy1qp8vdo" name="mainhud_bg_headbg00.png" path="/images4/"/>
@@ -492,13 +491,11 @@
     <component id="pl8o1qp8vhj" name="main_team_btn2.xml" path="/components/"/>
     <component id="g1s71qp8vhk" name="TroopBoardView.xml" path="/components/"/>
     <component id="l1sb1qp8vhl" name="ReturnButton.xml" path="/components/"/>
-    <component id="lcq71qp8vhm" name="healthPbr3.xml" path="/components/"/>
     <component id="p11n1qp8vhn" name="main_btn_right.xml" path="/components/"/>
     <component id="p11n1qp8vho" name="main_btn_wrong.xml" path="/components/"/>
     <component id="le3m1qp8vhq" name="main_team_right.xml" path="/components/"/>
     <image id="tg9h1qp8vhr" name="chiefPb00.png" path="/images/chief/" scale="9grid" scale9grid="17,18,5,6"/>
     <image id="tg9h1qp8vhs" name="boss_bg.png" path="/images/chief/"/>
-    <image id="cvsphz9czz" name="00.png" path="/images/chief/"/>
     <image id="cvsphz9czx" name="05.png" path="/images/chief/"/>
     <image id="tg9h1qp8vht" name="boss_bg00.png" path="/images/chief/"/>
     <component id="tg9h1qp8vhu" name="mainTaskAdvance.xml" path="/components/"/>
@@ -557,7 +554,6 @@
     <component id="ts2v1ygcfgs" name="explorereward_btn.xml" path="/components/"/>
     <image id="f9h91ygcfgv" name="boss_bg01.png" path="/images/chief/" scale="9grid" scale9grid="9,10,111,26"/>
     <image id="f9h91ygcfgw" name="boss_bg02.png" path="/images/chief/" scale="9grid" scale9grid="31,9,62,18"/>
-    <image id="gr021ygcfgx" name="main_bg04_1.png" path="/images4/" scale="9grid" scale9grid="9,9,3,3"/>
     <image id="gr021ygcfgy" name="main_bg04_2.png" path="/images4/" scale="9grid" scale9grid="16,14,4,3"/>
     <image id="gr021ygcfgz" name="activity_icon_attack.png" path="/images4/"/>
     <image id="gr021ygcfh0" name="activity_icon_details.png" path="/images4/"/>

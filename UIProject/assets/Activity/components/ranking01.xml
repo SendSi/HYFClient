@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="245,26">
-  <displayList>
-    <text id="n32_itho" name="numberlbl01" xy="0,0" size="37,26" fontSize="18" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" text="10"/>
-    <text id="n33_itho" name="namelbl" xy="38,0" size="137,26" fontSize="17" color="#ffffff" autoSize="none" singleLine="true" text="Player name"/>
-    <text id="n34_itho" name="Injurynumberlbl" xy="175,0" size="74,26" fontSize="17" color="#ff8c8c" autoSize="none" singleLine="true" text="25000"/>
-  </displayList>
-</component>

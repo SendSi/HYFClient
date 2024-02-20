@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="725,34">
-  <displayList>
-    <text id="n124_cvsp" name="Lbl_00" xy="106,0" pivot="0.5,0.5" size="224,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" autoClearText="true" text="[abcd]联盟的名字吧"/>
-    <text id="n125_cvsp" name="Lbl_00" xy="0,0" pivot="0.5,0.5" size="18,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" autoClearText="true" text="1"/>
-    <text id="n126_cvsp" name="Lbl_00" xy="427,0" pivot="0.5,0.5" size="52,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" autoClearText="true" text="噩梦"/>
-    <text id="n127_cvsp" name="Lbl_00" xy="596,0" pivot="0.5,0.5" size="129,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="center" singleLine="true" autoClearText="true" text="00:25:33秒"/>
-  </displayList>
-</component>

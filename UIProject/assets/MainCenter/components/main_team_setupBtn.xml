@@ -6,7 +6,7 @@
     <remark page="2" value="未解锁"/>
   </controller>
   <displayList>
-    <image id="n3_ssbd" name="n3" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="74,82" alpha="0.6">
+    <image id="n3_ssbd" name="n3" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="0,0" size="74,82" alpha="0.6" pkg="2r331opv">
       <gearDisplay controller="tab" pages="0,1,2"/>
       <gearSize controller="tab" pages="0,1,2" values="204,82,1,1|74,82,1,1|204,82,1,1"/>
     </image>

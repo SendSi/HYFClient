@@ -11,11 +11,11 @@
     <text id="n30_cmbv" name="sourceTxt" xy="618,223" pivot="0.5,0.5" size="100,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="获得来源"/>
     <text id="n31_cmbv" name="richerTxt" xy="920,223" pivot="0.5,0.5" size="52,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#97794f" align="center" text="进账"/>
     <text id="n19_cmbv" name="sellTxt" xy="224,168" size="124,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" text="售卖所得："/>
-    <image id="n26_cmbv" name="n26" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="4ni413la" xy="337,165" size="161,40" group="n12_cmbv" alpha="0.5"/>
+    <image id="n26_cmbv" name="n26" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="2r331opv" xy="337,165" size="161,40" group="n12_cmbv" alpha="0.5"/>
     <text id="n27_cmbv" name="sellNum" xy="379,168" pivot="0.5,0.5" size="115,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#b26105" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="+1000"/>
     <loader id="n28_cmbv" name="iconsell" xy="340,165" size="40,40" group="n12_cmbv" aspect="true" url="ui://tsbe09ddmz4w3" fill="scaleFree"/>
     <text id="n32_cmbv" name="profitTxt" xy="607,168" size="124,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" vAlign="middle" text="今日利润："/>
-    <image id="n33_cmbv" name="n33" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="4ni413la" xy="720,165" size="161,40" group="n12_cmbv" alpha="0.5"/>
+    <image id="n33_cmbv" name="n33" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="2r331opv" xy="720,165" size="161,40" group="n12_cmbv" alpha="0.5"/>
     <text id="n34_cmbv" name="profitNum" xy="762,168" pivot="0.5,0.5" size="115,34" group="n12_cmbv" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#b26105" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="+1000"/>
     <loader id="n35_cmbv" name="iconprofit" xy="723,165" size="40,40" group="n12_cmbv" aspect="true" url="ui://tsbe09ddmz4w3" fill="scaleFree"/>
     <list id="n7_cmbv" name="buildList" xy="221,265" size="892,382" group="n12_cmbv" layout="flow_hz" selectionMode="multipleSingleClick" overflow="scroll" lineGap="5" defaultItem="ui://340eighfcmbv1ygcfjs" autoClearItems="true">

@@ -3,7 +3,7 @@
   <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
   <controller name="colour_title" pages="0,,1,,3," selected="0"/>
   <displayList>
-    <image id="n5_10t6x" name="n5" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="9,1" pivot="0.5,0.5" size="188,66" alpha="0.6"/>
+    <image id="n5_10t6x" name="n5" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="9,1" pivot="0.5,0.5" size="188,66" alpha="0.6" pkg="2r331opv"/>
     <loader id="n2_o4i9" name="icon" xy="168,41" size="35,31" scale="0.8,0.8" url="ui://2r331opvo4i9z9cjt" align="center" vAlign="middle">
       <relation target="" sidePair="right-right"/>
     </loader>

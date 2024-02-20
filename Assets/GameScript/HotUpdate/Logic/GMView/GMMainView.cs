@@ -35,7 +35,10 @@ namespace GMView
             this._closeButton.onClick.Set(OnClickClose);
         }
 
-        private void OnClickClose() { ProxyGMModule.Instance.HideGMMainView(); }
+        private void OnClickClose()
+        {
+            ProxyGMModule.Instance.HideGMMainView();
+        }
 
         private void OnClickSendGM()
         {
@@ -43,10 +46,13 @@ namespace GMView
             {
                 GMManager.Instance.SetOldReValue(this._inputTxt.text);
                 if (this._inputTxt.text.Contains("local"))
-                { //前端自己定义的
+                {
+                    //前端自己定义的
                     GMManager.Instance.LocalMethodGM(this._inputTxt.text);
-                } else
-                { //直接发送后端的gm
+                }
+                else
+                {
+                    //直接发送后端的gm
                     GMManager.Instance.ServerMethodGM(this._inputTxt.text);
                 }
 
@@ -118,8 +124,14 @@ namespace GMView
             _centerList.numItems = _centerDtos.Count;
         }
 
-        public override int GetFirstChildInView() { return base.GetFirstChildInView(); }
+        public override int GetFirstChildInView()
+        {
+            return base.GetFirstChildInView();
+        }
 
-        public override void Dispose() { base.Dispose(); }
+        public override void Dispose()
+        {
+            base.Dispose();
+        }
     }
 }

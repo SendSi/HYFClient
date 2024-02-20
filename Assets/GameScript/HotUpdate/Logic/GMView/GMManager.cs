@@ -50,11 +50,20 @@ public class GMManager : Singleton<GMManager>
         });
     }
 
-    public List<GMConfig> GetTypeList() { return _typeListDto; }
+    public List<GMConfig> GetTypeList()
+    {
+        return _typeListDto;
+    }
 
-    public List<GMConfig> GetCenterList(int pType) { return _centerListDto[pType]; }
+    public List<GMConfig> GetCenterList(int pType)
+    {
+        return _centerListDto[pType];
+    }
 
-    public List<string> GetOldReList() { return _oldReListDto; }
+    public List<string> GetOldReList()
+    {
+        return _oldReListDto;
+    }
 
     public void SetOldReValue(string str)
     {
@@ -76,7 +85,10 @@ public class GMManager : Singleton<GMManager>
         }
     }
 
-    protected override void OnDispose() { base.OnDispose(); }
+    protected override void OnDispose()
+    {
+        base.OnDispose();
+    }
 
     public void LocalMethodGM(string inputTxtText)
     {
@@ -87,10 +99,12 @@ public class GMManager : Singleton<GMManager>
             if (target == "playSound")
             {
                 PlaySound(values);
-            } else if (target == "playVolume")
+            }
+            else if (target == "playVolume")
             {
                 PlayVolume(values);
-            } else if (target == "playEffect")
+            }
+            else if (target == "playEffect")
             {
                 EffectLoader.Instance.LoadEffect_Id(values[2]);
             }
@@ -103,7 +117,8 @@ public class GMManager : Singleton<GMManager>
         {
             var value = int.Parse(values[3]) * 0.01f;
             AudioMgr.Instance.SetBGMVolume(value);
-        } else
+        }
+        else
         {
             var value = int.Parse(values[3]) * 0.01f;
             AudioMgr.Instance.SetMusicVolume(value);
@@ -115,11 +130,15 @@ public class GMManager : Singleton<GMManager>
         if (values[2] == "1")
         {
             AudioMgr.Instance.PlayBGM_Id(values[3]);
-        } else
+        }
+        else
         {
             AudioMgr.Instance.PlayMusic_Id(values[3]);
         }
     }
 
-    public void ServerMethodGM(string inputTxtText) { Debug.LogError("直接发送后端定义的"); }
+    public void ServerMethodGM(string inputTxtText)
+    {
+        Debug.LogError("直接发送后端定义的");
+    }
 }

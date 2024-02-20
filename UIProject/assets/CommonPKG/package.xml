@@ -1098,6 +1098,11 @@
     <image id="j3xs9pd" name="role_icon03.png" path="/_new/" exported="true"/>
     <image id="mqls1iy5bed" name="activity_bg019.png" path="/_new/" exported="true" scale="9grid" scale9grid="4,0,4,662"/>
     <image id="11e631ygcfiv" name="serviceactivity_bg01.png" path="/_new/" exported="true" scale="9grid" scale9grid="0,2,61,4"/>
+    <image id="cvsphz9czz" name="00.png" path="/_new/"/>
+    <image id="gr021ygcfgx" name="main_bg04_1.png" path="/_new/" scale="9grid" scale9grid="9,9,3,3"/>
+    <component id="lcq71qp8vhm" name="healthPbr3.xml" path="/components_new/"/>
+    <image id="o7xi1ygcgrt" name="main_bg04.png" path="/_new/" favorite="true" scale="9grid" scale9grid="8,8,5,4"/>
+    <component id="g30w7" name="settingSbr_grip.xml" path="/components_new/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
