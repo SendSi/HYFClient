@@ -1,7 +1,7 @@
 ﻿using System;
 using Welfare;
 
-public class ProxyWelfareModule : Singleton<ProxyWelfareModule>,IProxy
+public class ProxyWelfareModule : Singleton<ProxyWelfareModule>, IProxy
 {
     private const string pkgName = "Welfare";
 
@@ -16,7 +16,8 @@ public class ProxyWelfareModule : Singleton<ProxyWelfareModule>,IProxy
     {
         CheckLoad(() =>
         {
-            UIMgr.Instance.OpenUIViewCom<WelfareMainView>(pkgName);
+            var view = UIMgr.Instance.OpenUIViewCom<WelfareMainView>(pkgName);
+            view.SetData("");
         });
     }
 
