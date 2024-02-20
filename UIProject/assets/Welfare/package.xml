@@ -117,7 +117,7 @@
     <image id="qysg1ygcfnf" name="thanator_bg.jpg" path="/images/" exported="true" atlas="alone"/>
     <image id="mizd1ygcfql" name="limitshop_btn_bg1.png" path="/images/" exported="true"/>
     <component id="mizd1ygcfqm" name="LimitShop_btn14.xml" path="/components/" exported="true"/>
-    <component id="dfim1ygcfpi" name="Welfare_classification.xml" path="/components/" exported="true"/>
+    <component id="dfim1ygcfpi" name="MenuTypeWelfare.xml" path="/components/" exported="true"/>
     <image id="mlhy1ygcfqn" name="everyday_bg06.png" path="/images/Daily_direct_purchase/" exported="true" scale="9grid" scale9grid="25,0,3,37"/>
     <component id="vsu61ygcfoc" name="WishCrit.xml" path="/components/" exported="true"/>
     <image id="vsu61ygcfqp" name="welfare_bg002.jpg" path="/images/" exported="true" atlas="alone"/>
@@ -142,6 +142,7 @@
     <component id="xfrq1ygcgov" name="LimitShopMainView.xml" path="/panel/" exported="true"/>
     <image id="p4ya1ygcgow" name="LimitShop_btn12.png" path="/images/LimitShop/" exported="true"/>
     <component id="c4bb1ygcft9" name="ActPanel.xml" path="/components/" exported="true"/>
+    <component id="mqls1ygcfi8" name="MenuItemWelfare.xml" path="/components/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
