@@ -7,7 +7,7 @@
     <image id="n1_ms13" name="bar" src="o5d41qp8ve7" fileName="images/images_new/windowBg_new/negative_strip03.png" pkg="2r331opv" xy="0,1" size="83,32">
       <relation target="" sidePair="width-width,height-height"/>
     </image>
-    <component id="n2_ms13" name="grip" src="g30w7" fileName="components/settingSbr_grip.xml" pkg="dh3hukhz" xy="53,-11">
+    <component id="n2_ms13" name="grip" src="g30w7" fileName="components/settingSbr_grip.xml" pkg="2r331opv" xy="53,-11">
       <relation target="n1_ms13" sidePair="right-right"/>
     </component>
     <text id="n4_eigk" name="title" xy="155,1" size="95,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#50382e" align="center" autoSize="none" autoClearText="true" text="5/15">

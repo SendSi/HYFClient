@@ -5,7 +5,7 @@
     <remark page="1" value="自己"/>
   </controller>
   <displayList>
-    <image id="n4_gr02" name="n4" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="234,34" alpha="0.7"/>
+    <image id="n4_gr02" name="n4" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="0,0" size="234,34" alpha="0.7" pkg="2r331opv"/>
     <component id="n7_w2ss" name="barh_2" src="happ1qp8vhd" fileName="components/components_new/Personal_leader/bar_10.xml" xy="0,1" size="234,32" alpha="0.5">
       <gearDisplay controller="stat" pages="1"/>
       <ProgressBar value="100" max="100"/>

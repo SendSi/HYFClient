@@ -10,7 +10,7 @@
     <remark page="1" value="不显示"/>
   </controller>
   <displayList>
-    <image id="n3_oept" name="n3" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="0,0" size="204,82" alpha="0.6"/>
+    <image id="n3_oept" name="n3" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="0,0" size="204,82" alpha="0.6" pkg="2r331opv"/>
     <text id="n24_tbf1" name="time" xy="84,53" size="76,24" group="n17_oept" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="none" autoClearText="true" text="00:01:11">
       <gearDisplay controller="countdown" pages="0"/>
     </text>

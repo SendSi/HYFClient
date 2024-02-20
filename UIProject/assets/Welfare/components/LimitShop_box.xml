@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="730,118" designImageOffsetX="-414" designImageOffsetY="-600">
   <displayList>
-    <component id="n0_eaah" name="pbr" src="lcq71qp8vhm" fileName="components/components_new/main/healthPbr3.xml" pkg="4ni413la" xy="9,50" size="720,32">
+    <component id="n0_eaah" name="pbr" src="lcq71qp8vhm" fileName="components/components_new/main/healthPbr3.xml" pkg="2r331opv" xy="9,50" size="720,32">
       <ProgressBar value="100" max="100"/>
     </component>
     <component id="n18_eaah" name="rewBtn0" src="cmbvhz9cya" fileName="components/LimitShopRewBtn.xml" xy="6,-2">

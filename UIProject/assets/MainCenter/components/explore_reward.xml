@@ -5,7 +5,7 @@
     <image id="n0_i52u" name="n0" src="gw9a1ygcfmn" fileName="images/images_new/com_bg_tips05.png" pkg="2r331opv" xy="3,4" size="357,389">
       <relation target="" sidePair="width-width,height-height"/>
     </image>
-    <image id="n1_i52u" name="n1" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="22,77" size="319,107" alpha="0.3" color="#97794f">
+    <image id="n1_i52u" name="n1" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" xy="22,77" size="319,107" alpha="0.3" color="#97794f" pkg="2r331opv">
       <relation target="" sidePair="width-width,height-height"/>
     </image>
     <image id="n7_rb01" name="n7" src="za6y1ygcgmn" fileName="images/images_new/windowBg_new/welfare_btn_bg23.png" pkg="2r331opv" xy="56,26" pivot="0.5,0.5" size="254,39" visible="false" alpha="0.9"/>

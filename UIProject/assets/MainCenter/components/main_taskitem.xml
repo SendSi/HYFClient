@@ -16,7 +16,7 @@
       <gearSize controller="hideOpen" pages="1,3,0" values="206,88,1,1|206,157,1,1|206,227,1,1" tween="true" duration=".15"/>
       <gearLook controller="hideOpen" pages="1,3,0" values="0.8,0,0,0|0.8,0,0,0|0.8,0,0,0" tween="true"/>
     </image>
-    <image id="n14_ptr5" name="n14" src="lumy1qp8vdl" fileName="images4/main_bg04.png" xy="9,72" size="188,36" alpha="0.6"/>
+    <image id="n14_ptr5" name="n14" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="9,72" size="188,36" alpha="0.6" pkg="2r331opv"/>
     <component id="n13_ptr5" name="taskList" src="l21a1ygcfht" fileName="components/components_new/main/main_taskitem_list.xml" xy="0,110" size="206,86">
       <gearDisplay controller="hideOpen" pages="0,3"/>
     </component>

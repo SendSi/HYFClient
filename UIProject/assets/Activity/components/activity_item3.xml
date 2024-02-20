@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="676,56">
-  <displayList>
-    <text id="n0_p9k9" name="title" xy="0,0" size="676,56" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#5a59bb" vAlign="middle" autoSize="height" text="1：这里打具体玩规则这里打具体玩规则这里打具体玩规则这里打这里打具体玩规则这里打具体玩规则这里打"/>
-  </displayList>
-  <relation target="n0_p9k9" sidePair="width-width,height-height"/>
-</component>

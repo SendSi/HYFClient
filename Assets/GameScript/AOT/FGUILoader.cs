@@ -17,7 +17,7 @@ public class FGUILoader : Singleton<FGUILoader>
         ["CommonPKG"] = true,
         ["Emoji"] = true,
         ["ItemPKG"] = true,
-        ["Activity"] = true,//先把此 设置为公用 
+        // ["Activity"] = true,//先把此 设置为公用 
     };
 
     protected override void OnInit()
@@ -134,7 +134,7 @@ public class FGUILoader : Singleton<FGUILoader>
                     }
                     else
                     {
-                        Debug.LogError("业务包 被当成 依赖包  加载了  注意制作UI-->" + pkgName + ",依赖包数=" + num);
+                        Debug.LogError("业务包 被当成 依赖包了   加载了-->" + pkgName + ",此业务包依赖包的个数=" + num);
                     }
                 }
 

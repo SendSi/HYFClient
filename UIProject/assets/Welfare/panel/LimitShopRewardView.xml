@@ -12,7 +12,7 @@
     <component id="n14_cmbv" name="explainBtn" src="cmbv1ygcfjb" fileName="components/LimitShop_btn7.xml" xy="1001,184" size="68,70" group="n12_cmbv">
       <Button icon="ui://340eighfjnfz1ygcfqw"/>
     </component>
-    <image id="n15_cmbv" name="n15" src="lumy1qp8vdl" fileName="images4/main_bg04.png" pkg="4ni413la" xy="941,206" size="188,40" group="n12_cmbv" visible="false" alpha="0.3" color="#50382e"/>
+    <image id="n15_cmbv" name="n15" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" pkg="2r331opv" xy="941,206" size="188,40" group="n12_cmbv" visible="false" alpha="0.3" color="#50382e"/>
     <text id="n16_cmbv" name="num" xy="982,206" size="144,39" group="n12_cmbv" visible="false" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="1.123.666"/>
     <loader id="n17_cmbv" name="icon1" xy="926,191" size="64,64" group="n12_cmbv" aspect="true" visible="false" url="ui://tsbe09ddmz4wb" fill="scale"/>
     <image id="n18_cmbv" name="n18" src="cmbv1ygcfj9" fileName="images/LimitShop/LimitShop_icon2.png" xy="252,164" pivot="0.5,0.5" group="n12_cmbv"/>

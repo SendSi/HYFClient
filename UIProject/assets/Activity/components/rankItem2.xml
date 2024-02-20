@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<component size="410,39">
-  <displayList>
-    <image id="n34_w2ss" name="n34" src="gr021ygcfgx" fileName="images4/main_bg04_1.png" pkg="4ni413la" xy="0,0" size="410,38" alpha="0.2" color="#97794f"/>
-    <text id="n32_itho" name="title" xy="6,4" size="143,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#d93a3a" vAlign="middle" singleLine="true" text="1-玩家玛卡巴卡"/>
-    <text id="n33_itho" name="num" xy="316,2" pivot="1,0" size="89,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#50382e" align="right" leading="0" text="12.34M"/>
-  </displayList>
-  <relation target="n33_itho" sidePair="bottomext-bottom"/>
-</component>
