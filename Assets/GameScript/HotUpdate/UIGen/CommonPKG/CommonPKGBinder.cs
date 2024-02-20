@@ -95,7 +95,6 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(generalFragment.URL, typeof(generalFragment));
             UIObjectFactory.SetPackageItemExtension(equipmentIcon2.URL, typeof(equipmentIcon2));
             UIObjectFactory.SetPackageItemExtension(com_btnBubble.URL, typeof(com_btnBubble));
-            UIObjectFactory.SetPackageItemExtension(rbtn01.URL, typeof(rbtn01));
             UIObjectFactory.SetPackageItemExtension(com_btn_tab03_redPoint.URL, typeof(com_btn_tab03_redPoint));
             UIObjectFactory.SetPackageItemExtension(general_star_grid.URL, typeof(general_star_grid));
             UIObjectFactory.SetPackageItemExtension(consumeItem.URL, typeof(consumeItem));

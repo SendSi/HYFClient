@@ -8,11 +8,23 @@ namespace Welfare
         public override void OnInit()
         {
             base.OnInit();
-            Debug.LogError("onInit");
-            this._closeButton.onClick.Set(() =>
-            {
-                ProxyWelfareModule.Instance.CloseWelfareMainView();
-            });
+
+            this._closeButton.onClick.Set(() => { ProxyWelfareModule.Instance.CloseWelfareMainView(); });
+
+            this._leftTabList.itemRenderer = OnRendererTabList;
+            this._leftTabList.itemProvider = OnProviderTabList;
+
+        }
+
+        private string OnProviderTabList(int index)
+        {
+            return "MenuItemWelfare";
+            return "MenuTypeWelfare";
+        }
+
+        private void OnRendererTabList(int index, GObject item)
+        {
+            
         }
 
         public override void Dispose()

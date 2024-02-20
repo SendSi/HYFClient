@@ -8,7 +8,7 @@
       <relation target="" sidePair="height-height"/>
     </image>
     <image id="n34_mqls" name="n34" src="mqls1iy5bed" fileName="_new/activity_bg019.png" pkg="2r331opv" xy="0,0" pivot="1,0" size="260,750" group="n20_s9vk" visible="false" alpha="0.7"/>
-    <list id="n29_pc5k" name="leftTabList" xy="21,79" size="261,671" group="n20_s9vk" overflow="scroll" lineGap="3" defaultItem="ui://2r331opvmqls1ygcfi8">
+    <list id="n29_pc5k" name="leftTabList" xy="21,79" size="261,671" group="n20_s9vk" overflow="scroll" lineGap="3" defaultItem="ui://340eighfmqls1ygcfi8">
       <relation target="" sidePair="bottomext-bottom"/>
       <item title="成长基金"/>
       <item title="首充大礼包"/>

@@ -27,6 +27,7 @@ namespace Welfare
             UIObjectFactory.SetPackageItemExtension(LimitShopRewBtn.URL, typeof(LimitShopRewBtn));
             UIObjectFactory.SetPackageItemExtension(FristChargeView.URL, typeof(FristChargeView));
             UIObjectFactory.SetPackageItemExtension(chargeItem.URL, typeof(chargeItem));
+            UIObjectFactory.SetPackageItemExtension(MenuTypeWelfare.URL, typeof(MenuTypeWelfare));
             UIObjectFactory.SetPackageItemExtension(costItem.URL, typeof(costItem));
             UIObjectFactory.SetPackageItemExtension(WorldBossPassView.URL, typeof(WorldBossPassView));
             UIObjectFactory.SetPackageItemExtension(PriceBtn.URL, typeof(PriceBtn));
@@ -35,6 +36,7 @@ namespace Welfare
             UIObjectFactory.SetPackageItemExtension(list.URL, typeof(list));
             UIObjectFactory.SetPackageItemExtension(WishView.URL, typeof(WishView));
             UIObjectFactory.SetPackageItemExtension(WelfareMainView.URL, typeof(WelfareMainView));
+            UIObjectFactory.SetPackageItemExtension(MenuItemWelfare.URL, typeof(MenuItemWelfare));
             UIObjectFactory.SetPackageItemExtension(DailyDirectItem.URL, typeof(DailyDirectItem));
             UIObjectFactory.SetPackageItemExtension(LimitShop_item6.URL, typeof(LimitShop_item6));
             UIObjectFactory.SetPackageItemExtension(activity_firstboss1.URL, typeof(activity_firstboss1));

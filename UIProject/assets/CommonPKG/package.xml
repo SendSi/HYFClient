@@ -779,7 +779,6 @@
     <image id="mcwm1ygcfli" name="activity_016.png" path="/images/activity/" exported="true"/>
     <image id="mqls1ygcfi5" name="welfare_btn_bg06.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="25,24,2,4"/>
     <image id="mqls1ygcfi6" name="welfare_btn_bg07.png" path="/images/images_new/windowBg_new/" exported="true" scale="9grid" scale9grid="34,0,27,108"/>
-    <component id="mqls1ygcfi8" name="rbtn01.xml" path="/components/" exported="true"/>
     <component id="6kgt1ygcflj" name="flagIcon.xml" path="/components/" exported="true"/>
     <image id="ufp91ygcflk" name="com_arms_bg01.png" path="/images/images_new/" exported="true"/>
     <component id="p9k91ygcfll" name="com_btn_lbl_lines2.xml" path="/components/" exported="true"/>
