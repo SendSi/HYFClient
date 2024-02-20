@@ -39,6 +39,7 @@ namespace Welfare
             this._leftTabList.itemRenderer = OnRendererTabList;
             this._leftTabList.itemProvider = OnProviderTabList;
             this._leftTabList.onClickItem.Add(OnClickItemLeftTab);
+            this._leftTabList.numItems =  mMenuDtos.Count;
         }
 
         private void OnClickItemLeftTab()
@@ -47,7 +48,7 @@ namespace Welfare
 
         private string OnProviderTabList(int index)
         {
-            return  mMenuDtos[index]._type==0?"MenuTypeWelfare":"MenuItemWelfare";
+            return  mMenuDtos[index]._type==0?"ui://Welfare/MenuTypeWelfare":"ui://Welfare/MenuItemWelfare";
         }
 
         private void OnRendererTabList(int index, GObject obj)
@@ -56,14 +57,13 @@ namespace Welfare
             if (cfg._type==0)
             {
                 MenuTypeWelfare item = (MenuTypeWelfare)obj;
-                item.SetData(mMenuDtos[index]);
+                item.SetData(cfg);
             }
             else
             {
                 MenuItemWelfare item = (MenuItemWelfare)obj;
-                item.SetData(mMenuDtos[index]);
+                item.SetData(cfg);
             }
-
             obj.data = cfg;
         }
 
@@ -74,8 +74,8 @@ namespace Welfare
 
         public void SetData(string value)
         {
-            Debug.LogError("TTTT");
-            this._leftTabList.numItems = 6;// mMenuDtos.Count;
+            Debug.LogError("WelfareMainView_SetData");
+
         }
     }
 }
