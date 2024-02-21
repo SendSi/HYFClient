@@ -41,6 +41,24 @@ public static class TimeFormatUtils
 {
     public static string SetTimeShowStr(int timeSecond, bool isHour)
     {
+        TimeSpan timeSpan = TimeSpan.FromSeconds(timeSecond);
+        if (timeSpan.Days > 0)
+        {
+           var h = (int)((timeSecond - timeSpan.Days * 86400) / 3600);
+            return string.Format("{0}天:{1:D2}:{2:D2}:{3:D2}", timeSpan.Days, h, timeSpan.Minutes, timeSpan.Seconds);
+        }
+        else if (timeSpan.TotalHours > 0 || isHour)
+        {
+            return string.Format("{0:D2}:{1:D2}:{2:D2}", (int)timeSpan.TotalHours, timeSpan.Minutes, timeSpan.Seconds);
+        }
+        else
+        {
+            return string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
+        }
+    }
+
+    public static string SetTimeShowStr_old(int timeSecond, bool isHour)
+    {
         if (timeSecond <= 0) timeSecond = 0;
         string timerStr = "";
         int h = (int)(timeSecond / 3600);
