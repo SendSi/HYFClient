@@ -9,7 +9,7 @@ namespace Welfare
         public static void BindAll()
         {
             UIObjectFactory.SetPackageItemExtension(Child_DiamondView.URL, typeof(Child_DiamondView));
-            UIObjectFactory.SetPackageItemExtension(Recharge_btn.URL, typeof(Recharge_btn));
+            UIObjectFactory.SetPackageItemExtension(DiamondItem.URL, typeof(DiamondItem));
             UIObjectFactory.SetPackageItemExtension(ActPanel.URL, typeof(ActPanel));
             UIObjectFactory.SetPackageItemExtension(LimitShopRewardView.URL, typeof(LimitShopRewardView));
             UIObjectFactory.SetPackageItemExtension(LimitShop_item1.URL, typeof(LimitShop_item1));

@@ -1,11 +1,20 @@
 {
   "libview.firstColumnWidth": 283,
   "libview.iconScale": 0,
-  "doc.openedDocs": [],
+  "doc.openedDocs": [
+    "ui://340eighf9sqn1ygcfib",
+    "ui://340eighfqysg1ygcfne",
+    "ui://340eighfs1uz1ygcfl7",
+    "ui://340eighfmqls1ygcfi7",
+    "ui://340eighfrs9w1ygcfmv",
+    "ui://340eighfrs9w1ygcfmt",
+    "ui://340eighfrs9w1ygcfmu"
+  ],
   "libview.syncEditor": 0,
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
+  "doc.activeDoc": "ui://340eighfrs9w1ygcfmv",
   "libview.twoColumn": true,
   "libview.expandedNodes": [
     "2r331opv",

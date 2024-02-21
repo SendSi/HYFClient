@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="338,256" pivot="0.5,0.5" extention="Button">
   <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
-  <controller name="state" pages="0,,1," selected="0">
+  <controller name="stateCtrl" pages="0,,1," selected="0">
     <remark page="0" value="首次购买"/>
   </controller>
   <displayList>
     <image id="n3_9sqn" name="n3" src="9sqn1ygcfif" fileName="images/diamond_mall/diamonds_bg_03.png" xy="6,10"/>
-    <loader id="n4_9sqn" name="icon" xy="50,1" size="232,160" url="ui://340eighf9sqn1ygcfiq" fill="scale"/>
+    <loader id="n4_9sqn" name="centerIcon" xy="50,1" size="232,160" url="ui://340eighf9sqn1ygcfiq" fill="scale"/>
     <image id="n5_9sqn" name="n5" src="9sqn1ygcfig" fileName="images/diamond_mall/diamonds_bg_04.png" xy="156,130"/>
     <image id="n6_9sqn" name="n6" src="9sqn1ygcfih" fileName="images/diamond_mall/diamonds_bg_05.png" xy="259,131">
       <relation target="n11_9sqn" sidePair="right-right"/>
@@ -15,16 +15,16 @@
       <relation target="n10_9sqn" sidePair="left-left"/>
     </text>
     <text id="n10_9sqn" name="rmbLbl" xy="133,181" pivot="0.5,0.5" size="102,42" font="ui://2r331opvno3vhz9d63" fontSize="30" color="#fedd8f" align="center" vAlign="middle" shadowColor="#bd4e22" shadowOffset="1,2" autoClearText="true" text="648.00"/>
-    <text id="n11_9sqn" name="quantityLbl" xy="189,128" pivot="0.5,0.5" size="70,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" strokeColor="#2f4898" strokeSize="2" shadowColor="#2f4898" shadowOffset="2,3" singleLine="true" autoClearText="true" text="6480"/>
-    <text id="n13_9sqn" name="experienceLBL" xy="37,149" size="117,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#c37f3c" letterSpacing="-1" autoSize="none" singleLine="true" autoClearText="true" text="战令经验+60000"/>
+    <text id="n11_9sqn" name="numLbl" xy="189,128" pivot="0.5,0.5" size="70,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" align="center" vAlign="middle" strokeColor="#2f4898" strokeSize="2" shadowColor="#2f4898" shadowOffset="2,3" singleLine="true" autoClearText="true" text="6480"/>
+    <text id="n13_9sqn" name="descLbl" xy="37,149" size="117,24" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#c37f3c" letterSpacing="-1" autoSize="none" singleLine="true" text="战令经验+60000"/>
     <image id="n8_9sqn" name="n8" src="9sqn1ygcfii" fileName="images/diamond_mall/diamonds_bg_06.png" xy="5,8" group="n14_9sqn"/>
     <text id="n9_9sqn" name="n9" xy="18,35" pivot="0.5,0.5" size="73,26" group="n14_9sqn" rotation="-30" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ffdda7" align="center" letterSpacing="-1" strokeColor="#bb3b33" strokeSize="2" shadowColor="#bb3b33" shadowOffset="1,3" singleLine="true" text="首次购买"/>
-    <text id="n12_9sqn" name="title" xy="24,52" pivot="0.5,0.5" size="86,29" group="n14_9sqn" rotation="-30" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" letterSpacing="-1" strokeColor="#bb3b33" strokeSize="2" shadowColor="#bb3b33" shadowOffset="1,3" singleLine="true" autoClearText="true" text="赠送6480"/>
-    <group id="n14_9sqn" name="n14" xy="5,8" size="113,104" advanced="true">
-      <gearDisplay controller="state" pages="0"/>
+    <text id="n12_9sqn" name="tagTitle" xy="24,52" pivot="0.5,0.5" size="86,29" group="n14_9sqn" rotation="-30" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" letterSpacing="-1" strokeColor="#bb3b33" strokeSize="2" shadowColor="#bb3b33" shadowOffset="1,3" singleLine="true" text="赠送6480"/>
+    <group id="n14_9sqn" name="tag" xy="5,8" size="113,104" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0"/>
     </group>
   </displayList>
-  <Button downEffect="scale" downEffectValue=".95"/>
+  <Button downEffect="scale" downEffectValue=".99"/>
   <transition name="admission">
     <item time="0" type="Scale" tween="true" startValue="0.1,0.1" endValue="1,1" duration="6"/>
   </transition>
