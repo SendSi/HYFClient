@@ -7,7 +7,7 @@ namespace Welfare
 {
     public partial class CheckInPanelListCut : GComponent
     {
-        public GList _list;
+        public GList _dayList;
         public const string URL = "ui://340eighfrs9w1ygcfmt";
 
         public static CheckInPanelListCut CreateInstance()
@@ -19,7 +19,7 @@ namespace Welfare
         {
             base.ConstructFromXML(xml);
 
-            _list = (GList)GetChild("list");
+            _dayList = (GList)GetChild("dayList");
         }
     }
 }

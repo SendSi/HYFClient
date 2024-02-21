@@ -44,7 +44,7 @@ namespace Welfare
             UIObjectFactory.SetPackageItemExtension(LimitShop_btn5.URL, typeof(LimitShop_btn5));
             UIObjectFactory.SetPackageItemExtension(LimitShop_btn6.URL, typeof(LimitShop_btn6));
             UIObjectFactory.SetPackageItemExtension(CheckInPanelListCut.URL, typeof(CheckInPanelListCut));
-            UIObjectFactory.SetPackageItemExtension(everydayBtn.URL, typeof(everydayBtn));
+            UIObjectFactory.SetPackageItemExtension(CheckInItem.URL, typeof(CheckInItem));
             UIObjectFactory.SetPackageItemExtension(Child_CheckInView.URL, typeof(Child_CheckInView));
             UIObjectFactory.SetPackageItemExtension(Child_TodayView.URL, typeof(Child_TodayView));
             UIObjectFactory.SetPackageItemExtension(worldBossPassItem.URL, typeof(worldBossPassItem));
