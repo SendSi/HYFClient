@@ -19,7 +19,7 @@ namespace Welfare
             _dayList.itemRenderer = OnRendererDayList;
             _dayList.numItems = 30;
 
-            timerCB = CountDownTime.SetStart(3699, this._timerTxt, "剩余时间:{0}", true, null);
+            timerCB = CountDownTime.SetStart(864999, this._timerTxt, "剩余时间:{0}", true, null);
         }
 
         private void OnRendererDayList(int index, GObject item)
