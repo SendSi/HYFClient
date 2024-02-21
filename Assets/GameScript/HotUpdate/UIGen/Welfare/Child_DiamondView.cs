@@ -7,11 +7,13 @@ namespace Welfare
 {
     public partial class Child_DiamondView : GComponent
     {
-        public GLoader _icon;
-        public GTextField _explainLbl;
-        public GTextField _GradeLbl;
-        public GTextField _explainLbl01;
-        public GList _list;
+        public GImage _topIcon;
+        public GProgressBar _curProSlider;
+        public GButton _goWarBtn;
+        public GTextField _descTxt;
+        public GTextField _gradeLbl;
+        public GTextField _titleTxt;
+        public GList _diamondList;
         public const string URL = "ui://340eighf9sqn1ygcfib";
 
         public static Child_DiamondView CreateInstance()
@@ -23,11 +25,13 @@ namespace Welfare
         {
             base.ConstructFromXML(xml);
 
-            _icon = (GLoader)GetChild("icon");
-            _explainLbl = (GTextField)GetChild("explainLbl");
-            _GradeLbl = (GTextField)GetChild("GradeLbl");
-            _explainLbl01 = (GTextField)GetChild("explainLbl01");
-            _list = (GList)GetChild("list");
+            _topIcon = (GImage)GetChild("topIcon");
+            _curProSlider = (GProgressBar)GetChild("curProSlider");
+            _goWarBtn = (GButton)GetChild("goWarBtn");
+            _descTxt = (GTextField)GetChild("descTxt");
+            _gradeLbl = (GTextField)GetChild("gradeLbl");
+            _titleTxt = (GTextField)GetChild("titleTxt");
+            _diamondList = (GList)GetChild("diamondList");
         }
     }
 }

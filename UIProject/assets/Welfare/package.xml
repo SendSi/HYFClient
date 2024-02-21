@@ -19,7 +19,7 @@
     <image id="9sqn1ygcfio" name="icon_04.png" path="/images/diamond_mall/" exported="true"/>
     <image id="9sqn1ygcfip" name="icon_05.png" path="/images/diamond_mall/" exported="true"/>
     <image id="9sqn1ygcfiq" name="icon_06.png" path="/images/diamond_mall/" exported="true"/>
-    <component id="9sqn1ygcfir" name="Recharge_btn.xml" path="/components/" exported="true"/>
+    <component id="9sqn1ygcfir" name="DiamondItem.xml" path="/components/" exported="true"/>
     <image id="rjiw1ygcfiu" name="LimitShop_bg2.png" path="/images/LimitShop/" exported="true"/>
     <image id="rjiw1ygcfiv" name="LimitShop_btn1.png" path="/images/LimitShop/" exported="true"/>
     <image id="rjiw1ygcfiw" name="LimitShop_btn3.png" path="/images/LimitShop/" exported="true"/>
@@ -142,6 +142,7 @@
     <image id="p4ya1ygcgow" name="LimitShop_btn12.png" path="/images/LimitShop/" exported="true"/>
     <component id="c4bb1ygcft9" name="ActPanel.xml" path="/components/" exported="true"/>
     <component id="mqls1ygcfi8" name="MenuItemWelfare.xml" path="/components/" exported="true"/>
+    <image id="g44l1ygcgox" name="topIcon.png" path="/images/"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
