@@ -12,12 +12,12 @@ public class ProxyWelfareModule : Singleton<ProxyWelfareModule>, IProxy
 
     #region WelfareMainView打开关闭View
 
-    public void OpenWelfareMainView()
+    public void OpenWelfareMainView(int cfgId)
     {
         CheckLoad(() =>
         {
             var view = UIMgr.Instance.OpenUIViewCom<WelfareMainView>(pkgName);
-            view.SetData("");
+            view.SetData(cfgId);
         });
     }
 

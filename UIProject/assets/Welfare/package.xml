@@ -2,9 +2,9 @@
 <packageDescription id="340eighf" hasFavorites="true">
   <resources>
     <component id="mqls1ygcfi7" name="WelfareMainView.xml" path="/panel/" exported="true"/>
-    <component id="ikk01ygcfi9" name="WishView.xml" path="/panel/" exported="true"/>
+    <component id="ikk01ygcfi9" name="Child_WishView.xml" path="/panel/" exported="true"/>
     <component id="sogo1ygcfia" name="closeButton.xml" path="/components/CityView/"/>
-    <component id="9sqn1ygcfib" name="DiamondMallView.xml" path="/panel/" exported="true"/>
+    <component id="9sqn1ygcfib" name="Child_DiamondView.xml" path="/panel/" exported="true"/>
     <image id="9sqn1ygcfic" name="diamonds_bg_00.jpg" path="/images/" exported="true" atlas="alone"/>
     <image id="9sqn1ygcfid" name="diamonds_bg_01.png" path="/images/diamond_mall/" exported="true" scale="9grid" scale9grid="200,38,751,76"/>
     <image id="9sqn1ygcfie" name="diamonds_bg_02.png" path="/images/diamond_mall/" exported="true"/>
@@ -61,7 +61,7 @@
     <image id="d5f21ygcfl4" name="LimitShop_arrow.png" path="/images/" exported="true"/>
     <component id="al8r1ygcfl5" name="artPanle.xml" path="/panel/"/>
     <component id="al8r1ygcfl6" name="artPanle1.xml" path="/panel/"/>
-    <component id="s1uz1ygcfl7" name="DailyDirectPurchaseView.xml" path="/panel/" exported="true"/>
+    <component id="s1uz1ygcfl7" name="Child_TodayView.xml" path="/panel/" exported="true"/>
     <image id="s1uz1ygcfl8" name="everyday_bg01.png" path="/images/Daily_direct_purchase/" exported="true"/>
     <image id="s1uz1ygcfl9" name="everyday_bg02.png" path="/images/Daily_direct_purchase/" exported="true"/>
     <image id="s1uz1ygcfla" name="everyday_bg03.png" path="/images/Daily_direct_purchase/" exported="true"/>
@@ -83,14 +83,13 @@
     <component id="hsk61ygcflq" name="TreasureChestBtn01.xml" path="/components/" exported="true"/>
     <component id="hsk61ygcflr" name="list.xml" path="/components/" exported="true"/>
     <image id="d1gb1ygcfls" name="diamonds_bg_00.jpg" path="/images/diamond_mall/" exported="true"/>
-    <component id="d1gb1ygcflu" name="FristChargeView.xml" path="/panel/" exported="true"/>
     <component id="d1gb1ygcflv" name="chargeItem.xml" path="/components/"/>
     <component id="dy2k1ygcflx" name="costItem.xml" path="/components/CityView/" exported="true"/>
     <component id="loe91ygcflw" name="rbtn01.xml" path="/components/"/>
-    <component id="g2er1ygcfm0" name="WorldBossPassView.xml" path="/panel/" exported="true"/>
+    <component id="g2er1ygcfm0" name="Child_WorldBossView.xml" path="/panel/" exported="true"/>
     <component id="rs9w1ygcfmu" name="everydayBtn.xml" path="/components/" exported="true"/>
     <component id="rs9w1ygcfmt" name="CheckInPanelListCut.xml" path="/components/" exported="true"/>
-    <component id="rs9w1ygcfmv" name="CheckInPanelView.xml" path="/panel/" exported="true"/>
+    <component id="rs9w1ygcfmv" name="Child_CheckInView.xml" path="/panel/" exported="true"/>
     <image id="b0uj1ygcfij" name="SignIn_bg.png" path="/images/SignIn/" exported="true" scale="9grid" scale9grid="133,156,731,453"/>
     <image id="b0uj1ygcfik" name="SignIn_bg01.png" path="/images/SignIn/" exported="true"/>
     <image id="b0uj1ygcfil" name="SignIn_bg02.png" path="/images/SignIn/" exported="true"/>
@@ -113,7 +112,7 @@
     <image id="ik3v1ygcfnb" name="LimitShop_bg1.jpg" path="/images/LimitShop/"/>
     <image id="ik3v1ygcfnc" name="LimitShop_btn6.png" path="/images/LimitShop/"/>
     <image id="ik3v1ygcfnd" name="LimitShop_btn7.png" path="/images/LimitShop/"/>
-    <component id="qysg1ygcfne" name="ThanatorView.xml" path="/panel/" exported="true"/>
+    <component id="qysg1ygcfne" name="Child_ThanatorView.xml" path="/panel/" exported="true"/>
     <image id="qysg1ygcfnf" name="thanator_bg.jpg" path="/images/" exported="true" atlas="alone"/>
     <image id="mizd1ygcfql" name="limitshop_btn_bg1.png" path="/images/" exported="true"/>
     <component id="mizd1ygcfqm" name="LimitShop_btn14.xml" path="/components/" exported="true"/>

@@ -8,6 +8,7 @@ namespace Welfare
     public partial class WelfareMainView : GComponent
     {
         public GLoader _bg;
+        public GLoader _conPanel;
         public GList _leftTabList;
         public GButton _closeButton;
         public GGroup _Left;
@@ -24,6 +25,7 @@ namespace Welfare
             base.ConstructFromXML(xml);
 
             _bg = (GLoader)GetChild("bg");
+            _conPanel = (GLoader)GetChild("conPanel");
             _leftTabList = (GList)GetChild("leftTabList");
             _closeButton = (GButton)GetChild("closeButton");
             _Left = (GGroup)GetChild("Left");

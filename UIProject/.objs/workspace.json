@@ -1,27 +1,11 @@
 {
   "libview.firstColumnWidth": 283,
   "libview.iconScale": 0,
-  "doc.openedDocs": [
-    "ui://340eighfcmbv1ygcfjt",
-    "ui://340eighfcmbvhz9cy9",
-    "ui://340eighfcmbv1ygcfj6",
-    "ui://utp01xiaykwwkw",
-    "ui://2r331opve2ps1iy5b99",
-    "ui://340eighfmqls1ygcfi7",
-    "ui://340eighfdfim1ygcfpi",
-    "ui://340eighfloe91ygcflw",
-    "ui://340eighfmqls1ygcfi8",
-    "ui://4ni413lalumy1qp8vd6",
-    "ui://4ni413laxoe1mz",
-    "ui://4ni413laj4kdhz9cm2",
-    "ui://2r331opvpyiyhz9d6l",
-    "ui://2r331opvdix6fm"
-  ],
+  "doc.openedDocs": [],
   "libview.syncEditor": 0,
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://340eighfdfim1ygcfpi",
   "libview.twoColumn": true,
   "libview.expandedNodes": [
     "2r331opv",

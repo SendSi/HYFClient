@@ -158,7 +158,8 @@ namespace FairyGUI
             set
             {
                 _margin = value;
-                if (rootContainer.clipRect != null && scrollPane == null) //如果scrollPane不为空，则HandleSizeChanged里面的处理会促使ScrollPane处理
+                if (rootContainer.clipRect != null &&
+                    scrollPane == null) //如果scrollPane不为空，则HandleSizeChanged里面的处理会促使ScrollPane处理
                     container.SetXY(_margin.left + _alignOffset.x, _margin.top + _alignOffset.y);
                 HandleSizeChanged();
             }
@@ -225,7 +226,8 @@ namespace FairyGUI
         /// <returns>GObject</returns>
         virtual public GObject AddChildAt(GObject child, int index)
         {
-            if (index >= 0 && index <= _children.Count)
+            if (index >= 0 &&
+                index <= _children.Count)
             {
                 if (child.parent == this)
                 {
@@ -324,7 +326,8 @@ namespace FairyGUI
         /// <returns>GObject</returns>
         virtual public GObject RemoveChildAt(int index, bool dispose)
         {
-            if (index >= 0 && index < numChildren)
+            if (index >= 0 &&
+                index < numChildren)
             {
                 GObject child = _children[index];
 
@@ -369,7 +372,8 @@ namespace FairyGUI
         /// <param name="dispose">If true, the child will be disposed right away.</param>
         public void RemoveChildren(int beginIndex, int endIndex, bool dispose)
         {
-            if (endIndex < 0 || endIndex >= numChildren) endIndex = numChildren - 1;
+            if (endIndex < 0 ||
+                endIndex >= numChildren) endIndex = numChildren - 1;
 
             for (int i = beginIndex; i <= endIndex; ++i) RemoveChildAt(beginIndex, dispose);
         }
@@ -381,7 +385,8 @@ namespace FairyGUI
         /// <returns>A child object.</returns>
         public GObject GetChildAt(int index)
         {
-            if (index >= 0 && index < numChildren)
+            if (index >= 0 &&
+                index < numChildren)
                 return _children[index];
             else
                 throw new Exception("Invalid child index: " + index + ">" + numChildren);
@@ -440,7 +445,9 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 GObject child = _children[i];
-                if (child.internalVisible && child.internalVisible2 && child.name == name) return child;
+                if (child.internalVisible &&
+                    child.internalVisible2 &&
+                    child.name == name) return child;
             }
 
             return null;
@@ -458,7 +465,8 @@ namespace FairyGUI
             for (int i = 0; i < cnt; ++i)
             {
                 GObject child = _children[i];
-                if (child.group == group && child.name == name) return child;
+                if (child.group == group &&
+                    child.name == name) return child;
             }
 
             return null;
@@ -599,7 +607,8 @@ namespace FairyGUI
         {
             int index1 = _children.IndexOf(child1);
             int index2 = _children.IndexOf(child2);
-            if (index1 == -1 || index2 == -1) throw new Exception("Not a child of this container");
+            if (index1 == -1 ||
+                index2 == -1) throw new Exception("Not a child of this container");
             SwapChildrenAt(index1, index2);
         }
 
@@ -644,7 +653,6 @@ namespace FairyGUI
 
             return false;
         }
-
 
         /// <summary>
         ///
@@ -799,7 +807,8 @@ namespace FairyGUI
                             GObject g = _children[i];
                             if (g == child) break;
 
-                            if (g.displayObject != null && g.displayObject.parent != null) index++;
+                            if (g.displayObject != null &&
+                                g.displayObject.parent != null) index++;
                         }
 
                         container.AddChildAt(child.displayObject, index);
@@ -812,7 +821,8 @@ namespace FairyGUI
                             GObject g = _children[i];
                             if (g == child) break;
 
-                            if (g.displayObject != null && g.displayObject.parent != null) index++;
+                            if (g.displayObject != null &&
+                                g.displayObject.parent != null) index++;
                         }
 
                         container.AddChildAt(child.displayObject, index);
@@ -842,7 +852,8 @@ namespace FairyGUI
 
         void BuildNativeDisplayList()
         {
-            if (displayObject == null || displayObject.isDisposed) return;
+            if (displayObject == null ||
+                displayObject.isDisposed) return;
 
             int cnt = _children.Count;
             if (cnt == 0) return;
@@ -854,7 +865,8 @@ namespace FairyGUI
                     for (int i = 0; i < cnt; i++)
                     {
                         GObject child = _children[i];
-                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
+                        if (child.displayObject != null &&
+                            child.internalVisible) container.AddChild(child.displayObject);
                     }
                 }
                     break;
@@ -863,7 +875,8 @@ namespace FairyGUI
                     for (int i = cnt - 1; i >= 0; i--)
                     {
                         GObject child = _children[i];
-                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
+                        if (child.displayObject != null &&
+                            child.internalVisible) container.AddChild(child.displayObject);
                     }
                 }
                     break;
@@ -874,13 +887,15 @@ namespace FairyGUI
                     for (int i = 0; i < apex; i++)
                     {
                         GObject child = _children[i];
-                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
+                        if (child.displayObject != null &&
+                            child.internalVisible) container.AddChild(child.displayObject);
                     }
 
                     for (int i = cnt - 1; i >= apex; i--)
                     {
                         GObject child = _children[i];
-                        if (child.displayObject != null && child.internalVisible) container.AddChild(child.displayObject);
+                        if (child.displayObject != null &&
+                            child.internalVisible) container.AddChild(child.displayObject);
                     }
                 }
                     break;
@@ -925,7 +940,8 @@ namespace FairyGUI
                 {
                     myIndex = i;
                 }
-                else if ((child is GButton) && ((GButton)child).relatedController == c)
+                else if ((child is GButton) &&
+                         ((GButton)child).relatedController == c)
                 {
                     if (i > maxIndex) maxIndex = i;
                 }
@@ -949,7 +965,8 @@ namespace FairyGUI
                 _clipSoftness = value;
                 if (scrollPane != null)
                     scrollPane.UpdateClipSoft();
-                else if (_clipSoftness.x > 0 || _clipSoftness.y > 0)
+                else if (_clipSoftness.x > 0 ||
+                         _clipSoftness.y > 0)
                     rootContainer.clipSoftness = new Vector4(value.x, value.y, value.x, value.y);
                 else
                     rootContainer.clipSoftness = null;
@@ -965,7 +982,8 @@ namespace FairyGUI
             set
             {
                 container.mask = value;
-                if (value != null && value.parent != container) container.AddChild(value);
+                if (value != null &&
+                    value.parent != container) container.AddChild(value);
             }
         }
 
@@ -1047,7 +1065,8 @@ namespace FairyGUI
                 UpdateClipRect();
                 container.SetXY(_margin.left, _margin.top);
             }
-            else if (_margin.left != 0 || _margin.top != 0)
+            else if (_margin.left != 0 ||
+                     _margin.top != 0)
             {
                 if (rootContainer == container)
                 {
@@ -1100,7 +1119,8 @@ namespace FairyGUI
         /// </summary>
         public void SetBoundsChangedFlag()
         {
-            if (scrollPane == null && !_trackBounds) return;
+            if (scrollPane == null &&
+                !_trackBounds) return;
 
             _boundsChanged = true;
         }
@@ -1499,9 +1519,11 @@ namespace FairyGUI
                 if (hitTestId != null)
                 {
                     PackageItem pi = contentItem.owner.GetItem(hitTestId);
-                    if (pi != null && pi.pixelHitTestData != null) rootContainer.hitArea = new PixelHitTest(pi.pixelHitTestData, i1, i2, sourceWidth, sourceHeight);
+                    if (pi != null &&
+                        pi.pixelHitTestData != null) rootContainer.hitArea = new PixelHitTest(pi.pixelHitTestData, i1, i2, sourceWidth, sourceHeight);
                 }
-                else if (i1 != 0 && i2 != -1)
+                else if (i1 != 0 &&
+                         i2 != -1)
                 {
                     rootContainer.hitArea = new ShapeHitTest(this.GetChildAt(i2).displayObject);
                 }
@@ -1577,7 +1599,9 @@ namespace FairyGUI
             buffer.Seek(beginPos, 4);
 
             int pageController = buffer.ReadShort();
-            if (pageController != -1 && scrollPane != null && scrollPane.pageMode) scrollPane.pageController = parent.GetControllerAt(pageController);
+            if (pageController != -1 &&
+                scrollPane != null &&
+                scrollPane.pageMode) scrollPane.pageController = parent.GetControllerAt(pageController);
 
             int cnt = buffer.ReadShort();
             for (int i = 0; i < cnt; i++)
@@ -1609,7 +1633,8 @@ namespace FairyGUI
         void __playSound(string soundRes, float volumeScale)
         {
             NAudioClip sound = UIPackage.GetItemAssetByURL(soundRes) as NAudioClip;
-            if (sound != null && sound.nativeClip != null) Stage.inst.PlayOneShotSound(sound.nativeClip, volumeScale);
+            if (sound != null &&
+                sound.nativeClip != null) Stage.inst.PlayOneShotSound(sound.nativeClip, volumeScale);
         }
 
         void __addedToStage()
@@ -1663,12 +1688,12 @@ namespace FairyGUI
         public Action __onDispose;
 #endif
 
-        /// <summary>
-        /// 打开页面时 OpenUIViewCom 才会被 调用
-        /// </summary>
+        /// <summary> 打开页面时 OpenUIViewCom 才会被 调用 </summary>
         public virtual void OnInit()
         {
-        //若走不到 此方法   UIGenBinder.cs看看 注册了此模块没
+#if UNITY_EDITOR
+            Debug.LogWarning(" 若走不到 此方法   UIGenBinder.cs看看 注册了此模块没 ");
+#endif
         }
     }
 }

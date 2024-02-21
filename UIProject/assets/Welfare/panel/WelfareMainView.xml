@@ -8,11 +8,16 @@
       <relation target="" sidePair="height-height"/>
     </image>
     <image id="n34_mqls" name="n34" src="mqls1iy5bed" fileName="_new/activity_bg019.png" pkg="2r331opv" xy="0,0" pivot="1,0" size="260,750" group="n20_s9vk" visible="false" alpha="0.7"/>
+    <loader id="n40_cuep" name="conPanel" xy="0,0" size="1334,750" group="n20_s9vk" url="ui://340eighfrs9w1ygcfmv" align="center" vAlign="middle">
+      <relation target="" sidePair="height-height,left-left,right-right"/>
+    </loader>
     <list id="n29_pc5k" name="leftTabList" xy="21,79" size="261,671" group="n20_s9vk" overflow="scroll" lineGap="3" defaultItem="ui://340eighfmqls1ygcfi8" autoClearItems="true">
       <relation target="" sidePair="bottomext-bottom"/>
+      <item url="ui://340eighfdfim1ygcfpi"/>
+      <item/>
     </list>
     <component id="n3_w84w" name="closeButton" src="tv1v1a" fileName="components/com_btn_close.xml" pkg="2r331opv" xy="0,0" size="110,68" group="n20_s9vk"/>
-    <group id="n20_s9vk" name="Left" xy="0,0" size="290,750" advanced="true"/>
+    <group id="n20_s9vk" name="Left" xy="0,0" size="1334,750" advanced="true"/>
   </displayList>
   <transition name="t0" autoPlay="true">
     <item time="0" type="XY" target="n20_s9vk" tween="true" startValue="-526,0" endValue="0,0" duration="11" ease="Back.Out"/>
