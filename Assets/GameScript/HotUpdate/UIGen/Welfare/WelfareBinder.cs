@@ -8,7 +8,7 @@ namespace Welfare
     {
         public static void BindAll()
         {
-            UIObjectFactory.SetPackageItemExtension(DiamondMallView.URL, typeof(DiamondMallView));
+            UIObjectFactory.SetPackageItemExtension(Child_DiamondView.URL, typeof(Child_DiamondView));
             UIObjectFactory.SetPackageItemExtension(Recharge_btn.URL, typeof(Recharge_btn));
             UIObjectFactory.SetPackageItemExtension(ActPanel.URL, typeof(ActPanel));
             UIObjectFactory.SetPackageItemExtension(LimitShopRewardView.URL, typeof(LimitShopRewardView));
@@ -25,30 +25,28 @@ namespace Welfare
             UIObjectFactory.SetPackageItemExtension(LimitShop_Slider.URL, typeof(LimitShop_Slider));
             UIObjectFactory.SetPackageItemExtension(LimitShop_box.URL, typeof(LimitShop_box));
             UIObjectFactory.SetPackageItemExtension(LimitShopRewBtn.URL, typeof(LimitShopRewBtn));
-            UIObjectFactory.SetPackageItemExtension(FristChargeView.URL, typeof(FristChargeView));
-            UIObjectFactory.SetPackageItemExtension(chargeItem.URL, typeof(chargeItem));
             UIObjectFactory.SetPackageItemExtension(MenuTypeWelfare.URL, typeof(MenuTypeWelfare));
             UIObjectFactory.SetPackageItemExtension(costItem.URL, typeof(costItem));
-            UIObjectFactory.SetPackageItemExtension(WorldBossPassView.URL, typeof(WorldBossPassView));
+            UIObjectFactory.SetPackageItemExtension(Child_WorldBossView.URL, typeof(Child_WorldBossView));
             UIObjectFactory.SetPackageItemExtension(PriceBtn.URL, typeof(PriceBtn));
             UIObjectFactory.SetPackageItemExtension(TreasureChestBtn.URL, typeof(TreasureChestBtn));
             UIObjectFactory.SetPackageItemExtension(TreasureChestBtn01.URL, typeof(TreasureChestBtn01));
             UIObjectFactory.SetPackageItemExtension(list.URL, typeof(list));
-            UIObjectFactory.SetPackageItemExtension(WishView.URL, typeof(WishView));
+            UIObjectFactory.SetPackageItemExtension(Child_WishView.URL, typeof(Child_WishView));
             UIObjectFactory.SetPackageItemExtension(WelfareMainView.URL, typeof(WelfareMainView));
             UIObjectFactory.SetPackageItemExtension(MenuItemWelfare.URL, typeof(MenuItemWelfare));
             UIObjectFactory.SetPackageItemExtension(DailyDirectItem.URL, typeof(DailyDirectItem));
             UIObjectFactory.SetPackageItemExtension(LimitShop_item6.URL, typeof(LimitShop_item6));
             UIObjectFactory.SetPackageItemExtension(activity_firstboss1.URL, typeof(activity_firstboss1));
             UIObjectFactory.SetPackageItemExtension(activity_firstboss2.URL, typeof(activity_firstboss2));
-            UIObjectFactory.SetPackageItemExtension(ThanatorView.URL, typeof(ThanatorView));
+            UIObjectFactory.SetPackageItemExtension(Child_ThanatorView.URL, typeof(Child_ThanatorView));
             UIObjectFactory.SetPackageItemExtension(LimitShop_btn1.URL, typeof(LimitShop_btn1));
             UIObjectFactory.SetPackageItemExtension(LimitShop_btn5.URL, typeof(LimitShop_btn5));
             UIObjectFactory.SetPackageItemExtension(LimitShop_btn6.URL, typeof(LimitShop_btn6));
             UIObjectFactory.SetPackageItemExtension(CheckInPanelListCut.URL, typeof(CheckInPanelListCut));
             UIObjectFactory.SetPackageItemExtension(everydayBtn.URL, typeof(everydayBtn));
-            UIObjectFactory.SetPackageItemExtension(CheckInPanelView.URL, typeof(CheckInPanelView));
-            UIObjectFactory.SetPackageItemExtension(DailyDirectPurchaseView.URL, typeof(DailyDirectPurchaseView));
+            UIObjectFactory.SetPackageItemExtension(Child_CheckInView.URL, typeof(Child_CheckInView));
+            UIObjectFactory.SetPackageItemExtension(Child_TodayView.URL, typeof(Child_TodayView));
             UIObjectFactory.SetPackageItemExtension(worldBossPassItem.URL, typeof(worldBossPassItem));
             UIObjectFactory.SetPackageItemExtension(WishCrit.URL, typeof(WishCrit));
             UIObjectFactory.SetPackageItemExtension(welfare_Btn.URL, typeof(welfare_Btn));

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false"  initName="frame">
+  <displayList>
+    <loader3D id="n72_qysg" name="model" xy="435,199" size="515,493" animation="" skin="" loop="true"/>
+    <text id="n36_mqls" name="name" xy="349,77" size="244,79" font="ui://2r331opvno3vhz9d63" fontSize="60" color="#ffffff" text="联盟圣兽"/>
+    <image id="n74_qysg" name="n74" src="ihid1ygcfmp" fileName="images/images_new/com_change06.png" pkg="2r331opv" xy="625,142" size="342,43" color="#db60ff">
+      <relation target="n70_qysg" sidePair="left-right"/>
+    </image>
+    <text id="n70_qysg" name="describe" xy="349,144" size="277,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" ubb="true" text="每日18:00-22:00开启"/>
+    <text id="n73_qysg" name="describe2" xy="641,144" size="116,39" font="ui://2r331opvno3vhz9d63" fontSize="28" color="#ffffff" ubb="true" text="双倍掉落">
+      <relation target="n74_qysg" sidePair="center-center"/>
+    </text>
+    <text id="n16_s9vk" name="frequency" xy="1032,478" pivot="0.5,0.5" size="100,34" group="n75_fmrz" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="奖励预览"/>
+    <image id="n63_kh7y" name="fre" src="dfgw1ygcfmf" fileName="images/images_new/com_change04.png" pkg="2r331opv" xy="843,518" size="490,96" group="n75_fmrz" alpha="0.8" color="#000000"/>
+    <list id="n69_qysg" name="award_list" xy="801,506" pivot="0.5,0.5" size="563,120" group="n75_fmrz" scale="0.7,0.7" layout="row" overflow="scroll" defaultItem="ui://2r331opvj842hz9cyi" align="center">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n64_mccu" name="goBtn" src="c4umz9cnc" fileName="components/components_new/com_btn_001.xml" pkg="2r331opv" xy="1106,655" group="n75_fmrz">
+      <Button title="前往参加"/>
+    </component>
+    <text id="n76_bykz" name="num" xy="1096,625" pivot="0.5,0.5" size="177,29" group="n75_fmrz" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="个人可挑战次数：X"/>
+    <group id="n75_fmrz" name="n75" xy="801,478" size="563,239" advanced="true">
+      <relation target="" sidePair="right-right"/>
+    </group>
+  </displayList>
+  <transition name="t0" autoPlay="true"/>
+</component>

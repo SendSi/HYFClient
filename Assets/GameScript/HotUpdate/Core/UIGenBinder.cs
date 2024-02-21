@@ -1,5 +1,4 @@
-﻿using Activity;
-using Bag;
+﻿using Bag;
 using DialogTip;
 using Login;
 using MainCenter;
@@ -25,6 +24,5 @@ public class UIGenBinder
         GMViewBinder.BindAll();
         SettingPKGBinder.BindAll();
         WelfareBinder.BindAll();
-        ActivityBinder.BindAll();
     }
 }

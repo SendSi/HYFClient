@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false"  initName="frame">
+  <displayList>
+    <component id="n78_vsu6" name="wishBtn1" src="vsu61ygcfqt" fileName="components/welfare_Btn.xml" xy="455,328" group="n49_mqls"/>
+    <component id="n79_vsu6" name="wishBtn2" src="vsu61ygcfqt" fileName="components/welfare_Btn.xml" xy="759,75" group="n49_mqls"/>
+    <component id="n80_vsu6" name="wishBtn3" src="vsu61ygcfqt" fileName="components/welfare_Btn.xml" xy="963,311" group="n49_mqls"/>
+    <group id="n49_mqls" name="btn" xy="455,75" size="716,475" group="n35_mqls" advanced="true"/>
+    <image id="n31_pc5k" name="frebg" src="dfgw1ygcfmf" fileName="images/images_new/com_change04.png" pkg="2r331opv" xy="587,650" pivot="0.5,0.5" size="433,50" group="n72_oqrk" rotation="180" color="#061324"/>
+    <text id="n16_s9vk" name="frequency" xy="714,656" pivot="1,0" size="111,34" group="n72_oqrk" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" vAlign="middle" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" singleLine="true" text="剩余次数: "/>
+    <component id="n33_pc5k" name="tipBtn" src="ngv8ft" fileName="components/com_btn_explain.xml" pkg="2r331opv" xy="926,652" size="41,42" group="n72_oqrk"/>
+    <text id="n53_ikk0" name="wishTimesTxt" xy="828,656" size="56,34" group="n72_oqrk" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#ffffff" align="right" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="2,2" autoClearText="true" text="[color=#ff0000]1[/color]/10"/>
+    <group id="n72_oqrk" name="n72" xy="587,650" size="433,50" group="n35_mqls" advanced="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </group>
+    <group id="n35_mqls" name="state0" xy="455,75" size="716,625" advanced="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n51_ikk0" name="propTopList" src="ykwwkx" fileName="components/currencyListCom.xml" pkg="2r331opv" xy="624,10" size="700,40">
+      <relation target="" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <transition name="t0" autoPlay="true">
+    <item time="0" type="Alpha" target="n35_mqls" tween="true" startValue="0" endValue="1" duration="9"/>
+  </transition>
+  <transition name="t1" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n78_vsu6" tween="true" startValue="411,328,0.308,0.437" endValue="411,295,0.308,0.393" duration="33" ease="Custom" customEase="2,0,0,0.5375,0.28,0.7575,0.865,1,0,1,1"/>
+    <item time="33" type="XY" target="n78_vsu6" tween="true" startValue="411,295,0.308,0.393" endValue="411,295,0.308,0.393" duration="1" ease="Custom" customEase="2,0,0,0.1625,0.2825,0.865,0.7225,1,0,1,1"/>
+    <item time="34" type="XY" target="n78_vsu6" tween="true" startValue="411,295,0.308,0.393" endValue="411,328,0.308,0.437" duration="36" ease="Custom" customEase="2,0,0,0.305,0.135,0.7075,0.8725,1,0,1,1"/>
+    <item time="70" type="XY" target="n78_vsu6" tween="true" startValue="411,328,0.308,0.437" endValue="411,328,0.308,0.437" duration="1"/>
+  </transition>
+  <transition name="t2" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n79_vsu6" value="715,75,0.536,0.1"/>
+    <item time="2" type="XY" target="n79_vsu6" tween="true" startValue="715,75,0.536,0.1" endValue="715,95,0.536,0.127" duration="34" ease="Custom" customEase="2,0,0,0.265,0.1475,0.7575,0.91,1,0,1,1"/>
+    <item time="38" type="XY" target="n79_vsu6" tween="true" startValue="715,95,0.536,0.127" endValue="715,75,0.536,0.1" duration="36" ease="Custom" customEase="2,0,0,0.2325,0.13,0.775,0.8925,1,0,1,1"/>
+  </transition>
+  <transition name="t3" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n80_vsu6" tween="true" startValue="919,311,0.689,0.415" endValue="919,335,0.689,0.447" duration="37" ease="Custom" customEase="2,0,0,0.2525,0.145,0.795,0.8725,1,0,1,1"/>
+    <item time="41" type="XY" target="n80_vsu6" tween="true" startValue="919,335,0.689,0.447" endValue="919,311,0.689,0.415" duration="37" ease="Custom" customEase="2,0,0,0.23,0.1475,0.7975,0.8725,1,0,1,1"/>
+    <item time="80" type="XY" target="n80_vsu6" value="919,311,0.689,0.415"/>
+  </transition>
+</component>

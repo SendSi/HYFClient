@@ -12,7 +12,7 @@ namespace MainCenter
             {
             }),
             new FuncBtnData(2002, "ui://CommonPKG/activity_016", "活动", () => { }),
-            new FuncBtnData(2003, "ui://CommonPKG/activity_007", "福利", () => { ProxyWelfareModule.Instance.OpenWelfareMainView(); }),
+            new FuncBtnData(2003, "ui://CommonPKG/activity_007", "福利", () => { ProxyWelfareModule.Instance.OpenWelfareMainView(1001); }),
         };
 
         public override void OnInit()
