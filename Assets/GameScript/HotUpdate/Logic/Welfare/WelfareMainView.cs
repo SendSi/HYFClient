@@ -15,10 +15,7 @@ namespace Welfare
             base.OnInit();
 
             _menuCfg = ConfigMgr.Instance.LoadConfigList<WelfareMenuConfig>();
-            _menuCfg.Sort((a, b) =>
-            {
-                return a.id < b.id ? -1 : 1;
-            });
+            _menuCfg.Sort((a, b) =>            {                return a.id < b.id ? -1 : 1; });
 
             this._closeButton.onClick.Set(() => { ProxyWelfareModule.Instance.CloseWelfareMainView(); });
 

@@ -3,15 +3,19 @@ using FairyGUI;
 
 namespace Welfare
 {
-    public partial class DiamondItem:GButton
+    public partial class DiamondItem : GButton
     {
-        public void SetData()
+        public void SetData(RechargeConfig cfg)
         {
-            var value = UnityEngine.Random.Range(100, 200);
-            this._numLbl.text = value.ToString();
-            this._rmbLbl.text = (value * 0.1).ToString();
+            this._centerIcon.icon = cfg.cenIcon;
+            Item extra = ItemStringUtils.Instance.GetOneItem(cfg.extraFirst);
+
+            this._rmbLbl.text = $"{cfg.price}.00";
+            this._tagTitle.text = $"赠送{extra.Num}";
             
-            
+            var coms = ItemStringUtils.Instance.GetListItem(cfg.commodity);
+            this._numLbl.text = coms[0].Num.ToString();
+            this._descLbl.text = $"战令经验+{coms[1].Num}";
         }
     }
 }

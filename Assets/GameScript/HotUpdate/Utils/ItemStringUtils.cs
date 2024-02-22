@@ -2,59 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Item
+{
+    public int Id { get; set; }
+    public int Num { get; set; }
+
+    public Item(int id, int num)
+    {
+        this.Id = id;
+        this.Num = num;
+    }
+}
+
 public class ItemStringUtils : Singleton<ItemStringUtils>
 {
-    public class Item
-    {
-        public int Id { get; set; }
-        public int Num { get; set; }
-    }
-
     public List<Item> GetListItem(string originalString)
     {
-        //  originalString = "12:60;43:600";
-        List<Item> itemList = new List<Item>();
+        List<Item> items = new List<Item>();
         ReadOnlySpan<char> span = originalString.AsSpan();
 
-        int pairStartIndex = 0;
-        int pairEndIndex = 0;
-        while (pairEndIndex < span.Length)
+        ReadOnlySpan<char> numPart;
+        ReadOnlySpan<char> idPart;
+        while (!span.IsEmpty)
         {
-            pairEndIndex = span.IndexOf(';');
+            int colonIndex = span.IndexOf(':');
+            int semicolonIndex = span.IndexOf(';');
 
-            if (pairEndIndex == -1)
-                pairEndIndex = span.Length;
+            idPart = span.Slice(0, colonIndex);
 
-            var pair = span.Slice(pairStartIndex, pairEndIndex - pairStartIndex);
-            int colonIndex = pair.IndexOf(':');
-            if (colonIndex != -1)
-            {
-                var idSpan = pair.Slice(0, colonIndex);
-                var numSpan = pair.Slice(colonIndex + 1);
-
-                if (int.TryParse(idSpan, out int id) && int.TryParse(numSpan, out int num))
-                {
-                    itemList.Add(new Item
-                    {
-                        Id = id,
-                        Num = num
-                    });
-                }
-                else
-                {
-                    Debug.LogError("Failed to parse id or num");
-                }
-            }
+            if (semicolonIndex == -1)
+                numPart = span.Slice(colonIndex + 1, span.Length - colonIndex - 1);
             else
+                numPart = span.Slice(colonIndex + 1, semicolonIndex - colonIndex - 1);
+
+            if (int.TryParse(idPart, out int id) && int.TryParse(numPart, out int num))
             {
-                Debug.LogError("Colon not found in pair: " + pair.ToString());
+                items.Add(new Item(id, num));
             }
 
-            pairStartIndex = pairEndIndex + 1;
-            span = span.Slice(pairStartIndex);
+            if (semicolonIndex == -1)
+                break;
+
+            span = span.Slice(semicolonIndex + 1);
         }
 
-        return itemList;
+        return items;
     }
 
     public Item GetOneItem(string originalString)
@@ -67,11 +59,7 @@ public class ItemStringUtils : Singleton<ItemStringUtils>
             var numSpan = span.Slice(colonIndex + 1);
             if (int.TryParse(idSpan, out int id) && int.TryParse(numSpan, out int num))
             {
-                return new Item
-                {
-                    Id = id,
-                    Num = num
-                };
+                return new Item(id, num);
             }
             else
             {
@@ -83,6 +71,6 @@ public class ItemStringUtils : Singleton<ItemStringUtils>
             Debug.LogError("Colon not found in input: " + originalString);
         }
 
-        return new Item(); // 如果解析失败，则返回默认的 Item 对象
+        return new Item(1,1); // 如果解析失败，则返回默认的 Item 对象
     }
 }
