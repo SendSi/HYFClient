@@ -1,4 +1,5 @@
-﻿using FairyGUI;
+﻿using System.Collections.Generic;
+using FairyGUI;
 using UnityEngine;
 
 namespace Welfare
@@ -7,10 +8,13 @@ namespace Welfare
     {
         private GList _dayList;
         private TimerCallback timerCB;
+        private Dictionary<string, CheckInConfig> _cfgInfos;
 
         public override void OnInit()
         {
             base.OnInit();
+
+            _cfgInfos = ConfigMgr.Instance.LoadConfigDics<CheckInConfig>(); //整个表
 
             MenuData cfg = (MenuData)(this.data);
             Debug.LogError(cfg._name);
@@ -25,7 +29,7 @@ namespace Welfare
         private void OnRendererDayList(int index, GObject item)
         {
             var obj = (CheckInItem)item;
-            obj.SetData(index + 1);
+            obj.SetData(_cfgInfos[(index + 1001).ToString()]); //CheckInItem.cs
         }
 
         public override void Dispose()

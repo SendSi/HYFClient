@@ -10,6 +10,7 @@ namespace CommonPKG
         public Controller _qualityCtrl;
         public GLoader _qualityIcon;
         public GLoader _itemIcon;
+        public GImage _selectEle;
         public GTextField _hasNumTxt;
         public GGroup _iconGroup;
         public const string URL = "ui://2r331opvodfq1ygcgrr";
@@ -26,6 +27,7 @@ namespace CommonPKG
             _qualityCtrl = GetController("qualityCtrl");
             _qualityIcon = (GLoader)GetChild("qualityIcon");
             _itemIcon = (GLoader)GetChild("itemIcon");
+            _selectEle = (GImage)GetChild("selectEle");
             _hasNumTxt = (GTextField)GetChild("hasNumTxt");
             _iconGroup = (GGroup)GetChild("iconGroup");
         }

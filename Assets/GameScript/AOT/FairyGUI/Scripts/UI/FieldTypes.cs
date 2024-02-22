@@ -153,9 +153,9 @@
 
     public enum ButtonMode
     {
-        Common,
-        Check,
-        Radio
+        Common,//普通按钮
+        Check,//复选按钮
+        Radio//单选
     }
 
     public enum TransitionActionType
