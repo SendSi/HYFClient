@@ -10,6 +10,8 @@ namespace Welfare
             var value = UnityEngine.Random.Range(100, 200);
             this._numLbl.text = value.ToString();
             this._rmbLbl.text = (value * 0.1).ToString();
+            
+            
         }
     }
 }
