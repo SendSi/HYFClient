@@ -6,7 +6,7 @@
 
 // Generate From G:\gitHub\HYFClient\Excel\excel\CheckInConfig.xlsx.xlsx
 
-public class 道具类型
+public class CheckInConfig
 {
     public int id; // key值
     public int rType; // 签到轮次

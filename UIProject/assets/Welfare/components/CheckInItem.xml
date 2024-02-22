@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="190,215" pivot="0.5,0.5" opaque="false" extention="Button">
   <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
-  <controller name="stateCtrl" pages="0,,1,,2,,4,,3," selected="2">
+  <controller name="stateCtrl" pages="0,,1,,2,,4,,3," selected="4">
     <remark page="0" value="待领"/>
     <remark page="1" value="可领取"/>
     <remark page="2" value="再次领取"/>
@@ -9,18 +9,18 @@
     <remark page="4" value="已领"/>
   </controller>
   <displayList>
-    <loader id="n2_b0uj" name="bgIcon" xy="-12,-12" size="212,237" url="ui://340eighfb0uj1ygcfik" align="center" vAlign="middle">
+    <loader id="n2_b0uj" name="bgIcon" xy="-12,-12" size="212,237" url="ui://340eighfb0uj1ygcfil" align="center" vAlign="middle" color="#666666">
       <gearColor controller="stateCtrl" pages="3" values="#666666" default="#ffffff"/>
       <gearIcon controller="stateCtrl" pages="1,2" values="ui://340eighfb0uj1ygcfik|ui://340eighfb0uj1ygcfik" default="ui://340eighfb0uj1ygcfil"/>
     </loader>
     <text id="n1_b0uj" name="title" xy="14,17" pivot="0.5,0.5" size="160,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#245e79" align="center" vAlign="middle" autoSize="none" singleLine="true" text="第一天">
       <gearDisplay controller="stateCtrl" pages="0,4"/>
     </text>
-    <component id="n4_b0uj" name="propBtn" src="j842hz9cyi" fileName="components/comItem.xml" pkg="2r331opv" xy="34,63" pivot="0.5,0.5" scale="0.9,0.9"/>
+    <component id="n4_b0uj" name="propBtn" src="odfq1ygcgrr" fileName="components/ComItem_bag.xml" pkg="2r331opv" xy="34,63" pivot="0.5,0.5" size="120,140"/>
     <image id="n5_b0uj" name="n5" src="h3jujt" fileName="images/images_new/common_frame_quality_0.png" pkg="2r331opv" xy="37,67" pivot="0.5,0.5" size="114,116" aspect="true" scale="0.9,0.9" alpha="0.5" color="#000000">
       <gearDisplay controller="stateCtrl" pages="3"/>
     </image>
-    <text id="n7_b0uj" name="stateLbl" xy="14,17" pivot="0.5,0.5" size="160,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#fdff62" align="center" vAlign="middle" autoSize="none" singleLine="true" text="再次领取">
+    <text id="n7_b0uj" name="stateLbl" xy="14,17" pivot="0.5,0.5" size="160,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#999999" align="center" vAlign="middle" autoSize="none" singleLine="true" text="已领取">
       <gearDisplay controller="stateCtrl" pages="1,2,3"/>
       <gearColor controller="stateCtrl" pages="1,2,4,3" values="#fdff62,#000000|#fdff62,#000000|#245e79,#000000|#999999,#000000" default="#af7e54,#000000"/>
       <gearText controller="stateCtrl" pages="2,4,3" values="再次领取|补签|已领取" default="可领取"/>
@@ -35,7 +35,7 @@
       <gearDisplay controller="stateCtrl" pages="4"/>
     </text>
   </displayList>
-  <Button downEffect="scale" downEffectValue=".95"/>
+  <Button downEffect="scale" downEffectValue=".99"/>
   <transition name="scale">
     <item time="0" type="Alpha" tween="true" startValue="0" endValue="1" duration="4"/>
     <item time="0" type="Scale" tween="true" startValue="0.1,0.1" endValue="1.1,1.1" duration="4"/>

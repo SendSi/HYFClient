@@ -20,6 +20,16 @@ namespace CommonPKG
             _data = data;
         }
 
+        public void SetData(int cfgId, int num)
+        {
+            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(cfgId.ToString());
+            _hasNumTxt.text = num.ToString();
+            _itemIcon.icon = cfg.icon;
+            _qualityCtrl.selectedIndex = cfg.quality - 1;
+            this.mode = ButtonMode.Common;
+            this._selectEle.visible = false;
+        }
+
         public ItemDto GetData()
         {
             return _data;
