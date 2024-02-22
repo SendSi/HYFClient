@@ -2,7 +2,7 @@
 <component size="966,382" overflow="hidden" mask="n87_s1xf">
   <displayList>
     <graph id="n87_s1xf" name="mask" xy="0,0" size="966,382" type="rect"/>
-    <list id="n86_hsk6" name="list" xy="0,0" size="966,382" layout="row" overflow="scroll" scroll="horizontal" colGap="23" defaultItem="ui://340eighfhsk61ygcflo">
+    <list id="n86_hsk6" name="rewardList" xy="0,0" size="966,382" layout="row" overflow="scroll" scroll="horizontal" colGap="23" defaultItem="ui://340eighfhsk61ygcflo">
       <item/>
       <item/>
       <item/>

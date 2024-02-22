@@ -7,13 +7,13 @@ namespace Welfare
 {
     public partial class Child_TodayView : GComponent
     {
-        public GLoader _icon;
+        public GLoader _icon1;
         public GTextField _explainLbl01;
         public GTextField _explainLbl02;
         public GTextField _explainLbl03;
-        public GLoader _icon01;
-        public PriceBtn _PriceBtn;
-        public DailyDirectItem _list;
+        public GLoader _icon2;
+        public PriceBtn _priceBtn;
+        public DailyDirectItem _rewardList;
         public Transition _admission;
         public const string URL = "ui://340eighfs1uz1ygcfl7";
 
@@ -26,13 +26,13 @@ namespace Welfare
         {
             base.ConstructFromXML(xml);
 
-            _icon = (GLoader)GetChild("icon");
+            _icon1 = (GLoader)GetChild("icon1");
             _explainLbl01 = (GTextField)GetChild("explainLbl01");
             _explainLbl02 = (GTextField)GetChild("explainLbl02");
             _explainLbl03 = (GTextField)GetChild("explainLbl03");
-            _icon01 = (GLoader)GetChild("icon01");
-            _PriceBtn = (PriceBtn)GetChild("PriceBtn");
-            _list = (DailyDirectItem)GetChild("list");
+            _icon2 = (GLoader)GetChild("icon2");
+            _priceBtn = (PriceBtn)GetChild("priceBtn");
+            _rewardList = (DailyDirectItem)GetChild("rewardList");
             _admission = GetTransition("admission");
         }
     }
