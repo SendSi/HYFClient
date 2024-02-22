@@ -19,7 +19,7 @@ namespace Welfare
             this._curProSlider.max = 250;
             this._curProSlider.value = 120;
         }
-
+        
         private void OnClickGoWarBtn()
         {
             Debug.LogError("前往战令");
