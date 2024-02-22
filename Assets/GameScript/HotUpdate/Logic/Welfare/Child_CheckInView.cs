@@ -8,16 +8,20 @@ namespace Welfare
     {
         private GList _dayList;
         private TimerCallback timerCB;
-        private Dictionary<string, CheckInConfig> _cfgInfos;
+        private List<CheckInConfig> _cfgInfos;
 
         public override void OnInit()
         {
             base.OnInit();
 
-            _cfgInfos = ConfigMgr.Instance.LoadConfigDics<CheckInConfig>(); //整个表
+            _cfgInfos = ConfigMgr.Instance.LoadConfigList<CheckInConfig>(); //整个表
+            _cfgInfos.Sort((a, b) =>
+            {
+                return a.id < b.id ? -1 : 1;
+            });
 
-            MenuData cfg = (MenuData)(this.data);
-            Debug.LogError(cfg._name);
+            WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
+            Debug.LogError(cfg.name);
 
             _dayList = this._dayCom.GetChild("dayList").asList;
             _dayList.itemRenderer = OnRendererDayList;
@@ -29,7 +33,7 @@ namespace Welfare
         private void OnRendererDayList(int index, GObject item)
         {
             var obj = (CheckInItem)item;
-            obj.SetData(_cfgInfos[(index + 1001).ToString()]); //CheckInItem.cs
+            obj.SetData(_cfgInfos[index]); //CheckInItem.cs
         }
 
         public override void Dispose()

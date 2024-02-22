@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1000,
+    "name": "新手活动",
+    "rType": 0,
+    "urlPath": "",
+    "isShow": 1
+  },
+  {
+    "id": 1001,
+    "name": "每日签到",
+    "rType": 1,
+    "urlPath": "ui://Welfare/Child_CheckInView",
+    "isShow": 1
+  },
+  {
+    "id": 1002,
+    "name": "钻石充值",
+    "rType": 1,
+    "urlPath": "ui://Welfare/Child_DiamondView",
+    "isShow": 1
+  },
+  {
+    "id": 1003,
+    "name": "超值祈愿",
+    "rType": 1,
+    "urlPath": "ui://Welfare/Child_WishView",
+    "isShow": 1
+  },
+  {
+    "id": 2000,
+    "name": "日常活动",
+    "rType": 0,
+    "urlPath": "",
+    "isShow": 1
+  },
+  {
+    "id": 2001,
+    "name": "联盟圣兽",
+    "rType": 1,
+    "urlPath": "ui://Welfare/Child_ThanatorView",
+    "isShow": 1
+  },
+  {
+    "id": 2002,
+    "name": "世界BOSS",
+    "rType": 1,
+    "urlPath": "ui://Welfare/Child_WorldBossView",
+    "isShow": 1
+  },
+  {
+    "id": 2003,
+    "name": "优惠宝箱",
+    "rType": 1,
+    "urlPath": "ui://Welfare/Child_TodayView",
+    "isShow": 1
+  }
+]

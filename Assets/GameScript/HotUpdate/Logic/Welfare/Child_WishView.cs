@@ -9,8 +9,8 @@ namespace Welfare
         {
             base.OnInit();
 
-            MenuData cfg = (MenuData)(this.data);
-            Debug.LogError(cfg._name);
+            WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
+            Debug.LogError(cfg.name);
         }
     }
 }

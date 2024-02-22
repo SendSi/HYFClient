@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 using UnityEngine;
 using YooAsset;
 
-
 //导表工具 默认使用字典模式     不使用array
 public class ConfigMgr : Singleton<ConfigMgr>
 {
@@ -27,6 +26,14 @@ public class ConfigMgr : Singleton<ConfigMgr>
         return infos;
     }
 
+    /// <summary> T是表类型    返回整个导表</summary>
+    public List<T> LoadConfigList<T>()
+    {
+        string json = JsonFileString<T>();
+        var infos = JsonConvert.DeserializeObject<List<T>>(json);
+        return infos;
+    }
+
     /// <summary> T是表类型  value是表id  返回一行数据</summary>
     public T LoadConfigOne<T>(string key)
     {
@@ -39,7 +46,6 @@ public class ConfigMgr : Singleton<ConfigMgr>
 
         return default(T); //空值
     }
-
 
     private Dictionary<string, string> _dicTabString = new Dictionary<string, string>();
 
@@ -62,8 +68,8 @@ public class ConfigMgr : Singleton<ConfigMgr>
         }
     }
 
-
     private Dictionary<string, Cfg_SimChinese> langCfgDic; //因为翻译索引表 都是一样字段  取哪个一样
+
     public string GetCurrLangCfgTxt(string langId)
     {
         if (langCfgDic == null)
@@ -71,7 +77,7 @@ public class ConfigMgr : Singleton<ConfigMgr>
             var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
             var handle = assetPackage.LoadAssetSync(_langCfgName);
             var jsonStr = handle.AssetObject.ToString();
-            langCfgDic = JsonConvert.DeserializeObject<Dictionary<string, Cfg_SimChinese>>(jsonStr);            //因为翻译索引表 都是一样字段  取哪个一样
+            langCfgDic = JsonConvert.DeserializeObject<Dictionary<string, Cfg_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
         }
 
         if (langCfgDic.TryGetValue(langId, out var idValue))
@@ -83,9 +89,9 @@ public class ConfigMgr : Singleton<ConfigMgr>
             return "NULL";
         }
     }
-    
-    
+
     private Dictionary<string, Script_SimChinese> langScriptDic; //因为翻译索引表 都是一样字段  取哪个一样
+
     public string GetCurrLangScriptTxt(string langId)
     {
         if (langScriptDic == null)
@@ -93,8 +99,9 @@ public class ConfigMgr : Singleton<ConfigMgr>
             var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
             var handle = assetPackage.LoadAssetSync(_langScriptName);
             var jsonStr = handle.AssetObject.ToString();
-            langScriptDic = JsonConvert.DeserializeObject<Dictionary<string, Script_SimChinese>>(jsonStr);            //因为翻译索引表 都是一样字段  取哪个一样
-      }
+            langScriptDic = JsonConvert.DeserializeObject<Dictionary<string, Script_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
+        }
+
         if (langScriptDic.TryGetValue(langId, out var idValue))
         {
             return idValue.name;
@@ -104,7 +111,6 @@ public class ConfigMgr : Singleton<ConfigMgr>
             return "NULL";
         }
     }
-
 
     // private Dictionary<string, Dictionary<string,T>> _dicTabString2 = new Dictionary<string, Dictionary<string,T>>();//不能这样定义
     // private Dictionary<string, Dictionary<string,object>> _dicTabString2 = new Dictionary<string, Dictionary<string,object>>();//装箱 折箱 ??
