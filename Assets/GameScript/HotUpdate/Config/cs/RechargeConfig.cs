@@ -13,7 +13,7 @@ public class RechargeConfig
 	public string commodity; // 商品
 	public string extraFirst; // 首充额外获得
 	public int rType; // 类型
-	public string icon; // 图标
+	public string cenIcon; // 图标
 	public int price; // 价格
 }
 

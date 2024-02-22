@@ -15,10 +15,7 @@ namespace Welfare
             base.OnInit();
 
             _cfgInfos = ConfigMgr.Instance.LoadConfigList<CheckInConfig>(); //整个表
-            _cfgInfos.Sort((a, b) =>
-            {
-                return a.id < b.id ? -1 : 1;
-            });
+            _cfgInfos.Sort((a, b) =>            {                return a.id < b.id ? -1 : 1;            });
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
             Debug.LogError(cfg.name);

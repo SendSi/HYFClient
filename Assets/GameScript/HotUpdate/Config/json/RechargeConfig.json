@@ -5,7 +5,7 @@
     "commodity": "12:60;43:600",
     "extraFirst": "12:60",
     "rType": 1,
-    "icon": "ui://37_Welfare/icon_01",
+    "cenIcon": "ui://Welfare/icon_01",
     "price": 6
   },
   {
@@ -14,7 +14,7 @@
     "commodity": "12:450;43:4500",
     "extraFirst": "12:450",
     "rType": 1,
-    "icon": "ui://37_Welfare/icon_02",
+    "cenIcon": "ui://Welfare/icon_02",
     "price": 45
   },
   {
@@ -23,7 +23,7 @@
     "commodity": "12:680;43:6800",
     "extraFirst": "12:680",
     "rType": 1,
-    "icon": "ui://37_Welfare/icon_03",
+    "cenIcon": "ui://Welfare/icon_03",
     "price": 68
   },
   {
@@ -32,7 +32,7 @@
     "commodity": "12:1180;43:11800",
     "extraFirst": "12:1180",
     "rType": 1,
-    "icon": "ui://37_Welfare/icon_04",
+    "cenIcon": "ui://Welfare/icon_04",
     "price": 118
   },
   {
@@ -41,7 +41,7 @@
     "commodity": "12:1980;43:19800",
     "extraFirst": "12:1980",
     "rType": 1,
-    "icon": "ui://37_Welfare/icon_05",
+    "cenIcon": "ui://Welfare/icon_05",
     "price": 198
   },
   {
@@ -50,7 +50,7 @@
     "commodity": "12:6480;43:64800",
     "extraFirst": "12:6480",
     "rType": 1,
-    "icon": "ui://37_Welfare/icon_06",
+    "cenIcon": "ui://Welfare/icon_06",
     "price": 648
   }
 ]
