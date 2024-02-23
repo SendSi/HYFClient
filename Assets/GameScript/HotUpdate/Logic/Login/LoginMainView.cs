@@ -104,39 +104,14 @@ namespace Login
             var account = _roleInputTxt.text;
             if (string.IsNullOrEmpty(account) == false)
             {
-                LoginMySql(account);
+                ProxyCommonPKGModule.Instance.AddToastStr("~~登录同时 也飘字~~热更测试  飘字-");
+                ProxyMainCenterModule.Instance.OpenMainCenterView();
+                ProxyLoginModule.Instance.CloseLoginMainView();
             }
             else
             {
                 ProxyCommonPKGModule.Instance.AddToastStr("请先输入账号");
             }
-        }
-
-        async void LoginMySql(string account)
-        {
-            // var channel = GrpcChannel.ForAddress("https://localhost:5001", new GrpcChannelOptions()
-            // {
-            //     HttpHandler = new GRPCBestHttpHandler()
-            // });
-            //
-            // var client = new RoleService.RoleServiceClient(channel);
-            // var res = await client.RoleLoginAsync(new()
-            // {
-            //     Account = account
-            // });
-            // Debug.LogError($"登录结果:1成功,其他都失败______{res.State}");
-            // if (res.State > 0)
-            // {
-            //     ProxyMainCenterModule.Instance.OpenMainCenterView();
-            //     ProxyLoginModule.Instance.CloseLoginMainView();
-            // }
-            // else
-            // {
-            //     ProxyCommonPKGModule.Instance.AddToastStr("账号不存在");
-            // }
-            ProxyCommonPKGModule.Instance.AddToastStr("~~登录同时 也飘字~~热更测试  飘字-");
-            ProxyMainCenterModule.Instance.OpenMainCenterView();
-            ProxyLoginModule.Instance.CloseLoginMainView();
         }
 
         private void OnClickCfgBtn()

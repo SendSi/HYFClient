@@ -116,14 +116,12 @@ public class GameMain : MonoBehaviour
     private static List<string> AOTMetaAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll.bytes",
-        "Grpc.Core.Api.dll.bytes",
-        "UnityEngine.CoreModule.dll.bytes",
-        "YooAsset.dll.bytes",
-        "mscorlib.dll.bytes",
         "Newtonsoft.Json.dll.bytes",
         "System.Core.dll.bytes",
         "UniFramework.Event.dll.bytes",
-        "Google.Protobuf.dll.bytes",
+        "UnityEngine.CoreModule.dll.bytes",
+        "YooAsset.dll.bytes",
+        "mscorlib.dll.bytes",
 
         "HotUpdate.dll.bytes",
     };

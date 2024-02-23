@@ -27,6 +27,13 @@ public class ConfigMgr : Singleton<ConfigMgr>
     }
 
 
+    /// <summary> T是表类型    返回整个导表</summary>
+    public List<T> LoadConfigList<T>()
+    {
+        string json = JsonFileString<T>();
+        var infos = JsonConvert.DeserializeObject<List<T>>(json);
+        return infos;
+    }
 
     private Dictionary<string, string> _dicTabString = new Dictionary<string, string>();
 

@@ -28,6 +28,7 @@ public class SettingMainViewWin : Window
         ProxyCommonPKGModule.Instance.AddToastStr("登出操作 成功");
         ProxyLoginModule.Instance.OpenLoginMainView();
         ProxyMainCenterModule.Instance.CloseMainCenterView();
+        ProxySettingPKGModule.Instance.CloseSettingPKGViewWin();
     }
 
     private void OnChangeMusicValue()
