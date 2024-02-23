@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="273,375" extention="Button">
-  <controller name="getState" pages="0,,1," selected="0">
+  <controller name="stateCtrl" pages="0,,1," selected="0">
     <remark page="1" value="灰领取"/>
   </controller>
   <displayList>
     <text id="n3_hsk6" name="title" xy="0,0" size="273,375" fontSize="20" align="center" vAlign="middle" autoSize="none" singleLine="true" text=""/>
     <loader id="n4_hsk6" name="bg" xy="-9,-8" size="289,391" touchable="false" url="ui://340eighfs1uz1ygcfla" align="center" vAlign="middle"/>
-    <component id="n5_hsk6" name="icon" src="hsk61ygcflq" fileName="components/TreasureChestBtn01.xml" xy="36,4" size="200,200"/>
+    <component id="n5_hsk6" name="traIcon" src="hsk61ygcflq" fileName="components/TodayItem_Icon.xml" xy="36,4" size="200,200" controller="stateCtrl,5"/>
     <image id="n23_mlhy" name="n23" src="mlhy1ygcfqn" fileName="images/Daily_direct_purchase/everyday_bg06.png" xy="18,200" size="238,37" group="n16_hsk6" alpha="0.5" color="#902222"/>
     <component id="n10_hsk6" name="receiveBtn" src="eaahz9cob" fileName="components/com_btn_01.xml" pkg="2r331opv" xy="44,250" size="190,72" group="n16_hsk6">
-      <gearLook controller="getState" pages="1" values="1,0,1,0" default="1,0,0,1"/>
-      <gearText controller="getState" pages="1" values="已领取" default="领取"/>
+      <gearLook controller="stateCtrl" pages="1" values="1,0,1,0" default="1,0,0,1"/>
+      <gearText controller="stateCtrl" pages="1" values="已领取" default="领取"/>
       <Button title="领取" titleFontSize="28"/>
     </component>
-    <text id="n11_hsk6" name="describeLbl" xy="48,330" pivot="0.5,0.5" size="177,26" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ff9a50" align="center" letterSpacing="-1" shadowColor="#a51d0a" shadowOffset="1,2" singleLine="true" autoClearText="true" text="豪礼总价值超过88元！"/>
-    <text id="n7_hsk6" name="contentLbl" xy="65,203" pivot="0.5,0.5" size="131,32" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" letterSpacing="-1" singleLine="true" autoClearText="true" text="英雄经验经验"/>
+    <text id="n11_hsk6" name="titleLbl" xy="48,330" pivot="0.5,0.5" size="177,26" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="18" color="#ff9a50" align="center" letterSpacing="-1" shadowColor="#a51d0a" shadowOffset="1,2" singleLine="true" autoClearText="true" text="豪礼总价值超过88元！"/>
+    <text id="n7_hsk6" name="describeLbl" xy="65,203" pivot="0.5,0.5" size="131,32" group="n16_hsk6" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" letterSpacing="-1" singleLine="true" autoClearText="true" text="英雄经验经验"/>
     <group id="n16_hsk6" name="n16" xy="18,200" size="238,156" advanced="true"/>
   </displayList>
   <Button/>

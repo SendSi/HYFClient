@@ -8,7 +8,7 @@ namespace Welfare
     public partial class DailyDirectItem : GComponent
     {
         public GGraph _mask;
-        public GList _list;
+        public GList _rewardList;
         public Transition _admission;
         public const string URL = "ui://340eighfnkto1ygcgou";
 
@@ -22,7 +22,7 @@ namespace Welfare
             base.ConstructFromXML(xml);
 
             _mask = (GGraph)GetChild("mask");
-            _list = (GList)GetChild("list");
+            _rewardList = (GList)GetChild("rewardList");
             _admission = GetTransition("admission");
         }
     }

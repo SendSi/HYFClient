@@ -13,7 +13,7 @@ namespace Welfare
         public GTextField _explainLbl03;
         public GLoader _icon2;
         public PriceBtn _priceBtn;
-        public DailyDirectItem _rewardList;
+        public DailyDirectItem _rewardCom;
         public Transition _admission;
         public const string URL = "ui://340eighfs1uz1ygcfl7";
 
@@ -32,7 +32,7 @@ namespace Welfare
             _explainLbl03 = (GTextField)GetChild("explainLbl03");
             _icon2 = (GLoader)GetChild("icon2");
             _priceBtn = (PriceBtn)GetChild("priceBtn");
-            _rewardList = (DailyDirectItem)GetChild("rewardList");
+            _rewardCom = (DailyDirectItem)GetChild("rewardCom");
             _admission = GetTransition("admission");
         }
     }

@@ -29,8 +29,8 @@ namespace Welfare
             UIObjectFactory.SetPackageItemExtension(costItem.URL, typeof(costItem));
             UIObjectFactory.SetPackageItemExtension(Child_WorldBossView.URL, typeof(Child_WorldBossView));
             UIObjectFactory.SetPackageItemExtension(PriceBtn.URL, typeof(PriceBtn));
-            UIObjectFactory.SetPackageItemExtension(TreasureChestBtn.URL, typeof(TreasureChestBtn));
-            UIObjectFactory.SetPackageItemExtension(TreasureChestBtn01.URL, typeof(TreasureChestBtn01));
+            UIObjectFactory.SetPackageItemExtension(TodayItem.URL, typeof(TodayItem));
+            UIObjectFactory.SetPackageItemExtension(TodayItem_Icon.URL, typeof(TodayItem_Icon));
             UIObjectFactory.SetPackageItemExtension(list.URL, typeof(list));
             UIObjectFactory.SetPackageItemExtension(Child_WishView.URL, typeof(Child_WishView));
             UIObjectFactory.SetPackageItemExtension(WelfareMainView.URL, typeof(WelfareMainView));

@@ -78,9 +78,9 @@
     <image id="s1uz1ygcfll" name="treasure_chest_09.png" path="/images/Daily_direct_purchase/" exported="true"/>
     <image id="s1uz1ygcflm" name="treasure_chest_10.png" path="/images/Daily_direct_purchase/" exported="true"/>
     <component id="hsk61ygcfln" name="PriceBtn.xml" path="/components/" exported="true"/>
-    <component id="hsk61ygcflo" name="TreasureChestBtn.xml" path="/components/" exported="true"/>
+    <component id="hsk61ygcflo" name="TodayItem.xml" path="/components/" exported="true"/>
     <component id="hsk61ygcflp" name="returnBtn.xml" path="/components/" exported="true"/>
-    <component id="hsk61ygcflq" name="TreasureChestBtn01.xml" path="/components/" exported="true"/>
+    <component id="hsk61ygcflq" name="TodayItem_Icon.xml" path="/components/" exported="true"/>
     <component id="hsk61ygcflr" name="list.xml" path="/components/" exported="true"/>
     <image id="d1gb1ygcfls" name="diamonds_bg_00.jpg" path="/images/diamond_mall/" exported="true"/>
     <component id="d1gb1ygcflv" name="chargeItem.xml" path="/components/"/>
