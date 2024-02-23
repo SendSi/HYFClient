@@ -22,9 +22,9 @@
   },
   {
     "id": 1003,
-    "name": "超值祈愿",
+    "name": "优惠宝箱",
     "rType": 1,
-    "urlPath": "ui://Welfare/Child_WishView",
+    "urlPath": "ui://Welfare/Child_TodayView",
     "isShow": 1
   },
   {
@@ -50,9 +50,9 @@
   },
   {
     "id": 2003,
-    "name": "优惠宝箱",
+    "name": "超值祈愿",
     "rType": 1,
-    "urlPath": "ui://Welfare/Child_TodayView",
+    "urlPath": "ui://Welfare/Child_WishView",
     "isShow": 1
   }
 ]

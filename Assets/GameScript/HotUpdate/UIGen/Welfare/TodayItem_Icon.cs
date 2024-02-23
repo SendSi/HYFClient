@@ -5,23 +5,23 @@ using FairyGUI.Utils;
 
 namespace Welfare
 {
-    public partial class TreasureChestBtn01 : GButton
+    public partial class TodayItem_Icon : GButton
     {
-        public Controller _state;
+        public Controller _stateCtrl;
         public GLoader _iconOpen;
         public Transition _open;
         public const string URL = "ui://340eighfhsk61ygcflq";
 
-        public static TreasureChestBtn01 CreateInstance()
+        public static TodayItem_Icon CreateInstance()
         {
-            return (TreasureChestBtn01)UIPackage.CreateObject("Welfare", "TreasureChestBtn01");
+            return (TodayItem_Icon)UIPackage.CreateObject("Welfare", "TodayItem_Icon");
         }
 
         public override void ConstructFromXML(XML xml)
         {
             base.ConstructFromXML(xml);
 
-            _state = GetController("state");
+            _stateCtrl = GetController("stateCtrl");
             _iconOpen = (GLoader)GetChild("iconOpen");
             _open = GetTransition("open");
         }
