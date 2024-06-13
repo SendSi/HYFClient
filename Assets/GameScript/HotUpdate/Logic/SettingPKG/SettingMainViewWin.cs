@@ -10,6 +10,7 @@ public class SettingMainViewWin : Window
     {
         base.OnInit();
         this.contentPane = SettingMainView.CreateInstance();
+        this.contentPane.MakeFullScreen();
         this.Center();
         this.modal = true;
 
