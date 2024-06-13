@@ -4,7 +4,7 @@ using UnityEditor;
 
 public static class CLRHelperEditor
 {
-    [MenuItem("HybridCLR/Copy_replace_dlls_to_bytes")] //打了热更后  替换
+    [MenuItem("HybridCLR/Generate/Copy_replace_dlls_to_bytes",false,5000)] //打了热更后  替换
     public static void CopyAotDll()
     {
         BuildTarget target = EditorUserBuildSettings.activeBuildTarget;

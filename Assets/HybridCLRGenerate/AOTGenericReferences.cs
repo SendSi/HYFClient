@@ -24,8 +24,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Google.Protobuf.Collections.RepeatedField.<GetEnumerator>d__28<object>
 	// Google.Protobuf.Collections.RepeatedField<object>
 	// Google.Protobuf.FieldCodec.<>c<object>
-	// Google.Protobuf.FieldCodec.<>c__32<object>
-	// Google.Protobuf.FieldCodec.<>c__DisplayClass32_0<object>
 	// Google.Protobuf.FieldCodec.<>c__DisplayClass38_0<object>
 	// Google.Protobuf.FieldCodec.<>c__DisplayClass39_0<object>
 	// Google.Protobuf.FieldCodec.InputMerger<object>
@@ -44,10 +42,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Grpc.Core.Marshaller.<>c<object>
 	// Grpc.Core.Marshaller<object>
 	// Grpc.Core.Method<object,object>
-	// Grpc.Core.ServerServiceDefinition.Builder.<>c__DisplayClass3_0<object,object>
-	// Grpc.Core.ServerServiceDefinition.Builder.<>c__DisplayClass5_0<object,object>
-	// Grpc.Core.ServerStreamingServerMethod<object,object>
-	// Grpc.Core.UnaryServerMethod<object,object>
 	// Singleton<object>
 	// System.Action<int,byte,int>
 	// System.Action<int>
@@ -157,9 +151,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.ReadOnlySpan<ushort>
 	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>
 	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>
-	// System.Runtime.CompilerServices.ConditionalWeakTable.CreateValueCallback<object,object>
-	// System.Runtime.CompilerServices.ConditionalWeakTable.Enumerator<object,object>
-	// System.Runtime.CompilerServices.ConditionalWeakTable<object,object>
 	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<System.Threading.Tasks.VoidTaskResult>
 	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<byte>
 	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<object>
@@ -190,16 +181,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 
 	public void RefMethods()
 	{
-		// Google.Protobuf.FieldCodec<object> Google.Protobuf.FieldCodec.ForMessage<object>(uint,Google.Protobuf.MessageParser<object>)
-		// object Google.Protobuf.ProtoPreconditions.CheckNotNull<object>(object,string)
-		// Grpc.Core.AsyncServerStreamingCall<object> Grpc.Core.CallInvoker.AsyncServerStreamingCall<object,object>(Grpc.Core.Method<object,object>,string,Grpc.Core.CallOptions,object)
-		// Grpc.Core.AsyncUnaryCall<object> Grpc.Core.CallInvoker.AsyncUnaryCall<object,object>(Grpc.Core.Method<object,object>,string,Grpc.Core.CallOptions,object)
-		// object Grpc.Core.CallInvoker.BlockingUnaryCall<object,object>(Grpc.Core.Method<object,object>,string,Grpc.Core.CallOptions,object)
 		// Grpc.Core.Marshaller<object> Grpc.Core.Marshallers.Create<object>(System.Action<object,Grpc.Core.SerializationContext>,System.Func<Grpc.Core.DeserializationContext,object>)
-		// Grpc.Core.ServerServiceDefinition.Builder Grpc.Core.ServerServiceDefinition.Builder.AddMethod<object,object>(Grpc.Core.Method<object,object>,Grpc.Core.ServerStreamingServerMethod<object,object>)
-		// Grpc.Core.ServerServiceDefinition.Builder Grpc.Core.ServerServiceDefinition.Builder.AddMethod<object,object>(Grpc.Core.Method<object,object>,Grpc.Core.UnaryServerMethod<object,object>)
-		// System.Void Grpc.Core.ServiceBinderBase.AddMethod<object,object>(Grpc.Core.Method<object,object>,Grpc.Core.ServerStreamingServerMethod<object,object>)
-		// System.Void Grpc.Core.ServiceBinderBase.AddMethod<object,object>(Grpc.Core.Method<object,object>,Grpc.Core.UnaryServerMethod<object,object>)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string,Newtonsoft.Json.JsonSerializerSettings)
 		// object System.Activator.CreateInstance<object>()
