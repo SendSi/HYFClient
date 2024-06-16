@@ -22,7 +22,9 @@ public class UIMgr : Singleton<UIMgr>
         gCom.AddRelation(GRoot.inst, RelationType.Size);
         gCom.fairyBatching = true;
         gCom.OnInit(); //继承方法 onClick itemRenderer *** 在此声明呗
-      
+        // gCom.name = $"{pkgName}_{viewName}"; //页面名字   指引有用
+        gCom.name = $"{gCom.gameObjectName}"; //页面名字   指引有用
+
         mShoGCompDic[viewName] = gCom;
         return gCom as T1;
     }
@@ -118,10 +120,12 @@ public class UIMgr : Singleton<UIMgr>
 
     public T1 OpenWindow<T1>() where T1 : Window, new()
     {
-        var viewName = (typeof(T1).Name);
+        var winName = (typeof(T1).Name);
         T1 t1 = new T1();
         t1.Show();
-        mShowWinDic[viewName] = t1;
+        mShowWinDic[winName] = t1;
+        t1.name = $"{t1.gameObjectName}"; //页面名字   指引有用
+        t1.contentPane.name = "contentPane";
         return t1 as T1;
     }
 

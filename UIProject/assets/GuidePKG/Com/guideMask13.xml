@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="666,594" opaque="false">
+  <displayList>
+    <component id="n5_cyw4" name="mask" src="w2m32v" fileName="Com/guideMask13_1.xml" xy="0,0">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </component>
+    <image id="n6_cyw4" name="window" src="cyw42x" fileName="Img/guide_img_16.png" xy="66,28" size="528,526"/>
+  </displayList>
+</component>

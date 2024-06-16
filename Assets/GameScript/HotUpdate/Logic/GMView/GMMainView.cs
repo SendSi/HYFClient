@@ -47,13 +47,11 @@ namespace GMView
                 GMManager.Instance.SetOldReValue(this._inputTxt.text);
                 if (this._inputTxt.text.Contains("local"))
                 {
-                    //前端自己定义的
-                    GMManager.Instance.LocalMethodGM(this._inputTxt.text);
+                    GMManager.Instance.LocalMethodGM(this._inputTxt.text);                    //前端自己定义的
                 }
                 else
                 {
-                    //直接发送后端的gm
-                    GMManager.Instance.ServerMethodGM(this._inputTxt.text);
+                    GMManager.Instance.ServerMethodGM(this._inputTxt.text);        //直接发送后端的gm
                 }
 
                 this._inputTxt.text = ""; //清空

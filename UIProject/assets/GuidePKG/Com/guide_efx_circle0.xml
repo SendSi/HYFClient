@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="220,220">
+  <displayList>
+    <image id="n8_6o2r" name="n1" src="ldlo2d" fileName="Img/guide_efx_circle1.png" xy="0,0" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n9_6o2r" name="n2" src="ldlo2e" fileName="Img/guide_efx_circle2.png" xy="0,0" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n10_6o2r" name="n3" src="ldlo2f" fileName="Img/guide_efx_circle3.png" xy="0,0" pivot="0.5,0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <transition name="efx1" autoPlayRepeat="-1" frameRate="60">
+    <item time="0" type="Alpha" target="n10_6o2r" value="0.01"/>
+    <item time="0" type="Alpha" target="n8_6o2r" value="1"/>
+    <item time="0" type="Alpha" target="n9_6o2r" value="0"/>
+    <item time="18" type="Alpha" target="n8_6o2r" tween="true" startValue="1" endValue="0" duration="18"/>
+    <item time="18" type="Alpha" target="n9_6o2r" value="1"/>
+    <item time="36" type="Alpha" target="n10_6o2r" value="1"/>
+    <item time="54" type="Alpha" target="n9_6o2r" tween="true" startValue="1" endValue="0" duration="18"/>
+    <item time="108" type="Alpha" target="n10_6o2r" value="0"/>
+  </transition>
+  <transition name="efx2" autoPlayRepeat="-1" frameRate="60">
+    <item time="0" type="Alpha" target="n10_6o2r" value="1"/>
+    <item time="0" type="Alpha" target="n8_6o2r" value="0"/>
+    <item time="0" type="Alpha" target="n9_6o2r" value="0"/>
+    <item time="36" type="Alpha" target="n10_6o2r" value="0"/>
+    <item time="36" type="Alpha" target="n8_6o2r" value="1"/>
+    <item time="54" type="Alpha" target="n8_6o2r" tween="true" startValue="1" endValue="0" duration="18"/>
+    <item time="54" type="Alpha" target="n9_6o2r" value="1"/>
+    <item time="72" type="Alpha" target="n10_6o2r" value="1"/>
+    <item time="91" type="Alpha" target="n9_6o2r" tween="true" startValue="1" endValue="0" duration="17"/>
+    <item time="108" type="Alpha" target="n10_6o2r" value="1"/>
+  </transition>
+  <transition name="efx3" frameRate="60">
+    <item time="0" type="Alpha" target="n10_6o2r" value="1"/>
+    <item time="0" type="Alpha" target="n8_6o2r" value="0"/>
+    <item time="19" type="Alpha" target="n9_6o2r" tween="true" startValue="1" endValue="0" duration="17"/>
+    <item time="72" type="Alpha" target="n10_6o2r" value="0"/>
+    <item time="72" type="Alpha" target="n8_6o2r" value="1"/>
+    <item time="90" type="Alpha" target="n8_6o2r" tween="true" startValue="1" endValue="0" duration="18"/>
+    <item time="90" type="Alpha" target="n9_6o2r" value="1"/>
+    <item time="108" type="Alpha" target="n9_6o2r" value="1"/>
+  </transition>
+</component>

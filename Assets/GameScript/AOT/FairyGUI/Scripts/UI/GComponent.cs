@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FairyGUI.Utils;
+using UnityEditor.UI;
 #if FAIRYGUI_TOLUA
 using LuaInterface;
 #endif
@@ -1022,7 +1023,8 @@ namespace FairyGUI
             }
             else if (rootContainer.clipRect != null)
             {
-                return child.x + child.width >= 0 && child.x <= this.width && child.y + child.height >= 0 && child.y <= this.height;
+                return child.x + child.width >= 0 && child.x <= this.width && child.y + child.height >= 0 &&
+                       child.y <= this.height;
             }
             else
                 return true;
@@ -1230,7 +1232,9 @@ namespace FairyGUI
 
         protected bool ShouldSnapToNext(float dir, float delta, float size)
         {
-            return dir < 0 && delta > UIConfig.defaultScrollSnappingThreshold * size || dir > 0 && delta > (1 - UIConfig.defaultScrollSnappingThreshold) * size || dir == 0 && delta > size / 2;
+            return dir < 0 && delta > UIConfig.defaultScrollSnappingThreshold * size ||
+                   dir > 0 && delta > (1 - UIConfig.defaultScrollSnappingThreshold) * size ||
+                   dir == 0 && delta > size / 2;
         }
 
         /**
@@ -1496,7 +1500,8 @@ namespace FairyGUI
                 child = _children[i];
                 child.Setup_AfterAdd(buffer, buffer.position);
                 child.underConstruct = false;
-                if (child.displayObject != null) child.displayObject.cachedTransform.SetParent(this.displayObject.cachedTransform, false);
+                if (child.displayObject != null)
+                    child.displayObject.cachedTransform.SetParent(this.displayObject.cachedTransform, false);
 
                 buffer.position = nextPos;
             }
@@ -1520,7 +1525,9 @@ namespace FairyGUI
                 {
                     PackageItem pi = contentItem.owner.GetItem(hitTestId);
                     if (pi != null &&
-                        pi.pixelHitTestData != null) rootContainer.hitArea = new PixelHitTest(pi.pixelHitTestData, i1, i2, sourceWidth, sourceHeight);
+                        pi.pixelHitTestData != null)
+                        rootContainer.hitArea =
+                            new PixelHitTest(pi.pixelHitTestData, i1, i2, sourceWidth, sourceHeight);
                 }
                 else if (i1 != 0 &&
                          i2 != -1)
@@ -1694,6 +1701,8 @@ namespace FairyGUI
 #if UNITY_EDITOR
             Debug.LogWarning(" 若走不到 此方法   UIGenBinder.cs看看 注册了此模块没 ");
 #endif
+            this.gameObjectName = "View_" + this.gameObjectName;
         }
     }
 }
+

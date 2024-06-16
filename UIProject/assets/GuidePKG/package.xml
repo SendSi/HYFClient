@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="vypq82a1">
+  <resources>
+    <component id="gyzy6" name="Finger.xml" path="/Com/" exported="true"/>
+    <component id="gyzy8" name="TipText.xml" path="/Com/" exported="true"/>
+    <component id="gyzyb" name="TipImage.xml" path="/Com/" exported="true"/>
+    <component id="gyzyd" name="guideMask1.xml" path="/Com/" exported="true"/>
+    <component id="nbwdi" name="guideMask2.xml" path="/Com/" exported="true"/>
+    <component id="nbwdj" name="guideMask3.xml" path="/Com/" exported="true"/>
+    <component id="nbwdk" name="guideMask4.xml" path="/Com/" exported="true"/>
+    <component id="nbwdl" name="guideMask5.xml" path="/Com/" exported="true"/>
+    <component id="dgngz" name="ClickAnywhere.xml" path="/Com/" exported="true"/>
+    <component id="mufh11" name="SkipButton.xml" path="/Com/" exported="true"/>
+    <component id="srlq12" name="EnableImg.xml" path="/Com/" exported="true"/>
+    <component id="srlq13" name="GuideFinger.xml" path="/Com/" exported="true"/>
+    <image id="enw714" name="guide_img_01.png" path="/Img/" exported="true"/>
+    <image id="enw71y" name="guide_img_00.png" path="/Img/" exported="true" scale="9grid" scale9grid="22,20,6,6"/>
+    <component id="dipn21" name="guideMask6.xml" path="/Com/" exported="true"/>
+    <component id="jllf26" name="guideMask7.xml" path="/Com/" exported="true"/>
+    <image id="p8x029" name="guide_efx_playbtn.png" path="/Img/" exported="true" scale="9grid" scale9grid="132,40,7,132"/>
+    <component id="x1i32f" name="guideMask11.xml" path="/Com/" exported="true"/>
+    <image id="x1i32j" name="guide_mask_playbtn.png" path="/Img/" exported="true" scale="9grid" scale9grid="70,0,12,130"/>
+    <component id="x1i32m" name="guideMask8.xml" path="/Com/" exported="true"/>
+    <image id="x1i32n" name="guide_img_14.png" path="/Img/" exported="true"/>
+    <image id="x1i32o" name="guide_img_13.png" path="/Img/" exported="true"/>
+    <component id="x1i32p" name="guideMask10.xml" path="/Com/" exported="true"/>
+    <component id="x1i32q" name="guideMask9.xml" path="/Com/" exported="true"/>
+    <image id="x1i32s" name="guide_img_tip.png" path="/Img/" exported="true" scale="9grid" scale9grid="64,6,30,202"/>
+    <component id="w2m32u" name="guideMask12.xml" path="/Com/" exported="true"/>
+    <component id="w2m32v" name="guideMask13_1.xml" path="/Com/" exported="true"/>
+    <image id="cyw42w" name="guide_img_15.png" path="/Img/" exported="true" scale="9grid" scale9grid="88,90,3,2" duplicatePadding="true"/>
+    <image id="cyw42x" name="guide_img_16.png" path="/Img/" exported="true" duplicatePadding="true"/>
+    <component id="cyw42y" name="guideMask13.xml" path="/Com/" exported="true"/>
+    <component id="cyw42z" name="guideMask12_1.xml" path="/Com/" exported="true"/>
+    <image id="nzwd30" name="guide_img_17.png" path="/Img/" exported="true"/>
+    <image id="feyt34" name="guide_img_20.png" path="/Img/" exported="true" duplicatePadding="true"/>
+    <image id="feyt35" name="guide_img_22.png" path="/Img/" exported="true" scale="9grid" scale9grid="23,21,3,2"/>
+    <component id="feyt36" name="guideMask14.xml" path="/Com/" exported="true"/>
+    <component id="feyt37" name="guideMask15.xml" path="/Com/" exported="true"/>
+    <image id="obro1o" name="guide_efx_rectangle1.png" path="/Img/" exported="true" scale="9grid" scale9grid="40,43,2,4"/>
+    <image id="obro1p" name="guide_efx_rectangle2.png" path="/Img/" exported="true" scale="9grid" scale9grid="40,43,3,1"/>
+    <image id="obro1q" name="guide_efx_rectangle3.png" path="/Img/" exported="true" scale="9grid" scale9grid="40,41,2,4"/>
+    <image id="ldlo2d" name="guide_efx_circle1.png" path="/Img/" exported="true"/>
+    <image id="ldlo2e" name="guide_efx_circle2.png" path="/Img/" exported="true"/>
+    <image id="ldlo2f" name="guide_efx_circle3.png" path="/Img/" exported="true"/>
+    <component id="ldlo2g" name="guide_efx_circle.xml" path="/Com/" exported="true"/>
+    <component id="ldlo2h" name="guide_efx_circle0.xml" path="/Com/" exported="true"/>
+    <component id="obro1m" name="guide_efx_rectangle.xml" path="/Com/" exported="true"/>
+    <component id="obro1n" name="guide_efx_rectangle0.xml" path="/Com/" exported="true"/>
+    <component id="lz3y38" name="FingerUI.xml" path="/Com/" exported="true"/>
+    <component id="lz3y39" name="FingerAnim.xml" path="/Com/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

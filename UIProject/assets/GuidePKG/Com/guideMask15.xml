@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="335,188" opaque="false" mask="n16_iug9" reversedMask="true">
+  <displayList>
+    <graph id="n0_gyzy" name="mask" xy="0,0" size="335,188" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+    <component id="n14_enw7" name="kuang" src="ldlo2g" fileName="Com/guide_efx_circle.xml" xy="112,38" pivot="0.5,0.5" size="114,114" aspect="true">
+      <relation target="n16_iug9" sidePair="width-width%,height-height%,center-center,middle-middle"/>
+    </component>
+    <graph id="n16_iug9" name="window" xy="119,46" size="100,100" type="eclipse" lineSize="0"/>
+  </displayList>
+</component>

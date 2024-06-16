@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,200">
+  <displayList>
+    <component id="n7_6o2r" name="n1" src="obro1n" fileName="Com/guide_efx_rectangle0.xml" xy="0,0" pivot="0.5,0.5" size="200,200">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n11_6o2r" name="n2" src="obro1n" fileName="Com/guide_efx_rectangle0.xml" xy="0,0" pivot="0.5,0.5" size="200,200">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <component id="n12_6o2r" name="n3" src="obro1n" fileName="Com/guide_efx_rectangle0.xml" xy="0,0" pivot="0.5,0.5" size="200,200">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+  </displayList>
+  <transition name="t0" options="2" autoPlayRepeat="-1" frameRate="30">
+    <item time="0" type="Alpha" target="n11_6o2r" value="0.405"/>
+    <item time="0" type="Alpha" target="n11_6o2r" tween="true" startValue="1" endValue="0" duration="17"/>
+    <item time="0" type="Alpha" target="n12_6o2r" value="1"/>
+    <item time="0" type="Alpha" target="n7_6o2r" tween="true" startValue="0" endValue="1" duration="6" ease="Linear"/>
+    <item time="0" type="Scale" target="n11_6o2r" tween="true" startValue="1.26,1.26" endValue="1.3,1.3" duration="17" ease="Linear"/>
+    <item time="0" type="Scale" target="n12_6o2r" tween="true" startValue="1.16,1.16" endValue="1.3,1.3" duration="35" ease="Linear"/>
+    <item time="0" type="Scale" target="n7_6o2r" tween="true" startValue="1,1" endValue="1.3,1.3" duration="54" ease="Linear"/>
+    <item time="0" type="Transition" target="n11_6o2r" value="efx2"/>
+    <item time="0" type="Transition" target="n12_6o2r" value="efx3"/>
+    <item time="0" type="Transition" target="n7_6o2r" value="efx1"/>
+    <item time="6" type="Alpha" target="n12_6o2r" tween="true" startValue="1" endValue="0" duration="30" ease="Linear"/>
+    <item time="18" type="Alpha" target="n11_6o2r" tween="true" startValue="0" endValue="1" duration="6" ease="Linear"/>
+    <item time="18" type="Scale" target="n11_6o2r" tween="true" startValue="1,1" endValue="1.26,1.267" duration="36" ease="Linear"/>
+    <item time="24" type="Alpha" target="n7_6o2r" tween="true" startValue="1" endValue="0.001" duration="30" ease="Linear"/>
+    <item time="36" type="Alpha" target="n12_6o2r" tween="true" startValue="0" endValue="1" duration="6" ease="Linear"/>
+    <item time="36" type="Scale" target="n12_6o2r" tween="true" startValue="1,1" endValue="1.16,1.166" duration="18" ease="Linear"/>
+    <item time="42" type="Alpha" target="n11_6o2r" tween="true" startValue="1" endValue="0.409" duration="12" ease="Linear"/>
+    <item time="54" type="Alpha" target="n12_6o2r" value="1"/>
+    <item time="54" type="Transition" target="n11_6o2r" value=""/>
+    <item time="54" type="Transition" target="n7_6o2r" value=""/>
+  </transition>
+</component>

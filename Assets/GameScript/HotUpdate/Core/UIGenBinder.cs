@@ -5,6 +5,7 @@ using MainCenter;
 using MainRole;
 using CommonPKG;
 using GMView;
+using GuidePKG;
 using SettingPKG;
 using UnityEngine;
 using Welfare;
@@ -24,5 +25,6 @@ public class UIGenBinder
         GMViewBinder.BindAll();
         SettingPKGBinder.BindAll();
         WelfareBinder.BindAll();
+        GuidePKGBinder.BindAll();
     }
 }

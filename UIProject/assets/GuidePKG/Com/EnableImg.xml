@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,300">
+  <displayList>
+    <graph id="n0_gyzy" name="clickImage" xy="0,0" size="300,300" alpha="0" type="rect" lineSize="0" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+  </displayList>
+</component>
