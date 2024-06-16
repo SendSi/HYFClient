@@ -10,8 +10,9 @@ public class GuideStepConfig
 {
 	public int id; // key值
 	public int gType; // type类型
-	public string uiPath; // ui路径
 	public int sortId; // 步骤顺序
+	public string uiPath; // ui路径
+	public string moveEffect; // 动效名字
 }
 
 
