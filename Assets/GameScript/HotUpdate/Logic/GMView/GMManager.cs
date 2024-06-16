@@ -110,7 +110,7 @@ public class GMManager : Singleton<GMManager>
             }
             else if (target == "guideType")
             {
-                EffectLoader.Instance.LoadEffect_Id(values[2]);
+                GuidePKGManager.Instance.StartGuideStepId(int.Parse(values[2]));
             }
             else if (target == "copyFGUIPath")
             {

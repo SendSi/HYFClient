@@ -5,7 +5,7 @@ using FairyGUI.Utils;
 
 namespace GuidePKG
 {
-    public partial class Finger : GComponent
+    public partial class FingerCom : GComponent
     {
         public GLoader _finger;
         public Transition _move1;
@@ -14,9 +14,9 @@ namespace GuidePKG
         public Transition _move4;
         public const string URL = "ui://vypq82a1gyzy6";
 
-        public static Finger CreateInstance()
+        public static FingerCom CreateInstance()
         {
-            return (Finger)UIPackage.CreateObject("GuidePKG", "Finger");
+            return (FingerCom)UIPackage.CreateObject("GuidePKG", "FingerCom");
         }
 
         public override void ConstructFromXML(XML xml)

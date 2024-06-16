@@ -75,6 +75,11 @@ namespace FairyGUI
         {
             _Play(1, 0, 0, -1, null, false);
         }
+        
+        public void Play(int times)
+        {
+            _Play(times, 0, 0, -1, null, false);
+        }
 
         /// <summary>
         /// 

@@ -5,21 +5,21 @@ using FairyGUI.Utils;
 
 namespace GuidePKG
 {
-    public partial class GuideFinger : GComponent
+    public partial class GuideMainView : GComponent
     {
-        public Finger _fingerCom;
+        public FingerCom _fingerCom;
         public const string URL = "ui://vypq82a1srlq13";
 
-        public static GuideFinger CreateInstance()
+        public static GuideMainView CreateInstance()
         {
-            return (GuideFinger)UIPackage.CreateObject("GuidePKG", "GuideFinger");
+            return (GuideMainView)UIPackage.CreateObject("GuidePKG", "GuideMainView");
         }
 
         public override void ConstructFromXML(XML xml)
         {
             base.ConstructFromXML(xml);
 
-            _fingerCom = (Finger)GetChild("fingerCom");
+            _fingerCom = (FingerCom)GetChild("fingerCom");
         }
     }
 }

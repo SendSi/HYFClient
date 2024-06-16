@@ -1,62 +1,72 @@
-{
-  "10011": {
+[
+  {
     "id": 10011,
     "gType": 1001,
-    "uiPath": "",
-    "sortId": 1
+    "sortId": 1,
+    "uiPath": "path:View_LoginMainView.ageBtn",
+    "moveEffect": "move1"
   },
-  "10012": {
+  {
     "id": 10012,
     "gType": 1001,
-    "uiPath": "",
-    "sortId": 2
+    "sortId": 2,
+    "uiPath": "path:Window_GameAgeView.contentPane.frame.closeButton",
+    "moveEffect": "move2"
   },
-  "10013": {
+  {
     "id": 10013,
     "gType": 1001,
-    "uiPath": "",
-    "sortId": 3
+    "sortId": 3,
+    "uiPath": "path:View_LoginMainView.stopBtn",
+    "moveEffect": "move1"
   },
-  "10014": {
+  {
     "id": 10014,
     "gType": 1001,
-    "uiPath": "",
-    "sortId": 4
+    "sortId": 4,
+    "uiPath": "path:View_LoginMainView.effectBtn",
+    "moveEffect": "move2"
   },
-  "10015": {
+  {
     "id": 10015,
     "gType": 1001,
-    "uiPath": "",
-    "sortId": 5
+    "sortId": 5,
+    "uiPath": "path:View_LoginMainView.serviceBtn",
+    "moveEffect": "move3"
   },
-  "10016": {
+  {
     "id": 10016,
     "gType": 1001,
-    "uiPath": "",
-    "sortId": 6
+    "sortId": 6,
+    "uiPath": "path:Window_DialogTip1View.contentPane.frame.closeButton",
+    "moveEffect": "move4"
   },
-  "10021": {
+  {
     "id": 10021,
     "gType": 1002,
+    "sortId": 1,
     "uiPath": "",
-    "sortId": 1
+    "moveEffect": ""
   },
-  "10022": {
+  {
     "id": 10022,
     "gType": 1002,
+    "sortId": 2,
     "uiPath": "",
-    "sortId": 2
+    "moveEffect": ""
   },
-  "10023": {
+  {
     "id": 10023,
     "gType": 1002,
+    "sortId": 3,
     "uiPath": "",
-    "sortId": 3
+    "moveEffect": ""
   },
-  "10024": {
+  {
     "id": 10024,
     "gType": 1002,
+    "sortId": 4,
     "uiPath": "",
-    "sortId": 4
+    "moveEffect": ""
   }
-}
+]

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="vypq82a1">
   <resources>
-    <component id="gyzy6" name="Finger.xml" path="/Com/" exported="true"/>
+    <component id="gyzy6" name="FingerCom.xml" path="/Com/" exported="true"/>
     <component id="gyzy8" name="TipText.xml" path="/Com/" exported="true"/>
     <component id="gyzyb" name="TipImage.xml" path="/Com/" exported="true"/>
     <component id="gyzyd" name="guideMask1.xml" path="/Com/" exported="true"/>
@@ -12,7 +12,7 @@
     <component id="dgngz" name="ClickAnywhere.xml" path="/Com/" exported="true"/>
     <component id="mufh11" name="SkipButton.xml" path="/Com/" exported="true"/>
     <component id="srlq12" name="EnableImg.xml" path="/Com/" exported="true"/>
-    <component id="srlq13" name="GuideFinger.xml" path="/Com/" exported="true"/>
+    <component id="srlq13" name="GuideMainView.xml" path="/Window/" exported="true"/>
     <image id="enw714" name="guide_img_01.png" path="/Img/" exported="true"/>
     <image id="enw71y" name="guide_img_00.png" path="/Img/" exported="true" scale="9grid" scale9grid="22,20,6,6"/>
     <component id="dipn21" name="guideMask6.xml" path="/Com/" exported="true"/>
