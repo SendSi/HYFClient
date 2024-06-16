@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="335,188" opaque="false" mask="n16_iug9" reversedMask="true">
+  <displayList>
+    <graph id="n0_gyzy" name="mask" xy="0,0" size="335,188" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+    <component id="n14_enw7" name="kuang" src="obro1m" fileName="Com/guide_efx_rectangle.xml" xy="33,28" pivot="0.5,0.5" size="268,126">
+      <relation target="n16_iug9" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </component>
+    <graph id="n16_iug9" name="window" xy="54,49" size="226,84" type="rect" lineSize="0" corner="20"/>
+  </displayList>
+</component>

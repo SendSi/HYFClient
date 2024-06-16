@@ -17,6 +17,7 @@ public class HotFixReflex
         ManagerBinder.BindAll();
 
         AudioMgr.Instance.Begin();
+        GMManager.Instance.Begin();
     }
 
     public static void Destroy()

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,300" opaque="false" mask="n2_o9vk" reversedMask="true">
+  <displayList>
+    <graph id="n0_gyzy" name="mask" xy="0,0" size="300,300" alpha="0" type="rect" lineSize="0" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+    <graph id="n2_o9vk" name="window" xy="0,0" size="0,0" type="rect" lineSize="0"/>
+  </displayList>
+</component>

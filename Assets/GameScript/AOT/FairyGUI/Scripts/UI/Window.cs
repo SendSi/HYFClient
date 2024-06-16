@@ -85,7 +85,7 @@ namespace FairyGUI
                     _contentPane = value;
                     if (_contentPane != null)
                     {
-                        this.gameObjectName = "Window - " + _contentPane.gameObjectName;
+                        this.gameObjectName = "Window_" + _contentPane.gameObjectName;
                         _contentPane.gameObjectName = "ContentPane";
 
                         AddChild(_contentPane);

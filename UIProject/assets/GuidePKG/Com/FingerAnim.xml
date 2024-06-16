@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="276,180" opaque="false">
+  <displayList>
+    <loader id="n0_gyzy" name="finger" xy="0,0" pivot="0.5,0.5" size="276,180" touchable="false" url="ui://vypq82a1enw714" fill="scale">
+      <relation target="" sidePair=""/>
+    </loader>
+  </displayList>
+  <transition name="move1" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n0_gyzy" tween="true" startValue="-29,-20" endValue="-69,-58" duration="12" ease="Linear"/>
+    <item time="12" type="XY" target="n0_gyzy" tween="true" startValue="-69,-58" endValue="-29,-21" duration="12" ease="Linear"/>
+    <item time="24" type="XY" target="n0_gyzy" tween="true" startValue="-29,-21" endValue="-2,4" duration="12" ease="Linear"/>
+    <item time="36" type="XY" target="n0_gyzy" tween="true" startValue="-2,4" endValue="-28,-20" duration="12" ease="Linear"/>
+  </transition>
+  <transition name="move2">
+    <item time="0" type="XY" target="n0_gyzy" tween="true" startValue="-28,-21" endValue="18,-64" duration="12" ease="Linear"/>
+    <item time="12" type="XY" target="n0_gyzy" tween="true" startValue="18,-64" endValue="-28,-21" duration="12" ease="Linear"/>
+    <item time="24" type="XY" target="n0_gyzy" tween="true" startValue="-28,-21" endValue="-63,14" duration="12" ease="Linear"/>
+    <item time="36" type="XY" target="n0_gyzy" tween="true" startValue="-63,14" endValue="-28,-21" duration="12" ease="Linear"/>
+  </transition>
+  <transition name="move3">
+    <item time="0" type="XY" target="n0_gyzy" tween="true" startValue="-29,-21" endValue="2,6" duration="12" ease="Linear"/>
+    <item time="12" type="XY" target="n0_gyzy" tween="true" startValue="2,6" endValue="-30,-21" duration="12" ease="Linear"/>
+    <item time="24" type="XY" target="n0_gyzy" tween="true" startValue="-30,-21" endValue="-71,-65" duration="12" ease="Linear"/>
+    <item time="36" type="XY" target="n0_gyzy" tween="true" startValue="-71,-65" endValue="-28,-22" duration="12" ease="Linear"/>
+  </transition>
+  <transition name="move4">
+    <item time="0" type="XY" target="n0_gyzy" tween="true" startValue="-29,-22" endValue="-64,12" duration="12" ease="Linear"/>
+    <item time="12" type="XY" target="n0_gyzy" tween="true" startValue="-64,12" endValue="-28,-21" duration="12" ease="Linear"/>
+    <item time="24" type="XY" target="n0_gyzy" tween="true" startValue="-28,-21" endValue="9,-53" duration="12" ease="Linear"/>
+    <item time="36" type="XY" target="n0_gyzy" tween="true" startValue="9,-53" endValue="-28,-21" duration="12" ease="Linear"/>
+  </transition>
+</component>

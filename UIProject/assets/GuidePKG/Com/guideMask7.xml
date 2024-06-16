@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="563,300" opaque="false" mask="n9_iug9" reversedMask="true">
+  <displayList>
+    <graph id="n0_gyzy" name="mask" xy="0,0" size="563,300" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
+    </graph>
+    <graph id="n9_iug9" name="window" xy="90,85" size="382,130" type="rect" lineSize="0" corner="100"/>
+    <image id="n8_x1i3" name="kuang" src="p8x029" fileName="Img/guide_efx_playbtn.png" xy="34,45" size="496,212">
+      <relation target="n9_iug9" sidePair="width-width%,height-height%,center-center,middle-middle"/>
+    </image>
+  </displayList>
+</component>

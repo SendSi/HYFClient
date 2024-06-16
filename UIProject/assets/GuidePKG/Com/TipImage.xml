@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" opaque="false">
+  <displayList>
+    <component id="n1_o9vk" name="spine" src="iq23e3q" fileName="Com/ComModel.xml" pkg="wzm94w0z" xy="636,525" touchable="false"/>
+    <loader id="n0_gyzy" name="image" xy="643,422" pivot="0.5,0.5" size="207,254" touchable="false" url="ui://m9pqa398rck18l" fill="scaleFree" clearOnPublish="true"/>
+  </displayList>
+</component>

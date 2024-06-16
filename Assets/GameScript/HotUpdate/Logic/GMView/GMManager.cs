@@ -108,6 +108,14 @@ public class GMManager : Singleton<GMManager>
             {
                 EffectLoader.Instance.LoadEffect_Id(values[2]);
             }
+            else if (target == "guideType")
+            {
+                EffectLoader.Instance.LoadEffect_Id(values[2]);
+            }
+            else if (target == "copyFGUIPath")
+            {
+                GuidePKGManager.Instance.SetIsNeedCopy(values[2]);
+            }
         }
     }
 

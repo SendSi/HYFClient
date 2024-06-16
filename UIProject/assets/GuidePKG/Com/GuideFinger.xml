@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="392,300" opaque="false">
+  <displayList>
+    <component id="n0_srlq" name="fingerCom" src="gyzy6" fileName="Com/Finger.xml" xy="0,0" pivot="0.5,0.5" touchable="false"/>
+  </displayList>
+</component>
