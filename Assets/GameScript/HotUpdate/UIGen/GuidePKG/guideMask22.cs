@@ -5,16 +5,16 @@ using FairyGUI.Utils;
 
 namespace GuidePKG
 {
-    public partial class guideMask2 : GComponent
+    public partial class guideMask22 : GComponent
     {
         public GGraph _mask;
         public guide_efx_rectangle _kuang;
         public GGraph _window;
         public const string URL = "ui://vypq82a1nbwdi";
 
-        public static guideMask2 CreateInstance()
+        public static guideMask22 CreateInstance()
         {
-            return (guideMask2)UIPackage.CreateObject("GuidePKG", "guideMask2");
+            return (guideMask22)UIPackage.CreateObject("GuidePKG", "guideMask22");
         }
 
         public override void ConstructFromXML(XML xml)

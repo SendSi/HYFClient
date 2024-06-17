@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750" opaque="false">
   <displayList>
-    <loader id="n1_i7mb" name="maskLoader" xy="86,426" size="182,152" url="ui://vypq82a1ewjl3a" align="center" vAlign="middle"/>
+    <loader id="n1_i7mb" name="maskLoader" xy="0,0" size="1334,750" touchable="false" url="ui://vypq82a1ewjl3a" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
     <component id="n0_srlq" name="fingerCom" src="gyzy6" fileName="Com/FingerCom.xml" xy="123,432" pivot="0.5,0.5" touchable="false"/>
   </displayList>
 </component>

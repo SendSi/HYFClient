@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="300,300" opaque="false" mask="n16_iug9" reversedMask="true">
+<component size="1334,750" opaque="false" mask="n16_iug9" reversedMask="true">
   <displayList>
-    <graph id="n0_gyzy" name="mask" xy="0,0" size="300,300" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+    <graph id="n0_gyzy" name="mask" xy="0,0" size="1334,750" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
       <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
     </graph>
     <component id="n14_enw7" name="kuang" src="obro1m" fileName="Com/guide_efx_rectangle.xml" xy="25,26" pivot="0.5,0.5" size="246,244">

@@ -4,16 +4,20 @@
     "gType": 1001,
     "sortId": 1,
     "uiPath": "path:View_LoginMainView.ageBtn",
-    "moveEffect": "move1",
-    "maskLoader": "ui://GuidePKG/guideMask21"
+    "moveEffect": "move3",
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0.3
   },
   {
     "id": 10012,
     "gType": 1001,
     "sortId": 2,
     "uiPath": "path:Window_GameAgeView.contentPane.frame.closeButton",
-    "moveEffect": "move2",
-    "maskLoader": ""
+    "moveEffect": "",
+    "maskLoader": "ui://GuidePKG/guideMask22",
+    "closeMain": 0,
+    "finishTime": 0.3
   },
   {
     "id": 10013,
@@ -21,7 +25,9 @@
     "sortId": 3,
     "uiPath": "path:View_LoginMainView.stopBtn",
     "moveEffect": "move1",
-    "maskLoader": ""
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 1,
+    "finishTime": 0.3
   },
   {
     "id": 10014,
@@ -29,23 +35,29 @@
     "sortId": 4,
     "uiPath": "path:View_LoginMainView.effectBtn",
     "moveEffect": "move2",
-    "maskLoader": ""
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0.3
   },
   {
     "id": 10015,
     "gType": 1001,
     "sortId": 5,
-    "uiPath": "path:View_LoginMainView.serviceBtn",
+    "uiPath": "path:View_LoginMainView.noticeBtn",
     "moveEffect": "move3",
-    "maskLoader": ""
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0.3
   },
   {
     "id": 10016,
     "gType": 1001,
     "sortId": 6,
-    "uiPath": "path:Window_DialogTip1View.contentPane.frame.closeButton",
-    "moveEffect": "move4",
-    "maskLoader": ""
+    "uiPath": "path:Window_GameNoticeView.contentPane.frame.closeButton",
+    "moveEffect": "move3",
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0
   },
   {
     "id": 10021,
@@ -53,7 +65,9 @@
     "sortId": 1,
     "uiPath": "",
     "moveEffect": "",
-    "maskLoader": ""
+    "maskLoader": "",
+    "closeMain": 2,
+    "finishTime": 1
   },
   {
     "id": 10022,
@@ -61,7 +75,9 @@
     "sortId": 2,
     "uiPath": "",
     "moveEffect": "",
-    "maskLoader": ""
+    "maskLoader": "",
+    "closeMain": 3,
+    "finishTime": 2
   },
   {
     "id": 10023,
@@ -69,7 +85,9 @@
     "sortId": 3,
     "uiPath": "",
     "moveEffect": "",
-    "maskLoader": ""
+    "maskLoader": "",
+    "closeMain": 4,
+    "finishTime": 3
   },
   {
     "id": 10024,
@@ -77,6 +95,8 @@
     "sortId": 4,
     "uiPath": "",
     "moveEffect": "",
-    "maskLoader": ""
+    "maskLoader": "",
+    "closeMain": 5,
+    "finishTime": 4
   }
 ]

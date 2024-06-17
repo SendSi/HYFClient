@@ -13,7 +13,9 @@ public class GuideStepConfig
 	public int sortId; // 步骤顺序
 	public string uiPath; // ui路径
 	public string moveEffect; // 手指动效名字
-	public string maskLoader; // 聚显示
+	public string maskLoader; // mask显示
+	public int closeMain; // 关闭
+	public float finishTime; // 完成时间
 }
 
 

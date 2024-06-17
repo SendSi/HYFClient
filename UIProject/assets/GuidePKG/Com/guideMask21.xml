@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="666,594" opaque="false" mask="n3_dipn" reversedMask="true">
+<component size="1334,750" opaque="false" mask="n3_dipn" reversedMask="true">
   <displayList>
-    <graph id="n0_gyzy" name="mask" xy="0,0" size="666,594" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
+    <graph id="n0_gyzy" name="mask" xy="0,0" size="1334,750" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
       <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
     </graph>
-    <graph id="n3_dipn" name="window" xy="66,28" size="528,526" type="rect" fillColor="#ff000000"/>
+    <graph id="n3_dipn" name="window" xy="25,25" size="150,150" type="rect" fillColor="#ff000000"/>
   </displayList>
 </component>
