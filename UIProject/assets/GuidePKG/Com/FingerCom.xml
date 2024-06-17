@@ -29,4 +29,8 @@
     <item time="24" type="XY" target="n0_gyzy" tween="true" startValue="-28,-21" endValue="9,-53" duration="12" ease="Linear"/>
     <item time="36" type="XY" target="n0_gyzy" tween="true" startValue="9,-53" endValue="-28,-21" duration="12" ease="Linear"/>
   </transition>
+  <transition name="move5">
+    <item time="0" type="XY" target="n0_gyzy" tween="true" startValue="-20,1" endValue="47,1" duration="8"/>
+    <item time="8" type="XY" target="n0_gyzy" tween="true" startValue="47,1" endValue="-20,1" duration="8"/>
+  </transition>
 </component>

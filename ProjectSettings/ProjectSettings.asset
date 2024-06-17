@@ -160,8 +160,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.HYF
-    Standalone: com.DefaultCompany.HYF
+    Android: com.DefaultCompany.
+    Standalone: com.DefaultCompany.------
   buildNumber:
     Standalone: 0
     VisionOS: 0

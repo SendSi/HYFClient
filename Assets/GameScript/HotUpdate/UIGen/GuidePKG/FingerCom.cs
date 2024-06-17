@@ -12,6 +12,7 @@ namespace GuidePKG
         public Transition _move2;
         public Transition _move3;
         public Transition _move4;
+        public Transition _move5;
         public const string URL = "ui://vypq82a1gyzy6";
 
         public static FingerCom CreateInstance()
@@ -28,6 +29,7 @@ namespace GuidePKG
             _move2 = GetTransition("move2");
             _move3 = GetTransition("move3");
             _move4 = GetTransition("move4");
+            _move5 = GetTransition("move5");
         }
     }
 }

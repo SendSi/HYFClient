@@ -4,69 +4,79 @@
     "gType": 1001,
     "sortId": 1,
     "uiPath": "path:View_LoginMainView.ageBtn",
-    "moveEffect": "move1"
+    "moveEffect": "move1",
+    "maskLoader": "ui://GuidePKG/guideMask21"
   },
   {
     "id": 10012,
     "gType": 1001,
     "sortId": 2,
     "uiPath": "path:Window_GameAgeView.contentPane.frame.closeButton",
-    "moveEffect": "move2"
+    "moveEffect": "move2",
+    "maskLoader": ""
   },
   {
     "id": 10013,
     "gType": 1001,
     "sortId": 3,
     "uiPath": "path:View_LoginMainView.stopBtn",
-    "moveEffect": "move1"
+    "moveEffect": "move1",
+    "maskLoader": ""
   },
   {
     "id": 10014,
     "gType": 1001,
     "sortId": 4,
     "uiPath": "path:View_LoginMainView.effectBtn",
-    "moveEffect": "move2"
+    "moveEffect": "move2",
+    "maskLoader": ""
   },
   {
     "id": 10015,
     "gType": 1001,
     "sortId": 5,
     "uiPath": "path:View_LoginMainView.serviceBtn",
-    "moveEffect": "move3"
+    "moveEffect": "move3",
+    "maskLoader": ""
   },
   {
     "id": 10016,
     "gType": 1001,
     "sortId": 6,
     "uiPath": "path:Window_DialogTip1View.contentPane.frame.closeButton",
-    "moveEffect": "move4"
+    "moveEffect": "move4",
+    "maskLoader": ""
   },
   {
     "id": 10021,
     "gType": 1002,
     "sortId": 1,
     "uiPath": "",
-    "moveEffect": ""
+    "moveEffect": "",
+    "maskLoader": ""
   },
   {
     "id": 10022,
     "gType": 1002,
     "sortId": 2,
     "uiPath": "",
-    "moveEffect": ""
+    "moveEffect": "",
+    "maskLoader": ""
   },
   {
     "id": 10023,
     "gType": 1002,
     "sortId": 3,
     "uiPath": "",
-    "moveEffect": ""
+    "moveEffect": "",
+    "maskLoader": ""
   },
   {
     "id": 10024,
     "gType": 1002,
     "sortId": 4,
     "uiPath": "",
-    "moveEffect": ""
+    "moveEffect": "",
+    "maskLoader": ""
   }
 ]

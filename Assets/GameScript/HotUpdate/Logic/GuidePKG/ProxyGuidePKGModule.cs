@@ -11,42 +11,23 @@ public class ProxyGuidePKGModule : Singleton<ProxyGuidePKGModule>,IProxy
     }
     
     
-    #region GMMainView打开关闭View
+    #region GuideMainView打开关闭View
 
     private GuideMainView _guideView;
-
-    public void OpenGuideMainView(string uiPath)
+    public void OpenGuideMainView(GuideStepConfig stepCfg)
     {
         if (_guideView == null)
         {        //若有引用 就显示咯 
             CheckLoad(delegate
             {
                 _guideView = UIMgr.Instance.OpenUIViewCom<GuideMainView>(pkgName);
-                _guideView.SetData(uiPath);
+                _guideView.SetData(stepCfg);
             });
         }
         else
         {
             UIMgr.Instance.ShowUIViewCom<GuideMainView>();
-            _guideView.SetData(uiPath);
-        }
-    }
-    
-    
-    public void OpenGuideMainView(List<GuideStepConfig> stepCfgs)
-    {
-        if (_guideView == null)
-        {        //若有引用 就显示咯 
-            CheckLoad(delegate
-            {
-                _guideView = UIMgr.Instance.OpenUIViewCom<GuideMainView>(pkgName);
-                _guideView.SetData(stepCfgs);
-            });
-        }
-        else
-        {
-            UIMgr.Instance.ShowUIViewCom<GuideMainView>();
-            _guideView.SetData(stepCfgs);
+            _guideView.SetData(stepCfg);
         }
     }
 

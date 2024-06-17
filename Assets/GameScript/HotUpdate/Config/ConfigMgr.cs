@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using UnityEngine;
 using YooAsset;
 
-//导表工具 默认使用字典模式     不使用array
+//导表工具 默认使用字典模式     少使用array
 public class ConfigMgr : Singleton<ConfigMgr>
 {
     private string _langCfgName; //翻译表  导表之间的索引
@@ -14,8 +14,8 @@ public class ConfigMgr : Singleton<ConfigMgr>
     protected override void OnInit()
     {
         base.OnInit();
-        _langCfgName = "Cfg_" + AppConfig.currLang; //翻译表  导表之间的索引
-        _langScriptName = "Script_" + AppConfig.currLang; //写代码时 收集的到表
+        _langCfgName = "Cfg_" + AppConfig.currLang; //翻译表  导表之间的索引   一般策划维护的表
+        _langScriptName = "Script_" + AppConfig.currLang; //写代码时 程序员 收集的到excel中去   后面也是策划维护的     
     }
 
     /// <summary> T是表类型    返回整个导表</summary>
