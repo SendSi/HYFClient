@@ -1,0 +1,272 @@
+{
+  "1031": {
+    "id": 1031,
+    "urlIcon": "ui://PokerPKG/31",
+    "id_1": 3
+  },
+  "1032": {
+    "id": 1032,
+    "urlIcon": "ui://PokerPKG/32",
+    "id_1": 3
+  },
+  "1033": {
+    "id": 1033,
+    "urlIcon": "ui://PokerPKG/33",
+    "id_1": 3
+  },
+  "1034": {
+    "id": 1034,
+    "urlIcon": "ui://PokerPKG/34",
+    "id_1": 3
+  },
+  "1041": {
+    "id": 1041,
+    "urlIcon": "ui://PokerPKG/41",
+    "id_1": 4
+  },
+  "1042": {
+    "id": 1042,
+    "urlIcon": "ui://PokerPKG/42",
+    "id_1": 4
+  },
+  "1043": {
+    "id": 1043,
+    "urlIcon": "ui://PokerPKG/43",
+    "id_1": 4
+  },
+  "1044": {
+    "id": 1044,
+    "urlIcon": "ui://PokerPKG/44",
+    "id_1": 4
+  },
+  "1051": {
+    "id": 1051,
+    "urlIcon": "ui://PokerPKG/51",
+    "id_1": 5
+  },
+  "1052": {
+    "id": 1052,
+    "urlIcon": "ui://PokerPKG/52",
+    "id_1": 5
+  },
+  "1053": {
+    "id": 1053,
+    "urlIcon": "ui://PokerPKG/53",
+    "id_1": 5
+  },
+  "1054": {
+    "id": 1054,
+    "urlIcon": "ui://PokerPKG/54",
+    "id_1": 5
+  },
+  "1061": {
+    "id": 1061,
+    "urlIcon": "ui://PokerPKG/61",
+    "id_1": 6
+  },
+  "1062": {
+    "id": 1062,
+    "urlIcon": "ui://PokerPKG/62",
+    "id_1": 6
+  },
+  "1063": {
+    "id": 1063,
+    "urlIcon": "ui://PokerPKG/63",
+    "id_1": 6
+  },
+  "1064": {
+    "id": 1064,
+    "urlIcon": "ui://PokerPKG/64",
+    "id_1": 6
+  },
+  "1071": {
+    "id": 1071,
+    "urlIcon": "ui://PokerPKG/71",
+    "id_1": 7
+  },
+  "1072": {
+    "id": 1072,
+    "urlIcon": "ui://PokerPKG/72",
+    "id_1": 7
+  },
+  "1073": {
+    "id": 1073,
+    "urlIcon": "ui://PokerPKG/73",
+    "id_1": 7
+  },
+  "1074": {
+    "id": 1074,
+    "urlIcon": "ui://PokerPKG/74",
+    "id_1": 7
+  },
+  "1081": {
+    "id": 1081,
+    "urlIcon": "ui://PokerPKG/81",
+    "id_1": 8
+  },
+  "1082": {
+    "id": 1082,
+    "urlIcon": "ui://PokerPKG/82",
+    "id_1": 8
+  },
+  "1083": {
+    "id": 1083,
+    "urlIcon": "ui://PokerPKG/83",
+    "id_1": 8
+  },
+  "1084": {
+    "id": 1084,
+    "urlIcon": "ui://PokerPKG/84",
+    "id_1": 8
+  },
+  "1091": {
+    "id": 1091,
+    "urlIcon": "ui://PokerPKG/91",
+    "id_1": 9
+  },
+  "1092": {
+    "id": 1092,
+    "urlIcon": "ui://PokerPKG/92",
+    "id_1": 9
+  },
+  "1093": {
+    "id": 1093,
+    "urlIcon": "ui://PokerPKG/93",
+    "id_1": 9
+  },
+  "1094": {
+    "id": 1094,
+    "urlIcon": "ui://PokerPKG/94",
+    "id_1": 9
+  },
+  "1101": {
+    "id": 1101,
+    "urlIcon": "ui://PokerPKG/101",
+    "id_1": 10
+  },
+  "1102": {
+    "id": 1102,
+    "urlIcon": "ui://PokerPKG/102",
+    "id_1": 10
+  },
+  "1103": {
+    "id": 1103,
+    "urlIcon": "ui://PokerPKG/103",
+    "id_1": 10
+  },
+  "1104": {
+    "id": 1104,
+    "urlIcon": "ui://PokerPKG/104",
+    "id_1": 10
+  },
+  "1111": {
+    "id": 1111,
+    "urlIcon": "ui://PokerPKG/112",
+    "id_1": 11
+  },
+  "1112": {
+    "id": 1112,
+    "urlIcon": "ui://PokerPKG/112",
+    "id_1": 11
+  },
+  "1113": {
+    "id": 1113,
+    "urlIcon": "ui://PokerPKG/113",
+    "id_1": 11
+  },
+  "1114": {
+    "id": 1114,
+    "urlIcon": "ui://PokerPKG/114",
+    "id_1": 11
+  },
+  "1121": {
+    "id": 1121,
+    "urlIcon": "ui://PokerPKG/121",
+    "id_1": 12
+  },
+  "1122": {
+    "id": 1122,
+    "urlIcon": "ui://PokerPKG/122",
+    "id_1": 12
+  },
+  "1123": {
+    "id": 1123,
+    "urlIcon": "ui://PokerPKG/123",
+    "id_1": 12
+  },
+  "1124": {
+    "id": 1124,
+    "urlIcon": "ui://PokerPKG/124",
+    "id_1": 12
+  },
+  "1131": {
+    "id": 1131,
+    "urlIcon": "ui://PokerPKG/131",
+    "id_1": 13
+  },
+  "1132": {
+    "id": 1132,
+    "urlIcon": "ui://PokerPKG/132",
+    "id_1": 13
+  },
+  "1133": {
+    "id": 1133,
+    "urlIcon": "ui://PokerPKG/133",
+    "id_1": 13
+  },
+  "1134": {
+    "id": 1134,
+    "urlIcon": "ui://PokerPKG/134",
+    "id_1": 13
+  },
+  "1141": {
+    "id": 1141,
+    "urlIcon": "ui://PokerPKG/141",
+    "id_1": 14
+  },
+  "1142": {
+    "id": 1142,
+    "urlIcon": "ui://PokerPKG/142",
+    "id_1": 13.6783216783217
+  },
+  "1143": {
+    "id": 1143,
+    "urlIcon": "ui://PokerPKG/143",
+    "id_1": 13.9020979020979
+  },
+  "1144": {
+    "id": 1144,
+    "urlIcon": "ui://PokerPKG/144",
+    "id_1": 14.1258741258741
+  },
+  "1151": {
+    "id": 1151,
+    "urlIcon": "ui://PokerPKG/151",
+    "id_1": 15
+  },
+  "1152": {
+    "id": 1152,
+    "urlIcon": "ui://PokerPKG/152",
+    "id_1": 14.5734265734266
+  },
+  "1153": {
+    "id": 1153,
+    "urlIcon": "ui://PokerPKG/153",
+    "id_1": 14.7972027972028
+  },
+  "1154": {
+    "id": 1154,
+    "urlIcon": "ui://PokerPKG/154",
+    "id_1": 15.020979020979
+  },
+  "2001": {
+    "id": 2001,
+    "urlIcon": "ui://PokerPKG/1001",
+    "id_1": 15.2447552447552
+  },
+  "3001": {
+    "id": 3001,
+    "urlIcon": "ui://PokerPKG/1002",
+    "id_1": 15.4685314685315
+  }
+}

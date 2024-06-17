@@ -12,6 +12,7 @@ namespace GuidePKG
             UIObjectFactory.SetPackageItemExtension(guideMask12_1.URL, typeof(guideMask12_1));
             UIObjectFactory.SetPackageItemExtension(ClickAnywhere.URL, typeof(ClickAnywhere));
             UIObjectFactory.SetPackageItemExtension(guideMask6.URL, typeof(guideMask6));
+            UIObjectFactory.SetPackageItemExtension(guideMask21.URL, typeof(guideMask21));
             UIObjectFactory.SetPackageItemExtension(guideMask14.URL, typeof(guideMask14));
             UIObjectFactory.SetPackageItemExtension(guideMask15.URL, typeof(guideMask15));
             UIObjectFactory.SetPackageItemExtension(FingerCom.URL, typeof(FingerCom));
@@ -32,7 +33,6 @@ namespace GuidePKG
             UIObjectFactory.SetPackageItemExtension(EnableImg.URL, typeof(EnableImg));
             UIObjectFactory.SetPackageItemExtension(GuideMainView.URL, typeof(GuideMainView));
             UIObjectFactory.SetPackageItemExtension(guideMask12.URL, typeof(guideMask12));
-            UIObjectFactory.SetPackageItemExtension(guideMask13_1.URL, typeof(guideMask13_1));
             UIObjectFactory.SetPackageItemExtension(guideMask11.URL, typeof(guideMask11));
             UIObjectFactory.SetPackageItemExtension(guideMask8.URL, typeof(guideMask8));
             UIObjectFactory.SetPackageItemExtension(guideMask10.URL, typeof(guideMask10));

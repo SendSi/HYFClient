@@ -4,6 +4,6 @@
     <graph id="n0_gyzy" name="mask" xy="0,0" size="300,300" alpha="0.7" type="rect" lineSize="0" fillColor="#ff000000">
       <relation target="" sidePair="width-width,height-height,center-center,middle-middle"/>
     </graph>
-    <graph id="n10_enw7" name="window" xy="56,58" size="145,145" aspect="true" type="eclipse" lineSize="0"/>
+    <graph id="n10_enw7" name="window" xy="82,77" size="145,145" aspect="true" type="eclipse" lineSize="0"/>
   </displayList>
 </component>

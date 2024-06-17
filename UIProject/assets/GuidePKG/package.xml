@@ -27,7 +27,6 @@
     <component id="x1i32q" name="guideMask9.xml" path="/Com/" exported="true"/>
     <image id="x1i32s" name="guide_img_tip.png" path="/Img/" exported="true" scale="9grid" scale9grid="64,6,30,202"/>
     <component id="w2m32u" name="guideMask12.xml" path="/Com/" exported="true"/>
-    <component id="w2m32v" name="guideMask13_1.xml" path="/Com/" exported="true"/>
     <image id="cyw42w" name="guide_img_15.png" path="/Img/" exported="true" scale="9grid" scale9grid="88,90,3,2" duplicatePadding="true"/>
     <image id="cyw42x" name="guide_img_16.png" path="/Img/" exported="true" duplicatePadding="true"/>
     <component id="cyw42y" name="guideMask13.xml" path="/Com/" exported="true"/>
@@ -49,6 +48,7 @@
     <component id="obro1n" name="guide_efx_rectangle0.xml" path="/Com/" exported="true"/>
     <component id="lz3y38" name="FingerUI.xml" path="/Com/" exported="true"/>
     <component id="lz3y39" name="FingerAnim.xml" path="/Com/" exported="true"/>
+    <component id="ewjl3a" name="guideMask21.xml" path="/Com/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
