@@ -109,6 +109,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
     {
         if (mGuideStepCfgs.TryGetValue(typeGuide, out var list))
         {
+            Debug.LogWarning("收到指令，开始指引了");
             mCurrentSteps.Clear();
             foreach (var item in list)
             {
@@ -134,6 +135,13 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
             ProxyGuidePKGModule.Instance.HideGuideMainView();
             Debug.LogWarning("完成指引了");
         }
+    }
+
+    public void StopGuide()
+    {
+        mCurrentSteps.Clear();
+        mIsGuideing = false;
+        ProxyGuidePKGModule.Instance.HideGuideMainView();
     }
 
     #endregion 

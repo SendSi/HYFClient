@@ -11,7 +11,7 @@
       <relation target="" sidePair="width-width,height-height"/>
     </component>
   </displayList>
-  <transition name="t0" options="2" autoPlayRepeat="-1" frameRate="30">
+  <transition name="t0" options="2" autoPlay="true" autoPlayRepeat="-1" frameRate="30">
     <item time="0" type="Alpha" target="n11_6o2r" value="0.405"/>
     <item time="0" type="Alpha" target="n11_6o2r" tween="true" startValue="1" endValue="0" duration="17"/>
     <item time="0" type="Alpha" target="n12_6o2r" value="1"/>
