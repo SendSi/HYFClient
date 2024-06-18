@@ -8,6 +8,7 @@ namespace GMView
         private List<GMConfig> _typeDtos;
         private List<GMConfig> _centerDtos;
         private List<string> _oldReDtos;
+        private const string checkKey = "GMCheckCloseBtn";
 
         public override void OnInit()
         {
@@ -33,10 +34,13 @@ namespace GMView
 
             this._sendBtn.onClick.Set(OnClickSendGM);
             this._closeButton.onClick.Set(OnClickClose);
+
+            this._checkCloseBtn.selected = PlayerPrefsHelper.GetBool(checkKey, false);
         }
 
         private void OnClickClose()
         {
+            PlayerPrefsHelper.SetBool(checkKey, this._checkCloseBtn.selected);
             ProxyGMModule.Instance.HideGMMainView();
         }
 
@@ -47,11 +51,11 @@ namespace GMView
                 GMManager.Instance.SetOldReValue(this._inputTxt.text);
                 if (this._inputTxt.text.Contains("local"))
                 {
-                    GMManager.Instance.LocalMethodGM(this._inputTxt.text);                    //前端自己定义的
+                    GMManager.Instance.LocalMethodGM(this._inputTxt.text); //前端自己定义的
                 }
                 else
                 {
-                    GMManager.Instance.ServerMethodGM(this._inputTxt.text);        //直接发送后端的gm
+                    GMManager.Instance.ServerMethodGM(this._inputTxt.text); //直接发送后端的gm
                 }
 
                 this._inputTxt.text = ""; //清空

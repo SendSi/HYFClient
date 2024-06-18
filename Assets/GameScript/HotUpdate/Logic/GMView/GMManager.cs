@@ -7,7 +7,7 @@ public class GMManager : Singleton<GMManager>
     private List<GMConfig> _typeListDto;
     private Dictionary<int, List<GMConfig>> _centerListDto;
     private List<string> _oldReListDto;
-    private const string prefsKey = "oldReKey";
+    private const string prefsKey = "oldReKey1";
     private string _oldReStrValue;
 
     protected override void OnInit()
@@ -28,7 +28,7 @@ public class GMManager : Singleton<GMManager>
             _centerListDto[item.Value.tType].Add(item.Value);
         }
 
-        _oldReStrValue = PlayerPrefs.GetString(prefsKey, ""); //;; 两个分号切割
+        _oldReStrValue = PlayerPrefsHelper.GetString(prefsKey, ""); //;; 两个分号切割
         var list = _oldReStrValue.Split(";;");
         foreach (var item in list)
         {
@@ -81,7 +81,7 @@ public class GMManager : Singleton<GMManager>
                 _oldReStrValue += (item + ";;");
             }
 
-            PlayerPrefs.SetString(prefsKey, _oldReStrValue); //;; 两个分号切割
+            PlayerPrefsHelper.SetString(prefsKey, _oldReStrValue); //;; 两个分号切割
         }
     }
 
