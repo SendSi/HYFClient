@@ -11,6 +11,13 @@ namespace MEditor
 {
     public class ReferenceMissHelpTools : AssetBaseHelper
     {
+        [MenuItem("Tools/辅助工具/清除所有PlayerPrefs")]
+        public static void ClearAllPlaykeys()
+        {
+            PlayerPrefsHelper.ClearAll();
+        }
+        
+        
         [MenuItem("Tools/辅助工具/Miss引用 辅助工具")]
         public static void ShowPrefabNullSprite()
         {
