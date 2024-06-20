@@ -16,6 +16,7 @@ public class GuideStepConfig
 	public string maskLoader; // mask显示
 	public int closeMain; // 关闭
 	public float finishTime; // 完成时间
+	public int descId; // 指引文字说明
 }
 
 

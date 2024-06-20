@@ -20,7 +20,7 @@
     "tType": 1,
     "tTypeName": "声效特效",
     "tContent": "播放特效",
-    "tGmTxt": "local playEffect id",
+    "tGmTxt": "local playEffect 1001",
     "tDesc": "effect表的id"
   },
   "1004": {
@@ -28,8 +28,8 @@
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "播放引导",
-    "tGmTxt": "local guideType id",
-    "tDesc": "guideTypeConfig表的id"
+    "tGmTxt": "local guideType 1001",
+    "tDesc": "guideType表的id"
   },
   "1005": {
     "id": 1005,

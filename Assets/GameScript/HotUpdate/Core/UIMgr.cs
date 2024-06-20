@@ -49,6 +49,20 @@ public class UIMgr : Singleton<UIMgr>
 
         return null;
     }
+    
+    /// <summary> UIView 反过来 显示显隐 </summary>
+    /// <returns>true加载着</returns>
+    public  bool SetUIViewActiveReverse<T>() where  T:GComponent
+    {
+        var viewName = (typeof(T).Name);
+
+        if (mShoGCompDic.TryGetValue(viewName, out var tViewCls))
+        {
+             tViewCls.visible=! tViewCls.visible;
+             return true;
+        }
+        return false;
+    }
 
 
     /// <summary>隐藏已显示的页面..传入具体页面类 </summary>

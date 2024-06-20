@@ -5,9 +5,10 @@
     "sortId": 1,
     "uiPath": "path:View_LoginMainView.ageBtn",
     "moveEffect": "move3",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "",
     "closeMain": 0,
-    "finishTime": 0.3
+    "finishTime": 0.3,
+    "descId": 0
   },
   {
     "id": 10012,
@@ -17,7 +18,8 @@
     "moveEffect": "",
     "maskLoader": "ui://GuidePKG/guideMask22",
     "closeMain": 0,
-    "finishTime": 0.3
+    "finishTime": 0.3,
+    "descId": 0
   },
   {
     "id": 10013,
@@ -27,7 +29,8 @@
     "moveEffect": "move1",
     "maskLoader": "ui://GuidePKG/guideMask21",
     "closeMain": 1,
-    "finishTime": 0.3
+    "finishTime": 0.3,
+    "descId": 0
   },
   {
     "id": 10014,
@@ -37,7 +40,8 @@
     "moveEffect": "move2",
     "maskLoader": "ui://GuidePKG/guideMask21",
     "closeMain": 0,
-    "finishTime": 0.3
+    "finishTime": 0.3,
+    "descId": 1001
   },
   {
     "id": 10015,
@@ -47,7 +51,8 @@
     "moveEffect": "move3",
     "maskLoader": "ui://GuidePKG/guideMask21",
     "closeMain": 0,
-    "finishTime": 0.3
+    "finishTime": 0.3,
+    "descId": 0
   },
   {
     "id": 10016,
@@ -57,7 +62,8 @@
     "moveEffect": "move3",
     "maskLoader": "ui://GuidePKG/guideMask21",
     "closeMain": 0,
-    "finishTime": 0
+    "finishTime": 0,
+    "descId": 0
   },
   {
     "id": 10021,
@@ -67,7 +73,8 @@
     "moveEffect": "",
     "maskLoader": "",
     "closeMain": 2,
-    "finishTime": 1
+    "finishTime": 1,
+    "descId": 0
   },
   {
     "id": 10022,
@@ -77,7 +84,8 @@
     "moveEffect": "",
     "maskLoader": "",
     "closeMain": 3,
-    "finishTime": 2
+    "finishTime": 2,
+    "descId": 0
   },
   {
     "id": 10023,
@@ -87,7 +95,8 @@
     "moveEffect": "",
     "maskLoader": "",
     "closeMain": 4,
-    "finishTime": 3
+    "finishTime": 3,
+    "descId": 0
   },
   {
     "id": 10024,
@@ -97,6 +106,7 @@
     "moveEffect": "",
     "maskLoader": "",
     "closeMain": 5,
-    "finishTime": 4
+    "finishTime": 4,
+    "descId": 0
   }
 ]

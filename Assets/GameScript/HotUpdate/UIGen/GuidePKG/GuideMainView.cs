@@ -8,6 +8,7 @@ namespace GuidePKG
     public partial class GuideMainView : GComponent
     {
         public GLoader _maskLoader;
+        public GLoader _descLoader;
         public FingerCom _fingerCom;
         public const string URL = "ui://vypq82a1srlq13";
 
@@ -21,6 +22,7 @@ namespace GuidePKG
             base.ConstructFromXML(xml);
 
             _maskLoader = (GLoader)GetChild("maskLoader");
+            _descLoader = (GLoader)GetChild("descLoader");
             _fingerCom = (FingerCom)GetChild("fingerCom");
         }
     }

@@ -111,6 +111,7 @@ public class GMManager : Singleton<GMManager>
             else if (target == "guideType")
             {
                 GuidePKGManager.Instance.StartGuideStepId(int.Parse(values[2]));
+                ProxyGMModule.Instance.HideGMMainView();
             }
             else if (target == "copyFGUIPath")
             {

@@ -37,5 +37,14 @@ public class ProxyGMModule : Singleton<ProxyGMModule>
         }
     }
 
+    public void SetActiveReverseGM()
+    {
+        var isLoaded = UIMgr.Instance.SetUIViewActiveReverse<GMMainView>();
+        if (isLoaded == false)
+        {
+            OpenGMMainView();
+        }
+    }
+
     #endregion
 }
