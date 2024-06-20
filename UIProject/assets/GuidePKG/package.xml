@@ -2,7 +2,7 @@
 <packageDescription id="vypq82a1">
   <resources>
     <component id="gyzy6" name="FingerCom.xml" path="/Com/" exported="true"/>
-    <component id="gyzy8" name="TipText.xml" path="/Com/" exported="true"/>
+    <component id="gyzy8" name="guideDesc21.xml" path="/Com/" exported="true"/>
     <component id="gyzyb" name="TipImage.xml" path="/Com/" exported="true"/>
     <component id="gyzyd" name="guideMask1.xml" path="/Com/" exported="true"/>
     <component id="nbwdi" name="guideMask22.xml" path="/Com/" exported="true"/>

@@ -13,7 +13,7 @@ public class GMConfig
 	public string tTypeName; // 类型名
 	public string tContent; // 按钮
 	public string tGmTxt; // 文本框
-	public string tDesc; // 解说
+	public string tDesc; // 注解
 }
 
 

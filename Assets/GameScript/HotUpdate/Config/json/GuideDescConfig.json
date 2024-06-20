@@ -1,0 +1,16 @@
+{
+  "1001": {
+    "id": 1001,
+    "urlPath": "ui://GuidePKG/guideDesc21",
+    "txtContent": "这位置不错呐！\\r\\n赶紧去占领吧!",
+    "conX": 0.3,
+    "conY": 0.3
+  },
+  "1002": {
+    "id": 1002,
+    "urlPath": "ui://GuidePKG/guideDesc22",
+    "txtContent": "",
+    "conX": 0.0,
+    "conY": 0.0
+  }
+}
