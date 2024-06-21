@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false" designImageAlpha="69">
+  <displayList>
+    <loader id="n0_gyzy" name="bgIcon" xy="384,258" size="510,142" group="n4_t07b" url="ui://vypq82a1feyt35" fill="scaleFree">
+      <relation target="n1_gyzy" sidePair="rightext-right,bottomext-bottom"/>
+    </loader>
+    <text id="n1_gyzy" name="txtContent" xy="422,291" size="436,83" group="n4_t07b" fontSize="32" color="#00ff00" leading="0" letterSpacing="1" ubb="true" autoSize="none" text="这位置不错呐！&#xA;沙发胜多负少的啊肥电饭锅">
+      <relation target="n0_gyzy" sidePair="left-left,top-top"/>
+    </text>
+    <group id="n4_t07b" name="content" xy="384,258" size="510,142" advanced="true"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Alpha" target="n1_gyzy" value="0"/>
+    <item time="0" type="Scale" target="n0_gyzy" tween="true" startValue="0,0" endValue="1.1,1.1" duration="4"/>
+    <item time="4" type="Alpha" target="n1_gyzy" tween="true" startValue="0" endValue="1" duration="3"/>
+    <item time="4" type="Scale" target="n0_gyzy" tween="true" startValue="1.1,1.1" endValue="1,1" duration="3"/>
+  </transition>
+</component>

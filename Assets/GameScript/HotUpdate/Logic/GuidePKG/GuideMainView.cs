@@ -29,9 +29,15 @@ namespace GuidePKG
             EventCenter.Instance.Bind<string>(EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);
         }
 
-        private void OnEventGuideUIPath(string uiPath)
+        private void OnEventGuideUIPath(string content)
         {
-            if (mStepCfg.uiPath == uiPath)
+            var isFinish = false;
+            if (string.IsNullOrEmpty(mStepCfg.uiPath) && content.Equals("true"))
+            {
+                isFinish = true; //无具体路径的
+            }
+
+            if (mStepCfg.uiPath == content)
             {
                 if (string.IsNullOrEmpty(mStepCfg.moveEffect) == false)
                 {
@@ -43,19 +49,27 @@ namespace GuidePKG
                     this.visible = false;
                 }
 
-                if (mStepCfg.finishTime > 0.01f)
-                {
-                    Timers.inst.Add(mStepCfg.finishTime, 1, obj =>
-                    {
-                        Debug.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
-                        EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
-                    });
-                }
-                else
+                isFinish = true; //有具体路径的
+            }
+
+            if (isFinish == false)
+            {
+                Debug.LogError("无匹配的完成事件类型");
+                return;
+            }
+
+            if (mStepCfg.finishTime > 0.01f)
+            {
+                Timers.inst.Add(mStepCfg.finishTime, 1, obj =>
                 {
                     Debug.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
                     EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
-                }
+                });
+            }
+            else
+            {
+                Debug.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
+                EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
             }
         }
 
@@ -68,11 +82,9 @@ namespace GuidePKG
         public void SetData(GuideStepConfig stepCfg)
         {
             mStepCfg = stepCfg;
-
-            Debug.LogWarning($"---->需执行{mStepCfg.id},{mStepCfg.uiPath}");
-
             if (mStepCfg.uiPath.Contains("path:"))
             {
+                //有具体位置的
                 var path = mStepCfg.uiPath.Replace("path:", "");
                 var target = GRoot.inst.GetChildByPath(path);
                 if (target == null)
@@ -112,23 +124,28 @@ namespace GuidePKG
                 {
                     this._maskLoader.visible = false;
                 }
+            }
+            else
+            {
+                this._maskLoader.visible = false;
+                this._fingerCom.visible = false;
+            }
 
-
-                if (mStepCfg.descId > 0)
+            if (mStepCfg.descId > 0)
+            {
+                //有描述
+                this._descLoader.visible = true;
+                var descCfg = ConfigMgr.Instance.LoadConfigOne<GuideDescConfig>(mStepCfg.descId.ToString());
+                if (descCfg != null)
                 {
-                    this._descLoader.visible = true;
-                    var descCfg = ConfigMgr.Instance.LoadConfigOne<GuideDescConfig>(mStepCfg.descId.ToString());
-                    if (descCfg != null)
-                    {
-                        this._descLoader.url = descCfg.urlPath;
-                        this._descLoader.SetXY(descCfg.conX, descCfg.conY);
-                        this._descLoader.text = descCfg.txtContent;
-                    }
+                    this._descLoader.url = descCfg.urlPath;
+                    this._descLoader.SetXY(descCfg.conX, descCfg.conY);
+                    this._descLoader.text = descCfg.txtContent;
                 }
-                else
-                {
-                    this._descLoader.visible = false;
-                }
+            }
+            else
+            {
+                this._descLoader.visible = false;
             }
         }
     }

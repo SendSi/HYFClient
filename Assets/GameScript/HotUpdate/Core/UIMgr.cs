@@ -87,8 +87,7 @@ public class UIMgr : Singleton<UIMgr>
     public GComponent ShowUIViewCom<T1>() where T1 : GComponent
     {
         var viewName = (typeof(T1).Name);
-        GComponent tViewCls = null;
-        if (mShoGCompDic.TryGetValue(viewName, out tViewCls))
+        if (mShoGCompDic.TryGetValue(viewName, out var tViewCls))
         {
             tViewCls.visible = true;
             return tViewCls;

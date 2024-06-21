@@ -41,7 +41,7 @@
     "maskLoader": "ui://GuidePKG/guideMask21",
     "closeMain": 0,
     "finishTime": 0.3,
-    "descId": 1001
+    "descId": 1002
   },
   {
     "id": 10015,
@@ -58,55 +58,55 @@
     "id": 10016,
     "gType": 1001,
     "sortId": 6,
-    "uiPath": "path:Window_GameNoticeView.contentPane.frame.closeButton",
+    "uiPath": "",
     "moveEffect": "move3",
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0,
+    "descId": 1001
+  },
+  {
+    "id": 10021,
+    "gType": 1002,
+    "sortId": 1,
+    "uiPath": "path:View_LoginMainView.effectBtn",
+    "moveEffect": "",
     "maskLoader": "ui://GuidePKG/guideMask21",
     "closeMain": 0,
     "finishTime": 0,
     "descId": 0
   },
   {
-    "id": 10021,
-    "gType": 1002,
-    "sortId": 1,
-    "uiPath": "",
-    "moveEffect": "",
-    "maskLoader": "",
-    "closeMain": 2,
-    "finishTime": 1,
-    "descId": 0
-  },
-  {
     "id": 10022,
     "gType": 1002,
     "sortId": 2,
-    "uiPath": "",
+    "uiPath": "path:View_LoginMainView.stopBtn",
     "moveEffect": "",
-    "maskLoader": "",
-    "closeMain": 3,
-    "finishTime": 2,
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0,
     "descId": 0
   },
   {
     "id": 10023,
     "gType": 1002,
     "sortId": 3,
-    "uiPath": "",
+    "uiPath": "path:View_LoginMainView.effectBtn",
     "moveEffect": "",
-    "maskLoader": "",
-    "closeMain": 4,
-    "finishTime": 3,
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0,
     "descId": 0
   },
   {
     "id": 10024,
     "gType": 1002,
     "sortId": 4,
-    "uiPath": "",
+    "uiPath": "path:View_LoginMainView.stopBtn",
     "moveEffect": "",
-    "maskLoader": "",
-    "closeMain": 5,
-    "finishTime": 4,
+    "maskLoader": "ui://GuidePKG/guideMask21",
+    "closeMain": 0,
+    "finishTime": 0,
     "descId": 0
   }
 ]
