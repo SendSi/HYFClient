@@ -2,7 +2,6 @@
 using FairyGUI;
 using Login;
 
-
 public class GameAgeViewWin : Window
 {
     private GameAgeView mView;
@@ -27,10 +26,5 @@ public class GameAgeViewWin : Window
     {
 
     }
-
-
-
-
-
 
 }

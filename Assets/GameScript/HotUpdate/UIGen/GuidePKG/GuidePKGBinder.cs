@@ -19,6 +19,7 @@ namespace GuidePKG
             UIObjectFactory.SetPackageItemExtension(guideDesc21.URL, typeof(guideDesc21));
             UIObjectFactory.SetPackageItemExtension(TipImage.URL, typeof(TipImage));
             UIObjectFactory.SetPackageItemExtension(guideMask1.URL, typeof(guideMask1));
+            UIObjectFactory.SetPackageItemExtension(guideDesc22.URL, typeof(guideDesc22));
             UIObjectFactory.SetPackageItemExtension(guideMask7.URL, typeof(guideMask7));
             UIObjectFactory.SetPackageItemExtension(guide_efx_circle.URL, typeof(guide_efx_circle));
             UIObjectFactory.SetPackageItemExtension(guide_efx_circle0.URL, typeof(guide_efx_circle0));

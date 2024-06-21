@@ -49,6 +49,7 @@
     <component id="lz3y38" name="FingerUI.xml" path="/Com/" exported="true"/>
     <component id="lz3y39" name="FingerAnim.xml" path="/Com/" exported="true"/>
     <component id="ewjl3a" name="guideMask21.xml" path="/Com/" exported="true"/>
+    <component id="hsvl3b" name="guideDesc22.xml" path="/Com/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

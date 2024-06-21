@@ -1,3 +1,11 @@
+#region << 脚 本 注 释 >>
+
+//作   用:    游戏指引步骤 调用StartGuideStepId(),导表看GuideTypeConfig.xlsx等文件  fgui包=GuidePKG  copy路径功能请使用GM命令
+//作   者:    曾思信
+//创建时间:  #CREATETIME#
+
+#endregion
+
 using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
@@ -26,21 +34,43 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
 
     #region 路径复制
 
-    private List<string> tmpNames = new List<string>();
+    private List<string> tmpNames;
 
     private void OnTouchBegin(EventContext context)
     {
-        if (mIsNeedCopyPath == false && mIsGuideing == false) // 不需要copy路径 && 不在指引中  就没必要执行
+        if (mIsNeedCopyPath)
         {
-            return;
+            tmpNames = new List<string>();
+            var result = GetTempNames();
+            if (string.IsNullOrEmpty(result) == false)
+            {
+                UnityEngine.GUIUtility.systemCopyBuffer = result;
+                Debug.LogWarning(result);
+            }
         }
 
+        if (mIsGuideing && mCurrStepCfg != null)
+        {
+            if (string.IsNullOrEmpty(mCurrStepCfg.uiPath))
+            {
+                EventCenter.Instance.Fire<string>(EventEnum.EE_Guide_UIPath, "true");
+            }
+            else
+            {
+                tmpNames = new List<string>();
+                var result = GetTempNames();
+                if (string.IsNullOrEmpty(result) == false)
+                {
+                    EventCenter.Instance.Fire<string>(EventEnum.EE_Guide_UIPath, result);
+                }
+            }
+        }
+    }
+
+    string GetTempNames()
+    {
         var touchTarget = Stage.inst.touchTarget;
-        if (touchTarget == null)
-        {
-            return;
-        }
-
+        if (touchTarget == null) return null;
         var target = touchTarget.gOwner;
         if (target != null)
         {
@@ -63,25 +93,19 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         {
             var result = $"path:{string.Join(".", tmpNames)}";
             tmpNames.Clear();
-            if (mIsNeedCopyPath)
-            {
-                UnityEngine.GUIUtility.systemCopyBuffer = result;
-                Debug.LogWarning(result);
-            }
-            if (mIsGuideing)
-            {
-                EventCenter.Instance.Fire<string>(EventEnum.EE_Guide_UIPath, result);
-            }
+            return result;
         }
+
+        return null;
     }
 
     #endregion
 
     #region 执行指引
 
-    Queue<GuideStepConfig> mCurrentSteps = new Queue<GuideStepConfig>(); //当前执行的执行步骤
-
-    Dictionary<int, List<GuideStepConfig>> mGuideStepCfgs = new Dictionary<int, List<GuideStepConfig>>();
+    Queue<GuideStepConfig> mCurrentSteps = new Queue<GuideStepConfig>(); //当前执行的执行步骤    当前的余下的步骤
+    GuideStepConfig mCurrStepCfg; //当前执行的步骤配置  具体的某一步
+    Dictionary<int, List<GuideStepConfig>> mGuideStepCfgs = new Dictionary<int, List<GuideStepConfig>>();//初始存储配置
 
     private void InitStepConfigs()
     {
@@ -117,8 +141,8 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
             }
 
             mIsGuideing = true;
-            var stepCfg = mCurrentSteps.Dequeue();
-            ProxyGuidePKGModule.Instance.OpenGuideMainView(stepCfg);
+            mCurrStepCfg = mCurrentSteps.Dequeue();
+            ProxyGuidePKGModule.Instance.OpenGuideMainView(mCurrStepCfg);
         }
     }
 
@@ -126,8 +150,8 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
     {
         if (mIsGuideing && mCurrentSteps != null && mCurrentSteps.Count > 0)
         {
-            var stepCfg = mCurrentSteps.Dequeue();
-            ProxyGuidePKGModule.Instance.OpenGuideMainView(stepCfg);
+            mCurrStepCfg = mCurrentSteps.Dequeue();
+            ProxyGuidePKGModule.Instance.OpenGuideMainView(mCurrStepCfg);
         }
         else
         {
@@ -144,7 +168,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         ProxyGuidePKGModule.Instance.HideGuideMainView();
     }
 
-    #endregion 
+    #endregion
 
     protected override void OnDispose()
     {
