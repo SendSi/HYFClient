@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
-
 // GObjectExtend.GetLocalXY(target, 0, 0, out tx, out ty);
-
 namespace GuidePKG
 {
     public partial class GuideMainView : GComponent
     {
+        private Dictionary<string, GComponent> mMaskGComDic = new Dictionary<string, GComponent>();
+
         private GuideStepConfig mStepCfg;
 
         private Dictionary<string, Transition> mTransDic;
@@ -26,7 +26,22 @@ namespace GuidePKG
                 { "move5", this._fingerCom._move5 }
             };
 
-            EventCenter.Instance.Bind<string>(EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);
+            EventCenter.Instance.Bind<string>(EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);//监听指引 事件
+        }
+
+        GComponent CheckGetTryMask(string maskName)
+        {
+            if (mMaskGComDic.TryGetValue(maskName, out var maskView))
+            {
+                return maskView;
+            }
+            else
+            {
+                var maskCom = UIPackage.CreateObject("GuidePKG", maskName).asCom;
+                this.AddChildAt(maskCom, 0);
+                mMaskGComDic[maskName] = maskCom;
+                return maskCom;
+            }
         }
 
         private void OnEventGuideUIPath(string content)
@@ -43,6 +58,11 @@ namespace GuidePKG
                 {
                     mTransDic[mStepCfg.moveEffect].Stop();
                 }
+                if (string.IsNullOrEmpty(mStepCfg.maskLoader) == false)
+                {
+                    var maskCom = CheckGetTryMask(mStepCfg.maskLoader);
+                    maskCom.visible = false;//需要隐藏起来
+                }
 
                 if (mStepCfg.closeMain == 0)
                 {
@@ -54,7 +74,7 @@ namespace GuidePKG
 
             if (isFinish == false)
             {
-                Debug.LogError("无匹配的完成事件类型");
+                Debug.Log("无匹配的完成事件类型 或 没点中目标");
                 return;
             }
 
@@ -110,24 +130,18 @@ namespace GuidePKG
 
                 if (string.IsNullOrEmpty(mStepCfg.maskLoader) == false)
                 {
-                    this._maskLoader.visible = true;
-                    this._maskLoader.url = mStepCfg.maskLoader;
-                    GComponent gc = this._maskLoader.component;
-                    if (gc != null)
+                    var maskCom = CheckGetTryMask(mStepCfg.maskLoader);
+                    if (maskCom != null)
                     {
-                        var window = gc.GetChild("window");
+                        maskCom.visible = true;
+                        var window = maskCom.GetChild("window");
                         window.size = new Vector2(target.width, target.height);
                         window.SetXY(tagetV2.x, tagetV2.y);
                     }
                 }
-                else
-                {
-                    this._maskLoader.visible = false;
-                }
             }
             else
             {
-                this._maskLoader.visible = false;
                 this._fingerCom.visible = false;
             }
 

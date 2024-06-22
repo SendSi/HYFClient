@@ -116,6 +116,10 @@ public class GMManager : Singleton<GMManager>
             {
                 GuidePKGManager.Instance.SetIsNeedCopy(values[2]);
             }
+            else if (target == "testCode")
+            {
+                ProxyGuidePKGModule.Instance.TestLoadView();
+            }
         }
     }
 
