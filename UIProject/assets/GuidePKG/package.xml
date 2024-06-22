@@ -12,7 +12,7 @@
     <component id="dgngz" name="ClickAnywhere.xml" path="/Com/" exported="true"/>
     <component id="mufh11" name="SkipButton.xml" path="/Com/" exported="true"/>
     <component id="srlq12" name="EnableImg.xml" path="/Com/" exported="true"/>
-    <component id="srlq13" name="GuideMainView.xml" path="/Window/" exported="true"/>
+    <component id="srlq13" name="GuideMainView_test.xml" path="/Window/"/>
     <image id="enw714" name="guide_img_01.png" path="/Img/" exported="true"/>
     <image id="enw71y" name="guide_img_00.png" path="/Img/" exported="true" scale="9grid" scale9grid="22,20,6,6"/>
     <component id="dipn21" name="guideMask6.xml" path="/Com/" exported="true"/>
@@ -50,6 +50,7 @@
     <component id="lz3y39" name="FingerAnim.xml" path="/Com/" exported="true"/>
     <component id="ewjl3a" name="guideMask21.xml" path="/Com/" exported="true"/>
     <component id="hsvl3b" name="guideDesc22.xml" path="/Com/" exported="true"/>
+    <component id="ddte3c" name="GuideMainView.xml" path="/Window/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

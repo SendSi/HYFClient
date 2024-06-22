@@ -42,4 +42,11 @@ public class ProxyGuidePKGModule : Singleton<ProxyGuidePKGModule>, IProxy
     }
 
     #endregion
+
+    
+    
+    public void TestLoadView()
+    { //若有引用 就显示咯 
+            CheckLoad(delegate {  UIMgr.Instance.OpenUIViewCom<guideMask21>(pkgName); });
+    }
 }

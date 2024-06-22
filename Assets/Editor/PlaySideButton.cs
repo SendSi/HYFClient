@@ -64,7 +64,8 @@ public class PlaySideButton
             }
             else
             {
-                Debug.Log("请先运行游戏");
+                Debug.Log("点击了GM按钮，将--->进入游戏模式");
+                EditorApplication.isPlaying = true;
             }
         }
     }

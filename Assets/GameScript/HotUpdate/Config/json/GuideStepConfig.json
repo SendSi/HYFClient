@@ -16,7 +16,7 @@
     "sortId": 2,
     "uiPath": "path:Window_GameAgeView.contentPane.frame.closeButton",
     "moveEffect": "",
-    "maskLoader": "ui://GuidePKG/guideMask22",
+    "maskLoader": "guideMask22",
     "closeMain": 0,
     "finishTime": 0.3,
     "descId": 0
@@ -27,7 +27,7 @@
     "sortId": 3,
     "uiPath": "path:View_LoginMainView.stopBtn",
     "moveEffect": "move1",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 1,
     "finishTime": 0.3,
     "descId": 0
@@ -38,7 +38,7 @@
     "sortId": 4,
     "uiPath": "path:View_LoginMainView.effectBtn",
     "moveEffect": "move2",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0.3,
     "descId": 1002
@@ -49,7 +49,7 @@
     "sortId": 5,
     "uiPath": "path:View_LoginMainView.noticeBtn",
     "moveEffect": "move3",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0.3,
     "descId": 0
@@ -60,7 +60,7 @@
     "sortId": 6,
     "uiPath": "",
     "moveEffect": "move3",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0,
     "descId": 1001
@@ -71,7 +71,7 @@
     "sortId": 1,
     "uiPath": "path:View_LoginMainView.effectBtn",
     "moveEffect": "",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0,
     "descId": 0
@@ -82,7 +82,7 @@
     "sortId": 2,
     "uiPath": "path:View_LoginMainView.stopBtn",
     "moveEffect": "",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0,
     "descId": 0
@@ -93,7 +93,7 @@
     "sortId": 3,
     "uiPath": "path:View_LoginMainView.effectBtn",
     "moveEffect": "",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0,
     "descId": 0
@@ -104,7 +104,7 @@
     "sortId": 4,
     "uiPath": "path:View_LoginMainView.stopBtn",
     "moveEffect": "",
-    "maskLoader": "ui://GuidePKG/guideMask21",
+    "maskLoader": "guideMask21",
     "closeMain": 0,
     "finishTime": 0,
     "descId": 0
