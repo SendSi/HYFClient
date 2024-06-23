@@ -10,10 +10,10 @@ namespace MainCenter
         {
             UIObjectFactory.SetPackageItemExtension(generalIcon3.URL, typeof(generalIcon3));
             UIObjectFactory.SetPackageItemExtension(generalIcon.URL, typeof(generalIcon));
-            UIObjectFactory.SetPackageItemExtension(Main_FuncTop.URL, typeof(Main_FuncTop));
+            UIObjectFactory.SetPackageItemExtension(MainTopBtn.URL, typeof(MainTopBtn));
             UIObjectFactory.SetPackageItemExtension(main_chat_item2_2.URL, typeof(main_chat_item2_2));
             UIObjectFactory.SetPackageItemExtension(generalIcon01.URL, typeof(generalIcon01));
-            UIObjectFactory.SetPackageItemExtension(Main_btn.URL, typeof(Main_btn));
+            UIObjectFactory.SetPackageItemExtension(MainBottomBtn.URL, typeof(MainBottomBtn));
             UIObjectFactory.SetPackageItemExtension(main_chat_item_2.URL, typeof(main_chat_item_2));
             UIObjectFactory.SetPackageItemExtension(main_taskitem_list.URL, typeof(main_taskitem_list));
             UIObjectFactory.SetPackageItemExtension(main_team_right.URL, typeof(main_team_right));
@@ -28,7 +28,7 @@ namespace MainCenter
             UIObjectFactory.SetPackageItemExtension(taskBtn.URL, typeof(taskBtn));
             UIObjectFactory.SetPackageItemExtension(FuncListEles.URL, typeof(FuncListEles));
             UIObjectFactory.SetPackageItemExtension(main_taskitem.URL, typeof(main_taskitem));
-            UIObjectFactory.SetPackageItemExtension(TopEles.URL, typeof(TopEles));
+            UIObjectFactory.SetPackageItemExtension(MainTopEles.URL, typeof(MainTopEles));
             UIObjectFactory.SetPackageItemExtension(generalIconBtn.URL, typeof(generalIconBtn));
             UIObjectFactory.SetPackageItemExtension(buildQueueBtn.URL, typeof(buildQueueBtn));
         }

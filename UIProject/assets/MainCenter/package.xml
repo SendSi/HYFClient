@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="4ni413la" hasFavorites="true">
   <resources>
-    <component id="gzkh8i" name="Main_FuncTop.xml" path="/components/"/>
+    <component id="gzkh8i" name="MainTopBtn.xml" path="/components/" exported="true"/>
     <component id="hfih8u" name="main_chat_item2_2.xml" path="/components/"/>
     <component id="kah2a4" name="main_chat_item_2.xml" path="/components/"/>
     <image id="aibbax" name="icon_wall.png" path="/images/"/>
@@ -51,7 +51,7 @@
     <component id="xoe1mz" name="FuncListEles.xml" path="/components/" exported="true"/>
     <component id="xoe1n0" name="main_taskitem.xml" path="/components/"/>
     <component id="xoe1n1" name="mask_btn_task.xml" path="/components/"/>
-    <component id="xoe1n2" name="TopEles.xml" path="/components/" exported="true"/>
+    <component id="xoe1n2" name="MainTopEles.xml" path="/components/" exported="true"/>
     <image id="xoe1n5" name="main_map.png" path="/images/map/"/>
     <image id="xoe1n6" name="spot01.png" path="/images2/"/>
     <image id="xoe1n7" name="spot02.png" path="/images2/"/>
@@ -115,7 +115,7 @@
     <component id="j4kdhz9clo" name="cityBuff_1.xml" path="/components/"/>
     <image id="j4kdhz9clp" name="mainhud_bg_buff.png" path="/images/main/"/>
     <component id="j4kdhz9clt" name="main_btn_back.xml" path="/components/"/>
-    <component id="j4kdhz9cm2" name="Main_btn.xml" path="/components/" exported="true"/>
+    <component id="j4kdhz9cm2" name="MainBottomBtn.xml" path="/components/" exported="true"/>
     <image id="bvcehz9cmf" name="main_build_1.png" path="/images/team/"/>
     <image id="bvcehz9cmg" name="main_build_2.png" path="/images/team/"/>
     <component id="r616hz9cmj" name="chatBtn.xml" path="/components/"/>

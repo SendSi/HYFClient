@@ -6,6 +6,7 @@ using MainRole;
 using CommonPKG;
 using GMView;
 using GuidePKG;
+using PokerPKG;
 using SettingPKG;
 using UnityEngine;
 using Welfare;
@@ -26,5 +27,6 @@ public class UIGenBinder
         SettingPKGBinder.BindAll();
         WelfareBinder.BindAll();
         GuidePKGBinder.BindAll();
+        PokerPKGBinder.BindAll();
     }
 }

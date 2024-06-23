@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,66" >
+  <displayList>
+    <image id="n4_105u8" name="n4" src="105u81ygcgaa" fileName="card/0000.png" xy="12,-10" pivot="0.5,0.5" rotation="90"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>
