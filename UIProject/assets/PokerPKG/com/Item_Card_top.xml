@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="60,80">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_105u8" name="icon" xy="0,0" size="60,80" url="ui://q3kpafy9105u81ygcgaa" align="center" vAlign="middle" fill="scaleFree">
+      <gearXY controller="button" pages="1,3" values="0,-30|0,-30" default="0,0" tween="true" duration=".1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+  </displayList>
+</component>

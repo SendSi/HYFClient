@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame" designImageOffsetX="-165" designImageAlpha="29" designImageLayer="1">
+  <controller name="stateCtrl" pages="0,,1,,2," selected="0">
+    <remark page="0" value="开始准备"/>
+    <remark page="1" value="轮到自己出牌"/>
+    <remark page="2" value="他人出牌中"/>
+  </controller>
+  <displayList>
+    <loader id="n25_p781" name="bg" xy="0,0" size="1334,750" url="ui://q3kpafy9zifte" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n44_zift" name="leftRole" xy="-20,213" size="165,205" aspect="true" url="ui://q3kpafy9ziftm" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <loader id="n45_ps8y" name="rightRole" xy="1185,225" size="165,205" aspect="true" url="ui://q3kpafy9ziftm" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="left-right,top-top"/>
+    </loader>
+    <loader id="n46_ps8y" name="selfRole" xy="44,538" size="165,205" aspect="true" url="ui://q3kpafy9ziftm" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </loader>
+    <image id="n47_ps8y" name="n47" src="zift7" fileName="images/jujsidai.png" xy="355,47">
+      <relation target="" sidePair="center-center,top-top"/>
+    </image>
+    <list id="n59_totj" name="leftSendCardList" xy="293,254" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" vAlign="bottom">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <item icon="ui://q3kpafy9105u81ygcgb1"/>
+      <item icon="ui://q3kpafy9105u81ygcgag"/>
+      <item icon="ui://q3kpafy9105u81ygcgad"/>
+      <item icon="ui://q3kpafy9105u81ygcgai"/>
+      <item icon="ui://q3kpafy9105u81ygcgaj"/>
+      <item icon="ui://q3kpafy9105u81ygcgal"/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n60_totj" name="rightSendCardList" xy="776,256" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" align="right" vAlign="bottom">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <item icon="ui://q3kpafy9105u81ygcgb1"/>
+      <item icon="ui://q3kpafy9105u81ygcgag"/>
+      <item icon="ui://q3kpafy9105u81ygcgad"/>
+      <item icon="ui://q3kpafy9105u81ygcgai"/>
+      <item icon="ui://q3kpafy9105u81ygcgaj"/>
+      <item icon="ui://q3kpafy9105u81ygcgal"/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n61_totj" name="selfSendCardList" xy="525,365" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" align="center" vAlign="middle">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <item icon="ui://q3kpafy9105u81ygcgb1"/>
+      <item icon="ui://q3kpafy9105u81ygcgag"/>
+      <item icon="ui://q3kpafy9105u81ygcgad"/>
+      <item icon="ui://q3kpafy9105u81ygcgai"/>
+      <item icon="ui://q3kpafy9105u81ygcgaj"/>
+      <item icon="ui://q3kpafy9105u81ygcgal"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n48_ps8y" name="preparationBtn" src="ps8y1ygcga8" fileName="com/Button_txtIcon.xml" xy="565,492" size="182,83" group="n49_ps8y"/>
+    <group id="n49_ps8y" name="state0" xy="565,492" size="182,83" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </group>
+    <component id="n50_ps8y" name="sendPokerBtn" src="ps8y1ygcga8" fileName="com/Button_txtIcon.xml" xy="399,427" size="182,83" group="n51_ps8y">
+      <Button title="出牌"/>
+    </component>
+    <component id="n52_ps8y" name="giveUpBtn" src="ps8y1ygcga8" fileName="com/Button_txtIcon.xml" xy="696,433" size="182,83" group="n51_ps8y">
+      <Button title="不出"/>
+    </component>
+    <group id="n51_ps8y" name="state1" xy="399,427" size="479,89" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </group>
+    <component id="n53_ps8y" name="closeButton" src="ps8y1ygcga9" fileName="com/Button_icon.xml" xy="15,14"/>
+    <list id="n54_105u8" name="selfCardList" xy="234,530" size="1059,135" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-20" defaultItem="ui://q3kpafy9105u81ygcgbt" vAlign="bottom">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <item icon="ui://q3kpafy9105u81ygcgb1"/>
+      <item icon="ui://q3kpafy9105u81ygcgag"/>
+      <item icon="ui://q3kpafy9105u81ygcgad"/>
+      <item icon="ui://q3kpafy9105u81ygcgai"/>
+      <item icon="ui://q3kpafy9105u81ygcgaj"/>
+      <item icon="ui://q3kpafy9105u81ygcgal"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n55_105u8" name="leftCardList" xy="313,255" size="92,345" skew="45,26" selectionMode="multipleSingleClick" scroll="horizontal" lineGap="-46" colGap="-40" defaultItem="ui://q3kpafy9105u81ygcgbu" vAlign="middle">
+      <relation target="" sidePair="middle-middle,left-left"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+    </list>
+    <list id="n56_105u8" name="rightCardList" xy="940,297" size="92,345" skew="-46,-26" selectionMode="multipleSingleClick" scroll="horizontal" lineGap="-46" colGap="-40" defaultItem="ui://q3kpafy9105u81ygcgbu" vAlign="middle">
+      <relation target="" sidePair="middle-middle,right-right"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+      <item icon="ui://q3kpafy9105u81ygcgaa"/>
+    </list>
+    <list id="n58_mmvc" name="topCardList" xy="504,51" size="350,78" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="35" defaultItem="ui://q3kpafy9mmvc1ygcgaa" align="center" vAlign="middle">
+      <relation target="" sidePair="center-center,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

@@ -15,7 +15,7 @@ namespace MainCenter
         public GButton _outBtn;
         public GList _outInList;
         public GGroup _bottomEles;
-        public TopEles _topEles;
+        public MainTopEles _topEles;
         public main_team_right _rightTeam;
         public main_taskitem _leftTask;
         public Transition _quit;
@@ -41,7 +41,7 @@ namespace MainCenter
             _outBtn = (GButton)GetChild("outBtn");
             _outInList = (GList)GetChild("outInList");
             _bottomEles = (GGroup)GetChild("bottomEles");
-            _topEles = (TopEles)GetChild("topEles");
+            _topEles = (MainTopEles)GetChild("topEles");
             _rightTeam = (main_team_right)GetChild("rightTeam");
             _leftTask = (main_taskitem)GetChild("leftTask");
             _quit = GetTransition("quit");

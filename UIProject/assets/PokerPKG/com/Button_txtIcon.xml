@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,60" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4_ps8y" name="icon" xy="0,0" size="100,60" url="ui://q3kpafy9ziftj" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <text id="n3_ps8y" name="title" xy="0,0" size="100,60" fontSize="40" color="#00ff00" align="center" vAlign="middle" autoSize="none" singleLine="true" text="准备">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

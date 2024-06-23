@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1001,
+    "iconURL": "ui://MainCenter/btn_hero",
+    "titleTxt": "英雄_事件",
+    "tType": 1
+  },
+  {
+    "id": 1002,
+    "iconURL": "ui://MainCenter/btn_league",
+    "titleTxt": "联盟_声音",
+    "tType": 1
+  },
+  {
+    "id": 1003,
+    "iconURL": "ui://MainCenter/btn_bag",
+    "titleTxt": "背包",
+    "tType": 1
+  },
+  {
+    "id": 1004,
+    "iconURL": "ui://MainCenter/btn_email",
+    "titleTxt": "邮件_特效",
+    "tType": 1
+  },
+  {
+    "id": 1005,
+    "iconURL": "ui://MainCenter/btn_arm",
+    "titleTxt": "部队_飘字",
+    "tType": 1
+  },
+  {
+    "id": 2001,
+    "iconURL": "ui://CommonPKG/activity_003",
+    "titleTxt": "功能预告",
+    "tType": 2
+  },
+  {
+    "id": 2002,
+    "iconURL": "ui://CommonPKG/activity_016",
+    "titleTxt": "扑克",
+    "tType": 2
+  },
+  {
+    "id": 2003,
+    "iconURL": "ui://CommonPKG/activity_007",
+    "titleTxt": "福利",
+    "tType": 2
+  }
+]

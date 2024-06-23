@@ -46,7 +46,6 @@ namespace MainCenter
             Debug.LogWarning("调用 Dispose MainCenterView");
             EventCenter.Instance.UnBind<string>(EventEnum.EE_test,OnEventTest);
             EventCenter.Instance.UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
-
         }
 
 
@@ -58,7 +57,7 @@ namespace MainCenter
         #region UI 各方面的元素
 
         private main_team_right rightTeam;
-        private TopEles topEles;
+        private MainTopEles topEles;
         private FuncListEles funcListEles;
 
         private void InitEles()
@@ -66,7 +65,7 @@ namespace MainCenter
             rightTeam = (main_team_right)_rightTeam; //推荐使用这种吧
             rightTeam.OnInit();
 
-            topEles = (TopEles)_topEles;
+            topEles = (MainTopEles)_topEles;
             topEles.OnInit();
 
             funcListEles = (FuncListEles)_funcListEles;
