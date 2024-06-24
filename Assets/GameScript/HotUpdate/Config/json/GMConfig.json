@@ -2,7 +2,7 @@
   "1001": {
     "id": 1001,
     "tType": 1,
-    "tTypeName": "声效特效",
+    "tTypeName": "功能展示",
     "tContent": "播放bgm或music",
     "tGmTxt": "local playSound 1 id",
     "tDesc": "1为bgm,2为音效,sound表的id"
@@ -10,7 +10,7 @@
   "1002": {
     "id": 1002,
     "tType": 1,
-    "tTypeName": "声效特效",
+    "tTypeName": "功能展示",
     "tContent": "bgm或music声音大小",
     "tGmTxt": "local playVolume 1 50",
     "tDesc": "1为bgm,2为音效,值在0--100之间"
@@ -18,48 +18,56 @@
   "1003": {
     "id": 1003,
     "tType": 1,
-    "tTypeName": "声效特效",
+    "tTypeName": "功能展示",
     "tContent": "播放特效",
     "tGmTxt": "local playEffect 1001",
     "tDesc": "effect表的id"
   },
   "1004": {
     "id": 1004,
+    "tType": 1,
+    "tTypeName": "功能展示",
+    "tContent": "飘字内容",
+    "tGmTxt": "local AddToastStr 我是飘字啦",
+    "tDesc": "飘字内容"
+  },
+  "1005": {
+    "id": 1005,
+    "tType": 1,
+    "tTypeName": "功能展示",
+    "tContent": "飘字Id",
+    "tGmTxt": "local AddToastId 1001",
+    "tDesc": "飘字id,tipTextConfig的id"
+  },
+  "1006": {
+    "id": 1006,
+    "tType": 1,
+    "tTypeName": "功能展示",
+    "tContent": "跑马灯",
+    "tGmTxt": "local AddHorseLampId 2002",
+    "tDesc": "跑马灯id,tipTextConfig的id"
+  },
+  "1007": {
+    "id": 1007,
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "播放引导",
     "tGmTxt": "local guideType 1001",
     "tDesc": "guideType表的id"
   },
-  "1005": {
-    "id": 1005,
+  "1008": {
+    "id": 1008,
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "点击时copy_fgui路径",
     "tGmTxt": "local copyFGUIPath 1",
     "tDesc": "1为开,0为关,,默认关"
   },
-  "1006": {
-    "id": 1006,
+  "1009": {
+    "id": 1009,
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "播放引导_占用",
-    "tGmTxt": "",
-    "tDesc": ""
-  },
-  "1007": {
-    "id": 1007,
-    "tType": 2,
-    "tTypeName": "引导",
-    "tContent": "播放引导_占用",
-    "tGmTxt": "",
-    "tDesc": ""
-  },
-  "1008": {
-    "id": 1008,
-    "tType": 3,
-    "tTypeName": "其他",
-    "tContent": "其他",
     "tGmTxt": "",
     "tDesc": ""
   }
