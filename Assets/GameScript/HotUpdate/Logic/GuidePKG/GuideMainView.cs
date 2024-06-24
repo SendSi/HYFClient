@@ -72,6 +72,13 @@ namespace GuidePKG
                 isFinish = true; //有具体路径的
             }
 
+            if (isFinish==false &&  string.IsNullOrEmpty(mStepCfg.maskLoader) )
+            {
+                GuidePKGManager.Instance.StopGuide();
+                Debug.Log("没mask 与 点击又没点中目标,则直接结束");
+                return;//没mask 与 点击又没点中目标,则直接结束
+            }
+
             if (isFinish == false)
             {
                 Debug.Log("无匹配的完成事件类型 或 没点中目标");

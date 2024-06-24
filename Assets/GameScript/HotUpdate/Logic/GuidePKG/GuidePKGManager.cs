@@ -163,6 +163,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
 
     public void StopGuide()
     {
+        mCurrStepCfg = null;
         mCurrentSteps.Clear();
         mIsGuideing = false;
         ProxyGuidePKGModule.Instance.HideGuideMainView();
