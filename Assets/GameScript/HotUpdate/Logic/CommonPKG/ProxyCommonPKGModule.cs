@@ -10,7 +10,7 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         FGUILoader.Instance.AddPackage(pkgName, finishCB);
     }
 
-    #region 飘字调用 ***AddToastStr()
+    #region 飘字调用 ***AddToastStr() or AddToastId()
 
     private ToastTipView _toastTipView;
 
@@ -66,7 +66,7 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         return _toastTipView;
     }
     
-
+    #region 跑马灯调用 ***AddHorseLampId() or AddHorseLampStr()
     public void AddHorseLampId(string stringId)
     {
         var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
@@ -99,5 +99,6 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
             _toastTipView.SetHorseLamp(valueStr);
         }
     }
+    #endregion
 
 }
