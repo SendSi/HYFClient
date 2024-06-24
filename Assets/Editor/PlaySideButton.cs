@@ -65,6 +65,7 @@ public class PlaySideButton
             else
             {
                 Debug.Log("点击了GM按钮，将--->进入游戏模式");
+                AssetDatabase.Refresh();
                 EditorApplication.isPlaying = true;
             }
         }

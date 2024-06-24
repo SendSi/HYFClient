@@ -4,5 +4,10 @@
     <component id="n3_q1qg" name="ToastIem" src="tixj1ygcg9o" fileName="components_new/ToastItem.xml" xy="562,150" pivot="0.5,0.5" size="209,52" scale="0.85,0.85" visible="false">
       <relation target="" sidePair="center-center,middle-middle"/>
     </component>
+    <image id="n4_lg2o" name="bg_01" src="r9f638" fileName="images/bg_chat_09.png" xy="196,204" size="902,53" group="n7_lg2o">
+      <relation target="" sidePair=""/>
+    </image>
+    <component id="n5_lg2o" name="lampCom" src="lg2o1ygcgrv" fileName="components_new/horseTitle.xml" xy="270,215" size="760,32" group="n7_lg2o"/>
+    <group id="n7_lg2o" name="horseLampGroup" xy="196,204" size="902,53" visible="false" advanced="true"/>
   </displayList>
 </component>

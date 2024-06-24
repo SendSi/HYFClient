@@ -116,6 +116,23 @@ public class GMManager : Singleton<GMManager>
             {
                 GuidePKGManager.Instance.SetIsNeedCopy(values[2]);
             }
+            else if (target == "AddToastStr")
+            {
+                ProxyCommonPKGModule.Instance.AddToastStr(values[2]);
+                ProxyGMModule.Instance.HideGMMainView();
+            }
+            else if (target == "AddToastId")
+            {
+                ProxyCommonPKGModule.Instance.AddToastId(values[2]);
+                // ProxyCommonPKGModule.Instance.AddToastId("1003","2024");
+                ProxyGMModule.Instance.HideGMMainView();
+            }
+            else if (target == "AddHorseLampId")
+            {
+                ProxyCommonPKGModule.Instance.AddHorseLampId(values[2]);
+                // ProxyCommonPKGModule.Instance.AddHorseLampId("2002","2024");
+                ProxyGMModule.Instance.HideGMMainView();
+            }
             else if (target == "testCode")
             {
                 ProxyGuidePKGModule.Instance.TestLoadView();
