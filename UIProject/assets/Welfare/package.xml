@@ -59,8 +59,6 @@
     <component id="cmbv1ygcfjt" name="LimitShopRecordView.xml" path="/panel/" exported="true"/>
     <component id="ns8m1ygcfl3" name="LimitShop_item6.xml" path="/components/" exported="true"/>
     <image id="d5f21ygcfl4" name="LimitShop_arrow.png" path="/images/" exported="true"/>
-    <component id="al8r1ygcfl5" name="artPanle.xml" path="/panel/"/>
-    <component id="al8r1ygcfl6" name="artPanle1.xml" path="/panel/"/>
     <component id="s1uz1ygcfl7" name="Child_TodayView.xml" path="/panel/" exported="true"/>
     <image id="s1uz1ygcfl8" name="everyday_bg01.png" path="/images/Daily_direct_purchase/" exported="true"/>
     <image id="s1uz1ygcfl9" name="everyday_bg02.png" path="/images/Daily_direct_purchase/" exported="true"/>

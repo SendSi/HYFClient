@@ -55,7 +55,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
             }
         },
         { 1005, () => { ProxyCommonPKGModule.Instance.AddToastStr("~~~~简易 飘字---挺长的飘字哦...."); } },
-        { 2001, () => { Debug.LogError("功能预告"); } },
+        { 2001, () => { ProxyShopGiftModule.Instance.OpenShopGiftMainView(5001);} },
         { 2002, () => { ProxyPokerPKGModule.Instance.OpenPokerMainView(); } },
         { 2003, () => { ProxyWelfareModule.Instance.OpenWelfareMainView(1001); } }
     };

@@ -7,7 +7,7 @@ public class ManagerBinder
         LoginManager.Instance.ListenLogin();
         BagManager.Instance.ListenBag();
         RoleManager.Instance.ListenRole();
-        ShopManager.Instance.ListenShop();
+        ShopGiftManager.Instance.ListenShop();
 
         GMManager.Instance.ListenGM();
     }
@@ -17,6 +17,6 @@ public class ManagerBinder
         LoginManager.Instance.Dispose();
         BagManager.Instance.Dispose();
         RoleManager.Instance.Dispose();
-        ShopManager.Instance.Dispose();
+        ShopGiftManager.Instance.Dispose();
     }
 }

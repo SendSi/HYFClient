@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <loader id="n69_f0ei" name="bg" xy="-168,0" pivot="0.5,0.5" size="1670,750" url="ui://e290e74sjcby1ygcfnv" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <image id="n130_qx1k" name="n130" src="8ur01ygcfmm" fileName="images/images_new/windowBg_new/welfare_btn_bg10.png" pkg="2r331opv" xy="0,0" size="290,750" group="n131_i1d9">
+      <relation target="" sidePair="height-height"/>
+    </image>
+    <image id="n123_ho40" name="n123" src="qx1k1ygcfmr" fileName="images/new/carnival_com_bg01.png" xy="0,0" group="n131_i1d9">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <component id="n3_w84w" name="closeButton" src="ovc9hz9cvh" fileName="components/com_btn_close4.xml" pkg="2r331opv" xy="0,0" group="n131_i1d9">
+      <Button icon="ui://e290e74stevj1"/>
+    </component>
+    <list id="n7_w84w" name="leftTabList" xy="21,100" size="261,650" group="n131_i1d9" overflow="scroll" lineGap="3" defaultItem="ui://e290e74s11e631ygcfir" autoClearItems="true">
+      <relation target="" sidePair="bottomext-bottom"/>
+      <item title="活动日历" icon="ui://2r331opvil9y1ygcfjm"/>
+      <item url="ui://e290e74s11e631ygcfiu"/>
+      <item title="个人首领" icon="ui://2r331opvil9y1ygcfjh"/>
+      <item title="世界首领" icon="ui://2r331opvil9y1ygcfji"/>
+      <item title="联盟首领" icon="ui://2r331opvil9y1ygcfjj"/>
+      <item title="守卫王城" icon="ui://2r331opvil9y1ygcfht"/>
+      <item url="ui://e290e74s11e631ygcfiu"/>
+      <item/>
+    </list>
+    <group id="n131_i1d9" name="Left" xy="0,0" size="1320,750" advanced="true">
+      <relation target="" sidePair="width-width"/>
+    </group>
+  </displayList>
+</component>
