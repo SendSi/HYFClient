@@ -1,0 +1,44 @@
+[
+  {
+    "id": 5000,
+    "name": "新手活动",
+    "rType": 0,
+    "urlPath": "",
+    "isShow": 1
+  },
+  {
+    "id": 5001,
+    "name": "三日成长",
+    "rType": 1,
+    "urlPath": "Child_ThreeGrow",
+    "isShow": 1
+  },
+  {
+    "id": 5002,
+    "name": "八日好礼",
+    "rType": 1,
+    "urlPath": "Child_EightGift",
+    "isShow": 1
+  },
+  {
+    "id": 6000,
+    "name": "日常活动",
+    "rType": 0,
+    "urlPath": "",
+    "isShow": 1
+  },
+  {
+    "id": 6001,
+    "name": "月卡周卡",
+    "rType": 1,
+    "urlPath": "Child_MonthlyCard",
+    "isShow": 1
+  },
+  {
+    "id": 6002,
+    "name": "首充豪礼",
+    "rType": 1,
+    "urlPath": "Child_FirstRecharge",
+    "isShow": 1
+  }
+]

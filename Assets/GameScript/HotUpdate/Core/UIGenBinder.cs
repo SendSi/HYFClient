@@ -8,6 +8,7 @@ using GMView;
 using GuidePKG;
 using PokerPKG;
 using SettingPKG;
+using ShopGift;
 using UnityEngine;
 using Welfare;
 
@@ -28,5 +29,6 @@ public class UIGenBinder
         WelfareBinder.BindAll();
         GuidePKGBinder.BindAll();
         PokerPKGBinder.BindAll();
+        ShopGiftBinder.BindAll();
     }
 }
