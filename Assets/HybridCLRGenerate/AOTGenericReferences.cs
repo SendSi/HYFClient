@@ -12,6 +12,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"System.Core.dll",
 		"UniFramework.Event.dll",
 		"UnityEngine.CoreModule.dll",
+		"UnityEngine.JSONSerializeModule.dll",
 		"YooAsset.dll",
 		"mscorlib.dll",
 	};
@@ -202,7 +203,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalBag.<ListenBag>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalBag.<ListenBag>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalLogin.<ListenLogin>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalLogin.<ListenLogin>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalRole.<ListenRole>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalRole.<ListenRole>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalShop.<ListenShop>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalShop.<ListenShop>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Bag.BagMainView.<OnClickUsing>d__13>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Bag.BagMainView.<OnClickUsing>d__13&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Login.LoginMainView.<LoginMySql>d__11>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Login.LoginMainView.<LoginMySql>d__11&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,RoleMainViewWin.<SetData>d__3>(System.Runtime.CompilerServices.TaskAwaiter<object>&,RoleMainViewWin.<SetData>d__3&)
@@ -211,7 +211,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalBag.<ListenBag>d__1>(ProtocalBag.<ListenBag>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalLogin.<ListenLogin>d__1>(ProtocalLogin.<ListenLogin>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalRole.<ListenRole>d__1>(ProtocalRole.<ListenRole>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalShop.<ListenShop>d__1>(ProtocalShop.<ListenShop>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<RoleMainViewWin.<SetData>d__3>(RoleMainViewWin.<SetData>d__3&)
 		// ushort& System.Runtime.CompilerServices.Unsafe.Add<ushort>(ushort&,System.IntPtr)
 		// byte& System.Runtime.CompilerServices.Unsafe.As<ushort,byte>(ushort&)
@@ -223,6 +222,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// object UnityEngine.GameObject.AddComponent<object>()
 		// object UnityEngine.GameObject.GetComponent<object>()
 		// object[] UnityEngine.GameObject.GetComponentsInChildren<object>(bool)
+		// object UnityEngine.JsonUtility.FromJson<object>(string)
 		// YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)
 		// YooAsset.AssetHandle YooAsset.YooAssets.LoadAssetAsync<object>(string,uint)
 	}

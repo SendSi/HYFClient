@@ -60,7 +60,7 @@ public class ConfigMgr : Singleton<ConfigMgr>
         }
         else
         {
-            var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
             var handle = assetPackage.LoadAssetSync(name);
             jsonStr = handle.AssetObject.ToString();
             _dicTabString[name] = jsonStr;
@@ -74,7 +74,7 @@ public class ConfigMgr : Singleton<ConfigMgr>
     {
         if (langCfgDic == null)
         {
-            var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
             var handle = assetPackage.LoadAssetSync(_langCfgName);
             var jsonStr = handle.AssetObject.ToString();
             langCfgDic = JsonConvert.DeserializeObject<Dictionary<string, Cfg_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
@@ -96,7 +96,7 @@ public class ConfigMgr : Singleton<ConfigMgr>
     {
         if (langScriptDic == null)
         {
-            var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
             var handle = assetPackage.LoadAssetSync(_langScriptName);
             var jsonStr = handle.AssetObject.ToString();
             langScriptDic = JsonConvert.DeserializeObject<Dictionary<string, Script_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样

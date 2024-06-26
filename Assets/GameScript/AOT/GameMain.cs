@@ -69,7 +69,8 @@ public class GameMain : MonoBehaviour
         // 加载更新页面
         ProxyHotPKGModule.Instance.OpenHFView();
         // 开始补丁更新流程
-        PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
+        // PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
+        PatchOperation operation = new PatchOperation(AppConfig.defaultYooAssetPKG, EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation);
         yield return operation;
         //更新热更代码
@@ -81,17 +82,17 @@ public class GameMain : MonoBehaviour
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssemblies();
 
-        var gamePackage = YooAssets.GetPackage("DefaultPackage");
+        var gamePackage = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
     }
 
     //跳过热更页面
     private IEnumerator CheckSkipHFView()
     {
-        var package = YooAssets.CreatePackage("DefaultPackage");
+        var package = YooAssets.CreatePackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         YooAssets.SetDefaultPackage(package);
         var createParameters = new EditorSimulateModeParameters();
-        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), "DefaultPackage");
+        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         var initializationOperation = package.InitializeAsync(createParameters);
         yield return initializationOperation;
         _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集

@@ -56,7 +56,7 @@ public class FGUILoader : Singleton<FGUILoader>
 
     public IEnumerator LoadUIPackage(string pkgName, Action finishCB)
     {
-        var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         var handle = assetPackage.LoadAssetAsync<TextAsset>($"{pkgName}_fui");
         yield return handle;
         var pkgDesc = handle.AssetObject as TextAsset;
@@ -79,7 +79,7 @@ public class FGUILoader : Singleton<FGUILoader>
     private IEnumerator LoadUIExtensions(string package, string name, string extension, Type type,
         PackageItem packageItem)
     {
-        var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         var handle = assetPackage.LoadAssetAsync($"{package}_{name}");
         yield return handle;
         packageItem.owner.SetItemAsset(packageItem, handle.AssetObject, DestroyMethod.None);
@@ -115,7 +115,7 @@ public class FGUILoader : Singleton<FGUILoader>
                 {
                     if (mForeverPKG.ContainsKey(pkgName))
                     {
-                        var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+                        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
                         var handle = assetPackage.LoadAssetAsync<TextAsset>($"{pkgName}_fui");
                         yield return handle;
                         var pkgDesc = handle.AssetObject as TextAsset;

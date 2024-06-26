@@ -230,7 +230,7 @@ public class AudioMgr : Singleton<AudioMgr>
 
     void LoadSound(string name, Action<AssetHandle> clipAH)
     {
-        var package = YooAssets.GetPackage("DefaultPackage");
+        var package = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         var handle = package.LoadAssetAsync<AudioClip>(name);
         handle.Completed += clipAH;
     }

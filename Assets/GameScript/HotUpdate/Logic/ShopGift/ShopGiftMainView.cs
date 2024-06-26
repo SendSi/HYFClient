@@ -18,6 +18,7 @@ namespace ShopGift
         private List<ShopGiftMenuConfig> _menuCfg;
         private Item_ShopMenu _currMenuItem;
         private List<Item_ShopMenu> _menuItems = new List<Item_ShopMenu>();
+        private Dictionary<string, GComponent> mMaskGComDic = new Dictionary<string, GComponent>();
         public override void OnInit()
         {
             base.OnInit();
@@ -41,6 +42,26 @@ namespace ShopGift
             // this._conPanel.url = cfg.urlPath;
             // this._conPanel.component.data = cfg;
             // this._conPanel.component.OnInit(); //点击使用
+            
+            var childView = CheckGetTryMask(cfg.urlPath);
+            childView.visible = true;
+            childView.data = cfg;
+            childView.OnInit();
+        }
+        
+        GComponent CheckGetTryMask(string maskName)
+        {
+            if (mMaskGComDic.TryGetValue(maskName, out var maskView))
+            {
+                return maskView;
+            }
+            else
+            {
+                var maskCom = UIPackage.CreateObject("ShopGift", maskName).asCom;
+                this.AddChildAt(maskCom, 0);
+                mMaskGComDic[maskName] = maskCom;
+                return maskCom;
+            }
         }
 
         private string OnProviderTabList(int index)
@@ -74,16 +95,16 @@ namespace ShopGift
 
         public void SetData(int cfgId)
         {
-            Debug.LogError("WelfareMainView_SetData");
-            // foreach (var item in _menuItems)
-            // {
-            //     var tData = (WelfareMenuConfig)item.data;
-            //     if (tData.id == cfgId)
-            //     {
-            //         item.onClick.Call();
-            //         break;
-            //     }
-            // }
+            Debug.LogError("ShopGiftMainView_SetData");
+            foreach (var item in _menuItems)
+            {
+                var tData = (ShopGiftMenuConfig)item.data;
+                if (tData.id == cfgId)
+                {
+                    item.onClick.Call();
+                    break;
+                }
+            }
         }
     }
 }

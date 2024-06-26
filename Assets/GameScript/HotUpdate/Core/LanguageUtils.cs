@@ -7,6 +7,7 @@ using YooAsset;
 ///      1.1策划导表配了id,映射到Cfg_SimChinese....  -->ConfigMgr.Instance.GetCurrLangCfgTxt("1001")
 ///      1.2程序平时写代码 可以收集到中文 Script_SimChinese....  -->ConfigMgr.Instance.GetCurrLangScriptTxt("1001")
 /// 二.fgui内置字  语言文件要在创建UI前载入，不支持实时切换语言文件。如果要在游戏中切换语言，那只能先销毁所有UI，卸载所有包。https://www.fairygui.com/docs/editor/i18n
+/// https://github.com/SendSi/DataTable2Excel
 /// </summary>
 public class LanguageUtils : Singleton<LanguageUtils>
 {
@@ -26,7 +27,7 @@ public class LanguageUtils : Singleton<LanguageUtils>
 
     private void LoadFGUIPreContent(string language)
     {
-        var assetPackage = YooAssets.TryGetPackage("DefaultPackage");
+        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
         var handle = assetPackage.LoadAssetAsync<TextAsset>(language);
         handle.Completed += (assetHandle =>
         {
@@ -41,9 +42,9 @@ public class LanguageUtils : Singleton<LanguageUtils>
         AppConfig.currLang = pLang;
         PlayerPrefs.SetString(prefsKey, AppConfig.currLang);
 #if UNITY_EDITOR
-      UnityEditor.EditorApplication.ExecuteMenuItem("Edit/Play");//停止运行
+        UnityEditor.EditorApplication.ExecuteMenuItem("Edit/Play"); //停止运行
 #else
-        UnityEngine.Application.Quit();
+        UnityEngine.Application.Quit();//若想不退出,打开着的fgui页面 需 卸了_重load一次
 #endif
     }
 }

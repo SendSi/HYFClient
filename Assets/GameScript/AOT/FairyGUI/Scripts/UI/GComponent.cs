@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FairyGUI.Utils;
-using UnityEditor.UI;
 #if FAIRYGUI_TOLUA
 using LuaInterface;
 #endif
