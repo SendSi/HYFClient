@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="692,50" opaque="false">
+  <displayList>
+    <list id="n7_bnhn" name="currencyList" xy="16,0" size="676,50" layout="flow_hz" overflow="scroll" scroll="horizontal" scrollBarFlags="32" lineItemCount="6" defaultItem="ui://2r331opvd37l1ygcfhi" align="right" vAlign="middle" autoClearItems="true" scrollItemToViewOnClick="false" foldInvisibleItems="true">
+      <relation target="" sidePair="width-width"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

@@ -10,7 +10,6 @@ namespace Bag
     {
         private List<ItemDto> mPropDtos;
         private ItemDto mSelectItemDto;
-        private GList mCurrencyList_UI;
         private List<int> mCurrencyIds = new List<int>() { 1, 2, 5 };
 
         public override void OnInit()
@@ -35,13 +34,8 @@ namespace Bag
                 _hasDataCtrl.selectedIndex = 1;
             }
 
-            mCurrencyList_UI = _currencyList.GetChild("currencyList").asList;
-            mCurrencyList_UI.itemRenderer = (index, obj) =>
-            {
-                Item_Currency item = (Item_Currency)obj;
-                item.SetData(mCurrencyIds[index]);
-            };
-            mCurrencyList_UI.numItems = 3;
+            CurrencyListCom currencyListCom = (CurrencyListCom)_currencyList;
+            currencyListCom.SetData(mCurrencyIds);
 
             _btnCanUsing.onClick.Set(OnClickUsing);
 
@@ -116,7 +110,6 @@ namespace Bag
         public override void Dispose()
         {
             mSelectItemDto = null;
-            mCurrencyList_UI = null;
             EventCenter.Instance.UnBind<string>(EventEnum.EE_test, OnEventTest);
             base.Dispose();
         }
