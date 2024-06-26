@@ -16,10 +16,12 @@ public static class AppConfig
 
     public static float bgmVolume = 0.66f; //bgm的默认声音大小  
     public static float musicVolume = 0.66f; //音效的默认声音大小  
+    
+    public static string defaultYooAssetPKG = "DefaultPackage"; //默认的yooAsset包名
 
     #region editor下使用的
 
-    public static string resVersion = "v1.0"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
+    public static string resVersion = "v1.1"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
     public static string localCDN = "D:/WWW_hyfclient/CDN/"; //本地cdn资源服务器 磁盘路径
 
     #endregion

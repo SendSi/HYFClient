@@ -9,6 +9,7 @@
     <type fullname="FairyGUI.ButtonMode" preserve="all" />
     <type fullname="FairyGUI.Controller" preserve="all" />
     <type fullname="FairyGUI.DisplayObject" preserve="all" />
+    <type fullname="FairyGUI.EaseType" preserve="all" />
     <type fullname="FairyGUI.EventCallback0" preserve="all" />
     <type fullname="FairyGUI.EventCallback1" preserve="all" />
     <type fullname="FairyGUI.EventContext" preserve="all" />
@@ -31,6 +32,7 @@
     <type fullname="FairyGUI.GTextField" preserve="all" />
     <type fullname="FairyGUI.GTextInput" preserve="all" />
     <type fullname="FairyGUI.GTree" preserve="all" />
+    <type fullname="FairyGUI.GTweenCallback" preserve="all" />
     <type fullname="FairyGUI.GTweener" preserve="all" />
     <type fullname="FairyGUI.GoWrapper" preserve="all" />
     <type fullname="FairyGUI.ListItemProvider" preserve="all" />
@@ -38,6 +40,7 @@
     <type fullname="FairyGUI.PackageItem" preserve="all" />
     <type fullname="FairyGUI.PlayCompleteCallback" preserve="all" />
     <type fullname="FairyGUI.RelationType" preserve="all" />
+    <type fullname="FairyGUI.Stage" preserve="all" />
     <type fullname="FairyGUI.TimerCallback" preserve="all" />
     <type fullname="FairyGUI.Timers" preserve="all" />
     <type fullname="FairyGUI.Transition" preserve="all" />
@@ -167,8 +170,14 @@
     <type fullname="UnityEngine.Vector3" preserve="all" />
     <type fullname="UnityEngine.WaitForSeconds" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.IMGUIModule">
+    <type fullname="UnityEngine.GUIUtility" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.InputLegacyModule">
     <type fullname="UnityEngine.Input" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.JSONSerializeModule">
+    <type fullname="UnityEngine.JsonUtility" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
@@ -235,11 +244,18 @@
     <type fullname="System.Func`2" preserve="all" />
     <type fullname="System.IDisposable" preserve="all" />
     <type fullname="System.IEquatable`1" preserve="all" />
+    <type fullname="System.IO.MemoryStream" preserve="all" />
+    <type fullname="System.IO.Stream" preserve="all" />
+    <type fullname="System.IO.StreamReader" preserve="all" />
+    <type fullname="System.IO.StreamWriter" preserve="all" />
+    <type fullname="System.IO.TextReader" preserve="all" />
+    <type fullname="System.IO.TextWriter" preserve="all" />
     <type fullname="System.Int32" preserve="all" />
     <type fullname="System.MemoryExtensions" preserve="all" />
     <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Nullable`1" preserve="all" />
     <type fullname="System.Object" preserve="all" />
+    <type fullname="System.ParamArrayAttribute" preserve="all" />
     <type fullname="System.ReadOnlySpan`1" preserve="all" />
     <type fullname="System.Reflection.ConstructorInfo" preserve="all" />
     <type fullname="System.Reflection.IntrospectionExtensions" preserve="all" />
@@ -259,9 +275,15 @@
     <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
     <type fullname="System.RuntimeTypeHandle" preserve="all" />
+    <type fullname="System.Security.Cryptography.Aes" preserve="all" />
+    <type fullname="System.Security.Cryptography.CryptoStream" preserve="all" />
+    <type fullname="System.Security.Cryptography.CryptoStreamMode" preserve="all" />
+    <type fullname="System.Security.Cryptography.ICryptoTransform" preserve="all" />
+    <type fullname="System.Security.Cryptography.SymmetricAlgorithm" preserve="all" />
     <type fullname="System.Single" preserve="all" />
     <type fullname="System.String" preserve="all" />
     <type fullname="System.StringSplitOptions" preserve="all" />
+    <type fullname="System.Text.Encoding" preserve="all" />
     <type fullname="System.Text.StringBuilder" preserve="all" />
     <type fullname="System.Threading.CancellationToken" preserve="all" />
     <type fullname="System.Threading.CancellationTokenSource" preserve="all" />
