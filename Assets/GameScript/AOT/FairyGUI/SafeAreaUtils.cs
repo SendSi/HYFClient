@@ -1,8 +1,7 @@
-using FairyGUI;
 using UnityEngine;
 
 /// <summary>
-/// 浏海屏 处理
+/// 浏海屏 处理  制作fgui工程时需注意一下大背景得左右两边往外伸一点即可
 /// Android 版本: 安卓操作系统版本也对 Screen.safeArea 的可用性有一些影响。具体来说，Android 9.0（API 级别 28）及以上版本对 Screen.safeArea 提供更好的支持。
 /// 当今手机 应该不会有太低版本来玩了吧....
 /// </summary>

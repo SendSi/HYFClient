@@ -1,9 +1,7 @@
 #region << 脚 本 注 释 >>
-
 //作   用:    游戏指引步骤 调用StartGuideStepId(),导表看GuideTypeConfig.xlsx等文件  fgui包=GuidePKG  copy路径功能请使用GM命令
 //作   者:    曾思信
 //创建时间:  #CREATETIME#
-
 #endregion
 
 using System.Collections.Generic;
@@ -32,8 +30,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         EventCenter.Instance.Bind(EventEnum.EE_Guide_NextStep, OnEventGuideNextStep);
     }
 
-    #region 路径复制
-
+    #region 点击识别路径
     private List<string> tmpNames;
 
     private void OnTouchBegin(EventContext context)
@@ -98,14 +95,12 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
 
         return null;
     }
-
     #endregion
 
     #region 执行指引
-
     Queue<GuideStepConfig> mCurrentSteps = new Queue<GuideStepConfig>(); //当前执行的执行步骤    当前的余下的步骤
     GuideStepConfig mCurrStepCfg; //当前执行的步骤配置  具体的某一步
-    Dictionary<int, List<GuideStepConfig>> mGuideStepCfgs = new Dictionary<int, List<GuideStepConfig>>();//初始存储配置
+    Dictionary<int, List<GuideStepConfig>> mGuideStepCfgs = new Dictionary<int, List<GuideStepConfig>>(); //初始存储配置
 
     private void InitStepConfigs()
     {
@@ -168,7 +163,6 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         mIsGuideing = false;
         ProxyGuidePKGModule.Instance.HideGuideMainView();
     }
-
     #endregion
 
     protected override void OnDispose()
