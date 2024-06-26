@@ -9,13 +9,7 @@ namespace MainCenter
     {
         private List<MainUIBtnConfig> mCfgList;
 
-        private List<int> mCurrencyIds = new List<int>()
-        {
-            1,
-            2,
-            5,
-            12
-        };
+        private List<int> mCurrencyIds = new List<int>() { 1, 2, 5, 12 };
 
         public override void OnInit()
         {
@@ -28,7 +22,7 @@ namespace MainCenter
             _funcList.numItems = mCfgList.Count;
 
             CurrencyListCom currencyListCom = (CurrencyListCom)_currencyListCom;
-            currencyListCom.SetData(mCurrencyIds);//CurrencyListCom.cs
+            currencyListCom.SetData(mCurrencyIds); //CurrencyListCom.cs
 
             EventCenter.Instance.Bind<string>(EventEnum.EE_test, OnEventTest);
         }

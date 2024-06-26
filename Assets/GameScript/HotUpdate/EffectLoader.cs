@@ -4,6 +4,11 @@ using FairyGUI;
 using UnityEngine;
 using YooAsset;
 
+/// <summary>
+/// 特效使用 EffectLoader.cs 加载UI特效使用LoadUIEffect()或LoadUIEffectEPos(),
+/// 加载场景特效使用LoadSceneEffectSimple()或LoadSceneEffect()
+/// 非auto的记得释放,估计后续得扩展,得用传入导表id的形式进行加载吧  已有个LoadEffect_Id()
+/// </summary>
 public class EffectLoader : Singleton<EffectLoader>
 {
     private List<EffectObject> mEffectObjs = new List<EffectObject>();
@@ -41,19 +46,23 @@ public class EffectLoader : Singleton<EffectLoader>
         {
             x = 0;
             y = 0;
-        } else if (ePos == EffectPos.LeftBottom)
+        }
+        else if (ePos == EffectPos.LeftBottom)
         {
             x = 0;
             y = parent.height;
-        } else if (ePos == EffectPos.RightTop)
+        }
+        else if (ePos == EffectPos.RightTop)
         {
             y = 0;
             x = parent.width;
-        } else if (ePos == EffectPos.RightBottom)
+        }
+        else if (ePos == EffectPos.RightBottom)
         {
             x = parent.width;
             y = parent.height;
-        } else
+        }
+        else
         {
             x = parent.width * 0.5f;
             y = parent.height * 0.5f;
@@ -103,7 +112,10 @@ public class EffectLoader : Singleton<EffectLoader>
     /// <summary>加载场景特效  </summary>
     /// <param name="isAutoDispose">特效 播放完毕后  是否自动释放     另:需要重复播放的,就得设置false,记得得释放</param>
     /// <param name="actionCB">返回一个特效  EffectObject</param>
-    public void LoadSceneEffectSimple(string effName, GameObject parent = null, bool isAutoDispose = true, Action<EffectObject> actionCB = null) { LoadSceneEffect(effName, parent, isAutoDispose, actionCB, Vector3.zero, Vector3.one, Vector3.zero); }
+    public void LoadSceneEffectSimple(string effName, GameObject parent = null, bool isAutoDispose = true, Action<EffectObject> actionCB = null)
+    {
+        LoadSceneEffect(effName, parent, isAutoDispose, actionCB, Vector3.zero, Vector3.one, Vector3.zero);
+    }
 
     public void Dispose(EffectObject effObj)
     {
@@ -132,7 +144,7 @@ public class EffectLoader : Singleton<EffectLoader>
             if (cfg.eType == 1)
             {
                 LoadSceneEffectSimple(cfg.yooPath);
-            } 
+            }
             else
             {
                 var topView = ProxyCommonPKGModule.Instance.GetToastView();
@@ -197,7 +209,10 @@ public class EffectObject
         }
     }
 
-    private void DestroyObj(object param) { Dispose(); }
+    private void DestroyObj(object param)
+    {
+        Dispose();
+    }
 
     //再次播放
     public void Play()
