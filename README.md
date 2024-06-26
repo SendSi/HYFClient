@@ -39,21 +39,22 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     HYFServer要与HYFClient同一个文件夹下 (Toolkit\ProtoGen.bat有定义路径)
     在UnityEditor下有菜单栏.直接使用proto即可生成客户端用的代码
 
-####  download下来
+####  download下来后
     1. HybridCLR/Installer  进行Install下
     2. Window/PackageManager   的MyRegistries中对YooAsset进行导入下
     3. YooAsset/AssetBundleCollector 进行Fix下
     
 
-##### 首次出包
+#### 出包
+    首次出包  
     1.HyBridCLR/Generate/All    
     2.HyBridCLR/Generate/All_Coopy_replace_dlls_to_bytes
-    3.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用ClearAndCopyAll,然后build两个包
+    3.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用ClearAndCopyAll,然后build两个包   resVersion=v1.0
     4.执行.YooAsset/CopyWWW_复制下,然后启动web服务器.http-server --port 80 -b --cors
     5.正常出apk或exe,启动打开游戏
     出增量包,即热更
     21.HyBridCLR/CompileDll/ActiveBuildTarget    
     22.HyBridCLR/Generate/All_Coopy_replace_dlls_to_bytes
-    23.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用None,然后build两个包
+    23.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用None,然后build两个包            resVersion=v1.1继续热更+
     24.执行.YooAsset/CopyWWW_复制下,然后启动web服务器.http-server --port 80 -b --cors
-    25.重启打开游戏
+    25.杀掉游戏进程,打开游戏

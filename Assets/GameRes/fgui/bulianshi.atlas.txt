@@ -1,0 +1,167 @@
+
+bulianshi.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bulianshi1
+  rotate: true
+  xy: 279, 10
+  size: 16, 106
+  orig: 16, 106
+  offset: 0, 0
+  index: -1
+bulianshi10
+  rotate: false
+  xy: 412, 151
+  size: 42, 39
+  orig: 42, 39
+  offset: 0, 0
+  index: -1
+bulianshi11
+  rotate: false
+  xy: 457, 5
+  size: 185, 185
+  orig: 185, 185
+  offset: 0, 0
+  index: -1
+bulianshi13
+  rotate: false
+  xy: 2, 139
+  size: 219, 369
+  orig: 219, 369
+  offset: 0, 0
+  index: -1
+bulianshi14
+  rotate: false
+  xy: 644, 17
+  size: 74, 182
+  orig: 74, 182
+  offset: 0, 0
+  index: -1
+bulianshi15
+  rotate: false
+  xy: 1117, 160
+  size: 54, 60
+  orig: 54, 60
+  offset: 0, 0
+  index: -1
+bulianshi16
+  rotate: true
+  xy: 811, 45
+  size: 154, 249
+  orig: 154, 249
+  offset: 0, 0
+  index: -1
+bulianshi17
+  rotate: false
+  xy: 387, 10
+  size: 68, 139
+  orig: 68, 139
+  offset: 0, 0
+  index: -1
+bulianshi18
+  rotate: false
+  xy: 1044, 214
+  size: 68, 72
+  orig: 68, 72
+  offset: 0, 0
+  index: -1
+bulianshi19
+  rotate: false
+  xy: 1062, 12
+  size: 61, 89
+  orig: 61, 89
+  offset: 0, 0
+  index: -1
+bulianshi2
+  rotate: true
+  xy: 720, 2
+  size: 31, 99
+  orig: 31, 99
+  offset: 0, 0
+  index: -1
+bulianshi20
+  rotate: false
+  xy: 1044, 288
+  size: 92, 220
+  orig: 92, 220
+  offset: 0, 0
+  index: -1
+bulianshi21
+  rotate: false
+  xy: 412, 192
+  size: 88, 316
+  orig: 88, 316
+  offset: 0, 0
+  index: -1
+bulianshi22
+  rotate: true
+  xy: 171, 7
+  size: 19, 106
+  orig: 19, 106
+  offset: 0, 0
+  index: -1
+bulianshi23
+  rotate: true
+  xy: 61, 16
+  size: 121, 87
+  orig: 121, 87
+  offset: 0, 0
+  index: -1
+bulianshi3
+  rotate: false
+  xy: 720, 35
+  size: 89, 164
+  orig: 105, 164
+  offset: 16, 0
+  index: -1
+bulianshi4
+  rotate: true
+  xy: 502, 201
+  size: 307, 540
+  orig: 307, 540
+  offset: 0, 0
+  index: -1
+bulianshi5
+  rotate: false
+  xy: 1114, 222
+  size: 51, 64
+  orig: 65, 116
+  offset: 0, 15
+  index: -1
+bulianshi6
+  rotate: false
+  xy: 1062, 103
+  size: 53, 109
+  orig: 53, 109
+  offset: 0, 0
+  index: -1
+bulianshi7
+  rotate: true
+  xy: 150, 5
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+bulianshi8
+  rotate: false
+  xy: 2, 9
+  size: 57, 128
+  orig: 57, 128
+  offset: 0, 0
+  index: -1
+bulianshi9
+  rotate: true
+  xy: 150, 28
+  size: 109, 210
+  orig: 109, 210
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 223, 151
+  size: 187, 357
+  orig: 205, 389
+  offset: 9, 0
+  index: -1

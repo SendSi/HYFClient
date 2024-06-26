@@ -161,7 +161,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.HYFClient.ML
-    Standalone: com.DefaultCompany.------
+    Standalone: com.HYFClient.ML
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -744,7 +744,10 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: FAIRYGUI_SPINE
+    Server: FAIRYGUI_SPINE
+    Standalone: FAIRYGUI_SPINE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

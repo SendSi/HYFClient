@@ -49,22 +49,30 @@
   },
   "1007": {
     "id": 1007,
+    "tType": 1,
+    "tTypeName": "功能展示",
+    "tContent": "spine显示",
+    "tGmTxt": "local SpineId 1001",
+    "tDesc": "显示Spine"
+  },
+  "1008": {
+    "id": 1008,
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "播放引导",
     "tGmTxt": "local guideType 1001",
     "tDesc": "guideType表的id"
   },
-  "1008": {
-    "id": 1008,
+  "1009": {
+    "id": 1009,
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "点击时copy_fgui路径",
     "tGmTxt": "local copyFGUIPath 1",
     "tDesc": "1为开,0为关,,默认关"
   },
-  "1009": {
-    "id": 1009,
+  "1010": {
+    "id": 1010,
     "tType": 2,
     "tTypeName": "引导",
     "tContent": "播放引导_占用",
