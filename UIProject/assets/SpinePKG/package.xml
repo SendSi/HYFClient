@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="dhoj786w">
+  <resources>
+    <component id="u1ch8t" name="SpineMainView.xml" path="/Window/" exported="true"/>
+    <misc id="gnuv92" name="bulianshi.atlas" path="/SpineRes/" exported="true"/>
+    <image id="gnuv93" name="bulianshi.png" path="/SpineRes/" exported="true"/>
+    <spine id="gnuv94" name="bulianshi.skel" path="/SpineRes/" exported="true" width="440" height="708" require="gnuv92,gnuv93" atlasNames="bulianshi" anchor="215,703"/>
+    <component id="efgr95" name="closeBtn.xml" path="/Com/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

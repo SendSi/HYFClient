@@ -133,6 +133,11 @@ public class GMManager : Singleton<GMManager>
                 // ProxyCommonPKGModule.Instance.AddHorseLampId("2002","2024");
                 ProxyGMModule.Instance.HideGMMainView();
             }
+            else if (target == "SpineId")
+            {
+                ProxySpinePKGModule.Instance.OpenSpineMainView(values[2]);
+                ProxyGMModule.Instance.HideGMMainView();
+            }
             else if (target == "testCode")
             {
                 ProxyGuidePKGModule.Instance.TestLoadView();

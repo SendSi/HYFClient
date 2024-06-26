@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <graph id="n11_efgr" name="bg" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#8000cc00"/>
+    <loader3D id="n9_efgr" name="spineIcon" xy="443,29" size="440,708" url="ui://dhoj786wgnuv94" animation="" skin="" loop="true"/>
+    <text id="n10_efgr" name="txtName" xy="58,160" size="209,54" fontSize="40" vAlign="middle" autoSize="none" text="步练师"/>
+    <component id="n12_efgr" name="closeBtn" src="efgr95" fileName="Com/closeBtn.xml" xy="37,17" size="100,47">
+      <Button title="关闭" titleFontSize="25"/>
+    </component>
+  </displayList>
+</component>
