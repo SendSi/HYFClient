@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CommonPKG;
 using FairyGUI;
 using UnityEngine;
 
@@ -7,6 +8,15 @@ namespace MainCenter
     public partial class MainTopEles : GComponent
     {
         private List<MainUIBtnConfig> mCfgList;
+
+        private List<int> mCurrencyIds = new List<int>()
+        {
+            1,
+            2,
+            5,
+            12
+        };
+
         public override void OnInit()
         {
             base.OnInit();
@@ -16,6 +26,9 @@ namespace MainCenter
 
             mCfgList = MainCenterManager.Instance.GetMainUIBtnList(2);
             _funcList.numItems = mCfgList.Count;
+
+            CurrencyListCom currencyListCom = (CurrencyListCom)_currencyListCom;
+            currencyListCom.SetData(mCurrencyIds);//CurrencyListCom.cs
 
             EventCenter.Instance.Bind<string>(EventEnum.EE_test, OnEventTest);
         }

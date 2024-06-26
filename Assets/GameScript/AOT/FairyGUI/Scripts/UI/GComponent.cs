@@ -1694,7 +1694,7 @@ namespace FairyGUI
         public Action __onDispose;
 #endif
 
-        /// <summary> 打开页面时 OpenUIViewCom 才会被 调用 </summary>
+        /// <summary> 打开页面时 OpenUIViewCom 才会被 调用   其他情况需自行调用 </summary>
         public virtual void OnInit()
         {
 #if UNITY_EDITOR

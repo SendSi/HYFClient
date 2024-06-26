@@ -7,7 +7,6 @@ namespace Welfare
     public partial class WelfareMainView : GComponent
     {
         private List<WelfareMenuConfig> _menuCfg;
-        private MenuItemWelfare _currMenuItem;
         private List<MenuItemWelfare> _menuItems = new List<MenuItemWelfare>();
 
         public override void OnInit()
@@ -67,7 +66,6 @@ namespace Welfare
 
         public void SetData(int cfgId)
         {
-            Debug.LogError("WelfareMainView_SetData");
             foreach (var item in _menuItems)
             {
                 var tData = (WelfareMenuConfig)item.data;

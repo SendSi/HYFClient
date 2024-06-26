@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="128,50" pivot="0.5,0.5">
-  <controller name="addCtrl" pages="0,,1," selected="0">
+  <controller name="addCtrl" exported="true" pages="0,,1," selected="0">
     <remark page="1" value="显"/>
   </controller>
   <displayList>
@@ -9,8 +9,8 @@
     </image>
     <loader id="n1_d37l" name="icon" xy="16,26" pivot="0.5,0.5" anchor="true" size="45,45" aspect="true" url="ui://y768eypazn8h7v" align="center" vAlign="middle" fill="scale" shrinkOnly="true"/>
     <text id="n2_d37l" name="hasNumTxt" xy="33,13" size="64,24" restrictSize="55,105,32,32" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" vAlign="middle" leading="0" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,2" singleLine="true" text="6,553.5"/>
-    <component id="n4_d37l" name="btnItem" src="sfia1ygcfhf" fileName="components/components_new/com_btn_null.xml" xy="1,7" size="110,40"/>
-    <component id="n3_d37l" name="btnAdd" src="ld4m1ygcfhr" fileName="components/components_new/com_btnAdd2.xml" xy="80,6" size="55,49" aspect="true" scale="0.7,0.7">
+    <component id="n4_d37l" name="btnItem" src="sfia1ygcfhf" fileName="components/com_btn_null.xml" xy="1,7" size="110,40"/>
+    <component id="n3_d37l" name="btnAdd" src="ld4m1ygcfhr" fileName="components/com_btnAdd2.xml" xy="80,6" size="55,49" aspect="true" scale="0.7,0.7">
       <gearDisplay controller="addCtrl" pages="1"/>
       <gearXY controller="addCtrl" pages="0,1" values="80,6|91,1"/>
       <relation target="n0_d37l" sidePair="left-right"/>

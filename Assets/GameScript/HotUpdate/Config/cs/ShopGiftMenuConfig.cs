@@ -11,7 +11,7 @@ public class ShopGiftMenuConfig
 	public int id; // key
 	public string name; // 名称
 	public int rType; // 索引id
-	public string urlPath; // 子类型
+	public string childViewName; // 页面名字
 	public int isShow; // 显示否,1显示
 }
 

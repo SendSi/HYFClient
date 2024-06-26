@@ -150,7 +150,7 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(main_btn3.URL, typeof(main_btn3));
             UIObjectFactory.SetPackageItemExtension(rewardIcon.URL, typeof(rewardIcon));
             UIObjectFactory.SetPackageItemExtension(com_btn_02_redPoint.URL, typeof(com_btn_02_redPoint));
-            UIObjectFactory.SetPackageItemExtension(currencyListCom.URL, typeof(currencyListCom));
+            UIObjectFactory.SetPackageItemExtension(CurrencyListCom.URL, typeof(CurrencyListCom));
             UIObjectFactory.SetPackageItemExtension(com_btn_tab2.URL, typeof(com_btn_tab2));
         }
     }

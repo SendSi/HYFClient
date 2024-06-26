@@ -3,29 +3,27 @@ using FairyGUI;
 using UnityEngine;
 
 #region << 脚 本 注 释 >>
-
 //作  用:    ShopGiftMainView
 //作  者:    曾思信
 //创建时间:  #CREATETIME#
-
 #endregion
 
 namespace ShopGift
 {
-    
     public partial class ShopGiftMainView : GComponent
     {
         private List<ShopGiftMenuConfig> _menuCfg;
-        private Item_ShopMenu _currMenuItem;
+        private GComponent _currChildView;
         private List<Item_ShopMenu> _menuItems = new List<Item_ShopMenu>();
         private Dictionary<string, GComponent> mMaskGComDic = new Dictionary<string, GComponent>();
+
         public override void OnInit()
         {
             base.OnInit();
-          _menuCfg = ConfigMgr.Instance.LoadConfigList<ShopGiftMenuConfig>();
-            _menuCfg.Sort((a, b) =>            {                return a.id < b.id ? -1 : 1; });
+            _menuCfg = ConfigMgr.Instance.LoadConfigList<ShopGiftMenuConfig>();
+            _menuCfg.Sort((a, b) => { return a.id < b.id ? -1 : 1; });
 
-            this._closeButton.onClick.Set(() => { ProxyShopGiftModule.Instance.CloseShopGiftMainView();});
+            this._closeButton.onClick.Set(() => { ProxyShopGiftModule.Instance.CloseShopGiftMainView(); });
 
             this._leftTabList.itemRenderer = OnRendererTabList;
             this._leftTabList.itemProvider = OnProviderTabList;
@@ -39,26 +37,24 @@ namespace ShopGift
             var data = (GComponent)evCon.data;
             ShopGiftMenuConfig cfg = (ShopGiftMenuConfig)data.data;
 
-            // this._conPanel.url = cfg.urlPath;
-            // this._conPanel.component.data = cfg;
-            // this._conPanel.component.OnInit(); //点击使用
-            
-            var childView = CheckGetTryMask(cfg.urlPath);
-            childView.visible = true;
-            childView.data = cfg;
-            childView.OnInit();
+            _currChildView = CheckGetChild_ClearOld(cfg.childViewName);
+            _currChildView.visible = true;
+            _currChildView.data = cfg;
+            _currChildView.OnInit();
         }
-        
-        GComponent CheckGetTryMask(string maskName)
+
+        GComponent CheckGetChild_ClearOld(string maskName)
         {
-            if (mMaskGComDic.TryGetValue(maskName, out var maskView))
+            if (_currChildView != null)
             {
-                return maskView;
+                _currChildView.visible = false;
+                // _currChildView.Dispose();//销毁了,就UI也不见了
             }
+            if (mMaskGComDic.TryGetValue(maskName, out var maskView)) { return maskView; }
             else
             {
                 var maskCom = UIPackage.CreateObject("ShopGift", maskName).asCom;
-                this.AddChildAt(maskCom, 0);
+                this.AddChild(maskCom); //添加到当前界面
                 mMaskGComDic[maskName] = maskCom;
                 return maskCom;
             }

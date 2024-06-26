@@ -157,7 +157,7 @@
     <image id="thpvkq" name="com_clock.png" path="/images/images_new/" exported="true"/>
     <component id="k7pz1v" name="Button_cut.xml" path="/components/" exported="true"/>
     <component id="d4a6ku" name="btn_tab.xml" path="/components/" exported="true"/>
-    <component id="ykwwkx" name="currencyListCom.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="ykwwkx" name="CurrencyListCom.xml" path="/components/" exported="true" favorite="true"/>
     <image id="ykwwky" name="icon_06.png" path="/images/" exported="true"/>
     <component id="rb1rl1" name="com_btnAdd.xml" path="/components/" exported="true"/>
     <component id="q8mhff" name="fighting_headPortrait.xml" path="/components/" exported="true"/>
