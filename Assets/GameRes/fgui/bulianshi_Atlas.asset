@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: bulianshi_Atlas
   m_EditorClassIdentifier: 
-  textureLoadingMode: 0
-  onDemandTextureLoader: {fileID: 0}
   atlasFile: {fileID: 4900000, guid: b322ff29c697b87488146aee243aaaff, type: 3}
   materials:
   - {fileID: 2100000, guid: 50f053ed9d28a794a8e5fdc4063132da, type: 2}

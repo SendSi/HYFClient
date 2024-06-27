@@ -65,10 +65,11 @@ namespace FairyGUI
 
         protected void LoadSpine()
         {
+            Debug.LogError("LoadSpine 1");
             SkeletonDataAsset asset = (SkeletonDataAsset)_contentItem.skeletonAsset;
             if (asset == null)
                 return;
-
+            Debug.LogError("LoadSpine 2");
             SetSpine(asset, _contentItem.width, _contentItem.height, _contentItem.skeletonAnchor);
         }
 

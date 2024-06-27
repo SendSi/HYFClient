@@ -1624,9 +1624,15 @@ namespace FairyGUI
             if (index > 0)
                 fileName = fileName.Substring(0, index);
 
-            Spine.Unity.SkeletonDataAsset asset;
-            if (_resBundle != null)
-                asset = _resBundle.LoadAsset<Spine.Unity.SkeletonDataAsset>(fileName + "_SkeletonData");
+            Spine.Unity.SkeletonDataAsset asset=null;
+
+            if (_loadAsyncFunc != null)
+            {
+                _loadAsyncFunc(fileName, ext, typeof(Spine.Unity.SkeletonDataAsset), item);
+                if (item.skeletonAsset == null) item.skeletonAsset = new Spine.Unity.SkeletonDataAsset();
+            }
+            else if (_resBundle != null)
+                    asset = _resBundle.LoadAsset<Spine.Unity.SkeletonDataAsset>(fileName + "_SkeletonData");
             else
             {
                 DestroyMethod dm;
