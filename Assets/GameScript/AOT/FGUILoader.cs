@@ -29,10 +29,9 @@ public class FGUILoader : Singleton<FGUILoader>
         });
     }
 
-
     /// <summary> 已load出来的 fgui的package </summary>
     private Dictionary<string, UIPackage> mLoadedPKG = new Dictionary<string, UIPackage>();
-    
+
     /// <summary> key=pkgName,,,,value=时间 </summary>
     private Dictionary<string, int> mReleasePKGDic = new Dictionary<string, int>();
 
@@ -53,18 +52,17 @@ public class FGUILoader : Singleton<FGUILoader>
         GameMain.Instance.StartCoroutine(LoadUIPackage(pkgName, () => { finishCB?.Invoke(); }));
     }
 
-
     public IEnumerator LoadUIPackage(string pkgName, Action finishCB)
     {
-        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         var handle = assetPackage.LoadAssetAsync<TextAsset>($"{pkgName}_fui");
         yield return handle;
         var pkgDesc = handle.AssetObject as TextAsset;
-        var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty,
-            (name, extension, type, packageItem) =>
-            {
-                GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type, packageItem));
-            });
+        // Debug.LogError($"LoadUIPackage{pkgName}");
+        var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty, (name, extension, type, packageItem) =>
+        {
+            GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type, packageItem));
+        });
         tUIPackage.LoadAllAssets();
 
         mLoadedPKG[pkgName] = tUIPackage; //加入字典
@@ -75,17 +73,20 @@ public class FGUILoader : Singleton<FGUILoader>
         GameMain.Instance.StartCoroutine(LoadDependencies(pkgDeep, finishCB)); //加载依赖包
     }
 
-
-    private IEnumerator LoadUIExtensions(string package, string name, string extension, Type type,
-        PackageItem packageItem)
+    private IEnumerator LoadUIExtensions(string package, string name, string extension, Type pType, PackageItem packageItem)
     {
-        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
-        var handle = assetPackage.LoadAssetAsync($"{package}_{name}");
+        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
+        AssetHandle handle = null;
+        if (pType == typeof(Spine.Unity.SkeletonDataAsset))
+            handle = assetPackage.LoadAssetAsync($"{name}_SkeletonData");//spine类型
+        else
+            handle = assetPackage.LoadAssetAsync($"{package}_{name}");
+
         yield return handle;
+        // Debug.LogError($"LoadUIExtensions {package} {name} {extension}");
         packageItem.owner.SetItemAsset(packageItem, handle.AssetObject, DestroyMethod.None);
         TryAddHandles(package, handle);
     }
-
 
     /// <summary>获得  此包的 依赖包   名字s</summary>
     private List<string> GetDependencies(UIPackage pkgName)
@@ -115,16 +116,14 @@ public class FGUILoader : Singleton<FGUILoader>
                 {
                     if (mForeverPKG.ContainsKey(pkgName))
                     {
-                        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+                        var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
                         var handle = assetPackage.LoadAssetAsync<TextAsset>($"{pkgName}_fui");
                         yield return handle;
                         var pkgDesc = handle.AssetObject as TextAsset;
-                        var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty,
-                            (name, extension, type, packageItem) =>
-                            {
-                                GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type,
-                                    packageItem));
-                            });
+                        var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty, (name, extension, type, packageItem) =>
+                        {
+                            GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type, packageItem));
+                        });
                         tUIPackage.LoadAllAssets();
 
                         mLoadedPKG[pkgName] = tUIPackage;
@@ -146,7 +145,7 @@ public class FGUILoader : Singleton<FGUILoader>
             loaded?.Invoke();
         }
     }
-    
+
     /// <summary> 加入 准备 释放队列中 </summary>
     public void RemoveUIPackage(string pkgName)
     {
@@ -165,20 +164,19 @@ public class FGUILoader : Singleton<FGUILoader>
     {
         for (int i = 0; i < mReleasePKGDic.Count; i++)
         {
-            var item= mReleasePKGDic.ElementAt(i);
+            var item = mReleasePKGDic.ElementAt(i);
             if (item.Value <= mCurTimeNum)
             {
                 UIPackage.RemovePackage(item.Key);
                 mLoadedPKG.Remove(item.Key);
-        
+
                 ReleaseHandle(item.Key);
                 Debug.LogWarning($"{item.Key} 释放了");
-        
+
                 mReleasePKGDic.Remove(item.Key);
             }
         }
     }
-
 
     //把公共包 都先load出来   之后使用ui://包名/图片名  就能正常了
     public void CheckLoadComPKG()
@@ -191,7 +189,6 @@ public class FGUILoader : Singleton<FGUILoader>
 
         GameMain.Instance.StartCoroutine(LoadDependencies(list, null)); //加载 依赖公共包
     }
-
 
     void TryAddHandles(string pkgName, AssetHandle ah)
     {

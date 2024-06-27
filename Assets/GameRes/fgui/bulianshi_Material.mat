@@ -32,7 +32,6 @@ Material:
     m_Floats:
     - _Cutoff: 0.1
     - _OutlineMipLevel: 0
-    - _OutlineOpaqueAlpha: 1
     - _OutlineReferenceTexWidth: 1024
     - _OutlineSmoothness: 1
     - _OutlineWidth: 3
@@ -41,7 +40,6 @@ Material:
     - _StraightAlphaInput: 0
     - _ThresholdEnd: 0.25
     - _Use8Neighbourhood: 1
-    - _UseScreenSpaceOutlineWidth: 0
     m_Colors:
     - _OutlineColor: {r: 1, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
