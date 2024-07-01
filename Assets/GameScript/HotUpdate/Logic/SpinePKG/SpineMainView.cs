@@ -20,14 +20,25 @@ namespace SpinePKG
             this._closeBtn.onClick.Set(() => { ProxySpinePKGModule.Instance.CloseSpineMainView(); });
 
             this._spineIcon.url="";
-            this._spineIcon.url="ui://SpinePKG/bulianshi";
+            this._spineIcon.url="ui://SpinePKG/Ataier";
+            this._spineIcon.animationName = "idle";
+            this._spineIcon.loop = true;
 
             // Load();
+            
+            
+            // LoadSpine("AirenGongjiang_SkeletonData", delegate(AssetHandle ah)
+            // {
+            //     var clip = ah.AssetObject as SkeletonDataAsset;
+            //     this._spineIcon2.SetSpine(clip,10,10,new Vector2(0,0));
+            //     this._spineIcon2.animationName = "idle";
+            //     this._spineIcon2.loop = true;
+            // }); 
         }
 
         void Load()
         {
-            LoadSpine("bulianshi_SkeletonData", delegate(AssetHandle ah)
+            LoadSpine("Ataier_SkeletonData", delegate(AssetHandle ah)
             {
                 var clip = ah.AssetObject as SkeletonDataAsset;
                 this._spineIcon.SetSpine(clip,10,10,new Vector2(0,0));

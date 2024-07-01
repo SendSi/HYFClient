@@ -8,9 +8,10 @@ namespace SpinePKG
     public partial class SpineMainView : GComponent
     {
         public GGraph _bg;
-        public GLoader3D _spineIcon;
         public GTextField _txtName;
         public GButton _closeBtn;
+        public GLoader3D _spineIcon;
+        public GLoader3D _spineIcon2;
         public const string URL = "ui://dhoj786wu1ch8t";
 
         public static SpineMainView CreateInstance()
@@ -23,9 +24,10 @@ namespace SpinePKG
             base.ConstructFromXML(xml);
 
             _bg = (GGraph)GetChild("bg");
-            _spineIcon = (GLoader3D)GetChild("spineIcon");
             _txtName = (GTextField)GetChild("txtName");
             _closeBtn = (GButton)GetChild("closeBtn");
+            _spineIcon = (GLoader3D)GetChild("spineIcon");
+            _spineIcon2 = (GLoader3D)GetChild("spineIcon2");
         }
     }
 }
