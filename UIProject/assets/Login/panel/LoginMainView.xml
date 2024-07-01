@@ -60,6 +60,6 @@
         <item title="英文"/>
       </ComboBox>
     </component>
-    <loader3D id="n47_tiu2" name="spineIcon" xy="189,215" size="703,875" scale="0.3,0.3" animation="" skin="" loop="true"/>
+    <loader3D id="n47_tiu2" name="spineIcon" xy="200,200" size="100,100" animation="" skin="" loop="true"/>
   </displayList>
 </component>

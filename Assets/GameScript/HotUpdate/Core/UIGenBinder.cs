@@ -9,7 +9,7 @@ using GuidePKG;
 using PokerPKG;
 using SettingPKG;
 using ShopGift;
-using SpinePKG;
+using SpinePackage;
 using UnityEngine;
 using Welfare;
 
@@ -31,6 +31,6 @@ public class UIGenBinder
         GuidePKGBinder.BindAll();
         PokerPKGBinder.BindAll();
         ShopGiftBinder.BindAll();
-        SpinePKGBinder.BindAll();
+        SpinePackageBinder.BindAll();
     }
 }

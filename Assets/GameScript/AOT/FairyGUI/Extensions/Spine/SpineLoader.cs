@@ -21,6 +21,8 @@ namespace FairyGUI
             get { return _spineAnimation; }
         }
 
+
+
         /// <summary>
         /// 
         /// </summary>

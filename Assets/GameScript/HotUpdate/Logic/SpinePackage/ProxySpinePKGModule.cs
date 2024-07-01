@@ -5,11 +5,11 @@
 #endregion
 
 using System;
-using SpinePKG;
+using SpinePackage;
 
 public  class ProxySpinePKGModule :Singleton<ProxySpinePKGModule>, IProxy
 {
-    private const string pkgName = "SpinePKG";
+    private const string pkgName = "SpinePackage";
 
     public void CheckLoad(Action finishCB)
     {
