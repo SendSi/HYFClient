@@ -1,5 +1,5 @@
 {
-  "libview.firstColumnWidth": 576,
+  "libview.firstColumnWidth": 659,
   "libview.iconScale": 0,
   "doc.openedDocs": [
     "ui://vypq82a1srlq13",
@@ -14,6 +14,7 @@
     "ui://2r331opvtixj1ygcg9p",
     "ui://4ni413lalumy1qp8vd6",
     "ui://dhoj786wu1ch8t",
+    "ui://byy9k3gh7oize",
     "ui://dhoj786wefgr95",
     "ui://4ni413laxoe1n2",
     "ui://2r331opvykwwkx",
@@ -31,19 +32,11 @@
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://dhoj786wu1ch8t",
+  "doc.activeDoc": "ui://byy9k3gh7oize",
   "libview.twoColumn": false,
   "libview.expandedNodes": [
     "2r331opv",
-    "/",
-    "dhoj786w",
-    "/",
-    "dhoj786w",
-    "/Com/",
-    "dhoj786w",
-    "/SpineRes/",
-    "dhoj786w",
-    "/Window/"
+    "/"
   ],
   "snapToGrid": true,
   "backgroundColor": 6710886,

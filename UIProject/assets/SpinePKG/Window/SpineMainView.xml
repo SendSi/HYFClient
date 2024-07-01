@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750">
   <displayList>
-    <graph id="n11_efgr" name="bg" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#8000cc00"/>
-    <text id="n10_efgr" name="txtName" xy="58,160" size="209,54" fontSize="40" vAlign="middle" autoSize="none" text="步练师"/>
+    <graph id="n11_efgr" name="bg" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#cc00cc00"/>
+    <text id="n10_efgr" name="txtName" xy="58,160" size="209,54" fontSize="40" vAlign="middle" autoSize="none" text="Ataier"/>
     <component id="n12_efgr" name="closeBtn" src="efgr95" fileName="Com/closeBtn.xml" xy="37,17" size="100,47">
       <Button title="关闭" titleFontSize="25"/>
     </component>
-    <loader3D id="n13_rx1e" name="spineIcon" xy="199,26" size="440,708" url="ui://dhoj786wgnuv94" animation="" skin="" loop="true"/>
+    <loader3D id="n16_tiu2" name="spineIcon" xy="308,-5" size="703,875" url="" animation="" skin="" loop="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader3D>
+    <loader3D id="n17_tiu2" name="spineIcon2" xy="1065,380" size="100,100" animation="" skin="" loop="true"/>
   </displayList>
 </component>

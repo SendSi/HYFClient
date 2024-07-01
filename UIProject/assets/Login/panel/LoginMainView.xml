@@ -22,7 +22,10 @@
     <component id="n46_f54x" name="stopBtn" src="7oizh" fileName="components/interactive.xml" xy="16,552" size="98,98" group="n22_qbmb">
       <Button title="特停" icon="ui://byy9k3ghmpc836"/>
     </component>
-    <group id="n22_qbmb" name="left" xy="16,52" size="98,598" advanced="true">
+    <component id="n48_rurz" name="spineBtn" src="7oizh" fileName="components/interactive.xml" xy="156,15" size="124,98" group="n22_qbmb">
+      <Button title="spineBtn" icon="ui://byy9k3gh7oiza"/>
+    </component>
+    <group id="n22_qbmb" name="left" xy="16,15" size="264,635" advanced="true">
       <relation target="" sidePair="left-left"/>
     </group>
     <text id="n37_qg41" name="title_version" xy="16,13" size="108,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="当前版本V1">
@@ -57,5 +60,6 @@
         <item title="英文"/>
       </ComboBox>
     </component>
+    <loader3D id="n47_tiu2" name="spineIcon" xy="189,215" size="703,875" scale="0.3,0.3" animation="" skin="" loop="true"/>
   </displayList>
 </component>

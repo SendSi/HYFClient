@@ -20,7 +20,7 @@ namespace FairyGUI
         int _frame;
         bool _loop;
         bool _updatingLayout;
-        Color _color;
+        protected Color _color;
 
         protected PackageItem _contentItem;
         protected GoWrapper _content;

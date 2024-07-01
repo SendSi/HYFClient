@@ -2,10 +2,19 @@
 <packageDescription id="dhoj786w">
   <resources>
     <component id="u1ch8t" name="SpineMainView.xml" path="/Window/" exported="true"/>
-    <misc id="gnuv92" name="bulianshi.atlas" path="/SpineRes/" exported="true"/>
-    <image id="gnuv93" name="bulianshi.png" path="/SpineRes/" exported="true"/>
-    <spine id="gnuv94" name="bulianshi.skel" path="/SpineRes/" exported="true" width="440" height="708" require="gnuv92,gnuv93" atlasNames="bulianshi" anchor="215,703"/>
     <component id="efgr95" name="closeBtn.xml" path="/Com/" exported="true"/>
+    <image id="uozr99" name="AirenZixingHuopao.png" path="/SpineRes/" exported="true"/>
+    <image id="uozr9c" name="AirenZhishengJi.png" path="/SpineRes/" exported="true"/>
+    <image id="uozr9f" name="AirenGongjiang.png" path="/SpineRes/" exported="true"/>
+    <image id="uozr9o" name="Ataier.png" path="/SpineRes/" exported="true"/>
+    <misc id="uozraa" name="Ataier.atlas" path="/SpineRes/" exported="true"/>
+    <spine id="uozra9" name="Ataier.skel" path="/SpineRes/" exported="true" width="703" height="875" require="uozraa,uozr9o" atlasNames="Ataier" anchor="324,846"/>
+    <misc id="uozrai" name="AirenZixingHuopao.atlas" path="/SpineRes/" exported="true"/>
+    <spine id="uozrah" name="AirenZixingHuopao.skel" path="/SpineRes/" exported="true" width="831" height="940" require="uozrai,uozr99" atlasNames="AirenZixingHuopao" anchor="423,883"/>
+    <misc id="uozrak" name="AirenZhishengJi.atlas" path="/SpineRes/" exported="true"/>
+    <spine id="uozraj" name="AirenZhishengJi.skel" path="/SpineRes/" exported="true" width="1021" height="836" require="uozrak,uozr9c" atlasNames="AirenZhishengJi" anchor="575,934"/>
+    <misc id="uozrao" name="AirenGongjiang.atlas" path="/SpineRes/" exported="true"/>
+    <spine id="uozran" name="AirenGongjiang.skel" path="/SpineRes/" exported="true" width="630" height="711" require="uozrao,uozr9f" atlasNames="AirenGongjiang" anchor="346,712"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

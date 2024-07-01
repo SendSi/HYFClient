@@ -36,6 +36,13 @@ namespace Login
             this._languCom.selectedIndex = _currComValue;
             this._languCom.items = new[] { "简体中文", "繁體中文", "English" };
             this._languCom.onChanged.Set(OnChangedLanguage);
+
+
+            Debug.LogError("没有走到这里?");
+            this._spineIcon.url="";
+            this._spineIcon.url="ui://SpinePKG/Ataier";
+            this._spineIcon.animationName = "idle";
+            this._spineIcon.loop = true;
         }
 
         private void OnClickNoticeBtn()

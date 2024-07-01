@@ -10,7 +10,7 @@ namespace FairyGUI
     /// </summary>
     public partial class GLoader3D : GObject
     {
-        SkeletonAnimation _spineAnimation;
+        protected SkeletonAnimation _spineAnimation;
 
         /// <summary>
         /// 
@@ -41,7 +41,7 @@ namespace FairyGUI
         /// <param name="height"></param>
         /// <param name="anchor"></param>
         /// <param name="cloneMaterial"></param>
-        public void SetSpine(SkeletonDataAsset asset, int width, int height, Vector2 anchor, bool cloneMaterial)
+        virtual public void SetSpine(SkeletonDataAsset asset, int width, int height, Vector2 anchor, bool cloneMaterial)
         {
             if (_spineAnimation != null)
                 FreeSpine();
@@ -65,11 +65,17 @@ namespace FairyGUI
 
         protected void LoadSpine()
         {
-            Debug.LogError("LoadSpine 1");
+            Debug.LogError("LoadSpine check asset is null");
             SkeletonDataAsset asset = (SkeletonDataAsset)_contentItem.skeletonAsset;
             if (asset == null)
+            {
+                Timers.inst.CallLater((obj) =>
+                {
+                    LoadSpine();
+                });
                 return;
-            Debug.LogError("LoadSpine 2");
+            }
+            Debug.LogError("LoadSpine has asset");
             SetSpine(asset, _contentItem.width, _contentItem.height, _contentItem.skeletonAnchor);
         }
 
@@ -119,7 +125,7 @@ namespace FairyGUI
             }
         }
 
-        protected void FreeSpine()
+        virtual  protected void FreeSpine()
         {
             if (_spineAnimation != null)
             {
