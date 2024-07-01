@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Spine.Unity;
 using UnityEngine;
 using YooAsset;
 
@@ -41,7 +42,7 @@ public class FGUILoader : Singleton<FGUILoader>
     public void AddPackage(string pkgName, Action finishCB)
     {
         UIPackage pkgED = null;
-
+        Debug.Log("pkgName:" + pkgName);
         mReleasePKGDic.Remove(pkgName);
         if (mLoadedPKG.TryGetValue(pkgName, out pkgED))
         {
@@ -78,7 +79,7 @@ public class FGUILoader : Singleton<FGUILoader>
         var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         AssetHandle handle = null;
         if (pType == typeof(Spine.Unity.SkeletonDataAsset))
-            handle = assetPackage.LoadAssetAsync($"{name}_SkeletonData");//spine类型
+            handle = assetPackage.LoadAssetAsync($"{name}_SkeletonData"); //spine类型
         else
             handle = assetPackage.LoadAssetAsync($"{package}_{name}");
 
@@ -217,4 +218,28 @@ public class FGUILoader : Singleton<FGUILoader>
             tHandle.Clear();
         }
     }
+
+
+#if FAIRYGUI_SPINE
+    public IEnumerator YooLoadSpineAsset(string name, Action<SkeletonDataAsset> finishCB)
+    {
+        var package = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
+        var handle = package.LoadAssetAsync<SkeletonDataAsset>(name);
+        yield return handle;
+        var assSKE = handle.AssetObject as SkeletonDataAsset;
+        finishCB?.Invoke(assSKE);
+    }
+
+
+    public void SetLoad(string name, GLoader3D spine)
+    {
+        GameMain.Instance.StartCoroutine(YooLoadSpineAsset(name, (obj) =>
+        {
+          spine.SetSpine(obj,0,0,new Vector2(spine.width*0.5f,spine.height));
+          spine.spineAnimation.loop  = true;
+          spine.spineAnimation.AnimationName = "idle";
+        }));  
+    }
+    
+#endif
 }

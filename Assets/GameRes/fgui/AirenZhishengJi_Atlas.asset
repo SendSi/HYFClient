@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: AirenZhishengJi_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: d2527f204ac084348ab55936c621cf4c, type: 3}
+  atlasFile: {fileID: 4900000, guid: edfccf74304ce4b49a194be8f064d0d6, type: 3}
   materials:
-  - {fileID: 2100000, guid: c88ecec81d99db644af29bc5c025e98f, type: 2}
+  - {fileID: 2100000, guid: 23962ef337d8c614080f369a9c4d3575, type: 2}

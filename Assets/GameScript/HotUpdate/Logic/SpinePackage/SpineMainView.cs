@@ -10,7 +10,7 @@ using Spine.Unity;
 using UnityEngine;
 using YooAsset;
 
-namespace SpinePKG
+namespace SpinePackage
 {
     public partial class SpineMainView : GComponent
     {
@@ -20,7 +20,7 @@ namespace SpinePKG
             this._closeBtn.onClick.Set(() => { ProxySpinePKGModule.Instance.CloseSpineMainView(); });
 
             this._spineIcon.url="";
-            this._spineIcon.url="ui://SpinePKG/Ataier";
+            this._spineIcon.url="ui://SpinePackage/Ataier";
             this._spineIcon.animationName = "idle";
             this._spineIcon.loop = true;
 
@@ -42,6 +42,8 @@ namespace SpinePKG
             {
                 var clip = ah.AssetObject as SkeletonDataAsset;
                 this._spineIcon.SetSpine(clip,10,10,new Vector2(0,0));
+                this._spineIcon.spineAnimation.AnimationName = "idle";
+                this._spineIcon.spineAnimation.loop  = true;
             }); 
         }
         
@@ -54,7 +56,7 @@ namespace SpinePKG
 
         public void SetData(string cfgId)
         {
-            // this._spineIcon.url="ui://SpinePKG/bulianshi";
+            // this._spineIcon.url="ui://SpinePackage/bulianshi";
         }
     }
 }

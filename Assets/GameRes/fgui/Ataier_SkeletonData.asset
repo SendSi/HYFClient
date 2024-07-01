@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Ataier_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 4a14023a04d54094b94f86947a7bad5c, type: 2}
+  - {fileID: 11400000, guid: 51176166999253148b63e08baebc0d5f, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 3292fb34d6b5a4043b7cd17720ebf59d, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 6e842bf661a1e0346a338f319b314a5d, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0
