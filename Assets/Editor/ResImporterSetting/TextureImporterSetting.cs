@@ -1,6 +1,16 @@
+using System.IO;
 using UnityEditor;
+using UnityEngine;
+
 public class TextureImporterSetting : AssetPostprocessor
 {
+    bool GetIsSpinePath(string assetPath)
+    {
+        var path = Application.dataPath.Replace("Assets", "") + assetPath;
+        var isHas = File.Exists(path.Replace(".png", "_SkeletonData.asset"));
+        return isHas;
+    }
+
     void OnPreprocessTexture()
     {
         TextureImporter teximporter = this.assetImporter as TextureImporter;
@@ -24,13 +34,20 @@ public class TextureImporterSetting : AssetPostprocessor
         TextureImporterPlatformSettings iPhoneSetting = teximporter.GetPlatformTextureSettings("iPhone");
         iPhoneSetting.overridden = true;
 
-
         bool is_UIFguiRes = Is_UI_FguiRes(teximporter.assetPath);
         if (is_UIFguiRes)
         {
             teximporter.textureType = TextureImporterType.Default;
             teximporter.textureShape = TextureImporterShape.Texture2D;
-            teximporter.alphaIsTransparency = true;
+
+            if (GetIsSpinePath(teximporter.assetPath))
+            {
+                 teximporter.alphaIsTransparency = false;
+            }
+            else
+            {
+                teximporter.alphaIsTransparency = true;
+            }
         }
 
         if (teximporter.textureType == TextureImporterType.NormalMap) //法线贴图
@@ -69,7 +86,6 @@ public class TextureImporterSetting : AssetPostprocessor
         teximporter.SetPlatformTextureSettings(webGLSetting);
     }
 
-    
     static bool Is_UI_FguiRes(string path)
     {
         return path.Replace("\\", "/").Contains(@"GameRes/fgui");

@@ -65,7 +65,7 @@ namespace FairyGUI
 
         protected void LoadSpine()
         {
-            Debug.LogError("LoadSpine check asset is null");
+            Debug.LogError("LoadSpine check asset 为空?");
             SkeletonDataAsset asset = (SkeletonDataAsset)_contentItem.skeletonAsset;
             if (asset == null)
             {
@@ -75,7 +75,7 @@ namespace FairyGUI
                 });
                 return;
             }
-            Debug.LogError("LoadSpine has asset");
+            Debug.LogError("LoadSpine 有数据了");
             SetSpine(asset, _contentItem.width, _contentItem.height, _contentItem.skeletonAnchor);
         }
 
