@@ -32,7 +32,8 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 	声音播放 AudioMgr.cs 播放背景PlayBGM_Id(),播放音效PlayMusic_Id() 配合使用SoundConfig.xlsx
 	GM页面 按F1(1.5秒),前端自己定义就含local字眼,以空隔号 切割.可查看GMConfig.xlsx,追加前端GM在LocalMethodGM()方法  
     游戏指引步骤看 GuidePKGManager.cs的StartGuideStepId(),导表看GuideTypeConfig.xlsx等文件 
-    todo-->Spine,HUD
+    Spine引用 请看GLoader3DExtensions.cs的扩展方法,就使用时SetLoadSpine(),关闭时DisposeSpine()
+    todo-->,HUD
 
 ####  服务端
     使用gRPC进行通信协议 测试了exe是正常热更的,,,,无需服务端,则使用另一分支noServer
