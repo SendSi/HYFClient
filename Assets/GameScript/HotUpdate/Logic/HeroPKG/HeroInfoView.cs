@@ -34,12 +34,12 @@ namespace HeroPKG
         {
             mCfgId = cfgId;
             var cfg = ConfigMgr.Instance.LoadConfigOne<HeroInfoConfig>(cfgId.ToString());
-            this._spineIcon.SetSpine_YooAsset(cfg.pathURL);
+            this._spineIcon.SetLoadSpine(cfg.pathURL);
         }
 
         public override void Dispose()
         {
-            this._spineIcon.Dispose_YooAsset();
+            this._spineIcon.DisposeSpine();
             base.Dispose();
         }
     }

@@ -3,6 +3,7 @@
   <assembly fullname="AOT">
     <type fullname="AppConfig" preserve="all" />
     <type fullname="FGUILoader" preserve="all" />
+    <type fullname="GameMain" preserve="all" />
     <type fullname="Singleton`1" preserve="all" />
   </assembly>
   <assembly fullname="FairyGUI">
@@ -292,5 +293,9 @@
     <type fullname="System.TimeSpan" preserve="all" />
     <type fullname="System.Type" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />
+  </assembly>
+  <assembly fullname="spine-unity">
+    <type fullname="Spine.Unity.SkeletonAnimation" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonDataAsset" preserve="all" />
   </assembly>
 </linker>

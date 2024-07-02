@@ -124,8 +124,6 @@
   <string name="2r331opvvlhb1ygcfh0-n4_vlhb" mz="title">战力</string>
   <!-- CommonPKG/components/pagingRbtn.xml -->
   <string name="2r331opvxjmv1qp8vez-n4_n6uq" mz="title">联盟</string>
-  <!-- CommonPKG/components/rbtn01.xml -->
-  <string name="2r331opvmqls1ygcfi8-n2_w84w" mz="title">首充礼包</string>
   <!-- DialogTip/components/GetWayItemTemp.xml -->
   <string name="utp01xia10xg71iy5bbt-n13_e9ml" mz="useBtn">前往</string>
   <!-- DialogTip/components/Item1.xml -->
@@ -321,6 +319,20 @@
   <string name="21uyefv8h7e55-n1_h7e5" mz="title">发送</string>
   <!-- GMView/components/gmBtn1.xml -->
   <string name="21uyefv8ncmochu-n2_e3cq" mz="title">我是内容</string>
+  <!-- GuidePKG/Com/SkipButton.xml -->
+  <string name="vypq82a1mufh11-n5_cinx" mz="title">跳过</string>
+  <!-- GuidePKG/Com/guideDesc21.xml -->
+  <string name="vypq82a1gyzy8-n1_gyzy" mz="txtContent">这位置不错呐！
+沙发胜多负少的啊肥电饭锅</string>
+  <string name="vypq82a1gyzy8-n2_b7hj" mz="txtNext">点击继续</string>
+  <!-- GuidePKG/Com/guideDesc22.xml -->
+  <string name="vypq82a1hsvl3b-n1_gyzy" mz="txtContent">这位置不错呐！
+沙发胜多负少的啊肥电饭锅</string>
+  <!-- HeroPKG/Panel/HeroInfoView.xml -->
+  <string name="ugveqogjntdkap-n10_efgr" mz="txtName">Ataier</string>
+  <string name="ugveqogjntdkap-n12_efgr" mz="closeBtn">关闭</string>
+  <string name="ugveqogjntdkap-n18_ntdk" mz="leftBtn">左</string>
+  <string name="ugveqogjntdkap-n19_ntdk" mz="rightBtn">右</string>
   <!-- HotPKG/component/btnYes.xml -->
   <string name="lq16fm3bpf2g1ygcga1-n3_pf2g" mz="title">文本</string>
   <!-- HotPKG/panel/HFView.xml -->
@@ -436,8 +448,17 @@
   <string name="4ni413laxoe1mz-n4_m8i8-4" mz="btnFuncList">部队</string>
   <!-- MainCenter/components/LevelUpBtn.xml -->
   <string name="4ni413lad9fgfx-n2_8rmp" mz="title">升级中...</string>
-  <!-- MainCenter/components/Main_btn.xml -->
+  <!-- MainCenter/components/MainBottomBtn.xml -->
   <string name="4ni413laj4kdhz9cm2-n5_j4kd" mz="title">英雄</string>
+  <!-- MainCenter/components/MainTopBtn.xml -->
+  <string name="4ni413lagzkh8i-n1_gzkh" mz="title">活动</string>
+  <string name="4ni413lagzkh8i-n5_il9y" mz="willTxt">即将开启</string>
+  <!-- MainCenter/components/MainTopEles.xml -->
+  <string name="4ni413laxoe1n2-n90_ukvb" mz="nameLbl">我的名字六字</string>
+  <string name="4ni413laxoe1n2-n91_ukvb" mz="lvLbl">50级</string>
+  <string name="4ni413laxoe1n2-n93_ijk7-0" mz="funcList">功能预告</string>
+  <string name="4ni413laxoe1n2-n93_ijk7-1" mz="funcList">活动</string>
+  <string name="4ni413laxoe1n2-n93_ijk7-2" mz="funcList">福利</string>
   <!-- MainCenter/components/SpeedUpItem.xml -->
   <string name="4ni413lak2fil5-n13_e9ml" mz="useBtn">使 用</string>
   <string name="4ni413lak2fil5-n11_e9ml" mz="hadLbl">拥有数量：</string>
@@ -453,10 +474,6 @@
   <string name="4ni413la9zwe1ygcfl2-n11_hxc3-texts_1" mz="stateLbl">驻扎中...</string>
   <string name="4ni413la9zwe1ygcfl2-n11_hxc3-texts_2" mz="stateLbl">返回中...</string>
   <string name="4ni413la9zwe1ygcfl2-n11_hxc3-texts_3" mz="stateLbl">待命中...</string>
-  <!-- MainCenter/components/TopEles.xml -->
-  <string name="4ni413laxoe1n2-n90_ukvb" mz="nameLbl">我的名字六字</string>
-  <string name="4ni413laxoe1n2-n91_ukvb" mz="lvLbl">50级</string>
-  <string name="4ni413laxoe1n2-n93_ijk7-1" mz="activityList">功能预告</string>
   <!-- MainCenter/components/buildingGrid1.xml -->
   <string name="4ni413lapvy91ygcg8n-n9_m79t" mz="lbl00">建造时间</string>
   <string name="4ni413lapvy91ygcg8n-n10_m79t" mz="lbl02">已建造</string>
@@ -515,9 +532,6 @@
   <string name="4ni413lainp01ygcflq-n17_wvyx" mz="focusBtn">首领位置</string>
   <!-- MainCenter/components/levelup_needBuilding.xml -->
   <string name="4ni413lasdtvcb-n1_sdtv" mz="btn_building">前往</string>
-  <!-- MainCenter/components/main_btn_activity.xml -->
-  <string name="4ni413lagzkh8i-n1_gzkh" mz="title">活动</string>
-  <string name="4ni413lagzkh8i-n5_il9y" mz="title02">即将开启</string>
   <!-- MainCenter/components/main_btn_back.xml -->
   <string name="4ni413laj4kdhz9clt-n5_j4kd" mz="title">To city</string>
   <!-- MainCenter/components/main_btn_coord.xml -->
@@ -703,6 +717,11 @@
   <string name="66sh7tc6j3xs9p7-n55_gqih" mz="n55">基础信息</string>
   <string name="66sh7tc6j3xs9p7-n58_gqih" mz="n58">我的资源</string>
   <string name="66sh7tc6j3xs9p7-n60_gqih" mz="n60">其它</string>
+  <!-- PokerPKG/com/Button_txtIcon.xml -->
+  <string name="q3kpafy9ps8y1ygcga8-n3_ps8y" mz="title">准备</string>
+  <!-- PokerPKG/panels/PokerMainView.xml -->
+  <string name="q3kpafy9zift1ygcga7-n50_ps8y" mz="sendPokerBtn">出牌</string>
+  <string name="q3kpafy9zift1ygcga7-n52_ps8y" mz="giveUpBtn">不出</string>
   <!-- SettingPKG/components/settingSel0.xml -->
   <string name="dh3hukhzjyqrh-n15_jyqr" mz="selbtn">均衡</string>
   <string name="dh3hukhzjyqrh-n16_ax40" mz="selbtn1">优质</string>
@@ -743,4 +762,246 @@
   <string name="dh3hukhzg30w1-n116_qlgs" mz="awardBtn">领取</string>
   <string name="dh3hukhzg30w1-n118_qlgs" mz="n118">关注微信公众号，每周领取微信福利礼包。</string>
   <string name="dh3hukhzg30w1-n119_qlgs" mz="txtCopyBtn">复制公众号</string>
+  <!-- ShopGift/components/EightDayBtn1.xml -->
+  <string name="e290e74sfdrb1ygcfiz-n6_gwzj" mz="stateTxt">可领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n6_gwzj-texts_0" mz="stateTxt">不可领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n6_gwzj-texts_1" mz="stateTxt">可领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n6_gwzj-texts_def" mz="stateTxt">已领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n7_gwzj" mz="title">第一天</string>
+  <string name="e290e74sfdrb1ygcfiz-n26_cale" mz="stateTxt1">可领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n26_cale-texts_0" mz="stateTxt1">不可领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n26_cale-texts_1" mz="stateTxt1">可领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n26_cale-texts_def" mz="stateTxt1">已领取</string>
+  <string name="e290e74sfdrb1ygcfiz-n27_cale" mz="title1">第二天</string>
+  <!-- ShopGift/components/EightDayBtn2.xml -->
+  <string name="e290e74sfdrb1ygcfj0-n6_gwzj" mz="stateTxt">不可领取</string>
+  <string name="e290e74sfdrb1ygcfj0-n6_gwzj-texts_0" mz="stateTxt">不可领取</string>
+  <string name="e290e74sfdrb1ygcfj0-n6_gwzj-texts_1" mz="stateTxt">可领取</string>
+  <string name="e290e74sfdrb1ygcfj0-n6_gwzj-texts_2" mz="stateTxt">已领取</string>
+  <string name="e290e74sfdrb1ygcfj0-n5_gwzj" mz="time">第八天</string>
+  <!-- ShopGift/components/Item_ShopType.xml -->
+  <string name="e290e74s11e631ygcfiu-n0_w84w" mz="title">日常活动</string>
+  <!-- ShopGift/components/MonthCardItem.xml -->
+  <string name="e290e74stkvp1ygcfpk-n23_qx1k" mz="titleLbl">累计获得                钻石</string>
+  <string name="e290e74stkvp1ygcfpk-n27_tkvp" mz="descLbl">激活后30天内，每天可领取90钻石</string>
+  <string name="e290e74stkvp1ygcfpk-n27_tkvp-texts_0" mz="descLbl">激活后7天内，每天可领取30钻石</string>
+  <string name="e290e74stkvp1ygcfpk-n27_tkvp-texts_1" mz="descLbl">激活后30天内，每天可领取90钻石</string>
+  <string name="e290e74stkvp1ygcfpk-n26_tkvp" mz="btnClaimed">已领取</string>
+  <string name="e290e74stkvp1ygcfpk-n28_tkvp" mz="btnReward">领取</string>
+  <string name="e290e74stkvp1ygcfpk-n33_rrq3" mz="BtnBuy">30元</string>
+  <string name="e290e74stkvp1ygcfpk-n33_rrq3-texts_0" mz="BtnBuy">领取</string>
+  <string name="e290e74stkvp1ygcfpk-n33_rrq3-texts_def" mz="BtnBuy">30元</string>
+  <string name="e290e74stkvp1ygcfpk-n35_ke8i" mz="BtnBuy_next">续费</string>
+  <!-- ShopGift/components/MonthCardlabel2.xml -->
+  <string name="e290e74srrq31ygcfpt-n9_rrq3" mz="title">剩余3天</string>
+  <!-- ShopGift/components/OSGotoBtn01.xml -->
+  <string name="e290e74smzrr1ygcfmo-n1_tg9h" mz="title">前往提升</string>
+  <!-- ShopGift/components/dayBtn.xml -->
+  <string name="e290e74smzrr1ygcfmd-n1_mzrr" mz="title">第一天</string>
+  <string name="e290e74smzrr1ygcfmd-n3_mzrr" mz="title01">进行中</string>
+  <string name="e290e74smzrr1ygcfmd-n3_mzrr-texts_0" mz="title01">已结束</string>
+  <string name="e290e74smzrr1ygcfmd-n3_mzrr-texts_1" mz="title01">未开启</string>
+  <string name="e290e74smzrr1ygcfmd-n3_mzrr-texts_def" mz="title01">进行中</string>
+  <string name="e290e74smzrr1ygcfmd-n5_qx1k" mz="title02">进行中</string>
+  <string name="e290e74smzrr1ygcfmd-n5_qx1k-texts_0" mz="title02">已结束</string>
+  <string name="e290e74smzrr1ygcfmd-n5_qx1k-texts_1" mz="title02">未开启</string>
+  <string name="e290e74smzrr1ygcfmd-n5_qx1k-texts_def" mz="title02">进行中</string>
+  <!-- ShopGift/components/dayTabItem.xml -->
+  <string name="e290e74sho401ygcfjp-n3_ho40" mz="title">第一天</string>
+  <!-- ShopGift/components/daysTaskItem1.xml -->
+  <string name="e290e74sqf2s1ygcfpy-n5_ho40" mz="goBtn">前往</string>
+  <string name="e290e74sqf2s1ygcfpy-n7_ik3v" mz="receiveBtn">领取</string>
+  <string name="e290e74sqf2s1ygcfpy-n7_ik3v-texts_0" mz="receiveBtn">已领取</string>
+  <string name="e290e74sqf2s1ygcfpy-n7_ik3v-texts_def" mz="receiveBtn">领取</string>
+  <!-- ShopGift/components/rechargeItem.xml -->
+  <string name="e290e74snkto1ygcfpx-n71_ho40" mz="receiveBtn">充值领奖</string>
+  <string name="e290e74snkto1ygcfpx-n71_ho40-texts_0" mz="receiveBtn">充值领奖</string>
+  <string name="e290e74snkto1ygcfpx-n71_ho40-texts_1" mz="receiveBtn">次日领取</string>
+  <string name="e290e74snkto1ygcfpx-n71_ho40-texts_def" mz="receiveBtn">领取</string>
+  <string name="e290e74snkto1ygcfpx-n66_ho40" mz="title2">30分钟内获得首冲奖励新区优势大幅提升！</string>
+  <string name="e290e74snkto1ygcfpx-n75_t7yt" mz="smash">击碎护盾 | 武器附魔</string>
+  <string name="e290e74snkto1ygcfpx-n76_t7yt" mz="boss">地狱恶犬轻松3S</string>
+  <!-- ShopGift/components/rewardBtn.xml -->
+  <string name="e290e74smzrr1ygcfme-n4_mzrr" mz="n4">奖池预览</string>
+  <!-- ShopGift/components/serviceactivityItem1.xml -->
+  <string name="e290e74sho401ygcfka-n23_qx1k" mz="dayLbl">第       天</string>
+  <!-- ShopGift/components/serviceactivity_btn1.xml -->
+  <string name="e290e74srs9w1ygcfmq-n2_w84w" mz="title">世界首领首通</string>
+  <!-- ShopGift/components/taskTypeItem.xml -->
+  <string name="e290e74sho401ygcfjq-n3_ho40" mz="title">英雄提升</string>
+  <!-- ShopGift/panel/Child_EightGift.xml -->
+  <string name="e290e74se8ok1ygcfpf-n21_ewrz" mz="day2">第二天</string>
+  <string name="e290e74se8ok1ygcfpf-n22_ewrz" mz="day3">第三天</string>
+  <string name="e290e74se8ok1ygcfpf-n23_ewrz" mz="day4">第四天</string>
+  <string name="e290e74se8ok1ygcfpf-n24_ewrz" mz="day5">第五天</string>
+  <string name="e290e74se8ok1ygcfpf-n25_ewrz" mz="day6">第六天</string>
+  <string name="e290e74se8ok1ygcfpf-n26_ewrz" mz="day7">第七天</string>
+  <string name="e290e74se8ok1ygcfpf-n54_efo2" mz="day8">第八天</string>
+  <string name="e290e74se8ok1ygcfpf-n56_fdrb" mz="title">八日好礼</string>
+  <string name="e290e74se8ok1ygcfpf-n57_fdrb" mz="title1">八日登录，领极品英雄！</string>
+  <!-- ShopGift/panel/Child_MonthlyCard.xml -->
+  <string name="e290e74se8ok1ygcfph-n83_equg" mz="title">激活福利卡赠送战令经验</string>
+  <!-- ShopGift/panel/Child_ThreeGrow.xml -->
+  <string name="e290e74se8ok1ygcfpe-n57_fdrb" mz="title1">圣灵积分</string>
+  <string name="e290e74se8ok1ygcfpe-n62_ho40-1" mz="type_tab">探查地图</string>
+  <string name="e290e74se8ok1ygcfpe-n62_ho40-2" mz="type_tab">产能提升</string>
+  <!-- SpinePackage/Window/SpineMainView.xml -->
+  <string name="dhoj786wu1ch8t-n10_efgr" mz="txtName">Ataier</string>
+  <string name="dhoj786wu1ch8t-n12_efgr" mz="closeBtn">关闭</string>
+  <!-- Welfare/components/Bubbling001.xml -->
+  <string name="340eighfk0ke1ygcfn7-n23_k0ke" mz="n23">可在他人市集出售玄石，快将你的市集分享到世界吧！</string>
+  <!-- Welfare/components/CheckInItem.xml -->
+  <string name="340eighfrs9w1ygcfmu-n1_b0uj" mz="title">第一天</string>
+  <string name="340eighfrs9w1ygcfmu-n7_b0uj" mz="stateLbl">已领取</string>
+  <string name="340eighfrs9w1ygcfmu-n7_b0uj-texts_0" mz="stateLbl">再次领取</string>
+  <string name="340eighfrs9w1ygcfmu-n7_b0uj-texts_1" mz="stateLbl">补签</string>
+  <string name="340eighfrs9w1ygcfmu-n7_b0uj-texts_2" mz="stateLbl">已领取</string>
+  <string name="340eighfrs9w1ygcfmu-n7_b0uj-texts_def" mz="stateLbl">可领取</string>
+  <string name="340eighfrs9w1ygcfmu-n10_mb2b" mz="n10">补签</string>
+  <!-- Welfare/components/DiamondItem.xml -->
+  <string name="340eighf9sqn1ygcfir-n7_9sqn" mz="n7">￥</string>
+  <string name="340eighf9sqn1ygcfir-n13_9sqn" mz="descLbl">战令经验+60000</string>
+  <string name="340eighf9sqn1ygcfir-n9_9sqn" mz="n9">首次购买</string>
+  <string name="340eighf9sqn1ygcfir-n12_9sqn" mz="tagTitle">赠送6480</string>
+  <!-- Welfare/components/LimitShopRewBtn.xml -->
+  <string name="340eighfcmbvhz9cya-n6_w7qq" mz="title">1级</string>
+  <!-- Welfare/components/LimitShop_Slider.xml -->
+  <string name="340eighfcmbv1ygcfl2-n3_m6fl" mz="number">数量：</string>
+  <!-- Welfare/components/LimitShop_box.xml -->
+  <string name="340eighfcmbvhz9cy9-n18_eaah" mz="rewBtn0">1级</string>
+  <string name="340eighfcmbvhz9cy9-n19_eaah" mz="rewBtn1">2级</string>
+  <string name="340eighfcmbvhz9cy9-n20_eaah" mz="rewBtn2">3级</string>
+  <string name="340eighfcmbvhz9cy9-n21_eaah" mz="rewBtn3">4级</string>
+  <string name="340eighfcmbvhz9cy9-n22_eaah" mz="rewBtn4">5级</string>
+  <!-- Welfare/components/LimitShop_btn1.xml -->
+  <string name="340eighfrjiw1ygcfj1-n2_w84w" mz="title">营业中</string>
+  <string name="340eighfrjiw1ygcfj1-n9_rjiw" mz="title1">休息中</string>
+  <!-- Welfare/components/LimitShop_btn10.xml -->
+  <string name="340eighfcmbv1ygcfjf-n2_w84w" mz="title">点击翻开</string>
+  <!-- Welfare/components/LimitShop_btn11.xml -->
+  <string name="340eighfcmbv1ygcfjh-n2_w84w" mz="title">已领取</string>
+  <!-- Welfare/components/LimitShop_btn12.xml -->
+  <string name="340eighfcmbv1ygcfjl-n2_w84w" mz="title">英
+雄
+卡</string>
+  <!-- Welfare/components/LimitShop_btn14.xml -->
+  <string name="340eighfmizd1ygcfqm-n2_w84w" mz="title">我的市集</string>
+  <!-- Welfare/components/LimitShop_btn2.xml -->
+  <string name="340eighfcmbv1ygcfjj-n2_w84w" mz="title">领取</string>
+  <!-- Welfare/components/LimitShop_btn3.xml -->
+  <string name="340eighfrjiw1ygcfj2-n2_w84w" mz="title">账本</string>
+  <!-- Welfare/components/LimitShop_btn4.xml -->
+  <string name="340eighfrjiw1ygcfj3-n2_w84w" mz="title">我的市集</string>
+  <!-- Welfare/components/LimitShop_btn5.xml -->
+  <string name="340eighfrjiw1ygcfj4-n2_w84w" mz="sell">售卖</string>
+  <!-- Welfare/components/LimitShop_btn6.xml -->
+  <string name="340eighfrjiw1ygcfj5-n2_w84w" mz="title">奖励</string>
+  <!-- Welfare/components/LimitShop_btn8.xml -->
+  <string name="340eighfcmbv1ygcfjc-n2_w84w" mz="title">100刷新</string>
+  <!-- Welfare/components/LimitShop_btn9.xml -->
+  <string name="340eighfcmbv1ygcfje-n2_w84w" mz="title">领取</string>
+  <!-- Welfare/components/LimitShop_item2.xml -->
+  <string name="340eighfcmbv1ygcfji-n0_cmbv" mz="name">道具卡
+</string>
+  <string name="340eighfcmbv1ygcfji-n7_cmbv" mz="title">招募卡</string>
+  <!-- Welfare/components/LimitShop_item4.xml -->
+  <string name="340eighfcmbv1ygcfjq-n2_cmbv" mz="openTxt">营业中...</string>
+  <string name="340eighfcmbv1ygcfjq-n2_cmbv-texts_0" mz="openTxt">休息中...</string>
+  <string name="340eighfcmbv1ygcfjq-n2_cmbv-texts_def" mz="openTxt">营业中...</string>
+  <string name="340eighfcmbv1ygcfjq-n3_cmbv" mz="visitBtn">串门</string>
+  <!-- Welfare/components/MenuItemWelfare.xml -->
+  <string name="340eighfmqls1ygcfi8-n2_w84w" mz="title">首充礼包</string>
+  <!-- Welfare/components/MenuTypeWelfare.xml -->
+  <string name="340eighfdfim1ygcfpi-n0_w84w" mz="title">日常活动</string>
+  <!-- Welfare/components/PriceBtn.xml -->
+  <string name="340eighfhsk61ygcfln-n1_hsk6" mz="title">￥68.00</string>
+  <string name="340eighfhsk61ygcfln-n2_hsk6" mz="title01">￥36.00</string>
+  <!-- Welfare/components/TodayItem.xml -->
+  <string name="340eighfhsk61ygcflo-n10_hsk6" mz="receiveBtn">领取</string>
+  <string name="340eighfhsk61ygcflo-n10_hsk6-texts_0" mz="receiveBtn">已领取</string>
+  <string name="340eighfhsk61ygcflo-n10_hsk6-texts_def" mz="receiveBtn">领取</string>
+  <!-- Welfare/components/activity_firstboss1.xml -->
+  <string name="340eighfq60q1ygcfhg-n1_rr0d" mz="quanfu">全服首通</string>
+  <string name="340eighfq60q1ygcfhg-n10_q60q" mz="name2">虚以待位</string>
+  <string name="340eighfq60q1ygcfhg-n11_snky" mz="receiveBtn">领取</string>
+  <string name="340eighfq60q1ygcfhg-n11_snky-texts_0" mz="receiveBtn">已领取</string>
+  <string name="340eighfq60q1ygcfhg-n11_snky-texts_def" mz="receiveBtn">领取</string>
+  <!-- Welfare/components/activity_firstboss2.xml -->
+  <string name="340eighfq60q1ygcfhh-n1_rr0d" mz="quanfu">个人首通</string>
+  <string name="340eighfq60q1ygcfhh-n6_rr0d" mz="receiveBtn">领取</string>
+  <string name="340eighfq60q1ygcfhh-n6_rr0d-texts_0" mz="receiveBtn">已领取</string>
+  <string name="340eighfq60q1ygcfhh-n6_rr0d-texts_def" mz="receiveBtn">领取</string>
+  <string name="340eighfq60q1ygcfhh-n7_snky" mz="challengeBtn">前往</string>
+  <!-- Welfare/components/chargeItem.xml -->
+  <string name="340eighfd1gb1ygcflv-n3_d1gb" mz="title1">首充即送！</string>
+  <string name="340eighfd1gb1ygcflv-n4_d1gb" mz="title2">SSR 极品英雄</string>
+  <string name="340eighfd1gb1ygcflv-n7_d1gb" mz="timeCount">第一天</string>
+  <!-- Welfare/components/rbtn01.xml -->
+  <string name="340eighfloe91ygcflw-n2_w84w" mz="title">首充礼包</string>
+  <!-- Welfare/panel/Child_CheckInView.xml -->
+  <string name="340eighfrs9w1ygcfmv-n26_b0uj" mz="titleTxt">充值任意金额可领取本日双倍签到奖励！</string>
+  <string name="340eighfrs9w1ygcfmv-n10_w84w" mz="timerTxt">剩余时间：1天02:20:30</string>
+  <string name="340eighfrs9w1ygcfmv-n28_av6e" mz="descTxt">每日凌晨5点刷新</string>
+  <!-- Welfare/panel/Child_DiamondView.xml -->
+  <string name="340eighf9sqn1ygcfib-n63_9sqn" mz="goWarBtn">前往战令</string>
+  <string name="340eighf9sqn1ygcfib-n65_9sqn" mz="descTxt">还需要充值获得50战令经验可升级到100级</string>
+  <string name="340eighf9sqn1ygcfib-n75_9sqn" mz="titleTxt">充值即可获得10倍战令经验</string>
+  <string name="340eighf9sqn1ygcfib-n73_9sqn-0" mz="diamondList">赠送60</string>
+  <string name="340eighf9sqn1ygcfib-n73_9sqn-1" mz="diamondList">赠送450</string>
+  <string name="340eighf9sqn1ygcfib-n73_9sqn-2" mz="diamondList">赠送680</string>
+  <string name="340eighf9sqn1ygcfib-n73_9sqn-3" mz="diamondList">赠送680</string>
+  <string name="340eighf9sqn1ygcfib-n73_9sqn-4" mz="diamondList">赠送680</string>
+  <string name="340eighf9sqn1ygcfib-n73_9sqn-5" mz="diamondList">赠送680</string>
+  <!-- Welfare/panel/Child_ThanatorView.xml -->
+  <string name="340eighfqysg1ygcfne-n36_mqls" mz="name">联盟圣兽</string>
+  <string name="340eighfqysg1ygcfne-n70_qysg" mz="describe">每日18:00-22:00开启</string>
+  <string name="340eighfqysg1ygcfne-n73_qysg" mz="describe2">双倍掉落</string>
+  <string name="340eighfqysg1ygcfne-n16_s9vk" mz="frequency">奖励预览</string>
+  <string name="340eighfqysg1ygcfne-n64_mccu" mz="goBtn">前往参加</string>
+  <string name="340eighfqysg1ygcfne-n76_bykz" mz="num">个人可挑战次数：X</string>
+  <!-- Welfare/panel/Child_TodayView.xml -->
+  <string name="340eighfs1uz1ygcfl7-n65_9sqn" mz="explainLbl01">超值礼包!!</string>
+  <string name="340eighfs1uz1ygcfl7-n78_s1uz" mz="explainLbl02">极品豪礼</string>
+  <string name="340eighfs1uz1ygcfl7-n79_s1uz" mz="explainLbl03">越买 越划算！</string>
+  <string name="340eighfs1uz1ygcfl7-n81_s1uz" mz="n81">超值套餐</string>
+  <string name="340eighfs1uz1ygcfl7-n82_s1uz" mz="n82">一次性购买今日所有每日特惠礼包</string>
+  <string name="340eighfs1uz1ygcfl7-n83_hsk6" mz="n83">连续购买折上折，可最低降低至[color=#fcff00]98[/color]元！</string>
+  <!-- Welfare/panel/Child_WishView.xml -->
+  <string name="340eighfikk01ygcfi9-n16_s9vk" mz="frequency">剩余次数: </string>
+  <!-- Welfare/panel/Child_WorldBossView.xml -->
+  <string name="340eighfg2er1ygcfm0-n9_w84w" mz="title_name">Boss首通</string>
+  <string name="340eighfg2er1ygcfm0-n10_w84w" mz="describelbl">丰厚奖励，赶紧来参加吧，手慢就没有了！</string>
+  <!-- Welfare/panel/LimitShopBrowseView.xml -->
+  <string name="340eighfcmbv1ygcfjp-n3_cmbv" mz="title">串门</string>
+  <string name="340eighfcmbv1ygcfjp-n29_cmbv" mz="menber">联盟成员</string>
+  <string name="340eighfcmbv1ygcfjp-n30_cmbv" mz="sta">状态</string>
+  <string name="340eighfcmbv1ygcfjp-n31_cmbv" mz="operation">操作</string>
+  <!-- Welfare/panel/LimitShopMainView.xml -->
+  <string name="340eighfxfrq1ygcgov-n9_rjiw-1" mz="awardList">分享</string>
+  <string name="340eighfxfrq1ygcgov-n9_rjiw-2" mz="awardList">串门</string>
+  <string name="340eighfxfrq1ygcgov-n11_rjiw" mz="fairBtn">我的市集</string>
+  <string name="340eighfxfrq1ygcgov-n12_rjiw" mz="price">当前收购价</string>
+  <!-- Welfare/panel/LimitShopPreviewView.xml -->
+  <string name="340eighfcmbv1ygcfjk-n3_cmbv" mz="title">奖池预览</string>
+  <string name="340eighfcmbv1ygcfjk-n23_cmbv" mz="heroBtn">英雄卡池</string>
+  <string name="340eighfcmbv1ygcfjk-n25_cmbv" mz="stageBtn">道具卡池</string>
+  <!-- Welfare/panel/LimitShopRecordView.xml -->
+  <string name="340eighfcmbv1ygcfjt-n3_cmbv" mz="title">账本</string>
+  <string name="340eighfcmbv1ygcfjt-n29_cmbv" mz="timeTxt">时间</string>
+  <string name="340eighfcmbv1ygcfjt-n30_cmbv" mz="sourceTxt">获得来源</string>
+  <string name="340eighfcmbv1ygcfjt-n31_cmbv" mz="richerTxt">进账</string>
+  <string name="340eighfcmbv1ygcfjt-n19_cmbv" mz="sellTxt">售卖所得：</string>
+  <string name="340eighfcmbv1ygcfjt-n32_cmbv" mz="profitTxt">今日利润：</string>
+  <!-- Welfare/panel/LimitShopReplaceView.xml -->
+  <string name="340eighfcmbv1ygcfjn-n3_cmbv" mz="title">刷新</string>
+  <string name="340eighfcmbv1ygcfjn-n23_cmbv" mz="retainBtn">保留</string>
+  <string name="340eighfcmbv1ygcfjn-n25_cmbv" mz="replaceBtn">替换</string>
+  <!-- Welfare/panel/LimitShopRewardView.xml -->
+  <string name="340eighfcmbv1ygcfj6-n3_cmbv" mz="title">奖励</string>
+  <string name="340eighfcmbv1ygcfj6-n23_m6fl" mz="descTxt">增加刷新次数可提高礼盒等级
+礼盒等级高可解锁高级奖池</string>
+  <string name="340eighfcmbv1ygcfj6-n19_cmbv" mz="giftTxt">礼盒等级</string>
+  <string name="340eighfcmbv1ygcfj6-n9_cmbv" mz="freshTxt">已刷新次数</string>
+  <!-- Welfare/panel/LimitShopSellView.xml -->
+  <string name="340eighfcmbv1ygcfjr-n3_cmbv" mz="title">批量出售</string>
 </resources>
