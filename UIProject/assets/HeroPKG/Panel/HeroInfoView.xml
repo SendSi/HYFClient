@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750">
+  <displayList>
+    <graph id="n11_efgr" name="bg" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#f200cc00"/>
+    <text id="n10_efgr" name="txtName" xy="587,689" size="209,54" fontSize="40" align="center" vAlign="middle" autoSize="none" text="Ataier"/>
+    <component id="n12_efgr" name="closeBtn" src="ntdkaq" fileName="Com/txtBtn.xml" xy="37,17" size="100,47">
+      <Button title="关闭" titleFontSize="25"/>
+    </component>
+    <loader3D id="n16_tiu2" name="spineIcon" xy="339,14" size="703,659" animation="" skin="" loop="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader3D>
+    <component id="n18_ntdk" name="leftBtn" src="ntdkaq" fileName="Com/txtBtn.xml" xy="151,323" size="100,47">
+      <Button title="左" titleFontSize="25"/>
+    </component>
+    <component id="n19_ntdk" name="rightBtn" src="ntdkaq" fileName="Com/txtBtn.xml" xy="1114,320" size="100,47">
+      <Button title="右" titleFontSize="25"/>
+    </component>
+  </displayList>
+</component>

@@ -27,6 +27,7 @@ public class FGUILoader : Singleton<FGUILoader>
         {
             mCurTimeNum += 1;
             CheckTimeReleasePKG();
+            CheckTimeReleaseSpine();
         });
     }
 
@@ -219,27 +220,74 @@ public class FGUILoader : Singleton<FGUILoader>
         }
     }
 
-
 #if FAIRYGUI_SPINE
-    public IEnumerator YooLoadSpineAsset(string name, Action<SkeletonDataAsset> finishCB)
+    public class SpineRef
     {
+        public int refSum { get; set; }
+        public AssetHandle assHandle { get; set; }
+
+        public SpineRef(int tRefSum, AssetHandle ah)
+        {
+            refSum = tRefSum;
+            assHandle = ah;
+        }
+    }
+
+    Dictionary<string, SpineRef> mUsingSpineAHs = new Dictionary<string, SpineRef>();
+    Dictionary<string, int> mReleaseSpineDic = new Dictionary<string, int>(); //待释放的spine  key=spineName,value=时间
+
+    public IEnumerator YooLoadSpineAsset(string spineName, Action<SkeletonDataAsset> finishCB)
+    {
+        if (mUsingSpineAHs.TryGetValue(spineName, out var tSpineRef))
+        {
+            tSpineRef.refSum++;
+            finishCB?.Invoke(tSpineRef.assHandle.AssetObject as SkeletonDataAsset);
+            if (tSpineRef.refSum == 1)
+            {
+                Debug.LogWarning($"原本待释放的spine={spineName}重新被引用了");
+                mReleaseSpineDic.Remove(spineName);
+            }
+            yield break;
+        }
+
         var package = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
-        var handle = package.LoadAssetAsync<SkeletonDataAsset>(name);
+        var handle = package.LoadAssetAsync<SkeletonDataAsset>($"{spineName}_SkeletonData");
         yield return handle;
         var assSKE = handle.AssetObject as SkeletonDataAsset;
+        mUsingSpineAHs[spineName] = new SpineRef(1, handle);
         finishCB?.Invoke(assSKE);
     }
 
-
-    public void SetLoad(string name, GLoader3D spine)
+    public void RemoveSpine(string spineName)
     {
-        GameMain.Instance.StartCoroutine(YooLoadSpineAsset(name, (obj) =>
+        if (mUsingSpineAHs.TryGetValue(spineName, out var tSpineRef))
         {
-          spine.SetSpine(obj,0,0,new Vector2(spine.width*0.5f,spine.height));
-          spine.spineAnimation.loop  = true;
-          spine.spineAnimation.AnimationName = "idle";
-        }));  
+            tSpineRef.refSum--;
+            if (tSpineRef.refSum <= 0)
+            {
+                // mSpineHandles.Remove(spineName);//在计时器里 移除
+                mReleaseSpineDic[spineName] = (mCurTimeNum + mReleaseTime);
+                Debug.LogWarning($"{spineName} 在 {mReleaseTime}秒内 再无引用 将被释放");
+            }
+        }
     }
-    
+
+    private void CheckTimeReleaseSpine()
+    {
+        for (int i = 0; i < mReleaseSpineDic.Count; i++)
+        {
+            var item = mReleaseSpineDic.ElementAt(i);
+            if (item.Value <= mCurTimeNum)
+            {
+                var spineRef = mUsingSpineAHs[item.Key];
+                spineRef.assHandle.Release();
+                spineRef.assHandle = null;
+                Debug.LogWarning($"{item.Key} 释放了");
+
+                mUsingSpineAHs.Remove(item.Key);
+                mReleaseSpineDic.Remove(item.Key);
+            }
+        }
+    }
 #endif
 }

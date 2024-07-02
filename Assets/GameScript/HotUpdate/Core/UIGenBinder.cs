@@ -6,6 +6,7 @@ using MainRole;
 using CommonPKG;
 using GMView;
 using GuidePKG;
+using HeroPKG;
 using PokerPKG;
 using SettingPKG;
 using ShopGift;
@@ -32,5 +33,6 @@ public class UIGenBinder
         PokerPKGBinder.BindAll();
         ShopGiftBinder.BindAll();
         SpinePackageBinder.BindAll();
+        HeroPKGBinder.BindAll();
     }
 }

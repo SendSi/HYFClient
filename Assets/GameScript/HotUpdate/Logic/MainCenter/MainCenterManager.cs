@@ -28,7 +28,6 @@ public class MainCenterManager : Singleton<MainCenterManager>
         }
     }
 
-
     public List<MainUIBtnConfig> GetMainUIBtnList(int pType)
     {
         if (mMainBtnCfgsDic.TryGetValue(pType, out var cfgs))
@@ -44,8 +43,14 @@ public class MainCenterManager : Singleton<MainCenterManager>
 
     private Dictionary<int, Action> mActDic = new Dictionary<int, Action>()
     {
-        { 1001, () => { EventCenter.Instance.Fire<string>(EventEnum.EE_test, "event可能是dto"); } },
-        { 1002, () => { AudioMgr.Instance.PlayBGM("sound_explosion_enemy"); } },
+        { 1001, () => { ProxyHeroPKGModule.Instance.OpenHeroInfoView(1001); } }, //英雄
+        {
+            1002, () =>
+            {
+                AudioMgr.Instance.PlayBGM("sound_explosion_enemy");
+                EventCenter.Instance.Fire<string>(EventEnum.EE_test, "event可能是dto");
+            }
+        },
         { 1003, () => { ProxyBagModule.Instance.OpenBagMainView(); } },
         {
             1004, () =>
@@ -55,7 +60,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
             }
         },
         { 1005, () => { ProxyCommonPKGModule.Instance.AddToastStr("~~~~简易 飘字---挺长的飘字哦...."); } },
-        { 2001, () => { ProxyShopGiftModule.Instance.OpenShopGiftMainView(5001);} },
+        { 2001, () => { ProxyShopGiftModule.Instance.OpenShopGiftMainView(5001); } },
         { 2002, () => { ProxyPokerPKGModule.Instance.OpenPokerMainView(); } },
         { 2003, () => { ProxyWelfareModule.Instance.OpenWelfareMainView(1001); } }
     };
@@ -72,7 +77,6 @@ public class MainCenterManager : Singleton<MainCenterManager>
         }
     }
 }
-
 
 /// <summary> 按钮自定义类 </summary>
 public class BtnCustomCls

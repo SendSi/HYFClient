@@ -1,8 +1,5 @@
-using System;
 using FairyGUI;
-using Spine.Unity;
 using UnityEngine;
-using YooAsset;
 
 namespace Login
 {
@@ -39,44 +36,7 @@ namespace Login
             this._languCom.selectedIndex = _currComValue;
             this._languCom.items = new[] { "简体中文", "繁體中文", "English" };
             this._languCom.onChanged.Set(OnChangedLanguage);
-
-            this._spineBtn.onClick.Set(()=>
-            {
-                Debug.LogError("没有走到这里?");
-                // this._spineIcon.url="";
-                // this._spineIcon.url="ui://SpinePackage/Ataier";
-                // this._spineIcon.animationName = "idle";
-                // this._spineIcon.loop = true;
-                
-                // Load("AirenZixingHuopao");
-                
-                // this._spineIcon.SetSpine_YooAsset("AirenZixingHuopao");
-
-                FGUILoader.Instance.SetLoad("AirenZixingHuopao_SkeletonData",this._spineIcon);
-            });
         }
-        
-        
-        void Load(string name)
-        {
-            LoadSpine($"{name}_SkeletonData", delegate(AssetHandle ah)
-            {
-                var clip = ah.AssetObject as SkeletonDataAsset;
-                this._spineIcon.SetSpine(clip,0,0,new Vector2(this._spineIcon.width*0.5f,this._spineIcon.height));
-                this._spineIcon.spineAnimation.loop  = true;
-                this._spineIcon.spineAnimation.AnimationName = "idle";
-            }); 
-        }
-        
-        void LoadSpine(string name, Action<AssetHandle> clipAH)
-        {
-            var package = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
-            var handle = package.LoadAssetAsync<SkeletonDataAsset>(name);
-            handle.Completed += clipAH;
-        }
-        
-        
-        
 
         private void OnClickNoticeBtn()
         {
