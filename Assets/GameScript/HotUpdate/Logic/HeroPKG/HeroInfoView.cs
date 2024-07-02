@@ -35,6 +35,7 @@ namespace HeroPKG
             mCfgId = cfgId;
             var cfg = ConfigMgr.Instance.LoadConfigOne<HeroInfoConfig>(cfgId.ToString());
             this._spineIcon.SetLoadSpine(cfg.pathURL);
+            this._txtName.text = cfg.name;
         }
 
         public override void Dispose()
