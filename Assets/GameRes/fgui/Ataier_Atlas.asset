@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: Ataier_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: b52045ddbdb8fb04e9ed31a644f0a617, type: 3}
+  atlasFile: {fileID: 4900000, guid: 9b3c989a056ca6e40ae69a88d05ef7c2, type: 3}
   materials:
-  - {fileID: 2100000, guid: 1a5bb8af0d91ae04bb4ebdf7089d9f91, type: 2}
+  - {fileID: 2100000, guid: 06a77f85dd0c94f48a8c443b4ff1fbb6, type: 2}

@@ -16,5 +16,5 @@
     <misc id="uozrao" name="AirenGongjiang.atlas" path="/SpineRes/" exported="true"/>
     <spine id="uozran" name="AirenGongjiang.skel" path="/SpineRes/" exported="true" width="630" height="711" require="uozrao,uozr9f" atlasNames="AirenGongjiang" anchor="346,712"/>
   </resources>
-  <publish name="" genCode="true"/>
+  <publish name="" path="G:\Bingganren2021\logicenv\UnityLogic\Assets\_Resources\UI\fgui2" packageCount="2" genCode="true"/>
 </packageDescription>

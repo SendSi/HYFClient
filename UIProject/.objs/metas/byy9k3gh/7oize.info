@@ -1,13 +1,10 @@
 {
   "objectStatus": {
-    "n21_gaz3": {
-      "collapsed": true
-    },
-    "n22_qbmb": {
-      "collapsed": true
-    },
     "n25_p781": {
       "hidden": true
+    },
+    "n21_gaz3": {
+      "collapsed": true
     }
   }
 }

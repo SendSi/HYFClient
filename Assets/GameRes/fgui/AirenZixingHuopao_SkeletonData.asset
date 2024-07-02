@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AirenZixingHuopao_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 8e613b1d19b93f547a3db254238a9c40, type: 2}
+  - {fileID: 11400000, guid: aa81a9bfd77457f4f98c1d40f051ec26, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 7d3e06e8c0dc1a04c995435c2701616d, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 7f880b316aff8c44ba6133441b24db1e, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

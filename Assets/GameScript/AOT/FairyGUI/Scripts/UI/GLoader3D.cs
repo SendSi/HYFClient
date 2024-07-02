@@ -484,7 +484,7 @@ namespace FairyGUI
             InvalidateBatchingState();
         }
 
-        protected void ClearContent()
+        public void ClearContent()
         {
             if (_content.wrapTarget != null)
             {

@@ -13,16 +13,12 @@ MonoBehaviour:
   m_Name: AirenGongjiang_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 5b15bcd70b088dc48baf020d0bfd7ba4, type: 2}
+  - {fileID: 11400000, guid: 46526ba6208390f4f9f17ee4e87371dd, type: 2}
+  animationBytes: []
+  animStrings: []
+  origSkeletonPath: 
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 780df3fd17574be45bfc06a320ef5c18, type: 3}
-  isUpgradingBlendModeMaterials: 0
-  blendModeMaterials:
-    requiresBlendModeMaterials: 0
-    applyAdditiveMaterial: 0
-    additiveMaterials: []
-    multiplyMaterials: []
-    screenMaterials: []
+  skeletonJSON: {fileID: 4900000, guid: e637d96aa2e1da54da53873298b87407, type: 3}
   skeletonDataModifiers: []
   fromAnimation: []
   toAnimation: []

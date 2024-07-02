@@ -14,7 +14,6 @@ namespace Login
         public GButton _serviceBtn;
         public GButton _effectBtn;
         public GButton _stopBtn;
-        public GButton _spineBtn;
         public GGroup _left;
         public GTextField _title_version;
         public GButton _ageBtn;
@@ -26,7 +25,6 @@ namespace Login
         public GTextField _title_03;
         public GTextField _title_04;
         public GComboBox _languCom;
-        public GLoader3D _spineIcon;
         public const string URL = "ui://byy9k3gh7oize";
 
         public static LoginMainView CreateInstance()
@@ -45,7 +43,6 @@ namespace Login
             _serviceBtn = (GButton)GetChild("serviceBtn");
             _effectBtn = (GButton)GetChild("effectBtn");
             _stopBtn = (GButton)GetChild("stopBtn");
-            _spineBtn = (GButton)GetChild("spineBtn");
             _left = (GGroup)GetChild("left");
             _title_version = (GTextField)GetChild("title_version");
             _ageBtn = (GButton)GetChild("ageBtn");
@@ -57,7 +54,6 @@ namespace Login
             _title_03 = (GTextField)GetChild("title_03");
             _title_04 = (GTextField)GetChild("title_04");
             _languCom = (GComboBox)GetChild("languCom");
-            _spineIcon = (GLoader3D)GetChild("spineIcon");
         }
     }
 }

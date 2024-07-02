@@ -9,7 +9,7 @@
 public class MainUIBtnConfig
 {
 	public int id; // key值
-	public string iconURL; // 道具名称
+	public string iconURL; // 按钮
 	public string titleTxt; // 底部名字
 	public int tType; // 类型
 }
