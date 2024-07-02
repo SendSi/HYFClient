@@ -326,8 +326,11 @@ MonoBehaviour:
     FileName: 0e9069280819f29a8c154071c58bd39f.rawfile
     FileCRC32: e4dc8391
   - PackageName: HotFixPackage
-    FileName: 14dd21f14df9ef16ee383937da7d0151.rawfile
-    FileCRC32: 0e48543a
+    FileName: 0ea615acc5440ae13b8e554506044259.rawfile
+    FileCRC32: 7c1a42ab
+  - PackageName: HotFixPackage
+    FileName: 18141743bb80e3e03c8ee7aef34b646b.rawfile
+    FileCRC32: d6cccc4f
   - PackageName: HotFixPackage
     FileName: 26912b65cc0bd071ca5e5d049ea5ec8e.rawfile
     FileCRC32: 83662337
@@ -335,17 +338,14 @@ MonoBehaviour:
     FileName: 45f76de03b84fe6f0b3371b5ba3ba720.rawfile
     FileCRC32: beca53df
   - PackageName: HotFixPackage
-    FileName: 4f87c1d6c9e774da759f0c0dcfe7fee5.rawfile
-    FileCRC32: d53c757e
-  - PackageName: HotFixPackage
     FileName: 6c1b4010aef6af588338fb0451087e2a.rawfile
     FileCRC32: eebe90dd
   - PackageName: HotFixPackage
     FileName: 80602609e96e4699340294ed673b12a9.rawfile
     FileCRC32: 912d2d34
   - PackageName: HotFixPackage
-    FileName: 826198447ae1d80ce4b68ad3fb5a8e59.rawfile
-    FileCRC32: 5a78a112
+    FileName: a27a39bc5e8d966586fc0d6f7c193b30.rawfile
+    FileCRC32: 08f0b0d9
   - PackageName: HotFixPackage
     FileName: d2e259a3735391306a8a0fb7bb89bb97.rawfile
     FileCRC32: cfe66291
