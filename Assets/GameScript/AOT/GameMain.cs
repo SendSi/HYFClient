@@ -103,7 +103,7 @@ public class GameMain : MonoBehaviour
         var hotfixPackage = YooAssets.GetPackage("HotFixPackage");
         foreach (var dll in AOTMetaAssemblyFiles)
         {
-            var handle = hotfixPackage.LoadRawFileAsync($"Assets/GameResHotFix/{dll}");
+            var handle = hotfixPackage.LoadRawFileAsync($"Assets/GameResHotFix/{dll}.bytes");
             yield return handle;
             var bytes = handle.GetRawFileData();
             s_assetDatas[dll] = bytes;
@@ -116,17 +116,18 @@ public class GameMain : MonoBehaviour
     //PatchedAOTAssemblyList
     private static List<string> AOTMetaAssemblyFiles { get; } = new List<string>()
     {
-        "AOT.dll.bytes",
-        "Grpc.Core.Api.dll.bytes",
-        "UnityEngine.CoreModule.dll.bytes",
-        "YooAsset.dll.bytes",
-        "mscorlib.dll.bytes",
-        "Newtonsoft.Json.dll.bytes",
-        "System.Core.dll.bytes",
-        "UniFramework.Event.dll.bytes",
-        "Google.Protobuf.dll.bytes",
+        "AOT.dll",
+        "Google.Protobuf.dll",
+        "Grpc.Core.Api.dll",
+        "Newtonsoft.Json.dll",
+        "System.Core.dll",
+        "UniFramework.Event.dll",
+        "UnityEngine.CoreModule.dll",
+        "UnityEngine.JSONSerializeModule.dll",
+        "YooAsset.dll",
+        "mscorlib.dll",
 
-        "HotUpdate.dll.bytes",
+        "HotUpdate.dll",
     };
 
 
@@ -149,7 +150,7 @@ public class GameMain : MonoBehaviour
 #if UNITY_EDITOR
         _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
 #else
-        _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll.bytes"));
+        _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"));
 #endif
     }
 
