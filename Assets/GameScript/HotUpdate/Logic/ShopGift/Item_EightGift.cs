@@ -1,0 +1,23 @@
+using FairyGUI;
+using UnityEngine;
+
+#region << 脚 本 注 释 >>
+
+//作  用:    ProtocalShopGift
+//作  者:    曾思信
+//创建时间:  #CREATETIME#
+
+#endregion
+
+namespace ShopGift
+{
+    public partial class Item_EightGift : GButton
+    {
+        public void SetData(EightGiftConfig cfg)
+        {
+            this.title = cfg.name;
+            var list = FormatUtils.Instance.GetFormatItem(cfg.reward);
+            _rewardCtrl.selectedIndex = (list.Count-1);
+        }
+    }
+}

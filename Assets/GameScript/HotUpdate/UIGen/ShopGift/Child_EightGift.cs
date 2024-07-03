@@ -8,14 +8,14 @@ namespace ShopGift
     public partial class Child_EightGift : GComponent
     {
         public GLoader _bg;
-        public EightDayBtn1 _day1;
-        public EightDayBtn1 _day2;
-        public EightDayBtn1 _day3;
-        public EightDayBtn1 _day4;
-        public EightDayBtn1 _day5;
-        public EightDayBtn1 _day6;
-        public EightDayBtn1 _day7;
-        public EightDayBtn2 _day8;
+        public Item_EightGift _day1;
+        public Item_EightGift _day2;
+        public Item_EightGift _day3;
+        public Item_EightGift _day4;
+        public Item_EightGift _day5;
+        public Item_EightGift _day6;
+        public Item_EightGift _day7;
+        public Item_EightGift _day8;
         public GTextField _title;
         public GTextField _title1;
         public GTextField _timeText;
@@ -33,14 +33,14 @@ namespace ShopGift
             base.ConstructFromXML(xml);
 
             _bg = (GLoader)GetChild("bg");
-            _day1 = (EightDayBtn1)GetChild("day1");
-            _day2 = (EightDayBtn1)GetChild("day2");
-            _day3 = (EightDayBtn1)GetChild("day3");
-            _day4 = (EightDayBtn1)GetChild("day4");
-            _day5 = (EightDayBtn1)GetChild("day5");
-            _day6 = (EightDayBtn1)GetChild("day6");
-            _day7 = (EightDayBtn1)GetChild("day7");
-            _day8 = (EightDayBtn2)GetChild("day8");
+            _day1 = (Item_EightGift)GetChild("day1");
+            _day2 = (Item_EightGift)GetChild("day2");
+            _day3 = (Item_EightGift)GetChild("day3");
+            _day4 = (Item_EightGift)GetChild("day4");
+            _day5 = (Item_EightGift)GetChild("day5");
+            _day6 = (Item_EightGift)GetChild("day6");
+            _day7 = (Item_EightGift)GetChild("day7");
+            _day8 = (Item_EightGift)GetChild("day8");
             _title = (GTextField)GetChild("title");
             _title1 = (GTextField)GetChild("title1");
             _timeText = (GTextField)GetChild("timeText");

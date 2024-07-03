@@ -7,7 +7,7 @@ namespace ShopGift
     {
         public override void OnInit()
         {
-            base.OnInit();
+            // base.OnInit();//需盖掉
             ShopGiftMenuConfig cfg = (ShopGiftMenuConfig)(this.data);
             Debug.LogError(cfg.name);
         }

@@ -13,8 +13,7 @@ namespace ShopGift
             UIObjectFactory.SetPackageItemExtension(Child_ThreeGrow.URL, typeof(Child_ThreeGrow));
             UIObjectFactory.SetPackageItemExtension(Child_EightGift.URL, typeof(Child_EightGift));
             UIObjectFactory.SetPackageItemExtension(Child_MonthlyCard.URL, typeof(Child_MonthlyCard));
-            UIObjectFactory.SetPackageItemExtension(EightDayBtn1.URL, typeof(EightDayBtn1));
-            UIObjectFactory.SetPackageItemExtension(EightDayBtn2.URL, typeof(EightDayBtn2));
+            UIObjectFactory.SetPackageItemExtension(Item_EightGift.URL, typeof(Item_EightGift));
             UIObjectFactory.SetPackageItemExtension(dayTabItem.URL, typeof(dayTabItem));
             UIObjectFactory.SetPackageItemExtension(taskTypeItem.URL, typeof(taskTypeItem));
             UIObjectFactory.SetPackageItemExtension(daysTaskItem.URL, typeof(daysTaskItem));

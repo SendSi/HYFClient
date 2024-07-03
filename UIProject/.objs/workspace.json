@@ -1,5 +1,5 @@
 {
-  "libview.firstColumnWidth": 659,
+  "libview.firstColumnWidth": 531,
   "libview.iconScale": 0,
   "doc.openedDocs": [
     "ui://vypq82a1srlq13",
@@ -14,6 +14,9 @@
     "ui://2r331opvtixj1ygcg9p",
     "ui://4ni413lalumy1qp8vd6",
     "ui://byy9k3gh7oize",
+    "ui://e290e74se8ok1ygcfpf",
+    "ui://e290e74sfdrb1ygcfiz",
+    "ui://2r331opvj842hz9cyi",
     "ui://4ni413laxoe1n2",
     "ui://2r331opvykwwkx",
     "ui://b7676vbqxbayc",
@@ -30,19 +33,17 @@
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://byy9k3gh7oize",
+  "doc.activeDoc": "ui://e290e74se8ok1ygcfpf",
   "libview.twoColumn": false,
   "libview.expandedNodes": [
     "2r331opv",
     "/",
-    "dhoj786w",
+    "e290e74s",
     "/",
-    "dhoj786w",
-    "/Com/",
-    "dhoj786w",
-    "/SpineRes/",
-    "dhoj786w",
-    "/Window/"
+    "e290e74s",
+    "/components/",
+    "e290e74s",
+    "/panel/"
   ],
   "snapToGrid": true,
   "backgroundColor": 6710886,

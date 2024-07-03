@@ -60,6 +60,8 @@ namespace ShopGift
             }
         }
 
+            
+
         private string OnProviderTabList(int index)
         {
             return _menuCfg[index].rType == 0 ? "ui://ShopGift/Item_ShopType" : "ui://ShopGift/Item_ShopMenu";

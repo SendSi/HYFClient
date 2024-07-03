@@ -3,8 +3,7 @@
   <resources>
     <component id="11e631ygcfir" name="Item_ShopMenu.xml" path="/components/" exported="true"/>
     <component id="11e631ygcfiu" name="Item_ShopType.xml" path="/components/" exported="true"/>
-    <component id="fdrb1ygcfiz" name="EightDayBtn1.xml" path="/components/" exported="true"/>
-    <component id="fdrb1ygcfj0" name="EightDayBtn2.xml" path="/components/" exported="true"/>
+    <component id="fdrb1ygcfiz" name="Item_EightGift.xml" path="/components/" exported="true"/>
     <image id="ho401ygcfje" name="serviceactivity_1.png" path="/images/number/" exported="true"/>
     <image id="ho401ygcfjf" name="serviceactivity_2.png" path="/images/number/" exported="true"/>
     <image id="ho401ygcfjg" name="serviceactivity_3.png" path="/images/number/" exported="true"/>
