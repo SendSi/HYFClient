@@ -9,7 +9,7 @@
 
 @ECHO Converting excel files in folder %EXCEL_FOLDER% ...
 for /f "delims=" %%i in ('dir /b /a-d /s %EXCEL_FOLDER%\*.xlsx') do (
-	@echo %%i | findstr /i /c:"WelfareMenuConfig.xlsx" /c:"ShopGiftMenuConfig.xlsx" /c:"CheckInConfig.xlsx" /c:"RechargeConfig.xlsx" /c:"TodayGiftConfig.xlsx" /c:"MainUIBtnConfig.xlsx" /c:"GuideStepConfig.xlsx" > nul   
+	@echo %%i | findstr /i /c:"WelfareMenuConfig.xlsx" /c:"ShopGiftMenuConfig.xlsx" /c:"EightGiftConfig.xlsx" /c:"CheckInConfig.xlsx" /c:"RechargeConfig.xlsx" /c:"TodayGiftConfig.xlsx" /c:"MainUIBtnConfig.xlsx" /c:"GuideStepConfig.xlsx" > nul   
 	REM 这里的使用List形式        默认使用字典形式
     if errorlevel 1 (
         @echo   processing %%~nxi 
