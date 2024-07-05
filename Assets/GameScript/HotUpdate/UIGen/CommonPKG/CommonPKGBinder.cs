@@ -88,6 +88,7 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(com_btnAdd2.URL, typeof(com_btnAdd2));
             UIObjectFactory.SetPackageItemExtension(horseTitle.URL, typeof(horseTitle));
             UIObjectFactory.SetPackageItemExtension(sort.URL, typeof(sort));
+            UIObjectFactory.SetPackageItemExtension(Item_BaseProp.URL, typeof(Item_BaseProp));
             UIObjectFactory.SetPackageItemExtension(com_btnAdd_diamonds.URL, typeof(com_btnAdd_diamonds));
             UIObjectFactory.SetPackageItemExtension(comItem_AnimEffect.URL, typeof(comItem_AnimEffect));
             UIObjectFactory.SetPackageItemExtension(generalFragment01.URL, typeof(generalFragment01));

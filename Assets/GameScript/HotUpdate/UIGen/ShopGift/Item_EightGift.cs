@@ -11,9 +11,9 @@ namespace ShopGift
         public Controller _rewardCtrl;
         public Controller _colorCtrl;
         public GLoader _bg;
-        public GButton _icon1;
-        public GButton _icon2;
-        public GButton _icon3;
+        public GComponent _icon1;
+        public GComponent _icon2;
+        public GComponent _icon3;
         public GTextField _stateTxt;
         public GTextField _stateTxt1;
         public GTextField _title1;
@@ -34,9 +34,9 @@ namespace ShopGift
             _rewardCtrl = GetController("rewardCtrl");
             _colorCtrl = GetController("colorCtrl");
             _bg = (GLoader)GetChild("bg");
-            _icon1 = (GButton)GetChild("icon1");
-            _icon2 = (GButton)GetChild("icon2");
-            _icon3 = (GButton)GetChild("icon3");
+            _icon1 = (GComponent)GetChild("icon1");
+            _icon2 = (GComponent)GetChild("icon2");
+            _icon3 = (GComponent)GetChild("icon3");
             _stateTxt = (GTextField)GetChild("stateTxt");
             _stateTxt1 = (GTextField)GetChild("stateTxt1");
             _title1 = (GTextField)GetChild("title1");

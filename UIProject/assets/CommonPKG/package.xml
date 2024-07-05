@@ -1103,6 +1103,7 @@
     <image id="o7xi1ygcgrt" name="main_bg04.png" path="/_new/" favorite="true" scale="9grid" scale9grid="8,8,5,4"/>
     <component id="g30w7" name="settingSbr_grip.xml" path="/components_new/" exported="true"/>
     <component id="lg2o1ygcgrv" name="horseTitle.xml" path="/components_new/" exported="true"/>
+    <component id="lmzq1ygcgrw" name="Item_BaseProp.xml" path="/components/" exported="true" favorite="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

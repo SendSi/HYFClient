@@ -7,10 +7,10 @@ using System.Text.RegularExpressions;
 /// </summary>
 public class FormatUtils : Singleton<FormatUtils>
 {
-    Dictionary<string, List<ItemT1>> mFormatItemDic = new Dictionary<string, List<ItemT1>>();
+    Dictionary<string, List<ItemProp>> mFormatItemDic = new Dictionary<string, List<ItemProp>>();
 
 
-    public List<ItemT1> GetFormatItem(string itemStr)
+    public List<ItemProp> GetFormatItem(string itemStr)
     {
         if (mFormatItemDic.TryGetValue(itemStr, out var itemList))
         {
@@ -18,7 +18,7 @@ public class FormatUtils : Singleton<FormatUtils>
         }
         else
         {
-            itemList = new List<ItemT1>();
+            itemList = new List<ItemProp>();
             var matches = Regex.Matches(itemStr, @"(\d+):(\d+)");
 
             foreach (Match match in matches)
@@ -27,7 +27,7 @@ public class FormatUtils : Singleton<FormatUtils>
                 {
                     var id = int.Parse(match.Groups[1].Value);
                     var num = int.Parse(match.Groups[2].Value);
-                    itemList.Add(new ItemT1(id, num));
+                    itemList.Add(new ItemProp(id, num));
                 }
             }
 
@@ -37,12 +37,12 @@ public class FormatUtils : Singleton<FormatUtils>
     }
 }
 
-public class ItemT1
+public class ItemProp
 {
     public int id { get; set; }
     public int num { get; set; }
 
-    public ItemT1(int id, int num)
+    public ItemProp(int id, int num)
     {
         this.id = id;
         this.num = num;
