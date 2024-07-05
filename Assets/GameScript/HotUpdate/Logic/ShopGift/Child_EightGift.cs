@@ -16,7 +16,7 @@ namespace ShopGift
             for (int i = 1; i <= 8; i++)
             {
                 var item = (Item_EightGift)GetChild($"day{i}");
-                item.SetData(list[i - 1]);
+                item.SetData(list[i - 1]);//Item_EightGift
             }
         }
 

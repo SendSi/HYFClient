@@ -16,7 +16,6 @@ namespace CommonPKG
         public GGroup _icon_bg;
         public GLoader _fragmentIcon;
         public generalFragment _iconFragment;
-        public GImage _image;
         public GGroup _2_fragment;
         public generalFragment01 _Keepsake;
         public GTextField _hasNumTxt;
@@ -47,7 +46,6 @@ namespace CommonPKG
             _icon_bg = (GGroup)GetChild("icon_bg");
             _fragmentIcon = (GLoader)GetChild("fragmentIcon");
             _iconFragment = (generalFragment)GetChild("iconFragment");
-            _image = (GImage)GetChild("image");
             _2_fragment = (GGroup)GetChild("2_fragment");
             _Keepsake = (generalFragment01)GetChild("Keepsake");
             _hasNumTxt = (GTextField)GetChild("hasNumTxt");

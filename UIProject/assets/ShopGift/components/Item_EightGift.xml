@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="220,225" pivot="0.5,0.5" extention="Button">
-  <controller name="stateCtrl" exported="true" pages="2,,1,,0," selected="1">
+  <controller name="stateCtrl" exported="true" pages="2,,1,,0," selected="0">
     <remark page="0" value="不可领取"/>
     <remark page="1" value="可领取"/>
     <remark page="2" value="已领取"/>
@@ -21,21 +21,21 @@
     <image id="n24_wpdk" name="n24" src="qx1k1ygcfmv" fileName="images/new/carnival_bg14.png" xy="-19,-20" size="259,262">
       <gearDisplay controller="stateCtrl" pages="1"/>
     </image>
-    <component id="n20_ciac" name="icon1" src="j842hz9cyi" fileName="components/comItem.xml" pkg="2r331opv" xy="56,51" size="120,140" scale="0.9,0.9">
+    <component id="n20_ciac" name="icon1" src="lmzq1ygcgrw" fileName="components/Item_BaseProp.xml" pkg="2r331opv" xy="56,51" size="120,140" scale="0.9,0.9">
       <gearXY controller="rewardCtrl" pages="0,1,2" values="56,51|26,65|80,50"/>
       <gearSize controller="rewardCtrl" pages="0,1,2" values="120,140,0.9,0.9|120,140,0.7,0.7|120,140,0.5,0.5"/>
     </component>
-    <component id="n21_ciac" name="icon2" src="j842hz9cyi" fileName="components/comItem.xml" pkg="2r331opv" xy="20,52" size="110,112">
+    <component id="n21_ciac" name="icon2" src="lmzq1ygcgrw" fileName="components/Item_BaseProp.xml" pkg="2r331opv" xy="20,52" size="110,112">
       <gearDisplay controller="rewardCtrl" pages="1,2,3"/>
       <gearXY controller="rewardCtrl" pages="0,1,2" values="20,52|110,65|111,110"/>
       <gearSize controller="rewardCtrl" pages="1,2" values="120,140,0.7,0.7|120,140,0.5,0.5" default="110,112,1,1"/>
     </component>
-    <component id="n22_ciac" name="icon3" src="j842hz9cyi" fileName="components/comItem.xml" pkg="2r331opv" xy="20,52" size="110,112">
+    <component id="n22_ciac" name="icon3" src="lmzq1ygcgrw" fileName="components/Item_BaseProp.xml" pkg="2r331opv" xy="20,52" size="110,112">
       <gearDisplay controller="rewardCtrl" pages="2,3"/>
       <gearXY controller="rewardCtrl" pages="0,1,2" values="20,52|-10,46|50,110"/>
       <gearSize controller="rewardCtrl" pages="1,2" values="110,112,0.5,0.5|120,140,0.5,0.5" default="110,112,1,1"/>
     </component>
-    <text id="n6_gwzj" name="stateTxt" xy="78,181" pivot="0.5,0.5" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#fff267" align="center" vAlign="middle" text="可领取">
+    <text id="n6_gwzj" name="stateTxt" xy="68,181" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#212a52" align="center" vAlign="middle" text="不可领取">
       <gearDisplay controller="colorCtrl" pages="0"/>
       <gearColor controller="stateCtrl" pages="2,1,0" values="#212a52,#000000|#fff267,#000000|#212a52,#000000"/>
       <gearText controller="stateCtrl" pages="2,1" values="不可领取|可领取" default="已领取"/>
@@ -43,7 +43,7 @@
     <text id="n7_gwzj" name="title" xy="72,12" pivot="0.5,0.5" size="76,34" font="ui://2r331opvno3vhz9d63" fontSize="24" color="#7577b3" align="center" vAlign="middle" text="第一天">
       <gearDisplay controller="colorCtrl" pages="0"/>
     </text>
-    <text id="n26_cale" name="stateTxt1" xy="78,181" pivot="0.5,0.5" size="64,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#fff267" align="center" vAlign="middle" text="可领取">
+    <text id="n26_cale" name="stateTxt1" xy="68,181" pivot="0.5,0.5" size="84,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#590919" align="center" vAlign="middle" text="不可领取">
       <gearDisplay controller="colorCtrl" pages="1"/>
       <gearColor controller="stateCtrl" pages="2,1,0" values="#590919,#000000|#fff267,#000000|#590919,#000000"/>
       <gearText controller="stateCtrl" pages="2,1" values="不可领取|可领取" default="已领取"/>
@@ -58,5 +58,5 @@
       <gearDisplay controller="stateCtrl" pages="1"/>
     </graph>
   </displayList>
-  <Button downEffect="scale" downEffectValue=".96"/>
+  <Button downEffect="scale" downEffectValue=".99"/>
 </component>
