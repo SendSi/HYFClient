@@ -30,6 +30,7 @@ public class GameMain : MonoBehaviour
         UniEvent.Initalize();
         // 初始化资源系统
         YooAssets.Initialize();
+        Debuger.EnableLog = AppConfig.EnableLog;
 
        FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
        this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();

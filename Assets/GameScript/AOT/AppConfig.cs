@@ -15,9 +15,11 @@ public static class AppConfig
     
     public static string defaultYooAssetPKG = "DefaultPackage"; //默认的yooAsset包名
 
+    public static bool EnableLog = true; //是否开启日志   本想Debug.logger.logEnabled = false;可以让服务端做一个密令一类的东西， 正式版也能让客户端把LOG打开
+    
     #region editor下使用的
 
-    public static string resVersion = "v1.1"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
+    public static string resVersion = "v1.0"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
     public static string localCDN = "D:/WWW_hyfclient/CDN/"; //本地cdn资源服务器 磁盘路径
 
     #endregion
