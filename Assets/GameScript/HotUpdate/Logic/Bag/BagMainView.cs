@@ -95,7 +95,7 @@ namespace Bag
 
         private void OnEventTest(string arg0)
         {
-            Debug.LogError("BagMainView 监听    EN_test_" + arg0);
+            Debuger.LogError("BagMainView 监听    EN_test_" + arg0);
         }
 
         private void OnClickCloseMainView()
@@ -117,7 +117,7 @@ namespace Bag
         private async void OnClickUsing()
         {
             var result = await ProtocalBag.Instance.BagUsingItem(1, 1);
-            Debug.LogError(result);
+            Debuger.LogError(result);
         }
     }
 }

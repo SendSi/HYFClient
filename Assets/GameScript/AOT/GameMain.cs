@@ -18,7 +18,7 @@ public class GameMain : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        Debug.Log($"资源系统运行模式：{PlayMode}");
+        Debuger.Log($"资源系统运行模式：{PlayMode}");
         Application.targetFrameRate = 60;
         Application.runInBackground = true;
         DontDestroyOnLoad(this.gameObject);
@@ -146,7 +146,7 @@ public class GameMain : MonoBehaviour
             byte[] dllBytes = ReadBytesFromStreamingAssets(aotDllName);
             // 加载assembly对应的dll，会自动为它hook。一旦aot泛型函数的native函数不存在，用解释器版本代码
             LoadImageErrorCode err = RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);
-            Debug.Log($"LoadMetadataForAOTAssembly:{aotDllName}. mode:{mode} ret:{err}");
+            Debuger.Log($"LoadMetadataForAOTAssembly:{aotDllName}. mode:{mode} ret:{err}");
         }
 #if UNITY_EDITOR
         _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集

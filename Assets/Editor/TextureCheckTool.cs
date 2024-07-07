@@ -215,7 +215,7 @@ namespace MEditor
                 tGo = AssetDatabase.LoadMainAssetAtPath(path) as Texture;
                 if (tGo == null)
                 {
-                    Debug.LogWarning("path=" + path);
+                    Debuger.LogWarning("path=" + path);
                 }
 
                 if (pType == 0)

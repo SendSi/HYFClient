@@ -22,12 +22,12 @@ public class ProtocalLogin : Singleton<ProtocalLogin>
             while (await responseStream.MoveNext(tokenCancel.Token))
             {
                 var current = responseStream.Current;
-                Debug.LogWarning($"login:{current}");
+                Debuger.LogWarning($"login:{current}");
             }
         }
         catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled && tokenCancel.IsCancellationRequested)
         {
-            // Debug.LogError("Cancelled");
+            // Debuger.LogError("Cancelled");
         }
         catch (Exception ex)
         {
@@ -47,7 +47,7 @@ public class ProtocalLogin : Singleton<ProtocalLogin>
         {
             NickName = nickName
         });
-        Debug.LogWarning($"大于0成功,其他都失败_____所以_登录结果:{res.Id}");
+        Debuger.LogWarning($"大于0成功,其他都失败_____所以_登录结果:{res.Id}");
         return res;
     }
 

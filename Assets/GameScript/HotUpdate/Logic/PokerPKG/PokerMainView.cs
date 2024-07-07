@@ -38,14 +38,14 @@ namespace PokerPKG
             var item = this._selfCardList.GetSelection();
             for (int i = 0; i < item.Count; i++)
             {
-                Debug.LogError($"从0开始,选中索引 {item[i]}");
+                Debuger.LogError($"从0开始,选中索引 {item[i]}");
             }
         }
 
         private void OnClickItemSelfCard(EventContext context)
         {
             var gb = (GButton)(context.data);
-            Debug.Log(gb.data);
+            Debuger.Log(gb.data);
         }
 
         private void OnRenderSelfCardList(int index, GObject item)

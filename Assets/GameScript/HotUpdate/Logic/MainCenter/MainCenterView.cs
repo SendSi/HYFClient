@@ -20,18 +20,18 @@ namespace MainCenter
 
         private void OnEventLoginIn(int arg0)
         {
-            Debug.LogError("OnEventGameOver 值 "+arg0);
+            Debuger.LogError("OnEventGameOver 值 "+arg0);
         }
 
 
         private void OnEventTest(string arg0)
         {
-            Debug.LogError("MainCenterView 监听了  EN_test_"+arg0);
+            Debuger.LogError("MainCenterView 监听了  EN_test_"+arg0);
         }
 
         private void OnEventTest1(string text)
         {
-            Debug.LogError("MainCenterView 监听    EN_test:" + text);
+            Debuger.LogError("MainCenterView 监听    EN_test:" + text);
         }
 
         private void OnClickQuit()
@@ -43,7 +43,7 @@ namespace MainCenter
         {
             base.Dispose();
             DisposeEles();
-            Debug.LogWarning("调用 Dispose MainCenterView");
+            Debuger.LogWarning("调用 Dispose MainCenterView");
             EventCenter.Instance.UnBind<string>(EventEnum.EE_test,OnEventTest);
             EventCenter.Instance.UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
         }

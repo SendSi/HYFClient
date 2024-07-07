@@ -13,7 +13,7 @@ namespace Welfare
             base.OnInit();
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debug.LogError(cfg.name);
+            Debuger.LogError(cfg.name);
 
             _cfgInfos = ConfigMgr.Instance.LoadConfigList<RechargeConfig>(); //整个表
             _cfgInfos.Sort((a, b) => { return a.id < b.id ? -1 : 1; });
@@ -28,7 +28,7 @@ namespace Welfare
 
         private void OnClickGoWarBtn()
         {
-            Debug.LogError("前往战令");
+            Debuger.LogError("前往战令");
         }
 
         private void OnRendererDiamond(int index, GObject item)

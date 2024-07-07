@@ -31,7 +31,7 @@ public class FindReferences
         }
         if (guidDics.Count > 0)
         {
-            Debug.LogError("查找引用 开始");
+            Debuger.LogError("查找引用 开始");
             mIsHasRef = false;
             var withoutExtentsions = new List<string>() { ".prefab", ".unity", ".mat", ".asset" };
             string[] files = Directory.GetFiles(Application.dataPath, "*.*", SearchOption.AllDirectories).Where(s => withoutExtentsions.Contains(Path.GetExtension(s).ToLower())).ToArray();
@@ -51,18 +51,18 @@ public class FindReferences
                     if (Regex.IsMatch(File.ReadAllText(file), guidItem.Key))
                     {
                         mIsHasRef = true;
-                        Debug.Log("查找的是=" + guidItem.Value + ",引用者=" + AssetDatabase.LoadAssetAtPath<Object>(GetRelativeAssetsPath(file)) + ",文件路径=" + file);
+                        Debuger.Log("查找的是=" + guidItem.Value + ",引用者=" + AssetDatabase.LoadAssetAtPath<Object>(GetRelativeAssetsPath(file)) + ",文件路径=" + file);
                     }
                 }
             }
             EditorUtility.ClearProgressBar();
             if (mIsHasRef)
             {
-                Debug.LogError("查找引用 结束");
+                Debuger.LogError("查找引用 结束");
             }
             else
             {
-                Debug.LogError("查找引用 结束,并无引用,请考虑删除否");
+                Debuger.LogError("查找引用 结束,并无引用,请考虑删除否");
             }
         }
     }

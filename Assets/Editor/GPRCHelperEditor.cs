@@ -38,11 +38,11 @@ public class GPRCHelperEditor
         if (process.ExitCode == 0)
         {
             AssetDatabase.Refresh();
-            Debug.Log("生成协议完成");
+            Debuger.Log("生成协议完成");
         }
         else
         {
-            Debug.LogError($"生成协议失败. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
+            Debuger.LogError($"生成协议失败. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
         }
     }
 }

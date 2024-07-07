@@ -21,7 +21,7 @@ public class ProtocalBag : Singleton<ProtocalBag>
             while (await responseStream.MoveNext(tokenCancel.Token))
             {
                 var current = responseStream.Current;
-                Debug.LogError($"bag-stream-->{current}");
+                Debuger.LogError($"bag-stream-->{current}");
                 OnEventServicePush(current);
             }
         }
@@ -53,7 +53,7 @@ public class ProtocalBag : Singleton<ProtocalBag>
     public async Task OpenBag()
     {
         var meta = ServiceManager.Instance.GetMetaData();
-        Debug.LogError($"ProtocalBag请求OpenBag--登录完之后 都要顺发送metaData");
+        Debuger.LogError($"ProtocalBag请求OpenBag--登录完之后 都要顺发送metaData");
         var res = await mService.OpenBagAsync(new OpenBagRequest(), meta);
 
         StringBuilder sb = new StringBuilder();
@@ -61,7 +61,7 @@ public class ProtocalBag : Singleton<ProtocalBag>
         {
             sb.Append(res.Items[i].ToString()+"<<-->>");
         }
-        Debug.LogError(sb.ToString());
+        Debuger.LogError(sb.ToString());
     }
 
     public async Task<BagUsingItemResponse> BagUsingItem(int cfgId, int num)

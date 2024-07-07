@@ -89,7 +89,7 @@ namespace MEditor
                     }
                     if (tListSelectGos.Count > 0)
                     {
-                        //Debug.LogError(tGo.name);
+                        //Debuger.LogError(tGo.name);
                         mDicLookPrefabs[tGo] = tListSelectGos;
                     }
                 }

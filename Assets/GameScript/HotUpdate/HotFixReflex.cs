@@ -6,7 +6,7 @@ public class HotFixReflex
     //反射调用
     public static void Run()
     {
-        Debug.LogWarning("HotFixReflex-->Run");
+        Debuger.LogWarning("HotFixReflex-->Run");
         //var gameMain = GameObject.Find("GameMain");//Find元素
         // if (gameMain != null) { gameMain.AddComponent<SafeAreaUtils>(); }
         
@@ -22,7 +22,7 @@ public class HotFixReflex
 
     public static void Destroy()
     {
-        Debug.LogWarning("HotFixReflex-->Destroy");
+        Debuger.LogWarning("HotFixReflex-->Destroy");
         ProtocalBinder.UnBind();
         ManagerBinder.UnBind();
         

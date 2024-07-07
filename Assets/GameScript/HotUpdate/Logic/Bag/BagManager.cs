@@ -11,33 +11,33 @@ public class BagManager : Singleton<BagManager>
         var bag_Res_Node = new RedDotTreeNode { parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_res, logicHander = OnBagResRedDotLogicHandler };
         var bag_Equ_Node = new RedDotTreeNode { parentNode = RedDotDefine.BagRoot, node = RedDotDefine.Bag_equ, logicHander = OnBagEquRedDotLogicHandler };
         RedDotManager.Instance.InitRedDotTree(new List<RedDotTreeNode> { bagFatherRoot, bag_All_Node, bag_Res_Node, bag_Equ_Node });
-        Debug.LogWarning("BagManager ListenBag");
+        Debuger.LogWarning("BagManager ListenBag");
     }
 
     private void OnBagResRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetResRedDot();
-        Debug.Log("OnBagResRedDotLogicHandler:" + redNode.redDotActive);
+        Debuger.Log("OnBagResRedDotLogicHandler:" + redNode.redDotActive);
     }
 
 
     private void OnBagRootRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetRootRedDot();
-        Debug.Log("OnBagRootRedDotLogicHandler:" + redNode.redDotActive);
+        Debuger.Log("OnBagRootRedDotLogicHandler:" + redNode.redDotActive);
     }
 
     private void OnBagAllRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetAllRedDot();
-        Debug.Log("OnBagAllRedDotLogicHandler:" + redNode.redDotActive);
+        Debuger.Log("OnBagAllRedDotLogicHandler:" + redNode.redDotActive);
     }
 
 
     private void OnBagEquRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetEquRedDot();
-        Debug.Log("OnBagEquRedDotLogicHandler:" + redNode.redDotActive);
+        Debuger.Log("OnBagEquRedDotLogicHandler:" + redNode.redDotActive);
     }
 
 

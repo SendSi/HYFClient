@@ -9,7 +9,7 @@ using UnityEngine;
 
 //string[] guids = AssetDatabase.FindAssets("t:scene Game" , null);
 //string scenePath = AssetDatabase.GUIDToAssetPath(guids[0]);
-//Debug.Log(scenePath);
+//Debuger.Log(scenePath);
 
 #endregion
 
@@ -30,7 +30,7 @@ public class PlaySideButton
         {
             if (Application.isPlaying)
             {
-                Debug.LogError("你游戏正在运行中");
+                Debuger.LogError("你游戏正在运行中");
                 return;
             }
 
@@ -47,7 +47,7 @@ public class PlaySideButton
         {
             if (Application.isPlaying)
             {
-                Debug.LogError("你游戏正在运行中");
+                Debuger.LogError("你游戏正在运行中");
                 return;
             }
 
@@ -64,7 +64,7 @@ public class PlaySideButton
             }
             else
             {
-                Debug.Log("点击了GM按钮，将--->进入游戏模式");
+                Debuger.Log("点击了GM按钮，将--->进入游戏模式");
                 AssetDatabase.Refresh();
                 EditorApplication.isPlaying = true;
             }

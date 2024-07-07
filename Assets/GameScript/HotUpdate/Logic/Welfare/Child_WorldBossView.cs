@@ -10,7 +10,7 @@ namespace Welfare
             base.OnInit();
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debug.LogError(cfg.name);
+            Debuger.LogError(cfg.name);
         }
     }
 }

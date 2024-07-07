@@ -7,7 +7,7 @@ public class AudioImportSetting : AssetPostprocessor
     {
         AudioImporter audioImpoter = this.assetImporter as AudioImporter;
         audioImpoter.forceToMono = true;//单声道
-                                        // Debug.Log(audio.length);
+                                        // Debuger.Log(audio.length);
 
         AudioImporterSampleSettings windowSetting = audioImpoter.GetOverrideSampleSettings("Standalone");
         AudioImporterSampleSettings androidSetting = audioImpoter.GetOverrideSampleSettings("Android");

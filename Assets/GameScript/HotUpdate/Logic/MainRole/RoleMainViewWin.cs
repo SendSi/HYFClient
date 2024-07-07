@@ -26,9 +26,9 @@ public class RoleMainViewWin : Window
     public async void SetData()
     {
         var info =await ProtocalRole.Instance.RoleUpLvRequest(101);
-        Debug.LogError($"RoleUpLvRequest 返回结果 : {info}");
+        Debuger.LogError($"RoleUpLvRequest 返回结果 : {info}");
         
         var info2 =await ProtocalRole.Instance.RoleAddVipRequest();
-        Debug.LogError($"RoleAddVipRequest 返回结果 : {info2}");
+        Debuger.LogError($"RoleAddVipRequest 返回结果 : {info2}");
     }
 }

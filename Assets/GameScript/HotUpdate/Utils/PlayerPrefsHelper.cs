@@ -47,7 +47,7 @@ public static class PlayerPrefsHelper
     {
         prefKey = $"{prefKey}_{projectPath}";
         string encryptedValue = EncryptUtils.DESEncrypt(value, encryptKey, encryptVector);
-        Debug.Log($"保存key:[{prefKey}],内容:[{value}]");
+        Debuger.Log($"保存key:[{prefKey}],内容:[{value}]");
         PlayerPrefs.SetString(prefKey, encryptedValue);
     }
 

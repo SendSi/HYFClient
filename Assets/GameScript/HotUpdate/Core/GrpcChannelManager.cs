@@ -36,7 +36,7 @@ using Grpc.Net.Extensions;
 
             MainChannel = CreateChannel(address);
 
-            Debug.LogWarning($" -->尝试连接服务器<--  " );
+            Debuger.LogWarning($" -->尝试连接服务器<--  " );
             return MainChannel;
         }
 

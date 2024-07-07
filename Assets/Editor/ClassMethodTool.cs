@@ -38,7 +38,7 @@ namespace MEditor
                     mParamsGUI.Clear();
                     mParamsNames.Clear();
                     if (PlayerPrefs.HasKey(GetType().Name) == false)
-                        Debug.Log("此程序集=" + Assembly.GetExecutingAssembly().FullName);
+                        Debuger.Log("此程序集=" + Assembly.GetExecutingAssembly().FullName);
                     PlayerPrefs.SetString(GetType().Name, GetType().Name);
                     if (string.IsNullOrEmpty(mClassName) || string.IsNullOrEmpty(mMethodName)) return;
                     try
@@ -72,7 +72,7 @@ namespace MEditor
                     }
                     catch (Exception e)
                     {
-                        Debug.LogError("异常了--查看类名.方法.参数");
+                        Debuger.LogError("异常了--查看类名.方法.参数");
                     }
                 }
                 if (mParamsInfo != null && mParamsInfo.Length > 0)//参数 展现 填值
@@ -213,7 +213,7 @@ namespace MEditor
         //                    mTempName.Add(tField.Name);
         //                    mTempValue.Add("");
         //                }
-        //                Debug.Log("");
+        //                Debuger.Log("");
         //            }
         //            catch (Exception e)
         //            {
@@ -221,7 +221,7 @@ namespace MEditor
         //                {
         //                    mTempValue[i] = EditorGUILayout.TextField(mTempName[i], mTempValue[i]);
         //                }
-        //                Debug.LogError("异常了");
+        //                Debuger.LogError("异常了");
         //            }
         //        }
 
@@ -252,7 +252,7 @@ namespace MEditor
 
         //            foreach (var item in tFields)
         //            {
-        //                Debug.Log(item.GetValue(tNewParams));
+        //                Debuger.Log(item.GetValue(tNewParams));
         //            }
         //        }
         //    }

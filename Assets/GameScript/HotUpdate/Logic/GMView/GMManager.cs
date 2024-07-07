@@ -173,6 +173,6 @@ public class GMManager : Singleton<GMManager>
 
     public void ServerMethodGM(string inputTxtText)
     {
-        Debug.LogError("直接发送后端定义的");
+        Debuger.LogError("直接发送后端定义的");
     }
 }

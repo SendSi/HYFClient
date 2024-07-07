@@ -21,7 +21,7 @@ public class ProtocalRole : Singleton<ProtocalRole>
             while (await responseStream.MoveNext(tokenCancel.Token))
             {
                 var current = responseStream.Current;
-                Debug.LogError($"role:{current}");
+                Debuger.LogError($"role:{current}");
             }
         }
         catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled && tokenCancel.IsCancellationRequested)
@@ -39,7 +39,7 @@ public class ProtocalRole : Singleton<ProtocalRole>
 
     public async Task<RoleUpLvResponse> RoleUpLvRequest(int lv)
     {
-        Debug.LogError($"proto请求 角色升级:{lv}");
+        Debuger.LogError($"proto请求 角色升级:{lv}");
         var res = await mService.RoleUpLvAsync(new RoleUpLvRequest()
         {
             Uid = "abc",
@@ -50,7 +50,7 @@ public class ProtocalRole : Singleton<ProtocalRole>
 
     public async Task<RoleAddVipResponse> RoleAddVipRequest()
     {
-        Debug.LogError($"proto请求 角色vip");
+        Debuger.LogError($"proto请求 角色vip");
         var res = await mService.RoleAddVipAsync(new RoleAddVipRequest()
         {
             Uid = "abc"

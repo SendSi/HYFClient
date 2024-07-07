@@ -15,8 +15,8 @@ namespace Login
             AudioMgr.Instance.PlayBGM("music_background");
             ProxyCommonPKGModule.Instance.LoadToastTipView(); //要加载出来 tip
 
-            // Debug.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
-            // Debug.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));
+            // Debuger.LogError(ConfigMgr.Instance.GetCurrLangCfgTxt("1001"));
+            // Debuger.LogError(ConfigMgr.Instance.GetCurrLangScriptTxt("1001"));
 
             this._loginBtn.onClick.Set(OnClickLoginEnter);
             this._ageBtn.onClick.Set(OnClickAgeBtn);
@@ -130,19 +130,19 @@ namespace Login
 
         private void OnClickCfgBtn()
         {
-            Debug.LogError("测试 加载配置文件  conifg");
+            Debuger.LogError("测试 加载配置文件  conifg");
             var infos = ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表
             ItemConfig config = null;
             if (infos.TryGetValue("2", out config))
             {
-                Debug.LogError(config.name + "  " + config.iconDesecribe);
+                Debuger.LogError(config.name + "  " + config.iconDesecribe);
                 ProxyCommonPKGModule.Instance.AddToastStr($"load config dicTable {config.name}   {config.iconDesecribe}");
             }
 
             var oneItem = ConfigMgr.Instance.LoadConfigOne<ItemConfig>("404801"); //表里的 某行数据
             if (oneItem != null)
             {
-                Debug.LogError(oneItem.name + "  " + oneItem.iconDesecribe);
+                Debuger.LogError(oneItem.name + "  " + oneItem.iconDesecribe);
                 ProxyCommonPKGModule.Instance.AddToastStr($"load config oneLineCfg {oneItem.name}   {oneItem.iconDesecribe}");
             }
         }

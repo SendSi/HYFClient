@@ -131,7 +131,7 @@ internal class PreprocessBuild : UnityEditor.Build.IPreprocessBuildWithReport
         DirectoryInfo root = new DirectoryInfo(folderPath);
         if (root.Exists == false)
         {
-            Debug.LogWarning($"没有发现YooAsset内置目录 : {folderPath}");
+            Debuger.LogWarning($"没有发现YooAsset内置目录 : {folderPath}");
             return;
         }
 
@@ -156,7 +156,7 @@ internal class PreprocessBuild : UnityEditor.Build.IPreprocessBuildWithReport
         UnityEditor.AssetDatabase.CreateAsset(manifest, saveFilePath);
         UnityEditor.AssetDatabase.SaveAssets();
         UnityEditor.AssetDatabase.Refresh();
-        Debug.Log($"一共{manifest.BuildinFiles.Count}个内置文件，内置资源清单保存成功 : {saveFilePath}");
+        Debuger.Log($"一共{manifest.BuildinFiles.Count}个内置文件，内置资源清单保存成功 : {saveFilePath}");
     }
 }
 #endif

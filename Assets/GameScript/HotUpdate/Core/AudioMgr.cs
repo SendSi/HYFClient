@@ -142,7 +142,7 @@ public class AudioMgr : Singleton<AudioMgr>
             LoadSound(name, delegate(AssetHandle ah)
             {
                 var clip = ah.AssetObject as AudioClip;
-                // Debug.LogError($"音效时长:{clip.length}");
+                // Debuger.LogError($"音效时长:{clip.length}");
                 music.clip = clip;
                 music.Play(); //load成功才能播放哦
 
