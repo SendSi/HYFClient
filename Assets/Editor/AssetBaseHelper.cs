@@ -80,7 +80,7 @@ namespace MEditor
                 tGo = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(guid)) as GameObject;
                 i++;
             }
-            if (i > 1) Debug.Log("提供的字符串中 搜索出来,有2个+(得到是最后一个)   建议prefab名字加个'_1' 得到字符串后改回来");
+            if (i > 1) Debuger.Log("提供的字符串中 搜索出来,有2个+(得到是最后一个)   建议prefab名字加个'_1' 得到字符串后改回来");
             return tGo;
         }
 
@@ -105,12 +105,12 @@ namespace MEditor
         {
             if (pParent == null)
             {
-                Debug.LogError("父 路径空了");
+                Debuger.LogError("父 路径空了");
                 return "";
             }
             if (pSelect == null)
             {
-                Debug.LogError("选中 路径空了");
+                Debuger.LogError("选中 路径空了");
                 return "";
             }
 

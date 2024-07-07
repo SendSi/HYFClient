@@ -29,7 +29,7 @@ public class YooHelperEditor : MonoBehaviour
         }
 
         AssetDatabase.Refresh();
-        Debug.Log("无报错 则成功");
+        Debuger.Log("无报错 则成功");
     }
 
 
@@ -49,7 +49,7 @@ public class YooHelperEditor : MonoBehaviour
             soreceList.Add($"{formRoot}/{item.PackageName}/{AppConfig.resVersion}");
         }
 
-        //Debug.LogError($"formRoot:{formRoot} -->     targetPath: {targetPath}");
+        //Debuger.LogError($"formRoot:{formRoot} -->     targetPath: {targetPath}");
         for (int i = 0; i < soreceList.Count; i++)
         {
             foreach (string filePath in Directory.GetFiles(soreceList[i]))
@@ -62,7 +62,7 @@ public class YooHelperEditor : MonoBehaviour
         
 
         AssetDatabase.Refresh();
-        Debug.Log("无报错 则成功      http-server --port 80 -b --cors       已copy");
+        Debuger.Log("无报错 则成功      http-server --port 80 -b --cors       已copy");
         GUIUtility.systemCopyBuffer = "http-server --port 80 -b --cors";
         System.Diagnostics.Process.Start(AppConfig.localCDN.Replace("CDN",""));
     }

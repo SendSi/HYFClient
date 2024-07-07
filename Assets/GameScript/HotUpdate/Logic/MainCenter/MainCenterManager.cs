@@ -73,7 +73,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
         }
         else
         {
-            Debug.LogError("未找到对应的点击事件");
+            Debuger.LogError("未找到对应的点击事件");
         }
     }
 }

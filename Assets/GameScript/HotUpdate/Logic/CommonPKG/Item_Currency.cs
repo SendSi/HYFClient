@@ -10,7 +10,7 @@ namespace CommonPKG
         {
             _hasNumTxt.text = BagManager.Instance.GetServerItemSum(pCfgId).ToString();
             var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(pCfgId.ToString());
-            // Debug.LogError($"{pCfgId}  {cfg.smallIcon}");
+            // Debuger.LogError($"{pCfgId}  {cfg.smallIcon}");
             _icon.icon =cfg.smallIcon;
             _addCtrl.selectedIndex = cfg.showAdd;
             mCurrencyId = pCfgId;

@@ -43,7 +43,7 @@ public class FGUILoader : Singleton<FGUILoader>
     public void AddPackage(string pkgName, Action finishCB)
     {
         UIPackage pkgED = null;
-        Debug.Log("pkgName:" + pkgName);
+        Debuger.Log("pkgName:" + pkgName);
         mReleasePKGDic.Remove(pkgName);
         if (mLoadedPKG.TryGetValue(pkgName, out pkgED))
         {
@@ -60,7 +60,7 @@ public class FGUILoader : Singleton<FGUILoader>
         var handle = assetPackage.LoadAssetAsync<TextAsset>($"{pkgName}_fui");
         yield return handle;
         var pkgDesc = handle.AssetObject as TextAsset;
-        // Debug.LogError($"LoadUIPackage{pkgName}");
+        // Debuger.LogError($"LoadUIPackage{pkgName}");
         var tUIPackage = UIPackage.AddPackage(pkgDesc.bytes, string.Empty, (name, extension, type, packageItem) =>
         {
             GameMain.Instance.StartCoroutine(LoadUIExtensions(pkgName, name, extension, type, packageItem));
@@ -70,7 +70,7 @@ public class FGUILoader : Singleton<FGUILoader>
         mLoadedPKG[pkgName] = tUIPackage; //加入字典
         TryAddHandles(pkgName, handle);
 
-        Debug.LogWarning("加入_业务包:" + pkgName);
+        Debuger.LogWarning("加入_业务包:" + pkgName);
         var pkgDeep = GetDependencies(tUIPackage); //获得  此包的 依赖包   名字s
         GameMain.Instance.StartCoroutine(LoadDependencies(pkgDeep, finishCB)); //加载依赖包
     }
@@ -85,7 +85,7 @@ public class FGUILoader : Singleton<FGUILoader>
             handle = assetPackage.LoadAssetAsync($"{package}_{name}");
 
         yield return handle;
-        // Debug.LogError($"LoadUIExtensions {package} {name} {extension}");
+        // Debuger.LogError($"LoadUIExtensions {package} {name} {extension}");
         packageItem.owner.SetItemAsset(packageItem, handle.AssetObject, DestroyMethod.None);
         TryAddHandles(package, handle);
     }
@@ -130,11 +130,11 @@ public class FGUILoader : Singleton<FGUILoader>
 
                         mLoadedPKG[pkgName] = tUIPackage;
                         TryAddHandles(pkgName, handle);
-                        Debug.LogWarning("加入_依赖包:" + pkgName);
+                        Debuger.LogWarning("加入_依赖包:" + pkgName);
                     }
                     else
                     {
-                        Debug.LogError("业务包 被当成 依赖包了   加载了-->" + pkgName + ",此业务包依赖包的个数=" + num);
+                        Debuger.LogError("业务包 被当成 依赖包了   加载了-->" + pkgName + ",此业务包依赖包的个数=" + num);
                     }
                 }
 
@@ -156,7 +156,7 @@ public class FGUILoader : Singleton<FGUILoader>
             if (mLoadedPKG.ContainsKey(pkgName))
             {
                 mReleasePKGDic[pkgName] = (mCurTimeNum + mReleaseTime);
-                Debug.LogWarning($"{pkgName} 在 {mReleaseTime}秒内 再无引用 将被释放");
+                Debuger.LogWarning($"{pkgName} 在 {mReleaseTime}秒内 再无引用 将被释放");
             }
         }
     }
@@ -173,7 +173,7 @@ public class FGUILoader : Singleton<FGUILoader>
                 mLoadedPKG.Remove(item.Key);
 
                 ReleaseHandle(item.Key);
-                Debug.LogWarning($"{item.Key} 释放了");
+                Debuger.LogWarning($"{item.Key} 释放了");
 
                 mReleasePKGDic.Remove(item.Key);
             }
@@ -244,7 +244,7 @@ public class FGUILoader : Singleton<FGUILoader>
             finishCB?.Invoke(tSpineRef.assHandle.AssetObject as SkeletonDataAsset);
             if (tSpineRef.refSum == 1)
             {
-                Debug.LogWarning($"原本待释放的spine={spineName}重新被引用了");
+                Debuger.LogWarning($"原本待释放的spine={spineName}重新被引用了");
                 mReleaseSpineDic.Remove(spineName);
             }
             yield break;
@@ -267,7 +267,7 @@ public class FGUILoader : Singleton<FGUILoader>
             {
                 // mSpineHandles.Remove(spineName);//在计时器里 移除
                 mReleaseSpineDic[spineName] = (mCurTimeNum + mReleaseTime);
-                Debug.LogWarning($"{spineName} 在 {mReleaseTime}秒内 再无引用 将被释放");
+                Debuger.LogWarning($"{spineName} 在 {mReleaseTime}秒内 再无引用 将被释放");
             }
         }
     }
@@ -282,7 +282,7 @@ public class FGUILoader : Singleton<FGUILoader>
                 var spineRef = mUsingSpineAHs[item.Key];
                 spineRef.assHandle.Release();
                 spineRef.assHandle = null;
-                Debug.LogWarning($"{item.Key} 释放了");
+                Debuger.LogWarning($"{item.Key} 释放了");
 
                 mUsingSpineAHs.Remove(item.Key);
                 mReleaseSpineDic.Remove(item.Key);

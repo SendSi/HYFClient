@@ -19,7 +19,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
     public void SetIsNeedCopy(string valueStr)
     {
         mIsNeedCopyPath = (valueStr.Equals("1"));
-        Debug.LogError($"点击后 是否copy路径:{mIsNeedCopyPath}-->若true则开启,已将会复制路径到剪切板");
+        Debuger.LogError($"点击后 是否copy路径:{mIsNeedCopyPath}-->若true则开启,已将会复制路径到剪切板");
     }
 
     protected override void OnInit()
@@ -42,7 +42,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
             if (string.IsNullOrEmpty(result) == false)
             {
                 UnityEngine.GUIUtility.systemCopyBuffer = result;
-                Debug.LogWarning(result);
+                Debuger.LogWarning(result);
             }
         }
 
@@ -128,7 +128,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
     {
         if (mGuideStepCfgs.TryGetValue(typeGuide, out var list))
         {
-            Debug.LogWarning("收到指令，开始指引了");
+            Debuger.LogWarning("收到指令，开始指引了");
             mCurrentSteps.Clear();
             foreach (var item in list)
             {
@@ -152,7 +152,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         {
             mIsGuideing = false;
             ProxyGuidePKGModule.Instance.HideGuideMainView();
-            Debug.LogWarning("完成指引了");
+            Debuger.LogWarning("完成指引了");
         }
     }
 

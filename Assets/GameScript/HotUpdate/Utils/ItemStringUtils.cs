@@ -63,12 +63,12 @@ public class ItemStringUtils : Singleton<ItemStringUtils>
             }
             else
             {
-                Debug.LogError("Failed to parse id or num");
+                Debuger.LogError("Failed to parse id or num");
             }
         }
         else
         {
-            Debug.LogError("Colon not found in input: " + originalString);
+            Debuger.LogError("Colon not found in input: " + originalString);
         }
 
         return new Item(1,1); // 如果解析失败，则返回默认的 Item 对象

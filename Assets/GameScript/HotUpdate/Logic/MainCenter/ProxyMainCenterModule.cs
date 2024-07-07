@@ -22,7 +22,7 @@ public class ProxyMainCenterModule : Singleton<ProxyMainCenterModule>, IProxy
             }
             else
             {
-                Debug.LogError("为何为null--没走MainCenterBinder.BindAll()  此业务包被当成依赖包了");
+                Debuger.LogError("为何为null--没走MainCenterBinder.BindAll()  此业务包被当成依赖包了");
             }
         });
     }

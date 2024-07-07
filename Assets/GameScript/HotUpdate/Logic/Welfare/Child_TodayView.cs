@@ -14,7 +14,7 @@ namespace Welfare
             base.OnInit();
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debug.LogError(cfg.name);
+            Debuger.LogError(cfg.name);
 
             _infoList = ConfigMgr.Instance.LoadConfigList<TodayGiftConfig>();
             _infoList.Sort((a, b) => { return a.id < b.id ? -1 : 1; });

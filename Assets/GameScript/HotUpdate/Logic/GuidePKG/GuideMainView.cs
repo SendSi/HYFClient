@@ -75,13 +75,13 @@ namespace GuidePKG
             if (isFinish==false &&  string.IsNullOrEmpty(mStepCfg.maskLoader) )
             {
                 GuidePKGManager.Instance.StopGuide();
-                Debug.Log("没mask 与 点击又没点中目标,则直接结束");
+                Debuger.Log("没mask 与 点击又没点中目标,则直接结束");
                 return;//没mask 与 点击又没点中目标,则直接结束
             }
 
             if (isFinish == false)
             {
-                Debug.Log("无匹配的完成事件类型 或 没点中目标");
+                Debuger.Log("无匹配的完成事件类型 或 没点中目标");
                 return;
             }
 
@@ -89,13 +89,13 @@ namespace GuidePKG
             {
                 Timers.inst.Add(mStepCfg.finishTime, 1, obj =>
                 {
-                    Debug.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
+                    Debuger.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
                     EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
                 });
             }
             else
             {
-                Debug.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
+                Debuger.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
                 EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
             }
         }
@@ -116,7 +116,7 @@ namespace GuidePKG
                 var target = GRoot.inst.GetChildByPath(path);
                 if (target == null)
                 {
-                    Debug.LogError($"路径错误:{path}，此guideType={mStepCfg.gType}终止");
+                    Debuger.LogError($"路径错误:{path}，此guideType={mStepCfg.gType}终止");
                     GuidePKGManager.Instance.StopGuide();
                     return;
                 }

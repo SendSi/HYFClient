@@ -38,7 +38,7 @@ namespace MEditor
                     }
                     else
                     {
-                        Debug.Log("当前=" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "," + GetNowLong());
+                        Debuger.Log("当前=" + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + "," + GetNowLong());
                     }
                     mLastNum = mNumFormat;
                     mLastTime = mTimeFormat;
@@ -146,7 +146,7 @@ namespace MEditor
             var tStart = ShowZeroTime(pStart);
             var tSp = pEnd - tStart;
             var t = (tSp / 86400000) + 1;
-            Debug.Log("第" + t + "天");
+            Debuger.Log("第" + t + "天");
             return (t).ToString();//第几天要加上1
         }
 

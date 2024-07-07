@@ -26,7 +26,7 @@ namespace FairyGUI
             _safeArea = Screen.safeArea;
             _currOrient = Screen.orientation;
             _isHole = (_safeArea.width != Screen.width || _safeArea.height != Screen.height); //true则是浏海屏
-            Debug.LogWarning($"是否浏海屏:{_isHole}");
+            Debuger.LogWarning($"是否浏海屏:{_isHole}");
         }
 
         void Start()
@@ -35,8 +35,8 @@ namespace FairyGUI
             _widthScale = _uiScreenSize.x / Screen.width;
 
             // _heightScale = _uiScreenSize.y / Screen.height;
-            //Debug.LogError($"_safeArea:{_safeArea}   size:{_uiScreenSize}   Screen:{Screen.width}_{Screen.height}    value:{_widthScale}");
-            // Debug.LogError($"size:{_uiScreenSize}   Screen:{Screen.width}_{Screen.height}    value:{_widthScale}_{_heightScale}");
+            //Debuger.LogError($"_safeArea:{_safeArea}   size:{_uiScreenSize}   Screen:{Screen.width}_{Screen.height}    value:{_widthScale}");
+            // Debuger.LogError($"size:{_uiScreenSize}   Screen:{Screen.width}_{Screen.height}    value:{_widthScale}_{_heightScale}");
             CheckScreenOrientation();
         }
 

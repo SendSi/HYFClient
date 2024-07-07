@@ -10,35 +10,35 @@ public class ClassMethodTool_Test
     public ClassMethodTool_Test()
     {
         if (PlayerPrefs.HasKey(GetType().Name) == false)
-            Debug.Log("此程序集=" + Assembly.GetExecutingAssembly().FullName);
+            Debuger.Log("此程序集=" + Assembly.GetExecutingAssembly().FullName);
         PlayerPrefs.SetString(GetType().Name, GetType().Name);
     }
     public void GetPerson()
     {
-        Debug.Log("此程序集=" + Assembly.GetExecutingAssembly().FullName + ",类名=MyTestNotify");
+        Debuger.Log("此程序集=" + Assembly.GetExecutingAssembly().FullName + ",类名=MyTestNotify");
     }
     private void GetPersonPrivate()
     {
-        Debug.Log("私有的");
+        Debuger.Log("私有的");
     }
 
     public void SetPersonName(string str)
     {
-        Debug.Log("传入的str=" + str);
+        Debuger.Log("传入的str=" + str);
     }
     public void SetPersonNameAndAge(int num, string str, TestDto dto, TestDto dto2)
     {
-        Debug.Log("传入的num=" + num + ",str=" + str + ",dto.mid=" + dto.mId + ",mName=" + dto.mName);
+        Debuger.Log("传入的num=" + num + ",str=" + str + ",dto.mid=" + dto.mId + ",mName=" + dto.mName);
     }
 
     public void SetPerson(int age, bool isMan, string name)
     {
-        Debug.Log(name + "," + age + (isMan ? "岁,男" : "岁,女"));
+        Debuger.Log(name + "," + age + (isMan ? "岁,男" : "岁,女"));
     }
 
     public void SendTestNotify(TestDto dto, TestDto dto2)
     {
-        Debug.Log(dto.mId + "," + dto2.mName);//+","+dto.mName);
+        Debuger.Log(dto.mId + "," + dto2.mName);//+","+dto.mName);
     }
 }
 public class TestDto

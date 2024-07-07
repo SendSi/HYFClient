@@ -17,7 +17,7 @@ public class SettingMainViewWin : Window
         mView = this.contentPane as SettingMainView;
         mView._bgmSbr.onChanged.Set(OnChangeBgmValue);
         mView._musicSbr.onChanged.Set(OnChangeMusicValue);
-        // Debug.LogError($"{AppConfig.bgmVolume}      {AppConfig.musicVolume}");
+        // Debuger.LogError($"{AppConfig.bgmVolume}      {AppConfig.musicVolume}");
         mView._bgmSbr.value = (int)(AppConfig.bgmVolume * 100);
         mView._musicSbr.value = (int)(AppConfig.musicVolume * 100);
 

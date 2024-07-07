@@ -50,7 +50,7 @@ namespace MEditor
             if (GUILayout.Button(mIsPrefab ? "   加载   Project面板的Prefab顶点排行" : "   加载   Project面板的Mesh顶点排行", GUILayout.Height(32)))
             {
                 mAllMesh = FindOneGos(mIsPrefab ? "Prefab" : "Mesh");
-                Debug.Log(mAllMesh.Count);
+                Debuger.Log(mAllMesh.Count);
                 mAllMesh.Sort((a, b) =>
                 {
                     var aCount = GetMeshVertCount(a);

@@ -65,7 +65,7 @@ public class VertexCount_Hierarchy : EditorWindow
 
 
             this.ShowNotification(new GUIContent(str), 2);
-            Debug.LogError(str);
+            Debuger.LogError(str);
         }
 
         mLookV2 = GUILayout.BeginScrollView(mLookV2);

@@ -10,14 +10,14 @@ namespace CommonPKG
         public void SetData(RedDotDefine type)
         {
             redKey = type;
-            // Debug.LogError($"RedPoint.cs 加注 ：{redKey}");
+            // Debuger.LogError($"RedPoint.cs 加注 ：{redKey}");
             RedDotManager.Instance.RegisterRedDotChangeEvent(redKey, OnRedDotStateChangeEvent);
             RedDotManager.Instance.UpdateRedDotState(redKey);
         }
 
         public void OnRedDotStateChangeEvent(RedDotEnum rEnum, bool active, int count)
         {
-            // Debug.LogError($"RedPoint.cs OnRedDotStateChangeEvent ：{type}  {active}  {count}");
+            // Debuger.LogError($"RedPoint.cs OnRedDotStateChangeEvent ：{type}  {active}  {count}");
             if (active)
             {
                 if (rEnum == RedDotEnum.NodeNum)
@@ -41,7 +41,7 @@ namespace CommonPKG
         {
             if (redKey != null && (int)redKey > 0)
             {
-                // Debug.LogError($"将 减注 ：{redKey}");
+                // Debuger.LogError($"将 减注 ：{redKey}");
                 RedDotManager.Instance.UnRegisterRedDotChangeEvent(redKey, OnRedDotStateChangeEvent);
             }
 

@@ -22,7 +22,7 @@ namespace CommonPKG
             mCurrencyIds = pCfgIds;
 
             _currencyList.numItems = mCurrencyIds.Count;
-            // Debug.LogError("CurrencyListCom.SetData() "+pCfgIds.Count);
+            // Debuger.LogError("CurrencyListCom.SetData() "+pCfgIds.Count);
         }
 
         public override void Dispose()

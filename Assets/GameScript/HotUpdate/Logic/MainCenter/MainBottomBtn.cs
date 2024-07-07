@@ -38,7 +38,7 @@ namespace MainCenter
                 redNode.redDotActive = true;
             }
 
-            Debug.Log("OnStoreRedDotLogicHandler:" + redNode.redDotActive);
+            Debuger.Log("OnStoreRedDotLogicHandler:" + redNode.redDotActive);
         }
     }
 }

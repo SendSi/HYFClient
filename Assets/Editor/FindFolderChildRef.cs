@@ -106,7 +106,7 @@ public class FindFolderChildRef : EditorWindow
         }
         var strLog = mInputTxt + "目录下,共计未引用有" + noneRef + "个,分别是:" + sbItem.ToString();
         EditorGUIUtility.systemCopyBuffer = strLog;
-        Debug.LogError(strLog);
+        Debuger.LogError(strLog);
         EditorUtility.ClearProgressBar();
 
         if (mIsDeleteNone)

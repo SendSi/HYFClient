@@ -18,7 +18,7 @@ namespace Welfare
             _cfgInfos.Sort((a, b) =>            {                return a.id < b.id ? -1 : 1;            });
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debug.LogError(cfg.name);
+            Debuger.LogError(cfg.name);
 
             _dayList = this._dayCom.GetChild("dayList").asList;
             _dayList.itemRenderer = OnRendererDayList;

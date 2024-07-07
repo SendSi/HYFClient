@@ -23,7 +23,7 @@ public class RedDotManager : Singleton<RedDotManager>
         }
         else
         {
-            Debug.LogError($"加注 key:{redKey} 不存在  查一下吧");
+            Debuger.LogError($"加注 key:{redKey} 不存在  查一下吧");
         }
     }
 
@@ -33,11 +33,11 @@ public class RedDotManager : Singleton<RedDotManager>
         if (mRedDotLogicDic.TryGetValue(redKey, out redDotNode))
         {
             redDotNode.OnRedDotActiveChange -= changeEvent;
-            // Debug.LogError($"减注 key:{redKey}  成功");
+            // Debuger.LogError($"减注 key:{redKey}  成功");
         }
         else
         {
-            Debug.LogError($"减注 key:{redKey} 不存在  查一下吧");
+            Debuger.LogError($"减注 key:{redKey} 不存在  查一下吧");
         }
     }
 
@@ -57,7 +57,7 @@ public class RedDotManager : Singleton<RedDotManager>
         }
         else
         {
-            Debug.LogError($"UpdateRedDotState key:{redKey} 不存在  查一下吧");
+            Debuger.LogError($"UpdateRedDotState key:{redKey} 不存在  查一下吧");
         }
     }
 

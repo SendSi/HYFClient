@@ -2,7 +2,7 @@
 using CommonPKG;
 using FairyGUI;
 using UnityEngine;
-
+using HYFServer;
 
 namespace Bag
 {
@@ -86,16 +86,16 @@ namespace Bag
             {
                 var rightIcon = (ComItem_bag)_iconProp;
                 rightIcon.SetData(mSelectItemDto);
-                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.cfgId.ToString());
+                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
                 _titlePropTxt.text = cfg.name;
                 _descTxt.text = cfg.iconDesecribe;
-                _hasTxt.text = mSelectItemDto.sum.ToString();
+                _hasTxt.text = mSelectItemDto.Sum.ToString();
             }
         }
 
         private void OnEventTest(string arg0)
         {
-            Debug.LogError("BagMainView 监听    EN_test_" + arg0);
+            Debuger.LogError("BagMainView 监听    EN_test_" + arg0);
         }
 
         private void OnClickCloseMainView()
@@ -116,22 +116,8 @@ namespace Bag
 
         private async void OnClickUsing()
         {
-           
-            Debug.LogError("使用");
+            var result = await ProtocalBag.Instance.BagUsingItem(1, 1);
+            Debuger.LogError(result);
         }
-    }
-}
-
-public class ItemDto
-{
-    public int cfgId;
-    public int sum;
-    public string uid;
-
-    public ItemDto(int cfgId, int sum, string uid)
-    {
-        this.cfgId = cfgId;
-        this.sum = sum;
-        this.uid = uid;
     }
 }

@@ -40,12 +40,12 @@ namespace MainCenter
 
         private void OnEventTest(string arg0)
         {
-            Debug.LogError("TopEles 监听了 EN_test_" + arg0);
+            Debuger.LogError("TopEles 监听了 EN_test_" + arg0);
         }
 
         private void OnEventTest1(string text)
         {
-            Debug.LogError("TopEles 监听了 EN_test:" + text);
+            Debuger.LogError("TopEles 监听了 EN_test:" + text);
         }
 
         private void OnClickMainPlayerBtn()

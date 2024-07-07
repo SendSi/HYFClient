@@ -93,7 +93,7 @@ namespace ShopGift
 
         public void SetData(int cfgId)
         {
-            Debug.LogError("ShopGiftMainView_SetData");
+            Debuger.LogError("ShopGiftMainView_SetData");
             foreach (var item in _menuItems)
             {
                 var tData = (ShopGiftMenuConfig)item.data;
