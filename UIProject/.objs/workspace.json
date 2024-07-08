@@ -3,6 +3,8 @@
   "libview.iconScale": 0,
   "doc.openedDocs": [
     "ui://2r331opvlmzq1ygcgrw",
+    "ui://2r331opvj842hz9cyi",
+    "ui://2r331opvodfq1ygcgrr",
     "ui://e290e74se8ok1ygcfpf",
     "ui://e290e74sfdrb1ygcfiz"
   ],
@@ -10,7 +12,7 @@
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://e290e74sfdrb1ygcfiz",
+  "doc.activeDoc": "ui://2r331opvodfq1ygcgrr",
   "libview.twoColumn": false,
   "libview.expandedNodes": [
     "2r331opv",

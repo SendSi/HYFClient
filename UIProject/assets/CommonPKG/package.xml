@@ -1089,7 +1089,7 @@
     <component id="ig9038" name="comBtn_Icon.xml" path="/_new/" exported="true"/>
     <component id="ig90hz9czq" name="comBtn_IconTxt.xml" path="/_new/" exported="true"/>
     <component id="nqbv1ygcg9y" name="comBtn_tab.xml" path="/_new/" exported="true"/>
-    <component id="odfq1ygcgrr" name="ComItem_bag.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="odfq1ygcgrr" name="Item_PropBag.xml" path="/components/" exported="true" favorite="true"/>
     <component id="g17g1ygcfn7" name="plot_btn2.xml" path="/_new/"/>
     <component id="tixj1ygcg9p" name="ToastTipView.xml" path="/panel/" exported="true"/>
     <component id="tixj1ygcg9o" name="ToastItem.xml" path="/components_new/" exported="true"/>

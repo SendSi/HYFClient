@@ -15,8 +15,8 @@ namespace Welfare
         {
             this.title = $"第{cfg.rDay}天";
             this._stateCtrl.selectedIndex = 0;
-            var rightIcon = (ComItem_bag)this._propBtn;
-            rightIcon.SetData(cfg.awardId, cfg.awardNum);//ComItem_bag.cs
+            var rightIcon = (Item_BaseProp)this._propBtn;
+            rightIcon.SetData(cfg.awardId, cfg.awardNum);//Item_PropBag.cs
         }
     }
 }

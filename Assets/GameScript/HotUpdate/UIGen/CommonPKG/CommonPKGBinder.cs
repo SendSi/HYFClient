@@ -106,7 +106,7 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(comItem_BottomNum.URL, typeof(comItem_BottomNum));
             UIObjectFactory.SetPackageItemExtension(common_btn_07.URL, typeof(common_btn_07));
             UIObjectFactory.SetPackageItemExtension(skillIcon2.URL, typeof(skillIcon2));
-            UIObjectFactory.SetPackageItemExtension(ComItem_bag.URL, typeof(ComItem_bag));
+            UIObjectFactory.SetPackageItemExtension(Item_PropBag.URL, typeof(Item_PropBag));
             UIObjectFactory.SetPackageItemExtension(main_teamGeneral.URL, typeof(main_teamGeneral));
             UIObjectFactory.SetPackageItemExtension(showTopTitle.URL, typeof(showTopTitle));
             UIObjectFactory.SetPackageItemExtension(settlement_com_002.URL, typeof(settlement_com_002));
