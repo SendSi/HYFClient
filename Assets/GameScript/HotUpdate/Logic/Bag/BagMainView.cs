@@ -60,8 +60,8 @@ namespace Bag
 
         private void OnClickItemPropList(EventContext context)
         {
-            ComItem_bag item = (ComItem_bag)context.data;
-            var itemDto = item.GetData();
+            Item_PropBag itemProp = (Item_PropBag)context.data;
+            var itemDto = itemProp.GetData();
             if (itemDto != null)
             {
                 mSelectItemDto = itemDto;
@@ -71,8 +71,8 @@ namespace Bag
 
         private void OnRenderPropList(int index, GObject obj)
         {
-            ComItem_bag item = (ComItem_bag)obj;
-            item.SetData(mPropDtos[index]);
+            Item_PropBag itemProp = (Item_PropBag)obj;
+            itemProp.SetData(mPropDtos[index]);
             if (index == 0 && mSelectItemDto == null) //首次打开页面 无值时 给其赋个值
             {
                 mSelectItemDto = mPropDtos[index];
@@ -84,7 +84,7 @@ namespace Bag
         {
             if (mSelectItemDto != null)
             {
-                var rightIcon = (ComItem_bag)_iconProp;
+                var rightIcon = (Item_PropBag)_iconProp;
                 rightIcon.SetData(mSelectItemDto);
                 var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
                 _titlePropTxt.text = cfg.name;

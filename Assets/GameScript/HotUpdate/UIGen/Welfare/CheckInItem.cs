@@ -9,7 +9,7 @@ namespace Welfare
     {
         public Controller _stateCtrl;
         public GLoader _bgIcon;
-        public GButton _propBtn;
+        public GComponent _propBtn;
         public GTextField _stateLbl;
         public Transition _scale;
         public const string URL = "ui://340eighfrs9w1ygcfmu";
@@ -25,7 +25,7 @@ namespace Welfare
 
             _stateCtrl = GetController("stateCtrl");
             _bgIcon = (GLoader)GetChild("bgIcon");
-            _propBtn = (GButton)GetChild("propBtn");
+            _propBtn = (GComponent)GetChild("propBtn");
             _stateLbl = (GTextField)GetChild("stateLbl");
             _scale = GetTransition("scale");
         }
