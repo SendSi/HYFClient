@@ -6,6 +6,9 @@
     <type fullname="GameMain" preserve="all" />
     <type fullname="Singleton`1" preserve="all" />
   </assembly>
+  <assembly fullname="Debuger">
+    <type fullname="Debuger" preserve="all" />
+  </assembly>
   <assembly fullname="FairyGUI">
     <type fullname="FairyGUI.ButtonMode" preserve="all" />
     <type fullname="FairyGUI.Controller" preserve="all" />
@@ -160,7 +163,6 @@
     <type fullname="UnityEngine.Events.UnityAction`1" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction`2" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction`3" preserve="all" />
-    <type fullname="UnityEngine.Events.UnityEvent" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.KeyCode" preserve="all" />
     <type fullname="UnityEngine.Mathf" preserve="all" />
@@ -169,7 +171,6 @@
     <type fullname="UnityEngine.PlayerPrefs" preserve="all" />
     <type fullname="UnityEngine.Quaternion" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
-    <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
@@ -197,15 +198,9 @@
     <type fullname="UnityEngine.Collider" preserve="all" />
     <type fullname="UnityEngine.Rigidbody" preserve="all" />
   </assembly>
-  <assembly fullname="UnityEngine.UI">
-    <type fullname="UnityEngine.UI.Button" preserve="all" />
-    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="all" />
-    <type fullname="UnityEngine.UI.Text" preserve="all" />
-  </assembly>
   <assembly fullname="YooAsset">
     <type fullname="YooAsset.AssetHandle" preserve="all" />
     <type fullname="YooAsset.ResourcePackage" preserve="all" />
-    <type fullname="YooAsset.SceneHandle" preserve="all" />
     <type fullname="YooAsset.YooAssets" preserve="all" />
   </assembly>
   <assembly fullname="gRPC">
