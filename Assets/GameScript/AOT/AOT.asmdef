@@ -2,7 +2,6 @@
     "name": "AOT",
     "rootNamespace": "",
     "references": [
-        "GUID:f22fac247a56d2d41b687bb0d900e54e",
         "GUID:c55575a9f1747c240822f4b7e0400716",
         "GUID:1ea6b676786131e4095182b742bb64ec",
         "GUID:e34a5702dd353724aa315fb8011f08c3",
