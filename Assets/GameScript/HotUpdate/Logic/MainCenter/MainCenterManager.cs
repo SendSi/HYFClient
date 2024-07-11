@@ -48,7 +48,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
             1002, () =>
             {
                 AudioMgr.Instance.PlayBGM("sound_explosion_enemy");
-                EventCenter.Instance.Fire<string>(EventEnum.EE_test, "event可能是dto");
+                EventCenter.Instance.Fire<string>((int)EventEnum.EE_test, "event可能是dto");
             }
         },
         { 1003, () => { ProxyBagModule.Instance.OpenBagMainView(); } },

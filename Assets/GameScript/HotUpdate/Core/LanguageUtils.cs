@@ -51,7 +51,7 @@ public class LanguageUtils : Singleton<LanguageUtils>
 
 // public void ModifyLanguage(LanguType pLT)
 // {
-//     EventCenter.Instance.Fire<LanguType>(EventEnum.EE_LanguageModify, pLT);
+//     EventCenter.Instance.Fire<LanguType>((int)EventEnum.EE_LanguageModify, pLT);
 //     AppConfig.currLang = pLT.ToString();
 //     PlayerPrefs.SetString(prefsKey, AppConfig.currLang);
 // }

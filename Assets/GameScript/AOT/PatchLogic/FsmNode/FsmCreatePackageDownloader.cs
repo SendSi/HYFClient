@@ -17,7 +17,8 @@ public class FsmCreatePackageDownloader : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        PatchEventDefine.PatchStatesChange.SendEventMessage("创建补丁下载器！");
+        // PatchEventDefine.PatchStatesChange.SendEventMessage("创建补丁下载器！");
+        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "创建补丁下载器！");
         GameMain.Instance.StartCoroutine(CreateDownloader());
     }
     void IStateNode.OnUpdate()
@@ -49,7 +50,8 @@ public class FsmCreatePackageDownloader : IStateNode
             // 注意：开发者需要在下载前检测磁盘空间不足
             int totalDownloadCount = downloader.TotalDownloadCount;
             long totalDownloadBytes = downloader.TotalDownloadBytes;
-            PatchEventDefine.FoundUpdateFiles.SendEventMessage(totalDownloadCount, totalDownloadBytes);
+            // PatchEventDefine.FoundUpdateFiles.SendEventMessage(totalDownloadCount, totalDownloadBytes);
+            EventCenter.Instance.Fire<int, long>((int)EventEnum.EE_FoundUpdateFiles, totalDownloadCount, totalDownloadBytes);
         }
     }
 }

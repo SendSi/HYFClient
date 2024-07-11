@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UniFramework.Machine;
+﻿using UniFramework.Machine;
 using UniFramework.Event;
 using YooAsset;
 
@@ -22,11 +18,11 @@ public class PatchOperation : GameAsyncOperation
     public PatchOperation(string packageName, string buildPipeline, EPlayMode playMode)
     {
         // 注册监听事件
-        _eventGroup.AddListener<UserEventDefine.UserTryInitialize>(OnHandleEventMessage);
-        _eventGroup.AddListener<UserEventDefine.UserBeginDownloadWebFiles>(OnHandleEventMessage);
-        _eventGroup.AddListener<UserEventDefine.UserTryUpdatePackageVersion>(OnHandleEventMessage);
-        _eventGroup.AddListener<UserEventDefine.UserTryUpdatePatchManifest>(OnHandleEventMessage);
-        _eventGroup.AddListener<UserEventDefine.UserTryDownloadWebFiles>(OnHandleEventMessage);
+        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryInitialize, OnEventUserTryInitialize);
+        EventCenter.Instance.Bind((int)EventEnum.EE_UserBeginDownloadWebFiles, OnEventUserBeginDownloadWebFiles);
+        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryUpdatePackageVersion, OnEventUserTryUpdatePackageVersion);
+        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryUpdatePatchManifest, OnEventUserTryUpdatePatchManifest);
+        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryDownloadWebFiles, OnEventUserTryDownloadWebFiles);
 
         // 创建状态机
         _machine = new StateMachine(this);
@@ -43,59 +39,67 @@ public class PatchOperation : GameAsyncOperation
         _machine.SetBlackboardValue("PlayMode", playMode);
         _machine.SetBlackboardValue("BuildPipeline", buildPipeline);
     }
+
+    private void OnEventUserTryUpdatePatchManifest()
+    {
+        _machine.ChangeState<FsmUpdatePackageManifest>();
+    }
+
+    private void OnEventUserTryUpdatePackageVersion()
+    {
+        _machine.ChangeState<FsmUpdatePackageVersion>();
+    }
+
+    private void OnEventUserBeginDownloadWebFiles()
+    {
+        _machine.ChangeState<FsmDownloadPackageFiles>();
+    }
+
+    private void OnEventUserTryInitialize()
+    {
+        _machine.ChangeState<FsmInitializePackage>();
+    }
+
+    void OnEventUserTryDownloadWebFiles()
+    {
+        _machine.ChangeState<FsmCreatePackageDownloader>();
+    }
+    
     protected override void OnStart()
     {
         _steps = ESteps.Update;
         _machine.Run<FsmInitializePackage>();
     }
+    
     protected override void OnUpdate()
     {
         if (_steps == ESteps.None || _steps == ESteps.Done)
             return;
 
-        if(_steps == ESteps.Update)
+        if (_steps == ESteps.Update)
         {
             _machine.Update();
-            if(_machine.CurrentNode == typeof(FsmUpdaterDone).FullName)
+            if (_machine.CurrentNode == typeof(FsmUpdaterDone).FullName)
             {
-                _eventGroup.RemoveAllListener();
+                RemoveEventCenters();
                 Status = EOperationStatus.Succeed;
                 _steps = ESteps.Done;
             }
         }
     }
+
     protected override void OnAbort()
     {
     }
 
-    /// <summary>
-    /// 接收事件
-    /// </summary>
-    private void OnHandleEventMessage(IEventMessage message)
+    void RemoveEventCenters()
     {
-        if (message is UserEventDefine.UserTryInitialize)
-        {
-            _machine.ChangeState<FsmInitializePackage>();
-        }
-        else if (message is UserEventDefine.UserBeginDownloadWebFiles)
-        {
-            _machine.ChangeState<FsmDownloadPackageFiles>();
-        }
-        else if (message is UserEventDefine.UserTryUpdatePackageVersion)
-        {
-            _machine.ChangeState<FsmUpdatePackageVersion>();
-        }
-        else if (message is UserEventDefine.UserTryUpdatePatchManifest)
-        {
-            _machine.ChangeState<FsmUpdatePackageManifest>();
-        }
-        else if (message is UserEventDefine.UserTryDownloadWebFiles)
-        {
-            _machine.ChangeState<FsmCreatePackageDownloader>();
-        }
-        else
-        {
-            throw new System.NotImplementedException($"{message.GetType()}");
-        }
+        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryInitialize, OnEventUserTryInitialize);
+        EventCenter.Instance.UnBind((int)EventEnum.EE_UserBeginDownloadWebFiles, OnEventUserBeginDownloadWebFiles);
+        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryUpdatePackageVersion, OnEventUserTryUpdatePackageVersion);
+        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryUpdatePatchManifest, OnEventUserTryUpdatePatchManifest);
+        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryDownloadWebFiles, OnEventUserTryDownloadWebFiles);
     }
+
+
 }

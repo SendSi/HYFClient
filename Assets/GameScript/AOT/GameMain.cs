@@ -122,7 +122,6 @@ public class GameMain : MonoBehaviour
         "Grpc.Core.Api.dll",
         "Newtonsoft.Json.dll",
         "System.Core.dll",
-        "UniFramework.Event.dll",
         "UnityEngine.CoreModule.dll",
         "UnityEngine.JSONSerializeModule.dll",
         "YooAsset.dll",

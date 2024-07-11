@@ -2,6 +2,7 @@
 <linker>
   <assembly fullname="AOT">
     <type fullname="AppConfig" preserve="all" />
+    <type fullname="EventCenter" preserve="all" />
     <type fullname="FGUILoader" preserve="all" />
     <type fullname="GameMain" preserve="all" />
     <type fullname="Singleton`1" preserve="all" />
@@ -136,12 +137,8 @@
     <type fullname="System.Net.Http.HttpMessageHandler" preserve="all" />
   </assembly>
   <assembly fullname="UniFramework.Event">
-    <type fullname="UniFramework.Event.EventGroup" preserve="all" />
     <type fullname="UniFramework.Event.IEventMessage" preserve="all" />
     <type fullname="UniFramework.Event.UniEvent" preserve="all" />
-  </assembly>
-  <assembly fullname="UniFramework.Utility">
-    <type fullname="UniFramework.Utility.UniTimer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule">
     <type fullname="UnityEngine.Animation" preserve="all" />
@@ -161,8 +158,6 @@
     <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction`1" preserve="all" />
-    <type fullname="UnityEngine.Events.UnityAction`2" preserve="all" />
-    <type fullname="UnityEngine.Events.UnityAction`3" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.KeyCode" preserve="all" />
     <type fullname="UnityEngine.Mathf" preserve="all" />
@@ -176,7 +171,6 @@
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />
     <type fullname="UnityEngine.Vector3" preserve="all" />
-    <type fullname="UnityEngine.WaitForSeconds" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.IMGUIModule">
     <type fullname="UnityEngine.GUIUtility" preserve="all" />
@@ -193,10 +187,6 @@
     <type fullname="UnityEngine.ParticleSystem/MainModule" preserve="all" />
     <type fullname="UnityEngine.ParticleSystem/MinMaxCurve" preserve="all" />
     <type fullname="UnityEngine.ParticleSystem/Particle" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.PhysicsModule">
-    <type fullname="UnityEngine.Collider" preserve="all" />
-    <type fullname="UnityEngine.Rigidbody" preserve="all" />
   </assembly>
   <assembly fullname="YooAsset">
     <type fullname="YooAsset.AssetHandle" preserve="all" />
@@ -225,7 +215,6 @@
     <type fullname="System.Collections.Generic.Dictionary`2/ValueCollection" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerable`1" preserve="all" />
-    <type fullname="System.Collections.Generic.IEnumerator`1" preserve="all" />
     <type fullname="System.Collections.Generic.IList`1" preserve="all" />
     <type fullname="System.Collections.Generic.KeyValuePair`2" preserve="all" />
     <type fullname="System.Collections.Generic.List`1" preserve="all" />
@@ -254,7 +243,6 @@
     <type fullname="System.IO.TextWriter" preserve="all" />
     <type fullname="System.Int32" preserve="all" />
     <type fullname="System.MemoryExtensions" preserve="all" />
-    <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Nullable`1" preserve="all" />
     <type fullname="System.Object" preserve="all" />
     <type fullname="System.ParamArrayAttribute" preserve="all" />
@@ -271,7 +259,6 @@
     <type fullname="System.Runtime.CompilerServices.CompilerGeneratedAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.ExtensionAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.IAsyncStateMachine" preserve="all" />
-    <type fullname="System.Runtime.CompilerServices.IteratorStateMachineAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1" preserve="all" />

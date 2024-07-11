@@ -26,7 +26,7 @@ namespace GuidePKG
                 { "move5", this._fingerCom._move5 }
             };
 
-            EventCenter.Instance.Bind<string>(EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);//监听指引 事件
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);//监听指引 事件
         }
 
         GComponent CheckGetTryMask(string maskName)
@@ -90,20 +90,20 @@ namespace GuidePKG
                 Timers.inst.Add(mStepCfg.finishTime, 1, obj =>
                 {
                     Debuger.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
-                    EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
+                    EventCenter.Instance.Fire((int)EventEnum.EE_Guide_NextStep);
                 });
             }
             else
             {
                 Debuger.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
-                EventCenter.Instance.Fire(EventEnum.EE_Guide_NextStep);
+                EventCenter.Instance.Fire((int)EventEnum.EE_Guide_NextStep);
             }
         }
 
         public override void Dispose()
         {
             base.Dispose();
-            EventCenter.Instance.UnBind<string>(EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_Guide_UIPath, OnEventGuideUIPath);
         }
 
         public void SetData(GuideStepConfig stepCfg)
