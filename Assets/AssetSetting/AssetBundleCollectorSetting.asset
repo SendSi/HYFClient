@@ -79,35 +79,6 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: ugui
-      GroupDesc: "\u9762\u677F"
-      AssetTags: 
-      ActiveRuleName: EnableGroup
-      Collectors:
-      - CollectPath: Assets/GameRes/UIImage
-        CollectorGUID: 30c57db62bb02a24590e7046d3a9e33a
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: Assets/GameRes/UIPanel
-        CollectorGUID: 12d33f33f3a55224c9c747d7bffa1c68
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackSeparately
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: Assets/GameRes/UIAtlas
-        CollectorGUID: 80caf8bc3d0ac5b48a5cab7765a68205
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackSeparately
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
     - GroupName: fgui
       GroupDesc: ui
       AssetTags: 

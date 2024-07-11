@@ -2,7 +2,7 @@
 
 public enum EventEnum
 {
-    EE_LanguageModify=9998,//改变语言
+   EE_LanguageModify=9998,//改变语言
     EE_Server_Items=9999,
     EE_test = 10000,
     EE_loginIn = 10001,

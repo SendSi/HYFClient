@@ -17,7 +17,8 @@ internal class FsmClearPackageCache : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        PatchEventDefine.PatchStatesChange.SendEventMessage("清理未使用的缓存文件！");
+        // PatchEventDefine.PatchStatesChange.SendEventMessage("清理未使用的缓存文件！");
+        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "清理未使用的缓存文件！");
         var packageName = (string)_machine.GetBlackboardValue("PackageName");
         var package = YooAssets.GetPackage(packageName);
         var operation = package.ClearUnusedCacheFilesAsync();

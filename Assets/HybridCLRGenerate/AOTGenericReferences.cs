@@ -10,7 +10,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"Grpc.Core.Api.dll",
 		"Newtonsoft.Json.dll",
 		"System.Core.dll",
-		"UniFramework.Event.dll",
 		"UnityEngine.CoreModule.dll",
 		"UnityEngine.JSONSerializeModule.dll",
 		"YooAsset.dll",
@@ -22,6 +21,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// }} 
 
 	// {{ AOT generic types
+	// EventOne<int>
+	// EventOne<object>
 	// Google.Protobuf.Collections.RepeatedField.<GetEnumerator>d__28<object>
 	// Google.Protobuf.Collections.RepeatedField<object>
 	// Google.Protobuf.FieldCodec.<>c<object>
@@ -175,13 +176,16 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Threading.Tasks.TaskFactory<byte>
 	// System.Threading.Tasks.TaskFactory<object>
 	// UnityEngine.Events.UnityAction<int>
-	// UnityEngine.Events.UnityAction<object,object,object>
-	// UnityEngine.Events.UnityAction<object,object>
 	// UnityEngine.Events.UnityAction<object>
 	// }}
 
 	public void RefMethods()
 	{
+		// System.Void EventCenter.Bind<int>(int,UnityEngine.Events.UnityAction<int>)
+		// System.Void EventCenter.Bind<object>(int,UnityEngine.Events.UnityAction<object>)
+		// System.Void EventCenter.Fire<object>(int,object)
+		// System.Void EventCenter.UnBind<int>(int,UnityEngine.Events.UnityAction<int>)
+		// System.Void EventCenter.UnBind<object>(int,UnityEngine.Events.UnityAction<object>)
 		// Grpc.Core.Marshaller<object> Grpc.Core.Marshallers.Create<object>(System.Action<object,Grpc.Core.SerializationContext>,System.Func<Grpc.Core.DeserializationContext,object>)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string,Newtonsoft.Json.JsonSerializerSettings)
@@ -217,10 +221,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// ushort& System.Runtime.CompilerServices.Unsafe.As<ushort,ushort>(ushort&)
 		// ushort& System.Runtime.InteropServices.MemoryMarshal.GetReference<ushort>(System.ReadOnlySpan<ushort>)
 		// int System.SpanHelpers.IndexOf<ushort>(ushort&,ushort,int)
-		// System.Void UniFramework.Event.EventGroup.AddListener<object>(System.Action<UniFramework.Event.IEventMessage>)
-		// object UnityEngine.Component.GetComponent<object>()
 		// object UnityEngine.GameObject.AddComponent<object>()
-		// object UnityEngine.GameObject.GetComponent<object>()
 		// object[] UnityEngine.GameObject.GetComponentsInChildren<object>(bool)
 		// object UnityEngine.JsonUtility.FromJson<object>(string)
 		// YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)

@@ -14,8 +14,8 @@ namespace MainCenter
 
             InitEles();
 
-            EventCenter.Instance.Bind<string>(EventEnum.EE_test,OnEventTest);
-            EventCenter.Instance.Bind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test,OnEventTest);
+            EventCenter.Instance.Bind<int>((int)EventEnum.EE_loginIn,OnEventLoginIn);
        }
 
         private void OnEventLoginIn(int arg0)
@@ -44,8 +44,8 @@ namespace MainCenter
             base.Dispose();
             DisposeEles();
             Debuger.LogWarning("调用 Dispose MainCenterView");
-            EventCenter.Instance.UnBind<string>(EventEnum.EE_test,OnEventTest);
-            EventCenter.Instance.UnBind<int>(EventEnum.EE_loginIn,OnEventLoginIn);
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test,OnEventTest);
+            EventCenter.Instance.UnBind<int>((int)EventEnum.EE_loginIn,OnEventLoginIn);
         }
 
 

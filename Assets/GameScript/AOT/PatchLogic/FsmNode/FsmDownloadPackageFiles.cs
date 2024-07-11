@@ -16,7 +16,8 @@ public class FsmDownloadPackageFiles : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        PatchEventDefine.PatchStatesChange.SendEventMessage("开始下载补丁文件！");
+        // PatchEventDefine.PatchStatesChange.SendEventMessage("开始下载补丁文件！");
+        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "开始下载补丁文件！");
         GameMain.Instance.StartCoroutine(BeginDownload());
     }
     void IStateNode.OnUpdate()
@@ -29,8 +30,10 @@ public class FsmDownloadPackageFiles : IStateNode
     private IEnumerator BeginDownload()
     {
         var downloader = (ResourceDownloaderOperation)_machine.GetBlackboardValue("Downloader");
-        downloader.OnDownloadErrorCallback = PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
-        downloader.OnDownloadProgressCallback = PatchEventDefine.DownloadProgressUpdate.SendEventMessage;
+        // downloader.OnDownloadErrorCallback = PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
+        downloader.OnDownloadErrorCallback = OnEventWebFileDownloadFailed;// PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
+        // downloader.OnDownloadProgressCallback = PatchEventDefine.DownloadProgressUpdate.SendEventMessage;
+        downloader.OnDownloadProgressCallback = OnEventDownloadProgressUpdate;
         downloader.BeginDownload();
         yield return downloader;
 
@@ -39,5 +42,16 @@ public class FsmDownloadPackageFiles : IStateNode
             yield break;
 
         _machine.ChangeState<FsmDownloadPackageOver>();
+    }
+
+    private void OnEventDownloadProgressUpdate(int totaldownloadcount, int currentdownloadcount, long totaldownloadbytes, long currentdownloadbytes)
+    {
+        // PatchEventDefine.DownloadProgressUpdate.SendEventMessage(totaldownloadcount, currentdownloadcount, totaldownloadbytes, currentdownloadbytes);
+        EventCenter.Instance.Fire<int, int, long, long>((int)EventEnum.EE_DownloadProgressUpdate, totaldownloadcount, currentdownloadcount, totaldownloadbytes, currentdownloadbytes);
+    }
+
+    private void OnEventWebFileDownloadFailed(string filename, string error)
+    {
+        EventCenter.Instance.Fire<string, string>((int)EventEnum.EE_WebFileDownloadFailed, filename, error);
     }
 }

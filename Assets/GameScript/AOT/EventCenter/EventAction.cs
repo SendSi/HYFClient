@@ -150,3 +150,54 @@ public class EventThree<T1, T2,T3> : IEventAction
         }
     }
 }
+
+
+
+public class EventFour<T1, T2,T3,T4> : IEventAction
+{
+    public List<UnityAction<T1, T2,T3,T4>> actions;
+
+    public EventFour(UnityAction<T1, T2,T3,T4> action)
+    {
+        if (actions == null)
+        {
+            actions = new List<UnityAction<T1, T2,T3,T4>>();
+        }
+
+        actions.Add(action);
+    }
+    public void AddAct(UnityAction<T1,T2,T3,T4> action)
+    {
+        if (actions != null)
+        {
+            actions.Add(action);
+        }
+    }
+
+    public void InvokeAct(T1 obj,T2 obj2,T3 obj3,T4 obj4)
+    {
+        if (actions != null)
+        {
+            for (int i = 0; i < actions.Count; i++)
+            {
+                actions[i]?.Invoke(obj,obj2,obj3,obj4);
+            }
+        }
+    }
+
+    public void RemoveAct(UnityAction<T1,T2,T3,T4> action)
+    {
+        if (actions != null)
+        {
+            for (int i = 0; i < actions.Count; i++)
+            {
+                if (actions[i] == action)
+                {
+                    actions.RemoveAt(i);
+                    break;
+                }
+            }
+        }
+    }
+}
+

@@ -19,7 +19,8 @@ internal class FsmInitializePackage : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        PatchEventDefine.PatchStatesChange.SendEventMessage("初始化资源包！");
+        // PatchEventDefine.PatchStatesChange.SendEventMessage("初始化资源包！");
+        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "初始化资源包！");
         GameMain.Instance.StartCoroutine(InitPackage());
     }
     void IStateNode.OnUpdate()
@@ -87,7 +88,8 @@ internal class FsmInitializePackage : IStateNode
         if (initializationOperation.Status != EOperationStatus.Succeed)
         {
             Debug.LogWarning($"{initializationOperation.Error}");
-            PatchEventDefine.InitializeFailed.SendEventMessage();
+            // PatchEventDefine.InitializeFailed.SendEventMessage();
+            EventCenter.Instance.Fire((int)EventEnum.EE_InitializeFailed);
         }
         else
         {

@@ -27,7 +27,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         base.OnInit();
         Stage.inst.onTouchBegin.Set(OnTouchBegin);
         InitStepConfigs();
-        EventCenter.Instance.Bind(EventEnum.EE_Guide_NextStep, OnEventGuideNextStep);
+        EventCenter.Instance.Bind((int)EventEnum.EE_Guide_NextStep, OnEventGuideNextStep);
     }
 
     #region 点击识别路径
@@ -50,7 +50,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
         {
             if (string.IsNullOrEmpty(mCurrStepCfg.uiPath))
             {
-                EventCenter.Instance.Fire<string>(EventEnum.EE_Guide_UIPath, "true");
+                EventCenter.Instance.Fire<string>((int)EventEnum.EE_Guide_UIPath, "true");
             }
             else
             {
@@ -58,7 +58,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
                 var result = GetTempNames();
                 if (string.IsNullOrEmpty(result) == false)
                 {
-                    EventCenter.Instance.Fire<string>(EventEnum.EE_Guide_UIPath, result);
+                    EventCenter.Instance.Fire<string>((int)EventEnum.EE_Guide_UIPath, result);
                 }
             }
         }
@@ -168,6 +168,6 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
     protected override void OnDispose()
     {
         base.OnDispose();
-        EventCenter.Instance.UnBind(EventEnum.EE_Guide_NextStep, OnEventGuideNextStep);
+        EventCenter.Instance.UnBind((int)EventEnum.EE_Guide_NextStep, OnEventGuideNextStep);
     }
 }

@@ -31,6 +31,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.1
+    - _FlickSpeed: 1
     - _OutlineMipLevel: 0
     - _OutlineReferenceTexWidth: 1024
     - _OutlineSmoothness: 1
@@ -39,7 +40,10 @@ Material:
     - _StencilRef: 1
     - _StraightAlphaInput: 0
     - _ThresholdEnd: 0.25
+    - _Transparent: 1
     - _Use8Neighbourhood: 1
+    - _UseFlick: 0
     m_Colors:
+    - _FlickColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 1, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
