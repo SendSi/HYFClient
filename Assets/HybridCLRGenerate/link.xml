@@ -136,10 +136,6 @@
   <assembly fullname="System.Net.Http">
     <type fullname="System.Net.Http.HttpMessageHandler" preserve="all" />
   </assembly>
-  <assembly fullname="UniFramework.Event">
-    <type fullname="UniFramework.Event.IEventMessage" preserve="all" />
-    <type fullname="UniFramework.Event.UniEvent" preserve="all" />
-  </assembly>
   <assembly fullname="UnityEngine.AnimationModule">
     <type fullname="UnityEngine.Animation" preserve="all" />
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
@@ -164,7 +160,6 @@
     <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.PlayerPrefs" preserve="all" />
-    <type fullname="UnityEngine.Quaternion" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />

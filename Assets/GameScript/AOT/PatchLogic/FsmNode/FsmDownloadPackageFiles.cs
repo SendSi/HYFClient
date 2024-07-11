@@ -16,7 +16,6 @@ public class FsmDownloadPackageFiles : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        // PatchEventDefine.PatchStatesChange.SendEventMessage("开始下载补丁文件！");
         EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "开始下载补丁文件！");
         GameMain.Instance.StartCoroutine(BeginDownload());
     }
@@ -30,9 +29,7 @@ public class FsmDownloadPackageFiles : IStateNode
     private IEnumerator BeginDownload()
     {
         var downloader = (ResourceDownloaderOperation)_machine.GetBlackboardValue("Downloader");
-        // downloader.OnDownloadErrorCallback = PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
         downloader.OnDownloadErrorCallback = OnEventWebFileDownloadFailed;// PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
-        // downloader.OnDownloadProgressCallback = PatchEventDefine.DownloadProgressUpdate.SendEventMessage;
         downloader.OnDownloadProgressCallback = OnEventDownloadProgressUpdate;
         downloader.BeginDownload();
         yield return downloader;
@@ -46,7 +43,6 @@ public class FsmDownloadPackageFiles : IStateNode
 
     private void OnEventDownloadProgressUpdate(int totaldownloadcount, int currentdownloadcount, long totaldownloadbytes, long currentdownloadbytes)
     {
-        // PatchEventDefine.DownloadProgressUpdate.SendEventMessage(totaldownloadcount, currentdownloadcount, totaldownloadbytes, currentdownloadbytes);
         EventCenter.Instance.Fire<int, int, long, long>((int)EventEnum.EE_DownloadProgressUpdate, totaldownloadcount, currentdownloadcount, totaldownloadbytes, currentdownloadbytes);
     }
 

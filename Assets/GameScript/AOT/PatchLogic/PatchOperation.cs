@@ -1,5 +1,4 @@
 ﻿using UniFramework.Machine;
-using UniFramework.Event;
 using YooAsset;
 
 public class PatchOperation : GameAsyncOperation
@@ -11,7 +10,7 @@ public class PatchOperation : GameAsyncOperation
         Done,
     }
 
-    private readonly EventGroup _eventGroup = new EventGroup();
+
     private readonly StateMachine _machine;
     private ESteps _steps = ESteps.None;
 

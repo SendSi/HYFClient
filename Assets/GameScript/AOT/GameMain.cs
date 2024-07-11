@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
-using UniFramework.Event;
 using YooAsset;
 using System;
 using HybridCLR;
@@ -26,8 +25,6 @@ public class GameMain : MonoBehaviour
 
     IEnumerator Start()
     {
-        // 初始化事件系统
-        UniEvent.Initalize();
         // 初始化资源系统
         YooAssets.Initialize();
         Debuger.EnableLog = AppConfig.EnableLog;
