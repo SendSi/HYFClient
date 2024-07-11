@@ -16,7 +16,6 @@ internal class FsmUpdatePackageVersion : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        // PatchEventDefine.PatchStatesChange.SendEventMessage("获取最新的资源版本 !");
         EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "获取最新的资源版本！");
         GameMain.Instance.StartCoroutine(UpdatePackageVersion());
     }
@@ -39,7 +38,6 @@ internal class FsmUpdatePackageVersion : IStateNode
         if (operation.Status != EOperationStatus.Succeed)
         {
             Debug.LogWarning(operation.Error);
-            // PatchEventDefine.PackageVersionUpdateFailed.SendEventMessage();
             EventCenter.Instance.Fire((int)EventEnum.EE_PackageVersionUpdateFailed);
         }
         else

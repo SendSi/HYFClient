@@ -1,12 +1,11 @@
 using System;
 using FairyGUI;
-using UniFramework.Event;
 
 namespace HotPKG
 {
     public partial class HFView : GComponent
     {
-        private readonly EventGroup _eventGroup = new EventGroup();
+
 
         public override void OnInit()
         {
@@ -81,31 +80,6 @@ namespace HotPKG
             EventCenter.Instance.UnBind<string,string>((int)EventEnum.EE_WebFileDownloadFailed, OnEventWebFileDownloadFailed);
         }
 
-        /// <summary>
-        /// 接收事件
-        /// </summary>
-        private void OnHandleEventMessage(IEventMessage message)
-        {
-            if (message is PatchEventDefine.DownloadProgressUpdate)
-            {
-                var msg = message as PatchEventDefine.DownloadProgressUpdate;
-                _slider.max = msg.TotalDownloadCount;
-                _slider.value = msg.CurrentDownloadCount;
-                string currentSizeMB = (msg.CurrentDownloadSizeBytes / 1048576f).ToString("f1");
-                string totalSizeMB = (msg.TotalDownloadSizeBytes / 1048576f).ToString("f1");
-                _tips.text = $"{msg.CurrentDownloadCount}/{msg.TotalDownloadCount} {currentSizeMB}MB/{totalSizeMB}MB";
-            }
-            else if (message is PatchEventDefine.WebFileDownloadFailed)
-            {
-                var msg = message as PatchEventDefine.WebFileDownloadFailed;
-                System.Action callback = () => { UserEventDefine.UserTryDownloadWebFiles.SendEventMessage(); };
-                ShowMessageBox($"未能下载文件：{msg.FileName}", callback); //ShowMessageBox($"Failed to download file : {msg.FileName}", callback);
-            }
-            else
-            {
-                throw new System.NotImplementedException($"{message.GetType()}");
-            }
-        }
 
         private Action mClickSure;
 
