@@ -29,14 +29,14 @@ public class GameMain : MonoBehaviour
         YooAssets.Initialize();
         Debuger.EnableLog = AppConfig.EnableLog;
 
-       FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX,AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
-       this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();
+        FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX, AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
+        this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();
 #if UNITY_EDITOR
-        yield return CheckSkipHFView();//跳过 热更页面    开发时  就是要快一点见到页面
+        yield return CheckSkipHFView(); //跳过 热更页面    开发时  就是要快一点见到页面
 #else
         yield return CheckLoadYooHF();
 #endif
-
+        //若每次测的 AppConfig.appVersion = "v1.0"  则HYFClient/yoo目录不会被更新，因为版本号没变，所以不会去下载  已有时,则会判断增涨  所以结论 把HYFClient/yoo目录删除，每次都会去下载
         // yield return CheckLoadYooHF(); //UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
 
         // 反射调用入口 
@@ -80,17 +80,17 @@ public class GameMain : MonoBehaviour
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssemblies();
 
-        var gamePackage = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+        var gamePackage = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
     }
 
     //跳过热更页面
     private IEnumerator CheckSkipHFView()
     {
-        var package = YooAssets.CreatePackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+        var package = YooAssets.CreatePackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         YooAssets.SetDefaultPackage(package);
         var createParameters = new EditorSimulateModeParameters();
-        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+        createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         var initializationOperation = package.InitializeAsync(createParameters);
         yield return initializationOperation;
         _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
@@ -126,7 +126,6 @@ public class GameMain : MonoBehaviour
 
         "HotUpdate.dll",
     };
-
 
     /// <summary>
     /// 为aot assembly加载原始metadata， 这个代码放aot或者热更新都行。
