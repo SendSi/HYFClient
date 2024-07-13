@@ -2,17 +2,37 @@
 
 public class PokerManager : Singleton<PokerManager>
 {
+    Dictionary<int, List<PokerConfig>>
+        mPokerPlayerDic = new Dictionary<int, List<PokerConfig>>(); //key是玩家id,,,,value是手牌
+
+    private List<PokerConfig> mPokerAllLists;
+
     public void ListenPoker()
     {
     }
 
-    public List<int> GetSelfCardList()
+
+    public List<PokerConfig> GetSelfCardList(int playerId = 1)
     {
-        var list = new List<int>() { 31, 32, 44, 51, 52, 53, 103, 104, 111, 112, 113, 141, 142 }; //假设有这些手牌
-        // list.Sort();//++序
-        list.Reverse();//--序
-        return list;
+        mPokerAllLists = ConfigMgr.Instance.LoadConfigList<PokerConfig>();
+        mPokerAllLists = OtherUtils.Instance.GetRandomList(mPokerAllLists); //打乱排序
+
+        for (int i = 1; i < 4; i++)
+        {
+            mPokerPlayerDic[i] = new List<PokerConfig>();
+        }
+
+        var ply = 1;
+        for (int i = 0; i < 52; i++)
+        {
+            if (ply == 4) ply = 1;
+            
+            mPokerPlayerDic[ply].Add(mPokerAllLists[i]);
+
+            ply++;
+        }
+
+
+        return mPokerPlayerDic[playerId];
     }
-
-
 }

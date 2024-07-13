@@ -1,13 +1,12 @@
 ﻿using FairyGUI;
 using System.Collections.Generic;
-using System.Runtime.Remoting.Contexts;
-using UnityEngine;
+
 
 namespace PokerPKG
 {
     public partial class PokerMainView : GComponent
     {
-        private List<int> mSelfCardList;
+        private List<PokerConfig> mSelfCardList;
 
         public override void OnInit()
         {
@@ -17,6 +16,7 @@ namespace PokerPKG
             this._selfCardList.itemRenderer = OnRenderSelfCardList;
             this._selfCardList.onClickItem.Set(OnClickItemSelfCard);
             mSelfCardList = PokerManager.Instance.GetSelfCardList();
+            mSelfCardList.Sort((a, b) => b.id.CompareTo(a.id));
             this._selfCardList.numItems = mSelfCardList.Count;
 
             this._sendPokerBtn.onClick.Set(OnClickSendPoker);
@@ -51,7 +51,7 @@ namespace PokerPKG
         private void OnRenderSelfCardList(int index, GObject item)
         {
             var dto = mSelfCardList[index];
-            item.icon = $"ui://PokerPKG/{dto}";
+            item.icon = dto.urlIcon;
             item.data = dto;
         }
 
