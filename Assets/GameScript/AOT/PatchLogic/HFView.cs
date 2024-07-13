@@ -41,6 +41,7 @@ namespace HotPKG
 
         private void OnEeventPatchStatesChange(string strs)
         {
+            // Debuger.LogError("str=" + strs);
             _tips.text = strs;
         }
 

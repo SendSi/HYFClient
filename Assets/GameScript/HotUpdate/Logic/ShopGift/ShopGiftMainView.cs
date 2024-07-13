@@ -3,9 +3,11 @@ using FairyGUI;
 using UnityEngine;
 
 #region << 脚 本 注 释 >>
+
 //作  用:    ShopGiftMainView
 //作  者:    曾思信
 //创建时间:  #CREATETIME#
+
 #endregion
 
 namespace ShopGift
@@ -50,7 +52,11 @@ namespace ShopGift
                 _currChildView.visible = false;
                 // _currChildView.Dispose();//销毁了,就UI也不见了
             }
-            if (mMaskGComDic.TryGetValue(maskName, out var maskView)) { return maskView; }
+
+            if (mMaskGComDic.TryGetValue(maskName, out var maskView))
+            {
+                return maskView;
+            }
             else
             {
                 var maskCom = UIPackage.CreateObject("ShopGift", maskName).asCom;
@@ -60,7 +66,6 @@ namespace ShopGift
             }
         }
 
-            
 
         private string OnProviderTabList(int index)
         {
@@ -93,13 +98,13 @@ namespace ShopGift
 
         public void SetData(int cfgId)
         {
-            Debuger.LogError("ShopGiftMainView_SetData");
             foreach (var item in _menuItems)
             {
                 var tData = (ShopGiftMenuConfig)item.data;
                 if (tData.id == cfgId)
                 {
                     item.onClick.Call();
+                    Debuger.LogError("ShopGiftMainView_SetData 快到2024=" + tData.name);
                     break;
                 }
             }

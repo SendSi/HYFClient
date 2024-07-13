@@ -111,6 +111,8 @@ namespace Login
             {
                 ProxyCommonPKGModule.Instance.AddToastStr("请先输入账号");
             }
+            ProxyCommonPKGModule.Instance.AddToastStr("测试热更?");        
+            ProxyCommonPKGModule.Instance.AddToastStr("今年?");
         }
 
         async void LoginMySql(string nickName)
