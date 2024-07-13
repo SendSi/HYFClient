@@ -53,6 +53,7 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(armyBtn.URL, typeof(armyBtn));
             UIObjectFactory.SetPackageItemExtension(troopGeneralIcon.URL, typeof(troopGeneralIcon));
             UIObjectFactory.SetPackageItemExtension(tokenItem.URL, typeof(tokenItem));
+            UIObjectFactory.SetPackageItemExtension(Item_Popup1.URL, typeof(Item_Popup1));
             UIObjectFactory.SetPackageItemExtension(equipmentIcon4.URL, typeof(equipmentIcon4));
             UIObjectFactory.SetPackageItemExtension(com_limit_btn.URL, typeof(com_limit_btn));
             UIObjectFactory.SetPackageItemExtension(equipmentIcon2_2.URL, typeof(equipmentIcon2_2));

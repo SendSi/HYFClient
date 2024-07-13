@@ -1,5 +1,6 @@
 ﻿using System;
 using CommonPKG;
+using FairyGUI;
 
 public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
 {
@@ -41,7 +42,7 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
         if (cfg != null)
         {
-            AddToastStr(string.Format(cfg.content,args));
+            AddToastStr(string.Format(cfg.content, args));
         }
     }
 
@@ -65,8 +66,9 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
     {
         return _toastTipView;
     }
-    
+
     #region 跑马灯调用 ***AddHorseLampId() or AddHorseLampStr()
+
     public void AddHorseLampId(string stringId)
     {
         var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
@@ -81,9 +83,10 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
         if (cfg != null)
         {
-            AddHorseLampStr(string.Format(cfg.content,args));
+            AddHorseLampStr(string.Format(cfg.content, args));
         }
     }
+
     private void AddHorseLampStr(string valueStr)
     {
         if (_toastTipView == null)
@@ -99,6 +102,16 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
             _toastTipView.SetHorseLamp(valueStr);
         }
     }
+
     #endregion
 
+    GObject popItem1;
+    public void ShowPopupItem1(GObject target,ItemProp cfg)
+    {
+        if (popItem1 == null)
+            popItem1 = FairyGUI.UIPackage.CreateObject("CommonPKG", "Item_Popup1");
+
+        (popItem1 as Item_Popup1).SetData(cfg);//Item_Popup1.cs
+        FairyGUI.GRoot.inst.ShowPopup(popItem1, target, PopupDirection.Auto);
+    }
 }

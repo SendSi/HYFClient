@@ -9,7 +9,7 @@ namespace ShopGift
         {
             // base.OnInit();//需盖掉
             ShopGiftMenuConfig cfg = (ShopGiftMenuConfig)(this.data);
-            Debuger.LogError(cfg.name);
+            Debuger.Log(cfg.name);
         }
         public void SetData()
         {

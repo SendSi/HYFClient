@@ -7,6 +7,8 @@ namespace CommonPKG
 {
     public partial class GlobalModalWaiting : GComponent
     {
+        public GComponent _maskCom;
+        public GImage _img;
         public Transition _t0;
         public const string URL = "ui://2r331opve6v7ji";
 
@@ -19,6 +21,8 @@ namespace CommonPKG
         {
             base.ConstructFromXML(xml);
 
+            _maskCom = (GComponent)GetChild("maskCom");
+            _img = (GImage)GetChild("img");
             _t0 = GetTransition("t0");
         }
     }

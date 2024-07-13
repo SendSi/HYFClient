@@ -1,5 +1,4 @@
 ﻿using FairyGUI;
-using UnityEngine;
 
 namespace CommonPKG
 {
@@ -13,11 +12,11 @@ namespace CommonPKG
             mCfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(pCfgId.ToString());
             _propIcon.icon = mCfg.icon;
             _qualityCtrl.selectedIndex = (mCfg.quality - 1);
-            
+
             _numTxt.text = BagManager.Instance.GetServerItemSum(pCfgId).ToString();
         }
-        
-        public void SetData(int pCfgId,int pSerNum)
+
+        public void SetData(int pCfgId, int pSerNum)
         {
             mCfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(pCfgId.ToString());
             _propIcon.icon = mCfg.icon;
@@ -26,12 +25,17 @@ namespace CommonPKG
             _numTxt.text = pSerNum.ToString();
         }
 
-        public void SetData(ItemProp prop)
+        public void SetData(ItemProp prop, bool isNeedPop = false)
         {
             mCfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(prop.id.ToString());
             _propIcon.icon = mCfg.icon;
             _qualityCtrl.selectedIndex = (mCfg.quality - 1);
             _numTxt.text = prop.num.ToString();
+
+            if (isNeedPop)
+            {
+                this.onClick.Set(() => { ProxyCommonPKGModule.Instance.ShowPopupItem1(this, prop); });
+            }
         }
 
         public override void Dispose()

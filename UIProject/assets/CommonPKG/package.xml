@@ -333,7 +333,6 @@
     <image id="n4qwhz9cz1" name="common_funnel.png" path="/images/images_new/" exported="true"/>
     <image id="z04phz9cz2" name="com_btn_lock.png" path="/images/images_new/" exported="true"/>
     <component id="z04phz9cz4" name="com_btn_tab2.xml" path="/components/" exported="true"/>
-    <component id="xz10hz9cz8" name="com_btn_share1(1).xml" path="/components/" exported="true"/>
     <image id="xz10hz9cz9" name="com_warbg01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="31,0,4,65"/>
     <image id="xz10hz9czb" name="common_arrow_5.png" path="/images/images_new/" exported="true"/>
     <component id="oxy0hz9czd" name="generalIcon4.xml" path="/components/" exported="true" favorite="true"/>
@@ -708,7 +707,6 @@
     <image id="eq9c1ygcfjo" name="activity_012.png" path="/images/activity/" exported="true"/>
     <image id="eq9c1ygcfjp" name="activity_013.png" path="/images/activity/" exported="true"/>
     <image id="k6h81ygcfjq" name="bg0015.png" path="/images/images_new/result/" exported="true"/>
-    <component id="nmhb1ygcfjr" name="com_btn_null_2(1).xml" path="/components/"/>
     <component id="10t6x1ygcfjr" name="com_btn_null_2.xml" path="/components/"/>
     <component id="eh3a1ygcfjr" name="com_btn_switch.xml" path="/components/" exported="true"/>
     <image id="so711ygcfjt" name="arms_bg01.png" path="/images/images_new/arms/" exported="true"/>
@@ -754,7 +752,6 @@
     <image id="itkw1ygcfke" name="bottomframe_01.png" path="/images/images_new/windowBg_new/" exported="true"/>
     <component id="itkw1ygcfkf" name="com_btn_00_redPoint.xml" path="/components/" exported="true" favorite="true"/>
     <font id="faxr1ygcfkv" name="gold_font.fnt" path="/images/font/" exported="true"/>
-    <component id="s99e1ygcfkw" name="com_btn_buy0(1).xml" path="/components/" exported="true"/>
     <component id="sd0v1ygcfkx" name="com_btn_buy0.xml" path="/components/"/>
     <component id="sd0v1ygcfky" name="com_btn_01_redPoint.xml" path="/components/" exported="true"/>
     <image id="wp7i1ygcfkz" name="label_04.png" path="/images/images_new/windowBg_new/" exported="true"/>
@@ -1104,6 +1101,7 @@
     <component id="g30w7" name="settingSbr_grip.xml" path="/components_new/" exported="true"/>
     <component id="lg2o1ygcgrv" name="horseTitle.xml" path="/components_new/" exported="true"/>
     <component id="lmzq1ygcgrw" name="Item_BaseProp.xml" path="/components/" exported="true" favorite="true"/>
+    <component id="fipp1ygcgrx" name="Item_Popup1.xml" path="/panel/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
