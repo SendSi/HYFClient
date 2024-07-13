@@ -19,21 +19,21 @@ public class YooHelperEditor : MonoBehaviour
             return "PC";
     }
 
-    [MenuItem("YooAsset/ClearWWW_清空文件夹")] //打了热更后  替换
+    [MenuItem("YooAsset/Clear清空_WWW_hyfclient")] //打了热更后  替换
     public static void ClearCDNPath()
     {
         var toDir = $"{AppConfig.localCDN}{GetPlatform()}/{AppConfig.appVersion}";
+        Debug.Log("若无报错 则成功删除       将删除="+toDir);
         if (Directory.Exists(toDir))
         {
-            Directory.Delete(toDir, true); //先删除  再copy
+            Directory.Delete(toDir, true); //先删除  
         }
 
         AssetDatabase.Refresh();
-        Debuger.Log("无报错 则成功");
     }
 
 
-    [MenuItem("YooAsset/CopyWWW_复制")] //打了热更后  替换
+    [MenuItem("YooAsset/Copy到_WWW_hyfclient")] //打了热更后  替换
     public static void CopyCDNPath()
     {
         var targetPath = $"{AppConfig.localCDN}{GetPlatform()}/{AppConfig.appVersion}";
@@ -41,12 +41,20 @@ public class YooHelperEditor : MonoBehaviour
         {
             Directory.CreateDirectory(targetPath); //先删除  再copy
         }
-
         var formRoot = $"{YooAsset.Editor.AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()}/{UnityEditor.EditorUserBuildSettings.activeBuildTarget}";
+        
         var soreceList = new List<string>();
+        string resVerPath = "";
         foreach (var item in AssetBundleCollectorSettingData.Setting.Packages)
         {
-            soreceList.Add($"{formRoot}/{item.PackageName}/{AppConfig.resVersion}");
+            resVerPath= $"{formRoot}/{item.PackageName}/{AppConfig.resVersion}";
+            soreceList.Add(resVerPath);
+            Debug.Log($"formRoot={resVerPath}");
+            if (Directory.Exists(resVerPath) == false)
+            {
+                Debug.LogError($"不存在此路径={resVerPath},请先打包资源 或看看AppConfig.resVersion是否正确");
+                return;
+            }
         }
 
         //Debuger.LogError($"formRoot:{formRoot} -->     targetPath: {targetPath}");
@@ -59,10 +67,9 @@ public class YooHelperEditor : MonoBehaviour
                 File.Copy(filePath, destinationPath, true); // 如果目标文件已经存在，覆盖
             }
         }
-        
 
         AssetDatabase.Refresh();
-        Debuger.Log("无报错 则成功      http-server --port 80 -b --cors       已copy");
+        Debug.Log(" http-server --port 80 -b --cors       已copy    若无报错 则成功  ");
         GUIUtility.systemCopyBuffer = "http-server --port 80 -b --cors";
         System.Diagnostics.Process.Start(AppConfig.localCDN.Replace("CDN",""));
     }

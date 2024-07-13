@@ -49,13 +49,13 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 #### 出包
     首次出包  
     1.HyBridCLR/Generate/All    
-    2.HyBridCLR/Generate/All_Coopy_replace_dlls_to_bytes
+    2.HybridCLR/CopyTo_GameResHotFix
     3.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用ClearAndCopyAll,然后build两个包   resVersion=v1.0
-    4.执行.YooAsset/CopyWWW_复制下,然后启动web服务器.http-server --port 80 -b --cors
+    4.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     5.正常出apk或exe,启动打开游戏
     出增量包,即热更
-    21.HyBridCLR/CompileDll/ActiveBuildTarget    
-    22.HyBridCLR/Generate/All_Coopy_replace_dlls_to_bytes
-    23.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用None,然后build两个包            resVersion=v1.1继续热更+
-    24.执行.YooAsset/CopyWWW_复制下,然后启动web服务器.http-server --port 80 -b --cors
+    21.HyBridCLR/CompileDll/ActiveBuildTarget (好像改动太小,好像hotUpdate识别不了)
+    22.HybridCLR/CopyTo_GameResHotFix (可利用文件修改时间看下有无新生成)
+    23.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用None,然后build两个包            resVersion=v1.1继续热更+  别重复1.1哦
+    24.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     25.杀掉游戏进程,打开游戏

@@ -40,10 +40,10 @@ public class GameMain : MonoBehaviour
         // yield return CheckLoadYooHF(); //UnityEditor下 若要测试Host手动改下 上面四行注释掉即可  打开这一行
 
         // 反射调用入口 
-        Type uiType = _hotUpdateAss.GetType("UIGenBinder");
+        Type uiType = mHotUpdateAssembly.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
 
-        Type entryType = _hotUpdateAss.GetType("HotFixReflex");
+        Type entryType = mHotUpdateAssembly.GetType("HotFixReflex");
         entryType.GetMethod("Run").Invoke(null, null);
 
         FairyGUI.Timers.inst.Add(1, 1, obj =>
@@ -54,9 +54,9 @@ public class GameMain : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (_hotUpdateAss != null)
+        if (mHotUpdateAssembly != null)
         {
-            Type entryType = _hotUpdateAss.GetType("HotFixReflex");
+            Type entryType = mHotUpdateAssembly.GetType("HotFixReflex");
             entryType.GetMethod("Destroy").Invoke(null, null);
         }
     }
@@ -93,26 +93,29 @@ public class GameMain : MonoBehaviour
         createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         var initializationOperation = package.InitializeAsync(createParameters);
         yield return initializationOperation;
-        _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
+        mHotUpdateAssembly = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
     }
 
     private IEnumerator LoadHotFixRes()
     {
         var hotfixPackage = YooAssets.GetPackage("HotFixPackage");
-        foreach (var dll in AOTMetaAssemblyFiles)
+        foreach (var dll in mAssemblyFiles)
         {
             var handle = hotfixPackage.LoadRawFileAsync($"Assets/GameResHotFix/{dll}.bytes");
             yield return handle;
             var bytes = handle.GetRawFileData();
-            s_assetDatas[dll] = bytes;
+            mAssemblyBytesDic[dll] = bytes;
         }
     }
-
-    private static Dictionary<string, byte[]> s_assetDatas = new Dictionary<string, byte[]>();
-    private static Assembly _hotUpdateAss;
+    public static byte[] ReadBytesFromStreamingAssets(string dllName)
+    {
+        return mAssemblyBytesDic[dllName];
+    }
+    private static Dictionary<string, byte[]> mAssemblyBytesDic = new Dictionary<string, byte[]>();//key=dllName.dll        value=bytes
+    private static Assembly mHotUpdateAssembly;
 
     //PatchedAOTAssemblyList
-    private static List<string> AOTMetaAssemblyFiles { get; } = new List<string>()
+    private static List<string> mAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll",
         "Google.Protobuf.dll",
@@ -124,7 +127,7 @@ public class GameMain : MonoBehaviour
         "YooAsset.dll",
         "mscorlib.dll",
 
-        "HotUpdate.dll",
+        "HotUpdate.dll", //不需使用 RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);加载
     };
 
     /// <summary>
@@ -133,25 +136,23 @@ public class GameMain : MonoBehaviour
     /// </summary>
     private static void LoadMetadataForAOTAssemblies()
     {
-        /// 注意，补充元数据是给AOT dll补充元数据，而不是给热更新dll补充元数据。
-        /// 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
+        /// 注意，补充元数据是给AOT dll补充元数据，而不是给热更新dll补充元数据。 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
         HomologousImageMode mode = HomologousImageMode.SuperSet;
-        foreach (var aotDllName in AOTMetaAssemblyFiles)
-        {
-            byte[] dllBytes = ReadBytesFromStreamingAssets(aotDllName);
+        for (int i = 0; i < mAssemblyFiles.Count-1; i++)
+        {// 减一 最后一个是HotUpdate.dll  不是aot
+            var dll= mAssemblyFiles[i];
+            byte[] dllBytes = ReadBytesFromStreamingAssets(dll);
             // 加载assembly对应的dll，会自动为它hook。一旦aot泛型函数的native函数不存在，用解释器版本代码
             LoadImageErrorCode err = RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);
-            Debuger.Log($"LoadMetadataForAOTAssembly:{aotDllName}. mode:{mode} ret:{err}");
+            Debuger.Log($"LoadMetadataForAOTAssembly:{dll}. mode:{mode} ret:{err}");
         }
 #if UNITY_EDITOR
-        _hotUpdateAss = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
+        mHotUpdateAssembly = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
 #else
-        _hotUpdateAss = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"));
+        mHotUpdateAssembly = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"));
+          Debuger.Log($"LoadHotUpdate.dll Success!");
 #endif
     }
 
-    public static byte[] ReadBytesFromStreamingAssets(string dllName)
-    {
-        return s_assetDatas[dllName];
-    }
+
 }
