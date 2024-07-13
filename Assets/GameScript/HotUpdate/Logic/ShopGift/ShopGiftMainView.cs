@@ -66,7 +66,6 @@ namespace ShopGift
             }
         }
 
-
         private string OnProviderTabList(int index)
         {
             return _menuCfg[index].rType == 0 ? "ui://ShopGift/Item_ShopType" : "ui://ShopGift/Item_ShopMenu";
@@ -104,7 +103,7 @@ namespace ShopGift
                 if (tData.id == cfgId)
                 {
                     item.onClick.Call();
-                    Debuger.LogError("ShopGiftMainView_SetData 快到2024=" + tData.name);
+                    Debuger.Log("ShopGiftMainView_SetData 快到2024=" + tData.name);
                     break;
                 }
             }

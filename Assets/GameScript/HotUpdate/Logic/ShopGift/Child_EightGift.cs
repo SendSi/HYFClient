@@ -1,5 +1,5 @@
 using FairyGUI;
-using UnityEngine;
+
 
 
 namespace ShopGift
@@ -15,7 +15,7 @@ namespace ShopGift
             for (int i = 1; i <= 8; i++)
             {
                 var item = (Item_EightGift)GetChild($"day{i}");
-                item.SetData(list[i - 1]);//Item_EightGift
+                item.SetData(list[i - 1]);//Item_EightGift.cs
             }
         }
 

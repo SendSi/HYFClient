@@ -21,8 +21,11 @@ namespace ShopGift
             for (int i = 0; i < list.Count; i++)
             {
                 var item = (Item_BaseProp)GetChild($"icon{i+1}");
-                item.SetData(list[i]);
+                item.OnInit();//Item_BaseProp.cs  需pop得在这里初始化
+                item.SetData(list[i],true);
             }
         }
+        
+        
     }
 }

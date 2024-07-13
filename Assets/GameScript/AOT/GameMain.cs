@@ -49,6 +49,7 @@ public class GameMain : MonoBehaviour
         FairyGUI.Timers.inst.Add(1, 1, obj =>
         {
             ProxyHotPKGModule.Instance.CloseHFView(); //移除
+            FairyGUI.UIConfig.globalModalWaiting = "ui://CommonPKG/GlobalModalWaiting";
         });
     }
 
