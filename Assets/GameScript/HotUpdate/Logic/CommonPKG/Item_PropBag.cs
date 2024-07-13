@@ -1,5 +1,4 @@
 ﻿using FairyGUI;
-using HYFServer;
 
 namespace CommonPKG
 {
@@ -12,9 +11,9 @@ namespace CommonPKG
             _data = data;
             if (data != null)
             {
-                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(data.CfgId.ToString());
+                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(data.cfgId.ToString());
                 Item_BaseProp baseProp= (Item_BaseProp)_baseProp;
-                baseProp.SetData(cfg.id,data.Sum);//Item_BaseProp.cs
+                baseProp.SetData(cfg.id,data.sum);//Item_BaseProp.cs
             }
         }
 

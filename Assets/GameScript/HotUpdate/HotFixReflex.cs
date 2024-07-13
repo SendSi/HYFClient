@@ -13,7 +13,6 @@ public class HotFixReflex
         LanguageUtils.Instance.Begin();//时序有要求
         
         ProxyLoginModule.Instance.OpenLoginMainView();//时序有要求
-        ProtocalBinder.BindAll();
         ManagerBinder.BindAll();
 
         AudioMgr.Instance.Begin();
@@ -23,7 +22,6 @@ public class HotFixReflex
     public static void Destroy()
     {
         Debuger.LogWarning("HotFixReflex-->Destroy");
-        ProtocalBinder.UnBind();
         ManagerBinder.UnBind();
         
         AudioMgr.Instance.Dispose();

@@ -104,29 +104,13 @@ namespace Login
             var account = _roleInputTxt.text;
             if (string.IsNullOrEmpty(account) == false)
             {
-                ProxyCommonPKGModule.Instance.AddToastStr("服务器开了没?");
-                LoginMySql(account);
-            }
-            else
-            {
-                ProxyCommonPKGModule.Instance.AddToastStr("请先输入账号");
-            }
-            ProxyCommonPKGModule.Instance.AddToastStr("测试热更?");        
-            ProxyCommonPKGModule.Instance.AddToastStr("今年?");
-        }
-
-        async void LoginMySql(string nickName)
-        {
-            var rsp = await ProtocalLogin.Instance.LoginIn(nickName);
-            if (rsp?.Id > 0)
-            {
-                ServiceManager.Instance.SetMetaData(rsp.NickName, rsp.Id);
+                ProxyCommonPKGModule.Instance.AddToastStr("~~登录同时 也飘字~~热更测试  飘字-");
                 ProxyMainCenterModule.Instance.OpenMainCenterView();
                 ProxyLoginModule.Instance.CloseLoginMainView();
             }
             else
             {
-                ProxyCommonPKGModule.Instance.AddToastStr("账号不存在");
+                ProxyCommonPKGModule.Instance.AddToastStr("请先输入账号");
             }
         }
 
