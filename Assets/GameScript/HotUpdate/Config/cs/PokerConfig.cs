@@ -8,9 +8,9 @@
 
 public class PokerConfig
 {
-	public string id; // key值
+	public int id; // key值
 	public string urlIcon; // 道具名称
-	public int id_1; // 牌值
+	public int cardValue; // 牌值
 }
 
 

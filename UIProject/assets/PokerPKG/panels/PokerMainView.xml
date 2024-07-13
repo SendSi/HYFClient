@@ -21,7 +21,7 @@
     <image id="n47_ps8y" name="n47" src="zift7" fileName="images/jujsidai.png" xy="355,47">
       <relation target="" sidePair="center-center,top-top"/>
     </image>
-    <list id="n59_totj" name="leftSendCardList" xy="293,254" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" vAlign="bottom">
+    <list id="n59_totj" name="leftSendCardList" xy="293,254" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" vAlign="bottom" autoClearItems="true">
       <relation target="" sidePair="center-center,bottom-bottom"/>
       <item icon="ui://q3kpafy9105u81ygcgb1"/>
       <item icon="ui://q3kpafy9105u81ygcgag"/>
@@ -32,7 +32,7 @@
       <item/>
       <item/>
     </list>
-    <list id="n60_totj" name="rightSendCardList" xy="776,256" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" align="right" vAlign="bottom">
+    <list id="n60_totj" name="rightSendCardList" xy="776,256" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" align="right" vAlign="bottom" autoClearItems="true">
       <relation target="" sidePair="center-center,bottom-bottom"/>
       <item icon="ui://q3kpafy9105u81ygcgb1"/>
       <item icon="ui://q3kpafy9105u81ygcgag"/>
@@ -43,7 +43,7 @@
       <item/>
       <item/>
     </list>
-    <list id="n61_totj" name="selfSendCardList" xy="525,365" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" align="center" vAlign="middle">
+    <list id="n61_totj" name="selfSendCardList" xy="525,365" size="284,100" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-28" defaultItem="ui://q3kpafy9totj1ygcgab" align="center" vAlign="middle" autoClearItems="true">
       <relation target="" sidePair="center-center,bottom-bottom"/>
       <item icon="ui://q3kpafy9105u81ygcgb1"/>
       <item icon="ui://q3kpafy9105u81ygcgag"/>
@@ -73,7 +73,7 @@
       <relation target="" sidePair="center-center,bottom-bottom"/>
     </group>
     <component id="n53_ps8y" name="closeButton" src="ps8y1ygcga9" fileName="com/Button_icon.xml" xy="15,14"/>
-    <list id="n54_105u8" name="selfCardList" xy="234,530" size="1059,135" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-20" defaultItem="ui://q3kpafy9105u81ygcgbt" vAlign="bottom">
+    <list id="n54_105u8" name="selfCardList" xy="234,530" size="1059,135" layout="row" selectionMode="multipleSingleClick" scroll="horizontal" colGap="-20" defaultItem="ui://q3kpafy9105u81ygcgbt" vAlign="middle" autoClearItems="true">
       <relation target="" sidePair="center-center,bottom-bottom"/>
       <item icon="ui://q3kpafy9105u81ygcgb1"/>
       <item icon="ui://q3kpafy9105u81ygcgag"/>
@@ -88,12 +88,8 @@
       <item/>
       <item/>
       <item/>
-      <item/>
-      <item/>
-      <item/>
-      <item/>
     </list>
-    <list id="n55_105u8" name="leftCardList" xy="313,255" size="92,345" skew="45,26" selectionMode="multipleSingleClick" scroll="horizontal" lineGap="-46" colGap="-40" defaultItem="ui://q3kpafy9105u81ygcgbu" vAlign="middle">
+    <list id="n55_105u8" name="leftCardList" xy="313,255" size="92,345" skew="45,26" selectionMode="multipleSingleClick" scroll="horizontal" lineGap="-46" colGap="-40" defaultItem="ui://q3kpafy9105u81ygcgbu" vAlign="middle" autoClearItems="true">
       <relation target="" sidePair="middle-middle,left-left"/>
       <item icon="ui://q3kpafy9105u81ygcgaa"/>
       <item icon="ui://q3kpafy9105u81ygcgaa"/>
@@ -102,7 +98,7 @@
       <item icon="ui://q3kpafy9105u81ygcgaa"/>
       <item icon="ui://q3kpafy9105u81ygcgaa"/>
     </list>
-    <list id="n56_105u8" name="rightCardList" xy="940,297" size="92,345" skew="-46,-26" selectionMode="multipleSingleClick" scroll="horizontal" lineGap="-46" colGap="-40" defaultItem="ui://q3kpafy9105u81ygcgbu" vAlign="middle">
+    <list id="n56_105u8" name="rightCardList" xy="940,297" size="92,345" skew="-46,-26" selectionMode="multipleSingleClick" scroll="horizontal" lineGap="-46" colGap="-40" defaultItem="ui://q3kpafy9105u81ygcgbu" vAlign="middle" autoClearItems="true">
       <relation target="" sidePair="middle-middle,right-right"/>
       <item icon="ui://q3kpafy9105u81ygcgaa"/>
       <item icon="ui://q3kpafy9105u81ygcgaa"/>

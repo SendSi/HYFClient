@@ -44,6 +44,7 @@
     <type fullname="FairyGUI.ListItemRenderer" preserve="all" />
     <type fullname="FairyGUI.PackageItem" preserve="all" />
     <type fullname="FairyGUI.PlayCompleteCallback" preserve="all" />
+    <type fullname="FairyGUI.PopupDirection" preserve="all" />
     <type fullname="FairyGUI.RelationType" preserve="all" />
     <type fullname="FairyGUI.Stage" preserve="all" />
     <type fullname="FairyGUI.TimerCallback" preserve="all" />
