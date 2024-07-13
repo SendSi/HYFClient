@@ -118,8 +118,6 @@ public class GameMain : MonoBehaviour
     private static List<string> mAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll",
-        "Google.Protobuf.dll",
-        "Grpc.Core.Api.dll",
         "Newtonsoft.Json.dll",
         "System.Core.dll",
         "UnityEngine.CoreModule.dll",
