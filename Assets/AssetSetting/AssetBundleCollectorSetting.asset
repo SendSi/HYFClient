@@ -105,6 +105,19 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+    - GroupName: binary
+      GroupDesc: "luban\u4E8C\u8FDB\u5236\u5BFC\u8868\u6587\u4EF6"
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameScript/HotUpdate/Config/lubanBytes
+        CollectorGUID: 931fa235cb0b92e46846b9e532b94187
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
   - PackageName: HotFixPackage
     PackageDesc: 
     EnableAddressable: 0
