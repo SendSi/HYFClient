@@ -8,6 +8,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"AOT.dll",
 		"Google.Protobuf.dll",
 		"Grpc.Core.Api.dll",
+		"Luban.Runtime.dll",
 		"Newtonsoft.Json.dll",
 		"System.Core.dll",
 		"UnityEngine.CoreModule.dll",
@@ -145,6 +146,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.IEquatable<object>
 	// System.IEquatable<ushort>
 	// System.Nullable<System.DateTime>
+	// System.Nullable<long>
 	// System.Numerics.Vector<ulong>
 	// System.Numerics.Vector<ushort>
 	// System.Predicate<int>
@@ -187,6 +189,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void EventCenter.UnBind<int>(int,UnityEngine.Events.UnityAction<int>)
 		// System.Void EventCenter.UnBind<object>(int,UnityEngine.Events.UnityAction<object>)
 		// Grpc.Core.Marshaller<object> Grpc.Core.Marshallers.Create<object>(System.Action<object,Grpc.Core.SerializationContext>,System.Func<Grpc.Core.DeserializationContext,object>)
+		// string Luban.StringUtil.CollectionToString<object>(System.Collections.Generic.IEnumerable<object>)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string,Newtonsoft.Json.JsonSerializerSettings)
 		// object System.Activator.CreateInstance<object>()
@@ -226,5 +229,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// object UnityEngine.JsonUtility.FromJson<object>(string)
 		// YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)
 		// YooAsset.AssetHandle YooAsset.YooAssets.LoadAssetAsync<object>(string,uint)
+		// string string.Join<object>(string,System.Collections.Generic.IEnumerable<object>)
+		// string string.JoinCore<object>(System.Char*,int,System.Collections.Generic.IEnumerable<object>)
 	}
 }

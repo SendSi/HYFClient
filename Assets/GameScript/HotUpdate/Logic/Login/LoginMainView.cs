@@ -41,6 +41,8 @@ namespace Login
         private void OnClickNoticeBtn()
         {
             ProxyLoginModule.Instance.OpenGameNoticeViewWin();
+            
+            CfgLubanMgr.Instance.Show();
         }
 
         private void OnClickEffectBtn()

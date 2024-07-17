@@ -115,12 +115,13 @@ public class GameMain : MonoBehaviour
     private static Dictionary<string, byte[]> mAssemblyBytesDic = new Dictionary<string, byte[]>();//key=dllName.dll        value=bytes
     private static Assembly mHotUpdateAssembly;
 
-    //PatchedAOTAssemblyList
+    //AOTGenericReferences.cs     PatchedAOTAssemblyList
     private static List<string> mAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll",
         "Google.Protobuf.dll",
         "Grpc.Core.Api.dll",
+        "Luban.Runtime.dll",
         "Newtonsoft.Json.dll",
         "System.Core.dll",
         "UnityEngine.CoreModule.dll",

@@ -45,4 +45,33 @@ public class GPRCHelperEditor
             Debuger.LogError($"生成协议失败. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
         }
     }
+    
+    // [MenuItem("Tools/luban_导表二进制", priority = 101)]
+    // public static void GenerateLuban_binary()
+    // {
+    //     var batFilePath = Application.dataPath.Replace("Assets", "Excel_luban/gen.bat");
+    //
+    //     Debug.LogError(batFilePath);
+    //     
+    //     Process process = new Process();
+    //     process.StartInfo.FileName = batFilePath;
+    //     process.StartInfo.CreateNoWindow = true;
+    //     process.StartInfo.UseShellExecute = false;
+    //     process.StartInfo.RedirectStandardOutput = true;
+    //     process.StartInfo.RedirectStandardError = true;
+    //     process.Start();
+    //     Debug.LogError("???");
+    //     
+    //     // if (process.ExitCode == 0)
+    //     // {
+    //     //     AssetDatabase.Refresh();
+    //     //     Debug.Log("luban_导表二进制 完成");
+    //     // }
+    //     // else
+    //     // {
+    //     //     Debug.LogError($"luban_导表二进制. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
+    //     // }
+    //     // // Wait for the batch file to finish executing
+    //     // process.WaitForExit();
+    // }
 }
