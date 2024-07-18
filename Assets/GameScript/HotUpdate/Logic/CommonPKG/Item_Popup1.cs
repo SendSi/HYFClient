@@ -1,4 +1,5 @@
 using FairyGUI;
+using cfg;
 
 namespace CommonPKG
 {
@@ -6,7 +7,7 @@ namespace CommonPKG
     {
         public void SetData(ItemProp item)
         {
-            var cfg =  CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(item.id);//ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.id.ToString());
+            var cfg =  CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(item.Id);//ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.id.ToString());
             this._title.text = cfg.Name;
             this._itemDescTxt.text = cfg.IconDesecribe;
             this._comItem.SetData(item, false);

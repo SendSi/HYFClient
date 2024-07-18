@@ -1,4 +1,5 @@
 ﻿using FairyGUI;
+using cfg;
 
 namespace CommonPKG
 {
@@ -30,10 +31,10 @@ namespace CommonPKG
         public void SetData(ItemProp prop, bool isNeedPop = false)
         {
             // mCfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(prop.id.ToString());
-            mCfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(prop.id);
+            mCfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(prop.Id);
             _propIcon.icon = mCfg.Icon;
             _qualityCtrl.selectedIndex = (mCfg.Quality - 1);
-            _numTxt.text = prop.num.ToString();
+            _numTxt.text = prop.Num.ToString();
 
             if (isNeedPop)
             {
