@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using HYFServer;
-using UnityEngine;
 
 public class BagManager : Singleton<BagManager>
 {
@@ -69,13 +67,7 @@ public class BagManager : Singleton<BagManager>
         return sortDtos;
     }
 
-    public void SetServerItems(ItemDtos rspItemDots)
-    {
-        for (int i = 0; i < rspItemDots.ItemInfos.Count; i++)
-        {
-            mServerDtos.Add(rspItemDots.ItemInfos[i]);
-        }
-    }
+ 
 
     private bool all = true;
     private bool res = true;
@@ -118,5 +110,19 @@ public class BagManager : Singleton<BagManager>
             equ = false;
             RedDotManager.Instance.UpdateRedDotState(RedDotDefine.Bag_equ);
         }
+    }
+}
+
+public class ItemDto
+{
+    public int CfgId;
+    public int Sum;
+    public string uid;
+
+    public ItemDto(int cfgId, int sum, string uid)
+    {
+        this.CfgId = cfgId;
+        this.Sum = sum;
+        this.uid = uid;
     }
 }

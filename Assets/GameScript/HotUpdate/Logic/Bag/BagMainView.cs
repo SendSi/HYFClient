@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using CommonPKG;
 using FairyGUI;
-using UnityEngine;
-using HYFServer;
 
 namespace Bag
 {
@@ -116,8 +114,7 @@ namespace Bag
 
         private async void OnClickUsing()
         {
-            var result = await ProtocalBag.Instance.BagUsingItem(1, 1);
-            Debuger.LogError(result);
+            Debuger.LogError("使用");
         }
     }
 }

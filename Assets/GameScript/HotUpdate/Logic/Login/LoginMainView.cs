@@ -114,16 +114,16 @@ namespace Login
         async void LoginMySql(string nickName)
         {
             GRoot.inst.ShowModalWait();
-            var rsp = await ProtocalLogin.Instance.LoginIn(nickName);
-            if (rsp?.Id > 0)
+            var account = _roleInputTxt.text;
+            if (string.IsNullOrEmpty(account) == false)
             {
-                ServiceManager.Instance.SetMetaData(rsp.NickName, rsp.Id);
+                ProxyCommonPKGModule.Instance.AddToastStr("~~登录同时 也飘字~~热更测试  飘字-");
                 ProxyMainCenterModule.Instance.OpenMainCenterView();
                 ProxyLoginModule.Instance.CloseLoginMainView();
             }
             else
             {
-                ProxyCommonPKGModule.Instance.AddToastStr("账号不存在");
+                ProxyCommonPKGModule.Instance.AddToastStr("请先输入账号");
             }
             GRoot.inst.CloseModalWait();
         }
