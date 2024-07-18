@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using YooAsset;
-
-//导表工具 默认使用字典模式     少使用array
-public class ConfigMgr : Singleton<ConfigMgr>
+/// <summary>
+/// 使用_init_.bat进行全部导出,默认使用字典形式的json文件,右键_init_.bat打开可以添加用List形式导出
+/// </summary>
+// 默认使用字典模式     少使用array         导表还是使用 CfgLubanMgr吧,性能好一点...  这个一开始写出的...不打算用了,但也不删吧
+public class CfgJsonMgr : Singleton<CfgJsonMgr>
 {
     private string _langCfgName; //翻译表  导表之间的索引
     private string _langScriptName; //写代码时 收集的到表

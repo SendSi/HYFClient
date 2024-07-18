@@ -1,7 +1,11 @@
 using Luban;
 using UnityEngine;
 using YooAsset;
-
+/// <summary>
+/// https://luban.doc.code-philosophy.com/docs/beginner/quickstart
+///单独取一条数据.oneCfg-->CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(id);
+///取一个整表.lists--> CfgLubanMgr.Instance.globalTab.TbEightGiftConfig.DataList   
+/// </summary>
 public class CfgLubanMgr : Singleton<CfgLubanMgr>
 {
     private cfg.Tables _globalTab;

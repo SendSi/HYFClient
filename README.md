@@ -26,7 +26,8 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 #### 功能
     红点使用 RedDotManager.cs  在模块的初始化加入监听,在UI页面(或组件)RedPoint.SetData(类型),估计后续得扩展,可看背包示例
     特效使用 EffectLoader.cs 可查看文件头部注释  LoadEffect_Id() LoadUIEffect() LoadSceneEffect()
-    导表使用 在根目录处有Excel,使用方法看ConfigMgr.cs头文件注解,使用_init_.bat进行全部导出,默认使用字典形式的json文件,右键_init_.bat打开可以添加用List形式导出
+    导表使用 json形式,数据明文好阅读,在根目录处有Excel,使用方法看CfgJsonMgr.cs头文件注解
+    导表使用 二进制形式,性能好,在根目录处有Excel_luban,使用方法看CfgLubanMgr.cs头文件注解,使用gen.bat进行全部导出
     浏海屏幕 SafeAreaUtils.cs处理了左右横屏,制作fgui工程时需注意一下大背景得左右两边往外伸一点即可
 	多国语言 LanguageUtils.cs可查看文件头部注释.导表映射.fgui内置字..切换语言时,会退出应用.重启生效
 	声音播放 AudioMgr.cs 播放背景PlayBGM_Id(),播放音效PlayMusic_Id() 配合使用SoundConfig.xlsx

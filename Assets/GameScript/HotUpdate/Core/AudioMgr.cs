@@ -119,7 +119,7 @@ public class AudioMgr : Singleton<AudioMgr>
 
     public void PlayBGM_Id(string id, bool isLoop = true)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<SoundConfig>(id);
+        var cfg = CfgJsonMgr.Instance.LoadConfigOne<SoundConfig>(id);
         if (cfg != null)
         {
             PlayBGM(cfg.yooPath, isLoop);
@@ -153,7 +153,7 @@ public class AudioMgr : Singleton<AudioMgr>
 
     public void PlayMusic_Id(string id)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<SoundConfig>(id);
+        var cfg = CfgJsonMgr.Instance.LoadConfigOne<SoundConfig>(id);
         if (cfg != null)
         {
             PlayMusic(cfg.yooPath);
