@@ -19,7 +19,7 @@ public sealed partial class TodayGiftConfig : Luban.BeanBase
         Id = _buf.ReadInt();
         TitleTxt = _buf.ReadString();
         DescTxt = _buf.ReadString();
-        Commodity = _buf.ReadString();
+        {int n0 = System.Math.Min(_buf.ReadSize(), _buf.Size);Commodity = new System.Collections.Generic.List<ItemProp>(n0);for(var i0 = 0 ; i0 < n0 ; i0++) { ItemProp _e0;  _e0 = ItemProp.DeserializeItemProp(_buf); Commodity.Add(_e0);}}
         IconCtrl = _buf.ReadInt();
     }
 
@@ -43,7 +43,7 @@ public sealed partial class TodayGiftConfig : Luban.BeanBase
     /// <summary>
     /// 商品
     /// </summary>
-    public readonly string Commodity;
+    public readonly System.Collections.Generic.List<ItemProp> Commodity;
     /// <summary>
     /// 宝箱图标
     /// </summary>
@@ -54,6 +54,7 @@ public sealed partial class TodayGiftConfig : Luban.BeanBase
 
     public  void ResolveRef(Tables tables)
     {
+        foreach (var _e in Commodity) { _e?.ResolveRef(tables); }
     }
 
     public override string ToString()
@@ -62,7 +63,7 @@ public sealed partial class TodayGiftConfig : Luban.BeanBase
         + "id:" + Id + ","
         + "titleTxt:" + TitleTxt + ","
         + "descTxt:" + DescTxt + ","
-        + "commodity:" + Commodity + ","
+        + "commodity:" + Luban.StringUtil.CollectionToString(Commodity) + ","
         + "iconCtrl:" + IconCtrl + ","
         + "}";
     }

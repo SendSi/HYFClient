@@ -25,9 +25,9 @@ public sealed partial class ATestItem : Luban.BeanBase
         if(_buf.ReadBool()){ ExpireTime = _buf.ReadLong(); } else { ExpireTime = null; }
         BatchUseable = _buf.ReadBool();
         Quality = (item.EQuality)_buf.ReadInt();
-        ExchangeStream = item.ItemExchange.DeserializeItemExchange(_buf);
-        {int n0 = System.Math.Min(_buf.ReadSize(), _buf.Size);ExchangeList = new System.Collections.Generic.List<item.ItemExchange>(n0);for(var i0 = 0 ; i0 < n0 ; i0++) { item.ItemExchange _e0;  _e0 = item.ItemExchange.DeserializeItemExchange(_buf); ExchangeList.Add(_e0);}}
-        ExchangeColumn = item.ItemExchange.DeserializeItemExchange(_buf);
+        PropStream = ItemProp.DeserializeItemProp(_buf);
+        {int n0 = System.Math.Min(_buf.ReadSize(), _buf.Size);PropList = new System.Collections.Generic.List<ItemProp>(n0);for(var i0 = 0 ; i0 < n0 ; i0++) { ItemProp _e0;  _e0 = ItemProp.DeserializeItemProp(_buf); PropList.Add(_e0);}}
+        PropColumn = ItemProp.DeserializeItemProp(_buf);
     }
 
     public static ATestItem DeserializeATestItem(ByteBuf _buf)
@@ -71,12 +71,12 @@ public sealed partial class ATestItem : Luban.BeanBase
     /// <summary>
     /// 道具兑换配置
     /// </summary>
-    public readonly item.ItemExchange ExchangeStream;
-    public readonly System.Collections.Generic.List<item.ItemExchange> ExchangeList;
+    public readonly ItemProp PropStream;
+    public readonly System.Collections.Generic.List<ItemProp> PropList;
     /// <summary>
     /// 道具兑换配置
     /// </summary>
-    public readonly item.ItemExchange ExchangeColumn;
+    public readonly ItemProp PropColumn;
    
     public const int __ID__ = 1692085798;
     public override int GetTypeId() => __ID__;
@@ -84,9 +84,9 @@ public sealed partial class ATestItem : Luban.BeanBase
     public  void ResolveRef(Tables tables)
     {
         UpgradeToItemId_Ref = tables.TBATestItem.GetOrDefault(UpgradeToItemId);
-        ExchangeStream?.ResolveRef(tables);
-        foreach (var _e in ExchangeList) { _e?.ResolveRef(tables); }
-        ExchangeColumn?.ResolveRef(tables);
+        PropStream?.ResolveRef(tables);
+        foreach (var _e in PropList) { _e?.ResolveRef(tables); }
+        PropColumn?.ResolveRef(tables);
     }
 
     public override string ToString()
@@ -100,9 +100,9 @@ public sealed partial class ATestItem : Luban.BeanBase
         + "expireTime:" + ExpireTime + ","
         + "batchUseable:" + BatchUseable + ","
         + "quality:" + Quality + ","
-        + "exchangeStream:" + ExchangeStream + ","
-        + "exchangeList:" + Luban.StringUtil.CollectionToString(ExchangeList) + ","
-        + "exchangeColumn:" + ExchangeColumn + ","
+        + "propStream:" + PropStream + ","
+        + "propList:" + Luban.StringUtil.CollectionToString(PropList) + ","
+        + "propColumn:" + PropColumn + ","
         + "}";
     }
 }

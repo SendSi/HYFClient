@@ -18,7 +18,7 @@ public sealed partial class RechargeConfig : Luban.BeanBase
     {
         Id = _buf.ReadInt();
         Name = _buf.ReadString();
-        Commodity = _buf.ReadString();
+        {int n0 = System.Math.Min(_buf.ReadSize(), _buf.Size);Commodity = new System.Collections.Generic.List<ItemProp>(n0);for(var i0 = 0 ; i0 < n0 ; i0++) { ItemProp _e0;  _e0 = ItemProp.DeserializeItemProp(_buf); Commodity.Add(_e0);}}
         ExtraFirst = _buf.ReadString();
         RType = _buf.ReadInt();
         CenIcon = _buf.ReadString();
@@ -41,7 +41,7 @@ public sealed partial class RechargeConfig : Luban.BeanBase
     /// <summary>
     /// 商品
     /// </summary>
-    public readonly string Commodity;
+    public readonly System.Collections.Generic.List<ItemProp> Commodity;
     /// <summary>
     /// 首充额外获得
     /// </summary>
@@ -64,6 +64,7 @@ public sealed partial class RechargeConfig : Luban.BeanBase
 
     public  void ResolveRef(Tables tables)
     {
+        foreach (var _e in Commodity) { _e?.ResolveRef(tables); }
     }
 
     public override string ToString()
@@ -71,7 +72,7 @@ public sealed partial class RechargeConfig : Luban.BeanBase
         return "{ "
         + "id:" + Id + ","
         + "name:" + Name + ","
-        + "commodity:" + Commodity + ","
+        + "commodity:" + Luban.StringUtil.CollectionToString(Commodity) + ","
         + "extraFirst:" + ExtraFirst + ","
         + "rType:" + RType + ","
         + "cenIcon:" + CenIcon + ","
