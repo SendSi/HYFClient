@@ -77,6 +77,12 @@ MonoBehaviour:
     FileName: 41bc7b0f06d3bdc2f7303058321dd33c.bundle
     FileCRC32: b95a4944
   - PackageName: DefaultPackage
+    FileName: 46eaede2b4d8b9b41deaac94e1b89d11.bundle
+    FileCRC32: 4028e5f7
+  - PackageName: DefaultPackage
+    FileName: 47f3ff4e542099f6b0e37cd9e2d4cbc6.bundle
+    FileCRC32: a8106922
+  - PackageName: DefaultPackage
     FileName: 4bbd53518edad50bce9421c36c8437cc.bundle
     FileCRC32: a8208551
   - PackageName: DefaultPackage
@@ -136,9 +142,6 @@ MonoBehaviour:
   - PackageName: DefaultPackage
     FileName: 7947088f00677e273ca4b7cf8923ce62.bundle
     FileCRC32: b925c404
-  - PackageName: DefaultPackage
-    FileName: 7a126ed15dbce2a1701c395667455283.bundle
-    FileCRC32: 4afe7448
   - PackageName: DefaultPackage
     FileName: 7d406ec45a93ae657f1b9b2fa510744f.bundle
     FileCRC32: ff92e28e
@@ -263,9 +266,6 @@ MonoBehaviour:
     FileName: e7adb32708f026c9505dcdc667d92626.bundle
     FileCRC32: 37336f5e
   - PackageName: DefaultPackage
-    FileName: e7ec811ad674b26bd5b78f511f1408cb.bundle
-    FileCRC32: cf10268a
-  - PackageName: DefaultPackage
     FileName: ec7b2ad548ec5403f2b920c2afcda218.bundle
     FileCRC32: 7669e604
   - PackageName: DefaultPackage
@@ -277,9 +277,6 @@ MonoBehaviour:
   - PackageName: DefaultPackage
     FileName: fc9b13ed9a83720dbb59d3aee6e7e6fe.bundle
     FileCRC32: 686fbed9
-  - PackageName: HotFixPackage
-    FileName: 13cd37bee0eb95c241e105dbe453d4e5.rawfile
-    FileCRC32: bf3dbf1e
   - PackageName: HotFixPackage
     FileName: 45f76de03b84fe6f0b3371b5ba3ba720.rawfile
     FileCRC32: beca53df
@@ -295,6 +292,9 @@ MonoBehaviour:
   - PackageName: HotFixPackage
     FileName: 80602609e96e4699340294ed673b12a9.rawfile
     FileCRC32: 912d2d34
+  - PackageName: HotFixPackage
+    FileName: 81fd753a0c8934d05fa344bccccf1551.rawfile
+    FileCRC32: 5bddc8a8
   - PackageName: HotFixPackage
     FileName: 825ad5fc40eafe201fdf0fc5e36000aa.rawfile
     FileCRC32: 513bc266
