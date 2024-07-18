@@ -6,15 +6,15 @@ namespace Welfare
 {
     public partial class WelfareMainView : GComponent
     {
-        private List<WelfareMenuConfig> _menuCfg;
+        private List<cfg.WelfareMenuConfig> _menuCfg;
         private List<MenuItemWelfare> _menuItems = new List<MenuItemWelfare>();
 
         public override void OnInit()
         {
             base.OnInit();
 
-            _menuCfg = ConfigMgr.Instance.LoadConfigList<WelfareMenuConfig>();
-            _menuCfg.Sort((a, b) =>            {                return a.id < b.id ? -1 : 1; });
+            _menuCfg =  CfgLubanMgr.Instance.globalTab.TbWelfareMenuConfig.DataList;//ConfigMgr.Instance.LoadConfigList<WelfareMenuConfig>();
+            _menuCfg.Sort((a, b) =>            {                return a.Id < b.Id ? -1 : 1; });
 
             this._closeButton.onClick.Set(() => { ProxyWelfareModule.Instance.CloseWelfareMainView(); });
 
@@ -28,16 +28,16 @@ namespace Welfare
         private void OnClickItemLeftTab(EventContext evCon)
         {
             var data = (GComponent)evCon.data;
-            WelfareMenuConfig cfg = (WelfareMenuConfig)data.data;
+            cfg.WelfareMenuConfig cfg = (cfg.WelfareMenuConfig)data.data;
 
-            this._conPanel.url = cfg.urlPath;
+            this._conPanel.url = cfg.UrlPath;
             this._conPanel.component.data = cfg;
             this._conPanel.component.OnInit(); //点击使用
         }
 
         private string OnProviderTabList(int index)
         {
-            return _menuCfg[index].rType == 0 ? "ui://Welfare/MenuTypeWelfare" : "ui://Welfare/MenuItemWelfare";
+            return _menuCfg[index].RType == 0 ? "ui://Welfare/MenuTypeWelfare" : "ui://Welfare/MenuItemWelfare";
         }
 
         private void OnRendererTabList(int index, GObject obj)
@@ -45,7 +45,7 @@ namespace Welfare
             var cfg = _menuCfg[index];
             obj.data = cfg;
 
-            if (cfg.rType == 0)
+            if (cfg.RType == 0)
             {
                 MenuTypeWelfare item = (MenuTypeWelfare)obj;
                 item.SetData(cfg);
@@ -68,8 +68,8 @@ namespace Welfare
         {
             foreach (var item in _menuItems)
             {
-                var tData = (WelfareMenuConfig)item.data;
-                if (tData.id == cfgId)
+                var tData = (cfg.WelfareMenuConfig)item.data;
+                if (tData.Id == cfgId)
                 {
                     item.onClick.Call();
                     break;

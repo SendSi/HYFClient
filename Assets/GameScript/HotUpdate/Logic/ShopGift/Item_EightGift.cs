@@ -13,10 +13,10 @@ namespace ShopGift
 {
     public partial class Item_EightGift : GButton
     {
-        public void SetData(EightGiftConfig cfg)
+        public void SetData(cfg.EightGiftConfig cfg)
         {
-            this.title = cfg.name;
-            var list = FormatUtils.Instance.GetFormatItem(cfg.reward);
+            this.title = cfg.Name;
+            var list = FormatUtils.Instance.GetFormatItem(cfg.Reward);
             _rewardCtrl.selectedIndex = (list.Count - 1);
             for (int i = 0; i < list.Count; i++)
             {

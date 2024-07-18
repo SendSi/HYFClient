@@ -28,21 +28,23 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
     }
 
     //使用string的id咯,省去装拆箱
-    public void AddToastId(string stringId)
+    public void AddToastId(int keyId)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        // var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbTipTextConfig.Get(keyId);
         if (cfg != null)
         {
-            AddToastStr(cfg.content);
+            AddToastStr(cfg.Content);
         }
     }
 
-    public void AddToastId(string stringId, params object[] args)
+    public void AddToastId(int keyId, params object[] args)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        // var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbTipTextConfig.Get(keyId);
         if (cfg != null)
         {
-            AddToastStr(string.Format(cfg.content, args));
+            AddToastStr(string.Format(cfg.Content, args));
         }
     }
 
@@ -69,21 +71,23 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
 
     #region 跑马灯调用 ***AddHorseLampId() or AddHorseLampStr()
 
-    public void AddHorseLampId(string stringId)
+    public void AddHorseLampId(int keyId)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        // var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbTipTextConfig.Get(keyId);
         if (cfg != null)
         {
-            AddHorseLampStr(cfg.content);
+            AddHorseLampStr(cfg.Content);
         }
     }
 
-    public void AddHorseLampId(string stringId, params object[] args)
+    public void AddHorseLampId(int keyId, params object[] args)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        // var cfg = ConfigMgr.Instance.LoadConfigOne<TipTextConfig>(stringId);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbTipTextConfig.Get(keyId);
         if (cfg != null)
         {
-            AddHorseLampStr(string.Format(cfg.content, args));
+            AddHorseLampStr(string.Format(cfg.Content, args));
         }
     }
 

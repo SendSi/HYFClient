@@ -41,14 +41,6 @@ namespace Login
         private void OnClickNoticeBtn()
         {
             ProxyLoginModule.Instance.OpenGameNoticeViewWin();
-
-            CfgLubanMgr.Instance.ExampleMethod();
-
-            var cfg = CfgLubanMgr.Instance.globalTab.TBATestItem.Get(10001);
-            Debug.LogFormat("{0}",cfg);
-            
-            var cfg2=CfgLubanMgr.Instance.globalTab.TbCheckInConfig.Get(1001);
-            Debug.LogFormat("{0}",cfg2);
         }
 
         private void OnClickEffectBtn()
@@ -139,20 +131,17 @@ namespace Login
         private void OnClickCfgBtn()
         {
             Debuger.LogError("测试 加载配置文件  conifg");
-            var infos = ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表
-            ItemConfig config = null;
-            if (infos.TryGetValue("2", out config))
+            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(2);// ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表;
+            if (cfg != null)
             {
-                Debuger.LogError(config.name + "  " + config.iconDesecribe);
-                ProxyCommonPKGModule.Instance.AddToastStr($"load config dicTable {config.name}   {config.iconDesecribe}");
+                Debuger.LogError(cfg.Name + "  " + cfg.IconDesecribe);
+                ProxyCommonPKGModule.Instance.AddToastStr($"load config dicTable {cfg.Name}   {cfg.IconDesecribe}");
             }
-
-            var oneItem = ConfigMgr.Instance.LoadConfigOne<ItemConfig>("404801"); //表里的 某行数据
-            if (oneItem != null)
-            {
-                Debuger.LogError(oneItem.name + "  " + oneItem.iconDesecribe);
-                ProxyCommonPKGModule.Instance.AddToastStr($"load config oneLineCfg {oneItem.name}   {oneItem.iconDesecribe}");
-            }
+            
+            
+            CfgLubanMgr.Instance.ExampleMethod();
+            var cfg22 = CfgLubanMgr.Instance.globalTab.TBATestItem.Get(10001);
+            Debug.LogFormat("{0}",cfg22);
         }
 
         public override void Dispose()

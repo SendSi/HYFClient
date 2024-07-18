@@ -20,7 +20,6 @@ public class BagManager : Singleton<BagManager>
         Debuger.Log("OnBagResRedDotLogicHandler:" + redNode.redDotActive);
     }
 
-
     private void OnBagRootRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetRootRedDot();
@@ -33,13 +32,11 @@ public class BagManager : Singleton<BagManager>
         Debuger.Log("OnBagAllRedDotLogicHandler:" + redNode.redDotActive);
     }
 
-
     private void OnBagEquRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetEquRedDot();
         Debuger.Log("OnBagEquRedDotLogicHandler:" + redNode.redDotActive);
     }
-
 
     private List<ItemDto> mServerDtos = new List<ItemDto>();
 
@@ -62,8 +59,8 @@ public class BagManager : Singleton<BagManager>
         var sortDtos = new List<ItemDto>();
         foreach (var item in mServerDtos)
         {
-            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.CfgId.ToString());
-            if (cfg != null && cfg.type > 1)
+            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(item.CfgId); //ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.CfgId.ToString());
+            if (cfg != null && cfg.Type > 1)
             {
                 sortDtos.Add(item);
             }

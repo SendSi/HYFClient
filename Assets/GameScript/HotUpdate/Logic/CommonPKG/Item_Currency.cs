@@ -9,10 +9,10 @@ namespace CommonPKG
         public void SetData(int pCfgId)
         {
             _hasNumTxt.text = BagManager.Instance.GetServerItemSum(pCfgId).ToString();
-            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(pCfgId.ToString());
+            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(pCfgId);// ConfigMgr.Instance.LoadConfigOne<ItemConfig>(pCfgId.ToString());
             // Debuger.LogError($"{pCfgId}  {cfg.smallIcon}");
-            _icon.icon =cfg.smallIcon;
-            _addCtrl.selectedIndex = cfg.showAdd;
+            _icon.icon =cfg.SmallIcon;
+            _addCtrl.selectedIndex = cfg.ShowAdd;
             mCurrencyId = pCfgId;
         }
 

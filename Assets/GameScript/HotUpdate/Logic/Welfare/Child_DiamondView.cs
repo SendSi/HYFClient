@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
-
+using cfg;
 namespace Welfare
 {
     public partial class Child_DiamondView : GComponent
@@ -13,7 +13,7 @@ namespace Welfare
             base.OnInit();
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debuger.LogError(cfg.name);
+            Debuger.LogError(cfg.Name);
 
             _cfgInfos = ConfigMgr.Instance.LoadConfigList<RechargeConfig>(); //整个表
             _cfgInfos.Sort((a, b) => { return a.id < b.id ? -1 : 1; });

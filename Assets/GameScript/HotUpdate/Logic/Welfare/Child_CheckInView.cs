@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using FairyGUI;
-using UnityEngine;
+using cfg;
 
 namespace Welfare
 {
@@ -8,17 +8,17 @@ namespace Welfare
     {
         private GList _dayList;
         private TimerCallback timerCB;
-        private List<CheckInConfig> _cfgInfos;
+        private List<cfg.CheckInConfig> _cfgInfos;
 
         public override void OnInit()
         {
             base.OnInit();
 
-            _cfgInfos = ConfigMgr.Instance.LoadConfigList<CheckInConfig>(); //整个表
-            _cfgInfos.Sort((a, b) =>            {                return a.id < b.id ? -1 : 1;            });
+            _cfgInfos = CfgLubanMgr.Instance.globalTab.TbCheckInConfig.DataList;// ConfigMgr.Instance.LoadConfigList<CheckInConfig>(); //整个表
+            _cfgInfos.Sort((a, b) =>            {                return a.Id < b.Id ? -1 : 1;            });
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debuger.LogError(cfg.name);
+            Debuger.LogError(cfg.Name);
 
             _dayList = this._dayCom.GetChild("dayList").asList;
             _dayList.itemRenderer = OnRendererDayList;

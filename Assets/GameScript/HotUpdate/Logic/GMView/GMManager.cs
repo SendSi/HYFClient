@@ -105,7 +105,7 @@ public class GMManager : Singleton<GMManager>
             }
             else if (target == "playEffect")
             {
-                EffectLoader.Instance.LoadEffect_Id(values[2]);
+                EffectLoader.Instance.LoadEffect_Id(int.Parse(values[2]));
             }
             else if (target == "guideType")
             {
@@ -123,13 +123,13 @@ public class GMManager : Singleton<GMManager>
             }
             else if (target == "AddToastId")
             {
-                ProxyCommonPKGModule.Instance.AddToastId(values[2]);
+                ProxyCommonPKGModule.Instance.AddToastId(int.Parse(values[2]));
                 // ProxyCommonPKGModule.Instance.AddToastId("1003","2024");
                 ProxyGMModule.Instance.HideGMMainView();
             }
             else if (target == "AddHorseLampId")
             {
-                ProxyCommonPKGModule.Instance.AddHorseLampId(values[2]);
+                ProxyCommonPKGModule.Instance.AddHorseLampId(int.Parse(values[2]));
                 // ProxyCommonPKGModule.Instance.AddHorseLampId("2002","2024");
                 ProxyGMModule.Instance.HideGMMainView();
             }

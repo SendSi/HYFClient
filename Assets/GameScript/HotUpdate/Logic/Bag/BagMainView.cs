@@ -86,9 +86,9 @@ namespace Bag
             {
                 var rightIcon = (Item_PropBag)_iconProp;
                 rightIcon.SetData(mSelectItemDto);
-                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
-                _titlePropTxt.text = cfg.name;
-                _descTxt.text = cfg.iconDesecribe;
+                var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(mSelectItemDto.CfgId);// ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
+                _titlePropTxt.text = cfg.Name;
+                _descTxt.text = cfg.IconDesecribe;
                 _hasTxt.text = mSelectItemDto.Sum.ToString();
             }
         }
