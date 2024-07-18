@@ -15,6 +15,7 @@ public class HotFixReflex
         ProxyLoginModule.Instance.OpenLoginMainView();//时序有要求
         ManagerBinder.BindAll();
 
+        CfgLubanMgr.Instance.Begin();//导表初始化
         AudioMgr.Instance.Begin();
         GMManager.Instance.Begin();
     }

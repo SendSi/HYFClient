@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class GMManager : Singleton<GMManager>
 {
-    private List<GMConfig> _typeListDto;
-    private Dictionary<int, List<GMConfig>> _centerListDto;
+    private List<cfg.GMConfig> _typeListDto;
+    private Dictionary<int, List<cfg.GMConfig>> _centerListDto;
     private List<string> _oldReListDto;
     private const string prefsKey = "oldReKey1";
     private string _oldReStrValue;
@@ -12,19 +12,19 @@ public class GMManager : Singleton<GMManager>
     protected override void OnInit()
     {
         base.OnInit();
-        _typeListDto = new List<GMConfig>();
-        _centerListDto = new Dictionary<int, List<GMConfig>>();
+        _typeListDto = new List<cfg.GMConfig>();
+        _centerListDto = new Dictionary<int, List<cfg.GMConfig>>();
         _oldReListDto = new List<string>();
-        var dicCfg = ConfigMgr.Instance.LoadConfigDics<GMConfig>();
+        var dicCfg = CfgLubanMgr.Instance.globalTab.TbGMConfig.DataList;
         foreach (var item in dicCfg)
         {
-            if (_centerListDto.ContainsKey(item.Value.tType) == false)
+            if (_centerListDto.ContainsKey(item.TType) == false)
             {
-                _centerListDto[item.Value.tType] = new List<GMConfig>();
-                _typeListDto.Add(item.Value);
+                _centerListDto[item.TType] = new List<cfg.GMConfig>();
+                _typeListDto.Add(item);
             }
 
-            _centerListDto[item.Value.tType].Add(item.Value);
+            _centerListDto[item.TType].Add(item);
         }
 
         _oldReStrValue = PlayerPrefsHelper.GetString(prefsKey, ""); //;; 两个分号切割
@@ -49,12 +49,12 @@ public class GMManager : Singleton<GMManager>
         });
     }
 
-    public List<GMConfig> GetTypeList()
+    public List<cfg.GMConfig> GetTypeList()
     {
         return _typeListDto;
     }
 
-    public List<GMConfig> GetCenterList(int pType)
+    public List<cfg.GMConfig> GetCenterList(int pType)
     {
         return _centerListDto[pType];
     }
