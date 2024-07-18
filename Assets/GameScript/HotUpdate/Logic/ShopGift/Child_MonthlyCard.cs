@@ -1,5 +1,5 @@
 using FairyGUI;
-using UnityEngine;
+using cfg;
 
 namespace ShopGift
 {
@@ -9,7 +9,7 @@ namespace ShopGift
         {
             // base.OnInit();//需盖掉
             ShopGiftMenuConfig cfg = (ShopGiftMenuConfig)(this.data);
-            Debuger.Log(cfg.name);
+            Debuger.Log(cfg.Name);
         }
         public void SetData()
         {

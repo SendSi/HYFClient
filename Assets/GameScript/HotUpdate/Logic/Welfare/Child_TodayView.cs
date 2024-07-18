@@ -16,8 +16,8 @@ namespace Welfare
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
             Debuger.LogError(cfg.Name);
 
-            _infoList = ConfigMgr.Instance.LoadConfigList<TodayGiftConfig>();
-            _infoList.Sort((a, b) => { return a.id < b.id ? -1 : 1; });
+            _infoList = CfgLubanMgr.Instance.globalTab.TbTodayGiftConfig.DataList;// ConfigMgr.Instance.LoadConfigList<TodayGiftConfig>();
+            _infoList.Sort((a, b) => { return a.Id < b.Id ? -1 : 1; });
 
             _rewardList = _rewardCom.GetChild("rewardList").asList;
             _rewardList.itemRenderer = OnRendererReward;

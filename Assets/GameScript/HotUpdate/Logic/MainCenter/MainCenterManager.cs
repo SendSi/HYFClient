@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
+using cfg;
 
 public class MainCenterManager : Singleton<MainCenterManager>
 {
@@ -14,16 +14,16 @@ public class MainCenterManager : Singleton<MainCenterManager>
 
     private void InitMainBtnCfgs()
     {
-        var cfgAlls = ConfigMgr.Instance.LoadConfigList<MainUIBtnConfig>();
+        var cfgAlls =  CfgLubanMgr.Instance.globalTab.TbMainUIBtnConfig.DataList;// ConfigMgr.Instance.LoadConfigList<MainUIBtnConfig>();
         foreach (var item in cfgAlls)
         {
-            if (mMainBtnCfgsDic.TryGetValue(item.tType, out var cfgs))
+            if (mMainBtnCfgsDic.TryGetValue(item.TType, out var cfgs))
             {
                 cfgs.Add(item);
             }
             else
             {
-                mMainBtnCfgsDic[item.tType] = new List<MainUIBtnConfig>() { item };
+                mMainBtnCfgsDic[item.TType] = new List<MainUIBtnConfig>() { item };
             }
         }
     }

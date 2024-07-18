@@ -1,6 +1,6 @@
 ﻿using FairyGUI;
 using System.Collections.Generic;
-
+using cfg;
 
 namespace PokerPKG
 {
@@ -16,7 +16,7 @@ namespace PokerPKG
             this._selfCardList.itemRenderer = OnRenderSelfCardList;
             this._selfCardList.onClickItem.Set(OnClickItemSelfCard);
             mSelfCardList = PokerManager.Instance.GetSelfCardList();
-            mSelfCardList.Sort((a, b) => b.id.CompareTo(a.id));
+            mSelfCardList.Sort((a, b) => b.Id.CompareTo(a.Id));
             this._selfCardList.numItems = mSelfCardList.Count;
 
             this._sendPokerBtn.onClick.Set(OnClickSendPoker);
@@ -51,7 +51,7 @@ namespace PokerPKG
         private void OnRenderSelfCardList(int index, GObject item)
         {
             var dto = mSelfCardList[index];
-            item.icon = dto.urlIcon;
+            item.icon = dto.UrlIcon;
             item.data = dto;
         }
 

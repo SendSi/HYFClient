@@ -1,5 +1,5 @@
 using FairyGUI;
-
+using cfg;
 
 
 namespace ShopGift

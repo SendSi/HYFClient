@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 using FairyGUI;
-using UnityEngine;
+using cfg;
 
 public class GuidePKGManager : Singleton<GuidePKGManager>
 {
@@ -48,7 +48,7 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
 
         if (mIsGuideing && mCurrStepCfg != null)
         {
-            if (string.IsNullOrEmpty(mCurrStepCfg.uiPath))
+            if (string.IsNullOrEmpty(mCurrStepCfg.UiPath))
             {
                 EventCenter.Instance.Fire<string>((int)EventEnum.EE_Guide_UIPath, "true");
             }
@@ -104,23 +104,23 @@ public class GuidePKGManager : Singleton<GuidePKGManager>
 
     private void InitStepConfigs()
     {
-        var tStepCfgs = ConfigMgr.Instance.LoadConfigList<GuideStepConfig>();
+        var tStepCfgs = CfgLubanMgr.Instance.globalTab.TbGuideStepConfig.DataList;// ConfigMgr.Instance.LoadConfigList<GuideStepConfig>();
         foreach (var stepCfg in tStepCfgs)
         {
-            if (mGuideStepCfgs.TryGetValue(stepCfg.gType, out var list))
+            if (mGuideStepCfgs.TryGetValue(stepCfg.GType, out var list))
             {
                 list.Add(stepCfg);
             }
             else
             {
                 list = new List<GuideStepConfig>() { stepCfg };
-                mGuideStepCfgs[stepCfg.gType] = list;
+                mGuideStepCfgs[stepCfg.GType] = list;
             }
         }
 
         foreach (var item in mGuideStepCfgs)
         {
-            item.Value.Sort((a, b) => a.sortId.CompareTo(b.sortId)); //保证顺序
+            item.Value.Sort((a, b) => a.SortId.CompareTo(b.SortId)); //保证顺序
         }
     }
 

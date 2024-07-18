@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
+using cfg;
 // GObjectExtend.GetLocalXY(target, 0, 0, out tx, out ty);
 namespace GuidePKG
 {
@@ -47,24 +48,24 @@ namespace GuidePKG
         private void OnEventGuideUIPath(string content)
         {
             var isFinish = false;
-            if (string.IsNullOrEmpty(mStepCfg.uiPath) && content.Equals("true"))
+            if (string.IsNullOrEmpty(mStepCfg.UiPath) && content.Equals("true"))
             {
                 isFinish = true; //无具体路径的
             }
 
-            if (mStepCfg.uiPath == content)
+            if (mStepCfg.UiPath == content)
             {
-                if (string.IsNullOrEmpty(mStepCfg.moveEffect) == false)
+                if (string.IsNullOrEmpty(mStepCfg.MoveEffect) == false)
                 {
-                    mTransDic[mStepCfg.moveEffect].Stop();
+                    mTransDic[mStepCfg.MoveEffect].Stop();
                 }
-                if (string.IsNullOrEmpty(mStepCfg.maskLoader) == false)
+                if (string.IsNullOrEmpty(mStepCfg.MaskLoader) == false)
                 {
-                    var maskCom = CheckGetTryMask(mStepCfg.maskLoader);
+                    var maskCom = CheckGetTryMask(mStepCfg.MaskLoader);
                     maskCom.visible = false;//需要隐藏起来
                 }
 
-                if (mStepCfg.closeMain == 0)
+                if (mStepCfg.CloseMain == 0)
                 {
                     this.visible = false;
                 }
@@ -72,7 +73,7 @@ namespace GuidePKG
                 isFinish = true; //有具体路径的
             }
 
-            if (isFinish==false &&  string.IsNullOrEmpty(mStepCfg.maskLoader) )
+            if (isFinish==false &&  string.IsNullOrEmpty(mStepCfg.MaskLoader) )
             {
                 GuidePKGManager.Instance.StopGuide();
                 Debuger.Log("没mask 与 点击又没点中目标,则直接结束");
@@ -85,17 +86,17 @@ namespace GuidePKG
                 return;
             }
 
-            if (mStepCfg.finishTime > 0.01f)
+            if (mStepCfg.FinishTime > 0.01f)
             {
-                Timers.inst.Add(mStepCfg.finishTime, 1, obj =>
+                Timers.inst.Add(mStepCfg.FinishTime, 1, obj =>
                 {
-                    Debuger.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
+                    Debuger.LogWarning($"完成一步了{mStepCfg.Id},{mStepCfg.UiPath}---yes");
                     EventCenter.Instance.Fire((int)EventEnum.EE_Guide_NextStep);
                 });
             }
             else
             {
-                Debuger.LogWarning($"完成一步了{mStepCfg.id},{mStepCfg.uiPath}---yes");
+                Debuger.LogWarning($"完成一步了{mStepCfg.Id},{mStepCfg.UiPath}---yes");
                 EventCenter.Instance.Fire((int)EventEnum.EE_Guide_NextStep);
             }
         }
@@ -109,14 +110,14 @@ namespace GuidePKG
         public void SetData(GuideStepConfig stepCfg)
         {
             mStepCfg = stepCfg;
-            if (mStepCfg.uiPath.Contains("path:"))
+            if (mStepCfg.UiPath.Contains("path:"))
             {
                 //有具体位置的
-                var path = mStepCfg.uiPath.Replace("path:", "");
+                var path = mStepCfg.UiPath.Replace("path:", "");
                 var target = GRoot.inst.GetChildByPath(path);
                 if (target == null)
                 {
-                    Debuger.LogError($"路径错误:{path}，此guideType={mStepCfg.gType}终止");
+                    Debuger.LogError($"路径错误:{path}，此guideType={mStepCfg.GType}终止");
                     GuidePKGManager.Instance.StopGuide();
                     return;
                 }
@@ -124,9 +125,9 @@ namespace GuidePKG
                 var tagetV2 = target.LocalToGlobal(new Vector2(x, y));
                 tagetV2 = GRoot.inst.GlobalToLocal(tagetV2);
 
-                if (string.IsNullOrEmpty(mStepCfg.moveEffect) == false)
+                if (string.IsNullOrEmpty(mStepCfg.MoveEffect) == false)
                 {
-                    mTransDic[mStepCfg.moveEffect].Play(1000);
+                    mTransDic[mStepCfg.MoveEffect].Play(1000);
                     _fingerCom.visible = true;
                     this._fingerCom.SetXY(tagetV2.x, tagetV2.y);
                 }
@@ -135,9 +136,9 @@ namespace GuidePKG
                     _fingerCom.visible = false; //不显示手指
                 }
 
-                if (string.IsNullOrEmpty(mStepCfg.maskLoader) == false)
+                if (string.IsNullOrEmpty(mStepCfg.MaskLoader) == false)
                 {
-                    var maskCom = CheckGetTryMask(mStepCfg.maskLoader);
+                    var maskCom = CheckGetTryMask(mStepCfg.MaskLoader);
                     if (maskCom != null)
                     {
                         maskCom.visible = true;
@@ -152,16 +153,16 @@ namespace GuidePKG
                 this._fingerCom.visible = false;
             }
 
-            if (mStepCfg.descId > 0)
+            if (mStepCfg.DescId > 0)
             {
                 //有描述
                 this._descLoader.visible = true;
-                var descCfg = ConfigMgr.Instance.LoadConfigOne<GuideDescConfig>(mStepCfg.descId.ToString());
+                var descCfg = CfgLubanMgr.Instance.globalTab.TbGuideDescConfig.Get(mStepCfg.DescId);//ConfigMgr.Instance.LoadConfigOne<GuideDescConfig>(mStepCfg.DescId.ToString());
                 if (descCfg != null)
                 {
-                    this._descLoader.url = descCfg.urlPath;
-                    this._descLoader.SetXY(descCfg.conX, descCfg.conY);
-                    this._descLoader.text = descCfg.txtContent;
+                    this._descLoader.url = descCfg.UrlPath;
+                    this._descLoader.SetXY(descCfg.ConX, descCfg.ConY);
+                    this._descLoader.text = descCfg.TxtContent;
                 }
             }
             else

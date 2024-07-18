@@ -1,4 +1,4 @@
-using System;
+using cfg;
 using System.Collections.Generic;
 using FairyGUI;
 

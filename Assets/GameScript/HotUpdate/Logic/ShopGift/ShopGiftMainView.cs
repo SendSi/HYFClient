@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
-
+using cfg;
 #region << 脚 本 注 释 >>
 
 //作  用:    ShopGiftMainView
@@ -22,8 +22,8 @@ namespace ShopGift
         public override void OnInit()
         {
             base.OnInit();
-            _menuCfg = ConfigMgr.Instance.LoadConfigList<ShopGiftMenuConfig>();
-            _menuCfg.Sort((a, b) => { return a.id < b.id ? -1 : 1; });
+            _menuCfg =  CfgLubanMgr.Instance.globalTab.TbShopGiftMenuConfig.DataList;//ConfigMgr.Instance.LoadConfigList<ShopGiftMenuConfig>();
+            _menuCfg.Sort((a, b) => { return a.Id < b.Id ? -1 : 1; });
 
             this._closeButton.onClick.Set(() => { ProxyShopGiftModule.Instance.CloseShopGiftMainView(); });
 
@@ -39,7 +39,7 @@ namespace ShopGift
             var data = (GComponent)evCon.data;
             ShopGiftMenuConfig cfg = (ShopGiftMenuConfig)data.data;
 
-            _currChildView = CheckGetChild_ClearOld(cfg.childViewName);
+            _currChildView = CheckGetChild_ClearOld(cfg.ChildViewName);
             _currChildView.visible = true;
             _currChildView.data = cfg;
             _currChildView.OnInit();
@@ -68,7 +68,7 @@ namespace ShopGift
 
         private string OnProviderTabList(int index)
         {
-            return _menuCfg[index].rType == 0 ? "ui://ShopGift/Item_ShopType" : "ui://ShopGift/Item_ShopMenu";
+            return _menuCfg[index].RType == 0 ? "ui://ShopGift/Item_ShopType" : "ui://ShopGift/Item_ShopMenu";
         }
 
         private void OnRendererTabList(int index, GObject obj)
@@ -76,7 +76,7 @@ namespace ShopGift
             var cfg = _menuCfg[index];
             obj.data = cfg;
 
-            if (cfg.rType == 0)
+            if (cfg.RType == 0)
             {
                 Item_ShopType item = (Item_ShopType)obj;
                 item.SetData(cfg);
@@ -100,10 +100,10 @@ namespace ShopGift
             foreach (var item in _menuItems)
             {
                 var tData = (ShopGiftMenuConfig)item.data;
-                if (tData.id == cfgId)
+                if (tData.Id == cfgId)
                 {
                     item.onClick.Call();
-                    Debuger.Log("ShopGiftMainView_SetData 快到2024=" + tData.name);
+                    Debuger.Log("ShopGiftMainView_SetData 快到2024=" + tData.Name);
                     break;
                 }
             }

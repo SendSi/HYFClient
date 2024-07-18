@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using cfg;
 public class PokerManager : Singleton<PokerManager>
 {
     Dictionary<int, List<PokerConfig>>
@@ -14,7 +14,7 @@ public class PokerManager : Singleton<PokerManager>
 
     public List<PokerConfig> GetSelfCardList(int playerId = 1)
     {
-        mPokerAllLists = ConfigMgr.Instance.LoadConfigList<PokerConfig>();
+        mPokerAllLists =  CfgLubanMgr.Instance.globalTab.TbPokerConfig.DataList;//ConfigMgr.Instance.LoadConfigList<PokerConfig>();
         mPokerAllLists = OtherUtils.Instance.GetRandomList(mPokerAllLists); //打乱排序
 
         for (int i = 1; i < 4; i++)

@@ -1,5 +1,5 @@
 using FairyGUI;
-using UnityEngine;
+using cfg;
 #region << 脚 本 注 释 >>
 //作  用:    ProtocalShopGift
 //作  者:    曾思信
@@ -12,7 +12,7 @@ namespace ShopGift
     {
         public void SetData(ShopGiftMenuConfig cfg)
         {
-            this.title = cfg.name;
+            this.title = cfg.Name;
         }
     }
 }
