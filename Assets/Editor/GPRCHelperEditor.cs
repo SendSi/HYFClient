@@ -15,7 +15,7 @@ public class GPRCHelperEditor
     {
         var toolkitPath = ToolkitPath;
         var destinationPath = Path.Combine(Application.dataPath, "GameScript/HotUpdate/Protols");
-        if (Directory.Exists(destinationPath)==false)
+        if (Directory.Exists(destinationPath) == false)
         {
             Directory.CreateDirectory(destinationPath);
         }
@@ -45,33 +45,50 @@ public class GPRCHelperEditor
             Debuger.LogError($"生成协议失败. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
         }
     }
+  
+
+    [MenuItem("Tools/luban_excel导表", priority = 1022)]
+    public static void GenerateLuban_binary()
+    {
+        var cdPath = Application.dataPath.Replace("Assets", "Excel_luban");
+        ProcessStartInfo startInfo = new ProcessStartInfo
+        {
+            FileName = "cmd.exe",
+            Arguments = $"/C cd /D {cdPath} && gen.bat",
+            UseShellExecute = false,
+            RedirectStandardOutput = true,
+            CreateNoWindow = true
+        };
+
+        Process process = new Process { StartInfo = startInfo };
+        process.Start();
+
+        string output = process.StandardOutput.ReadToEnd();
+        process.WaitForExit();
+        
+        AssetDatabase.Refresh();
+
+        Debug.LogFormat("luban执行成功二进制,数据lubanBytes,代码lubanCodes--,{0}",output);
+    }
     
-    // [MenuItem("Tools/luban_导表二进制", priority = 101)]
-    // public static void GenerateLuban_binary()
+    
+    // [MenuItem("Tools/GenerateBat普通的", priority = 101)]
+    // public static void GenerateBat普通的()
     // {
-    //     var batFilePath = Application.dataPath.Replace("Assets", "Excel_luban/gen.bat");
+    //     ProcessStartInfo startInfo = new ProcessStartInfo
+    //     {
+    //         FileName = "cmd.exe",
+    //         Arguments = "/C G:/gitHub/HYFClient/Excel_luban/test.bat",
+    //         UseShellExecute = false,
+    //         RedirectStandardOutput = true,
+    //         CreateNoWindow = true
+    //     };
     //
-    //     Debug.LogError(batFilePath);
-    //     
-    //     Process process = new Process();
-    //     process.StartInfo.FileName = batFilePath;
-    //     process.StartInfo.CreateNoWindow = true;
-    //     process.StartInfo.UseShellExecute = false;
-    //     process.StartInfo.RedirectStandardOutput = true;
-    //     process.StartInfo.RedirectStandardError = true;
+    //     Process process = new Process { StartInfo = startInfo };
     //     process.Start();
-    //     Debug.LogError("???");
-    //     
-    //     // if (process.ExitCode == 0)
-    //     // {
-    //     //     AssetDatabase.Refresh();
-    //     //     Debug.Log("luban_导表二进制 完成");
-    //     // }
-    //     // else
-    //     // {
-    //     //     Debug.LogError($"luban_导表二进制. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
-    //     // }
-    //     // // Wait for the batch file to finish executing
-    //     // process.WaitForExit();
+    //
+    //     string output = process.StandardOutput.ReadToEnd();
+    //     process.WaitForExit();
+    //     Debug.LogFormat("GenerateBat普通的--,{0}",output);
     // }
 }
