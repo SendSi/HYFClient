@@ -5,8 +5,8 @@ namespace GMView
 {
     public partial class GMMainView : GComponent
     {
-        private List<GMConfig> _typeDtos;
-        private List<GMConfig> _centerDtos;
+        private List<cfg.GMConfig> _typeDtos;
+        private List<cfg.GMConfig> _centerDtos;
         private List<string> _oldReDtos;
         private const string checkKey = "GMCheckCloseBtn";
 
@@ -88,9 +88,9 @@ namespace GMView
         private void OnClickItemCenterList(EventContext context)
         {
             var data = (GButton)context.data;
-            var cfg = (GMConfig)data.data;
-            this._descTxt.text = cfg.tDesc;
-            this._inputTxt.text = cfg.tGmTxt;
+            var cfg = (cfg.GMConfig)data.data;
+            this._descTxt.text = cfg.TDesc;
+            this._inputTxt.text = cfg.TGmTxt;
         }
 
         /// <summary> 中间列表 渲染 </summary>
@@ -98,7 +98,7 @@ namespace GMView
         {
             var dto = _centerDtos[index];
             GButton btn = (GButton)item;
-            btn.title = dto.tContent;
+            btn.title = dto.TContent;
             btn.data = dto;
         }
 
@@ -106,8 +106,8 @@ namespace GMView
         private void OnClickItemTypeList(EventContext context)
         {
             var data = (GButton)context.data;
-            var cfg = (GMConfig)data.data;
-            SetCenterList(cfg.tType);
+            var cfg = (cfg.GMConfig)data.data;
+            SetCenterList(cfg.TType);
             _centerList.selectedIndex = -1; //左点  使右边不选中
         }
 
@@ -116,7 +116,7 @@ namespace GMView
         {
             var dto = _typeDtos[index];
             GButton btn = (GButton)item;
-            btn.title = dto.tTypeName;
+            btn.title = dto.TTypeName;
             btn.data = dto;
         }
 

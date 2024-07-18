@@ -13,20 +13,89 @@ namespace cfg
 {
 public partial class Tables
 {
-    public item.TbItem TbItem {get; }
-    public demo.TbReward TbReward {get; }
+    public TBATestItem TBATestItem {get; }
+    public TbCheckInConfig TbCheckInConfig {get; }
+    public TbEffectConfig TbEffectConfig {get; }
+    public TbEightGiftConfig TbEightGiftConfig {get; }
+    public TbGMConfig TbGMConfig {get; }
+    public TbGuideDescConfig TbGuideDescConfig {get; }
+    public TbGuideStepConfig TbGuideStepConfig {get; }
+    public TbGuideTypeConfig TbGuideTypeConfig {get; }
+    public TbHeroInfoConfig TbHeroInfoConfig {get; }
+    public TbItemConfig TbItemConfig {get; }
+    public TbMainUIBtnConfig TbMainUIBtnConfig {get; }
+    public TbPokerConfig TbPokerConfig {get; }
+    public TbRechargeConfig TbRechargeConfig {get; }
+    public TbScript_English TbScriptEnglish {get; }
+    public TbScript_SimChinese TbScriptSimChinese {get; }
+    public TbScript_TraChinese TbScriptTraChinese {get; }
+    public TbShopConfig TbShopConfig {get; }
+    public TbShopGiftMenuConfig TbShopGiftMenuConfig {get; }
+    public TbSoundConfig TbSoundConfig {get; }
+    public TbTipTextConfig TbTipTextConfig {get; }
+    public TbTodayGiftConfig TbTodayGiftConfig {get; }
+    public TbWelfareMenuConfig TbWelfareMenuConfig {get; }
+    public TbCfg_English TbCfgEnglish {get; }
+    public TbCfg_SimChinese TbCfgSimChinese {get; }
+    public TbCfg_TraChinese TbCfgTraChinese {get; }
 
     public Tables(System.Func<string, ByteBuf> loader)
     {
-        TbItem = new item.TbItem(loader("item_tbitem"));
-        TbReward = new demo.TbReward(loader("demo_tbreward"));
+        TBATestItem = new TBATestItem(loader("tbatestitem"));
+        TbCheckInConfig = new TbCheckInConfig(loader("tbcheckinconfig"));
+        TbEffectConfig = new TbEffectConfig(loader("tbeffectconfig"));
+        TbEightGiftConfig = new TbEightGiftConfig(loader("tbeightgiftconfig"));
+        TbGMConfig = new TbGMConfig(loader("tbgmconfig"));
+        TbGuideDescConfig = new TbGuideDescConfig(loader("tbguidedescconfig"));
+        TbGuideStepConfig = new TbGuideStepConfig(loader("tbguidestepconfig"));
+        TbGuideTypeConfig = new TbGuideTypeConfig(loader("tbguidetypeconfig"));
+        TbHeroInfoConfig = new TbHeroInfoConfig(loader("tbheroinfoconfig"));
+        TbItemConfig = new TbItemConfig(loader("tbitemconfig"));
+        TbMainUIBtnConfig = new TbMainUIBtnConfig(loader("tbmainuibtnconfig"));
+        TbPokerConfig = new TbPokerConfig(loader("tbpokerconfig"));
+        TbRechargeConfig = new TbRechargeConfig(loader("tbrechargeconfig"));
+        TbScriptEnglish = new TbScript_English(loader("tbscript_english"));
+        TbScriptSimChinese = new TbScript_SimChinese(loader("tbscript_simchinese"));
+        TbScriptTraChinese = new TbScript_TraChinese(loader("tbscript_trachinese"));
+        TbShopConfig = new TbShopConfig(loader("tbshopconfig"));
+        TbShopGiftMenuConfig = new TbShopGiftMenuConfig(loader("tbshopgiftmenuconfig"));
+        TbSoundConfig = new TbSoundConfig(loader("tbsoundconfig"));
+        TbTipTextConfig = new TbTipTextConfig(loader("tbtiptextconfig"));
+        TbTodayGiftConfig = new TbTodayGiftConfig(loader("tbtodaygiftconfig"));
+        TbWelfareMenuConfig = new TbWelfareMenuConfig(loader("tbwelfaremenuconfig"));
+        TbCfgEnglish = new TbCfg_English(loader("tbcfg_english"));
+        TbCfgSimChinese = new TbCfg_SimChinese(loader("tbcfg_simchinese"));
+        TbCfgTraChinese = new TbCfg_TraChinese(loader("tbcfg_trachinese"));
         ResolveRef();
     }
     
     private void ResolveRef()
     {
-        TbItem.ResolveRef(this);
-        TbReward.ResolveRef(this);
+        TBATestItem.ResolveRef(this);
+        TbCheckInConfig.ResolveRef(this);
+        TbEffectConfig.ResolveRef(this);
+        TbEightGiftConfig.ResolveRef(this);
+        TbGMConfig.ResolveRef(this);
+        TbGuideDescConfig.ResolveRef(this);
+        TbGuideStepConfig.ResolveRef(this);
+        TbGuideTypeConfig.ResolveRef(this);
+        TbHeroInfoConfig.ResolveRef(this);
+        TbItemConfig.ResolveRef(this);
+        TbMainUIBtnConfig.ResolveRef(this);
+        TbPokerConfig.ResolveRef(this);
+        TbRechargeConfig.ResolveRef(this);
+        TbScriptEnglish.ResolveRef(this);
+        TbScriptSimChinese.ResolveRef(this);
+        TbScriptTraChinese.ResolveRef(this);
+        TbShopConfig.ResolveRef(this);
+        TbShopGiftMenuConfig.ResolveRef(this);
+        TbSoundConfig.ResolveRef(this);
+        TbTipTextConfig.ResolveRef(this);
+        TbTodayGiftConfig.ResolveRef(this);
+        TbWelfareMenuConfig.ResolveRef(this);
+        TbCfgEnglish.ResolveRef(this);
+        TbCfgSimChinese.ResolveRef(this);
+        TbCfgTraChinese.ResolveRef(this);
     }
 }
 

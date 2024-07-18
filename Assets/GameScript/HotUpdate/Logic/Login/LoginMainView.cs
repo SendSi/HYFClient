@@ -41,8 +41,14 @@ namespace Login
         private void OnClickNoticeBtn()
         {
             ProxyLoginModule.Instance.OpenGameNoticeViewWin();
+
+            CfgLubanMgr.Instance.ExampleMethod();
+
+            var cfg = CfgLubanMgr.Instance.globalTab.TBATestItem.Get(10001);
+            Debug.LogFormat("{0}",cfg);
             
-            CfgLubanMgr.Instance.Show();
+            var cfg2=CfgLubanMgr.Instance.globalTab.TbCheckInConfig.Get(1001);
+            Debug.LogFormat("{0}",cfg2);
         }
 
         private void OnClickEffectBtn()
@@ -98,7 +104,6 @@ namespace Login
                 else if (this._languCom.selectedIndex == 2) { LanguageUtils.Instance.ChangeLanguage("English"); }
             });
         }
-
 
         //登录按钮
         private void OnClickLoginEnter()

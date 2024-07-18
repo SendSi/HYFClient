@@ -4,47 +4,44 @@ using YooAsset;
 
 public class CfgLubanMgr : Singleton<CfgLubanMgr>
 {
+    private cfg.Tables _globalTab;
+
     protected override void OnInit()
     {
         base.OnInit();
-
-        var tables = new cfg.Tables(LoadByteBuf);
-        var item = tables.TbItem.DataList[1];
-        Debug.LogFormat("item[1]:{0}", item);
-        foreach (var itT in tables.TbItem.DataList)
-        {
-            Debug.Log($"{itT.Name}   {itT.Price}");
-        }
-
-        var refv = tables.TbItem.DataList[0].Name;
-        Debug.LogFormat("refv:{0}", refv);
-
-        Debug.LogError("== 初始化 luban ==");
-
-        // var data= tables.TbReward.Get(10001);
-        // Debug.LogError(data.Name+"   "+data.Desc);
+        Debug.LogWarning($"导表文件 加载了lubanBytes文件夹的所有bytes  使用二进制读取,比json的性能好很多");
+        _globalTab = new cfg.Tables(LoadByteBuf);
     }
+
+    public cfg.Tables globalTab
+    {
+        get { return _globalTab; }
+    } //不给set
 
     private static ByteBuf LoadByteBuf(string file)
     {
-        Debug.LogError($"file={file}");
         var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);
         var handle = assetPackage.LoadAssetSync(file);
         if (handle.AssetObject is UnityEngine.TextAsset textAsset)
         {
             return new ByteBuf(textAsset.bytes);
         }
-
         return null;
     }
 
-    // public T TT(string name) where T : new()
-    // {
-    //     var t = new T(LoadByteBuf(name));
-    //     return t;
-    // }
-
-    public void Show()
+    /// <summary> 举例 </summary>
+    /// var cfg = CfgLubanMgr.Instance.globalTab.TbReward.Get(10001);       Debug.LogFormat("{0}",cfg);
+    public void ExampleMethod()
     {
+        var cfg1 = _globalTab.TBATestItem.DataList[1];
+        Debug.LogFormat("下标 item[1]:{0}", cfg1);
+
+        foreach (var itT in _globalTab.TBATestItem.DataList)
+        {
+            Debug.Log($"列表  {itT.Name}   {itT.Price}");
+        }
+
+        var cfg2 = _globalTab.TBATestItem.Get(10001);
+        Debug.LogFormat("根据id取值 data:{0}", cfg2);
     }
 }

@@ -16,6 +16,7 @@ public class HotFixReflex
         ProtocalBinder.BindAll();
         ManagerBinder.BindAll();
 
+        CfgLubanMgr.Instance.Begin();//导表初始化
         AudioMgr.Instance.Begin();
         GMManager.Instance.Begin();
     }
