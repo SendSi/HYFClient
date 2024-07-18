@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using CommonPKG;
 using FairyGUI;
-using UnityEngine;
+using cfg;
 
 namespace MainCenter
 {

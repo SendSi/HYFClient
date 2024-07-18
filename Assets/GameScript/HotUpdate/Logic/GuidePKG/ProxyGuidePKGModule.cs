@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using cfg;
 using GuidePKG;
 
 public class ProxyGuidePKGModule : Singleton<ProxyGuidePKGModule>, IProxy

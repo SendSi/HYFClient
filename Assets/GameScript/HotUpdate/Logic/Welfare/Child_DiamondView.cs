@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using FairyGUI;
-using UnityEngine;
 using cfg;
 namespace Welfare
 {
@@ -15,8 +14,8 @@ namespace Welfare
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
             Debuger.LogError(cfg.Name);
 
-            _cfgInfos = ConfigMgr.Instance.LoadConfigList<RechargeConfig>(); //整个表
-            _cfgInfos.Sort((a, b) => { return a.id < b.id ? -1 : 1; });
+            _cfgInfos = CfgLubanMgr.Instance.globalTab.TbRechargeConfig.DataList;// ConfigMgr.Instance.LoadConfigList<RechargeConfig>(); //整个表
+            _cfgInfos.Sort((a, b) => { return a.Id < b.Id ? -1 : 1; });
 
             this._diamondList.itemRenderer = OnRendererDiamond;
             this._diamondList.numItems = 6;

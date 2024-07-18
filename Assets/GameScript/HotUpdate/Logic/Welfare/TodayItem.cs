@@ -1,6 +1,5 @@
 ﻿using FairyGUI;
-using UnityEngine.UI;
-
+using cfg;
 namespace Welfare
 {
     public partial class TodayItem : GButton
@@ -9,9 +8,9 @@ namespace Welfare
         {
             if (cfg != null)
             {
-                this._traIcon.GetController("stateCtrl").selectedIndex = cfg.iconCtrl;
-                this._describeLbl.text = cfg.descTxt;
-                this._titleLbl.text = cfg.titleTxt;
+                this._traIcon.GetController("stateCtrl").selectedIndex = cfg.IconCtrl;
+                this._describeLbl.text = cfg.DescTxt;
+                this._titleLbl.text = cfg.TitleTxt;
             }
         }
     }

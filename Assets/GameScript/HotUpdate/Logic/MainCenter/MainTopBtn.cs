@@ -1,5 +1,5 @@
 ﻿using FairyGUI;
-
+using cfg;
 namespace MainCenter
 {
     public partial class MainTopBtn : GButton
@@ -8,9 +8,9 @@ namespace MainCenter
         {
             if (cfg != null)
             {
-                this.icon = cfg.iconURL;
-                this.title = cfg.titleTxt;
-                this.onClick.Set(() => { MainCenterManager.Instance.OnClickFuncBtn(cfg.id);});
+                this.icon = cfg.IconURL;
+                this.title = cfg.TitleTxt;
+                this.onClick.Set(() => { MainCenterManager.Instance.OnClickFuncBtn(cfg.Id);});
             }
         }
     }

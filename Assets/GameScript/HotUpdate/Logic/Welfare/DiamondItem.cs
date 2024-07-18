@@ -1,4 +1,4 @@
-﻿using System;
+﻿using cfg;
 using FairyGUI;
 
 namespace Welfare
@@ -7,13 +7,13 @@ namespace Welfare
     {
         public void SetData(RechargeConfig cfg)
         {
-            this._centerIcon.icon = cfg.cenIcon;
-            Item extra = ItemStringUtils.Instance.GetOneItem(cfg.extraFirst);
+            this._centerIcon.icon = cfg.CenIcon;
+            Item extra = ItemStringUtils.Instance.GetOneItem(cfg.ExtraFirst);
 
-            this._rmbLbl.text = $"{cfg.price}.00";
+            this._rmbLbl.text = $"{cfg.Price}.00";
             this._tagTitle.text = $"赠送{extra.Num}";
             
-            var coms = ItemStringUtils.Instance.GetListItem(cfg.commodity);
+            var coms = ItemStringUtils.Instance.GetListItem(cfg.Commodity);
             this._numLbl.text = coms[0].Num.ToString();
             this._descLbl.text = $"战令经验+{coms[1].Num}";
         }
