@@ -47,7 +47,6 @@ public class GPRCHelperEditor
     }
   
 
-
     [MenuItem("Tools/luban_excel导表 ^#&l", priority = 1022)]
     public static void GenerateLuban_binary()
     {
