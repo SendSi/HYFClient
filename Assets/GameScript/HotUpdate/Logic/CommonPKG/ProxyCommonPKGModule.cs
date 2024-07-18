@@ -1,6 +1,7 @@
 ﻿using System;
 using CommonPKG;
 using FairyGUI;
+using cfg;
 
 public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
 {

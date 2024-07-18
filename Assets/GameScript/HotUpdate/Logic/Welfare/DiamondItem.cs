@@ -12,8 +12,8 @@ namespace Welfare
 
             this._rmbLbl.text = $"{cfg.Price}.00";
             this._tagTitle.text = $"赠送{extra.Num}";
-            
-            var coms = ItemStringUtils.Instance.GetListItem(cfg.Commodity);
+
+            var coms = cfg.Commodity;//ItemStringUtils.Instance.GetListItem(cfg.Commodity);
             this._numLbl.text = coms[0].Num.ToString();
             this._descLbl.text = $"战令经验+{coms[1].Num}";
         }

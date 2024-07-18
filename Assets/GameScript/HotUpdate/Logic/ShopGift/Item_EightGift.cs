@@ -16,7 +16,7 @@ namespace ShopGift
         public void SetData(cfg.EightGiftConfig cfg)
         {
             this.title = cfg.Name;
-            var list = FormatUtils.Instance.GetFormatItem(cfg.Reward);
+            var list = cfg.Reward; //FormatUtils.Instance.GetFormatItem(cfg.Reward);
             _rewardCtrl.selectedIndex = (list.Count - 1);
             for (int i = 0; i < list.Count; i++)
             {

@@ -18,7 +18,7 @@ public sealed partial class EightGiftConfig : Luban.BeanBase
     {
         Id = _buf.ReadInt();
         Name = _buf.ReadString();
-        Reward = _buf.ReadString();
+        {int n0 = System.Math.Min(_buf.ReadSize(), _buf.Size);Reward = new System.Collections.Generic.List<ItemProp>(n0);for(var i0 = 0 ; i0 < n0 ; i0++) { ItemProp _e0;  _e0 = ItemProp.DeserializeItemProp(_buf); Reward.Add(_e0);}}
     }
 
     public static EightGiftConfig DeserializeEightGiftConfig(ByteBuf _buf)
@@ -37,13 +37,14 @@ public sealed partial class EightGiftConfig : Luban.BeanBase
     /// <summary>
     /// 获得道具
     /// </summary>
-    public readonly string Reward;
+    public readonly System.Collections.Generic.List<ItemProp> Reward;
    
     public const int __ID__ = -809618847;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        foreach (var _e in Reward) { _e?.ResolveRef(tables); }
     }
 
     public override string ToString()
@@ -51,7 +52,7 @@ public sealed partial class EightGiftConfig : Luban.BeanBase
         return "{ "
         + "id:" + Id + ","
         + "name:" + Name + ","
-        + "reward:" + Reward + ","
+        + "reward:" + Luban.StringUtil.CollectionToString(Reward) + ","
         + "}";
     }
 }
