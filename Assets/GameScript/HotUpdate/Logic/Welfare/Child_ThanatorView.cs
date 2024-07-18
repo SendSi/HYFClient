@@ -1,6 +1,5 @@
 ﻿using FairyGUI;
-using UnityEngine;
-
+using cfg;
 namespace Welfare
 {
     public partial class Child_ThanatorView : GComponent
@@ -10,7 +9,7 @@ namespace Welfare
             base.OnInit();
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debuger.LogError(cfg.name);
+            Debuger.LogError(cfg.Name);
         }
     }
 }

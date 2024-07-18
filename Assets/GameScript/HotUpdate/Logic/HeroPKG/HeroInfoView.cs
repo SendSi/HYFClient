@@ -33,9 +33,9 @@ namespace HeroPKG
         public void SetData(int cfgId)
         {
             mCfgId = cfgId;
-            var cfg = ConfigMgr.Instance.LoadConfigOne<HeroInfoConfig>(cfgId.ToString());
-            this._spineIcon.SetLoadSpine(cfg.pathURL);
-            this._txtName.text = cfg.name;
+            var cfg = CfgLubanMgr.Instance.globalTab.TbHeroInfoConfig.Get(cfgId);// ConfigMgr.Instance.LoadConfigOne<HeroInfoConfig>(cfgId.ToString());
+            this._spineIcon.SetLoadSpine(cfg.PathURL);
+            this._txtName.text = cfg.Name;
         }
 
         public override void Dispose()

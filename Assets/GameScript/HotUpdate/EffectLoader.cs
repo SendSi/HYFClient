@@ -136,19 +136,20 @@ public class EffectLoader : Singleton<EffectLoader>
         mEffectObjs.Clear();
     }
 
-    public void LoadEffect_Id(string id)
+    public void LoadEffect_Id(int keyId)
     {
-        var cfg = ConfigMgr.Instance.LoadConfigOne<EffectConfig>(id);
+        // var cfg = ConfigMgr.Instance.LoadConfigOne<EffectConfig>(id);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbEffectConfig.Get(keyId);
         if (cfg != null)
         {
-            if (cfg.eType == 1)
+            if (cfg.EType == 1)
             {
-                LoadSceneEffectSimple(cfg.yooPath);
+                LoadSceneEffectSimple(cfg.YooPath);
             }
             else
             {
                 var topView = ProxyCommonPKGModule.Instance.GetToastView();
-                LoadUIEffectEPos(cfg.yooPath, topView, true);
+                LoadUIEffectEPos(cfg.YooPath, topView, true);
             }
         }
     }

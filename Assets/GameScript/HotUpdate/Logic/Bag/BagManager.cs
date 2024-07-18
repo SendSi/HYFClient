@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using HYFServer;
 using UnityEngine;
 
 public class BagManager : Singleton<BagManager>
@@ -19,7 +20,6 @@ public class BagManager : Singleton<BagManager>
         Debuger.Log("OnBagResRedDotLogicHandler:" + redNode.redDotActive);
     }
 
-
     private void OnBagRootRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetRootRedDot();
@@ -32,13 +32,11 @@ public class BagManager : Singleton<BagManager>
         Debuger.Log("OnBagAllRedDotLogicHandler:" + redNode.redDotActive);
     }
 
-
     private void OnBagEquRedDotLogicHandler(RedDotTreeNode redNode)
     {
         redNode.redDotActive = GetEquRedDot();
         Debuger.Log("OnBagEquRedDotLogicHandler:" + redNode.redDotActive);
     }
-
 
     private List<ItemDto> mServerDtos = new List<ItemDto>();
 
@@ -47,9 +45,9 @@ public class BagManager : Singleton<BagManager>
         var sumT = 0;
         foreach (var item in mServerDtos)
         {
-            if (item.cfgId==cfgId)
+            if (item.CfgId == cfgId)
             {
-                sumT += item.sum;
+                sumT += item.Sum;
             }
         }
 
@@ -58,11 +56,11 @@ public class BagManager : Singleton<BagManager>
 
     public List<ItemDto> GetBagViewListItem()
     {
-        List<ItemDto> sortDtos = new List<ItemDto>();
+        var sortDtos = new List<ItemDto>();
         foreach (var item in mServerDtos)
         {
-            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.cfgId.ToString());
-            if (cfg != null && cfg.type > 1)
+            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(item.CfgId); //ConfigMgr.Instance.LoadConfigOne<ItemConfig>(item.CfgId.ToString());
+            if (cfg != null && cfg.Type > 1)
             {
                 sortDtos.Add(item);
             }
@@ -71,7 +69,13 @@ public class BagManager : Singleton<BagManager>
         return sortDtos;
     }
 
-
+    public void SetServerItems(ItemDtos rspItemDots)
+    {
+        for (int i = 0; i < rspItemDots.ItemInfos.Count; i++)
+        {
+            mServerDtos.Add(rspItemDots.ItemInfos[i]);
+        }
+    }
 
     private bool all = true;
     private bool res = true;

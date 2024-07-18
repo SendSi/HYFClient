@@ -11,12 +11,12 @@ namespace Welfare
             this._stateCtrl.selectedIndex = 0;
         }
 
-        public void SetData(CheckInConfig cfg)
+        public void SetData(cfg.CheckInConfig cfg)
         {
-            this.title = $"第{cfg.rDay}天";
+            this.title = $"第{cfg.RDay}天";
             this._stateCtrl.selectedIndex = 0;
             var rightIcon = (Item_BaseProp)this._propBtn;
-            rightIcon.SetData(cfg.awardId, cfg.awardNum);//Item_PropBag.cs
+            rightIcon.SetData(cfg.AwardId, cfg.AwardNum);//Item_PropBag.cs
         }
     }
 }

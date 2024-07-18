@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using FairyGUI;
-using UnityEngine;
+using cfg;
 
 namespace Welfare
 {
@@ -14,7 +14,7 @@ namespace Welfare
             base.OnInit();
 
             WelfareMenuConfig cfg = (WelfareMenuConfig)(this.data);
-            Debuger.LogError(cfg.name);
+            Debuger.LogError(cfg.Name);
 
             _infoList = ConfigMgr.Instance.LoadConfigList<TodayGiftConfig>();
             _infoList.Sort((a, b) => { return a.id < b.id ? -1 : 1; });

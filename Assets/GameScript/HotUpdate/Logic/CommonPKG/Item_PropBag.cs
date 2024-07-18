@@ -1,4 +1,5 @@
 ﻿using FairyGUI;
+using HYFServer;
 
 namespace CommonPKG
 {
@@ -11,17 +12,17 @@ namespace CommonPKG
             _data = data;
             if (data != null)
             {
-                var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(data.cfgId.ToString());
+                var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(data.CfgId);// ConfigMgr.Instance.LoadConfigOne<ItemConfig>(data.CfgId.ToString());
                 Item_BaseProp baseProp= (Item_BaseProp)_baseProp;
-                baseProp.SetData(cfg.id,data.sum);//Item_BaseProp.cs
+                baseProp.SetData(cfg.Id,data.Sum);//Item_BaseProp.cs
             }
         }
 
         public void SetData(int cfgId, int num)
         {
-            var cfg = ConfigMgr.Instance.LoadConfigOne<ItemConfig>(cfgId.ToString());
+            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(cfgId);// ConfigMgr.Instance.LoadConfigOne<ItemConfig>(cfgId.ToString());
            Item_BaseProp baseProp= (Item_BaseProp)_baseProp;
-           baseProp.SetData(cfg.id);
+           baseProp.SetData(cfg.Id);
             this.mode = ButtonMode.Common;
             this._selectEle.visible = false;
         }
