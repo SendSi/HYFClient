@@ -47,14 +47,14 @@ public class GPRCHelperEditor
     }
   
 
-    [MenuItem("Tools/luban_excel导表", priority = 1022)]
+    [MenuItem("Tools/luban_excel导表 ^#&l", priority = 1022)]
     public static void GenerateLuban_binary()
     {
-        var lubanCodes = Application.dataPath + @"\GameScript\HotUpdate\Config\lubanCodes";
         var lubanBytes = Application.dataPath + @"\GameScript\HotUpdate\Config\lubanBytes";
-        if (Directory.Exists(lubanCodes)) Directory.Delete(lubanCodes, true);
         if (Directory.Exists(lubanBytes)) Directory.Delete(lubanBytes, true);
-        
+ 
+        var lubanCodes = Application.dataPath + @"\GameScript\HotUpdate\Config\lubanCodes";
+        if (Directory.Exists(lubanCodes)) Directory.Delete(lubanCodes, true);
         
         var cdPath = Application.dataPath.Replace("Assets", "Excel_luban");
         ProcessStartInfo startInfo = new ProcessStartInfo
@@ -65,15 +65,15 @@ public class GPRCHelperEditor
             RedirectStandardOutput = true,
             CreateNoWindow = true
         };
-
+        
         Process process = new Process { StartInfo = startInfo };
         process.Start();
-
+        
         string output = process.StandardOutput.ReadToEnd();
         process.WaitForExit();
         
-        AssetDatabase.Refresh();
-
+        // AssetDatabase.Refresh();
+        
         Debug.LogFormat("luban执行成功二进制,数据lubanBytes,代码lubanCodes--,{0}",output);
     }
     
