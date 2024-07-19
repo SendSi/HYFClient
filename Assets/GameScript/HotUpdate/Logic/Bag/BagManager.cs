@@ -36,7 +36,23 @@ public class BagManager : Singleton<BagManager>
         Debuger.Log("OnBagEquRedDotLogicHandler:" + redNode.redDotActive);
     }
 
-    private List<ItemDto> mServerDtos = new List<ItemDto>();
+    private List<ItemDto> mServerDtos = new List<ItemDto>()
+    {
+        new ItemDto(1101,21,"212"),
+        new ItemDto(1201,211,"212"),
+        new ItemDto(1301,2061,"212"),
+        new ItemDto(1401,2541,"212"),
+        new ItemDto(1501,2271,"212"),
+        new ItemDto(1601,271,"212"),
+        new ItemDto(1701,2471,"212"),
+        new ItemDto(1801,2701,"212"),
+        new ItemDto(1901,2731,"212"),
+        new ItemDto(1902,2471,"212"),
+        new ItemDto(1903,2071,"212"),
+        new ItemDto(1904,271,"212"),
+        new ItemDto(1905,2171,"212"),
+        new ItemDto(1906,2771,"212"),
+    };
 
     public int GetServerItemSum(int cfgId)
     {
