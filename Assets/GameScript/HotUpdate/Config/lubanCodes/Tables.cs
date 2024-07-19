@@ -26,18 +26,14 @@ public partial class Tables
     public TbMainUIBtnConfig TbMainUIBtnConfig {get; }
     public TbPokerConfig TbPokerConfig {get; }
     public TbRechargeConfig TbRechargeConfig {get; }
-    public TbScript_English TbScriptEnglish {get; }
-    public TbScript_SimChinese TbScriptSimChinese {get; }
-    public TbScript_TraChinese TbScriptTraChinese {get; }
     public TbShopConfig TbShopConfig {get; }
     public TbShopGiftMenuConfig TbShopGiftMenuConfig {get; }
     public TbSoundConfig TbSoundConfig {get; }
     public TbTipTextConfig TbTipTextConfig {get; }
     public TbTodayGiftConfig TbTodayGiftConfig {get; }
     public TbWelfareMenuConfig TbWelfareMenuConfig {get; }
-    public TbCfg_English TbCfgEnglish {get; }
-    public TbCfg_SimChinese TbCfgSimChinese {get; }
-    public TbCfg_TraChinese TbCfgTraChinese {get; }
+    public TbCfg_Language TbCfgLanguage {get; }
+    public TbScript_Language TbScriptLanguage {get; }
 
     public Tables(System.Func<string, ByteBuf> loader)
     {
@@ -54,18 +50,14 @@ public partial class Tables
         TbMainUIBtnConfig = new TbMainUIBtnConfig(loader("tbmainuibtnconfig"));
         TbPokerConfig = new TbPokerConfig(loader("tbpokerconfig"));
         TbRechargeConfig = new TbRechargeConfig(loader("tbrechargeconfig"));
-        TbScriptEnglish = new TbScript_English(loader("tbscript_english"));
-        TbScriptSimChinese = new TbScript_SimChinese(loader("tbscript_simchinese"));
-        TbScriptTraChinese = new TbScript_TraChinese(loader("tbscript_trachinese"));
         TbShopConfig = new TbShopConfig(loader("tbshopconfig"));
         TbShopGiftMenuConfig = new TbShopGiftMenuConfig(loader("tbshopgiftmenuconfig"));
         TbSoundConfig = new TbSoundConfig(loader("tbsoundconfig"));
         TbTipTextConfig = new TbTipTextConfig(loader("tbtiptextconfig"));
         TbTodayGiftConfig = new TbTodayGiftConfig(loader("tbtodaygiftconfig"));
         TbWelfareMenuConfig = new TbWelfareMenuConfig(loader("tbwelfaremenuconfig"));
-        TbCfgEnglish = new TbCfg_English(loader("tbcfg_english"));
-        TbCfgSimChinese = new TbCfg_SimChinese(loader("tbcfg_simchinese"));
-        TbCfgTraChinese = new TbCfg_TraChinese(loader("tbcfg_trachinese"));
+        TbCfgLanguage = new TbCfg_Language(loader("tbcfg_language"));
+        TbScriptLanguage = new TbScript_Language(loader("tbscript_language"));
         ResolveRef();
     }
     
@@ -84,18 +76,14 @@ public partial class Tables
         TbMainUIBtnConfig.ResolveRef(this);
         TbPokerConfig.ResolveRef(this);
         TbRechargeConfig.ResolveRef(this);
-        TbScriptEnglish.ResolveRef(this);
-        TbScriptSimChinese.ResolveRef(this);
-        TbScriptTraChinese.ResolveRef(this);
         TbShopConfig.ResolveRef(this);
         TbShopGiftMenuConfig.ResolveRef(this);
         TbSoundConfig.ResolveRef(this);
         TbTipTextConfig.ResolveRef(this);
         TbTodayGiftConfig.ResolveRef(this);
         TbWelfareMenuConfig.ResolveRef(this);
-        TbCfgEnglish.ResolveRef(this);
-        TbCfgSimChinese.ResolveRef(this);
-        TbCfgTraChinese.ResolveRef(this);
+        TbCfgLanguage.ResolveRef(this);
+        TbScriptLanguage.ResolveRef(this);
     }
 }
 

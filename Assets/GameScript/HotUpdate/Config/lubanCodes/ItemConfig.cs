@@ -18,12 +18,14 @@ public sealed partial class ItemConfig : Luban.BeanBase
     {
         Id = _buf.ReadInt();
         Name = _buf.ReadString();
+        NameLangId = _buf.ReadInt();
         Icon = _buf.ReadString();
         SmallIcon = _buf.ReadString();
         Type = _buf.ReadInt();
         Quality = _buf.ReadInt();
         ShowAdd = _buf.ReadInt();
-        IconDesecribe = _buf.ReadString();
+        Desc = _buf.ReadString();
+        DescLangId = _buf.ReadInt();
     }
 
     public static ItemConfig DeserializeItemConfig(ByteBuf _buf)
@@ -39,6 +41,10 @@ public sealed partial class ItemConfig : Luban.BeanBase
     /// 道具名称
     /// </summary>
     public readonly string Name;
+    /// <summary>
+    /// 道具翻译id
+    /// </summary>
+    public readonly int NameLangId;
     /// <summary>
     /// 道具图标
     /// </summary>
@@ -62,7 +68,11 @@ public sealed partial class ItemConfig : Luban.BeanBase
     /// <summary>
     /// 道具描述
     /// </summary>
-    public readonly string IconDesecribe;
+    public readonly string Desc;
+    /// <summary>
+    /// 描述翻译id
+    /// </summary>
+    public readonly int DescLangId;
    
     public const int __ID__ = -764023723;
     public override int GetTypeId() => __ID__;
@@ -76,12 +86,14 @@ public sealed partial class ItemConfig : Luban.BeanBase
         return "{ "
         + "id:" + Id + ","
         + "name:" + Name + ","
+        + "nameLangId:" + NameLangId + ","
         + "icon:" + Icon + ","
         + "smallIcon:" + SmallIcon + ","
         + "type:" + Type + ","
         + "quality:" + Quality + ","
         + "showAdd:" + ShowAdd + ","
-        + "iconDesecribe:" + IconDesecribe + ","
+        + "desc:" + Desc + ","
+        + "descLangId:" + DescLangId + ","
         + "}";
     }
 }

@@ -1,20 +1,16 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using YooAsset;
+
 /// <summary>
 /// 使用_init_.bat进行全部导出,默认使用字典形式的json文件,右键_init_.bat打开可以添加用List形式导出
 /// </summary>
 // 默认使用字典模式     少使用array         导表还是使用 CfgLubanMgr吧,性能好一点...  这个一开始写出的...不打算用了,但也不删吧
 public class CfgJsonMgr : Singleton<CfgJsonMgr>
 {
-    private string _langCfgName; //翻译表  导表之间的索引
-    private string _langScriptName; //写代码时 收集的到表
-
     protected override void OnInit()
     {
         base.OnInit();
-        _langCfgName = "Cfg_" + AppConfig.currLang; //翻译表  导表之间的索引   一般策划维护的表
-        _langScriptName = "Script_" + AppConfig.currLang; //写代码时 程序员 收集的到excel中去   后面也是策划维护的     
     }
 
     /// <summary> T是表类型    返回整个导表</summary>
@@ -59,7 +55,7 @@ public class CfgJsonMgr : Singleton<CfgJsonMgr>
         }
         else
         {
-            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
             var handle = assetPackage.LoadAssetSync(name);
             jsonStr = handle.AssetObject.ToString();
             _dicTabString[name] = jsonStr;
@@ -67,50 +63,52 @@ public class CfgJsonMgr : Singleton<CfgJsonMgr>
         }
     }
 
-    private Dictionary<string, Cfg_SimChinese> langCfgDic; //因为翻译索引表 都是一样字段  取哪个一样
-
-    public string GetCurrLangCfgTxt(string langId)
-    {
-        if (langCfgDic == null)
-        {
-            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
-            var handle = assetPackage.LoadAssetSync(_langCfgName);
-            var jsonStr = handle.AssetObject.ToString();
-            langCfgDic = JsonConvert.DeserializeObject<Dictionary<string, Cfg_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
-        }
-
-        if (langCfgDic.TryGetValue(langId, out var idValue))
-        {
-            return idValue.name;
-        }
-        else
-        {
-            return "NULL";
-        }
-    }
-
-    private Dictionary<string, Script_SimChinese> langScriptDic; //因为翻译索引表 都是一样字段  取哪个一样
-
-    public string GetCurrLangScriptTxt(string langId)
-    {
-        if (langScriptDic == null)
-        {
-            var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
-            var handle = assetPackage.LoadAssetSync(_langScriptName);
-            var jsonStr = handle.AssetObject.ToString();
-            langScriptDic = JsonConvert.DeserializeObject<Dictionary<string, Script_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
-        }
-
-        if (langScriptDic.TryGetValue(langId, out var idValue))
-        {
-            return idValue.name;
-        }
-        else
-        {
-            return "NULL";
-        }
-    }
-
-    // private Dictionary<string, Dictionary<string,T>> _dicTabString2 = new Dictionary<string, Dictionary<string,T>>();//不能这样定义
-    // private Dictionary<string, Dictionary<string,object>> _dicTabString2 = new Dictionary<string, Dictionary<string,object>>();//装箱 折箱 ??
+    #region 哎 留着吧..不用了
+    // private string _langCfgName; //翻译表  导表之间的索引
+    // private string _langScriptName; //写代码时 收集的到表
+    // _langCfgName = "Cfg_" + AppConfig.currLang; //翻译表  导表之间的索引   一般策划维护的表
+    // _langScriptName = "Script_" + AppConfig.currLang; //写代码时 程序员 收集的到excel中去   后面也是策划维护的     
+    
+    // private Dictionary<string, Cfg_SimChinese> langCfgDic; //因为翻译索引表 都是一样字段  取哪个一样
+    // public string GetCurrLangCfgTxt(string langId)
+    // {
+    //     if (langCfgDic == null)
+    //     {
+    //         var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+    //         var handle = assetPackage.LoadAssetSync(_langCfgName);
+    //         var jsonStr = handle.AssetObject.ToString();
+    //         langCfgDic = JsonConvert.DeserializeObject<Dictionary<string, Cfg_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
+    //     }
+    //
+    //     if (langCfgDic.TryGetValue(langId, out var idValue))
+    //     {
+    //         return idValue.name;
+    //     }
+    //     else
+    //     {
+    //         return "NULL";
+    //     }
+    // }
+    //
+    // private Dictionary<string, Script_SimChinese> langScriptDic; //因为翻译索引表 都是一样字段  取哪个一样
+    // public string GetCurrLangScriptTxt(string langId)
+    // {
+    //     if (langScriptDic == null)
+    //     {
+    //         var assetPackage = YooAssets.TryGetPackage(AppConfig.defaultYooAssetPKG);//"DefaultPackage");
+    //         var handle = assetPackage.LoadAssetSync(_langScriptName);
+    //         var jsonStr = handle.AssetObject.ToString();
+    //         langScriptDic = JsonConvert.DeserializeObject<Dictionary<string, Script_SimChinese>>(jsonStr); //因为翻译索引表 都是一样字段  取哪个一样
+    //     }
+    //
+    //     if (langScriptDic.TryGetValue(langId, out var idValue))
+    //     {
+    //         return idValue.name;
+    //     }
+    //     else
+    //     {
+    //         return "NULL";
+    //     }
+    // }
+    #endregion
 }
