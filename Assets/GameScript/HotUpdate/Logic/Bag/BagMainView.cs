@@ -10,7 +10,7 @@ namespace Bag
     {
         private List<ItemDto> mPropDtos;
         private ItemDto mSelectItemDto;
-        private List<int> mCurrencyIds = new List<int>() { 1, 2, 5 };
+        private List<int> mCurrencyIds = new List<int>() { 1001, 1002, 1005 };
 
         public override void OnInit()
         {
