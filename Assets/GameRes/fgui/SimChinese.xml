@@ -7,13 +7,13 @@
   <string name="b7676vbq9232k-n5_9232" mz="tipsLbl">请选择[color=#599e27]1种[/color]你要的道具</string>
   <string name="b7676vbq9232k-n20_toec" mz="tip">[color=#917349]长按可查看道具详情[/color]</string>
   <!-- Bag/panel/BagMainView.xml -->
-  <string name="b7676vbqxbayc-n4_xbay" mz="title_advanced">背包</string>
+  <string name="b7676vbqxbayc-n4_xbay" mz="title_advanced">背简</string>
   <string name="b7676vbqxbayc-n8_xbay" mz="tab01">全部</string>
   <string name="b7676vbqxbayc-n9_xbay" mz="tab02">资源</string>
   <string name="b7676vbqxbayc-n10_xbay" mz="tab03">装备</string>
   <string name="b7676vbqxbayc-n11_xbay" mz="tab04">其他</string>
   <string name="b7676vbqxbayc-n12_xbay" mz="tab05">其他</string>
-  <string name="b7676vbqxbayc-n47_aylj" mz="nothingLbl">您的背包空空如也</string>
+  <string name="b7676vbqxbayc-n47_aylj" mz="nothingLbl">您的背包空空如也--简体</string>
   <string name="b7676vbqxbayc-n98_nkto" mz="equipmentGoToBtn">前往锻造</string>
   <string name="b7676vbqxbayc-n30_grws" mz="lbl01">拥有数量：</string>
   <string name="b7676vbqxbayc-n50_f3wx" mz="btnCanUsing">使用</string>
@@ -663,7 +663,8 @@
   <!-- MainRole/components/RoleHeadView.xml -->
   <string name="66sh7tc6j3xs9ph-n0_j3xs" mz="bgBtn">头像选择</string>
   <string name="66sh7tc6j3xs9ph-n5_j3xs" mz="btnModify">使用</string>
-  <string name="66sh7tc6j3xs9ph-n7_j3xs" mz="conditionLbl_01">可以通过购买“龙之忍通”礼包获得</string>
+  <string name="66sh7tc6j3xs9ph-n7_j3xs" mz="conditionLbl_01">可以通过购买“龙之忍通”
+礼包获得</string>
   <string name="66sh7tc6j3xs9ph-n25_gqih" mz="conditionLbl_02">执政官的初始头像框</string>
   <string name="66sh7tc6j3xs9ph-n10_gqih" mz="quantityLbl_01">已获得：</string>
   <string name="66sh7tc6j3xs9ph-n12_gqih" mz="tabHeadBtn">头像</string>

@@ -131,17 +131,16 @@ namespace Login
         private void OnClickCfgBtn()
         {
             Debuger.LogError("测试 加载配置文件  conifg");
-            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(2);// ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表;
+            var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(2); // ConfigMgr.Instance.LoadConfigDics<ItemConfig>(); //整个表;
             if (cfg != null)
             {
-                Debuger.LogError(cfg.Name + "  " + cfg.IconDesecribe);
-                ProxyCommonPKGModule.Instance.AddToastStr($"load config dicTable {cfg.Name}   {cfg.IconDesecribe}");
+                Debuger.LogError(cfg);
+                ProxyCommonPKGModule.Instance.AddToastStr($"load config dicTable {cfg.Name}   {CfgLubanMgr.Instance.GetCurrLangCfgTxt(cfg.DescLangId, cfg.Desc)}");
             }
-            
-            
+
             CfgLubanMgr.Instance.ExampleMethod();
             var cfg22 = CfgLubanMgr.Instance.globalTab.TBATestItem.Get(10001);
-            Debug.LogFormat("{0}",cfg22);
+            Debug.LogFormat("{0}", cfg22);
         }
 
         public override void Dispose()

@@ -57,7 +57,6 @@ namespace Bag
             BagManager.Instance.BagTabReadIndex(sIndex);
         }
 
-
         private void OnClickItemPropList(EventContext context)
         {
             Item_PropBag itemProp = (Item_PropBag)context.data;
@@ -86,9 +85,9 @@ namespace Bag
             {
                 var rightIcon = (Item_PropBag)_iconProp;
                 rightIcon.SetData(mSelectItemDto);
-                var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(mSelectItemDto.CfgId);// ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
+                var cfg = CfgLubanMgr.Instance.globalTab.TbItemConfig.Get(mSelectItemDto.CfgId); // ConfigMgr.Instance.LoadConfigOne<ItemConfig>(mSelectItemDto.CfgId.ToString());
                 _titlePropTxt.text = cfg.Name;
-                _descTxt.text = cfg.IconDesecribe;
+                _descTxt.text = CfgLubanMgr.Instance.GetCurrLangCfgTxt(cfg.DescLangId, cfg.Desc);
                 _hasTxt.text = mSelectItemDto.Sum.ToString();
             }
         }

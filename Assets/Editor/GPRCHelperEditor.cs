@@ -73,8 +73,12 @@ public class GPRCHelperEditor
         process.WaitForExit();
         
         // AssetDatabase.Refresh();
-        
-        Debug.LogFormat("luban执行成功二进制,数据lubanBytes,代码lubanCodes--,{0}",output);
+
+        if (output.Contains("failed"))
+            Debug.LogError($"失败.luban执行成功二进制,数据lubanBytes,代码lubanCodes--,{output}");
+    
+        else
+            Debug.LogFormat("成功.luban执行二进制,数据lubanBytes,代码lubanCodes--,{0}",output);
     }
     
     
