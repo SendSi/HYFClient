@@ -9,7 +9,7 @@ namespace MainCenter
     {
         private List<MainUIBtnConfig> mCfgList;
 
-        private List<int> mCurrencyIds = new List<int>() { 1, 2, 5, 12 };
+        private List<int> mCurrencyIds = new List<int>() { 1001, 1002, 1005, 1011 };
 
         public override void OnInit()
         {

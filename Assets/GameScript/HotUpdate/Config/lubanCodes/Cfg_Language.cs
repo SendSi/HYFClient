@@ -36,7 +36,7 @@ public sealed partial class Cfg_Language : Luban.BeanBase
     /// </summary>
     public readonly string LangSimChinese;
     /// <summary>
-    /// 繁体中文
+    /// 繁體中文
     /// </summary>
     public readonly string LangTraChinese;
     /// <summary>

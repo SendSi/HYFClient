@@ -31,13 +31,16 @@ public class CfgLubanMgr : Singleton<CfgLubanMgr>
         {
             return new ByteBuf(textAsset.bytes);
         }
+
         return null;
     }
 
     /// <summary> 导表索引过来的数据 </summary>
     /// <param name="plainText">可以传原导表的文本内容</param>
-    public string GetCurrLangCfgTxt(int langId,string plainText="null")
+    public string GetCurrLangCfgTxt(int langId, string plainText = "null")
     {
+        if (langId <= 0) return plainText;
+
         var cfg = _globalTab.TbCfgLanguage.Get(langId);
         if (cfg == null) return plainText;
         else if (AppConfig.currLang == "TraChinese") return cfg.LangTraChinese;
@@ -49,6 +52,8 @@ public class CfgLubanMgr : Singleton<CfgLubanMgr>
     /// <param name="plainText">可以传原导表的文本内容</param>
     public string GetCurrLangScriptTxt(int langId)
     {
+        if (langId <= 0) return "null";
+
         var cfg = _globalTab.TbScriptLanguage.Get(langId);
         if (cfg == null) return "null";
         else if (AppConfig.currLang == "TraChinese") return cfg.LangTraChinese;
