@@ -117,12 +117,12 @@ public class AudioMgr : Singleton<AudioMgr>
         }
     }
 
-    public void PlayBGM_Id(string id, bool isLoop = true)
+    public void PlayBGM_Id(int idKey, bool isLoop = true)
     {
-        var cfg = CfgJsonMgr.Instance.LoadConfigOne<SoundConfig>(id);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbSoundConfig.Get(idKey);//CfgJsonMgr.Instance.LoadConfigOne<SoundConfig>(id);
         if (cfg != null)
         {
-            PlayBGM(cfg.yooPath, isLoop);
+            PlayBGM(cfg.YooPath, isLoop);
         }
     }
 
@@ -151,12 +151,12 @@ public class AudioMgr : Singleton<AudioMgr>
         }
     }
 
-    public void PlayMusic_Id(string id)
+    public void PlayMusic_Id(int idKey)
     {
-        var cfg = CfgJsonMgr.Instance.LoadConfigOne<SoundConfig>(id);
+        var cfg = CfgLubanMgr.Instance.globalTab.TbSoundConfig.Get(idKey); //CfgJsonMgr.Instance.LoadConfigOne<SoundConfig>(id);
         if (cfg != null)
         {
-            PlayMusic(cfg.yooPath);
+            PlayMusic(cfg.YooPath);
         }
     }
 

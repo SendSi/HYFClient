@@ -14,12 +14,12 @@ namespace cfg
 {
 public partial class TbSoundConfig
 {
-    private readonly System.Collections.Generic.Dictionary<string, SoundConfig> _dataMap;
+    private readonly System.Collections.Generic.Dictionary<int, SoundConfig> _dataMap;
     private readonly System.Collections.Generic.List<SoundConfig> _dataList;
     
     public TbSoundConfig(ByteBuf _buf)
     {
-        _dataMap = new System.Collections.Generic.Dictionary<string, SoundConfig>();
+        _dataMap = new System.Collections.Generic.Dictionary<int, SoundConfig>();
         _dataList = new System.Collections.Generic.List<SoundConfig>();
         
         for(int n = _buf.ReadSize() ; n > 0 ; --n)
@@ -31,12 +31,12 @@ public partial class TbSoundConfig
         }
     }
 
-    public System.Collections.Generic.Dictionary<string, SoundConfig> DataMap => _dataMap;
+    public System.Collections.Generic.Dictionary<int, SoundConfig> DataMap => _dataMap;
     public System.Collections.Generic.List<SoundConfig> DataList => _dataList;
 
-    public SoundConfig GetOrDefault(string key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public SoundConfig Get(string key) => _dataMap[key];
-    public SoundConfig this[string key] => _dataMap[key];
+    public SoundConfig GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public SoundConfig Get(int key) => _dataMap[key];
+    public SoundConfig this[int key] => _dataMap[key];
 
     public void ResolveRef(Tables tables)
     {

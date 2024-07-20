@@ -237,7 +237,6 @@
     <image id="cxixz9cmd" name="stars02.png" path="/images/images_new/" exported="true" favorite="true"/>
     <image id="cxixz9cmf" name="gen_card_select.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="37,36,4,4"/>
     <image id="cxixz9cmr" name="com_change05.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="0,5,202,4"/>
-    <component id="ssbdchk" name="information_name_camp.xml" path="/components/" exported="true"/>
     <image id="ebe5z9cn2" name="line_01.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="8,0,2,2"/>
     <image id="oqowz9cn5" name="com_spot.png" path="/images/images_new/" exported="true"/>
     <component id="ebe5ci9" name="attribute_item.xml" path="/components/" exported="true"/>
@@ -948,7 +947,6 @@
     <image id="c68p1ygcgms" name="com_change015.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="43,0,68,68"/>
     <image id="lvki1ygcgmt" name="com_btn_explain01_4.png" path="/images/images_new/" exported="true"/>
     <component id="b9bj5m" name="intoBtn.xml" path="/components/" exported="true"/>
-    <component id="kvv41iy5bdz" name="hero_bg02.xml" path="/components/" exported="true"/>
     <image id="wgal1ygcgmu" name="com_btn_close5.png" path="/images/images_new/" exported="true"/>
     <component id="abzm1ygcgnj" name="comItem_Select_Btn.xml" path="/components/" exported="true"/>
     <font id="vsu61ygcgni" name="crit_Font.fnt" path="/images/font/" exported="true"/>
@@ -1023,7 +1021,6 @@
     <component id="ftur1ygcgq0" name="existingItem.xml" path="/components/" exported="true"/>
     <component id="edhk1ygcgq1" name="existingItem2.xml" path="/components/" exported="true"/>
     <image id="edhk1ygcgq2" name="common_exist02.png" path="/images/" exported="true"/>
-    <component id="sz581ygcgq3" name="hero_bg02TestVideo.xml" path="/components/" exported="true"/>
     <component id="evvi1ygcgq4" name="comItem_BottomName_btn.xml" path="/components/" exported="true"/>
     <image id="pi641ygcgq5" name="label_010.png" path="/images/images_new/windowBg_new/" exported="true"/>
     <image id="mp5s1ygcgq6" name="com_bg_resource02.png" path="/images/images_new/" exported="true" scale="9grid" scale9grid="16,17,15,10"/>
@@ -1102,6 +1099,7 @@
     <component id="lg2o1ygcgrv" name="horseTitle.xml" path="/components_new/" exported="true"/>
     <component id="lmzq1ygcgrw" name="Item_BaseProp.xml" path="/components/" exported="true" favorite="true"/>
     <component id="fipp1ygcgrx" name="Item_Popup1.xml" path="/panel/" exported="true"/>
+    <component id="t54x1ygcgry" name="VideoView.xml" path="/panel/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

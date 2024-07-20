@@ -16,7 +16,7 @@ public sealed partial class SoundConfig : Luban.BeanBase
 {
     public SoundConfig(ByteBuf _buf) 
     {
-        Id = _buf.ReadString();
+        Id = _buf.ReadInt();
         YooPath = _buf.ReadString();
     }
 
@@ -28,7 +28,7 @@ public sealed partial class SoundConfig : Luban.BeanBase
     /// <summary>
     /// key值
     /// </summary>
-    public readonly string Id;
+    public readonly int Id;
     /// <summary>
     /// 道具名称
     /// </summary>

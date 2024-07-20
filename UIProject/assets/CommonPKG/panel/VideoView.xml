@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <graph id="n10_t54x" name="bg" xy="-32,-29" size="1418,820" type="rect" lineSize="0" fillColor="#a8006600">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <loader id="n8_t54x" name="videoContent" xy="229,132" size="853,498"/>
+    <component id="n9_t54x" name="closeBtn" src="k7pz1v" fileName="components/Button_cut.xml" xy="56,31"/>
+  </displayList>
+</component>

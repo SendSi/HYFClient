@@ -119,4 +119,21 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
         (popItem1 as Item_Popup1).SetData(cfg);//Item_Popup1.cs
         FairyGUI.GRoot.inst.ShowPopup(popItem1, target, PopupDirection.Auto);
     }
+    
+    
+    #region VideoView打开关闭
+    public void OpenVideoView(string idStr)
+    {
+        CheckLoad(() =>
+        {
+            var view = UIMgr.Instance.OpenUIViewCom<VideoView>(pkgName);
+            view.SetData(idStr);
+        });
+    }
+
+    public void CloseVideoView()
+    {
+        UIMgr.Instance.CloseUIViewCom<VideoView>();
+    }
+    #endregion
 }
