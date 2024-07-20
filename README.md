@@ -37,11 +37,6 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     Spine引用 请看GLoader3DExtensions.cs的扩展方法,就使用时SetLoadSpine(),关闭页面时调用下DisposeSpine()
     todo-->HUD
 
-####  服务端
-    使用gRPC进行通信协议 测试了exe是正常热更的,,,,无需服务端,则使用另一分支noServer
-    HYFServer要与HYFClient同一个文件夹下 (Toolkit\ProtoGen.bat有定义路径)
-    在UnityEditor下有菜单栏.直接使用proto即可生成客户端用的代码
-    服务端工程 https://github.com/SendSi/HYFServer
 
 ####  download下来后
     1. HybridCLR/Installer  进行Install下
