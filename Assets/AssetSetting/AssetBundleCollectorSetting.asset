@@ -118,6 +118,19 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+    - GroupName: video
+      GroupDesc: "\u89C6\u9891"
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/GameRes/Video
+        CollectorGUID: 885fad4ff35377f4eaed6b7f8a0af73a
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
   - PackageName: HotFixPackage
     PackageDesc: 
     EnableAddressable: 0

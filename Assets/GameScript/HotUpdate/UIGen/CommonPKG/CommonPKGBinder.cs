@@ -83,7 +83,6 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(com_cbtn_icon01.URL, typeof(com_cbtn_icon01));
             UIObjectFactory.SetPackageItemExtension(equipmentIcon2_1.URL, typeof(equipmentIcon2_1));
             UIObjectFactory.SetPackageItemExtension(headmask.URL, typeof(headmask));
-            UIObjectFactory.SetPackageItemExtension(hero_bg02.URL, typeof(hero_bg02));
             UIObjectFactory.SetPackageItemExtension(Button_guide_1.URL, typeof(Button_guide_1));
             UIObjectFactory.SetPackageItemExtension(com_btn_buy6.URL, typeof(com_btn_buy6));
             UIObjectFactory.SetPackageItemExtension(com_btnAdd2.URL, typeof(com_btnAdd2));
@@ -138,8 +137,7 @@ namespace CommonPKG
             UIObjectFactory.SetPackageItemExtension(com_btn_null.URL, typeof(com_btn_null));
             UIObjectFactory.SetPackageItemExtension(main_generalIcon.URL, typeof(main_generalIcon));
             UIObjectFactory.SetPackageItemExtension(armyAwakeBtn.URL, typeof(armyAwakeBtn));
-            UIObjectFactory.SetPackageItemExtension(information_name_camp.URL, typeof(information_name_camp));
-            UIObjectFactory.SetPackageItemExtension(hero_bg02TestVideo.URL, typeof(hero_bg02TestVideo));
+            UIObjectFactory.SetPackageItemExtension(VideoView.URL, typeof(VideoView));
             UIObjectFactory.SetPackageItemExtension(ToastItem.URL, typeof(ToastItem));
             UIObjectFactory.SetPackageItemExtension(ToastTipView.URL, typeof(ToastTipView));
             UIObjectFactory.SetPackageItemExtension(LoadingView.URL, typeof(LoadingView));

@@ -2,25 +2,18 @@
   "libview.firstColumnWidth": 531,
   "libview.iconScale": 0,
   "doc.openedDocs": [
-    "ui://2r331opvfipp1ygcgrx",
-    "ui://q3kpafy9zift1ygcga7"
+    "ui://2r331opvt54x1ygcgry"
   ],
   "libview.syncEditor": 0,
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://q3kpafy9zift1ygcga7",
+  "doc.activeDoc": "ui://2r331opvt54x1ygcgry",
   "libview.twoColumn": false,
   "libview.expandedNodes": [
     "2r331opv",
     "/",
     "2r331opv",
-    "/components/",
-    "2r331opv",
-    "/panel/",
-    "utp01xia",
-    "/",
-    "utp01xia",
     "/panel/"
   ],
   "snapToGrid": true,

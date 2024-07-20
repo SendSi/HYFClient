@@ -142,6 +142,15 @@ public class GMManager : Singleton<GMManager>
             {
                 ProxyGuidePKGModule.Instance.TestLoadView();
             }
+            else if (target == "playVideo")
+            {
+                ProxyGMModule.Instance.HideGMMainView();
+                ProxyCommonPKGModule.Instance.OpenVideoView(values[2]);
+            }
+            else if (target == "pauseVideo")
+            {
+                VideoMgr.Instance.PauseVideo();
+            }
         }
     }
 
@@ -163,11 +172,11 @@ public class GMManager : Singleton<GMManager>
     {
         if (values[2] == "1")
         {
-            AudioMgr.Instance.PlayBGM_Id(values[3]);
+            AudioMgr.Instance.PlayBGM_Id(int.Parse(values[3]));
         }
         else
         {
-            AudioMgr.Instance.PlayMusic_Id(values[3]);
+            AudioMgr.Instance.PlayMusic_Id(int.Parse(values[3]));
         }
     }
 

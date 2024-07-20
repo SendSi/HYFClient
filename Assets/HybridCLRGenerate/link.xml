@@ -13,6 +13,7 @@
   <assembly fullname="FairyGUI">
     <type fullname="FairyGUI.ButtonMode" preserve="all" />
     <type fullname="FairyGUI.Controller" preserve="all" />
+    <type fullname="FairyGUI.DestroyMethod" preserve="all" />
     <type fullname="FairyGUI.DisplayObject" preserve="all" />
     <type fullname="FairyGUI.EaseType" preserve="all" />
     <type fullname="FairyGUI.EventCallback0" preserve="all" />
@@ -40,8 +41,10 @@
     <type fullname="FairyGUI.GTweenCallback" preserve="all" />
     <type fullname="FairyGUI.GTweener" preserve="all" />
     <type fullname="FairyGUI.GoWrapper" preserve="all" />
+    <type fullname="FairyGUI.Image" preserve="all" />
     <type fullname="FairyGUI.ListItemProvider" preserve="all" />
     <type fullname="FairyGUI.ListItemRenderer" preserve="all" />
+    <type fullname="FairyGUI.NTexture" preserve="all" />
     <type fullname="FairyGUI.PackageItem" preserve="all" />
     <type fullname="FairyGUI.PlayCompleteCallback" preserve="all" />
     <type fullname="FairyGUI.PopupDirection" preserve="all" />
@@ -105,7 +108,9 @@
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.PlayerPrefs" preserve="all" />
     <type fullname="UnityEngine.Random" preserve="all" />
+    <type fullname="UnityEngine.RenderTexture" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />
@@ -127,6 +132,11 @@
     <type fullname="UnityEngine.ParticleSystem/MainModule" preserve="all" />
     <type fullname="UnityEngine.ParticleSystem/MinMaxCurve" preserve="all" />
     <type fullname="UnityEngine.ParticleSystem/Particle" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.VideoModule">
+    <type fullname="UnityEngine.Video.VideoAspectRatio" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoClip" preserve="all" />
+    <type fullname="UnityEngine.Video.VideoPlayer" preserve="all" />
   </assembly>
   <assembly fullname="YooAsset">
     <type fullname="YooAsset.AssetHandle" preserve="all" />
