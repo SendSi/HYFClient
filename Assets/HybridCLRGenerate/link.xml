@@ -4,7 +4,6 @@
     <type fullname="AppConfig" preserve="all" />
     <type fullname="EventCenter" preserve="all" />
     <type fullname="FGUILoader" preserve="all" />
-    <type fullname="GameMain" preserve="all" />
     <type fullname="Singleton`1" preserve="all" />
   </assembly>
   <assembly fullname="Debuger">
@@ -146,6 +145,10 @@
   <assembly fullname="System.Net.Http">
     <type fullname="System.Net.Http.HttpMessageHandler" preserve="all" />
   </assembly>
+  <assembly fullname="UniTask">
+    <type fullname="Cysharp.Threading.Tasks.UniTask" preserve="all" />
+    <type fullname="Cysharp.Threading.Tasks.UniTask/Awaiter" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AnimationModule">
     <type fullname="UnityEngine.Animation" preserve="all" />
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
@@ -160,7 +163,6 @@
     <type fullname="UnityEngine.Application" preserve="all" />
     <type fullname="UnityEngine.Behaviour" preserve="all" />
     <type fullname="UnityEngine.Component" preserve="all" />
-    <type fullname="UnityEngine.Coroutine" preserve="all" />
     <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction`1" preserve="all" />
