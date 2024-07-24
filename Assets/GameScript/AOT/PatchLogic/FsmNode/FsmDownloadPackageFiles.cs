@@ -2,6 +2,7 @@
 using UnityEngine;
 using UniFramework.Machine;
 using YooAsset;
+using Cysharp.Threading.Tasks;
 
 /// <summary>
 /// 下载更新文件
@@ -14,10 +15,10 @@ public class FsmDownloadPackageFiles : IStateNode
     {
         _machine = machine;
     }
-    void IStateNode.OnEnter()
+    async void IStateNode.OnEnter()
     {
         EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "开始下载补丁文件！");
-        GameMain.Instance.StartCoroutine(BeginDownload());
+        await BeginDownload();
     }
     void IStateNode.OnUpdate()
     {
@@ -26,17 +27,18 @@ public class FsmDownloadPackageFiles : IStateNode
     {
     }
 
-    private IEnumerator BeginDownload()
+    private async UniTask BeginDownload()
     {
         var downloader = (ResourceDownloaderOperation)_machine.GetBlackboardValue("Downloader");
         downloader.OnDownloadErrorCallback = OnEventWebFileDownloadFailed;// PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
         downloader.OnDownloadProgressCallback = OnEventDownloadProgressUpdate;
         downloader.BeginDownload();
-        yield return downloader;
+        //yield return downloader;
+        await downloader;
 
         // 检测下载结果
         if (downloader.Status != EOperationStatus.Succeed)
-            yield break;
+            return;//   yield break;
 
         _machine.ChangeState<FsmDownloadPackageOver>();
     }

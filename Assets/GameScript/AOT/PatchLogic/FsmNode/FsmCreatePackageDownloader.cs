@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UniFramework.Machine;
 using YooAsset;
+using Cysharp.Threading.Tasks;
 
 /// <summary>
 /// 创建文件下载器
@@ -18,7 +19,7 @@ public class FsmCreatePackageDownloader : IStateNode
     void IStateNode.OnEnter()
     {
         EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "创建补丁下载器！");
-        GameMain.Instance.StartCoroutine(CreateDownloader());
+         CreateDownloader();
     }
     void IStateNode.OnUpdate()
     {
@@ -27,9 +28,10 @@ public class FsmCreatePackageDownloader : IStateNode
     {
     }
 
-    IEnumerator CreateDownloader()
+    async void CreateDownloader()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
+        //yield return new WaitForSecondsRealtime(0.5f);
+        await UniTask.WaitForSeconds(0.5f);
 
         var packageName = (string)_machine.GetBlackboardValue("PackageName");
         var package = YooAssets.GetPackage(packageName);

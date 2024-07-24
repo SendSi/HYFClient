@@ -4,7 +4,6 @@
     <type fullname="AppConfig" preserve="all" />
     <type fullname="EventCenter" preserve="all" />
     <type fullname="FGUILoader" preserve="all" />
-    <type fullname="GameMain" preserve="all" />
     <type fullname="Singleton`1" preserve="all" />
   </assembly>
   <assembly fullname="Debuger">
@@ -58,6 +57,66 @@
     <type fullname="FairyGUI.Utils.XML" preserve="all" />
     <type fullname="FairyGUI.Window" preserve="all" />
   </assembly>
+  <assembly fullname="Google.Protobuf">
+    <type fullname="Google.Protobuf.CodedInputStream" preserve="all" />
+    <type fullname="Google.Protobuf.CodedOutputStream" preserve="all" />
+    <type fullname="Google.Protobuf.Collections.RepeatedField`1" preserve="all" />
+    <type fullname="Google.Protobuf.Extension" preserve="all" />
+    <type fullname="Google.Protobuf.FieldCodec" preserve="all" />
+    <type fullname="Google.Protobuf.FieldCodec`1" preserve="all" />
+    <type fullname="Google.Protobuf.IBufferMessage" preserve="all" />
+    <type fullname="Google.Protobuf.IDeepCloneable`1" preserve="all" />
+    <type fullname="Google.Protobuf.IMessage" preserve="all" />
+    <type fullname="Google.Protobuf.IMessage`1" preserve="all" />
+    <type fullname="Google.Protobuf.JsonFormatter" preserve="all" />
+    <type fullname="Google.Protobuf.MessageExtensions" preserve="all" />
+    <type fullname="Google.Protobuf.MessageParser" preserve="all" />
+    <type fullname="Google.Protobuf.MessageParser`1" preserve="all" />
+    <type fullname="Google.Protobuf.ParseContext" preserve="all" />
+    <type fullname="Google.Protobuf.ProtoPreconditions" preserve="all" />
+    <type fullname="Google.Protobuf.Reflection.FileDescriptor" preserve="all" />
+    <type fullname="Google.Protobuf.Reflection.GeneratedClrTypeInfo" preserve="all" />
+    <type fullname="Google.Protobuf.Reflection.MessageDescriptor" preserve="all" />
+    <type fullname="Google.Protobuf.Reflection.ServiceDescriptor" preserve="all" />
+    <type fullname="Google.Protobuf.UnknownFieldSet" preserve="all" />
+    <type fullname="Google.Protobuf.WriteContext" preserve="all" />
+  </assembly>
+  <assembly fullname="Grpc.Core.Api">
+    <type fullname="Grpc.Core.AsyncServerStreamingCall`1" preserve="all" />
+    <type fullname="Grpc.Core.AsyncUnaryCall`1" preserve="all" />
+    <type fullname="Grpc.Core.BindServiceMethodAttribute" preserve="all" />
+    <type fullname="Grpc.Core.CallCredentials" preserve="all" />
+    <type fullname="Grpc.Core.CallInvoker" preserve="all" />
+    <type fullname="Grpc.Core.CallOptions" preserve="all" />
+    <type fullname="Grpc.Core.ChannelBase" preserve="all" />
+    <type fullname="Grpc.Core.ClientBase" preserve="all" />
+    <type fullname="Grpc.Core.ClientBase/ClientBaseConfiguration" preserve="all" />
+    <type fullname="Grpc.Core.ClientBase`1" preserve="all" />
+    <type fullname="Grpc.Core.ContextPropagationToken" preserve="all" />
+    <type fullname="Grpc.Core.DeserializationContext" preserve="all" />
+    <type fullname="Grpc.Core.IAsyncStreamReader`1" preserve="all" />
+    <type fullname="Grpc.Core.IServerStreamWriter`1" preserve="all" />
+    <type fullname="Grpc.Core.Marshaller`1" preserve="all" />
+    <type fullname="Grpc.Core.Marshallers" preserve="all" />
+    <type fullname="Grpc.Core.Metadata" preserve="all" />
+    <type fullname="Grpc.Core.MethodType" preserve="all" />
+    <type fullname="Grpc.Core.Method`2" preserve="all" />
+    <type fullname="Grpc.Core.RpcException" preserve="all" />
+    <type fullname="Grpc.Core.SerializationContext" preserve="all" />
+    <type fullname="Grpc.Core.ServerCallContext" preserve="all" />
+    <type fullname="Grpc.Core.ServerServiceDefinition" preserve="all" />
+    <type fullname="Grpc.Core.ServerServiceDefinition/Builder" preserve="all" />
+    <type fullname="Grpc.Core.ServerStreamingServerMethod`2" preserve="all" />
+    <type fullname="Grpc.Core.ServiceBinderBase" preserve="all" />
+    <type fullname="Grpc.Core.Status" preserve="all" />
+    <type fullname="Grpc.Core.StatusCode" preserve="all" />
+    <type fullname="Grpc.Core.UnaryServerMethod`2" preserve="all" />
+    <type fullname="Grpc.Core.WriteOptions" preserve="all" />
+  </assembly>
+  <assembly fullname="Grpc.Net.Client">
+    <type fullname="Grpc.Net.Client.GrpcChannel" preserve="all" />
+    <type fullname="Grpc.Net.Client.GrpcChannelOptions" preserve="all" />
+  </assembly>
   <assembly fullname="Luban.Runtime">
     <type fullname="Luban.BeanBase" preserve="all" />
     <type fullname="Luban.ByteBuf" preserve="all" />
@@ -83,6 +142,13 @@
   <assembly fullname="System.Core">
     <type fullname="System.Linq.Enumerable" preserve="all" />
   </assembly>
+  <assembly fullname="System.Net.Http">
+    <type fullname="System.Net.Http.HttpMessageHandler" preserve="all" />
+  </assembly>
+  <assembly fullname="UniTask">
+    <type fullname="Cysharp.Threading.Tasks.UniTask" preserve="all" />
+    <type fullname="Cysharp.Threading.Tasks.UniTask/Awaiter" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AnimationModule">
     <type fullname="UnityEngine.Animation" preserve="all" />
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
@@ -97,7 +163,6 @@
     <type fullname="UnityEngine.Application" preserve="all" />
     <type fullname="UnityEngine.Behaviour" preserve="all" />
     <type fullname="UnityEngine.Component" preserve="all" />
-    <type fullname="UnityEngine.Coroutine" preserve="all" />
     <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction`1" preserve="all" />
@@ -143,19 +208,29 @@
     <type fullname="YooAsset.ResourcePackage" preserve="all" />
     <type fullname="YooAsset.YooAssets" preserve="all" />
   </assembly>
+  <assembly fullname="gRPC">
+    <type fullname="Grpc.Net.Extensions.GRPCBestHttpHandler" preserve="all" />
+  </assembly>
   <assembly fullname="mscorlib">
     <type fullname="System.Action" preserve="all" />
     <type fullname="System.Action`1" preserve="all" />
+    <type fullname="System.Action`2" preserve="all" />
     <type fullname="System.Action`3" preserve="all" />
     <type fullname="System.Activator" preserve="all" />
     <type fullname="System.Array" preserve="all" />
+    <type fullname="System.Attribute" preserve="all" />
+    <type fullname="System.AttributeTargets" preserve="all" />
+    <type fullname="System.AttributeUsageAttribute" preserve="all" />
     <type fullname="System.Boolean" preserve="all" />
+    <type fullname="System.Buffers.IBufferWriter`1" preserve="all" />
+    <type fullname="System.Buffers.ReadOnlySequence`1" preserve="all" />
     <type fullname="System.Byte" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2/Enumerator" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2/ValueCollection" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerable`1" preserve="all" />
+    <type fullname="System.Collections.Generic.IList`1" preserve="all" />
     <type fullname="System.Collections.Generic.KeyValuePair`2" preserve="all" />
     <type fullname="System.Collections.Generic.List`1" preserve="all" />
     <type fullname="System.Collections.Generic.List`1/Enumerator" preserve="all" />
@@ -168,11 +243,14 @@
     <type fullname="System.Diagnostics.DebuggableAttribute" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute/DebuggingModes" preserve="all" />
     <type fullname="System.Diagnostics.DebuggerHiddenAttribute" preserve="all" />
+    <type fullname="System.Diagnostics.DebuggerNonUserCodeAttribute" preserve="all" />
     <type fullname="System.Enum" preserve="all" />
     <type fullname="System.Exception" preserve="all" />
     <type fullname="System.FlagsAttribute" preserve="all" />
+    <type fullname="System.Func`1" preserve="all" />
     <type fullname="System.Func`2" preserve="all" />
     <type fullname="System.IDisposable" preserve="all" />
+    <type fullname="System.IEquatable`1" preserve="all" />
     <type fullname="System.IO.MemoryStream" preserve="all" />
     <type fullname="System.IO.Stream" preserve="all" />
     <type fullname="System.IO.StreamReader" preserve="all" />
@@ -187,9 +265,14 @@
     <type fullname="System.ParamArrayAttribute" preserve="all" />
     <type fullname="System.Random" preserve="all" />
     <type fullname="System.ReadOnlySpan`1" preserve="all" />
+    <type fullname="System.Reflection.ConstructorInfo" preserve="all" />
     <type fullname="System.Reflection.DefaultMemberAttribute" preserve="all" />
+    <type fullname="System.Reflection.IntrospectionExtensions" preserve="all" />
     <type fullname="System.Reflection.MemberInfo" preserve="all" />
+    <type fullname="System.Reflection.TypeInfo" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncStateMachineAttribute" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.CompilerGeneratedAttribute" preserve="all" />
@@ -197,6 +280,7 @@
     <type fullname="System.Runtime.CompilerServices.IAsyncStateMachine" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
+    <type fullname="System.Runtime.CompilerServices.TaskAwaiter`1" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
     <type fullname="System.RuntimeTypeHandle" preserve="all" />
     <type fullname="System.Security.Cryptography.Aes" preserve="all" />
@@ -208,6 +292,11 @@
     <type fullname="System.String" preserve="all" />
     <type fullname="System.StringSplitOptions" preserve="all" />
     <type fullname="System.Text.Encoding" preserve="all" />
+    <type fullname="System.Text.StringBuilder" preserve="all" />
+    <type fullname="System.Threading.CancellationToken" preserve="all" />
+    <type fullname="System.Threading.CancellationTokenSource" preserve="all" />
+    <type fullname="System.Threading.Tasks.Task" preserve="all" />
+    <type fullname="System.Threading.Tasks.Task`1" preserve="all" />
     <type fullname="System.TimeSpan" preserve="all" />
     <type fullname="System.Type" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />
