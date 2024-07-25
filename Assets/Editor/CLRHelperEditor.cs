@@ -30,6 +30,10 @@ public static class CLRHelperEditor
         var hotUpdate = "HotUpdate.dll";
         string fromDirHot = Path.Combine(HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir, target.ToString());
         File.Copy(Path.Combine(fromDirHot, hotUpdate), Path.Combine(toDir, $"{hotUpdate}.bytes"), true);
+        
+        //3//pdb 为输入堆栈使用的
+        var hotPDB = "HotUpdate.pdb";
+        File.Copy(Path.Combine(fromDirHot, hotPDB), Path.Combine(toDir, $"{hotPDB}.bytes"), true);
 
         AssetDatabase.Refresh();
     }
