@@ -102,7 +102,7 @@ public class GameMain : MonoBehaviour
         var hotfixPackage = YooAssets.GetPackage("HotFixPackage");
         foreach (var dll in mAssemblyFiles)
         {
-            var handle = hotfixPackage.LoadRawFileAsync($"Assets/GameResHotFix/{dll}.bytes");
+            var handle = hotfixPackage.LoadRawFileAsync($"Assets/GameResHotFix/{dll}.bytes");//一起load啦   hotUpdate.dll  hotUpdate.pdb
             yield return handle;
             var bytes = handle.GetRawFileData();
             mAssemblyBytesDic[dll] = bytes;
@@ -130,6 +130,7 @@ public class GameMain : MonoBehaviour
         "mscorlib.dll",
 
         "HotUpdate.dll", //不需使用 RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);加载
+        "HotUpdate.pdb", //pdb 为输入堆栈使用的
     };
 
     /// <summary>
@@ -140,7 +141,7 @@ public class GameMain : MonoBehaviour
     {
         /// 注意，补充元数据是给AOT dll补充元数据，而不是给热更新dll补充元数据。 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
         HomologousImageMode mode = HomologousImageMode.SuperSet;
-        for (int i = 0; i < mAssemblyFiles.Count-1; i++)
+        for (int i = 0; i < mAssemblyFiles.Count-2; i++)
         {// 减一 最后一个是HotUpdate.dll  不是aot
             var dll= mAssemblyFiles[i];
             byte[] dllBytes = ReadBytesFromStreamingAssets(dll);
@@ -151,9 +152,11 @@ public class GameMain : MonoBehaviour
 #if UNITY_EDITOR
         mHotUpdateAssembly = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
 #else
-        mHotUpdateAssembly = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"));
-          Debuger.Log($"LoadHotUpdate.dll Success!");
+        mHotUpdateAssembly = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"),ReadBytesFromStreamingAssets("HotUpdate.pdb"));
+        Debug.Log($"Load HotUpdate.dll HotUpdate.pdb Success!");
 #endif
+        
+
     }
 
 
