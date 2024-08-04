@@ -24,7 +24,7 @@ namespace MainCenter
             CurrencyListCom currencyListCom = (CurrencyListCom)_currencyListCom;
             currencyListCom.SetData(mCurrencyIds); //CurrencyListCom.cs
 
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test1, OnEventTest);
         }
 
         private void OnClickItemFuncList(int index, GObject obj)
@@ -43,10 +43,6 @@ namespace MainCenter
             Debuger.LogError("TopEles 监听了 EN_test_" + arg0);
         }
 
-        private void OnEventTest1(string text)
-        {
-            Debuger.LogError("TopEles 监听了 EN_test:" + text);
-        }
 
         private void OnClickMainPlayerBtn()
         {
@@ -56,7 +52,7 @@ namespace MainCenter
         public override void Dispose()
         {
             base.Dispose();
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test1, OnEventTest);
         }
     }
 }

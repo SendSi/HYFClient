@@ -15,7 +15,7 @@ namespace Bag
             base.OnInit();
 
             _closeButton.onClick.Set(OnClickCloseMainView);
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test1, OnEventTest);
 
             _propList.itemRenderer = OnRenderPropList;
             _propList.onClickItem.Add(OnClickItemPropList);
@@ -107,7 +107,7 @@ namespace Bag
         public override void Dispose()
         {
             mSelectItemDto = null;
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test, OnEventTest);
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test1, OnEventTest);
             base.Dispose();
         }
 
