@@ -11,7 +11,6 @@ using PokerPKG;
 using SettingPKG;
 using ShopGift;
 using SpinePackage;
-using UnityEngine;
 using Welfare;
 
 public class UIGenBinder

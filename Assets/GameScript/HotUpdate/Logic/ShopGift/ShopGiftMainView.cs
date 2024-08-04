@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
 using cfg;
+
 #region << 脚 本 注 释 >>
 
 //作  用:    ShopGiftMainView
@@ -22,7 +23,8 @@ namespace ShopGift
         public override void OnInit()
         {
             base.OnInit();
-            _menuCfg =  CfgLubanMgr.Instance.globalTab.TbShopGiftMenuConfig.DataList;//ConfigMgr.Instance.LoadConfigList<ShopGiftMenuConfig>();
+            _menuCfg = CfgLubanMgr.Instance.globalTab.TbShopGiftMenuConfig
+                .DataList; //ConfigMgr.Instance.LoadConfigList<ShopGiftMenuConfig>();
             _menuCfg.Sort((a, b) => { return a.Id < b.Id ? -1 : 1; });
 
             this._closeButton.onClick.Set(() => { ProxyShopGiftModule.Instance.CloseShopGiftMainView(); });
@@ -32,6 +34,19 @@ namespace ShopGift
             this._leftTabList.onClickItem.Add(OnClickItemLeftTab);
             _menuItems.Clear();
             this._leftTabList.numItems = _menuCfg.Count; //mMenuDtos.Count;
+
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test3, OnEventTest3);
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test2, OnEventTest2_Wait);
+        }
+
+        private void OnEventTest2_Wait(string arg0)
+        {
+            Debuger.LogError("使用Event的缓几帧执行 " + Time.frameCount + "    " + arg0);
+        }
+
+        private void OnEventTest3(string arg0)
+        {
+            Debuger.LogError(Time.frameCount + "    " + arg0);
         }
 
         private void OnClickItemLeftTab(EventContext evCon)
@@ -43,6 +58,10 @@ namespace ShopGift
             _currChildView.visible = true;
             _currChildView.data = cfg;
             _currChildView.OnInit();
+
+            Debuger.LogError(Time.frameCount + " 发送时frameCount");
+            EventCenter.Instance.Fire<string>((int)EventEnum.EE_test3, cfg.Name);
+            EventCenter.Instance.Fire_Wait<string>((int)EventEnum.EE_test2, cfg.ChildViewName, 5);
         }
 
         GComponent CheckGetChild_ClearOld(string maskName)
@@ -93,6 +112,9 @@ namespace ShopGift
         {
             base.Dispose();
             _menuItems.Clear();
+
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test3, OnEventTest3);
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test2, OnEventTest2_Wait);
         }
 
         public void SetData(int cfgId)

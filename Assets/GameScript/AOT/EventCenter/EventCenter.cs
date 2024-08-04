@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine.Events;
 
-public class EventCenter : Singleton<EventCenter>
+public partial class EventCenter : Singleton<EventCenter>
 {
     #region 事件无值 加监Bind   移监UnBind  发监Fire
     private readonly Dictionary<int, List<UnityAction>> eventNonDic = new Dictionary<int, List<UnityAction>>();
