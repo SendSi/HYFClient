@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="640,453" overflow="hidden">
+  <controller name="stateCtrl" pages="0,,1,,2,,3,,4,,5," selected="1"/>
+  <displayList>
+    <loader id="n5_fxl2" name="hit" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65glu4em8" vAlign="bottom" autoSize="true">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+    </loader>
+    <loader id="n6_fxl2" name="1" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65glu4ema" autoSize="true">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+    </loader>
+    <loader id="n7_fxl2" name="2" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65glu4emb" autoSize="true">
+      <gearDisplay controller="stateCtrl" pages="2"/>
+    </loader>
+    <loader id="n8_fxl2" name="3" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65glu4emc" autoSize="true">
+      <gearDisplay controller="stateCtrl" pages="3"/>
+    </loader>
+    <loader id="n9_fxl2" name="4" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65glu4em9" autoSize="true">
+      <gearDisplay controller="stateCtrl" pages="4"/>
+    </loader>
+    <loader id="n11_ey4s" name="5" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65f974ens" align="center" vAlign="middle" autoSize="true">
+      <gearDisplay controller="stateCtrl" pages="5"/>
+    </loader>
+    <image id="n10_fxl2" name="n10" src="glu4emd" fileName="Img/pub_ic_031.png" xy="109,0" pivot="1,1" visible="false"/>
+  </displayList>
+  <transition name="TrMove" options="4">
+    <item time="0" type="Scale" target="n11_ey4s" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n6_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n7_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n8_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n9_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Visible" target="n11_ey4s" value="true"/>
+    <item time="0" type="Visible" target="n6_fxl2" label="movestart" value="true"/>
+    <item time="0" type="Visible" target="n7_fxl2" value="true"/>
+    <item time="0" type="Visible" target="n8_fxl2" value="true"/>
+    <item time="0" type="Visible" target="n9_fxl2" value="true"/>
+    <item time="0" type="XY" target="n11_ey4s" tween="true" startValue="-,453" endValue="8,243" duration="12" ease="Quart.In"/>
+    <item time="0" type="XY" target="n6_fxl2" tween="true" startValue="-,453" endValue="8,243" duration="12" ease="Quart.In"/>
+    <item time="0" type="XY" target="n7_fxl2" tween="true" startValue="-,453" endValue="8,243" duration="12" ease="Quart.In"/>
+    <item time="0" type="XY" target="n8_fxl2" tween="true" startValue="-,453" endValue="8,243" duration="12" ease="Quart.In"/>
+    <item time="0" type="XY" target="n9_fxl2" tween="true" startValue="-,453" endValue="8,243" duration="12" ease="Quart.In"/>
+    <item time="8" type="Scale" target="n11_ey4s" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="8" type="Scale" target="n6_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="8" type="Scale" target="n7_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="8" type="Scale" target="n8_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="8" type="Scale" target="n9_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="12" type="Scale" target="n11_ey4s" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="12" type="Scale" target="n6_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="12" type="Scale" target="n7_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="12" type="Scale" target="n8_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="12" type="Scale" target="n9_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="12" type="XY" target="n11_ey4s" tween="true" startValue="8,243" endValue="8,243" duration="24"/>
+    <item time="12" type="XY" target="n6_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="24"/>
+    <item time="12" type="XY" target="n7_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="24"/>
+    <item time="12" type="XY" target="n8_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="24"/>
+    <item time="12" type="XY" target="n9_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="24"/>
+    <item time="15" type="Scale" target="n11_ey4s" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="15" type="Scale" target="n6_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="15" type="Scale" target="n7_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="15" type="Scale" target="n8_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="15" type="Scale" target="n9_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="36" type="XY" target="n11_ey4s" tween="true" startValue="8,243" endValue="8,453" duration="12"/>
+    <item time="36" type="XY" target="n6_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="12"/>
+    <item time="36" type="XY" target="n7_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="12"/>
+    <item time="36" type="XY" target="n8_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="12"/>
+    <item time="36" type="XY" target="n9_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="12"/>
+    <item time="48" type="Visible" target="n11_ey4s" value="false"/>
+    <item time="48" type="Visible" target="n6_fxl2" label="moveend" value="false"/>
+    <item time="48" type="Visible" target="n7_fxl2" value="false"/>
+    <item time="48" type="Visible" target="n8_fxl2" value="false"/>
+    <item time="48" type="Visible" target="n9_fxl2" value="false"/>
+  </transition>
+  <transition name="TrStrike" options="4">
+    <item time="0" type="Alpha" target="n10_fxl2" tween="true" startValue="0" endValue="1" duration="3"/>
+    <item time="0" type="Rotation" target="n10_fxl2" value="0"/>
+    <item time="0" type="Scale" target="n5_fxl2" value="1,1"/>
+    <item time="0" type="Visible" target="n10_fxl2" value="false"/>
+    <item time="0" type="XY" target="n5_fxl2" value="-,217"/>
+    <item time="3" type="Rotation" target="n10_fxl2" tween="true" startValue="93.56" endValue="-35" duration="4" label2="hit" ease="Quart.In"/>
+    <item time="4" type="Visible" target="n10_fxl2" value="true"/>
+    <item time="7" type="Rotation" target="n10_fxl2" label="hit" tween="true" startValue="-35" endValue="-23.52" duration="2"/>
+    <item time="7" type="Scale" target="n5_fxl2" tween="true" startValue="1,1" endValue="1.1,0.9" duration="3"/>
+    <item time="10" type="Scale" target="n5_fxl2" tween="true" startValue="1.1,0.9" endValue="1,1" duration="3" ease="Back.Out"/>
+    <item time="12" type="Alpha" target="n10_fxl2" tween="true" startValue="1" endValue="0" duration="3"/>
+    <item time="15" type="Visible" target="n10_fxl2" value="false"/>
+    <item time="17" type="XY" target="n5_fxl2" tween="true" startValue="-,217" endValue="8,217" duration="6"/>
+    <item time="23" type="XY" target="n5_fxl2" tween="true" startValue="8,217" endValue="8,457" duration="18"/>
+  </transition>
+  <transition name="TrSpeed">
+    <item time="0" type="Scale" target="n11_ey4s" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n6_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n7_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n8_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Scale" target="n9_fxl2" value="0.9,0.9"/>
+    <item time="0" type="Visible" target="n11_ey4s" value="true"/>
+    <item time="0" type="Visible" target="n6_fxl2" label="movestart" value="true"/>
+    <item time="0" type="Visible" target="n6_fxl2" label="movestart" value="true"/>
+    <item time="0" type="Visible" target="n6_fxl2" label="movestart" value="true"/>
+    <item time="0" type="Visible" target="n7_fxl2" value="true"/>
+    <item time="0" type="Visible" target="n8_fxl2" value="true"/>
+    <item time="0" type="Visible" target="n9_fxl2" value="true"/>
+    <item time="0" type="XY" target="n11_ey4s" tween="true" startValue="8,453" endValue="8,243" duration="8" ease="Quart.In"/>
+    <item time="0" type="XY" target="n6_fxl2" tween="true" startValue="8,453" endValue="8,243" duration="8" ease="Quart.In"/>
+    <item time="0" type="XY" target="n7_fxl2" tween="true" startValue="8,453" endValue="8,243" duration="8" ease="Quart.In"/>
+    <item time="0" type="XY" target="n8_fxl2" tween="true" startValue="8,453" endValue="8,243" duration="8" ease="Quart.In"/>
+    <item time="0" type="XY" target="n9_fxl2" tween="true" startValue="8,453" endValue="8,243" duration="8" ease="Quart.In"/>
+    <item time="4" type="Scale" target="n11_ey4s" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="4" type="Scale" target="n6_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="4" type="Scale" target="n7_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="4" type="Scale" target="n8_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="4" type="Scale" target="n9_fxl2" tween="true" startValue="0.9,0.9" endValue="1.15,1.2" duration="4"/>
+    <item time="8" type="Scale" target="n11_ey4s" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="8" type="Scale" target="n6_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="8" type="Scale" target="n7_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="8" type="Scale" target="n8_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="8" type="Scale" target="n9_fxl2" tween="true" startValue="1.15,1.2" endValue="1,1.15" duration="3" ease="Quad.In"/>
+    <item time="8" type="XY" target="n11_ey4s" tween="true" startValue="8,243" endValue="8,243" duration="20"/>
+    <item time="8" type="XY" target="n6_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="20"/>
+    <item time="8" type="XY" target="n7_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="20"/>
+    <item time="8" type="XY" target="n8_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="20"/>
+    <item time="8" type="XY" target="n9_fxl2" tween="true" startValue="8,243" endValue="8,243" duration="20"/>
+    <item time="11" type="Scale" target="n11_ey4s" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="11" type="Scale" target="n6_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="11" type="Scale" target="n7_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="11" type="Scale" target="n8_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="11" type="Scale" target="n9_fxl2" tween="true" startValue="1,1.15" endValue="1,1" duration="3"/>
+    <item time="28" type="XY" target="n11_ey4s" tween="true" startValue="8,243" endValue="8,453" duration="8"/>
+    <item time="28" type="XY" target="n6_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="8"/>
+    <item time="28" type="XY" target="n7_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="8"/>
+    <item time="28" type="XY" target="n8_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="8"/>
+    <item time="28" type="XY" target="n9_fxl2" tween="true" startValue="8,243" endValue="8,453" duration="8"/>
+    <item time="36" type="Visible" target="n11_ey4s" value="false"/>
+    <item time="36" type="Visible" target="n6_fxl2" label="moveend" value="false"/>
+    <item time="36" type="Visible" target="n7_fxl2" value="false"/>
+    <item time="36" type="Visible" target="n8_fxl2" value="false"/>
+    <item time="36" type="Visible" target="n9_fxl2" value="false"/>
+  </transition>
+  <transition name="TrKit">
+    <item time="0" type="Alpha" target="n10_fxl2" tween="true" startValue="0" endValue="1" duration="4"/>
+    <item time="0" type="Rotation" target="n10_fxl2" value="75"/>
+    <item time="0" type="Scale" target="n10_fxl2" tween="true" startValue="0.8,0.8" endValue="1,1" duration="4" ease="Quad.In"/>
+    <item time="0" type="Scale" target="n11_ey4s" value="1,1"/>
+    <item time="0" type="Scale" target="n5_fxl2" value="1,1"/>
+    <item time="0" type="Scale" target="n6_fxl2" value="1,1"/>
+    <item time="0" type="Scale" target="n7_fxl2" value="1,1"/>
+    <item time="0" type="Scale" target="n8_fxl2" value="1,1"/>
+    <item time="0" type="Scale" target="n9_fxl2" value="1,1"/>
+    <item time="0" type="Visible" target="n10_fxl2" value="true"/>
+    <item time="1" type="Rotation" target="n10_fxl2" tween="true" startValue="75" endValue="-40" duration="3" ease="Quart.In"/>
+    <item time="4" type="Rotation" target="n10_fxl2" tween="true" startValue="-40" endValue="-32" duration="3" ease="Quad.In"/>
+    <item time="4" type="Scale" target="n11_ey4s" tween="true" startValue="1.3,0.7" endValue="1.3,0.7" duration="1"/>
+    <item time="4" type="Scale" target="n5_fxl2" tween="true" startValue="1.3,0.7" endValue="1.3,0.7" duration="1"/>
+    <item time="4" type="Scale" target="n6_fxl2" tween="true" startValue="1.3,0.7" endValue="1.3,0.7" duration="1"/>
+    <item time="4" type="Scale" target="n7_fxl2" tween="true" startValue="1.3,0.7" endValue="1.3,0.7" duration="1"/>
+    <item time="4" type="Scale" target="n8_fxl2" tween="true" startValue="1.3,0.7" endValue="1.3,0.7" duration="1"/>
+    <item time="4" type="Scale" target="n9_fxl2" tween="true" startValue="1.3,0.7" endValue="1.3,0.7" duration="1"/>
+    <item time="5" type="Scale" target="n10_fxl2" label="hit" value="1,1"/>
+    <item time="5" type="Scale" target="n11_ey4s" tween="true" startValue="1.3,0.7" endValue="1,1.1" duration="3"/>
+    <item time="5" type="Scale" target="n5_fxl2" tween="true" startValue="1.3,0.7" endValue="1,1.1" duration="3"/>
+    <item time="5" type="Scale" target="n6_fxl2" tween="true" startValue="1.3,0.7" endValue="1,1.1" duration="3"/>
+    <item time="5" type="Scale" target="n7_fxl2" tween="true" startValue="1.3,0.7" endValue="1,1.1" duration="3"/>
+    <item time="5" type="Scale" target="n8_fxl2" tween="true" startValue="1.3,0.7" endValue="1,1.1" duration="3"/>
+    <item time="5" type="Scale" target="n9_fxl2" tween="true" startValue="1.3,0.7" endValue="1,1.1" duration="3"/>
+    <item time="8" type="Alpha" target="n10_fxl2" tween="true" startValue="1" endValue="0" duration="3" ease="Quad.In"/>
+    <item time="8" type="Scale" target="n11_ey4s" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="8" type="Scale" target="n5_fxl2" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="8" type="Scale" target="n6_fxl2" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="8" type="Scale" target="n7_fxl2" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="8" type="Scale" target="n8_fxl2" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="8" type="Scale" target="n9_fxl2" tween="true" startValue="1,1.1" endValue="1,1" duration="3"/>
+    <item time="9" type="Rotation" target="n10_fxl2" tween="true" startValue="-32" endValue="-20" duration="2" ease="Quad.In"/>
+    <item time="11" type="Visible" target="n10_fxl2" value="false"/>
+  </transition>
+</component>

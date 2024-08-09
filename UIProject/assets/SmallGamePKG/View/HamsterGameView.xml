@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080" designImageAlpha="20">
+  <controller name="stateCtrl" alias="游戏状态" pages="0,,1,,5,,6," selected="1">
+    <remark page="0" value="点屏始"/>
+    <remark page="1" value="暂停"/>
+    <remark page="2" value="结束"/>
+    <remark page="3" value="游戏ing"/>
+  </controller>
+  <controller name="timeCtrl" alias="倒计时" pages="0,,1,,2,,3,,7," selected="0">
+    <remark page="0" value="0秒_开始"/>
+    <remark page="1" value="1秒"/>
+    <remark page="2" value="2秒"/>
+    <remark page="3" value="3秒_需state为3"/>
+    <remark page="4" value="游戏ing_隐藏计时"/>
+    <action type="play_transition" fromPage="" toPage="" transition="t1"/>
+  </controller>
+  <displayList>
+    <loader id="n29_fxl2" name="bg" xy="960,540" pivot="0.5,0.5" anchor="true" size="2400,1440" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <list id="n10_ntf2" name="hamsterList" xy="284,-31" pivot="0.5,0.5" size="1613,1046" layout="flow_hz" lineGap="-261" colGap="-210" lineItemCount="3" defaultItem="ui://q0kdbd65ntf2eaf">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n12_hnnb" name="bigBgMark" xy="-90,-50" size="2100,1181" group="n16_hnnb" aspect="true" alpha="0.4" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n13_hnnb" name="startTxt" xy="621,484" pivot="0.5,0.5" size="676,109" group="n16_hnnb" fontSize="84" color="#fff65e" align="center" vAlign="middle" strokeColor="#97621e" strokeSize="2" text="点击屏幕开始游戏">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n41_hch5" name="titleTxt" xy="840,152" pivot="0.5,0.5" size="244,79" group="n16_hnnb" fontSize="60" color="#ffffff" align="center" vAlign="middle" strokeColor="#266e9b" strokeSize="3" text="规则说明">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n30_fxl2" name="gameOverTxt" xy="874,484" pivot="0.5,0.5" size="172,109" group="n16_hnnb" fontSize="84" color="#fff65e" align="center" vAlign="middle" strokeColor="#97621e" strokeSize="2" text="结束">
+      <gearDisplay controller="stateCtrl" pages="5"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n16_hnnb" name="stateSwitch" xy="-90,-50" size="2100,1181" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="0,1,5"/>
+    </group>
+    <graph id="n33_nxxv" name="mask" xy="-90,-50" size="2100,1181" group="n34_nxxv" aspect="true" alpha="0" type="rect">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <richtext id="n32_nxxv" name="startOneTxt" xy="672,391" pivot="0.5,0.5" size="576,298" group="n34_nxxv" fontSize="200" color="#00ffff" align="center" vAlign="middle" autoSize="none" text="开始">
+      <gearText controller="timeCtrl" pages="0,1,2,3" values="开始|1|2|3" default=""/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </richtext>
+    <group id="n34_nxxv" name="startNumFather" xy="-90,-50" size="2100,1181" advanced="true">
+      <gearDisplay controller="stateCtrl" pages="6"/>
+      <gearDisplay2 controller="timeCtrl" pages="0,1,2,3" condition="0"/>
+    </group>
+    <text id="n19_fxl2" name="scoreTxt" xy="1695,35" pivot="1,0" size="195,66" group="n21_fxl2" font="ui://tm43o3dy9mq2edb" fontSize="46" color="#ffffff" align="right" vAlign="middle" letterSpacing="3" autoSize="shrink" shadowColor="#3d3d3d" shadowOffset="3,1" singleLine="true" autoClearText="true" text="12340"/>
+    <text id="n20_fxl2" name="lbl" xy="1345,38" pivot="1,1" size="322,62" group="n21_fxl2" fontSize="46" color="#fff65e" align="right" vAlign="middle" letterSpacing="3" autoSize="shrink" strokeColor="#97621e" strokeSize="2" singleLine="true" text="分数"/>
+    <group id="n21_fxl2" name="scoreGroup" xy="1345,35" size="545,66" advanced="true">
+      <relation target="" sidePair="right-right,top-top"/>
+    </group>
+    <list id="n31_fxl2" name="hpList" xy="130,31" size="586,95" scale="0.8,0.8" layout="row" colGap="4" defaultItem="ui://q0kdbd65dbigeme" autoClearItems="true">
+      <relation target="n17_fxl2" sidePair="left-left,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n17_fxl2" name="stopBtn" src="lko2emq" fileName="Com/iconBtn.xml" xy="16,16">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Button icon="ui://q0kdbd65lko2emi"/>
+    </component>
+    <component id="n37_f974" name="timeBar" src="dbigemf" fileName="Com/sliderBar.xml" xy="695,57" size="617,68" group="n38_h8am">
+      <relation target="n28_fxl2" sidePair="left-left,top-top"/>
+      <ProgressBar max="100"/>
+    </component>
+    <image id="n28_fxl2" name="img" src="lko2emh" fileName="Img/pub_img_yh03.png" xy="608,18" group="n38_h8am"/>
+    <text id="n36_f974" name="timeTxt" xy="622,49" pivot="0.5,0.5" size="87,82" group="n38_h8am" font="ui://tm43o3dy9mq2edb" fontSize="44" color="#2b3654" align="center" vAlign="middle" autoSize="none" autoClearText="true" text="30">
+      <relation target="n28_fxl2" sidePair="center-center,middle-middle"/>
+    </text>
+    <group id="n38_h8am" name="timeGroup" xy="608,18" size="704,131" advanced="true">
+      <relation target="" sidePair="center-center,top-top"/>
+    </group>
+    <component id="n46_lko2" name="continueBtn" src="lko2emr" fileName="Com/iconTitleBtn.xml" xy="764,499" size="392,106">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <Button title="继续" titleColor="#00ff00" icon="ui://2r331opvc4umz9cna"/>
+    </component>
+  </displayList>
+  <transition name="boom">
+    <item time="0" type="Pivot" value="0.5,0.5"/>
+    <item time="0" type="Shake" value="5,0.5"/>
+    <item time="0" type="Shake" target="n37_f974" value="10,0.5"/>
+    <item time="6" type="Shake" value="3,0.5"/>
+    <item time="6" type="Shake" target="n37_f974" value="5,0.5"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Alpha" target="n32_nxxv" tween="true" startValue="0" endValue="1" duration="3"/>
+    <item time="0" type="Scale" target="n32_nxxv" tween="true" startValue="1.4,1.4" endValue="1,1" duration="6" ease="Quart.In"/>
+  </transition>
+</component>
