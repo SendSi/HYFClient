@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="620,65" extention="ProgressBar" designImage="ui://q0kdbd659tawebm" designImageOffsetX="-588" designImageOffsetY="-1140" designImageAlpha="39" designImageLayer="1">
+  <controller name="state" pages="0,,1," selected="0">
+    <remark page="0" value="普通"/>
+    <remark page="1" value="满状态"/>
+  </controller>
+  <displayList>
+    <image id="n7_jbb4" name="bg" src="lko2emo" fileName="Img/pub_img_dy23.png" xy="0,1" size="619,63"/>
+    <image id="n8_jbb4" name="bar" src="lko2emp" fileName="Img/pub_img_dy24.png" xy="9,12" size="601,40">
+      <gearDisplay controller="state" pages="0,2"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

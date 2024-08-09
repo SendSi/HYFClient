@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="700,492" overflow="hidden" opaque="false">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n9_fxl2" name="n9" src="glu4em7" fileName="Img/pub_ic_025.png" xy="0,339"/>
+    <component id="n10_fxl2" name="hamster" src="fxl2eak" fileName="Com/Item_MaskHamster.xml" xy="48,0" pivot="0.5,1" touchable="false"/>
+    <image id="n17_fxl2" name="n17" src="fxl2eai" fileName="Img/pub_ic_025a.png" xy="0,401"/>
+    <graph id="n19_fxl2" name="hit" xy="43,240" size="256,212" alpha="0" type="rect"/>
+    <text id="n21_c2x7" name="scoreText" xy="165,165" pivot="0.5,0.5" size="10,104" font="ui://tm43o3dy9mq2edb" fontSize="80" color="#ffff99" align="center" vAlign="middle" strokeColor="#67490c" strokeSize="4" autoClearText="true" text="">
+      <relation target="n17_fxl2" sidePair="center-center"/>
+    </text>
+  </displayList>
+  <transition name="TrScore">
+    <item time="0" type="Alpha" target="n21_c2x7" value="1"/>
+    <item time="0" type="ColorFilter" target="n21_c2x7" tween="true" startValue="0,0,0,0" endValue="0.61,0,0,0" duration="3"/>
+    <item time="0" type="Scale" target="n21_c2x7" tween="true" startValue="0,0" endValue="1.2,1.2" duration="3"/>
+    <item time="0" type="Visible" target="n21_c2x7" value="true"/>
+    <item time="0" type="XY" target="n21_c2x7" value="-,184"/>
+    <item time="3" type="ColorFilter" target="n21_c2x7" tween="true" startValue="0.61,0,0,0" endValue="0,0,0,0" duration="3"/>
+    <item time="3" type="Scale" target="n21_c2x7" tween="true" startValue="1.2,1.2" endValue="1,1" duration="3"/>
+    <item time="9" type="XY" target="n21_c2x7" tween="true" startValue="-,184" endValue="-,150" duration="9"/>
+    <item time="12" type="Alpha" target="n21_c2x7" tween="true" startValue="0.25" endValue="0" duration="6"/>
+    <item time="18" type="Visible" target="n21_c2x7" value="true"/>
+  </transition>
+</component>

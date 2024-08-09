@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="q0kdbd65">
+  <resources>
+    <component id="ntf2eae" name="HamsterGameView.xml" path="/View/" exported="true"/>
+    <component id="ntf2eaf" name="Item_MainHamster.xml" path="/Com/" exported="true"/>
+    <component id="fxl2eak" name="Item_MaskHamster.xml" path="/Com/" exported="true"/>
+    <image id="glu4em6" name="pub_ic_024.png" path="/Img/" exported="true"/>
+    <image id="glu4em7" name="pub_ic_025.png" path="/Img/" exported="true"/>
+    <image id="fxl2eai" name="pub_ic_025a.png" path="/Img/" exported="true"/>
+    <image id="glu4em8" name="pub_ic_026.png" path="/Img/" exported="true"/>
+    <image id="glu4em9" name="pub_ic_027.png" path="/Img/" exported="true"/>
+    <image id="glu4ema" name="pub_ic_028.png" path="/Img/" exported="true"/>
+    <image id="glu4emb" name="pub_ic_029.png" path="/Img/" exported="true"/>
+    <image id="glu4emc" name="pub_ic_030.png" path="/Img/" exported="true"/>
+    <image id="glu4emd" name="pub_ic_031.png" path="/Img/" exported="true"/>
+    <component id="dbigeme" name="Item_Hp.xml" path="/Com/" exported="true"/>
+    <component id="dbigemf" name="sliderBar.xml" path="/Com/" exported="true"/>
+    <image id="lko2emg" name="pub_ic_023.png" path="/Img/" exported="true"/>
+    <image id="lko2emh" name="pub_img_yh03.png" path="/Img/" exported="true"/>
+    <image id="lko2emi" name="common_button_pause.png" path="/Img/" exported="true"/>
+    <image id="lko2emj" name="pub_ic_065.png" path="/Img/" exported="true"/>
+    <image id="lko2emk" name="pub_ic_066.png" path="/Img/" exported="true"/>
+    <image id="lko2eml" name="pub_ic_067.png" path="/Img/" exported="true"/>
+    <image id="lko2emm" name="pub_ic_068.png" path="/Img/" exported="true"/>
+    <image id="lko2emn" name="pub_ic_069.png" path="/Img/" exported="true"/>
+    <image id="lko2emo" name="pub_img_dy23.png" path="/Img/" exported="true" scale="9grid" scale9grid="28,26,8,3"/>
+    <image id="lko2emp" name="pub_img_dy24.png" path="/Img/" exported="true" scale="9grid" scale9grid="31,18,16,2"/>
+    <component id="lko2emq" name="iconBtn.xml" path="/Com/" exported="true"/>
+    <component id="lko2emr" name="iconTitleBtn.xml" path="/Com/" exported="true"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="114,92">
+  <controller name="stateCtrl" exported="true" pages="0,,1," selected="1">
+    <remark page="1" value="红"/>
+  </controller>
+  <displayList>
+    <image id="n0_glu4" name="n0" src="lko2emg" fileName="Img/pub_ic_023.png" xy="0,0">
+      <gearDisplay controller="stateCtrl" pages="0"/>
+    </image>
+    <image id="n1_glu4" name="n1" src="glu4em6" fileName="Img/pub_ic_024.png" xy="0,0">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+    </image>
+  </displayList>
+</component>
