@@ -9,24 +9,22 @@ namespace MainCenter
         {
             base.OnInit();
 
-            _backBtn.onClick.Set(OnClickQuit);
-            _outBtn.onClick.Set(OnClickQuit);
+            _backBtn.onClick.Set(OnClickQuitBtn);
+            _outBtn.onClick.Set(OnClickOutBtn);
 
             InitEles();
 
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test1,OnEventTest);
-            EventCenter.Instance.Bind<int>((int)EventEnum.EE_loginIn,OnEventLoginIn);
-       }
+            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test1, OnEventTest);
+            EventCenter.Instance.Bind<int>((int)EventEnum.EE_loginIn, OnEventLoginIn);
+        }
 
         private void OnEventLoginIn(int arg0)
         {
-            Debuger.LogError("OnEventGameOver 值 "+arg0);
+            Debuger.LogError("OnEventGameOver 值 " + arg0);
         }
-
-
         private void OnEventTest(string arg0)
         {
-            Debuger.LogError("MainCenterView 监听了  EN_test_"+arg0);
+            Debuger.LogError("MainCenterView 监听了  EN_test_" + arg0);
         }
 
         private void OnEventTest1(string text)
@@ -34,9 +32,14 @@ namespace MainCenter
             Debuger.LogError("MainCenterView 监听    EN_test:" + text);
         }
 
-        private void OnClickQuit()
+        private void OnClickQuitBtn()
         {
 
+        }
+
+        private void OnClickOutBtn()
+        {
+            ProxySmallGamePKGModule.Instance.OpenHamsterGameView(1);
         }
 
         public override void Dispose()
@@ -44,8 +47,8 @@ namespace MainCenter
             base.Dispose();
             DisposeEles();
             Debuger.LogWarning("调用 Dispose MainCenterView");
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test1,OnEventTest);
-            EventCenter.Instance.UnBind<int>((int)EventEnum.EE_loginIn,OnEventLoginIn);
+            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test1, OnEventTest);
+            EventCenter.Instance.UnBind<int>((int)EventEnum.EE_loginIn, OnEventLoginIn);
         }
 
 

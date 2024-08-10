@@ -1,1 +1,16 @@
-{}
+{
+  "objectStatus": {
+    "n31_fxl2": {
+      "locked": true
+    },
+    "n38_h8am": {
+      "locked": true
+    },
+    "n17_fxl2": {
+      "locked": true
+    },
+    "n46_lko2": {
+      "locked": true
+    }
+  }
+}

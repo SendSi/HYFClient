@@ -17,7 +17,7 @@ public class GameMain : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        Debuger.Log($"资源系统运行模式：{PlayMode}");
+        Debug.Log($"资源系统运行模式：{PlayMode},cdn={AppConfig.hostServerIP}");
         Application.targetFrameRate = 60;
         Application.runInBackground = true;
         DontDestroyOnLoad(this.gameObject);
