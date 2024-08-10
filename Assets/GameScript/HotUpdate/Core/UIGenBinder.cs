@@ -10,6 +10,7 @@ using HeroPKG;
 using PokerPKG;
 using SettingPKG;
 using ShopGift;
+using SmallGamePKG;
 using SpinePackage;
 using Welfare;
 
@@ -33,5 +34,6 @@ public class UIGenBinder
         ShopGiftBinder.BindAll();
         SpinePackageBinder.BindAll();
         HeroPKGBinder.BindAll();
+        SmallGamePKGBinder.BindAll();
     }
 }
