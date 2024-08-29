@@ -38,7 +38,7 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     todo-->HUD
 
 
-####  download下来后
+####  download下来后(别使用downloadZIP哦,请使用SSH下载,下载完全了[关闭]按钮才是亮色的)
     1. HybridCLR/Installer  进行Install下
     2. Window/PackageManager   的MyRegistries中对YooAsset进行导入下
     3. YooAsset/AssetBundleCollector 进行Fix下
