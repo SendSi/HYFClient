@@ -14,7 +14,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
 
     private void InitMainBtnCfgs()
     {
-        var cfgAlls =  CfgLubanMgr.Instance.globalTab.TbMainUIBtnConfig.DataList;// ConfigMgr.Instance.LoadConfigList<MainUIBtnConfig>();
+        var cfgAlls = CfgLubanMgr.Instance.globalTab.TbMainUIBtnConfig.DataList; // ConfigMgr.Instance.LoadConfigList<MainUIBtnConfig>();
         foreach (var item in cfgAlls)
         {
             if (mMainBtnCfgsDic.TryGetValue(item.TType, out var cfgs))
@@ -49,6 +49,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
             {
                 AudioMgr.Instance.PlayBGM("sound_explosion_enemy");
                 EventCenter.Instance.Fire<string>((int)EventEnum.EE_test1, "event可能是dto");
+                ProxyAStarPKGModule.Instance.OpenAStarView();
             }
         },
         { 1003, () => { ProxyBagModule.Instance.OpenBagMainView(); } },
