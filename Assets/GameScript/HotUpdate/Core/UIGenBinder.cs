@@ -1,4 +1,5 @@
-﻿using Bag;
+﻿using AStarPKG;
+using Bag;
 using DialogTip;
 using Login;
 using MainCenter;
@@ -35,5 +36,6 @@ public class UIGenBinder
         SpinePackageBinder.BindAll();
         HeroPKGBinder.BindAll();
         SmallGamePKGBinder.BindAll();
+        AStarPKGBinder.BindAll();
     }
 }

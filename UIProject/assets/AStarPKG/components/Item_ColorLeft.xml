@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="130,30" extention="Button">
+  <controller name="colorCtrl" exported="true" pages="0,白.可行走区域,1,红.阻挡,2,蓝.起点,3,紫.终点,4,绿.路径,5,黄.寻路点" selected="5"/>
+  <displayList>
+    <graph id="n0_h90b" name="color" xy="0,0" size="130,30" touchable="false" type="rect" lineSize="0" fillColor="#ffffff00">
+      <gearColor controller="colorCtrl" pages="1,2,3,4,5" values="#ff0000|#0000ff|#ff00ff|#00ff00|#ffff00" default="#f0f0f0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3_h90b" name="title" xy="0,0" size="130,30" fontSize="20" align="center" vAlign="middle" autoSize="shrink" singleLine="true" text="寻路点">
+      <gearText controller="colorCtrl" pages="1,2,3,4,5" values="阻挡区域|起点|终点|路径|寻路点" default="可行走区域"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

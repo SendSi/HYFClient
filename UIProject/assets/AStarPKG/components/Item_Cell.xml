@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="40,40" >
+  <controller name="colorCtrl" exported="true" pages="0,白.可行走区域,1,红.阻挡,2,蓝.起点,3,紫.终点,4,绿.路径,5,黄.寻路点" selected="0"/>
+  <displayList>
+    <graph id="n0_h90b" name="color" xy="0,0" size="40,40" touchable="false" type="rect" lineSize="0" fillColor="#fff0f0f0">
+      <gearColor controller="colorCtrl" pages="1,2,3,4,5" values="#ff0000|#0000ff|#ff00ff|#00ff00|#ffff00" default="#f0f0f0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+  </displayList>
+  <Button/>
+</component>
