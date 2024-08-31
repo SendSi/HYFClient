@@ -18,7 +18,12 @@ namespace ShopGift
                 var item = (Item_EightGift)GetChild($"day{i}");
                 item.SetData(list[i - 1]); //Item_EightGift.cs
             }
+            mNullTest.visible = false;
         }
+        
+        private GObject mNullTest;
+
+      
     }
 
 }

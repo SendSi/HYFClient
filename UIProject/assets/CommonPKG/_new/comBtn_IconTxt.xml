@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="123,61" pivot="0.5,0.5" extention="Button">
+<component size="152,61" pivot="0.5,0.5" extention="Button">
   <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
   <displayList>
-    <loader id="n2_spad" name="icon" xy="0,0" size="123,61" url="ui://2r331opvig901ygcg9n" align="center" vAlign="middle" fill="scaleFree">
+    <loader id="n2_spad" name="icon" xy="0,0" size="152,61" url="ui://2r331opvig901ygcg9n" align="center" vAlign="middle" fill="scaleFree">
       <relation target="" sidePair="width-width,height-height"/>
     </loader>
-    <richtext id="n1_spad" name="title" xy="31,12" pivot="0.5,0.5" size="60,39" fontSize="28" color="#00ff00" align="center" vAlign="middle" ubb="true" autoSize="none" singleLine="true" text="内容">
+    <richtext id="n1_spad" name="title" xy="6,5" pivot="0.5,0.5" size="139,51" fontSize="28" color="#00ff00" align="center" vAlign="middle" ubb="true" autoSize="shrink" singleLine="true" text="内容">
       <relation target="" sidePair="width-width,height-height"/>
     </richtext>
   </displayList>
