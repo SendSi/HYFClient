@@ -12,6 +12,8 @@ public enum EventEnum
     EE_Guide_NextStep = 10005,//下一步
     
     
+    EE_AStarPoint = 11000,//a星寻路
+    
     EE_test1 = 50001,
     EE_test2 = 50002,
     EE_test3 = 50003,

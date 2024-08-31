@@ -111,17 +111,19 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
     #endregion
 
     GObject popItem1;
-    public void ShowPopupItem1(GObject target,ItemProp cfg)
+
+    public void ShowPopupItem1(GObject target, ItemProp cfg)
     {
         if (popItem1 == null)
             popItem1 = FairyGUI.UIPackage.CreateObject("CommonPKG", "Item_Popup1");
 
-        (popItem1 as Item_Popup1).SetData(cfg);//Item_Popup1.cs
+        (popItem1 as Item_Popup1).SetData(cfg); //Item_Popup1.cs
         FairyGUI.GRoot.inst.ShowPopup(popItem1, target, PopupDirection.Auto);
     }
-    
-    
+
+
     #region VideoView打开关闭
+
     public void OpenVideoView(string idStr)
     {
         CheckLoad(() =>
@@ -135,5 +137,25 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
     {
         UIMgr.Instance.CloseUIViewCom<VideoView>();
     }
+
+    #endregion
+
+
+    #region InfoTipViewWin打开关闭Window
+
+    public void OpenInfoTipViewWin(string content)
+    {
+        CheckLoad(() =>
+        {
+           var win= UIMgr.Instance.OpenWindow<InfoTipViewWin>();
+           win.SetData(content);
+        });
+    }
+
+    public void CloseInfoTipViewWin()
+    {
+        UIMgr.Instance.CloseWindow<InfoTipViewWin>();
+    }
+
     #endregion
 }

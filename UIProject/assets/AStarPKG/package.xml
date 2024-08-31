@@ -3,7 +3,7 @@
   <resources>
     <component id="h90bl7" name="AStarView.xml" path="/panel/" exported="true"/>
     <component id="h90b1" name="Item_ColorLeft.xml" path="/components/"/>
-    <component id="h90b2" name="Item_Cell.xml" path="/components/"/>
+    <component id="h90b2" name="Item_Cell.xml" path="/components/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

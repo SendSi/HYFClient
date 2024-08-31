@@ -57,35 +57,43 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.ArraySortHelper<object>
 	// System.Collections.Generic.Comparer<int>
 	// System.Collections.Generic.Comparer<object>
+	// System.Collections.Generic.Dictionary.Enumerator<UnityEngine.Vector2,int>
 	// System.Collections.Generic.Dictionary.Enumerator<float,object>
 	// System.Collections.Generic.Dictionary.Enumerator<int,object>
 	// System.Collections.Generic.Dictionary.Enumerator<object,object>
 	// System.Collections.Generic.Dictionary.Enumerator<uint,UnityEngine.Vector3>
+	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<UnityEngine.Vector2,int>
 	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<float,object>
 	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<int,object>
 	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<object,object>
 	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<uint,UnityEngine.Vector3>
+	// System.Collections.Generic.Dictionary.KeyCollection<UnityEngine.Vector2,int>
 	// System.Collections.Generic.Dictionary.KeyCollection<float,object>
 	// System.Collections.Generic.Dictionary.KeyCollection<int,object>
 	// System.Collections.Generic.Dictionary.KeyCollection<object,object>
 	// System.Collections.Generic.Dictionary.KeyCollection<uint,UnityEngine.Vector3>
+	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<UnityEngine.Vector2,int>
 	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<float,object>
 	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<int,object>
 	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<object,object>
 	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<uint,UnityEngine.Vector3>
+	// System.Collections.Generic.Dictionary.ValueCollection<UnityEngine.Vector2,int>
 	// System.Collections.Generic.Dictionary.ValueCollection<float,object>
 	// System.Collections.Generic.Dictionary.ValueCollection<int,object>
 	// System.Collections.Generic.Dictionary.ValueCollection<object,object>
 	// System.Collections.Generic.Dictionary.ValueCollection<uint,UnityEngine.Vector3>
+	// System.Collections.Generic.Dictionary<UnityEngine.Vector2,int>
 	// System.Collections.Generic.Dictionary<float,object>
 	// System.Collections.Generic.Dictionary<int,object>
 	// System.Collections.Generic.Dictionary<object,object>
 	// System.Collections.Generic.Dictionary<uint,UnityEngine.Vector3>
+	// System.Collections.Generic.EqualityComparer<UnityEngine.Vector2>
 	// System.Collections.Generic.EqualityComparer<UnityEngine.Vector3>
 	// System.Collections.Generic.EqualityComparer<float>
 	// System.Collections.Generic.EqualityComparer<int>
 	// System.Collections.Generic.EqualityComparer<object>
 	// System.Collections.Generic.EqualityComparer<uint>
+	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<UnityEngine.Vector2,int>>
 	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<float,object>>
 	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object,object>>
@@ -94,18 +102,21 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.ICollection<object>
 	// System.Collections.Generic.IComparer<int>
 	// System.Collections.Generic.IComparer<object>
+	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<UnityEngine.Vector2,int>>
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<float,object>>
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<uint,UnityEngine.Vector3>>
 	// System.Collections.Generic.IEnumerable<int>
 	// System.Collections.Generic.IEnumerable<object>
+	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<UnityEngine.Vector2,int>>
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<float,object>>
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<uint,UnityEngine.Vector3>>
 	// System.Collections.Generic.IEnumerator<int>
 	// System.Collections.Generic.IEnumerator<object>
+	// System.Collections.Generic.IEqualityComparer<UnityEngine.Vector2>
 	// System.Collections.Generic.IEqualityComparer<float>
 	// System.Collections.Generic.IEqualityComparer<int>
 	// System.Collections.Generic.IEqualityComparer<object>
@@ -114,6 +125,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.IList<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IList<int>
 	// System.Collections.Generic.IList<object>
+	// System.Collections.Generic.KeyValuePair<UnityEngine.Vector2,int>
 	// System.Collections.Generic.KeyValuePair<float,object>
 	// System.Collections.Generic.KeyValuePair<int,object>
 	// System.Collections.Generic.KeyValuePair<object,object>
@@ -124,6 +136,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.List<object>
 	// System.Collections.Generic.ObjectComparer<int>
 	// System.Collections.Generic.ObjectComparer<object>
+	// System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector2>
 	// System.Collections.Generic.ObjectEqualityComparer<UnityEngine.Vector3>
 	// System.Collections.Generic.ObjectEqualityComparer<float>
 	// System.Collections.Generic.ObjectEqualityComparer<int>

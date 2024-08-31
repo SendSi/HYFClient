@@ -13,14 +13,15 @@ namespace AStarPKG
         public Item_ColorLeft _btn2;
         public Item_ColorLeft _btn3;
         public Item_ColorLeft _btn4;
-        public Item_ColorLeft _btn5;
         public GTextInput _inputWidth;
         public GTextInput _inputHeight;
         public GTextInput _inputPass;
         public GButton _btnGenerate;
+        public GButton _btnReset;
         public GList _listContent;
         public GButton _closeButton;
         public GTextField _titleLeft;
+        public GButton _exTipBtn;
         public const string URL = "ui://lqtfwinih90bl7";
 
         public static AStarView CreateInstance()
@@ -38,14 +39,15 @@ namespace AStarPKG
             _btn2 = (Item_ColorLeft)GetChild("btn2");
             _btn3 = (Item_ColorLeft)GetChild("btn3");
             _btn4 = (Item_ColorLeft)GetChild("btn4");
-            _btn5 = (Item_ColorLeft)GetChild("btn5");
             _inputWidth = (GTextInput)GetChild("inputWidth");
             _inputHeight = (GTextInput)GetChild("inputHeight");
             _inputPass = (GTextInput)GetChild("inputPass");
             _btnGenerate = (GButton)GetChild("btnGenerate");
+            _btnReset = (GButton)GetChild("btnReset");
             _listContent = (GList)GetChild("listContent");
             _closeButton = (GButton)GetChild("closeButton");
             _titleLeft = (GTextField)GetChild("titleLeft");
+            _exTipBtn = (GButton)GetChild("exTipBtn");
         }
     }
 }

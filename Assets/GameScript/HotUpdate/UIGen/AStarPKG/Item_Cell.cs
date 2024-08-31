@@ -9,6 +9,7 @@ namespace AStarPKG
     {
         public Controller _colorCtrl;
         public GGraph _color;
+        public GRichTextField _title;
         public const string URL = "ui://lqtfwinih90b2";
 
         public static Item_Cell CreateInstance()
@@ -22,6 +23,7 @@ namespace AStarPKG
 
             _colorCtrl = GetController("colorCtrl");
             _color = (GGraph)GetChild("color");
+            _title = (GRichTextField)GetChild("title");
         }
     }
 }

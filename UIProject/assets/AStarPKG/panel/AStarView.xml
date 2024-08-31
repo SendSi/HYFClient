@@ -12,17 +12,19 @@
     <component id="n101_h90b" name="btn2" src="h90b1" fileName="components/Item_ColorLeft.xml" xy="121,211" size="108,35" controller="colorCtrl,2"/>
     <component id="n102_h90b" name="btn3" src="h90b1" fileName="components/Item_ColorLeft.xml" xy="121,261" size="108,35" controller="colorCtrl,3"/>
     <component id="n104_h90b" name="btn4" src="h90b1" fileName="components/Item_ColorLeft.xml" xy="121,311" size="108,35" controller="colorCtrl,4"/>
-    <component id="n103_h90b" name="btn5" src="h90b1" fileName="components/Item_ColorLeft.xml" xy="121,361" size="108,35" controller="colorCtrl,5"/>
     <text id="n105_h90b" name="n105" xy="65,443" size="90,29" fontSize="20" text="横格子数:"/>
     <text id="n106_h90b" name="n106" xy="65,481" size="90,29" fontSize="20" text="纵格子数:"/>
     <text id="n107_h90b" name="n107" xy="65,519" size="90,29" fontSize="20" text="阻挡格数:"/>
-    <text id="n109_h90b" name="inputWidth" xy="165,441" size="120,29" fontSize="20" color="#ff0000" ubb="true" autoSize="none" text="" input="true" prompt="[color=#999999]数量[/color]" keyboardType="4"/>
-    <text id="n110_h90b" name="inputHeight" xy="165,479" size="120,29" fontSize="20" color="#00ff00" ubb="true" autoSize="none" text="" input="true" prompt="[color=#999999]数量[/color]" keyboardType="4"/>
-    <text id="n111_h90b" name="inputPass" xy="165,517" size="120,29" fontSize="20" color="#0000ff" ubb="true" autoSize="none" text="" input="true" prompt="[color=#999999]数量[/color]" keyboardType="4"/>
-    <component id="n112_h90b" name="btnGenerate" src="ig90hz9czq" fileName="_new/comBtn_IconTxt.xml" pkg="2r331opv" xy="111,614">
-      <Button title="生成"/>
+    <text id="n109_h90b" name="inputWidth" xy="165,441" size="120,29" fontSize="20" color="#ff0000" ubb="true" autoSize="none" singleLine="true" text="" input="true" prompt="[color=#999999]数量[/color]" keyboardType="4"/>
+    <text id="n110_h90b" name="inputHeight" xy="165,479" size="120,29" fontSize="20" color="#00ff00" ubb="true" autoSize="none" singleLine="true" text="" input="true" prompt="[color=#999999]数量[/color]" keyboardType="4"/>
+    <text id="n111_h90b" name="inputPass" xy="165,517" size="120,29" fontSize="20" color="#0000ff" ubb="true" autoSize="none" singleLine="true" text="" input="true" prompt="[color=#999999]数量[/color]" keyboardType="4"/>
+    <component id="n112_h90b" name="btnGenerate" src="ig90hz9czq" fileName="_new/comBtn_IconTxt.xml" pkg="2r331opv" xy="77,614" size="189,61">
+      <Button title="生成整个"/>
     </component>
-    <list id="n113_h90b" name="listContent" xy="342,66" size="930,640" layout="flow_hz" lineGap="2" colGap="2" defaultItem="ui://lqtfwinih90b2" align="center" vAlign="middle">
+    <component id="n116_mnqw" name="btnReset" src="ig90hz9czq" fileName="_new/comBtn_IconTxt.xml" pkg="2r331opv" xy="194,557" size="97,37">
+      <Button title="reClick" titleFontSize="18"/>
+    </component>
+    <list id="n113_h90b" name="listContent" xy="342,66" size="930,640" layout="flow_hz" lineGap="2" colGap="2" lineItemCount="4" defaultItem="ui://lqtfwinih90b2" align="center" vAlign="middle">
       <relation target="" sidePair="left-left,right-right,top-top,bottom-bottom"/>
       <item/>
       <item controllers="colorCtrl,1"/>
@@ -37,5 +39,8 @@
     </list>
     <component id="n114_swxz" name="closeButton" src="tv1v1a" fileName="components/com_btn_close.xml" pkg="2r331opv" xy="45,18"/>
     <text id="n115_swxz" name="titleLeft" xy="175,25" size="260,55" font="ui://2r331opvno3vhz9d63" fontSize="41" color="#ffffff" vAlign="bottom" autoSize="none" strokeColor="#322b63" strokeSize="2" shadowColor="#322b63" shadowOffset="4,4" text="温习 A星算法"/>
+    <component id="n117_mnqw" name="exTipBtn" src="ngv8ft" fileName="components/com_btn_explain.xml" pkg="2r331opv" xy="433,31">
+      <relation target="n115_swxz" sidePair="left-left,bottom-top"/>
+    </component>
   </displayList>
 </component>

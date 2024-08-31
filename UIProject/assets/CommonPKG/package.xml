@@ -1100,6 +1100,8 @@
     <component id="lmzq1ygcgrw" name="Item_BaseProp.xml" path="/components/" exported="true" favorite="true"/>
     <component id="fipp1ygcgrx" name="Item_Popup1.xml" path="/panel/" exported="true"/>
     <component id="t54x1ygcgry" name="VideoView.xml" path="/panel/" exported="true"/>
+    <component id="mnqw1ygcga7" name="InfoTipView.xml" path="/panel/" exported="true"/>
+    <component id="mnqw1ygcga8" name="titleContent.xml" path="/panel/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
