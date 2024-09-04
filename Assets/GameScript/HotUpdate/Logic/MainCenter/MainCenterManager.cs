@@ -48,7 +48,7 @@ public class MainCenterManager : Singleton<MainCenterManager>
             1002, () =>
             {
                 AudioMgr.Instance.PlayBGM("sound_explosion_enemy");
-                EventCenter.Instance.Fire<string>((int)EventEnum.EE_test1, "event可能是dto");
+                EventCenter.Instance.Fire<string>((int)EventEnumHOT.EE_test1, "event可能是dto");
                 ProxyAStarPKGModule.Instance.OpenAStarView();
             }
         },

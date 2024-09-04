@@ -12,26 +12,26 @@ namespace HotPKG
             base.OnInit();
             _btnSure.onClick.Add(OnClickBtnSure);
 
-            EventCenter.Instance.Bind((int)EventEnum.EE_InitializeFailed, OnEventInitializeFailed);
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_PatchStatesChange, OnEeventPatchStatesChange);
-            EventCenter.Instance.Bind<int, long>((int)EventEnum.EE_FoundUpdateFiles, OnEventFoundUpdateFiles);
-            EventCenter.Instance.Bind<int, int, long, long>((int)EventEnum.EE_DownloadProgressUpdate, OnEventDownloadProgressUpdate); 
-            EventCenter.Instance.Bind((int)EventEnum.EE_PackageVersionUpdateFailed, OnEventPackageVersionUpdateFailed);
-            EventCenter.Instance.Bind((int)EventEnum.EE_PatchManifestUpdateFailed, OnEventPatchManifestUpdateFailed);
-            EventCenter.Instance.Bind<string, string>((int)EventEnum.EE_WebFileDownloadFailed, OnEventWebFileDownloadFailed); 
+            EventCenter.Instance.Bind((int)EventEnumAOT.EE_InitializeFailed, OnEventInitializeFailed);
+            EventCenter.Instance.Bind<string>((int)EventEnumAOT.EE_PatchStatesChange, OnEeventPatchStatesChange);
+            EventCenter.Instance.Bind<int, long>((int)EventEnumAOT.EE_FoundUpdateFiles, OnEventFoundUpdateFiles);
+            EventCenter.Instance.Bind<int, int, long, long>((int)EventEnumAOT.EE_DownloadProgressUpdate, OnEventDownloadProgressUpdate); 
+            EventCenter.Instance.Bind((int)EventEnumAOT.EE_PackageVersionUpdateFailed, OnEventPackageVersionUpdateFailed);
+            EventCenter.Instance.Bind((int)EventEnumAOT.EE_PatchManifestUpdateFailed, OnEventPatchManifestUpdateFailed);
+            EventCenter.Instance.Bind<string, string>((int)EventEnumAOT.EE_WebFileDownloadFailed, OnEventWebFileDownloadFailed); 
         }
 
  
 
         private void OnEventPatchManifestUpdateFailed()
         {
-            System.Action callback = () => { EventCenter.Instance.Fire((int)EventEnum.EE_UserTryUpdatePatchManifest); };
+            System.Action callback = () => { EventCenter.Instance.Fire((int)EventEnumAOT.EE_UserTryUpdatePatchManifest); };
             ShowMessageBox($"无法更新修补程序清单，请检查网络状态。", callback);
         }
 
         private void OnEventFoundUpdateFiles(int arg0, long arg1)
         {
-            EventCenter.Instance.Fire((int)EventEnum.EE_UserBeginDownloadWebFiles); //直接 发送 事件  不给弹框了
+            EventCenter.Instance.Fire((int)EventEnumAOT.EE_UserBeginDownloadWebFiles); //直接 发送 事件  不给弹框了
             // Action callback = () => { UserEventDefine.UserBeginDownloadWebFiles.SendEventMessage(); };
             // float sizeMB = arg1 / 1048576f;
             // sizeMB = Mathf.Clamp(sizeMB, 0.1f, float.MaxValue);
@@ -47,19 +47,19 @@ namespace HotPKG
 
         private void OnEventInitializeFailed()
         {
-            Action callback = () => { EventCenter.Instance.Fire((int)EventEnum.EE_UserTryInitialize); };
+            Action callback = () => { EventCenter.Instance.Fire((int)EventEnumAOT.EE_UserTryInitialize); };
             ShowMessageBox($"未能初始化包！", callback); //ShowMessageBox($"Failed to initialize package !", callback);
         }
 
         private void OnEventPackageVersionUpdateFailed()
         {
-            System.Action callback = () => { EventCenter.Instance.Fire((int)EventEnum.EE_UserTryUpdatePackageVersion); };
+            System.Action callback = () => { EventCenter.Instance.Fire((int)EventEnumAOT.EE_UserTryUpdatePackageVersion); };
             ShowMessageBox($"无法更新资源版本，请检查网络状态。", callback); //  ShowMessageBox($"Failed to update static version, please check the network status.", callback);
         }
 
         private void OnEventWebFileDownloadFailed(string fileName,string arg2)
         {
-            System.Action callback = () => { EventCenter.Instance.Fire((int)EventEnum.EE_UserTryDownloadWebFiles); };
+            System.Action callback = () => { EventCenter.Instance.Fire((int)EventEnumAOT.EE_UserTryDownloadWebFiles); };
             ShowMessageBox($"未能下载文件：{fileName}", callback); //ShowMessageBox($"Failed to download file : {msg.FileName}", callback);
         }
         private void OnEventDownloadProgressUpdate(int TotalDownloadCount, int CurrentDownloadCount, long TotalDownloadSizeBytes, long CurrentDownloadSizeBytes)
@@ -72,13 +72,13 @@ namespace HotPKG
         }
         void DisposeEventss()
         {
-            EventCenter.Instance.UnBind((int)EventEnum.EE_InitializeFailed, OnEventInitializeFailed);
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_PatchStatesChange, OnEeventPatchStatesChange);
-            EventCenter.Instance.UnBind<int, long>((int)EventEnum.EE_FoundUpdateFiles, OnEventFoundUpdateFiles);
-            EventCenter.Instance.UnBind<int, int, long, long>((int)EventEnum.EE_DownloadProgressUpdate, OnEventDownloadProgressUpdate);
-            EventCenter.Instance.UnBind((int)EventEnum.EE_PackageVersionUpdateFailed, OnEventPackageVersionUpdateFailed);
-            EventCenter.Instance.UnBind((int)EventEnum.EE_PatchManifestUpdateFailed, OnEventPatchManifestUpdateFailed);
-            EventCenter.Instance.UnBind<string,string>((int)EventEnum.EE_WebFileDownloadFailed, OnEventWebFileDownloadFailed);
+            EventCenter.Instance.UnBind((int)EventEnumAOT.EE_InitializeFailed, OnEventInitializeFailed);
+            EventCenter.Instance.UnBind<string>((int)EventEnumAOT.EE_PatchStatesChange, OnEeventPatchStatesChange);
+            EventCenter.Instance.UnBind<int, long>((int)EventEnumAOT.EE_FoundUpdateFiles, OnEventFoundUpdateFiles);
+            EventCenter.Instance.UnBind<int, int, long, long>((int)EventEnumAOT.EE_DownloadProgressUpdate, OnEventDownloadProgressUpdate);
+            EventCenter.Instance.UnBind((int)EventEnumAOT.EE_PackageVersionUpdateFailed, OnEventPackageVersionUpdateFailed);
+            EventCenter.Instance.UnBind((int)EventEnumAOT.EE_PatchManifestUpdateFailed, OnEventPatchManifestUpdateFailed);
+            EventCenter.Instance.UnBind<string,string>((int)EventEnumAOT.EE_WebFileDownloadFailed, OnEventWebFileDownloadFailed);
         }
 
 

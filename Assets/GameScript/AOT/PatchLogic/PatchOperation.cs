@@ -17,11 +17,11 @@ public class PatchOperation : GameAsyncOperation
     public PatchOperation(string packageName, string buildPipeline, EPlayMode playMode)
     {
         // 注册监听事件
-        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryInitialize, OnEventUserTryInitialize);
-        EventCenter.Instance.Bind((int)EventEnum.EE_UserBeginDownloadWebFiles, OnEventUserBeginDownloadWebFiles);
-        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryUpdatePackageVersion, OnEventUserTryUpdatePackageVersion);
-        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryUpdatePatchManifest, OnEventUserTryUpdatePatchManifest);
-        EventCenter.Instance.Bind((int)EventEnum.EE_UserTryDownloadWebFiles, OnEventUserTryDownloadWebFiles);
+        EventCenter.Instance.Bind((int)EventEnumAOT.EE_UserTryInitialize, OnEventUserTryInitialize);
+        EventCenter.Instance.Bind((int)EventEnumAOT.EE_UserBeginDownloadWebFiles, OnEventUserBeginDownloadWebFiles);
+        EventCenter.Instance.Bind((int)EventEnumAOT.EE_UserTryUpdatePackageVersion, OnEventUserTryUpdatePackageVersion);
+        EventCenter.Instance.Bind((int)EventEnumAOT.EE_UserTryUpdatePatchManifest, OnEventUserTryUpdatePatchManifest);
+        EventCenter.Instance.Bind((int)EventEnumAOT.EE_UserTryDownloadWebFiles, OnEventUserTryDownloadWebFiles);
 
         // 创建状态机
         _machine = new StateMachine(this);
@@ -93,11 +93,11 @@ public class PatchOperation : GameAsyncOperation
 
     void RemoveEventCenters()
     {
-        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryInitialize, OnEventUserTryInitialize);
-        EventCenter.Instance.UnBind((int)EventEnum.EE_UserBeginDownloadWebFiles, OnEventUserBeginDownloadWebFiles);
-        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryUpdatePackageVersion, OnEventUserTryUpdatePackageVersion);
-        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryUpdatePatchManifest, OnEventUserTryUpdatePatchManifest);
-        EventCenter.Instance.UnBind((int)EventEnum.EE_UserTryDownloadWebFiles, OnEventUserTryDownloadWebFiles);
+        EventCenter.Instance.UnBind((int)EventEnumAOT.EE_UserTryInitialize, OnEventUserTryInitialize);
+        EventCenter.Instance.UnBind((int)EventEnumAOT.EE_UserBeginDownloadWebFiles, OnEventUserBeginDownloadWebFiles);
+        EventCenter.Instance.UnBind((int)EventEnumAOT.EE_UserTryUpdatePackageVersion, OnEventUserTryUpdatePackageVersion);
+        EventCenter.Instance.UnBind((int)EventEnumAOT.EE_UserTryUpdatePatchManifest, OnEventUserTryUpdatePatchManifest);
+        EventCenter.Instance.UnBind((int)EventEnumAOT.EE_UserTryDownloadWebFiles, OnEventUserTryDownloadWebFiles);
     }
 
 

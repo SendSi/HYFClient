@@ -24,7 +24,7 @@ namespace MainCenter
             CurrencyListCom currencyListCom = (CurrencyListCom)_currencyListCom;
             currencyListCom.SetData(mCurrencyIds); //CurrencyListCom.cs
 
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test1, OnEventTest);
+            EventCenter.Instance.Bind<string>((int)EventEnumHOT.EE_test1, OnEventTest);
         }
 
         private void OnClickItemFuncList(int index, GObject obj)
@@ -52,7 +52,7 @@ namespace MainCenter
         public override void Dispose()
         {
             base.Dispose();
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test1, OnEventTest);
+            EventCenter.Instance.UnBind<string>((int)EventEnumHOT.EE_test1, OnEventTest);
         }
     }
 }

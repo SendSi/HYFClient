@@ -65,7 +65,6 @@ public class GameMain : MonoBehaviour
     //加载热更页面
     private IEnumerator CheckLoadYooHF()
     {
-        // 加载更新页面
         ProxyHotPKGModule.Instance.OpenHFView();
         // 开始补丁更新流程
         // PatchOperation operation = new PatchOperation("DefaultPackage", EDefaultBuildPipeline.BuiltinBuildPipeline.ToString(), PlayMode);
@@ -139,7 +138,7 @@ public class GameMain : MonoBehaviour
     /// </summary>
     private static void LoadMetadataForAOTAssemblies()
     {
-        /// 注意，补充元数据是给AOT dll补充元数据，而不是给热更新dll补充元数据。 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
+        // 注意，补充元数据是给AOT dll补充元数据，而不是给热更新dll补充元数据。 热更新dll不缺元数据，不需要补充，如果调用LoadMetadataForAOTAssembly会返回错误
         HomologousImageMode mode = HomologousImageMode.SuperSet;
         for (int i = 0; i < mAssemblyFiles.Count-2; i++)
         {// 减一 最后一个是HotUpdate.dll  不是aot
@@ -153,7 +152,7 @@ public class GameMain : MonoBehaviour
         mHotUpdateAssembly = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
 #else
         mHotUpdateAssembly = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"),ReadBytesFromStreamingAssets("HotUpdate.pdb"));
-        Debug.Log($"Load HotUpdate.dll HotUpdate.pdb Success!");
+        Debug.Log($"Load HotUpdate.dll and HotUpdate.pdb Success!");
 #endif
         
 

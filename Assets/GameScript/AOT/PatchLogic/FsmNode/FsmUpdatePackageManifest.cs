@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UniFramework.Machine;
 using YooAsset;
 using Cysharp.Threading.Tasks;
@@ -18,7 +16,7 @@ public class FsmUpdatePackageManifest : IStateNode
     }
     async void IStateNode.OnEnter()
     {
-        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "更新资源清单！");
+        EventCenter.Instance.Fire<string>((int)EventEnumAOT.EE_PatchStatesChange, "更新资源清单！");
         await UpdateManifest();
     }
     void IStateNode.OnUpdate()
@@ -45,7 +43,7 @@ public class FsmUpdatePackageManifest : IStateNode
         {
             Debug.LogWarning(operation.Error);
             // PatchEventDefine.PatchManifestUpdateFailed.SendEventMessage();
-            EventCenter.Instance.Fire((int)EventEnum.EE_PatchManifestUpdateFailed);
+            EventCenter.Instance.Fire((int)EventEnumAOT.EE_PatchManifestUpdateFailed);
 
             //yield break;
             return;

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UniFramework.Machine;
 using YooAsset;
 using Cysharp.Threading.Tasks;
@@ -18,7 +16,7 @@ public class FsmCreatePackageDownloader : IStateNode
     }
     void IStateNode.OnEnter()
     {
-        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "创建补丁下载器！");
+        EventCenter.Instance.Fire<string>((int)EventEnumAOT.EE_PatchStatesChange, "创建补丁下载器！");
          CreateDownloader();
     }
     void IStateNode.OnUpdate()
@@ -51,7 +49,7 @@ public class FsmCreatePackageDownloader : IStateNode
             // 注意：开发者需要在下载前检测磁盘空间不足
             int totalDownloadCount = downloader.TotalDownloadCount;
             long totalDownloadBytes = downloader.TotalDownloadBytes;
-            EventCenter.Instance.Fire<int, long>((int)EventEnum.EE_FoundUpdateFiles, totalDownloadCount, totalDownloadBytes);
+            EventCenter.Instance.Fire<int, long>((int)EventEnumAOT.EE_FoundUpdateFiles, totalDownloadCount, totalDownloadBytes);
         }
     }
 }
