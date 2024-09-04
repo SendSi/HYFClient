@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="760,32" overflow="hidden">
   <displayList>
-    <richtext id="n43_kebx" name="title" xy="0,0" pivot="0.5,0.5" size="469,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" ubb="true" autoSize="none" autoClearText="true" text="恭喜 [color=#4BF7FF]玩家炮兵营[/color]获得武将【[color=#FFDE4C]张角[/color]】!若果换行就换行这样子"/>
+    <richtext id="n43_kebx" name="title" xy="0,0" pivot="0,0.5" size="633,32" font="ui://2r331opvno3vhz9d63" fontSize="22" color="#ffffff" ubb="true" autoClearText="true" text="恭喜 [color=#4BF7FF]玩家炮兵营[/color]获得武将【[color=#FFDE4C]张角[/color]】!若果换行就换行这样子这样子"/>
   </displayList>
 </component>
