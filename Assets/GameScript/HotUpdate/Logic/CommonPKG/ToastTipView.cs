@@ -76,7 +76,7 @@ namespace CommonPKG
         {
             _horseLampGroup.visible = true;
             _lampTipTxt.text = content;
-            _lampTipTxt.x = _lampCom.width - 60;
+            _lampTipTxt.x = _lampCom.width- 60;
             _lampTipTxt.TweenMoveX(-(_lampTipTxt.width + 20), 6.5f).SetEase(EaseType.Linear).OnComplete(() =>
             {
                 if (mNeedLampStr.Count > 0) GetSetShowLampItem(mNeedLampStr.Dequeue()); //取出队列 并使用

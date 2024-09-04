@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.IO;
+using Cysharp.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -45,60 +46,45 @@ public class GPRCHelperEditor
             Debuger.LogError($"生成协议失败. code:{process.ExitCode}, msg:{process.StandardError.ReadToEnd()}");
         }
     }
-  
+
 
     [MenuItem("Tools/luban_excel导表 ^#&l", priority = 1022)]
-    public static void GenerateLuban_binary()
+    public static async void GenerateLuban_binary()
     {
         var lubanBytes = Application.dataPath + @"\GameScript\HotUpdate\Config\lubanBytes";
         if (Directory.Exists(lubanBytes)) Directory.Delete(lubanBytes, true);
- 
+
         var lubanCodes = Application.dataPath + @"\GameScript\HotUpdate\Config\lubanCodes";
         if (Directory.Exists(lubanCodes)) Directory.Delete(lubanCodes, true);
-        
+
         var cdPath = Application.dataPath.Replace("Assets", "Excel_luban");
         ProcessStartInfo startInfo = new ProcessStartInfo
         {
             FileName = "cmd.exe",
-            Arguments = $"/C cd /D {cdPath} && gen.bat",
+            Arguments = $"/C cd /D {cdPath} && gen.bat",//这里很怪 必要先cd到某目录  再去执行bat文件  否则不正常
             UseShellExecute = false,
             RedirectStandardOutput = true,
             CreateNoWindow = true
         };
-        
+
         Process process = new Process { StartInfo = startInfo };
         process.Start();
-        
+
         string output = process.StandardOutput.ReadToEnd();
         process.WaitForExit();
-        
-        // AssetDatabase.Refresh();
 
         if (output.Contains("failed"))
             Debug.LogError($"失败.luban执行成功二进制,数据lubanBytes,代码lubanCodes--,{output}");
-    
         else
-            Debug.LogFormat("成功.luban执行二进制,数据lubanBytes,代码lubanCodes--,{0}",output);
+            Debug.LogFormat("成功.luban执行二进制,数据lubanBytes,代码lubanCodes--,{0}", output);
+
+         WaitRefresh(100);//若不正常,注释掉
     }
-    
-    
-    // [MenuItem("Tools/GenerateBat普通的", priority = 101)]
-    // public static void GenerateBat普通的()
-    // {
-    //     ProcessStartInfo startInfo = new ProcessStartInfo
-    //     {
-    //         FileName = "cmd.exe",
-    //         Arguments = "/C G:/gitHub/HYFClient/Excel_luban/test.bat",
-    //         UseShellExecute = false,
-    //         RedirectStandardOutput = true,
-    //         CreateNoWindow = true
-    //     };
-    //
-    //     Process process = new Process { StartInfo = startInfo };
-    //     process.Start();
-    //
-    //     string output = process.StandardOutput.ReadToEnd();
-    //     process.WaitForExit();
-    //     Debug.LogFormat("GenerateBat普通的--,{0}",output);
-    // }
+
+
+    public async static void WaitRefresh(int frame = 1)
+    {
+        await UniTask.DelayFrame(frame);
+        AssetDatabase.Refresh();
+    }
 }
