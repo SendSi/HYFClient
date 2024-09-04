@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.IO;
 using UnityEngine;
 using UniFramework.Machine;
 using YooAsset;
@@ -20,7 +17,7 @@ internal class FsmInitializePackage : IStateNode
     }
     async void IStateNode.OnEnter()
     {
-        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "初始化资源包！");
+        EventCenter.Instance.Fire<string>((int)EventEnumAOT.EE_PatchStatesChange, "初始化资源包！");
         //GameMain.Instance.StartCoroutine(InitPackage());
         await InitPackage();
     }
@@ -90,7 +87,7 @@ internal class FsmInitializePackage : IStateNode
         if (initializationOperation.Status != EOperationStatus.Succeed)
         {
             Debuger.LogWarning($"{initializationOperation.Error}");
-            EventCenter.Instance.Fire((int)EventEnum.EE_InitializeFailed);
+            EventCenter.Instance.Fire((int)EventEnumAOT.EE_InitializeFailed);
         }
         else
         {

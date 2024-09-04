@@ -1,6 +1,6 @@
 //虽是枚举  还是用驼峰吧  不用纯大写  读起来方便
 
-public enum EventEnum
+public enum EventEnumHOT
 {
     EE_LanguageModify = 9998,//改变语言
     EE_Server_Items = 9999,

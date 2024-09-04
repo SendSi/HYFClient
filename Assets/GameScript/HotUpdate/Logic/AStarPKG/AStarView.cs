@@ -68,7 +68,7 @@ namespace AStarPKG
                     }
                     else
                     {
-                        EventCenter.Instance.Fire<AStarNode>((int)EventEnum.EE_AStarPoint, item);
+                        EventCenter.Instance.Fire<AStarNode>((int)EventEnumHOT.EE_AStarPoint, item);
                     }
                 }
             }
@@ -93,7 +93,7 @@ namespace AStarPKG
             }
 
             clickPos.Clear();
-            mapNodes = AStarPKGManager.Instance.InitMap(columnCount, heightT, passT);
+            mapNodes = AStarPKGManager.Instance.InitMap(heightT,columnCount, passT);
             this._listContent.columnCount = columnCount;
             this._listContent.numItems = sumItems;
 

@@ -1,6 +1,6 @@
 //虽是枚举  还是用驼峰吧  不用纯大写  读起来方便
 
-public enum EventEnum
+public enum EventEnumAOT
 {
     EE_UserTryInitialize=1001,//用户尝试再次初始化资源包
     EE_UserBeginDownloadWebFiles=1002,//用户开始下载网络文件

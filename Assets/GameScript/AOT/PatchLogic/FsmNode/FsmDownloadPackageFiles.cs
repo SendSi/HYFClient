@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using UniFramework.Machine;
+﻿using UniFramework.Machine;
 using YooAsset;
 using Cysharp.Threading.Tasks;
 
@@ -17,7 +15,7 @@ public class FsmDownloadPackageFiles : IStateNode
     }
     async void IStateNode.OnEnter()
     {
-        EventCenter.Instance.Fire<string>((int)EventEnum.EE_PatchStatesChange, "开始下载补丁文件！");
+        EventCenter.Instance.Fire<string>((int)EventEnumAOT.EE_PatchStatesChange, "开始下载补丁文件！");
         await BeginDownload();
     }
     void IStateNode.OnUpdate()
@@ -45,11 +43,11 @@ public class FsmDownloadPackageFiles : IStateNode
 
     private void OnEventDownloadProgressUpdate(int totaldownloadcount, int currentdownloadcount, long totaldownloadbytes, long currentdownloadbytes)
     {
-        EventCenter.Instance.Fire<int, int, long, long>((int)EventEnum.EE_DownloadProgressUpdate, totaldownloadcount, currentdownloadcount, totaldownloadbytes, currentdownloadbytes);
+        EventCenter.Instance.Fire<int, int, long, long>((int)EventEnumAOT.EE_DownloadProgressUpdate, totaldownloadcount, currentdownloadcount, totaldownloadbytes, currentdownloadbytes);
     }
 
     private void OnEventWebFileDownloadFailed(string filename, string error)
     {
-        EventCenter.Instance.Fire<string, string>((int)EventEnum.EE_WebFileDownloadFailed, filename, error);
+        EventCenter.Instance.Fire<string, string>((int)EventEnumAOT.EE_WebFileDownloadFailed, filename, error);
     }
 }

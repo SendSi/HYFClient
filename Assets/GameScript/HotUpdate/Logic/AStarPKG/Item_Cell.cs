@@ -10,7 +10,7 @@ namespace AStarPKG
         public override void OnInit()
         {
             base.OnInit();
-            EventCenter.Instance.Bind<AStarNode>((int)EventEnum.EE_AStarPoint,OnEventStartPoint);
+            EventCenter.Instance.Bind<AStarNode>((int)EventEnumHOT.EE_AStarPoint,OnEventStartPoint);
         }
 
         private void OnEventStartPoint(AStarNode node)
@@ -53,7 +53,7 @@ namespace AStarPKG
         public override void Dispose()
         {
             base.Dispose();
-            EventCenter.Instance.UnBind<AStarNode>((int)EventEnum.EE_AStarPoint,OnEventStartPoint);
+            EventCenter.Instance.UnBind<AStarNode>((int)EventEnumHOT.EE_AStarPoint,OnEventStartPoint);
         }
 
         public void RePathNone()

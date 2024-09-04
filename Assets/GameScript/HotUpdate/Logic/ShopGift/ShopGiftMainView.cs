@@ -34,8 +34,8 @@ namespace ShopGift
             _menuItems.Clear();
             this._leftTabList.numItems = _menuCfg.Count; //mMenuDtos.Count;
 
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test3, OnEventTest3);
-            EventCenter.Instance.Bind<string>((int)EventEnum.EE_test2, OnEventTest2_Wait);
+            EventCenter.Instance.Bind<string>((int)EventEnumHOT.EE_test3, OnEventTest3);
+            EventCenter.Instance.Bind<string>((int)EventEnumHOT.EE_test2, OnEventTest2_Wait);
         }
 
         private void OnEventTest2_Wait(string arg0)
@@ -59,8 +59,8 @@ namespace ShopGift
             _currChildView.OnInit();
 
             Debuger.LogError(Time.frameCount + " 发送时frameCount");
-            EventCenter.Instance.Fire<string>((int)EventEnum.EE_test3, cfg.Name);
-            EventCenter.Instance.Fire_Wait<string>((int)EventEnum.EE_test2, cfg.ChildViewName, 5);
+            EventCenter.Instance.Fire<string>((int)EventEnumHOT.EE_test3, cfg.Name);
+            EventCenter.Instance.Fire_Wait<string>((int)EventEnumHOT.EE_test2, cfg.ChildViewName, 5);
         }
 
         GComponent CheckGetChild_ClearOld(string maskName)
@@ -112,8 +112,8 @@ namespace ShopGift
             base.Dispose();
             _menuItems.Clear();
 
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test3, OnEventTest3);
-            EventCenter.Instance.UnBind<string>((int)EventEnum.EE_test2, OnEventTest2_Wait);
+            EventCenter.Instance.UnBind<string>((int)EventEnumHOT.EE_test3, OnEventTest3);
+            EventCenter.Instance.UnBind<string>((int)EventEnumHOT.EE_test2, OnEventTest2_Wait);
         }
 
         public void SetData(int cfgId)
