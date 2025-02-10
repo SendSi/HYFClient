@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame" designImageAlpha="30">
+  <displayList>
+    <component id="n7_xbay" name="closeButton" src="tv1v1a" fileName="components/com_btn_close.xml" pkg="2r331opv" xy="0,0"/>
+    <loader id="n99_t16b" name="iconBg" xy="50,60" size="1020,680" alpha="0.6" url="ui://791wrm7st16be" align="center" vAlign="middle">
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+    <list id="n48_7a5s" name="itemList" xy="50,60" size="1020,680" layout="flow_hz" selectionMode="none" defaultItem="ui://791wrm7st16b1ygcgac">
+      <relation target="" sidePair=""/>
+      <relation target="n99_t16b" sidePair="left-left,top-top"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n98_nkto" name="btnGoto" src="c4umz9cnc" fileName="components/com_btn_001.xml" pkg="2r331opv" xy="1135,78">
+      <relation target="" sidePair="center-center,middle-middle"/>
+      <Button title="加载"/>
+    </component>
+  </displayList>
+</component>
