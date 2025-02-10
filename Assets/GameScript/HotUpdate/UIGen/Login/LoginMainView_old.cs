@@ -5,18 +5,15 @@ using FairyGUI.Utils;
 
 namespace Login
 {
-    public partial class LoginMainView : GComponent
+    public partial class LoginMainView_old : GComponent
     {
-        public GLoader _bg0;
-        public GLoader _bg1;
-        public GLoader _bg2;
+        public GLoader _bg;
         public GButton _noticeBtn;
         public GButton _accountBtn;
         public GButton _cfgBtn;
         public GButton _serviceBtn;
         public GButton _effectBtn;
         public GButton _stopBtn;
-        public GButton _testBtn;
         public GGroup _left;
         public GTextField _title_version;
         public GButton _ageBtn;
@@ -28,30 +25,24 @@ namespace Login
         public GTextField _title_03;
         public GTextField _title_04;
         public GComboBox _languCom;
-        public Transition _tMove0;
-        public Transition _tMove1;
-        public Transition _tMove2;
-        public const string URL = "ui://byy9k3gh7oize";
+        public const string URL = "ui://byy9k3ghezv21ygcga7";
 
-        public static LoginMainView CreateInstance()
+        public static LoginMainView_old CreateInstance()
         {
-            return (LoginMainView)UIPackage.CreateObject("Login", "LoginMainView");
+            return (LoginMainView_old)UIPackage.CreateObject("Login", "LoginMainView_old");
         }
 
         public override void ConstructFromXML(XML xml)
         {
             base.ConstructFromXML(xml);
 
-            _bg0 = (GLoader)GetChild("bg0");
-            _bg1 = (GLoader)GetChild("bg1");
-            _bg2 = (GLoader)GetChild("bg2");
+            _bg = (GLoader)GetChild("bg");
             _noticeBtn = (GButton)GetChild("noticeBtn");
             _accountBtn = (GButton)GetChild("accountBtn");
             _cfgBtn = (GButton)GetChild("cfgBtn");
             _serviceBtn = (GButton)GetChild("serviceBtn");
             _effectBtn = (GButton)GetChild("effectBtn");
             _stopBtn = (GButton)GetChild("stopBtn");
-            _testBtn = (GButton)GetChild("testBtn");
             _left = (GGroup)GetChild("left");
             _title_version = (GTextField)GetChild("title_version");
             _ageBtn = (GButton)GetChild("ageBtn");
@@ -63,9 +54,6 @@ namespace Login
             _title_03 = (GTextField)GetChild("title_03");
             _title_04 = (GTextField)GetChild("title_04");
             _languCom = (GComboBox)GetChild("languCom");
-            _tMove0 = GetTransition("tMove0");
-            _tMove1 = GetTransition("tMove1");
-            _tMove2 = GetTransition("tMove2");
         }
     }
 }

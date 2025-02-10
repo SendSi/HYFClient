@@ -7,6 +7,7 @@ namespace PuzzlePKG
 {
     public partial class PuzzleMainView : GComponent
     {
+        public GGraph _bg;
         public GButton _closeButton;
         public GLoader _iconBg;
         public GButton _btnGoto;
@@ -35,30 +36,12 @@ namespace PuzzlePKG
         public GButton _44;
         public GButton _45;
         public GGroup _bgTop;
-        public Item_Puzzle _110;
-        public Item_Puzzle _111;
-        public Item_Puzzle _112;
-        public Item_Puzzle _113;
-        public Item_Puzzle _114;
-        public Item_Puzzle _115;
-        public Item_Puzzle _120;
-        public Item_Puzzle _121;
-        public Item_Puzzle _122;
-        public Item_Puzzle _123;
-        public Item_Puzzle _124;
-        public Item_Puzzle _125;
-        public Item_Puzzle _130;
-        public Item_Puzzle _131;
-        public Item_Puzzle _132;
-        public Item_Puzzle _133;
-        public Item_Puzzle _134;
-        public Item_Puzzle _135;
-        public Item_Puzzle _140;
-        public Item_Puzzle _141;
-        public Item_Puzzle _142;
-        public Item_Puzzle _143;
-        public Item_Puzzle _144;
-        public Item_Puzzle _145;
+        public Item_Puzzle_TL _110;
+        public Item_Puzzle_T1 _111;
+        public Item_Puzzle_T2 _112;
+        public Item_Puzzle_T1 _113;
+        public Item_Puzzle_T2 _114;
+        public Item_Puzzle_TR _115;
         public GGroup _frontTop;
         public const string URL = "ui://791wrm7st16bl7";
 
@@ -71,6 +54,7 @@ namespace PuzzlePKG
         {
             base.ConstructFromXML(xml);
 
+            _bg = (GGraph)GetChild("bg");
             _closeButton = (GButton)GetChild("closeButton");
             _iconBg = (GLoader)GetChild("iconBg");
             _btnGoto = (GButton)GetChild("btnGoto");
@@ -99,30 +83,12 @@ namespace PuzzlePKG
             _44 = (GButton)GetChild("44");
             _45 = (GButton)GetChild("45");
             _bgTop = (GGroup)GetChild("bgTop");
-            _110 = (Item_Puzzle)GetChild("110");
-            _111 = (Item_Puzzle)GetChild("111");
-            _112 = (Item_Puzzle)GetChild("112");
-            _113 = (Item_Puzzle)GetChild("113");
-            _114 = (Item_Puzzle)GetChild("114");
-            _115 = (Item_Puzzle)GetChild("115");
-            _120 = (Item_Puzzle)GetChild("120");
-            _121 = (Item_Puzzle)GetChild("121");
-            _122 = (Item_Puzzle)GetChild("122");
-            _123 = (Item_Puzzle)GetChild("123");
-            _124 = (Item_Puzzle)GetChild("124");
-            _125 = (Item_Puzzle)GetChild("125");
-            _130 = (Item_Puzzle)GetChild("130");
-            _131 = (Item_Puzzle)GetChild("131");
-            _132 = (Item_Puzzle)GetChild("132");
-            _133 = (Item_Puzzle)GetChild("133");
-            _134 = (Item_Puzzle)GetChild("134");
-            _135 = (Item_Puzzle)GetChild("135");
-            _140 = (Item_Puzzle)GetChild("140");
-            _141 = (Item_Puzzle)GetChild("141");
-            _142 = (Item_Puzzle)GetChild("142");
-            _143 = (Item_Puzzle)GetChild("143");
-            _144 = (Item_Puzzle)GetChild("144");
-            _145 = (Item_Puzzle)GetChild("145");
+            _110 = (Item_Puzzle_TL)GetChild("110");
+            _111 = (Item_Puzzle_T1)GetChild("111");
+            _112 = (Item_Puzzle_T2)GetChild("112");
+            _113 = (Item_Puzzle_T1)GetChild("113");
+            _114 = (Item_Puzzle_T2)GetChild("114");
+            _115 = (Item_Puzzle_TR)GetChild("115");
             _frontTop = (GGroup)GetChild("frontTop");
         }
     }

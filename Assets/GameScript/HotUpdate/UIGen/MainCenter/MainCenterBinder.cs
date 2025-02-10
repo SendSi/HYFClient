@@ -27,7 +27,7 @@ namespace MainCenter
             UIObjectFactory.SetPackageItemExtension(chatBtn.URL, typeof(chatBtn));
             UIObjectFactory.SetPackageItemExtension(taskBtn.URL, typeof(taskBtn));
             UIObjectFactory.SetPackageItemExtension(FuncListEles.URL, typeof(FuncListEles));
-            UIObjectFactory.SetPackageItemExtension(main_taskitem.URL, typeof(main_taskitem));
+            UIObjectFactory.SetPackageItemExtension(MainLeftEles.URL, typeof(MainLeftEles));
             UIObjectFactory.SetPackageItemExtension(MainTopEles.URL, typeof(MainTopEles));
             UIObjectFactory.SetPackageItemExtension(generalIconBtn.URL, typeof(generalIconBtn));
             UIObjectFactory.SetPackageItemExtension(buildQueueBtn.URL, typeof(buildQueueBtn));

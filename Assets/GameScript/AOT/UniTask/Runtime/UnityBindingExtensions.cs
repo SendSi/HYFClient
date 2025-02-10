@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using UnityEngine;
+using FairyGUI;
 #if !UNITY_2019_1_OR_NEWER || UNITASK_UGUI_SUPPORT
 using UnityEngine.UI;
 #endif
@@ -81,6 +82,12 @@ namespace Cysharp.Threading.Tasks
         public static void BindTo<T>(this AsyncReactiveProperty<T> source, UnityEngine.UI.Text text, bool rebindOnError = true)
         {
             BindToCore(source, text, text.GetCancellationTokenOnDestroy(), rebindOnError).Forget();
+        }
+        
+        // 扩展方法：绑定 IUniTaskAsyncEnumerable<T> 到 GObject
+        public static void BindTo<T>(this IUniTaskAsyncEnumerable<T> source, GObject target, bool rebindOnError = true)
+        {
+            // BindToCore(source, target, target.GetCancellationTokenOnDestroy(), rebindOnError).Forget();
         }
 
         static async UniTaskVoid BindToCore<T>(IUniTaskAsyncEnumerable<T> source, UnityEngine.UI.Text text, CancellationToken cancellationToken, bool rebindOnError)

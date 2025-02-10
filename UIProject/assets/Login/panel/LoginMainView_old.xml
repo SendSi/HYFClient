@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750" initName="frame" designImageOffsetX="-165" designImageAlpha="29" designImageLayer="1">
   <displayList>
-    <loader id="n48_ezv2" name="bg0" xy="-170,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
-      <relation target="" sidePair="width-width,height-height"/>
-    </loader>
-    <loader id="n25_p781" name="bg1" xy="1500,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
-      <relation target="" sidePair="width-width,height-height"/>
-    </loader>
-    <loader id="n47_ezv2" name="bg2" xy="1500,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
+    <loader id="n25_p781" name="bg" xy="-170,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
       <relation target="" sidePair="width-width,height-height"/>
     </loader>
     <component id="n12_7oiz" name="noticeBtn" src="7oizh" fileName="components/interactive.xml" xy="16,52" size="98,98" group="n22_qbmb">
@@ -28,10 +22,7 @@
     <component id="n46_f54x" name="stopBtn" src="7oizh" fileName="components/interactive.xml" xy="16,552" size="98,98" group="n22_qbmb">
       <Button title="特停" icon="ui://byy9k3ghmpc836"/>
     </component>
-    <component id="n49_ezv2" name="testBtn" src="7oizh" fileName="components/interactive.xml" xy="730,191" size="98,98" group="n22_qbmb">
-      <Button title="特停" icon="ui://byy9k3ghmpc836"/>
-    </component>
-    <group id="n22_qbmb" name="left" xy="16,52" size="812,598" advanced="true">
+    <group id="n22_qbmb" name="left" xy="16,52" size="98,598" advanced="true">
       <relation target="" sidePair="left-left"/>
     </group>
     <text id="n37_qg41" name="title_version" xy="16,13" size="108,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="当前版本V1">
@@ -67,17 +58,4 @@
       </ComboBox>
     </component>
   </displayList>
-  <transition name="tMove0">
-    <item time="0" type="XY" target="n48_ezv2" tween="true" startValue="-170,-" endValue="-1840,-" duration="48" ease="Linear"/>
-  </transition>
-  <transition name="tMove1" autoPlayRepeat="10" autoPlayDelay="1">
-    <item time="0" type="XY" target="n25_p781" tween="true" startValue="1500,-" endValue="-170,-" duration="48" ease="Linear"/>
-    <item time="0" type="XY" target="n48_ezv2" value="-1840,-"/>
-    <item time="48" type="XY" target="n25_p781" tween="true" startValue="-170,-" endValue="-1840,-" duration="48" ease="Linear"/>
-  </transition>
-  <transition name="tMove2" autoPlayRepeat="10" autoPlayDelay="4">
-    <item time="0" type="XY" target="n47_ezv2" tween="true" startValue="1500,-" endValue="-170,-" duration="48" ease="Linear"/>
-    <item time="0" type="XY" target="n48_ezv2" value="-1840,-"/>
-    <item time="48" type="XY" target="n47_ezv2" tween="true" startValue="-170,-" endValue="-1840,-" duration="48" ease="Linear"/>
-  </transition>
 </component>

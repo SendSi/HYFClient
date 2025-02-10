@@ -9,6 +9,7 @@ using GMView;
 using GuidePKG;
 using HeroPKG;
 using PokerPKG;
+using PuzzlePKG;
 using SettingPKG;
 using ShopGift;
 using SmallGamePKG;
@@ -37,5 +38,6 @@ public class UIGenBinder
         HeroPKGBinder.BindAll();
         SmallGamePKGBinder.BindAll();
         AStarPKGBinder.BindAll();
+        PuzzlePKGBinder.BindAll();
     }
 }

@@ -27,13 +27,13 @@
       <item title="军团" icon="ui://4ni413latauyhz9czt" name="legion"/>
     </list>
     <group id="n109_pwz3" name="bottomEles" xy="0,614" size="1334,140" advanced="true"/>
-    <component id="n34_b6o0" name="topEles" src="xoe1n2" fileName="components/TopEles.xml" xy="0,0">
+    <component id="n34_b6o0" name="topEles" src="xoe1n2" fileName="components/MainTopEles.xml" xy="0,0">
       <relation target="" sidePair="rightext-right"/>
     </component>
+    <component id="n174_eh3a" name="leftEles" src="xoe1n0" fileName="components/MainLeftEles.xml" xy="6,153" size="208,347" controller="hideOpen,0"/>
     <component id="n154_quts" name="rightTeam" src="le3m1qp8vhq" fileName="components/main_team_right.xml" xy="1113,138">
       <relation target="" sidePair="middle-middle,right-right"/>
     </component>
-    <component id="n174_eh3a" name="leftTask" src="xoe1n0" fileName="components/main_taskitem.xml" xy="6,153" size="208,347" controller="hideOpen,0"/>
   </displayList>
   <transition name="quit" options="2">
     <item time="0" type="Alpha" target="n101_xoe1" value="1"/>

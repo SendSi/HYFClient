@@ -61,6 +61,7 @@ namespace MainCenter
 
         private main_team_right rightTeam;
         private MainTopEles topEles;
+        private MainLeftEles leftEles;
         private FuncListEles funcListEles;
 
         private void InitEles()
@@ -70,6 +71,9 @@ namespace MainCenter
 
             topEles = (MainTopEles)_topEles;
             topEles.OnInit();
+            
+            leftEles = (MainLeftEles)_leftEles;
+            leftEles.OnInit();
 
             funcListEles = (FuncListEles)_funcListEles;
             funcListEles.OnInit();
@@ -77,9 +81,10 @@ namespace MainCenter
 
         private void DisposeEles()
         {
-            topEles.Dispose();
-            funcListEles.Dispose();
-            rightTeam.Dispose();
+            topEles?.Dispose();
+            leftEles?.Dispose();
+            funcListEles?.Dispose();
+            rightTeam?.Dispose();
         }
 
         #endregion
