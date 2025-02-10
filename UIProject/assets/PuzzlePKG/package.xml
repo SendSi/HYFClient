@@ -18,6 +18,8 @@
     <image id="t16bc" name="TL.png" path="/images/mask/" exported="true"/>
     <image id="t16bd" name="TR.png" path="/images/mask/" exported="true"/>
     <image id="t16be" name="puzzle.png" path="/images/"/>
+    <component id="t16bf" name="PuzzleMainView_bak.xml" path="/panel/" exported="true"/>
+    <component id="t16bg" name="Item_Puzzle_bg.xml" path="/components/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
