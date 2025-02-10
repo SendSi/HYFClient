@@ -5,7 +5,7 @@ using FairyGUI.Utils;
 
 namespace MainCenter
 {
-    public partial class main_taskitem : GComponent
+    public partial class MainLeftEles : GComponent
     {
         public Controller _hideOpen;
         public Controller _state;
@@ -13,11 +13,12 @@ namespace MainCenter
         public GTextField _title;
         public GButton _foldBtn;
         public taskBtn _taskBtn;
+        public GButton _otherBtn;
         public const string URL = "ui://4ni413laxoe1n0";
 
-        public static main_taskitem CreateInstance()
+        public static MainLeftEles CreateInstance()
         {
-            return (main_taskitem)UIPackage.CreateObject("MainCenter", "main_taskitem");
+            return (MainLeftEles)UIPackage.CreateObject("MainCenter", "MainLeftEles");
         }
 
         public override void ConstructFromXML(XML xml)
@@ -30,6 +31,7 @@ namespace MainCenter
             _title = (GTextField)GetChild("title");
             _foldBtn = (GButton)GetChild("foldBtn");
             _taskBtn = (taskBtn)GetChild("taskBtn");
+            _otherBtn = (GButton)GetChild("otherBtn");
         }
     }
 }

@@ -2,7 +2,6 @@
 <packageDescription id="791wrm7s">
   <resources>
     <component id="t16bl7" name="PuzzleMainView.xml" path="/panel/" exported="true"/>
-    <component id="t16b1ygcgac" name="Item_Puzzle.xml" path="/components/" exported="true"/>
     <image id="t16b0" name="B1.png" path="/images/mask/" exported="true"/>
     <image id="t16b1" name="B2.png" path="/images/mask/" exported="true"/>
     <image id="t16b2" name="BL.png" path="/images/mask/" exported="true"/>
@@ -17,9 +16,13 @@
     <image id="t16bb" name="T2.png" path="/images/mask/" exported="true"/>
     <image id="t16bc" name="TL.png" path="/images/mask/" exported="true"/>
     <image id="t16bd" name="TR.png" path="/images/mask/" exported="true"/>
-    <image id="t16be" name="puzzle.png" path="/images/"/>
+    <image id="t16be" name="puzzle.png" path="/images/" exported="true"/>
     <component id="t16bf" name="PuzzleMainView_bak.xml" path="/panel/" exported="true"/>
     <component id="t16bg" name="Item_Puzzle_bg.xml" path="/components/" exported="true"/>
+    <component id="jo4c1ygcgad" name="Item_Puzzle_TL.xml" path="/components/" exported="true"/>
+    <component id="jo4c1ygcgaf" name="Item_Puzzle_T1.xml" path="/components/" exported="true"/>
+    <component id="jo4c1ygcgag" name="Item_Puzzle_T2.xml" path="/components/" exported="true"/>
+    <component id="jo4c1ygcgah" name="Item_Puzzle_TR.xml" path="/components/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

@@ -49,7 +49,7 @@
     <image id="xoe1mx" name="city_btn_collection.png" path="/images2/"/>
     <image id="xoe1my" name="city_btn_share.png" path="/images2/"/>
     <component id="xoe1mz" name="FuncListEles.xml" path="/components/" exported="true"/>
-    <component id="xoe1n0" name="main_taskitem.xml" path="/components/"/>
+    <component id="xoe1n0" name="MainLeftEles.xml" path="/components/" exported="true"/>
     <component id="xoe1n1" name="mask_btn_task.xml" path="/components/"/>
     <component id="xoe1n2" name="MainTopEles.xml" path="/components/" exported="true"/>
     <image id="xoe1n5" name="main_map.png" path="/images/map/"/>

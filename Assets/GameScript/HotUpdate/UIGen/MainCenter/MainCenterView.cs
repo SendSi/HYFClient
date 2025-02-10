@@ -16,8 +16,8 @@ namespace MainCenter
         public GList _outInList;
         public GGroup _bottomEles;
         public MainTopEles _topEles;
+        public MainLeftEles _leftEles;
         public main_team_right _rightTeam;
-        public main_taskitem _leftTask;
         public Transition _quit;
         public Transition _approach;
         public Transition _a_personalboss;
@@ -42,8 +42,8 @@ namespace MainCenter
             _outInList = (GList)GetChild("outInList");
             _bottomEles = (GGroup)GetChild("bottomEles");
             _topEles = (MainTopEles)GetChild("topEles");
+            _leftEles = (MainLeftEles)GetChild("leftEles");
             _rightTeam = (main_team_right)GetChild("rightTeam");
-            _leftTask = (main_taskitem)GetChild("leftTask");
             _quit = GetTransition("quit");
             _approach = GetTransition("approach");
             _a_personalboss = GetTransition("a_personalboss");

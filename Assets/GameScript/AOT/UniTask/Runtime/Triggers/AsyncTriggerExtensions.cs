@@ -3,6 +3,7 @@
 using System.Threading;
 using UnityEngine;
 using Cysharp.Threading.Tasks.Triggers;
+using FairyGUI;
 
 namespace Cysharp.Threading.Tasks
 {
@@ -15,6 +16,7 @@ namespace Cysharp.Threading.Tasks
         {
             return monoBehaviour.destroyCancellationToken;
         }
+        
 
 #endif
 

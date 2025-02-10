@@ -16,20 +16,20 @@
       <gearSize controller="hideOpen" pages="1,3,0" values="206,88,1,1|206,157,1,1|206,227,1,1" tween="true" duration=".15"/>
       <gearLook controller="hideOpen" pages="1,3,0" values="0.8,0,0,0|0.8,0,0,0|0.8,0,0,0" tween="true"/>
     </image>
-    <image id="n14_ptr5" name="n14" src="o7xi1ygcgrt" fileName="images4/main_bg04.png" xy="9,72" size="188,36" alpha="0.6" pkg="2r331opv"/>
-    <component id="n13_ptr5" name="taskList" src="l21a1ygcfht" fileName="components/components_new/main/main_taskitem_list.xml" xy="0,110" size="206,86">
+    <image id="n14_ptr5" name="n14" src="o7xi1ygcgrt" fileName="_new/main_bg04.png" pkg="2r331opv" xy="9,72" size="188,36" alpha="0.6"/>
+    <component id="n13_ptr5" name="taskList" src="l21a1ygcfht" fileName="components/main_taskitem_list.xml" xy="0,110" size="206,86">
       <gearDisplay controller="hideOpen" pages="0,3"/>
     </component>
     <text id="n12_gqgl" name="title" xy="13,78" size="162,25" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" autoSize="none" autoClearText="true" text="第一章:守卫王城(1/7)">
       <gearDisplay controller="hideOpen" pages="0,3,1"/>
     </text>
-    <component id="n6_o4i9" name="foldBtn" src="eh3a1ygcfje" fileName="components/components_new/main/main_task_hide3.xml" xy="62,188" pivot="0.5,0.5">
+    <component id="n6_o4i9" name="foldBtn" src="eh3a1ygcfje" fileName="components/main_task_hide3.xml" xy="62,188" pivot="0.5,0.5">
       <Button icon="ui://4ni413la10t6x1ygcfjf"/>
     </component>
-    <component id="n10_rjev" name="taskBtn" src="rjevhz9d2l" fileName="components/components_new/main/taskBtn.xml" xy="1,-15" size="98,98">
+    <component id="n10_rjev" name="taskBtn" src="rjevhz9d2l" fileName="components/taskBtn.xml" xy="1,-15" size="98,98">
       <Button title="Task"/>
     </component>
-    <component id="n15_eh3a" name="n15" src="eh3a1ygcfjf" fileName="components/components_new/main/secretcodeBtn.xml" xy="123,1" size="80,73"/>
+    <component id="n15_eh3a" name="otherBtn" src="eh3a1ygcfjf" fileName="components/secretcodeBtn.xml" xy="123,1" size="80,73"/>
   </displayList>
   <relation target="n0_xoe1" sidePair="width-width,height-height"/>
 </component>

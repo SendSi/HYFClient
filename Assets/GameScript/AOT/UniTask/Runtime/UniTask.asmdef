@@ -1,7 +1,9 @@
 {
     "name": "UniTask",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:1182dffdca5b12d47a7f79c3ce3e21c5"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
