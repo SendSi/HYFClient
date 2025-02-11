@@ -1,3 +1,4 @@
 {
-	"name": "Reporter"
+	"name": "Reporter",
+	"references":[ "GUID:3efbc8aa154f4cf40882eb0d11aa3ad2" ]
 }

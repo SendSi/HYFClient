@@ -15,4 +15,6 @@ public enum EventEnumAOT
     EE_PackageVersionUpdateFailed=1010,//资源版本号更新失败
     EE_PatchManifestUpdateFailed=1011,//补丁清单更新失败
     EE_WebFileDownloadFailed=1012,//网络文件下载失败
+    
+    EE_NumOfCircleToShow=1013,//划上几圈 就出现log视图  事件
 }
