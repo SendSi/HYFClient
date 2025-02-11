@@ -17,7 +17,6 @@
     <image id="t16bc" name="TL.png" path="/images/mask/" exported="true"/>
     <image id="t16bd" name="TR.png" path="/images/mask/" exported="true"/>
     <image id="t16be" name="puzzle.png" path="/images/" exported="true"/>
-    <component id="t16bf" name="PuzzleMainView_bak.xml" path="/panel/" exported="true"/>
     <component id="t16bg" name="Item_Puzzle_bg.xml" path="/components/" exported="true"/>
     <component id="jo4c1ygcgad" name="Item_Puzzle_TL.xml" path="/components/" exported="true"/>
     <component id="jo4c1ygcgaf" name="Item_Puzzle_T1.xml" path="/components/" exported="true"/>
@@ -33,6 +32,7 @@
     <component id="l4pl1ygcgap" name="Item_Puzzle_R2.xml" path="/components/" exported="true"/>
     <component id="l4pl1ygcgaq" name="Item_Puzzle_C1.xml" path="/components/" exported="true"/>
     <component id="l4pl1ygcgar" name="Item_Puzzle_C2.xml" path="/components/" exported="true"/>
+    <component id="xgu61ygcgas" name="PuzzleMainView_bak.xml" path="/panel/"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

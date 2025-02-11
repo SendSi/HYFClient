@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="170,170" extention="Button" mask="n6_jo4c">
+<component size="170,170" extention="Button" mask="n6_jo4c" hitTest="n6_jo4c">
   <displayList>
-    <loader id="n3_105u8" name="icon" xy="-178,0" size="1020,680" url="ui://791wrm7st16be" align="center" vAlign="middle">
+    <loader id="n3_105u8" name="icon" xy="0,0" size="1020,680" url="ui://791wrm7st16be" align="center" vAlign="middle">
       <relation target="" sidePair="width-width,height-height"/>
     </loader>
     <image id="n6_jo4c" name="mask" src="t16bc" fileName="images/mask/TL.png" xy="-63,-65" size="300,300"/>

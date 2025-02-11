@@ -20,7 +20,6 @@ namespace MainCenter
 
         private void OnClickOtherBtn()
         {
-            Debug.LogError("???");
             ProxyPuzzlePKGModule.Instance.OpenPuzzleMainView();
         }
 
