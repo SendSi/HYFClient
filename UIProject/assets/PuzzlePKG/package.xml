@@ -23,6 +23,16 @@
     <component id="jo4c1ygcgaf" name="Item_Puzzle_T1.xml" path="/components/" exported="true"/>
     <component id="jo4c1ygcgag" name="Item_Puzzle_T2.xml" path="/components/" exported="true"/>
     <component id="jo4c1ygcgah" name="Item_Puzzle_TR.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgai" name="Item_Puzzle_BL.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgaj" name="Item_Puzzle_BR.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgak" name="Item_Puzzle_B1.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgal" name="Item_Puzzle_B2.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgam" name="Item_Puzzle_L1.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgan" name="Item_Puzzle_L2.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgao" name="Item_Puzzle_R1.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgap" name="Item_Puzzle_R2.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgaq" name="Item_Puzzle_C1.xml" path="/components/" exported="true"/>
+    <component id="l4pl1ygcgar" name="Item_Puzzle_C2.xml" path="/components/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

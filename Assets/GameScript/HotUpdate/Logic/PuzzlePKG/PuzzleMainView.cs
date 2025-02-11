@@ -16,12 +16,10 @@ namespace PuzzlePKG
             mPuzzleList = CfgLubanMgr.Instance.globalTab.TbPuzzleConfig.DataList;
             foreach (var item in mPuzzleList)
             {
-                // GetChildByPath($"{item.Id}.mask").icon = item.UrlMask;
-                // GetChild($"{item.Id}.mask").icon = item.UrlMask;
+                var itemIcon = GetChildByPath($"{item.Id}.icon");
+                itemIcon.SetXY(item.IconPos.Xx,item.IconPos.Yy);
             }
         }
-
-
 
         private void OnClickCloseBtn()
         {

@@ -12,47 +12,46 @@ using Luban;
 
 namespace cfg
 {
-public sealed partial class PuzzleConfig : Luban.BeanBase
+public sealed partial class Pos3Int : Luban.BeanBase
 {
-    public PuzzleConfig(ByteBuf _buf) 
+    public Pos3Int(ByteBuf _buf) 
     {
-        Id = _buf.ReadInt();
-        UrlMask = _buf.ReadString();
-        IconPos = Pos2Int.DeserializePos2Int(_buf);
+        Xx = _buf.ReadInt();
+        Yy = _buf.ReadInt();
+        Zz = _buf.ReadInt();
     }
 
-    public static PuzzleConfig DeserializePuzzleConfig(ByteBuf _buf)
+    public static Pos3Int DeserializePos3Int(ByteBuf _buf)
     {
-        return new PuzzleConfig(_buf);
+        return new Pos3Int(_buf);
     }
 
     /// <summary>
-    /// key值
+    /// 位置x值
     /// </summary>
-    public readonly int Id;
+    public readonly int Xx;
     /// <summary>
-    /// 组件
+    /// 位置y值
     /// </summary>
-    public readonly string UrlMask;
+    public readonly int Yy;
     /// <summary>
-    /// 位置
+    /// 位置z值
     /// </summary>
-    public readonly Pos2Int IconPos;
+    public readonly int Zz;
    
-    public const int __ID__ = -1306596032;
+    public const int __ID__ = 1271484144;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
-        IconPos?.ResolveRef(tables);
     }
 
     public override string ToString()
     {
         return "{ "
-        + "id:" + Id + ","
-        + "urlMask:" + UrlMask + ","
-        + "iconPos:" + IconPos + ","
+        + "xx:" + Xx + ","
+        + "yy:" + Yy + ","
+        + "zz:" + Zz + ","
         + "}";
     }
 }
