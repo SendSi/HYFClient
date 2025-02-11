@@ -284,7 +284,10 @@ public class Reporter : MonoBehaviour
 
 	public Vector2 size = new Vector2(32, 32);
 	public float maxSize = 20;
-	public int numOfCircleToShow = 1;
+	/// <summary>
+	/// 划上几圈 就出现了
+	/// </summary>
+	public int numOfCircleToShow = 2;
 	static string[] scenes;
 	string currentScene;
 	string filterText = "";
@@ -308,11 +311,15 @@ public class Reporter : MonoBehaviour
 #endif
     }
 
+
+
     private void OnDestroy()
     {
 #if UNITY_CHANGE3
         SceneManager.sceneLoaded -= _OnLevelWasLoaded;
 #endif
+	    
+	    EventCenter.Instance.UnBind<int>((int)EventEnumAOT.EE_NumOfCircleToShow,OnEventNumOfCircleToShow);
     }
 
     void OnEnable()
@@ -597,6 +604,13 @@ public class Reporter : MonoBehaviour
 	{
 		logDate = System.DateTime.Now.ToString();
 		//StartCoroutine(readInfo());
+		
+		EventCenter.Instance.Bind<int>((int)EventEnumAOT.EE_NumOfCircleToShow,OnEventNumOfCircleToShow);
+	}
+
+	private void OnEventNumOfCircleToShow(int arg0)
+	{
+		numOfCircleToShow = arg0;
 	}
 
 	//clear all logs
@@ -1833,8 +1847,16 @@ public class Reporter : MonoBehaviour
 		}
 	}
 
+	private bool isReporterEnabled = true;
+
+	public void SetTmpReportEnable(bool isShow)
+	{
+		isReporterEnabled = isShow;
+	}
 	void Update()
 	{
+		if(isReporterEnabled==false)return;
+		
 		fpsText = fps.ToString("0.000");
 		gcTotalMemory = (((float)System.GC.GetTotalMemory(false)) / 1024 / 1024);
 		//addSample();

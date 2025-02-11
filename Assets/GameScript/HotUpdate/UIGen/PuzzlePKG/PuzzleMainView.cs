@@ -10,7 +10,7 @@ namespace PuzzlePKG
         public GGraph _bg;
         public GButton _closeButton;
         public GLoader _iconBg;
-        public GButton _btnGoto;
+        public GGraph _iconRect;
         public Item_Puzzle_TL _110;
         public Item_Puzzle_T1 _111;
         public Item_Puzzle_T2 _112;
@@ -50,7 +50,7 @@ namespace PuzzlePKG
             _bg = (GGraph)GetChild("bg");
             _closeButton = (GButton)GetChild("closeButton");
             _iconBg = (GLoader)GetChild("iconBg");
-            _btnGoto = (GButton)GetChild("btnGoto");
+            _iconRect = (GGraph)GetChild("iconRect");
             _110 = (Item_Puzzle_TL)GetChild("110");
             _111 = (Item_Puzzle_T1)GetChild("111");
             _112 = (Item_Puzzle_T2)GetChild("112");
