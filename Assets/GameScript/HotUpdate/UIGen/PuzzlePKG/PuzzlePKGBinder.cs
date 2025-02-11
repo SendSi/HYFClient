@@ -22,7 +22,6 @@ namespace PuzzlePKG
             UIObjectFactory.SetPackageItemExtension(Item_Puzzle_R2.URL, typeof(Item_Puzzle_R2));
             UIObjectFactory.SetPackageItemExtension(Item_Puzzle_C1.URL, typeof(Item_Puzzle_C1));
             UIObjectFactory.SetPackageItemExtension(Item_Puzzle_C2.URL, typeof(Item_Puzzle_C2));
-            UIObjectFactory.SetPackageItemExtension(PuzzleMainView_bak.URL, typeof(PuzzleMainView_bak));
             UIObjectFactory.SetPackageItemExtension(PuzzleMainView.URL, typeof(PuzzleMainView));
         }
     }

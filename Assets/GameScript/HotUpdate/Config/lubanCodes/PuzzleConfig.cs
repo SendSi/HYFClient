@@ -19,6 +19,7 @@ public sealed partial class PuzzleConfig : Luban.BeanBase
         Id = _buf.ReadInt();
         UrlMask = _buf.ReadString();
         IconPos = Pos2Int.DeserializePos2Int(_buf);
+        CellPos = Pos2Int.DeserializePos2Int(_buf);
     }
 
     public static PuzzleConfig DeserializePuzzleConfig(ByteBuf _buf)
@@ -35,9 +36,13 @@ public sealed partial class PuzzleConfig : Luban.BeanBase
     /// </summary>
     public readonly string UrlMask;
     /// <summary>
-    /// 位置
+    /// icon位置
     /// </summary>
     public readonly Pos2Int IconPos;
+    /// <summary>
+    /// cell位置,0,0开始
+    /// </summary>
+    public readonly Pos2Int CellPos;
    
     public const int __ID__ = -1306596032;
     public override int GetTypeId() => __ID__;
@@ -45,6 +50,7 @@ public sealed partial class PuzzleConfig : Luban.BeanBase
     public  void ResolveRef(Tables tables)
     {
         IconPos?.ResolveRef(tables);
+        CellPos?.ResolveRef(tables);
     }
 
     public override string ToString()
@@ -53,6 +59,7 @@ public sealed partial class PuzzleConfig : Luban.BeanBase
         + "id:" + Id + ","
         + "urlMask:" + UrlMask + ","
         + "iconPos:" + IconPos + ","
+        + "cellPos:" + CellPos + ","
         + "}";
     }
 }

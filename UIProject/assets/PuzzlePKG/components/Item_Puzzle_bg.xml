@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="170,170" extention="Button">
   <displayList>
-    <graph id="n5_t16b" name="n5" xy="0,0" size="170,170" alpha="0.3" type="rect" lineSize="0" fillColor="#ff999999"/>
+    <graph id="n5_t16b" name="n5" xy="0,0" size="170,170" alpha="0.3" type="rect" lineSize="0" fillColor="#ff999999">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
   </displayList>
   <Button mode="Radio"/>
 </component>
