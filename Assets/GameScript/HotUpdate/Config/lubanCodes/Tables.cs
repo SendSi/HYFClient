@@ -26,6 +26,7 @@ public partial class Tables
     public TbMainUIBtnConfig TbMainUIBtnConfig {get; }
     public TbPokerConfig TbPokerConfig {get; }
     public TbPuzzleConfig TbPuzzleConfig {get; }
+    public TbHitHamsterConfig TbHitHamsterConfig {get; }
     public TbRechargeConfig TbRechargeConfig {get; }
     public TbShopConfig TbShopConfig {get; }
     public TbShopGiftMenuConfig TbShopGiftMenuConfig {get; }
@@ -51,6 +52,7 @@ public partial class Tables
         TbMainUIBtnConfig = new TbMainUIBtnConfig(loader("tbmainuibtnconfig"));
         TbPokerConfig = new TbPokerConfig(loader("tbpokerconfig"));
         TbPuzzleConfig = new TbPuzzleConfig(loader("tbpuzzleconfig"));
+        TbHitHamsterConfig = new TbHitHamsterConfig(loader("tbhithamsterconfig"));
         TbRechargeConfig = new TbRechargeConfig(loader("tbrechargeconfig"));
         TbShopConfig = new TbShopConfig(loader("tbshopconfig"));
         TbShopGiftMenuConfig = new TbShopGiftMenuConfig(loader("tbshopgiftmenuconfig"));
@@ -78,6 +80,7 @@ public partial class Tables
         TbMainUIBtnConfig.ResolveRef(this);
         TbPokerConfig.ResolveRef(this);
         TbPuzzleConfig.ResolveRef(this);
+        TbHitHamsterConfig.ResolveRef(this);
         TbRechargeConfig.ResolveRef(this);
         TbShopConfig.ResolveRef(this);
         TbShopGiftMenuConfig.ResolveRef(this);

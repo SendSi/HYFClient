@@ -8,7 +8,7 @@ namespace HitHamsterPKG
     {
         private int mSumTime = 50; //总时间 30秒
         private bool mIsPlaying = false;
-
+        private int hpValue = 5;
 
         public override void OnInit()
         {
@@ -18,9 +18,25 @@ namespace HitHamsterPKG
             _closeButton.onClick.Add(OnClickCloseBtn);
             _hamsterList.itemRenderer = OnRenderHamsterList;
             _hamsterList.onClickItem.Add(OnClickItemHamsterList);
+            _hamsterList.numItems = 9;
             _stateCtrl.onChanged.Add(OnChangedStateCtrl);
+
+            hpValue = 1;
+            _hpList.itemRenderer = OnRenderHpList;
+            _hpList.numItems = 5;
         }
 
+        void SetUIHpValue(int value)
+        {
+            hpValue = value;
+            _hpList.numItems = value;
+        }
+
+        private void OnRenderHpList(int index, GObject item)
+        {
+            var itemHp = item as Item_Hp;
+            itemHp._stateCtrl.selectedIndex = (hpValue > index ? 1 : 0);
+        }
 
         private void OnClickItemHamsterList(EventContext context)
         {
@@ -30,8 +46,9 @@ namespace HitHamsterPKG
 
         private void OnRenderHamsterList(int index, GObject item)
         {
-            // var itemHamster = item as Item_MainHamster;
-            // itemHamster.SetData(hamsterData);
+            var itemHamster = item as Item_MainHamster;
+            itemHamster.OnInit();
+            itemHamster.SetData();
         }
 
         private void OnClickCloseBtn()
@@ -91,7 +108,6 @@ namespace HitHamsterPKG
                 Timers.inst.Remove(OnPlayingTimer); //取消计时
             }
         }
-
 
         public void SetData(int cfgId)
         {

@@ -8,7 +8,9 @@ namespace HitHamsterPKG
     public partial class Item_MainHamster : GComponent
     {
         public Controller _button;
+        public GImage _bottomBg;
         public Item_MaskHamster _hamster;
+        public GImage _bottomBg2;
         public GGraph _hit;
         public GTextField _scoreText;
         public Transition _TrScore;
@@ -24,7 +26,9 @@ namespace HitHamsterPKG
             base.ConstructFromXML(xml);
 
             _button = GetController("button");
+            _bottomBg = (GImage)GetChild("bottomBg");
             _hamster = (Item_MaskHamster)GetChild("hamster");
+            _bottomBg2 = (GImage)GetChild("bottomBg2");
             _hit = (GGraph)GetChild("hit");
             _scoreText = (GTextField)GetChild("scoreText");
             _TrScore = GetTransition("TrScore");
