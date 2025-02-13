@@ -2,16 +2,16 @@
 
 using FairyGUI;
 
-namespace SmallGamePKG
+namespace HitHamsterPKG
 {
-    public class SmallGamePKGBinder
+    public class HitHamsterPKGBinder
     {
         public static void BindAll()
         {
             UIObjectFactory.SetPackageItemExtension(Item_Hp.URL, typeof(Item_Hp));
             UIObjectFactory.SetPackageItemExtension(sliderBar.URL, typeof(sliderBar));
             UIObjectFactory.SetPackageItemExtension(Item_MaskHamster.URL, typeof(Item_MaskHamster));
-            UIObjectFactory.SetPackageItemExtension(HamsterGameView.URL, typeof(HamsterGameView));
+            UIObjectFactory.SetPackageItemExtension(HitHamsterMainView.URL, typeof(HitHamsterMainView));
             UIObjectFactory.SetPackageItemExtension(Item_MainHamster.URL, typeof(Item_MainHamster));
         }
     }

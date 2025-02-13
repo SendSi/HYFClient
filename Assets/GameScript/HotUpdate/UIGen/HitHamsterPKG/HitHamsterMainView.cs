@@ -3,9 +3,9 @@
 using FairyGUI;
 using FairyGUI.Utils;
 
-namespace SmallGamePKG
+namespace HitHamsterPKG
 {
-    public partial class HamsterGameView : GComponent
+    public partial class HitHamsterMainView : GComponent
     {
         public Controller _stateCtrl;
         public Controller _timeCtrl;
@@ -32,9 +32,9 @@ namespace SmallGamePKG
         public Transition _t1;
         public const string URL = "ui://q0kdbd65ntf2eae";
 
-        public static HamsterGameView CreateInstance()
+        public static HitHamsterMainView CreateInstance()
         {
-            return (HamsterGameView)UIPackage.CreateObject("SmallGamePKG", "HamsterGameView");
+            return (HitHamsterMainView)UIPackage.CreateObject("HitHamsterPKG", "HitHamsterMainView");
         }
 
         public override void ConstructFromXML(XML xml)

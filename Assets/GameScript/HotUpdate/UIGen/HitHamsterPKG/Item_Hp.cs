@@ -3,7 +3,7 @@
 using FairyGUI;
 using FairyGUI.Utils;
 
-namespace SmallGamePKG
+namespace HitHamsterPKG
 {
     public partial class Item_Hp : GComponent
     {
@@ -12,7 +12,7 @@ namespace SmallGamePKG
 
         public static Item_Hp CreateInstance()
         {
-            return (Item_Hp)UIPackage.CreateObject("SmallGamePKG", "Item_Hp");
+            return (Item_Hp)UIPackage.CreateObject("HitHamsterPKG", "Item_Hp");
         }
 
         public override void ConstructFromXML(XML xml)

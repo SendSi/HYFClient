@@ -1,7 +1,7 @@
 using FairyGUI;
 using FairyGUI.Utils;
 
-namespace SmallGamePKG
+namespace HitHamsterPKG
 {
     public partial class Item_MainHamster : GComponent
     {

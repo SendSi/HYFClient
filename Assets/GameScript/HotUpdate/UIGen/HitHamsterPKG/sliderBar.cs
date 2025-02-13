@@ -3,7 +3,7 @@
 using FairyGUI;
 using FairyGUI.Utils;
 
-namespace SmallGamePKG
+namespace HitHamsterPKG
 {
     public partial class sliderBar : GProgressBar
     {
@@ -13,7 +13,7 @@ namespace SmallGamePKG
 
         public static sliderBar CreateInstance()
         {
-            return (sliderBar)UIPackage.CreateObject("SmallGamePKG", "sliderBar");
+            return (sliderBar)UIPackage.CreateObject("HitHamsterPKG", "sliderBar");
         }
 
         public override void ConstructFromXML(XML xml)

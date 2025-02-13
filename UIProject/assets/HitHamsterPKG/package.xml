@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <packageDescription id="q0kdbd65">
   <resources>
-    <component id="ntf2eae" name="HamsterGameView.xml" path="/View/" exported="true"/>
+    <component id="ntf2eae" name="HitHamsterMainView.xml" path="/View/" exported="true"/>
     <component id="ntf2eaf" name="Item_MainHamster.xml" path="/Com/" exported="true"/>
     <component id="fxl2eak" name="Item_MaskHamster.xml" path="/Com/" exported="true"/>
     <image id="glu4em6" name="pub_ic_024.png" path="/Img/" exported="true"/>

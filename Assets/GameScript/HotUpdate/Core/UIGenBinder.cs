@@ -8,11 +8,11 @@ using CommonPKG;
 using GMView;
 using GuidePKG;
 using HeroPKG;
+using HitHamsterPKG;
 using PokerPKG;
 using PuzzlePKG;
 using SettingPKG;
 using ShopGift;
-using SmallGamePKG;
 using SpinePackage;
 using Welfare;
 
@@ -36,7 +36,7 @@ public class UIGenBinder
         ShopGiftBinder.BindAll();
         SpinePackageBinder.BindAll();
         HeroPKGBinder.BindAll();
-        SmallGamePKGBinder.BindAll();
+        HitHamsterPKGBinder.BindAll();
         AStarPKGBinder.BindAll();
         PuzzlePKGBinder.BindAll();
     }

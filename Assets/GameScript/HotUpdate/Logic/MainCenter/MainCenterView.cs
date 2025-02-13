@@ -39,7 +39,7 @@ namespace MainCenter
 
         private void OnClickOutBtn()
         {
-            ProxySmallGamePKGModule.Instance.OpenHamsterGameView(1);
+            ProxyHitHamsterPKGModule.Instance.OpenHitHamsterMainView(1);
         }
 
         public override void Dispose()

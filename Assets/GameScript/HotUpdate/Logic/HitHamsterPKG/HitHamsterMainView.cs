@@ -2,9 +2,9 @@ using System;
 using FairyGUI;
 using UnityEngine;
 
-namespace SmallGamePKG
+namespace HitHamsterPKG
 {
-    public partial class HamsterGameView : GComponent
+    public partial class HitHamsterMainView : GComponent
     {
         private int mSumTime = 50; //总时间 30秒
         private bool mIsPlaying = false;
@@ -36,7 +36,7 @@ namespace SmallGamePKG
 
         private void OnClickCloseBtn()
         {
-            ProxySmallGamePKGModule.Instance.CloseHamsterGameView();
+            ProxyHitHamsterPKGModule.Instance.CloseHitHamsterView();
         }
 
         private void OnClickStopBtn()

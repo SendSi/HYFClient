@@ -151,6 +151,21 @@ public class GMManager : Singleton<GMManager>
             {
                 VideoMgr.Instance.PauseVideo();
             }
+            else if (target == "OpenPuzzle")
+            {
+                ProxyGMModule.Instance.HideGMMainView();
+                ProxyPuzzlePKGModule.Instance.OpenPuzzleMainView();
+            }
+            else if (target == "OpenHamster")
+            {
+                ProxyGMModule.Instance.HideGMMainView();
+                ProxyHitHamsterPKGModule.Instance.OpenHitHamsterMainView(1);
+            }
+            else if (target == "OpenPoker")
+            {
+                ProxyGMModule.Instance.HideGMMainView();
+                ProxyPokerPKGModule.Instance.OpenPokerMainView();
+            }
         }
     }
 

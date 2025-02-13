@@ -8,7 +8,9 @@
     <loader id="n99_t16b" name="iconBg" xy="50,60" size="1020,680" alpha="0.1" url="ui://791wrm7st16be" align="center" vAlign="middle">
       <relation target="" sidePair="left-left,top-top"/>
     </loader>
-    <graph id="n212_g4ca" name="iconRect" xy="49,59" size="1024,684" type="rect" lineSize="2" lineColor="#ff00ff00" fillColor="#00ffffff"/>
+    <graph id="n212_g4ca" name="iconRect" xy="49,59" size="1024,684" type="rect" lineSize="2" lineColor="#ff00ff00" fillColor="#00ffffff">
+      <relation target="n99_t16b" sidePair="left-left,top-top"/>
+    </graph>
     <component id="n168_t16b" name="110" src="jo4c1ygcgad" fileName="components/Item_Puzzle_TL.xml" xy="50,60" group="n192_t16b"/>
     <component id="n169_t16b" name="111" src="jo4c1ygcgaf" fileName="components/Item_Puzzle_T1.xml" xy="220,60" group="n192_t16b"/>
     <component id="n170_t16b" name="112" src="jo4c1ygcgag" fileName="components/Item_Puzzle_T2.xml" xy="390,60" group="n192_t16b"/>
