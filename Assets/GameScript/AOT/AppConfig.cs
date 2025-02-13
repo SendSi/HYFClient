@@ -1,6 +1,6 @@
 public static class AppConfig
 {
-    public static string hostServerIP = "http://192.168.1.102"; //cdn资源服务器
+    public static string hostServerIP = "http://192.168.130.65"; //cdn资源服务器
     // public static string hostServerIP = "http://127.0.0.1"; //cdn资源服务器
 
     public static string appVersion = "v1.0"; //打exe时(apk时) 的版本

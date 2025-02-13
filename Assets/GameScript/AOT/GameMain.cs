@@ -118,8 +118,6 @@ public class GameMain : MonoBehaviour
     private static List<string> mAssemblyFiles { get; } = new List<string>()
     {
         "AOT.dll",
-        "Google.Protobuf.dll",
-        "Grpc.Core.Api.dll",
         "Luban.Runtime.dll",
         "Newtonsoft.Json.dll",
         "System.Core.dll",
@@ -129,7 +127,7 @@ public class GameMain : MonoBehaviour
         "mscorlib.dll",
 
         "HotUpdate.dll", //不需使用 RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);加载
-        "HotUpdate.pdb", //pdb 为输入堆栈使用的
+        "HotUpdate.pdb", //pdb 为 输出 堆栈使用的
     };
 
     /// <summary>
