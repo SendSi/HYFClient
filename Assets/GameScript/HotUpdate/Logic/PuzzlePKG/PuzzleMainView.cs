@@ -22,7 +22,7 @@ namespace PuzzlePKG
             var maxY = _bg.y - itemCellValue;
 
             mPuzzleList = CfgLubanMgr.Instance.globalTab.TbPuzzleConfig.DataList;
-            ShuffleList(mPuzzleList); //数据打乱一下
+            mPuzzleList = OtherUtils.Instance.GetRandomList(mPuzzleList); //打乱排序
             foreach (var item in mPuzzleList)
             {
                 var btnGo = GetChild(item.Id.ToString());
@@ -63,17 +63,6 @@ namespace PuzzlePKG
                         CheckGameIsFinish();
                     }
                 });
-            }
-        }
-
-        private void ShuffleList(List<PuzzleConfig> list)
-        {
-            for (int i = list.Count - 1; i > 0; i--)
-            {
-                int j = UnityEngine.Random.Range(0, i + 1);
-                PuzzleConfig temp = list[i];
-                list[i] = list[j];
-                list[j] = temp;
             }
         }
 

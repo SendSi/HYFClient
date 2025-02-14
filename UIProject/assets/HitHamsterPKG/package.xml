@@ -10,7 +10,6 @@
     <image id="glu4em8" name="pub_ic_026.png" path="/Img/" exported="true"/>
     <image id="glu4em9" name="pub_ic_027.png" path="/Img/" exported="true"/>
     <image id="glu4ema" name="pub_ic_028.png" path="/Img/" exported="true"/>
-    <image id="glu4emb" name="pub_ic_029.png" path="/Img/" exported="true"/>
     <image id="glu4emc" name="pub_ic_030.png" path="/Img/" exported="true"/>
     <image id="glu4emd" name="pub_ic_031.png" path="/Img/" exported="true"/>
     <component id="dbigeme" name="Item_Hp.xml" path="/Com/" exported="true"/>
@@ -27,6 +26,7 @@
     <image id="lko2emp" name="pub_img_dy24.png" path="/Img/" exported="true" scale="9grid" scale9grid="31,18,16,2"/>
     <component id="lko2emq" name="iconBtn.xml" path="/Com/" exported="true"/>
     <component id="lko2emr" name="iconTitleBtn.xml" path="/Com/" exported="true"/>
+    <image id="g0oxems" name="pub_ic_064.png" path="/Img/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>
