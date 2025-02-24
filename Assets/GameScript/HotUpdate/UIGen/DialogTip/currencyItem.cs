@@ -12,7 +12,7 @@ namespace DialogTip
         public GLoader _icon;
         public GTextField _title;
         public GTextField _firstLbl;
-        public GButton _RechargeBtn;
+        public GComponent _RechargeBtn;
         public const string URL = "ui://utp01xiat6g91ygcfhr";
 
         public static currencyItem CreateInstance()
@@ -29,7 +29,7 @@ namespace DialogTip
             _icon = (GLoader)GetChild("icon");
             _title = (GTextField)GetChild("title");
             _firstLbl = (GTextField)GetChild("firstLbl");
-            _RechargeBtn = (GButton)GetChild("RechargeBtn");
+            _RechargeBtn = (GComponent)GetChild("RechargeBtn");
         }
     }
 }
