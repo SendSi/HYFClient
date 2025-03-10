@@ -13,19 +13,35 @@ public class CfgJsonMgr : Singleton<CfgJsonMgr>
         base.OnInit();
     }
 
-    /// <summary> T是表类型    返回整个导表</summary>
-    public Dictionary<string, T> LoadConfigDics<T>()
+    /// <summary> T是表类型    返回整个导表  TClass=(json名字_对象名字)</summary>
+    public Dictionary<string, TClass> LoadConfigDics<TClass>()
     {
-        string json = JsonFileString<T>();
-        var infos = JsonConvert.DeserializeObject<Dictionary<string, T>>(json);
+        string json = JsonFileString<TClass>();
+        var infos = JsonConvert.DeserializeObject<Dictionary<string, TClass>>(json);
+        return infos;
+    }
+    
+    /// <summary>  TClass是表类型    返回整个导表  TClass=(对象名字)    jsonFileName=(json名字)</summary>
+    public Dictionary<string, TClass> LoadConfigDics<TClass>(string jsonFileName)
+    {
+        string json = JsonFileString(jsonFileName);
+        var infos = JsonConvert.DeserializeObject<Dictionary<string, TClass>>(json);
         return infos;
     }
 
-    /// <summary> T是表类型    返回整个导表</summary>
-    public List<T> LoadConfigList<T>()
+    /// <summary> TClass是表类型    返回整个导表   TClass=(json名字_对象名字) </summary>
+    public List<TClass> LoadConfigList<TClass>()
     {
-        string json = JsonFileString<T>();
-        var infos = JsonConvert.DeserializeObject<List<T>>(json);
+        string json = JsonFileString<TClass>();
+        var infos = JsonConvert.DeserializeObject<List<TClass>>(json);
+        return infos;
+    }
+
+    /// <summary> TClass是表类型    返回整个导表   TClass=(对象名字)    jsonFileName=(json名字)</summary>
+    public List<TClass> LoadConfigList<TClass>(string jsonFileName) 
+    {
+        string json = JsonFileString(jsonFileName);
+        var infos = JsonConvert.DeserializeObject<List<TClass>>(json);
         return infos;
     }
 
@@ -41,14 +57,35 @@ public class CfgJsonMgr : Singleton<CfgJsonMgr>
 
         return default(T); //空值
     }
+    
+    /// <summary> T是表类型  value是表id  返回一行数据</summary>
+    public T LoadConfigOne<T>(string key,string jsonFileName)
+    {
+        string json = JsonFileString(jsonFileName);
+        var infos = JsonConvert.DeserializeObject<Dictionary<string, T>>(json);
+        if (infos.TryGetValue(key, out var config))
+        {
+            return config;
+        }
+
+        return default(T); //空值
+    }
+    
 
     private Dictionary<string, string> _dicTabString = new Dictionary<string, string>();
 
     /// <summary> 取出字典的jsonString </summary>
     private string JsonFileString<T>()
     {
-        string jsonStr = null;
         var name = (typeof(T).Name);
+        return JsonFileString(name);
+    }
+    
+    
+    /// <summary> 取出字典的jsonString </summary>
+    private string JsonFileString(string name)
+    {
+        string jsonStr = null;
         if (_dicTabString.TryGetValue(name, out jsonStr))
         {
             return jsonStr;
