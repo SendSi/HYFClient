@@ -18,7 +18,8 @@ public class TextureImporterSetting : AssetPostprocessor
             return;
 
         teximporter.sRGBTexture = true;
-        teximporter.mipmapEnabled = false;
+        if (Is_IgnoreMipMaps(teximporter.assetPath)==false)//这目录下 mipmap忽略掉  可手动改 之
+             teximporter.mipmapEnabled = false;
 
         TextureImporterPlatformSettings windowSetting = teximporter.GetPlatformTextureSettings("Standalone");
         windowSetting.overridden = true;
@@ -99,5 +100,10 @@ public class TextureImporterSetting : AssetPostprocessor
     static bool Is_Ignore(string path)
     {
         return path.Contains("/Editor/") || path.Contains("/3rd/") || path.Contains("/Unity-Logs-Viewer/");
+    }
+
+    static bool Is_IgnoreMipMaps(string path)//这目录下 mipmap忽略掉  可手动改 之
+    {
+        return path.Contains("/Map/") || path.Contains("/haiDi");
     }
 }

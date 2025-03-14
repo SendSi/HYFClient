@@ -747,7 +747,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: FAIRYGUI_SPINE;ODIN_INSPECTOR;ODIN_INSPECTOR_3
     Server: FAIRYGUI_SPINE
-    Standalone: FAIRYGUI_SPINE
+    Standalone: FAIRYGUI_SPINE;ODIN_INSPECTOR;ODIN_INSPECTOR_3
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
