@@ -158,4 +158,22 @@ public class ProxyCommonPKGModule : Singleton<ProxyCommonPKGModule>, IProxy
     }
 
     #endregion
+    
+    
+    #region LoadingView打开关闭Window
+
+    public void OpenLoadingView(string content)
+    {
+        CheckLoad(() =>
+        {
+            var view = UIMgr.Instance.OpenUIViewCom<LoadingView>(pkgName);
+            view.SetData(content);
+        });
+    }
+    public void CloseLoadingView()
+    {
+        UIMgr.Instance.CloseUIViewCom<LoadingView>();
+    }
+
+    #endregion
 }

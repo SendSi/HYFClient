@@ -5,10 +5,11 @@ using FairyGUI.Utils;
 
 namespace CommonPKG
 {
-    public partial class LoadingView : GLabel
+    public partial class LoadingView : GComponent
     {
         public GImage _bg;
         public GProgressBar _bar;
+        public GTextField _title;
         public const string URL = "ui://2r331opvujpqchc";
 
         public static LoadingView CreateInstance()
@@ -22,6 +23,7 @@ namespace CommonPKG
 
             _bg = (GImage)GetChild("bg");
             _bar = (GProgressBar)GetChild("bar");
+            _title = (GTextField)GetChild("title");
         }
     }
 }
