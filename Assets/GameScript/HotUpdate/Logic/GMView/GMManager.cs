@@ -166,6 +166,10 @@ public class GMManager : Singleton<GMManager>
                 ProxyGMModule.Instance.HideGMMainView();
                 ProxyPokerPKGModule.Instance.OpenPokerMainView();
             }
+            else if (target == "Scene")
+            {
+                SceneGoTo.Instance.EnterScene(1001).Forget();
+            }
         }
     }
 

@@ -45,6 +45,14 @@ public class CfgJsonMgr : Singleton<CfgJsonMgr>
         return infos;
     }
 
+    public TClass LoadConfigClass<TClass>(string jsonFileName)
+    {
+        string json = JsonFileString(jsonFileName);
+        var dto = JsonConvert.DeserializeObject<TClass>(json);
+        return dto;
+    }
+    
+
     /// <summary> T是表类型  value是表id  返回一行数据</summary>
     public T LoadConfigOne<T>(string key)
     {

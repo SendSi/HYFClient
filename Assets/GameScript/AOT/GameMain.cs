@@ -21,6 +21,7 @@ public class GameMain : MonoBehaviour
         Application.targetFrameRate = 60;
         Application.runInBackground = true;
         DontDestroyOnLoad(this.gameObject);
+        Application.lowMemory += OnLowMemory;
     }
 
     IEnumerator Start()
@@ -60,6 +61,7 @@ public class GameMain : MonoBehaviour
             Type entryType = mHotUpdateAssembly.GetType("HotFixReflex");
             entryType.GetMethod("Destroy").Invoke(null, null);
         }
+        Application.lowMemory -= OnLowMemory;
     }
 
     //加载热更页面
@@ -158,5 +160,20 @@ public class GameMain : MonoBehaviour
 
     }
 
+    
+    public void AddLowMemory(Action action)
+    {
+        _lowMemory += action;
+    }
+    public void RemoveLowMemory(Action action)
+    {
+        _lowMemory -= action;
+    }
+    Action _lowMemory;
+    
+    void OnLowMemory()
+    {
+        _lowMemory?.Invoke();
+    }
 
 }
