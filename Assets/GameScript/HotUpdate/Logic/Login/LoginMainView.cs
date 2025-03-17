@@ -29,11 +29,20 @@ namespace Login
             this._stopBtn.onClick.Set(OnClickStopBtn);
 
             this._testBtn.onClick.Set(OnclickTestBtn);
-            
+
             // 简体中文SimChinese  繁体中文TraChinese  英文English 
-            if (AppConfig.currLang == "SimChinese") { _currComValue = 0; }
-            else if (AppConfig.currLang == "TraChinese") { _currComValue = 1; }
-            else if (AppConfig.currLang == "English") { _currComValue = 2; }
+            if (AppConfig.currLang == "SimChinese")
+            {
+                _currComValue = 0;
+            }
+            else if (AppConfig.currLang == "TraChinese")
+            {
+                _currComValue = 1;
+            }
+            else if (AppConfig.currLang == "English")
+            {
+                _currComValue = 2;
+            }
 
             this._languCom.selectedIndex = _currComValue;
             this._languCom.items = new[] { "简体中文", "繁體中文", "English" };
@@ -44,10 +53,10 @@ namespace Login
         {
             Debuger.LogError("测试 按钮点击");
             _tMove0.Play();
-            _tMove1.Play(999,1,null);
-            _tMove2.Play(999,3,null);
+            _tMove1.Play(999, 1, null);
+            _tMove2.Play(999, 3, null);
         }
-        
+
         private void OnClickNoticeBtn()
         {
             ProxyLoginModule.Instance.OpenGameNoticeViewWin();
@@ -55,10 +64,7 @@ namespace Login
 
         private void OnClickEffectBtn()
         {
-            EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", this._stopBtn, false, EffectPos.Center, (obj) =>
-            {
-                effObject1 = obj;
-            });
+            EffectLoader.Instance.LoadUIEffectEPos("UI_renwulan_1", this._stopBtn, false, EffectPos.Center, (obj) => { effObject1 = obj; });
         }
 
         private void OnClickStopBtn()
@@ -81,8 +87,10 @@ namespace Login
             ProxyLoginModule.Instance.OpenServerListRemoteViewWin();
         }
 
+        /// <summary> 离线  </summary>
         private void OnClickAccountBtn()
         {
+            SceneGoTo.Instance.EnterScene(1001).Forget();
             ProxyMainCenterModule.Instance.OpenMainCenterView();
             ProxyLoginModule.Instance.CloseLoginMainView();
         }
@@ -101,9 +109,18 @@ namespace Login
                 _languCom.title = this._languCom.items[_currComValue];
             }, null, delegate
             {
-                if (this._languCom.selectedIndex == 0) { LanguageUtils.Instance.ChangeLanguage("SimChinese"); }
-                else if (this._languCom.selectedIndex == 1) { LanguageUtils.Instance.ChangeLanguage("TraChinese"); }
-                else if (this._languCom.selectedIndex == 2) { LanguageUtils.Instance.ChangeLanguage("English"); }
+                if (this._languCom.selectedIndex == 0)
+                {
+                    LanguageUtils.Instance.ChangeLanguage("SimChinese");
+                }
+                else if (this._languCom.selectedIndex == 1)
+                {
+                    LanguageUtils.Instance.ChangeLanguage("TraChinese");
+                }
+                else if (this._languCom.selectedIndex == 2)
+                {
+                    LanguageUtils.Instance.ChangeLanguage("English");
+                }
             });
         }
 

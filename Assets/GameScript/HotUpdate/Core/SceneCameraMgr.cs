@@ -4,9 +4,19 @@ using UnityEngine.Events;
 
 public class SceneCameraMgr : Singleton<SceneCameraMgr>
 {
+    private Camera mainCamera;
+    private GameObject mainCameraGo;
     private MobileTouchCamera _mobileTouchCam;
-    public Vector4 cameraBounds = new Vector4(0, 0, 100, 100);
-    
+    private Vector4 cameraBounds = new Vector4(0, 0, 100, 100);
+
+    protected override void OnInit()
+    {
+        base.OnInit();
+        mainCamera = Camera.main;
+        mainCameraGo = mainCamera.gameObject;
+        GameObject.DontDestroyOnLoad(mainCameraGo);
+    }
+
     public MobileTouchCamera mobileTouchCam
     {
         set { _mobileTouchCam = value; }
@@ -16,7 +26,7 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
             {
                 return _mobileTouchCam;
             }
-            _mobileTouchCam = Camera.main.gameObject.GetOrAddComponent<MobileTouchCamera>();
+            _mobileTouchCam = mainCameraGo.GetOrAddComponent<MobileTouchCamera>();
             return _mobileTouchCam;
         }
     }
@@ -67,6 +77,11 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
     public void AddCameraRenderChangeEvent(UnityAction cb)
     {
         mobileTouchCam.OnCameraRenderChangeEvent += cb;
+    }
+    
+    public void RemoveCameraRenderChangeEvent(UnityAction cb)
+    {
+        mobileTouchCam.OnCameraRenderChangeEvent -= cb;
     }
 
     public bool IsUsingUI()

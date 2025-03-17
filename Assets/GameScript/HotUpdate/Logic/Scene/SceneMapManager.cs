@@ -8,15 +8,13 @@ public class SceneMapManager : Singleton<SceneMapManager>
     private MapResData _mapResData;
     private MapResBlockData[,] _mapResBlockDataArr;
     private List<MapBlockUnit> _blockUnitPool = new List<MapBlockUnit>();
-    List<MapBlockUnit> _mapBlockUnitList = new List<MapBlockUnit>();
+    private List<MapBlockUnit> _mapBlockUnitList = new List<MapBlockUnit>();
     private bool _isLoadIng = false;
     private MapResLoadData _curLoadMapResData;
     private Queue<MapResLoadData> _mapResLoadDataQ = new Queue<MapResLoadData>();
     private Dictionary<string, Sprite> _spriteResDic = new Dictionary<string, Sprite>();
-
     /// <summary> 最大加载图片张数 </summary>
     private const int MaxMapResNum = 50;
-
     public GameObject Parent;
 
     public async UniTask Init(int mapId, bool backScene)
@@ -52,27 +50,22 @@ public class SceneMapManager : Singleton<SceneMapManager>
         for (int i = 0; i < _mapResData.ResBlockDataList.Count; i++)
         {
             _mapResBlockDataArr[_mapResData.ResBlockDataList[i].X, _mapResData.ResBlockDataList[i].Y] = _mapResData.ResBlockDataList[i];
-            // _mapBlockUnitList.Add(_blockUnitPool[j]);
-
-            // var go = GetMapBlockGo();
-            // _blockUnitPool.Add(go);
-            // go.SetData(_mapResData.ResBlockDataList[i]);
         }
 
-        // for (int i = 0; i < _blockUnitPool.Count; i++)
-        // {
-        //     _blockUnitPool[i].Reset();
-        // }
-        //
-        // for (int i = 0; i < _mapBlockUnitList.Count; i++)
-        // {
-        //     _mapBlockUnitList[i].Reset();
-        // }
-        //
-        // // _curLoadMapResData = null;
-        // _isLoadIng = false;
-        // _mapResLoadDataQ.Clear();
-        // _spriteResDic.Clear();
+        for (int i = 0; i < _blockUnitPool.Count; i++)
+        {
+            _blockUnitPool[i].Reset();
+        }
+        
+        for (int i = 0; i < _mapBlockUnitList.Count; i++)
+        {
+            _mapBlockUnitList[i].Reset();
+        }
+ 
+        _curLoadMapResData = null;
+        _isLoadIng = false;
+        _mapResLoadDataQ.Clear();
+        _spriteResDic.Clear();
 
         Vector4 bound = GetMapBound();
         SceneCameraMgr.Instance.SetBounds(bound.x, bound.y, bound.z, bound.w);
@@ -378,5 +371,11 @@ public class SceneMapManager : Singleton<SceneMapManager>
         int x = Mathf.FloorToInt(pos.x * 100 / _mapResData.Width);
         y = Mathf.FloorToInt(pos.y * 100 / _mapResData.Height);
         return x;
+    }
+
+    protected override void OnDispose()
+    {
+        base.OnDispose();
+        SceneCameraMgr.Instance.RemoveCameraRenderChangeEvent(RefreshScreenMapBlock);
     }
 }
