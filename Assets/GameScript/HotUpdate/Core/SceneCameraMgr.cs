@@ -1,12 +1,12 @@
-﻿
-using BitBenderGames;
+﻿using BitBenderGames;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class SceneCameraMgr : Singleton<SceneCameraMgr>
 {
     private MobileTouchCamera _mobileTouchCam;
-
+    public Vector4 cameraBounds = new Vector4(0, 0, 100, 100);
+    
     public MobileTouchCamera mobileTouchCam
     {
         set { _mobileTouchCam = value; }
@@ -21,8 +21,6 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
         }
     }
 
-    public Vector4 cameraBounds = new Vector4(0, 0, 100, 100);
-
     public void SetBounds(float minX, float maxX, float minY, float maxY)
     {
         cameraBounds.x = minX;
@@ -33,7 +31,7 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
         mobileTouchCam.BoundaryMax = new Vector2(maxX, maxY);
         mobileTouchCam.ResetCameraBoundaries();
     }
-    
+
     public Vector3 GetScreenBoundsInWorld(out Vector3 center)
     {
         Vector3[] bounds = new Vector3[4];
@@ -49,8 +47,7 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
         center.z = 0;
         return size;
     }
-    
-    
+
     /// <summary> 判断两个矩形是否相交 </summary>
     public bool IsRectanglesIntersect(Vector3 world1, Vector2 size1, Vector3 world2, Vector2 size2)
     {
@@ -67,11 +64,13 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
         return true;
     }
 
-
     public void AddCameraRenderChangeEvent(UnityAction cb)
     {
-        mobileTouchCam.OnCameraRenderChangeEvent+=cb;
+        mobileTouchCam.OnCameraRenderChangeEvent += cb;
     }
 
-
+    public bool IsUsingUI()
+    {
+        return FairyGUI.Stage.isTouchOnUI;
+    }
 }

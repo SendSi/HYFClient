@@ -157,6 +157,11 @@ namespace BitBenderGames {
       {
         return;
       }
+      
+      if (SceneCameraMgr.Instance.IsUsingUI())
+      {
+        return;
+      }
 
       if (TouchWrapper.IsFingerDown == false) {
         isInputOnLockedArea = false;
