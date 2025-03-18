@@ -45,16 +45,18 @@ public class SceneCameraMgr : Singleton<SceneCameraMgr>
     public Vector3 GetScreenBoundsInWorld(out Vector3 center)
     {
         Vector3[] bounds = new Vector3[4];
-        Camera sceneCamera = Camera.main;
-        bounds[0] = sceneCamera.ViewportToWorldPoint(new Vector3(0, 0, sceneCamera.nearClipPlane));
-        bounds[1] = sceneCamera.ViewportToWorldPoint(new Vector3(1, 0, sceneCamera.nearClipPlane));
-        bounds[2] = sceneCamera.ViewportToWorldPoint(new Vector3(1, 1, sceneCamera.nearClipPlane));
-        bounds[3] = sceneCamera.ViewportToWorldPoint(new Vector3(0, 1, sceneCamera.nearClipPlane));
+
+        bounds[0] = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, mainCamera.nearClipPlane));
+        bounds[1] = mainCamera.ViewportToWorldPoint(new Vector3(1, 0, mainCamera.nearClipPlane));
+        bounds[2] = mainCamera.ViewportToWorldPoint(new Vector3(1, 1, mainCamera.nearClipPlane));
+        bounds[3] = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, mainCamera.nearClipPlane));
 
         center = (bounds[0] + bounds[1] + bounds[2] + bounds[3]) / 4;
+        center.z = 0;
+        
         Vector3 size = bounds[2] - bounds[0];
         size.z = 1;
-        center.z = 0;
+    
         return size;
     }
 

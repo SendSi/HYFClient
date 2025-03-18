@@ -2,17 +2,21 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class SceneMapManager : Singleton<SceneMapManager>
+public class SceneMapManager_old : Singleton<SceneMapManager_old>
 {
     private bool _modifying = false;
-    private MapResData _mapResData;
-    private MapResBlockData[,] _mapResBlockDataArr;
-    private List<MapBlockUnit> _blockUnitPool = new List<MapBlockUnit>();
-    private List<MapBlockUnit> _mapBlockUnitList = new List<MapBlockUnit>();
-    private bool _isLoadIng = false;
+    private MapResData _jsonMapImgData;
+    private Dictionary<string, MapResBlockData> _jsonMapImgResDic;
     private MapResLoadData _curLoadMapResData;
     private Queue<MapResLoadData> _mapResLoadDataQ = new Queue<MapResLoadData>();
+    
+    private Queue<MapResBlockData> _blockQueue= new Queue<MapResBlockData>();
     private Dictionary<string, Sprite> _spriteResDic = new Dictionary<string, Sprite>();
+    private bool _isLoadIng = false;
+    private List<MapResBlockData> _inScreenBlockDataList = new List<MapResBlockData>();
+    private List<MapResBlockData> _waitShowBlockDataList = new List<MapResBlockData>();
+    private Dictionary<string, MapBlockUnit> _goBlockUnitDic;
+    private MapResBlockData[,] _mapResBlockDataArr;
 
     /// <summary> 最大加载图片张数 </summary>
     private const int MaxMapResNum = 50;
@@ -42,28 +46,21 @@ public class SceneMapManager : Singleton<SceneMapManager>
     {
         _modifying = true;
 
-        _mapResData = CfgJsonMgr.Instance.LoadConfigClass<MapResData>($"mapImgData_{mapId}");
-        if (_mapResData == null)
+        _jsonMapImgData = CfgJsonMgr.Instance.LoadConfigClass<MapResData>($"mapImgData_{mapId}");
+        if (_jsonMapImgData == null)
         {
             return false;
         }
 
-        _mapResBlockDataArr = new MapResBlockData[_mapResData.MaxX, _mapResData.MaxY];
-        for (int i = 0; i < _mapResData.ResBlockDataList.Count; i++)
+        _mapResBlockDataArr = new MapResBlockData[_jsonMapImgData.MaxX, _jsonMapImgData.MaxY];
+        _jsonMapImgResDic = new Dictionary<string, MapResBlockData>();
+        for (int i = 0; i < _jsonMapImgData.ResBlockDataList.Count; i++)
         {
-            _mapResBlockDataArr[_mapResData.ResBlockDataList[i].X, _mapResData.ResBlockDataList[i].Y] = _mapResData.ResBlockDataList[i];
+            _mapResBlockDataArr[_jsonMapImgData.ResBlockDataList[i].X, _jsonMapImgData.ResBlockDataList[i].Y] = _jsonMapImgData.ResBlockDataList[i];
+            _jsonMapImgResDic[_jsonMapImgData.ResBlockDataList[i].BlockName] = _jsonMapImgData.ResBlockDataList[i];
         }
 
-        for (int i = 0; i < _blockUnitPool.Count; i++)
-        {
-            _blockUnitPool[i].Reset();
-        }
-
-        for (int i = 0; i < _mapBlockUnitList.Count; i++)
-        {
-            _mapBlockUnitList[i].Reset();
-        }
-
+        _goBlockUnitDic = new Dictionary<string, MapBlockUnit>();
         _curLoadMapResData = null;
         _isLoadIng = false;
         _mapResLoadDataQ.Clear();
@@ -80,26 +77,17 @@ public class SceneMapManager : Singleton<SceneMapManager>
         return true;
     }
 
-    public Vector4 GetMapBound()
-    {
-        Vector4 rect = new Vector4(_mapResData.StartX, _mapResData.StartY, _mapResData.EndX, _mapResData.EndY);
-        return new Vector4(rect.x, rect.z, rect.y, rect.w);
-    }
-
-    List<MapResBlockData> _inScreenBlockDataList = new List<MapResBlockData>();
-    List<MapResBlockData> _waitShowBlockDataList = new List<MapResBlockData>();
-
     void RefreshScreenMapBlock()
     {
         if (_modifying)
         {
             return;
         }
+
         _inScreenBlockDataList.Clear();
         Vector3 size = SceneCameraMgr.Instance.GetScreenBoundsInWorld(out Vector3 center);
-        Debug.LogError($"size={size}   center={center}");
-        var list = GetInIsRectMapResBlockDataList(center, size + Vector3.one * 1);
-        if (list != null)
+        var list = GetInIsRectMapResBlockDataList(center, size + Vector3.one * 1); //视野内 的 block
+        if (list != null && list.Count > 0)
         {
             for (int i = 0; i < list.Count; i++)
             {
@@ -114,52 +102,22 @@ public class SceneMapManager : Singleton<SceneMapManager>
     void RefreshBlockMapShow()
     {
         _waitShowBlockDataList.Clear();
-        for (int i = 0; i < _mapBlockUnitList.Count; i++)
-        {
-            _blockUnitPool.Add(_mapBlockUnitList[i]);
-        }
-        _mapBlockUnitList.Clear();
 
-        for (int i = 0; i < _inScreenBlockDataList.Count; i++)
+        foreach (var item in _inScreenBlockDataList)
         {
-            if (i >= _blockUnitPool.Count)
+            if (_goBlockUnitDic.TryGetValue(item.BlockName, out var unit) == false)
             {
                 var go = GetMapBlockGo();
-                _blockUnitPool.Add(go);
+                _goBlockUnitDic[item.BlockName] = go;
+                
+                _blockQueue.Enqueue(item);
             }
         }
 
-        bool has = false;
-        for (int i = 0; i < _inScreenBlockDataList.Count; i++)
+        while (_blockQueue.Count>0)
         {
-            has = false;
-            for (int j = 0; j < _blockUnitPool.Count; j++)
-            {
-                if (_blockUnitPool[j].Equal(_inScreenBlockDataList[i]))
-                {
-                    _blockUnitPool[j].SetData(_inScreenBlockDataList[i]);
-                    _mapBlockUnitList.Add(_blockUnitPool[j]);
-                    _blockUnitPool.RemoveAt(j);
-                    has = true;
-                    break;
-                }
-            }
-
-            if (!has)
-            {
-                _waitShowBlockDataList.Add(_inScreenBlockDataList[i]);
-            }
-        }
-        for (int i = 0; i < _waitShowBlockDataList.Count; i++)
-        {
-            _blockUnitPool[0].SetData(_waitShowBlockDataList[i]);
-            _mapBlockUnitList.Add(_blockUnitPool[0]);
-            _blockUnitPool.RemoveAt(0);
-        }
-
-        for (int i = 0; i < _blockUnitPool.Count; i++)
-        {
-            _blockUnitPool[i].SetActive(false);
+            var item = _blockQueue.Dequeue();
+            _goBlockUnitDic[item.BlockName].SetData(item);
         }
     }
 
@@ -202,7 +160,7 @@ public class SceneMapManager : Singleton<SceneMapManager>
         }
     }
 
-    MapBlockUnit GetMapBlockGo()
+    private MapBlockUnit GetMapBlockGo()
     {
         GameObject go = ResMgr.Instance.LoadAsset<GameObject>("MapBlockUnit");
         go.SetParent(Parent);
@@ -290,7 +248,7 @@ public class SceneMapManager : Singleton<SceneMapManager>
 
     private List<MapResBlockData> GetInIsRectMapResBlockDataList(Vector3 center, Vector2 size)
     {
-        if (_mapResData == null)
+        if (_jsonMapImgData == null)
         {
             return null;
         }
@@ -299,7 +257,6 @@ public class SceneMapManager : Singleton<SceneMapManager>
         List<MapResBlockData> _checkEndBlockDataList = new List<MapResBlockData>();
 
         int indexX = PosChangePointIndex(center, out int indexY);
-        Debug.LogError($"indexX={indexX}  indexY={indexY}");
         if (indexX >= 0 && indexY >= 0 && _mapResBlockDataArr.GetLength(0) > indexX && _mapResBlockDataArr.GetLength(1) > indexY && _mapResBlockDataArr[indexX, indexY] != null)
         {
             var pointData = _mapResBlockDataArr[indexX, indexY];
@@ -358,7 +315,7 @@ public class SceneMapManager : Singleton<SceneMapManager>
                 int newColumn = center.Y + j;
 
                 // 检查索引是否在数组边界内且不是中心格子
-                if (newRow >= 0 && newRow < _mapResData.MaxX && newColumn >= 0 && newColumn < _mapResData.MaxY && !(i == 0 && j == 0))
+                if (newRow >= 0 && newRow < _jsonMapImgData.MaxX && newColumn >= 0 && newColumn < _jsonMapImgData.MaxY && !(i == 0 && j == 0))
                 {
                     _findList.Add(_mapResBlockDataArr[newRow, newColumn]);
                 }
@@ -370,10 +327,10 @@ public class SceneMapManager : Singleton<SceneMapManager>
 
     int PosChangePointIndex(Vector3 pos, out int y)
     {
-        pos.x -= _mapResData.StartX;
-        pos.y -= _mapResData.StartY;
-        int x = Mathf.FloorToInt(pos.x * 100 / _mapResData.Width);
-        y = Mathf.FloorToInt(pos.y * 100 / _mapResData.Height);
+        pos.x -= _jsonMapImgData.StartX;
+        pos.y -= _jsonMapImgData.StartY;
+        int x = Mathf.FloorToInt(pos.x * 100 / _jsonMapImgData.Width);
+        y = Mathf.FloorToInt(pos.y * 100 / _jsonMapImgData.Height);
         return x;
     }
 
@@ -383,11 +340,9 @@ public class SceneMapManager : Singleton<SceneMapManager>
         SceneCameraMgr.Instance.RemoveCameraRenderChangeEvent(RefreshScreenMapBlock);
     }
 
-    public void Test()
+    public Vector4 GetMapBound()
     {
-        var a1 = _mapResBlockDataArr.GetLength(0);
-        var a2 = _mapResBlockDataArr.GetLength(1);
-
-        Debug.LogError($"a1={a1}  a2={a2}");
+        Vector4 rect = new Vector4(_jsonMapImgData.StartX, _jsonMapImgData.StartY, _jsonMapImgData.EndX, _jsonMapImgData.EndY);
+        return new Vector4(rect.x, rect.z, rect.y, rect.w);
     }
 }

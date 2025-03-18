@@ -8,8 +8,6 @@ namespace Login
     public partial class LoginMainView : GComponent
     {
         public GLoader _bg0;
-        public GLoader _bg1;
-        public GLoader _bg2;
         public GButton _noticeBtn;
         public GButton _accountBtn;
         public GButton _cfgBtn;
@@ -43,8 +41,6 @@ namespace Login
             base.ConstructFromXML(xml);
 
             _bg0 = (GLoader)GetChild("bg0");
-            _bg1 = (GLoader)GetChild("bg1");
-            _bg2 = (GLoader)GetChild("bg2");
             _noticeBtn = (GButton)GetChild("noticeBtn");
             _accountBtn = (GButton)GetChild("accountBtn");
             _cfgBtn = (GButton)GetChild("cfgBtn");

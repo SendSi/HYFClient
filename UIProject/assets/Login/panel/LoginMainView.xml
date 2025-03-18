@@ -4,12 +4,6 @@
     <loader id="n48_ezv2" name="bg0" xy="-170,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
       <relation target="" sidePair="width-width,height-height"/>
     </loader>
-    <loader id="n25_p781" name="bg1" xy="1500,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
-      <relation target="" sidePair="width-width,height-height"/>
-    </loader>
-    <loader id="n47_ezv2" name="bg2" xy="1500,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
-      <relation target="" sidePair="width-width,height-height"/>
-    </loader>
     <component id="n12_7oiz" name="noticeBtn" src="7oizh" fileName="components/interactive.xml" xy="16,52" size="98,98" group="n22_qbmb">
       <Button title="公告" icon="ui://byy9k3gh7oiz9"/>
     </component>
@@ -71,13 +65,9 @@
     <item time="0" type="XY" target="n48_ezv2" tween="true" startValue="-170,-" endValue="-1840,-" duration="48" ease="Linear"/>
   </transition>
   <transition name="tMove1" autoPlayRepeat="10" autoPlayDelay="1">
-    <item time="0" type="XY" target="n25_p781" tween="true" startValue="1500,-" endValue="-170,-" duration="48" ease="Linear"/>
     <item time="0" type="XY" target="n48_ezv2" value="-1840,-"/>
-    <item time="48" type="XY" target="n25_p781" tween="true" startValue="-170,-" endValue="-1840,-" duration="48" ease="Linear"/>
   </transition>
   <transition name="tMove2" autoPlayRepeat="10" autoPlayDelay="4">
-    <item time="0" type="XY" target="n47_ezv2" tween="true" startValue="1500,-" endValue="-170,-" duration="48" ease="Linear"/>
     <item time="0" type="XY" target="n48_ezv2" value="-1840,-"/>
-    <item time="48" type="XY" target="n47_ezv2" tween="true" startValue="-170,-" endValue="-1840,-" duration="48" ease="Linear"/>
   </transition>
 </component>
