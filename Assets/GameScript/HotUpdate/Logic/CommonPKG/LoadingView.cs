@@ -11,9 +11,11 @@ namespace CommonPKG
            
         }
 
-        public void SetData(string idStr)
+        public void SetData()
         {
-           
+            _bar.max = 100;
+            _bar.value = 0;
+            _bar.TweenValue(100, 1);
         }
 
         public override void Dispose()

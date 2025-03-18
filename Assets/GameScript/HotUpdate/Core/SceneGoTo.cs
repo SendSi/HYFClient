@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -9,16 +10,17 @@ public class SceneGoTo:Singleton<SceneGoTo>
         { 1001, new MainCityScene() },
     };
 
-
     public async UniTaskVoid EnterScene(int mapId, int sceneId = 1001, bool backScene = false)
     {
-        Debug.Log("AAAA");
+        ProxyCommonPKGModule.Instance.OpenLoadingView();
+        Debug.Log("进度 1");
         if (SceneDic.TryGetValue(sceneId, out SceneBase newScene))
         {
             if (await newScene.Init(mapId,backScene))
             {
-                Debug.Log("BBB");
                 newScene.EnterScene();
+                await UniTask.Delay(TimeSpan.FromSeconds(1.1f)); //假的
+                Debug.Log("进度 2");
                 ProxyCommonPKGModule.Instance.CloseLoadingView();
             }
         }

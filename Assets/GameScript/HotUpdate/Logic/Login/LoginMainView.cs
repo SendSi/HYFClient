@@ -90,10 +90,7 @@ namespace Login
         /// <summary> 离线  </summary>
         private void OnClickAccountBtn()
         {
-            ProxyCommonPKGModule.Instance.OpenLoadingView("");
             SceneGoTo.Instance.EnterScene(1001).Forget();
-
-            
             
             ProxyMainCenterModule.Instance.OpenMainCenterView();
             ProxyLoginModule.Instance.CloseLoginMainView();
