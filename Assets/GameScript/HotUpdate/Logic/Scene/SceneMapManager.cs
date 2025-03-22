@@ -97,7 +97,7 @@ public class SceneMapManager : Singleton<SceneMapManager>
         }
         _inScreenBlockDataList.Clear();
         Vector3 size = SceneCameraMgr.Instance.GetScreenBoundsInWorld(out Vector3 center);
-        Debug.LogError($"size={size}   center={center}");
+        // Debug.LogError($"size={size}   center={center}");
         var list = GetInIsRectMapResBlockDataList(center, size + Vector3.one * 1);
         if (list != null)
         {

@@ -129,6 +129,7 @@ public class GameMain : MonoBehaviour
         "UnityEngine.JSONSerializeModule.dll",
         "YooAsset.dll",
         "mscorlib.dll",
+        "UniTask.dll",
 
         "HotUpdate.dll", //不需使用 RuntimeApi.LoadMetadataForAOTAssembly(dllBytes, mode);加载
         "HotUpdate.pdb", //pdb 为输入堆栈使用的
