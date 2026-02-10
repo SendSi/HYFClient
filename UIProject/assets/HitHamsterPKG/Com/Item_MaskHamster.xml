@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="640,453" overflow="hidden">
-  <controller name="stateCtrl" exported="true" pages="0,,1,,3,,4,,5," selected="4">
+  <controller name="stateCtrl" exported="true" pages="0,,1,,3,,4,,5,,6," selected="4">
     <remark page="0" value="晕"/>
     <remark page="1" value="黄"/>
     <remark page="2" value="蓝"/>
     <remark page="3" value="炸弹"/>
     <remark page="4" value="时钟"/>
+    <remark page="5" value="空"/>
   </controller>
   <displayList>
     <loader id="n5_fxl2" name="hit" xy="8,245" pivot="0.5,1" size="240,208" url="ui://q0kdbd65glu4em8" vAlign="bottom" autoSize="true">
