@@ -28,8 +28,6 @@ namespace Login
             this._effectBtn.onClick.Set(OnClickEffectBtn);
             this._stopBtn.onClick.Set(OnClickStopBtn);
 
-            this._testBtn.onClick.Set(OnclickTestBtn);
-
             // 简体中文SimChinese  繁体中文TraChinese  英文English 
             if (AppConfig.currLang == "SimChinese")
             {
@@ -49,13 +47,6 @@ namespace Login
             this._languCom.onChanged.Set(OnChangedLanguage);
         }
 
-        void OnclickTestBtn()
-        {
-            Debuger.LogError("测试 按钮点击");
-            _tMove0.Play();
-            _tMove1.Play(999, 1, null);
-            _tMove2.Play(999, 3, null);
-        }
 
         private void OnClickNoticeBtn()
         {

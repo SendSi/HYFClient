@@ -8,7 +8,6 @@ namespace Login
     {
         public static void BindAll()
         {
-            UIObjectFactory.SetPackageItemExtension(LoginMainView.URL, typeof(LoginMainView));
             UIObjectFactory.SetPackageItemExtension(ServerListDetailView.URL, typeof(ServerListDetailView));
             UIObjectFactory.SetPackageItemExtension(paging.URL, typeof(paging));
             UIObjectFactory.SetPackageItemExtension(list_clothes_01.URL, typeof(list_clothes_01));
@@ -19,7 +18,7 @@ namespace Login
             UIObjectFactory.SetPackageItemExtension(list_clothes_00.URL, typeof(list_clothes_00));
             UIObjectFactory.SetPackageItemExtension(landItem1.URL, typeof(landItem1));
             UIObjectFactory.SetPackageItemExtension(title_notice.URL, typeof(title_notice));
-            UIObjectFactory.SetPackageItemExtension(LoginMainView_old.URL, typeof(LoginMainView_old));
+            UIObjectFactory.SetPackageItemExtension(LoginMainView.URL, typeof(LoginMainView));
             UIObjectFactory.SetPackageItemExtension(tab_02.URL, typeof(tab_02));
             UIObjectFactory.SetPackageItemExtension(plate01.URL, typeof(plate01));
             UIObjectFactory.SetPackageItemExtension(plate02.URL, typeof(plate02));

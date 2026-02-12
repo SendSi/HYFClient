@@ -6,7 +6,6 @@
     <image id="7oiz9" name="btn_bg_notice.png" path="/images/" exported="true"/>
     <image id="7oiza" name="btn_bg_sweep.png" path="/images/" exported="true"/>
     <image id="7oizb" name="btn_land.png" path="/images/" exported="true" scale="9grid" scale9grid="32,19,272,38"/>
-    <component id="7oize" name="LoginMainView.xml" path="/panel/" exported="true"/>
     <component id="7oizh" name="interactive.xml" path="/components/" exported="true"/>
     <component id="7oizi" name="ServerListDetailView.xml" path="/panel/" exported="true"/>
     <component id="7oizj" name="paging.xml" path="/components/" exported="true"/>
@@ -82,7 +81,7 @@
     <image id="jrst1ygcga4" name="button_line1_arrow2.png" path="/images/"/>
     <image id="jrst1ygcga5" name="img_zz_di2.png" path="/images/" exported="true"/>
     <component id="lsme1ygcga6" name="ComboBox1_item.xml" path="/components/"/>
-    <component id="ezv21ygcga7" name="LoginMainView_old.xml" path="/panel/" exported="true"/>
+    <component id="ezv21ygcga7" name="LoginMainView.xml" path="/panel/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

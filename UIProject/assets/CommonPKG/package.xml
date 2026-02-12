@@ -490,6 +490,8 @@
     <component id="t54x1ygcgry" name="VideoView.xml" path="/panel/" exported="true"/>
     <component id="mnqw1ygcga7" name="InfoTipView.xml" path="/panel/" exported="true"/>
     <component id="mnqw1ygcga8" name="titleContent.xml" path="/panel/" exported="true"/>
+    <component id="eh0b1ygcgrz" name="GlobalModalWaiting.xml" path="/components/" exported="true"/>
+    <image id="eh0b1ygcgs0" name="icon_zzz.png" path="/images/" exported="true"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

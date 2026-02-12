@@ -4,7 +4,7 @@ public static class AppConfig
     public static string serverURL = "https://localhost:5001";//服务器地址
     // public static string serverURL = "https://tylearymf.familyds.com:8888";//服务器地址
 
-    public static string hostServerIP = "http://192.168.15.20"; //cdn资源服务器
+    public static string hostServerIP = "http://192.168.0.83"; //cdn资源服务器
     // public static string hostServerIP = "http://127.0.0.1"; //cdn资源服务器
 
     public static string appVersion = "v1.0"; //打exe时(apk时) 的版本
