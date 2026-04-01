@@ -1,6 +1,6 @@
 yooAsset学习_hybridCLR学习_fairyGUI学习
 
-   https://hybridclr.doc.code-philosophy.com/docs/beginner/quickstart 官方文档  
+   https://www.hybridclr.cn/docs/beginner/quickstart 官方文档  
    https://www.yooasset.com/docs/guide-editor/QuickStart  官方文档  
  https://fairygui.com/docs/editor 官方文档   
  https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习  
@@ -62,3 +62,9 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     23.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用None,然后build两个包            resVersion=v1.1继续热更+  别重复1.1哦
     24.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     25.杀掉游戏进程,打开游戏
+
+
+#### 常见问题
+    1.没按hybridclr的要求环境所打开项目
+    2.Unity版本对不上
+    3.Git没使用SSH下载，估计没下全
