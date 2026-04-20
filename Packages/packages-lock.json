@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "com.code-philosophy.hybridclr": {
-      "version": "https://github.com/focus-creative-games/hybridclr_unity.git",
+      "version": "file:hybridclr_unity-main",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "4feac30cb2e105992986c737f7f54992b8300e1a"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.code-philosophy.luban": {
       "version": "https://github.com/focus-creative-games/luban_unity.git",
@@ -13,6 +12,20 @@
       "source": "git",
       "dependencies": {},
       "hash": "de0348c453844f91d52e736be681f0713ae47201"
+    },
+    "com.code-philosophy.obfuz": {
+      "version": "https://github.com/focus-creative-games/obfuz.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7b06f0fed8675c31cbae9760a93e7deec0c0a05c"
+    },
+    "com.code-philosophy.obfuz4hybridclr": {
+      "version": "https://github.com/focus-creative-games/obfuz4hybridclr.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6277e75ce11de86b765d4bd75d4968d1bcaa2eaa"
     },
     "com.tuyoogame.yooasset": {
       "version": "2.1.0",

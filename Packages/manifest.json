@@ -2,6 +2,8 @@
   "dependencies": {
     "com.code-philosophy.hybridclr": "https://github.com/focus-creative-games/hybridclr_unity.git",
     "com.code-philosophy.luban": "https://github.com/focus-creative-games/luban_unity.git",
+    "com.code-philosophy.obfuz": "https://github.com/focus-creative-games/obfuz.git",
+    "com.code-philosophy.obfuz4hybridclr": "https://github.com/focus-creative-games/obfuz4hybridclr.git",
     "com.tuyoogame.yooasset": "2.1.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
