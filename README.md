@@ -53,7 +53,8 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     首次出包  
     1.HyBridCLR/Generate/All    
     2.HybridCLR/CopyTo_GameResHotFix
-    3.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用ClearAndCopyAll,然后build两个包   resVersion=v1.0
+    3.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用ClearAndCopyAll,然后build两个包
+    ps:resVersion=v1.0,DefaultPackage-->BuiltinBuildPipeline,HotFixePackage-->RawFileBuildPipeline
     4.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     5.正常出apk或exe,启动打开游戏
     出增量包,即热更
@@ -68,3 +69,5 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     1.没按hybridclr的要求环境所打开项目
     2.Unity版本对不上
     3.Git没使用SSH下载，估计没下全
+    4.http-server问题,nodejs看这个https://juejin.cn/post/7436189729550975012
+    5.打出包，若进入不了登录页面，在屏幕画圈，画两圈看下log啥问题
