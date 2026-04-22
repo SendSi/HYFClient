@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obfuz>
+ <assembly name="HotUpdate">
+   <!-- <type name="cfg.EQuality" obName="0" applyToMembers="*"/> -->   <!--只对单个枚举生效 -->
+   <!-- <type name="cfg.*" typeKind="enum" obName="0" applyToMembers="*" /> -->    <!--这写法使得全cfg下的全部都不混淆了,比如 类 -->
+
+    <!-- <namespace name="cfg">
+      <type name="*" typeKind="enum" obName="0" applyToMembers="*" />
+    </namespace> -->   <!--这写法报错 -->
+
+
+    <type name="cfg.EQuality" obName="0" applyToMembers="*"/>
+    <type name="cfg.AccessFlag" obName="0" applyToMembers="*"/>
+  </assembly>
+</obfuz>

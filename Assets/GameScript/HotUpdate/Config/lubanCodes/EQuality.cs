@@ -9,19 +9,27 @@
 
 
 
-namespace cfg.test
+namespace cfg
 { 
-    [System.Flags]
-    public enum AccessFlag
+    
+    public enum EQuality
     {
-        WRITE = 1,
-        READ = 2,
-        TRUNCATE = 4,
-        NEW = 8,
         /// <summary>
-        /// 位标记使用示例
+        /// 最差品质
         /// </summary>
-        READ_WRITE = WRITE|READ,
+        WHITE = 1,
+        /// <summary>
+        /// 蓝色的
+        /// </summary>
+        BLUE = 2,
+        /// <summary>
+        /// 紫色的
+        /// </summary>
+        PURPLE = 3,
+        /// <summary>
+        /// 最高品质
+        /// </summary>
+        RED = 4,
     }
 
 } 

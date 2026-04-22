@@ -10,6 +10,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"Grpc.Core.Api.dll",
 		"Luban.Runtime.dll",
 		"Newtonsoft.Json.dll",
+		"Obfuz.Runtime.dll",
 		"System.Core.dll",
 		"UniTask.dll",
 		"UnityEngine.CoreModule.dll",
@@ -23,24 +24,17 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// }} 
 
 	// {{ AOT generic types
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<MainCityScene.<Init>d__0,byte>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResMgr.<LoadAssetAsync>d__0<object>,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResMgr.<_LoadAssetAsync>d__1<object>,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<SceneMapManager.<Init>d__11>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<SceneMapManager.<LoadSprite>d__20>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<SceneMapManager_old.<Init>d__14>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<SceneMapManager_old.<LoadSprite>d__20>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<MainCityScene.<Init>d__0,byte>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResMgr.<LoadAssetAsync>d__0<object>,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResMgr.<_LoadAssetAsync>d__1<object>,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<SceneMapManager.<Init>d__11>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<SceneMapManager.<LoadSprite>d__20>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<SceneMapManager_old.<Init>d__14>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<SceneMapManager_old.<LoadSprite>d__20>
+	// $A.$n<$A.$M>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<object,byte>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<object,object>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<object>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<object,byte>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<object,object>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<object>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid.<>c<SceneGoTo.<EnterScene>d__1>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid<SceneGoTo.<EnterScene>d__1>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid.<>c<object>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid<object>
 	// Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise<byte>
 	// Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise<object>
 	// Cysharp.Threading.Tasks.ITaskPoolNode<object>
@@ -152,8 +146,10 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Cysharp.Threading.Tasks.UniTaskCompletionSourceCore<byte>
 	// Cysharp.Threading.Tasks.UniTaskCompletionSourceCore<object>
 	// Cysharp.Threading.Tasks.UniTaskExtensions.<>c__19<byte>
+	// EventCenter.<Fire_Wait>d__19<object>
 	// EventOne<int>
 	// EventOne<object>
+	// EventTwo<int,int>
 	// Google.Protobuf.Collections.RepeatedField.<GetEnumerator>d__28<object>
 	// Google.Protobuf.Collections.RepeatedField<object>
 	// Google.Protobuf.FieldCodec.<>c<object>
@@ -390,6 +386,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Runtime.CompilerServices.TaskAwaiter<System.Threading.Tasks.VoidTaskResult>
 	// System.Runtime.CompilerServices.TaskAwaiter<byte>
 	// System.Runtime.CompilerServices.TaskAwaiter<object>
+	// System.Span.Enumerator<ushort>
 	// System.Span<ushort>
 	// System.Threading.Tasks.ContinuationTaskFromResultTask<System.Threading.Tasks.VoidTaskResult>
 	// System.Threading.Tasks.ContinuationTaskFromResultTask<byte>
@@ -432,6 +429,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// UnityEngine.Events.UnityAction<UnityEngine.RaycastHit>
 	// UnityEngine.Events.UnityAction<UnityEngine.Vector3,object>
 	// UnityEngine.Events.UnityAction<UnityEngine.Vector3>
+	// UnityEngine.Events.UnityAction<int,int>
 	// UnityEngine.Events.UnityAction<int>
 	// UnityEngine.Events.UnityAction<object>
 	// UnityEngine.Events.UnityEvent<UnityEngine.RaycastHit2D>
@@ -443,35 +441,27 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 
 	public void RefMethods()
 	{
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,SceneMapManager.<LoadSprite>d__20>(Cysharp.Threading.Tasks.UniTask.Awaiter&,SceneMapManager.<LoadSprite>d__20&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,SceneMapManager_old.<LoadSprite>d__20>(Cysharp.Threading.Tasks.UniTask.Awaiter&,SceneMapManager_old.<LoadSprite>d__20&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>,SceneMapManager.<Init>d__11>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>&,SceneMapManager.<Init>d__11&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>,SceneMapManager_old.<Init>d__14>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>&,SceneMapManager_old.<Init>d__14&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,SceneMapManager.<LoadSprite>d__20>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,SceneMapManager.<LoadSprite>d__20&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,SceneMapManager_old.<LoadSprite>d__20>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,SceneMapManager_old.<LoadSprite>d__20&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,MainCityScene.<Init>d__0>(Cysharp.Threading.Tasks.UniTask.Awaiter&,MainCityScene.<Init>d__0&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,ResMgr.<_LoadAssetAsync>d__1<object>>(Cysharp.Threading.Tasks.UniTask.Awaiter&,ResMgr.<_LoadAssetAsync>d__1<object>&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,ResMgr.<LoadAssetAsync>d__0<object>>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,ResMgr.<LoadAssetAsync>d__0<object>&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<SceneMapManager.<Init>d__11>(SceneMapManager.<Init>d__11&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<SceneMapManager.<LoadSprite>d__20>(SceneMapManager.<LoadSprite>d__20&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<SceneMapManager_old.<Init>d__14>(SceneMapManager_old.<Init>d__14&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<SceneMapManager_old.<LoadSprite>d__20>(SceneMapManager_old.<LoadSprite>d__20&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.Start<MainCityScene.<Init>d__0>(MainCityScene.<Init>d__0&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.Start<SceneBase.<Init>d__1>(SceneBase.<Init>d__1&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.Start<SceneMapManager.<ChangeMap>d__12>(SceneMapManager.<ChangeMap>d__12&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.Start<SceneMapManager_old.<ChangeMap>d__15>(SceneMapManager_old.<ChangeMap>d__15&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResMgr.<LoadAssetAsync>d__0<object>>(ResMgr.<LoadAssetAsync>d__0<object>&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResMgr.<_LoadAssetAsync>d__1<object>>(ResMgr.<_LoadAssetAsync>d__1<object>&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,SceneGoTo.<EnterScene>d__1>(Cysharp.Threading.Tasks.UniTask.Awaiter&,SceneGoTo.<EnterScene>d__1&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>,SceneGoTo.<EnterScene>d__1>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>&,SceneGoTo.<EnterScene>d__1&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.Start<SceneGoTo.<EnterScene>d__1>(SceneGoTo.<EnterScene>d__1&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,object>(Cysharp.Threading.Tasks.UniTask.Awaiter&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>,object>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,object>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,object>(Cysharp.Threading.Tasks.UniTask.Awaiter&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,object>(Cysharp.Threading.Tasks.UniTask.Awaiter&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,object>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<object>(object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<byte>.Start<object>(object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<object>(object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,object>(Cysharp.Threading.Tasks.UniTask.Awaiter&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>,object>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>&,object&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.Start<object>(object&)
 		// Cysharp.Threading.Tasks.Internal.StateTuple<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>> Cysharp.Threading.Tasks.Internal.StateTuple.Create<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>)
 		// System.Void Cysharp.Threading.Tasks.UniTaskExtensions.Forget<byte>(Cysharp.Threading.Tasks.UniTask<byte>)
+		// System.Void EventCenter.Bind<int,int>(int,UnityEngine.Events.UnityAction<int,int>)
 		// System.Void EventCenter.Bind<int>(int,UnityEngine.Events.UnityAction<int>)
 		// System.Void EventCenter.Bind<object>(int,UnityEngine.Events.UnityAction<object>)
 		// System.Void EventCenter.Fire<int>(int,int)
 		// System.Void EventCenter.Fire<object>(int,object)
 		// System.Void EventCenter.Fire_Wait<object>(int,object,int)
+		// System.Void EventCenter.UnBind<int,int>(int,UnityEngine.Events.UnityAction<int,int>)
 		// System.Void EventCenter.UnBind<int>(int,UnityEngine.Events.UnityAction<int>)
 		// System.Void EventCenter.UnBind<object>(int,UnityEngine.Events.UnityAction<object>)
 		// Grpc.Core.Marshaller<object> Grpc.Core.Marshallers.Create<object>(System.Action<object,Grpc.Core.SerializationContext>,System.Func<Grpc.Core.DeserializationContext,object>)
@@ -482,32 +472,15 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Collections.Generic.KeyValuePair<float,object> System.Linq.Enumerable.ElementAt<System.Collections.Generic.KeyValuePair<float,object>>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<float,object>>,int)
 		// System.Collections.Generic.KeyValuePair<object,object> System.Linq.Enumerable.ElementAt<System.Collections.Generic.KeyValuePair<object,object>>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object,object>>,int)
 		// int System.MemoryExtensions.IndexOf<ushort>(System.ReadOnlySpan<ushort>,ushort)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,ProtocalBag.<OpenBag>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,ProtocalBag.<OpenBag>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,ProtocalBag.<OpenBag>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,ProtocalBag.<OpenBag>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,ProtocalBag.<BagUsingItem>d__5>(System.Runtime.CompilerServices.TaskAwaiter<object>&,ProtocalBag.<BagUsingItem>d__5&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,ProtocalLogin.<LoginIn>d__3>(System.Runtime.CompilerServices.TaskAwaiter<object>&,ProtocalLogin.<LoginIn>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,ProtocalRole.<RoleAddVipRequest>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,ProtocalRole.<RoleAddVipRequest>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,ProtocalRole.<RoleUpLvRequest>d__3>(System.Runtime.CompilerServices.TaskAwaiter<object>&,ProtocalRole.<RoleUpLvRequest>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<ProtocalBag.<OpenBag>d__4>(ProtocalBag.<OpenBag>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ProtocalBag.<BagUsingItem>d__5>(ProtocalBag.<BagUsingItem>d__5&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ProtocalLogin.<LoginIn>d__3>(ProtocalLogin.<LoginIn>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ProtocalRole.<RoleAddVipRequest>d__4>(ProtocalRole.<RoleAddVipRequest>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ProtocalRole.<RoleUpLvRequest>d__3>(ProtocalRole.<RoleUpLvRequest>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,GLoader3DExtensions.<SetLoadSpine>d__0>(Cysharp.Threading.Tasks.UniTask.Awaiter&,GLoader3DExtensions.<SetLoadSpine>d__0&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalBag.<ListenBag>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalBag.<ListenBag>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalLogin.<ListenLogin>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalLogin.<ListenLogin>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,ProtocalRole.<ListenRole>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,ProtocalRole.<ListenRole>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Bag.BagMainView.<OnClickUsing>d__12>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Bag.BagMainView.<OnClickUsing>d__12&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Login.LoginMainView.<LoginMySql>d__12>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Login.LoginMainView.<LoginMySql>d__12&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,RoleMainViewWin.<SetData>d__3>(System.Runtime.CompilerServices.TaskAwaiter<object>&,RoleMainViewWin.<SetData>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<Bag.BagMainView.<OnClickUsing>d__12>(Bag.BagMainView.<OnClickUsing>d__12&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<EventCenter.<Fire_Wait>d__19<object>>(EventCenter.<Fire_Wait>d__19<object>&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<GLoader3DExtensions.<SetLoadSpine>d__0>(GLoader3DExtensions.<SetLoadSpine>d__0&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<Login.LoginMainView.<LoginMySql>d__12>(Login.LoginMainView.<LoginMySql>d__12&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalBag.<ListenBag>d__1>(ProtocalBag.<ListenBag>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalLogin.<ListenLogin>d__1>(ProtocalLogin.<ListenLogin>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<ProtocalRole.<ListenRole>d__1>(ProtocalRole.<ListenRole>d__1&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<RoleMainViewWin.<SetData>d__3>(RoleMainViewWin.<SetData>d__3&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,object>(System.Runtime.CompilerServices.TaskAwaiter<object>&,object&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,object>(System.Runtime.CompilerServices.TaskAwaiter<object>&,object&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,object>(System.Runtime.CompilerServices.TaskAwaiter<object>&,object&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<object>(object&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<object>(object&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,object>(Cysharp.Threading.Tasks.UniTask.Awaiter&,object&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,object>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,object&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,object>(System.Runtime.CompilerServices.TaskAwaiter<object>&,object&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<object>(object&)
 		// ushort& System.Runtime.CompilerServices.Unsafe.Add<ushort>(ushort&,System.IntPtr)
 		// byte& System.Runtime.CompilerServices.Unsafe.As<ushort,byte>(ushort&)
 		// object& System.Runtime.CompilerServices.Unsafe.As<object,object>(object&)

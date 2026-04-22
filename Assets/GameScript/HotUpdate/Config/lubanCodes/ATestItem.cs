@@ -24,7 +24,7 @@ public sealed partial class ATestItem : Luban.BeanBase
         UpgradeToItemId_Ref = null;
         if(_buf.ReadBool()){ ExpireTime = _buf.ReadLong(); } else { ExpireTime = null; }
         BatchUseable = _buf.ReadBool();
-        Quality = (item.EQuality)_buf.ReadInt();
+        Quality = (EQuality)_buf.ReadInt();
         PropStream = ItemProp.DeserializeItemProp(_buf);
         {int n0 = System.Math.Min(_buf.ReadSize(), _buf.Size);PropList = new System.Collections.Generic.List<ItemProp>(n0);for(var i0 = 0 ; i0 < n0 ; i0++) { ItemProp _e0;  _e0 = ItemProp.DeserializeItemProp(_buf); PropList.Add(_e0);}}
         PropColumn = ItemProp.DeserializeItemProp(_buf);
@@ -67,7 +67,7 @@ public sealed partial class ATestItem : Luban.BeanBase
     /// <summary>
     /// 品质
     /// </summary>
-    public readonly item.EQuality Quality;
+    public readonly EQuality Quality;
     /// <summary>
     /// 道具兑换配置
     /// </summary>
