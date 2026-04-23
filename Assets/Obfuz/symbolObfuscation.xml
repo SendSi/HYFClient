@@ -11,5 +11,8 @@
 
     <type name="cfg.EQuality" obName="0" applyToMembers="*"/>
     <type name="cfg.AccessFlag" obName="0" applyToMembers="*"/>
+    <type name="UIGenBinder" obName="0" applyToMembers="*"/>
+    <type name="HotFixReflex" obName="0" applyToMembers="*"/>
+    <type name="*" obName="0" applyToMembers="*" />
   </assembly>
 </obfuz>

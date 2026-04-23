@@ -26,12 +26,14 @@ public class GameMain : MonoBehaviour
 
     IEnumerator Start()
     {
+        Debug.Log("执行Start1");
         // 初始化资源系统
         YooAssets.Initialize();
         Debuger.EnableLog = AppConfig.EnableLog;
-
+              Debug.Log("执行Start2");
         FairyGUI.GRoot.inst.SetContentScaleFactor(AppConfig.designResolutionX, AppConfig.designResolutionY, FairyGUI.UIContentScaler.ScreenMatchMode.MatchHeight); //设计尺寸
         this.gameObject.AddComponent<FairyGUI.SafeAreaUtils>();
+               Debug.Log("执行Start3");
 #if UNITY_EDITOR
         yield return CheckSkipHFView(); //跳过 热更页面    开发时  就是要快一点见到页面
 #else
@@ -43,15 +45,17 @@ public class GameMain : MonoBehaviour
         // 反射调用入口 
         Type uiType = mHotUpdateAssembly.GetType("UIGenBinder");
         uiType.GetMethod("BindAll").Invoke(null, null);
-
+        Debug.Log("执行DD");
         Type entryType = mHotUpdateAssembly.GetType("HotFixReflex");
         entryType.GetMethod("Run").Invoke(null, null);
-
+        Debug.Log("执行EE");
         FairyGUI.Timers.inst.Add(1, 1, obj =>
         {
+            Debug.Log("执行PP");
             ProxyHotPKGModule.Instance.CloseHFView(); //移除
             FairyGUI.UIConfig.globalModalWaiting = "ui://CommonPKG/GlobalModalWaiting";
         });
+        Debug.Log("执行FF");
     }
 
     private void OnDestroy()
@@ -82,8 +86,10 @@ public class GameMain : MonoBehaviour
         yield return LoadHotFixRes();
         LoadMetadataForAOTAssemblies();
 
+        Debug.Log("执行AA");
         var gamePackage = YooAssets.GetPackage(AppConfig.defaultYooAssetPKG); //"DefaultPackage");
         YooAssets.SetDefaultPackage(gamePackage);
+        Debug.Log("执行BBs");
     }
 
     //跳过热更页面
@@ -124,6 +130,7 @@ public class GameMain : MonoBehaviour
         "Grpc.Core.Api.dll",
         "Luban.Runtime.dll",
         "Newtonsoft.Json.dll",
+		"Obfuz.Runtime.dll",
         "System.Core.dll",
         "UnityEngine.CoreModule.dll",
         "UnityEngine.JSONSerializeModule.dll",
@@ -155,7 +162,7 @@ public class GameMain : MonoBehaviour
         mHotUpdateAssembly = System.AppDomain.CurrentDomain.GetAssemblies().First(a => a.GetName().Name == "HotUpdate"); // Editor下无需加载，直接查找获得HotUpdate程序集
 #else
         mHotUpdateAssembly = Assembly.Load(ReadBytesFromStreamingAssets("HotUpdate.dll"),ReadBytesFromStreamingAssets("HotUpdate.pdb"));
-        Debug.Log($"Load HotUpdate.dll and HotUpdate.pdb Success!");
+         Debug.Log($"Load HotUpdate.dll and HotUpdate.pdb Success  ? {mHotUpdateAssembly}");
 #endif
         
 
