@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class CLRHelperEditor
 {
-    [MenuItem("HybridCLR/CopyTo_GameResHotFix", false, 5000)] //打了热更后  替换
+    [MenuItem("HybridCLR/Generate/All_CopyTo_GameResHotFix", false, 5000)]//打了热更后  替换
     public static void CopyAotDll()
     {
         BuildTarget target = EditorUserBuildSettings.activeBuildTarget;
