@@ -299,7 +299,7 @@ public class SceneMapManager : Singleton<SceneMapManager>
         List<MapResBlockData> _checkEndBlockDataList = new List<MapResBlockData>();
 
         int indexX = PosChangePointIndex(center, out int indexY);
-        Debug.LogError($"indexX={indexX}  indexY={indexY}");
+        Debug.Log($"indexX={indexX}  indexY={indexY}");
         if (indexX >= 0 && indexY >= 0 && _mapResBlockDataArr.GetLength(0) > indexX && _mapResBlockDataArr.GetLength(1) > indexY && _mapResBlockDataArr[indexX, indexY] != null)
         {
             var pointData = _mapResBlockDataArr[indexX, indexY];
