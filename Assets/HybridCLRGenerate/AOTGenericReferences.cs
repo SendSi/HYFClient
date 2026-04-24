@@ -156,6 +156,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Cysharp.Threading.Tasks.UniTaskExtensions.<>c__19<byte>
 	// EventOne<int>
 	// EventOne<object>
+	// EventTwo<int,int>
 	// Google.Protobuf.Collections.RepeatedField.<GetEnumerator>d__28<object>
 	// Google.Protobuf.Collections.RepeatedField<object>
 	// Google.Protobuf.FieldCodec.<>c<object>
@@ -434,6 +435,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// UnityEngine.Events.UnityAction<UnityEngine.RaycastHit>
 	// UnityEngine.Events.UnityAction<UnityEngine.Vector3,object>
 	// UnityEngine.Events.UnityAction<UnityEngine.Vector3>
+	// UnityEngine.Events.UnityAction<int,int>
 	// UnityEngine.Events.UnityAction<int>
 	// UnityEngine.Events.UnityAction<object>
 	// UnityEngine.Events.UnityEvent<UnityEngine.RaycastHit2D>
@@ -469,11 +471,13 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder.Start<SceneGoTo.<EnterScene>d__1>(SceneGoTo.<EnterScene>d__1&)
 		// Cysharp.Threading.Tasks.Internal.StateTuple<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>> Cysharp.Threading.Tasks.Internal.StateTuple.Create<Cysharp.Threading.Tasks.UniTask.Awaiter<byte>>(Cysharp.Threading.Tasks.UniTask.Awaiter<byte>)
 		// System.Void Cysharp.Threading.Tasks.UniTaskExtensions.Forget<byte>(Cysharp.Threading.Tasks.UniTask<byte>)
+		// System.Void EventCenter.Bind<int,int>(int,UnityEngine.Events.UnityAction<int,int>)
 		// System.Void EventCenter.Bind<int>(int,UnityEngine.Events.UnityAction<int>)
 		// System.Void EventCenter.Bind<object>(int,UnityEngine.Events.UnityAction<object>)
 		// System.Void EventCenter.Fire<int>(int,int)
 		// System.Void EventCenter.Fire<object>(int,object)
 		// System.Void EventCenter.Fire_Wait<object>(int,object,int)
+		// System.Void EventCenter.UnBind<int,int>(int,UnityEngine.Events.UnityAction<int,int>)
 		// System.Void EventCenter.UnBind<int>(int,UnityEngine.Events.UnityAction<int>)
 		// System.Void EventCenter.UnBind<object>(int,UnityEngine.Events.UnityAction<object>)
 		// Grpc.Core.Marshaller<object> Grpc.Core.Marshallers.Create<object>(System.Action<object,Grpc.Core.SerializationContext>,System.Func<Grpc.Core.DeserializationContext,object>)
