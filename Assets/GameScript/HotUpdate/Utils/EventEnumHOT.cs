@@ -17,5 +17,7 @@ public enum EventEnumHOT
     EE_test1 = 50001,
     EE_test2 = 50002,
     EE_test3 = 50003,
+    
+    EE_ShowHamsterItem=50010,
 
 }

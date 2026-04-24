@@ -478,10 +478,6 @@ namespace BitBenderGames
 
             IsSmoothingEnabled = true;
             touchInputController = GetComponent<TouchInputController>();
-            if (touchInputController == null)
-            {
-                touchInputController = gameObject.AddComponent<TouchInputController>();
-            }
             dragStartCamPos = Vector3.zero;
             cameraScrollVelocity = Vector3.zero;
             timeRealDragStop = 0;
@@ -518,21 +514,6 @@ namespace BitBenderGames
 
         public void Start()
         {
-            if (touchInputController == null)
-            {
-                touchInputController = GetComponent<TouchInputController>();
-            }
-            if (touchInputController == null)
-            {
-                // 如果组件不存在，自动添加一个
-                touchInputController = gameObject.AddComponent<TouchInputController>();
-                Debug.Log("[MobileTouchCamera] 自动添加了 TouchInputController 组件");
-            }
-            if (touchInputController == null)
-            {
-                Debug.LogError("[MobileTouchCamera] TouchInputController 无法获取或添加！");
-                return;
-            }
             touchInputController.OnInputClick += InputControllerOnInputClick;
             touchInputController.OnDragStart += InputControllerOnDragStart;
             touchInputController.OnDragUpdate += InputControllerOnDragUpdate;

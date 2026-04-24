@@ -17,6 +17,7 @@ public class HotFixReflex
         CfgLubanMgr.Instance.Begin();//导表初始化
         AudioMgr.Instance.Begin();
         GMManager.Instance.Begin();
+        SceneMgr.Instance.Begin();//大海.视野可拖动
     }
 
     public static void Destroy()

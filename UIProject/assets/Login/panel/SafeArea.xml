@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" initName="frame" designImageOffsetX="-165" designImageAlpha="29" designImageLayer="1">
+  <displayList>
+    <loader id="n25_p781" name="bg" xy="-170,0" size="1670,750" url="ui://2r331opvfk801ygcgqs" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <component id="n12_7oiz" name="noticeBtn" src="7oizh" fileName="components/interactive.xml" xy="16,52" size="98,98" group="n22_qbmb">
+      <Button title="公告" icon="ui://byy9k3gh7oiz9"/>
+    </component>
+    <component id="n9_7oiz" name="accountBtn" src="7oizh" fileName="components/interactive.xml" xy="16,152" size="98,98" group="n22_qbmb">
+      <Button title="离线" icon="ui://byy9k3gh7oiz7"/>
+    </component>
+    <component id="n11_7oiz" name="cfgBtn" src="7oizh" fileName="components/interactive.xml" xy="16,252" size="98,98" group="n22_qbmb">
+      <Button title="导表" icon="ui://byy9k3gh7oiza"/>
+    </component>
+    <component id="n32_mpc8" name="serviceBtn" src="7oizh" fileName="components/interactive.xml" xy="16,352" size="98,98" group="n22_qbmb">
+      <Button title="客服" icon="ui://byy9k3ghmpc836"/>
+    </component>
+    <component id="n45_f54x" name="effectBtn" src="7oizh" fileName="components/interactive.xml" xy="16,452" size="98,98" group="n22_qbmb">
+      <Button title="特效" icon="ui://byy9k3gh7oiza"/>
+    </component>
+    <component id="n46_f54x" name="stopBtn" src="7oizh" fileName="components/interactive.xml" xy="16,552" size="98,98" group="n22_qbmb">
+      <Button title="特停" icon="ui://byy9k3ghmpc836"/>
+    </component>
+    <group id="n22_qbmb" name="left" xy="16,52" size="98,598" advanced="true">
+      <relation target="" sidePair="left-left"/>
+    </group>
+    <text id="n37_qg41" name="title_version" xy="16,13" size="108,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="当前版本V1">
+      <relation target="" sidePair="left-left"/>
+    </text>
+    <component id="n38_qg41" name="ageBtn" src="7oizh" fileName="components/interactive.xml" xy="1226,602" size="98,108">
+      <relation target="" sidePair="right-right"/>
+      <Button title=" " icon="ui://byy9k3ghqg415p"/>
+    </component>
+    <component id="n8_7oiz" name="loginBtn" src="p78115" fileName="components/button_game_start.xml" xy="517,510" group="n21_gaz3">
+      <Button title="开始游戏" titleColor="#ffffff" icon="ui://byy9k3gh7oizb" sound="ui://2r331opvu9ouhn" volume="50"/>
+    </component>
+    <image id="n41_uhjh" name="inputBg" src="p78116" fileName="images/land_bg02.png" xy="324,432" pivot="0.5,0.5" size="762,57" group="n21_gaz3"/>
+    <text id="n42_uhjh" name="lbl" xy="526,442" size="112,35" group="n21_gaz3" fontSize="25" color="#99cc33" text="账号登录:">
+      <relation target="n40_uhjh" sidePair="middle-middle,left-right"/>
+    </text>
+    <text id="n40_uhjh" name="roleInputTxt" xy="644,435" size="245,49" group="n21_gaz3" fontSize="30" color="#99cc00" vAlign="middle" autoSize="none" text="z1001" input="true" prompt="输入账号"/>
+    <group id="n21_gaz3" name="info" xy="324,432" size="762,156" advanced="true">
+      <relation target="" sidePair="center-center"/>
+    </group>
+    <text id="n36_qg41" name="title_03" xy="247,632" pivot="0.5,0.5" size="840,46" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" ubb="true" autoSize="height" strokeColor="#333333" shadowColor="#333333" shadowOffset="0,1" text="感谢您使用本游戏，我们非常重视您的个人信息和隐私保 护。为了更好地保障您的个人权益,在您使用本游戏的服务 前，请务必《用户服务协议》及《用户隐私协议》的各条款。如果您同意并接受，若不同意，请退出游戏。">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n39_116rd" name="title_04" xy="287,685" size="759,52" font="ui://2r331opvno3vhz9d63" fontSize="16" color="#ffffff" align="center" ubb="true" autoSize="none" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="出版单位：河北冠林数字出版有限公司  运营单位：广州市漫灵软件有限公司&#xA;新广出审[2017]8853号   ISBN 978-7-498-01811-3">
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <component id="n43_lsme" name="languCom" src="jrst1ygcga0" fileName="components/ComboBox1.xml" xy="1044,80" size="250,83">
+      <relation target="" sidePair="right-right,top-top"/>
+      <ComboBox visibleItemCount="10" direction="down">
+        <item title="简体中文"/>
+        <item title="繁体中文"/>
+        <item title="英文"/>
+      </ComboBox>
+    </component>
+  </displayList>
+</component>

@@ -28,7 +28,7 @@ public  class Singleton<T> where T : Singleton<T>,new()
         OnDispose();
     }
 
-    //写上空方法 为了调用 OnInit
+    //写上空方法 为了调用 OnInit-->去看其对应的OnInit方法吧
     public void Begin()
     {
 

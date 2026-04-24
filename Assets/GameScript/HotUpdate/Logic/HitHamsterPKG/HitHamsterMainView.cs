@@ -1,18 +1,30 @@
 using System;
+using System.Collections.Generic;
 using FairyGUI;
 using UnityEngine;
 
 namespace HitHamsterPKG
 {
+    public enum HGameState
+    {
+        Start = 1,
+        Gaming = 2,
+        End = 3
+    }
+
+
     public partial class HitHamsterMainView : GComponent
     {
-        private int mSumTime = 50; //总时间 30秒
+        private int mSumTime = 300; //总时间 30秒    300则是30秒
+        private int mStartTime = 4; //开始前 倒计时
         private bool mIsPlaying = false;
         private int hpValue = 5;
+        private List<Item_MainHamster> mItemMain = new List<Item_MainHamster>();
 
         public override void OnInit()
         {
             base.OnInit();
+            mItemMain.Clear();
             _bigMarkBtn.onClick.Add(OnClickBigMaskBtn);
             _stopBtn.onClick.Add(OnClickStopBtn);
             _closeButton.onClick.Add(OnClickCloseBtn);
@@ -40,15 +52,16 @@ namespace HitHamsterPKG
 
         private void OnClickItemHamsterList(EventContext context)
         {
-            var data = context.data;
-            Debug.LogError(data);
+            Item_MainHamster btn = context.data as Item_MainHamster;
+            btn.SetClickItem();
         }
 
         private void OnRenderHamsterList(int index, GObject item)
         {
             var itemHamster = item as Item_MainHamster;
             itemHamster.OnInit();
-            itemHamster.SetData();
+            itemHamster.SetIndex(index);
+            mItemMain.Add(itemHamster);
         }
 
         private void OnClickCloseBtn()
@@ -68,11 +81,11 @@ namespace HitHamsterPKG
                 _stateCtrl.selectedIndex = 3;
                 _timeCtrl.selectedIndex = 0;
                 int timeIndex = 0;
-                FairyGUI.Timers.inst.Add(1, 4, (p) =>
+                FairyGUI.Timers.inst.Add(1, mStartTime, (p) =>
                 {
                     timeIndex++;
                     _timeCtrl.selectedIndex = timeIndex;
-                    if (timeIndex >= 4) OnStartGame();
+                    if (timeIndex >= mStartTime) OnStartGame();
                 });
             }
         }
@@ -85,20 +98,75 @@ namespace HitHamsterPKG
         private void OnStartGame()
         {
             mIsPlaying = true;
+            mSumTime = 300;
             _timeTxt.text = (Mathf.CeilToInt(mSumTime * 0.1f)).ToString();
+            _timeBar.max = mSumTime;
+            _timeBar.value = mSumTime;
             FairyGUI.Timers.inst.Add(0.1f, -1, OnPlayingTimer);
         }
 
+
+        /// <summary> 头顶的 倒计时 </summary>
         private void OnPlayingTimer(object param)
         {
             mSumTime--;
-            _timeTxt.text = (Mathf.CeilToInt(mSumTime * 0.1f)).ToString();
+            var curTxt = (Mathf.CeilToInt(mSumTime * 0.1f));
+            _timeTxt.text = curTxt.ToString();
+            _timeBar.value = mSumTime;
             if (mSumTime <= 0)
             {
                 mIsPlaying = false;
                 _stateCtrl.selectedIndex = 2;
             }
+
+            CheckCurrent();
         }
+
+        void CheckCurrent()
+        {
+            Debug.LogError("检测");
+            var canShow = 0;
+            List<Item_MainHamster> tCanChanges = new List<Item_MainHamster>();
+            foreach (var item in mItemMain)
+            {
+                if (item.GetState() == 0)
+                {
+                    canShow++;
+                    tCanChanges.Add(item);
+                }
+            }
+
+            var gen = 0;
+            if (canShow >= 9) gen++;
+            if (canShow >= 8) gen++;
+            if (canShow >= 7) gen++;
+            if (canShow >= 6) gen++;
+
+            if (gen <= 0) return;
+            
+            var camItems = GetRandomItems(tCanChanges, 1);
+            foreach (var item in camItems)
+            {
+                item.SetGenHamster();
+            }
+        }
+
+        List<Item_MainHamster> GetRandomItems(List<Item_MainHamster> sourceList, int gen)
+        {
+            System.Random random = new System.Random();
+            List<Item_MainHamster> randomItems = new List<Item_MainHamster>();
+            gen = Math.Min(gen, sourceList.Count);
+            // 抽取随机项目
+            for (int i = 0; i < gen; i++)
+            {
+                int index = random.Next(sourceList.Count);
+                randomItems.Add(sourceList[index]);
+                sourceList.RemoveAt(index); // 确保不重复抽取
+            }
+
+            return randomItems;
+        }
+
 
         private void OnChangedStateCtrl()
         {

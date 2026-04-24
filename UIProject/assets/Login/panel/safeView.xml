@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="750,1660">
+  <displayList>
+    <graph id="n1_m7ni" name="n1Bottom" xy="310,1526" size="100,100" type="rect">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </graph>
+    <graph id="n0_m7ni" name="center" xy="227,830" pivot="0.5,0.5" size="244,100" type="rect">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <graph id="n2_m7ni" name="n2Top" xy="310,38" size="100,100" type="rect" lineColor="#ff00ff00" fillColor="#ff00cc33"/>
+  </displayList>
+</component>
