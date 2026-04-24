@@ -70,6 +70,7 @@ namespace Login
         private void OnClickAgeBtn()
         {
             ProxyLoginModule.Instance.OpenGameAgeViewWin();
+            SetTestHotUpdate();
         }
 
         private void OnClickServiceBtn()
@@ -145,6 +146,17 @@ namespace Login
                 ProxyCommonPKGModule.Instance.AddToastStr("账号不存在");
             }
             GRoot.inst.CloseModalWait();
+        }
+
+        private void SetTestHotUpdate()
+        {
+            Debuger.LogError("测试 SetTestHotUpdate1.1  start");
+            var iV = 0;
+            for (int i = 0; i < 100000000; i++)
+            {
+                iV += i;
+            }
+            Debuger.LogError($"测试 SetTestHotUpdate     end {iV}");
         }
 
         private void OnClickCfgBtn()

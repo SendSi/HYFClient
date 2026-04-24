@@ -14,6 +14,8 @@ namespace Login
         public GButton _serviceBtn;
         public GButton _effectBtn;
         public GButton _stopBtn;
+        public GButton _testBtn1;
+        public GButton _testBtn2;
         public GGroup _left;
         public GTextField _title_version;
         public GButton _ageBtn;
@@ -43,6 +45,8 @@ namespace Login
             _serviceBtn = (GButton)GetChild("serviceBtn");
             _effectBtn = (GButton)GetChild("effectBtn");
             _stopBtn = (GButton)GetChild("stopBtn");
+            _testBtn1 = (GButton)GetChild("testBtn1");
+            _testBtn2 = (GButton)GetChild("testBtn2");
             _left = (GGroup)GetChild("left");
             _title_version = (GTextField)GetChild("title_version");
             _ageBtn = (GButton)GetChild("ageBtn");
