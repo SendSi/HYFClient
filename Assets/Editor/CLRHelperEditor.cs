@@ -2,15 +2,10 @@ using System.IO;
 using HybridCLR.Editor.Settings;
 using UnityEditor;
 using UnityEngine;
-using HybridCLR.Editor;
-using HybridCLR.Editor.Commands;
-using Obfuz.Settings;
-using Obfuz4HybridCLR;
-using System.Collections.Generic;
 
 public static class CLRHelperEditor
 {
-    [MenuItem("HybridCLR/Generate/All_CopyTo_GameResHotFix", false, 5000)] //打了热更后  替换
+    [MenuItem("HybridCLR/Generate/All_CopyTo_GameResHotFix", false, 5000)]//打了热更后  替换
     public static void CopyAotDll()
     {
         BuildTarget target = EditorUserBuildSettings.activeBuildTarget;
@@ -42,35 +37,10 @@ public static class CLRHelperEditor
 
         AssetDatabase.Refresh();
     }
-
-
-    [MenuItem("HybridCLR/ObfuzExtension/GenerateAll_CopyTo_GameResHotFix")]
-    public static void CompileAndObfuscateAndCopyToStreamingAssets()
+    
+    [MenuItem("HybridCLR/Jenkins_手动打包测试")]
+    public static void ManualBuildTest()
     {
-        BuildTarget target = EditorUserBuildSettings.activeBuildTarget;
-        CompileDllCommand.CompileDll(target);
-
-        string obfuscatedHotUpdateDllPath = PrebuildCommandExt.GetObfuscatedHotUpdateAssemblyOutputPath(target);
-        ObfuscateUtil.ObfuscateHotUpdateAssemblies(target, obfuscatedHotUpdateDllPath);
-
-        Directory.CreateDirectory(Application.streamingAssetsPath);
-
-        string hotUpdateDllPath = $"{SettingsUtil.GetHotUpdateDllsOutputDirByTarget(target)}";
-        List<string> obfuscationRelativeAssemblyNames = ObfuzSettings.Instance.assemblySettings.GetObfuscationRelativeAssemblyNames();
-        string toDir = "Assets/GameResHotFix";
-
-        foreach (string assName in SettingsUtil.HotUpdateAssemblyNamesIncludePreserved)
-        {
-            string srcDir = obfuscationRelativeAssemblyNames.Contains(assName) ? obfuscatedHotUpdateDllPath : hotUpdateDllPath;
-            string srcFile = $"{srcDir}/{assName}.dll";
-            string dstFile = Path.Combine(toDir, $"{assName}.dll.bytes");
-
-            if (File.Exists(srcFile))
-            {
-                File.Copy(srcFile, dstFile, true);
-                Debug.LogError($"[复制]   源:{srcFile} ，，，目标:{dstFile}");
-            }
-        }
-       AssetDatabase.Refresh();
+        JenkinsBuild.BuildApk();
     }
 }
