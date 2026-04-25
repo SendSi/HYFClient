@@ -37,4 +37,10 @@ public static class CLRHelperEditor
 
         AssetDatabase.Refresh();
     }
+    
+    [MenuItem("HybridCLR/Jenkins_手动打包测试")]
+    public static void ManualBuildTest()
+    {
+        JenkinsBuild.BuildApk();
+    }
 }
