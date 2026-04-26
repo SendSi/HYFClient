@@ -1,0 +1,23 @@
+Execute Windows batch command
+首包/整包---会出资源与apk
+
+@echo off
+set UNITY="C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe"
+set PROJ="D:\git_Project\HYFClient"
+
+set APP_VERSION=%APP_VERSION%
+set RES_VERSION=%RES_VERSION%
+
+%UNITY% -batchmode -nographics -projectPath %PROJ% -executeMethod JenkinsBuild_Version.BuildFullPackage -quit
+
+
+
+热更包---只出资源
+
+@echo off
+set UNITY="C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe"
+set PROJ="D:\git_Project\HYFClient"
+
+set RES_VERSION=%RES_VERSION%
+
+%UNITY% -batchmode -nographics -projectPath %PROJ% -executeMethod JenkinsBuild_HotVer.BuildHotPackage -quit
