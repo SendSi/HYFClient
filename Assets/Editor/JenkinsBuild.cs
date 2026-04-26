@@ -38,4 +38,10 @@ public static class JenkinsBuild
         BuildPipeline.BuildPlayer(options);
         Debug.Log($"=== Jenkins 打包完成，输出路径：{outputPath} ===");
     }
+    
+    [MenuItem("HybridCLR/Jenkins_手动打包测试_仅出apk")]
+    public static void TryBuildTest()
+    {
+        BuildApk();
+    }
 }

@@ -5,7 +5,9 @@ using UnityEngine;
 
 public static class CLRHelperEditor
 {
-    [MenuItem("HybridCLR/Generate/All_CopyTo_GameResHotFix", false, 5000)]//打了热更后  替换
+    public const string menuDLLCopy = "HybridCLR/Generate/All_CopyTo_GameResHotFix";
+
+    [MenuItem(menuDLLCopy, false, 5000)] //打了热更后  替换
     public static void CopyAotDll()
     {
         BuildTarget target = EditorUserBuildSettings.activeBuildTarget;
@@ -16,6 +18,7 @@ public static class CLRHelperEditor
         {
             Directory.Delete(toDir, true); //先删除  再copy
         }
+
         Directory.CreateDirectory(toDir);
         AssetDatabase.Refresh();
 
@@ -28,7 +31,8 @@ public static class CLRHelperEditor
 
         //2热更
         var hotUpdate = "HotUpdate.dll";
-        string fromDirHot = Path.Combine(HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir, target.ToString());
+        string fromDirHot =
+            Path.Combine(HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir, target.ToString());
         File.Copy(Path.Combine(fromDirHot, hotUpdate), Path.Combine(toDir, $"{hotUpdate}.bytes"), true);
 
         //3pdb 为输入堆栈使用的
@@ -37,10 +41,6 @@ public static class CLRHelperEditor
 
         AssetDatabase.Refresh();
     }
-    
-    [MenuItem("HybridCLR/Jenkins_手动打包测试")]
-    public static void ManualBuildTest()
-    {
-        JenkinsBuild.BuildApk();
-    }
+
+
 }
