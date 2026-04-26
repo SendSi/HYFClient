@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 
 
-/// <summary> 首包/整包---会出资源与apk </summary>
+/// <summary> 打整包 </summary>
 public static class JenkinsBuild_Version
 {
     public static void BuildFullPackage()

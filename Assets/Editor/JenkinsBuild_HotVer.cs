@@ -64,8 +64,7 @@ public static class JenkinsBuild_HotVer
     // 1. ActiveBuildTarget
     static void Step1_HybridCLR_ActiveBuildTarget()
     {
-        bool ok = EditorApplication.ExecuteMenuItem("HyBridCLR/CompileDll/ActiveBuildTarget");
-        if (!ok) throw new Exception("Step1 步骤1失败-->HybridCLR/Generate/All");
+        HybridCLR.Editor.Commands.CompileDllCommand.CompileDll(EditorUserBuildSettings.activeBuildTarget, EditorUserBuildSettings.development);
     }
 
     // 2. HybridCLR CopyToHotfix
@@ -128,7 +127,7 @@ public static class JenkinsBuild_HotVer
     }
 
     [MenuItem("HybridCLR/Jenkins_手动打包测试 打热更")]
-    public static void TryBuildTest()
+    public static void TryHotPackageTest()
     {
         BuildHotPackage();
     }
