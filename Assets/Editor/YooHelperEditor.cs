@@ -5,7 +5,7 @@ using UnityEngine;
 using YooAsset.Editor;
 
 //对yooAsset不熟 先手动写死吧
-public class YooHelperEditor : MonoBehaviour
+public static class YooHelperEditor
 {
     static string GetPlatform()
     {
@@ -23,7 +23,7 @@ public class YooHelperEditor : MonoBehaviour
     public static void ClearCDNPath()
     {
         var toDir = $"{AppConfig.localCDN}{GetPlatform()}/{AppConfig.appVersion}";
-        Debug.Log("若无报错 则成功删除       将删除="+toDir);
+        Debug.Log("若无报错 则成功删除       将删除=" + toDir);
         if (Directory.Exists(toDir))
         {
             Directory.Delete(toDir, true); //先删除  
@@ -32,22 +32,30 @@ public class YooHelperEditor : MonoBehaviour
         AssetDatabase.Refresh();
     }
 
+    public const string menuYooCopy = "YooAsset/Copy到_WWW_hyfclient";
 
-    [MenuItem("YooAsset/Copy到_WWW_hyfclient")] //打了热更后  替换
+    [MenuItem(menuYooCopy)] //打了热更后  替换
     public static void CopyCDNPath()
     {
-        var targetPath = $"{AppConfig.localCDN}{GetPlatform()}/{AppConfig.appVersion}";
+        RunCopyResTarget(AppConfig.appVersion,AppConfig.resVersion);
+    }
+
+    public static void RunCopyResTarget(string appVersion,string resVersion)
+    {
+        var targetPath = $"{AppConfig.localCDN}{GetPlatform()}/{appVersion}";
         if (Directory.Exists(targetPath) == false)
         {
             Directory.CreateDirectory(targetPath); //先删除  再copy
         }
-        var formRoot = $"{YooAsset.Editor.AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()}/{UnityEditor.EditorUserBuildSettings.activeBuildTarget}";
-        
+
+        var formRoot =
+            $"{YooAsset.Editor.AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()}/{UnityEditor.EditorUserBuildSettings.activeBuildTarget}";
+
         var soreceList = new List<string>();
         string resVerPath = "";
         foreach (var item in AssetBundleCollectorSettingData.Setting.Packages)
         {
-            resVerPath= $"{formRoot}/{item.PackageName}/{AppConfig.resVersion}";
+            resVerPath = $"{formRoot}/{item.PackageName}/{resVersion}";
             soreceList.Add(resVerPath);
             Debug.Log($"formRoot={resVerPath}");
             if (Directory.Exists(resVerPath) == false)
@@ -71,6 +79,6 @@ public class YooHelperEditor : MonoBehaviour
         AssetDatabase.Refresh();
         Debug.Log(" http-server --port 80 -b --cors       已copy    若无报错 则成功  ");
         GUIUtility.systemCopyBuffer = "http-server --port 80 -b --cors";
-        System.Diagnostics.Process.Start(AppConfig.localCDN.Replace("CDN",""));
+        System.Diagnostics.Process.Start(AppConfig.localCDN.Replace("CDN", ""));
     }
 }
