@@ -2,31 +2,26 @@ using UnityEditor;
 using YooAsset.Editor;
 using System;
 using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-
-/// <summary> 首包/整包---会出资源与apk </summary>
-public static class JenkinsBuild_Version
+/// <summary> 已有整包的后的 热更包---只出资源 </summary>
+public static class JenkinsBuild_HotVer
 {
-    public static void BuildFullPackage()
+    public static void BuildHotPackage()
     {
         try
         {
-            string appVersion = Environment.GetEnvironmentVariable("APP_VERSION") ?? "v1.0.0";
             string resVersion = Environment.GetEnvironmentVariable("RES_VERSION") ?? "v1.0.0";
-
-            UpdateAppConfigVersions(appVersion, resVersion); //修改appConfig脚本
+            UpdateAppConfigVersions(resVersion); //修改appConfig脚本
 
             Debug.Log($"=== Jenkins 开始 === Yoo版本:{resVersion}");
-            Step1_HybridCLR_GenerateAll();
+            Step1_HybridCLR_ActiveBuildTarget();
             Step2_HybridCLR_CopyToHotfix();
             Step3_Build_DefaultPackage(resVersion);
             Step4_Build_HotFixPackage(resVersion);
-            Step5_Copy_To_CNDTarget(appVersion,resVersion);
-            Step6_BuildAPK(appVersion);
-            Debug.Log("===Jenkins 全部完成 ===");
+            Step5_Copy_To_CNDTarget(resVersion);
+            Debug.Log("===Jenkins hotUpdate 全部完成 ===");
         }
         catch (Exception e)
         {
@@ -41,7 +36,7 @@ public static class JenkinsBuild_Version
     /// </summary>
     /// <param name="newAppVersion">要替换成的 appVersion 值，如 "v1.2.3"</param>
     /// <param name="newResVersion">要替换成的 resVersion 值，如 "v1.2.3"</param>
-    private static void UpdateAppConfigVersions(string newAppVersion, string newResVersion)
+    private static void UpdateAppConfigVersions(string newResVersion)
     {
         string appConfigPath = @"Assets/GameScript/AOT/AppConfig.cs";
         string fullPath = Path.Combine(Application.dataPath, "../", appConfigPath);
@@ -53,12 +48,6 @@ public static class JenkinsBuild_Version
         }
 
         string content = File.ReadAllText(fullPath);
-        content = Regex.Replace(
-            content,
-            @"public\s+static\s+string\s+appVersion\s*=\s*""[^""]*""\s*;",
-            $"public static string appVersion = \"{newAppVersion}\";",
-            RegexOptions.Multiline
-        );
 
         content = Regex.Replace(
             content,
@@ -69,21 +58,20 @@ public static class JenkinsBuild_Version
 
         File.WriteAllText(fullPath, content);
         AssetDatabase.Refresh();
-        Debug.Log($"✅ 已更新 AppConfig.cs：appVersion={newAppVersion}, resVersion={newResVersion}");
+        Debug.Log($"✅ 已更新 AppConfig.cs： resVersion={newResVersion}");
     }
 
-    // 1. HybridCLR Generate All
-    static void Step1_HybridCLR_GenerateAll()
+    // 1. ActiveBuildTarget
+    static void Step1_HybridCLR_ActiveBuildTarget()
     {
-        bool ok = EditorApplication.ExecuteMenuItem("HybridCLR/Generate/All");
+        bool ok = EditorApplication.ExecuteMenuItem("HyBridCLR/CompileDll/ActiveBuildTarget");
         if (!ok) throw new Exception("Step1 步骤1失败-->HybridCLR/Generate/All");
     }
 
     // 2. HybridCLR CopyToHotfix
     static void Step2_HybridCLR_CopyToHotfix()
     {
-        bool ok = EditorApplication.ExecuteMenuItem(CLRHelperEditor
-            .menuDLLCopy); //"HybridCLR/Generate/All_CopyTo_GameResHotFix");
+        bool ok = EditorApplication.ExecuteMenuItem(CLRHelperEditor.menuDLLCopy);
         if (!ok) throw new Exception($"Step2 步骤2失败-->{CLRHelperEditor.menuDLLCopy}");
     }
 
@@ -96,11 +84,11 @@ public static class JenkinsBuild_Version
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
         p.BuildTarget = BuildTarget.Android;
-        p.BuildMode = EBuildMode.ForceRebuild;
+        p.BuildMode = EBuildMode.IncrementalBuild;
         p.CompressOption = ECompressOption.LZ4;
         p.FileNameStyle = EFileNameStyle.HashName;
         p.VerifyBuildingResult = true;
-        p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
+        p.BuildinFileCopyOption = EBuildinFileCopyOption.None;
         p.EncryptionServices = null;
 
         BuiltinBuildPipeline pipeline = new BuiltinBuildPipeline();
@@ -119,10 +107,10 @@ public static class JenkinsBuild_Version
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
         p.BuildTarget = BuildTarget.Android;
-        p.BuildMode = EBuildMode.ForceRebuild;
+        p.BuildMode = EBuildMode.SimulateBuild;
         p.FileNameStyle = EFileNameStyle.HashName;
         p.VerifyBuildingResult = true;
-        p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
+        p.BuildinFileCopyOption = EBuildinFileCopyOption.None;
         p.EncryptionServices = null;
 
         RawFileBuildPipeline pipeline = new RawFileBuildPipeline();
@@ -133,40 +121,15 @@ public static class JenkinsBuild_Version
     }
 
     // 
-    static void Step5_Copy_To_CNDTarget(string appVersion,string resVersion)
+    static void Step5_Copy_To_CNDTarget(string resVersion)
     {
-        YooHelperEditor.RunCopyResTarget(appVersion,resVersion);
+        var appVersion = AppConfig.appVersion;
+        YooHelperEditor.RunCopyResTarget(appVersion, resVersion);
     }
 
-    // 6. 打包 APK
-    static void Step6_BuildAPK(string appVersion)
-    {
-        string version = appVersion.Replace("v", "");
-        PlayerSettings.bundleVersion = version;
-        PlayerSettings.applicationIdentifier = $"com.HYFClient.ML";
-        string[] scenes = EditorBuildSettings.scenes
-            .Where(scene => scene.enabled)
-            .Select(scene => scene.path)
-            .ToArray();
-
-        string outputPath = $"BuildAPK/hyf_{version}.apk";
-
-        BuildPlayerOptions options = new BuildPlayerOptions
-        {
-            scenes = scenes,
-            locationPathName = outputPath,
-            target = BuildTarget.Android,
-            options = BuildOptions.None
-        };
-
-        BuildPipeline.BuildPlayer(options);
-        Debug.Log($"=== Jenkins 打包完成，输出路径：{outputPath} ===");
-    }
-
-
-    [MenuItem("HybridCLR/Jenkins_手动打包测试 打dll 打yoo 可传yoo版本 打apk")]
+    [MenuItem("HybridCLR/Jenkins_手动打包测试 打热更")]
     public static void TryBuildTest()
     {
-        BuildFullPackage();
+        BuildHotPackage();
     }
 }
