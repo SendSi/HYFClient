@@ -21,3 +21,19 @@ set PROJ="D:\git_Project\HYFClient"
 set RES_VERSION=%RES_VERSION%
 
 %UNITY% -batchmode -nographics -projectPath %PROJ% -executeMethod JenkinsBuild_HotVer.BuildHotPackage -quit
+
+
+
+
+@echo off
+:: 1. 定义变量时不要加引号，直接写路径
+set UNITY=C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe
+set PROJ=C:\UniProject\HYFClient
+
+:: 2. 调用时再给变量加引号，避免路径里的空格被拆分
+"%UNITY%" -batchmode -nographics -projectPath "%PROJ%" -executeMethod JenkinsBuild_Exe.BuildExePackage -PLAY_MODE=%PLAY_MODE% -quit
+
+
+OfflinePlayMode
+HostPlayMode
+WebPlayMode
