@@ -37,3 +37,31 @@ set PROJ=C:\UniProject\HYFClient
 OfflinePlayMode
 HostPlayMode
 WebPlayMode
+
+
+
+
+
+@echo off
+set UNITY=C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe
+set PROJ=C:\UniProject\HYFClient
+
+:: 下面这4个都是 Jenkins 传来的参数
+set BUILD_TARGET=%BUILD_TARGET%
+set PLAY_MODE=%PLAY_MODE%
+set APP_VERSION=%APP_VERSION%
+set RES_VERSION=%RES_VERSION%
+
+:: 【关键】把所有参数传给 Unity
+"%UNITY%"^
+ -batchmode^
+ -nographics^
+ -projectPath "%PROJ%"^
+ -executeMethod JenkinsCommand.BuildGame^
+ -BUILD_TARGET=%BUILD_TARGET%^
+ -PLAY_MODE=%PLAY_MODE%^
+ -APP_VERSION=%APP_VERSION%^
+ -RES_VERSION=%RES_VERSION%^
+ -quit
+
+
