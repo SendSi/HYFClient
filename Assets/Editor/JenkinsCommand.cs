@@ -4,37 +4,59 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Codice.Client.BaseCommands.Merge.ApplyMergeOperations;
 using UnityEngine;
 using UnityEditor.SceneManagement;
-
 
 /// <summary> Jenkins 打包命令</summary>
 public static class JenkinsCommand
 {
+    /*  两路径要配对哦
+ @echo off
+ set UNITY=C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe
+ set PROJ=D:\git_Project\HYFClient
+
+ :: 下面这4个都是 Jenkins 传来的参数
+ set BUILD_TARGET=%BUILD_TARGET%
+ set PLAY_MODE=%PLAY_MODE%
+ set APP_VERSION=%APP_VERSION%
+ set RES_VERSION=%RES_VERSION%
+
+ :: 【关键】把所有参数传给 Unity
+ "%UNITY%"^
+  -batchmode^
+  -nographics^
+  -projectPath "%PROJ%"^
+  -executeMethod JenkinsCommand.BuildGame^
+  -BUILD_TARGET=%BUILD_TARGET%^
+  -PLAY_MODE=%PLAY_MODE%^
+  -APP_VERSION=%APP_VERSION%^
+  -RES_VERSION=%RES_VERSION%^
+  -quit
+     */
     /// <summary>给Jenkins调用的</summary>
     public static void BuildGame()
     {
         try
         {
             string[] args = Environment.GetCommandLineArgs();
-
             string buildTarget = GetArg(args, "-BUILD_TARGET=");
-            string playModeStr = GetArg(args, "-PLAY_MODE=");
+            string playModeStr = GetArg(args, "-PLAY_MODE="); //HostPlayMode  或  OfflinePlayMode
             string appVersion = GetArg(args, "-APP_VERSION=");
             string resVersion = GetArg(args, "-RES_VERSION=");
-
             Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} | PlayMode: {playModeStr} | AppVersion: {appVersion} | ResVersion: {resVersion}");
 
             SwitchBuildTarget(buildTarget);
+            DeleteStreamingAssetsYooFolder();
             SetPlayMode(playModeStr);
             ModifyAppConfig(appVersion, resVersion); //修改appConfig脚本
 
             HybridCLR_GenerateAll();
             HybridCLR_CopyToHotfix();
-            YooBuildDefaultPackage(resVersion);
-            YooBuildHotFixPackage(resVersion);
-            AssetResCopyToCDN(appVersion, resVersion);
-            BuildToGameFile(appVersion, buildTarget,playModeStr);
+            YooBuildDefaultPackage(resVersion, buildTarget);
+            YooBuildHotFixPackage(resVersion, buildTarget);
+            AssetResCopyToCDN(appVersion, resVersion, playModeStr);
+            BuildToGameFile(appVersion, buildTarget, playModeStr);
         }
         catch (Exception e)
         {
@@ -150,6 +172,26 @@ public static class JenkinsCommand
         Debug.Log($"Updated AppConfig.cs: appVersion={newAppVersion}, resVersion={newResVersion}");
     }
 
+    public static void DeleteStreamingAssetsYooFolder()
+    {
+        string yooFolderPath = Path.Combine(Application.streamingAssetsPath, "yoo");
+        if (Directory.Exists(yooFolderPath))
+        {
+            try
+            {
+                Directory.Delete(yooFolderPath, recursive: true);
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError($"删除 yoo 文件夹失败：{e.Message}");
+            }
+        }
+        else
+        {
+            Debug.Log("未找到 yoo 文件夹，无需删除");
+        }
+    }
+
     // HybridCLR 生成全部
     public static void HybridCLR_GenerateAll()
     {
@@ -160,20 +202,27 @@ public static class JenkinsCommand
     // HybridCLR CopyToHotfix
     static void HybridCLR_CopyToHotfix()
     {
-        bool ok = EditorApplication.ExecuteMenuItem(CLRHelperEditor
-            .menuDLLCopy); //"HybridCLR/Generate/All_CopyTo_GameResHotFix");
+        bool ok = EditorApplication.ExecuteMenuItem(CLRHelperEditor.menuDLLCopy); //"HybridCLR/Generate/All_CopyTo_GameResHotFix");
         if (!ok) throw new Exception($"Step2 Failed-->{CLRHelperEditor.menuDLLCopy}");
     }
 
     // 构建 DefaultPackage（适配你版本）
-    static void YooBuildDefaultPackage(string version)
+    static void YooBuildDefaultPackage(string version, string buildTarget)
     {
         BuiltinBuildParameters p = new BuiltinBuildParameters();
         p.PackageName = "DefaultPackage";
         p.PackageVersion = version;
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        p.BuildTarget = BuildTarget.Android;
+        if (buildTarget.Equals("Android"))
+        {
+            p.BuildTarget = BuildTarget.Android;
+        }
+        else
+        {
+            p.BuildTarget = BuildTarget.StandaloneWindows64;
+        }
+
         p.BuildMode = EBuildMode.ForceRebuild;
         p.CompressOption = ECompressOption.LZ4;
         p.FileNameStyle = EFileNameStyle.HashName;
@@ -189,14 +238,22 @@ public static class JenkinsCommand
     }
 
     // 4. 构建 HotFixPackage（适配你版本）
-    static void YooBuildHotFixPackage(string version)
+    static void YooBuildHotFixPackage(string version, string buildTarget)
     {
         RawFileBuildParameters p = new RawFileBuildParameters();
         p.PackageName = "HotFixPackage";
         p.PackageVersion = version;
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        p.BuildTarget = BuildTarget.Android;
+        if (buildTarget.Equals("Android"))
+        {
+            p.BuildTarget = BuildTarget.Android;
+        }
+        else
+        {
+            p.BuildTarget = BuildTarget.StandaloneWindows64;
+        }
+
         p.BuildMode = EBuildMode.ForceRebuild;
         p.FileNameStyle = EFileNameStyle.HashName;
         p.VerifyBuildingResult = true;
@@ -211,13 +268,16 @@ public static class JenkinsCommand
     }
 
     // 生成出的yooAsset资源 复制资源到CDN
-    public static void AssetResCopyToCDN(string appVersion, string resVersion)
+    public static void AssetResCopyToCDN(string appVersion, string resVersion, string playModeStr)
     {
-        YooHelperEditor.RunCopyResTarget(appVersion, resVersion);
+        if (playModeStr.Equals("HostPlayMode"))
+        {
+            YooHelperEditor.RunCopyResTarget(appVersion, resVersion); //热更状态下 的 才需去copy到cdn
+        }
     }
 
     //  打包 APK或exe
-    public static void BuildToGameFile(string appVersion, string buildTarget,string playModeStr)
+    public static void BuildToGameFile(string appVersion, string buildTarget, string playModeStr)
     {
         string version = appVersion.Replace("v", "");
         PlayerSettings.bundleVersion = version;

@@ -17,7 +17,8 @@ public static class AppConfig
     public static float bgmVolume = 0.66f; //bgm的默认声音大小  
     public static float musicVolume = 0.66f; //音效的默认声音大小  
     
-    public static string defaultYooAssetPKG = "DefaultPackage"; //默认的yooAsset包名
+    public static string defaultYooAssetPKG = "DefaultPackage"; //yooAsset包名  默认的普通资源              使用BuiltinBuildPipeline 传统内置构建管线 (BBP)
+    public static string hotFixPackage = "HotFixPackage";//yooAsset包名 代码的dll都在这里了  被转为bytes后缀  使用RawFileBuildPipeline 原生文件构建管线(RFBP)
 
     public static bool EnableLog = true; //是否开启日志   本想Debug.logger.logEnabled = false;可以让服务端做一个密令一类的东西， 正式版也能让客户端把LOG打开
     
