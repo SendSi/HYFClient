@@ -46,9 +46,10 @@ public static class JenkinsCommand
             string resVersion = GetArg(args, "-RES_VERSION=");
             Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} | PlayMode: {playModeStr} | AppVersion: {appVersion} | ResVersion: {resVersion}");
 
+            SetPlayMode(playModeStr);
             SwitchBuildTarget(buildTarget);
             DeleteStreamingAssetsYooFolder();
-            SetPlayMode(playModeStr);
+            
             ModifyAppConfig(appVersion, resVersion); //修改appConfig脚本
 
             HybridCLR_GenerateAll();

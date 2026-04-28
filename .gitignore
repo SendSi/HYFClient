@@ -50,6 +50,7 @@ ExportedObj/
 Library/
 Logs/
 HybridCLRData/
+BuildWindows/
 exe/
 yoo/
 Bundles/
