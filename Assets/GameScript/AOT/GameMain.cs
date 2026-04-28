@@ -78,7 +78,7 @@ public class GameMain : MonoBehaviour
         YooAssets.StartOperation(operation);
         yield return operation;
         //更新热更代码
-        PatchOperation operation_hotFix = new PatchOperation("HotFixPackage", EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
+        PatchOperation operation_hotFix = new PatchOperation(AppConfig.hotFixPackage, EDefaultBuildPipeline.RawFileBuildPipeline.ToString(), PlayMode);
         YooAssets.StartOperation(operation_hotFix);
         yield return operation_hotFix;
 
@@ -106,7 +106,7 @@ public class GameMain : MonoBehaviour
 
     private IEnumerator LoadHotFixRes()
     {
-        var hotfixPackage = YooAssets.GetPackage("HotFixPackage");
+        var hotfixPackage = YooAssets.GetPackage(AppConfig.hotFixPackage);
         foreach (var dll in mAssemblyFiles)
         {
             var handle = hotfixPackage.LoadRawFileAsync($"Assets/GameResHotFix/{dll}.bytes");//一起load啦   hotUpdate.dll  hotUpdate.pdb
