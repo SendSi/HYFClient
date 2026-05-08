@@ -4,7 +4,6 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Codice.Client.BaseCommands.Merge.ApplyMergeOperations;
 using UnityEngine;
 using UnityEditor.SceneManagement;
 
@@ -46,17 +45,18 @@ public static class JenkinsCommand
             string resVersion = GetArg(args, "-RES_VERSION=");
             Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} | PlayMode: {playModeStr} | AppVersion: {appVersion} | ResVersion: {resVersion}");
 
-            SetPlayMode(playModeStr);
-            SwitchBuildTarget(buildTarget);
-            DeleteStreamingAssetsYooFolder();
-            
             ModifyAppConfig(appVersion, resVersion); //修改appConfig脚本
-
+            SetPlayMode(playModeStr); //设置热更状态
+            SwitchBuildTarget(buildTarget); //切换平台
+            DeleteStreamingAssetsYooFolder(); //
+            AssetDatabase.Refresh();
+            
             HybridCLR_GenerateAll();
             HybridCLR_CopyToHotfix();
             YooBuildDefaultPackage(resVersion, buildTarget);
-            YooBuildHotFixPackage(resVersion, buildTarget);
+            YooBuildHotFixPackage(resVersion, buildTarget); 
             AssetResCopyToCDN(appVersion, resVersion, playModeStr);
+            AssetDatabase.Refresh();
             BuildToGameFile(appVersion, buildTarget, playModeStr);
         }
         catch (Exception e)
@@ -215,6 +215,7 @@ public static class JenkinsCommand
         p.PackageVersion = version;
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
+        p.BuildPipeline = "BuiltinBuildPipeline";
         if (buildTarget.Equals("Android"))
         {
             p.BuildTarget = BuildTarget.Android;
@@ -239,33 +240,42 @@ public static class JenkinsCommand
     }
 
     // 4. 构建 HotFixPackage（适配你版本）
-    static void YooBuildHotFixPackage(string version, string buildTarget)
+    static void YooBuildHotFixPackage(string resVersion, string buildTarget)
     {
         RawFileBuildParameters p = new RawFileBuildParameters();
         p.PackageName = "HotFixPackage";
-        p.PackageVersion = version;
+        p.PackageVersion = resVersion;
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        if (buildTarget.Equals("Android"))
+        p.BuildPipeline = "RawFileBuildPipeline";
+        if (buildTarget.Contains("Android"))
         {
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
             p.BuildTarget = BuildTarget.Android;
+            Debug.Log("=== 开始构建 Android 平台 HotFixPackage ===");
         }
         else
         {
+            EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows64);
             p.BuildTarget = BuildTarget.StandaloneWindows64;
+            Debug.Log("=== 开始构建 Windows 平台 HotFixPackage ===");
         }
 
         p.BuildMode = EBuildMode.ForceRebuild;
+        p.EncryptionServices = null;
         p.FileNameStyle = EFileNameStyle.HashName;
         p.VerifyBuildingResult = true;
         p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
-        p.EncryptionServices = null;
 
         RawFileBuildPipeline pipeline = new RawFileBuildPipeline();
-        BuildResult result = pipeline.Run(p, true); // 这里用 Run，不是 Build！
+        BuildResult result = pipeline.Run(p, enableLog: true);
 
         if (result == null || result.Success == false)
-            throw new Exception(" HotFixPackage build failed");
+        {
+            throw new Exception("HotFixPackage build failed: " + result.ErrorInfo);
+        }
+
+        Debug.Log("=== HotFixPackage 构建成功！文件已复制到 StreamingAssets ===");
     }
 
     // 生成出的yooAsset资源 复制资源到CDN
