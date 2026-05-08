@@ -37,10 +37,10 @@ public static class YooHelperEditor
     [MenuItem(menuYooCopy)] //打了热更后  替换
     public static void CopyCDNPath()
     {
-        RunCopyResTarget(AppConfig.appVersion,AppConfig.resVersion);
+        RunCopyResTarget(AppConfig.appVersion, AppConfig.resVersion);
     }
 
-    public static void RunCopyResTarget(string appVersion,string resVersion)
+    public static void RunCopyResTarget(string appVersion, string resVersion)
     {
         var targetPath = $"{AppConfig.localCDN}{GetPlatform()}/{appVersion}";
         if (Directory.Exists(targetPath) == false)
@@ -48,8 +48,7 @@ public static class YooHelperEditor
             Directory.CreateDirectory(targetPath); //先删除  再copy
         }
 
-        var formRoot =
-            $"{YooAsset.Editor.AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()}/{UnityEditor.EditorUserBuildSettings.activeBuildTarget}";
+        var formRoot = $"{YooAsset.Editor.AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()}/{UnityEditor.EditorUserBuildSettings.activeBuildTarget}";
 
         var soreceList = new List<string>();
         string resVerPath = "";

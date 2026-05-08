@@ -10,6 +10,7 @@ using UnityEngine;
 /// <summary> 打整包 </summary>
 public static class JenkinsBuild_Version
 {
+    /// <summary> Jenkins 打包命令</summary>
     public static void BuildFullPackage()
     {
         try
@@ -111,11 +112,12 @@ public static class JenkinsBuild_Version
     }
 
     // 4. 构建 HotFixPackage（适配你版本）
-    static void Step4_Build_HotFixPackage(string version)
+    static void Step4_Build_HotFixPackage(string resVersion)
     {
         RawFileBuildParameters p = new RawFileBuildParameters();
         p.PackageName = "HotFixPackage";
-        p.PackageVersion = version;
+        p.PackageVersion = resVersion;
+        p.BuildPipeline = "RawFileBuildPipeline";
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
         p.BuildTarget = BuildTarget.Android;
