@@ -15,6 +15,10 @@ public static class JenkinsCommand
  set UNITY=C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe
  set PROJ=D:\git_Project\HYFClient
 
+@echo off
+:: 先杀掉所有 Unity 进程，避免冲突
+taskkill /im Unity.exe /f
+
  :: 下面这4个都是 Jenkins 传来的参数
  set BUILD_TARGET=%BUILD_TARGET%
  set PLAY_MODE=%PLAY_MODE%
@@ -33,7 +37,7 @@ public static class JenkinsCommand
   -RES_VERSION=%RES_VERSION%^
   -quit
      */
-    /// <summary>给Jenkins调用的</summary>
+    /// <summary>给Jenkins调用的 整包</summary>
     public static void BuildGame()
     {
         try
@@ -50,11 +54,11 @@ public static class JenkinsCommand
             SwitchBuildTarget(buildTarget); //切换平台
             DeleteStreamingAssetsYooFolder(); //
             AssetDatabase.Refresh();
-            
+
             HybridCLR_GenerateAll();
             HybridCLR_CopyToHotfix();
             YooBuildDefaultPackage(resVersion, buildTarget);
-            YooBuildHotFixPackage(resVersion, buildTarget); 
+            YooBuildHotFixPackage(resVersion, buildTarget);
             AssetResCopyToCDN(appVersion, resVersion, playModeStr);
             AssetDatabase.Refresh();
             BuildToGameFile(appVersion, buildTarget, playModeStr);
@@ -64,6 +68,79 @@ public static class JenkinsCommand
             Debug.LogError("Build Failed: " + e.Message);
             EditorApplication.Exit(1);
         }
+    }
+
+
+    /*
+ @echo off
+ set UNITY=C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe
+ set PROJ=D:\git_Project\HYFClient
+
+@echo off
+:: 先杀掉所有 Unity 进程，避免冲突
+taskkill /im Unity.exe /f
+
+ :: 下面这2个都是 Jenkins 传来的参数
+ set BUILD_TARGET=%BUILD_TARGET%
+ set RES_VERSION=%RES_VERSION%
+
+ :: 【关键】把所有参数传给 Unity
+ "%UNITY%"^
+  -batchmode^
+  -nographics^
+  -projectPath "%PROJ%"^
+  -executeMethod JenkinsCommand.BuildHotPKG^
+  -BUILD_TARGET=%BUILD_TARGET%^
+  -RES_VERSION=%RES_VERSION%^
+  -quit
+     */
+    /// <summary>给Jenkins调用的 热更</summary>
+    public static void BuildHotPKG()
+    {
+        string[] args = Environment.GetCommandLineArgs();
+        string buildTarget = GetArg(args, "-BUILD_TARGET=");
+        string resVersion = GetArg(args, "-RES_VERSION=");
+        Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} |  ResVersion: {resVersion}");
+
+        SwitchBuildTarget(buildTarget); //切换平台
+        ModifyAppConfigResVersions(resVersion); //修改appConfig脚本
+        AssetDatabase.Refresh();
+        HybridCLR_ActiveBuildTarget(); //打代码
+        HybridCLR_CopyToHotfix(); //copy代码
+        YooBuildDefaultPackage(resVersion, buildTarget, true);
+        YooBuildHotFixPackage(resVersion, buildTarget, true);
+        AssetDatabase.Refresh();
+        AssetResCopyToCDN(AppConfig.appVersion, resVersion, "HostPlayMode");
+    }
+
+    private static void ModifyAppConfigResVersions(string newResVersion)
+    {
+        string appConfigPath = @"Assets/GameScript/AOT/AppConfig.cs";
+        string fullPath = Path.Combine(Application.dataPath, "../", appConfigPath);
+        fullPath = Path.GetFullPath(fullPath);
+        if (!File.Exists(fullPath))
+        {
+            Debug.LogError($"AppConfig.cs 不存在：{fullPath}，跳过修改");
+            return;
+        }
+
+        string content = File.ReadAllText(fullPath);
+
+        content = Regex.Replace(
+            content,
+            @"public\s+static\s+string\s+resVersion\s*=\s*""[^""]*""\s*;",
+            $"public static string resVersion = \"{newResVersion}\";",
+            RegexOptions.Multiline
+        );
+
+        File.WriteAllText(fullPath, content);
+        AssetDatabase.Refresh();
+    }
+
+
+    static void HybridCLR_ActiveBuildTarget()
+    {
+        HybridCLR.Editor.Commands.CompileDllCommand.CompileDll(EditorUserBuildSettings.activeBuildTarget, EditorUserBuildSettings.development);
     }
 
 
@@ -208,7 +285,7 @@ public static class JenkinsCommand
     }
 
     // 构建 DefaultPackage（适配你版本）
-    static void YooBuildDefaultPackage(string version, string buildTarget)
+    static void YooBuildDefaultPackage(string version, string buildTarget, bool isHot = false)
     {
         BuiltinBuildParameters p = new BuiltinBuildParameters();
         p.PackageName = "DefaultPackage";
@@ -216,7 +293,7 @@ public static class JenkinsCommand
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
         p.BuildPipeline = "BuiltinBuildPipeline";
-        if (buildTarget.Equals("Android"))
+        if (buildTarget.Contains("Android"))
         {
             p.BuildTarget = BuildTarget.Android;
         }
@@ -225,11 +302,20 @@ public static class JenkinsCommand
             p.BuildTarget = BuildTarget.StandaloneWindows64;
         }
 
-        p.BuildMode = EBuildMode.ForceRebuild;
+        if (isHot == false) //全包
+        {
+            p.BuildMode = EBuildMode.ForceRebuild;
+            p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
+        }
+        else //热更包
+        {
+            p.BuildMode = EBuildMode.IncrementalBuild;
+            p.BuildinFileCopyOption = EBuildinFileCopyOption.None;
+        }
+
         p.CompressOption = ECompressOption.LZ4;
         p.FileNameStyle = EFileNameStyle.HashName;
         p.VerifyBuildingResult = true;
-        p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
         p.EncryptionServices = null;
 
         BuiltinBuildPipeline pipeline = new BuiltinBuildPipeline();
@@ -240,7 +326,7 @@ public static class JenkinsCommand
     }
 
     // 4. 构建 HotFixPackage（适配你版本）
-    static void YooBuildHotFixPackage(string resVersion, string buildTarget)
+    static void YooBuildHotFixPackage(string resVersion, string buildTarget, bool isHot = false)
     {
         RawFileBuildParameters p = new RawFileBuildParameters();
         p.PackageName = "HotFixPackage";
@@ -252,30 +338,33 @@ public static class JenkinsCommand
         {
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
             p.BuildTarget = BuildTarget.Android;
-            Debug.Log("=== 开始构建 Android 平台 HotFixPackage ===");
         }
         else
         {
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows64);
             p.BuildTarget = BuildTarget.StandaloneWindows64;
-            Debug.Log("=== 开始构建 Windows 平台 HotFixPackage ===");
         }
 
-        p.BuildMode = EBuildMode.ForceRebuild;
+        if (isHot == false) //全包
+        {
+            p.BuildMode = EBuildMode.ForceRebuild;
+            p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
+        }
+        else //热更
+        {
+            p.BuildMode = EBuildMode.SimulateBuild;
+            p.BuildinFileCopyOption = EBuildinFileCopyOption.None;
+        }
+
         p.EncryptionServices = null;
         p.FileNameStyle = EFileNameStyle.HashName;
         p.VerifyBuildingResult = true;
-        p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
-
         RawFileBuildPipeline pipeline = new RawFileBuildPipeline();
         BuildResult result = pipeline.Run(p, enableLog: true);
-
         if (result == null || result.Success == false)
         {
             throw new Exception("HotFixPackage build failed: " + result.ErrorInfo);
         }
-
-        Debug.Log("=== HotFixPackage 构建成功！文件已复制到 StreamingAssets ===");
     }
 
     // 生成出的yooAsset资源 复制资源到CDN
