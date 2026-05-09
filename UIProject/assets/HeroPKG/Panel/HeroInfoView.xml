@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1334,750">
   <displayList>
-    <graph id="n11_efgr" name="bg" xy="0,0" size="1334,750" type="rect" lineSize="0" fillColor="#f200cc00"/>
+    <graph id="n11_efgr" name="bg" xy="-200,-20" size="1734,790" type="rect" lineSize="0" fillColor="#f200cc00"/>
     <text id="n10_efgr" name="txtName" xy="587,689" size="209,54" fontSize="40" align="center" vAlign="middle" autoSize="none" text="Ataier"/>
     <component id="n12_efgr" name="closeBtn" src="ntdkaq" fileName="Com/txtBtn.xml" xy="37,17" size="100,47">
       <Button title="关闭" titleFontSize="25"/>

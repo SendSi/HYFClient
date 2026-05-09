@@ -6,7 +6,7 @@
     <remark page="2" value="他人出牌中"/>
   </controller>
   <displayList>
-    <loader id="n25_p781" name="bg" xy="0,0" size="1334,750" url="ui://q3kpafy9zifte" align="center" vAlign="middle" fill="scaleFree">
+    <loader id="n25_p781" name="bg" xy="-100,-5" size="1534,760" url="ui://q3kpafy9zifte" align="center" vAlign="middle" fill="scaleFree">
       <relation target="" sidePair="width-width,height-height"/>
     </loader>
     <loader id="n44_zift" name="leftRole" xy="-20,213" size="165,205" aspect="true" url="ui://q3kpafy9ziftm" align="center" vAlign="middle" fill="scaleFree">

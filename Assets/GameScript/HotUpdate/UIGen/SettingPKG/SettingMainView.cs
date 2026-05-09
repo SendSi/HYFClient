@@ -5,7 +5,7 @@ using FairyGUI.Utils;
 
 namespace SettingPKG
 {
-    public partial class SettingMainView : GComponent
+    public partial class SettingMainView : GLabel
     {
         public Controller _stateCtrl;
         public GLabel _frame;
