@@ -65,7 +65,11 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     23.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     24.杀掉游戏进程,打开游戏
 
-
+#### 出包_第2种方式
+    适配了Jenkins,可以使用配置Jenkins网站(看JenkinsCommand.cs),另也可以直接使用Unity的菜单栏
+    出整包--> Jenkins/当前平台_出_整包    
+    出热更资源--> Jenkins/当前平台_出_热更 
+    
 #### 常见问题
     1.没按hybridclr的要求环境所打开项目
     2.Unity版本对不上
