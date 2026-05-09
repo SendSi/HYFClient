@@ -13,21 +13,27 @@ public static class JenkinsCommand
 {
     private static string _buildTarget = "Android";
 
-    [MenuItem("Jenkins/自行核对AppConfig.cs",false,1)]
-    public static void JenkinsDesc()
+    [MenuItem("Jenkins/自行核对AppConfig.cs1",false,101)]
+    public static void JenkinsDesc1()
     {
-        Debug.LogError("自行核对 AppConfig.cs 字段 appVersion resVersion");
+        Debug.LogError("自行核对 AppConfig.cs 字段 appVersion resVersion playModeStr");
     }
 
-    [MenuItem("Jenkins/当前平台_出_整包",false,101)]
+    [MenuItem("Jenkins/当前平台_出_整包",false,102)]
     public static void JenkinsBuildTarget()
     {
         _buildTarget = GetCurrentBuildTargetString();
         BuildGame();
     }
 
+    
+    [MenuItem("Jenkins/自行核对AppConfig.cs2",false,1001)]
+    public static void JenkinsDesc2()
+    {
+        Debug.LogError("自行核对 AppConfig.cs 字段  resVersion");
+    }
 
-    [MenuItem("Jenkins/当前平台_出_热更",false,102)]
+    [MenuItem("Jenkins/当前平台_出_热更",false,1002)]
     public static void JenkinsBuildHotPKG()
     {
         _buildTarget = GetCurrentBuildTargetString();
@@ -69,7 +75,7 @@ taskkill /im Unity.exe /f
         {
             string[] args = Environment.GetCommandLineArgs(); //jenkins使用的 
             string buildTarget = GetJenkinsArg(args, "-BUILD_TARGET=", _buildTarget);
-            string playModeStr = GetJenkinsArg(args, "-PLAY_MODE=", "OfflinePlayMode"); //HostPlayMode  或  OfflinePlayMode
+            string playModeStr = GetJenkinsArg(args, "-PLAY_MODE=", AppConfig.playModeStr); //HostPlayMode  或  OfflinePlayMode
             string appVersion = GetJenkinsArg(args, "-APP_VERSION=", AppConfig.appVersion);
             string resVersion = GetJenkinsArg(args, "-RES_VERSION=", AppConfig.resVersion);
             Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} | PlayMode: {playModeStr} | AppVersion: {appVersion} | ResVersion: {resVersion}");
