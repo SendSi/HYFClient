@@ -20,5 +20,4 @@ public enum EventEnumHOT
     
     EE_ShowHamsterItem=50010,
 
-    EE_ShowHamsterItem=60001,
 }

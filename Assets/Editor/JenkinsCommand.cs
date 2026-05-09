@@ -88,6 +88,7 @@ taskkill /im Unity.exe /f
 
             HybridCLR_GenerateAll();
             HybridCLR_CopyToHotfix();
+            HybridCLR_ObfuzGenAll_2_Copy();
             YooBuildDefaultPackage(resVersion, buildTarget);
             YooBuildHotFixPackage(resVersion, buildTarget);
             AssetResCopyToCDN(appVersion, resVersion, playModeStr);
@@ -138,6 +139,7 @@ taskkill /im Unity.exe /f
         AssetDatabase.Refresh();
         HybridCLR_ActiveBuildTarget(); //打代码
         HybridCLR_CopyToHotfix(); //copy代码
+        HybridCLR_ObfuzGenAll_2_Copy();
         YooBuildDefaultPackage(resVersion, buildTarget, true);
         YooBuildHotFixPackage(resVersion, buildTarget, true);
         AssetDatabase.Refresh();
@@ -460,6 +462,16 @@ taskkill /im Unity.exe /f
                 Debug.LogWarning($"[GetCurrentBuildTargetString] 未识别的平台: {activeTarget}，默认返回Android");
                 return "Android";
         }
+    }
+
+    /// <summary> 加密 </summary>
+    private static void HybridCLR_ObfuzGenAll_2_Copy()
+    {
+        bool ok = EditorApplication.ExecuteMenuItem("HybridCLR/ObfuzExtension/GenerateAll");
+        if (!ok) throw new Exception("生成Obfuz Failed-->HybridCLR/ObfuzExtension/GenerateAll");
+        
+        ok = EditorApplication.ExecuteMenuItem("HybridCLR/ObfuzExtension/GenerateAll_CopyTo_GameResHotFix");
+        if (!ok) throw new Exception("复制Obfuz Failed-->HybridCLR/ObfuzExtension/GenerateAll_CopyTo_GameResHotFix");
     }
 }
 

@@ -28,8 +28,7 @@
     <component id="n48_onzd" name="testBtn2" src="7oizh" fileName="components/interactive.xml" xy="157,497" size="98,98" group="n22_qbmb">
       <Button title="特效" icon="ui://byy9k3gh7oiza"/>
     </component>
-    <image id="n49_onzd" name="n49" src="onzd1ygcga8" fileName="images/test2.png" xy="1016,256" group="n22_qbmb"/>
-    <group id="n22_qbmb" name="left" xy="16,52" size="1198,655" advanced="true">
+    <group id="n22_qbmb" name="left" xy="16,52" size="239,655" advanced="true">
       <relation target="" sidePair="left-left"/>
     </group>
     <text id="n37_qg41" name="title_version" xy="16,13" size="108,29" font="ui://2r331opvno3vhz9d63" fontSize="20" color="#ffffff" ubb="true" strokeColor="#000000" shadowColor="#000000" shadowOffset="0,1" text="当前版本V1">

@@ -11,30 +11,11 @@
       <field signature="int $Obfuz$RVA_Value7" newName="$O" />
       <field signature="int $Obfuz$RVA_Value8" newName="$p" />
       <field signature="int $Obfuz$RVA_Value9" newName="$P" />
-      <field signature="int $Obfuz$RVA_Value10" newName="$q" />
-      <field signature="int $Obfuz$RVA_Value11" newName="$Q" />
-      <field signature="int $Obfuz$RVA_Value12" newName="$r" />
-      <field signature="int $Obfuz$RVA_Value13" newName="$R" />
-      <field signature="int $Obfuz$RVA_Value14" newName="$s" />
-      <field signature="int $Obfuz$RVA_Value15" newName="$S" />
-      <field signature="int $Obfuz$RVA_Value16" newName="$t" />
-      <field signature="int $Obfuz$RVA_Value17" newName="$T" />
-      <field signature="int $Obfuz$RVA_Value18" newName="$u" />
-      <field signature="int $Obfuz$RVA_Value19" newName="$U" />
-      <field signature="int $Obfuz$RVA_Value20" newName="$v" />
-      <field signature="int $Obfuz$RVA_Value21" newName="$V" />
-      <field signature="int $Obfuz$RVA_Value22" newName="$w" />
     </type>
     <type fullName="$Obfuz$ProxyCall" newFullName="$J" status="Renamed">
-      <method signature="[UniTask]Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1&lt;[UniTask]Cysharp.Threading.Tasks.AsyncUnit&gt; $Obfuz$ProxyCall::@$Obfuz$Dispatch_7472_8373054(int, byte, int)" newName="$E" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_7472_8373054(Int32, Byte, Int32)" newStackTraceSignature="$J:$E(Int32, Byte, Int32)" />
-      <method signature="bool $Obfuz$ProxyCall::@$Obfuz$Dispatch_1500_12616511(object, [UnityEngine.IMGUIModule]UnityEngine.GUILayoutOption[], int)" newName="$f" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_1500_12616511(Object, GUILayoutOption[], Int32)" newStackTraceSignature="$J:$f(Object, GUILayoutOption[], Int32)" />
-      <method signature="System.IDisposable $Obfuz$ProxyCall::@$Obfuz$Dispatch_50754_15194666(object, object, object, int)" newName="$F" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_50754_15194666(Object, Object, Object, Int32)" newStackTraceSignature="$J:$F(Object, Object, Object, Int32)" />
-      <method signature="int $Obfuz$ProxyCall::@$Obfuz$Dispatch_2966_12091355(nint, int)" newName="$g" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_2966_12091355(IntPtr, Int32)" newStackTraceSignature="$J:$g(IntPtr, Int32)" />
       <method signature="int $Obfuz$ProxyCall::@$Obfuz$Dispatch_46378_12091355(int, int, int)" newName="$G" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_46378_12091355(Int32, Int32, Int32)" newStackTraceSignature="$J:$G(Int32, Int32, Int32)" />
       <method signature="int $Obfuz$ProxyCall::@$Obfuz$Dispatch_60320_12091355(object, int, int, int)" newName="$h" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_60320_12091355(Object, Int32, Int32, Int32)" newStackTraceSignature="$J:$h(Object, Int32, Int32, Int32)" />
       <method signature="void $Obfuz$ProxyCall::@$Obfuz$Dispatch_11150_4780505(object, int)" newName="$H" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_11150_4780505(Object, Int32)" newStackTraceSignature="$J:$H(Object, Int32)" />
-      <method signature="void $Obfuz$ProxyCall::@$Obfuz$Dispatch_36812_4780505(object, object, int)" newName="$i" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_36812_4780505(Object, Object, Int32)" newStackTraceSignature="$J:$i(Object, Object, Int32)" />
-      <method signature="void $Obfuz$ProxyCall::@$Obfuz$Dispatch_51425_4780505(object, int, int)" newName="$I" oldStackTraceSignature="$Obfuz$ProxyCall:$Obfuz$Dispatch_51425_4780505(Object, Int32, Int32)" newStackTraceSignature="$J:$I(Object, Int32, Int32)" />
     </type>
     <type fullName="$Obfuz$RVA$0" newFullName="$j" status="Renamed">
       <field signature="[Assembly-CSharp]$ObfuzRVA$DataHolder2048 $RVA_Data0" newName="$W" />
@@ -48,13 +29,13 @@
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize32_12 $Obfuz$WatermarkDataHolderField12" newName="$F" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize48_9 $Obfuz$WatermarkDataHolderField9" newName="$g" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize28_7 $Obfuz$WatermarkDataHolderField7" newName="$G" />
-      <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=111 8D9B17846C8E829DEDDEB11FCFC6931EBB70DE24B109440E644E5F1319A31647" newName="$h" />
+      <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=98 BF218D10022CE7A1E5B912E94A8D7C01D6AB70CF28B0902DE964A23A7912B85B" newName="$A" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize44_2 $Obfuz$WatermarkDataHolderField2" newName="$H" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize36_6 $Obfuz$WatermarkDataHolderField6" newName="$i" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize28_4 $Obfuz$WatermarkDataHolderField4" newName="$I" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize44_5 $Obfuz$WatermarkDataHolderField5" newName="$j" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize28_11 $Obfuz$WatermarkDataHolderField11" newName="$J" />
-      <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=180 7B73CCDCC0B1ED608A196C825067BF2644F1BBABDB4AE7B75559B040DA688366" newName="$k" />
+      <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=154 2C73E35E861AA65EC75242D4C078260B9E273687F4340FA722DEFCAAF17E8572" newName="$b" />
       <field signature="[Assembly-CSharp]&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize36_8 $Obfuz$WatermarkDataHolderField8" newName="$K" />
     </type>
     <type fullName="&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize28_11" newFullName="$A/$G" status="Renamed" />
@@ -70,7 +51,9 @@
     <type fullName="&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize44_5" newFullName="$A/$D" status="Renamed" />
     <type fullName="&lt;PrivateImplementationDetails&gt;/$Obfuz$WatermarkDataHolderSize48_9" newFullName="$A/$F" status="Renamed" />
     <type fullName="&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=111" newFullName="$A/$b" status="Renamed" />
+    <type fullName="&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=154" newFullName="$A/$B" status="Renamed" />
     <type fullName="&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=180" newFullName="$A/$B" status="Renamed" />
+    <type fullName="&lt;PrivateImplementationDetails&gt;/__StaticArrayInitTypeSize=98" newFullName="$A/$b" status="Renamed" />
     <type fullName="AOTGenericReferences" newFullName="" status="NotRenamed">
       <field signature="System.Collections.Generic.IReadOnlyList`1&lt;string&gt; PatchedAOTAssemblyList" newName="$a" />
       <method signature="void AOTGenericReferences::RefMethods([Assembly-CSharp]AOTGenericReferences)" newName="$A" oldStackTraceSignature="AOTGenericReferences:RefMethods()" newStackTraceSignature="AOTGenericReferences:$A()" />
@@ -117,16 +100,6 @@
       <field signature="[HotUpdate]cfg.test.AccessFlag TRUNCATE" newName="$paA" />
       <field signature="[HotUpdate]cfg.test.AccessFlag NEW" newName="$PaA" />
       <field signature="[HotUpdate]cfg.test.AccessFlag READ_WRITE" newName="$qaA" />
-    </type>
-    <type fullName="HitHamsterPKG.HGameState" newFullName="$I.$gE" status="Renamed">
-      <field signature="[HotUpdate]HitHamsterPKG.HGameState Start" newName="$sT" />
-      <field signature="[HotUpdate]HitHamsterPKG.HGameState Gaming" newName="$ST" />
-      <field signature="[HotUpdate]HitHamsterPKG.HGameState End" newName="$tT" />
-    </type>
-    <type fullName="HitHamsterPKG.HitHamsterMainView/&lt;&gt;c__DisplayClass12_0" newFullName="$I.$GE/$hE" status="Renamed">
-      <field signature="int timeIndex" newName="$Hu" />
-      <field signature="[HotUpdate]HitHamsterPKG.HitHamsterMainView &lt;&gt;4__this" newName="$iu" />
-      <method signature="void HitHamsterPKG.HitHamsterMainView/&lt;&gt;c__DisplayClass12_0::&lt;OnClickBigMaskBtn&gt;b__0([HotUpdate]HitHamsterPKG.HitHamsterMainView/&lt;&gt;c__DisplayClass12_0, object)" newName="$LM" oldStackTraceSignature="HitHamsterPKG.&lt;&gt;c__DisplayClass12_0:&lt;OnClickBigMaskBtn&gt;b__0(Object)" newStackTraceSignature="$I.$hE:$LM(Object)" />
     </type>
   </assembly>
   <assembly name="Obfuz.Runtime">

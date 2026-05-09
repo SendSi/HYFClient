@@ -2,8 +2,9 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 
    https://www.hybridclr.cn/docs/beginner/quickstart 官方文档  
    https://www.yooasset.com/docs/guide-editor/QuickStart  官方文档  
- https://fairygui.com/docs/editor 官方文档   
- https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习  
+   https://fairygui.com/docs/editor 官方文档   
+   https://www.obfuz.com/docs/beginner/work-with-hybridclr 官方文档     
+   https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习  
  https://www.bilibili.com/video/BV1gQpGeTEtY/?vd_source=20561b00f1debfa5611eef8023c64796   自己录的视频记录
 
 
@@ -50,25 +51,25 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
     
 
 #### 出包
-    首次出包  
+    首次出包  这里是加了Obfuz混淆的，目前混淆了方法体里内容
     1.HyBridCLR/Generate/All  然后 HybridCLR/Generate/All_CopyTo_GameResHotFix 目的就是生成华佗原始的内容和复制到GameResHotFix文件夹里去
-    2.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),然后build两个包
+    2.HybridCLR/ObfuzExtension/GenerateAll 然后 HybridCLR/ObfuzExtension/GenerateAll_CopyTo_GameResHotFix 目的就是生成Obfuz的内容和复制到GameResHotFix文件夹里去
+    3.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),然后build两个包
     ps:resVersion=v1.0,DefaultPackage-->BuiltinBuildPipeline(ForceRebuild,null,LZ4,HashName,ClearAndCopyAll),
-      HotFixePackage-->RawFileBuildPipeline(ForceRebuild,null,HashName,ClearAndCopyAll)
-    3.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
-    4.正常出apk或exe,启动打开游戏
+      HotFixePackage-->RawFileBuildPipeline(ForceRebuild,null,HashName,ClearAndCopyAll)  
+    4.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
+    5.正常出apk或exe,启动打开游戏
     出增量包,即热更
-    21.HyBridCLR/CompileDll/ActiveBuildTarget (好像改动太小,好像hotUpdate识别不了) 然后 HybridCLR/Generate/All_CopyTo_GameResHotFix (可利用文件修改时间看下有无新生成)
-    22.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),然后build两个包  resVersion=v1.1继续热更+  别重复1.1哦
+    21.HyBridCLR/CompileDll/ActiveBuildTarget (好像改动太小,好像hotUpdate识别不了)  然后 HybridCLR/Generate/All_CopyTo_GameResHotFix
+    22.HybridCLR/ObfuzExtension/GenerateAll 然后 HybridCLR/ObfuzExtension/GenerateAll_CopyTo_GameResHotFix
+    23.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),然后build两个包            resVersion=v1.1继续热更+  别重复1.1哦
     ps:DefaultPackage-->BuiltinBuildPipeline(ForceRebuild,null,LZ4,HashName,None),
        HotFixePackage-->RawFileBuildPipeline(ForceRebuild,null,HashName,None)
-    23.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
-    24.杀掉游戏进程,打开游戏
+    24.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
+    25.杀掉游戏进程,打开游戏
 
 
 #### 常见问题
     1.没按hybridclr的要求环境所打开项目
     2.Unity版本对不上
     3.Git没使用SSH下载，估计没下全
-    4.http-server问题,nodejs看这个https://juejin.cn/post/7436189729550975012
-    5.打出包，若进入不了登录页面，在屏幕画圈，画两圈看下log啥问题
