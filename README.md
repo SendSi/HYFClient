@@ -52,13 +52,16 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 #### 出包
     首次出包  
     1.HyBridCLR/Generate/All  然后 HybridCLR/Generate/All_CopyTo_GameResHotFix 目的就是生成华佗原始的内容和复制到GameResHotFix文件夹里去
-    2.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用ClearAndCopyAll,然后build两个包
-    ps:resVersion=v1.0,DefaultPackage-->BuiltinBuildPipeline,HotFixePackage-->RawFileBuildPipeline
+    2.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),然后build两个包
+    ps:resVersion=v1.0,DefaultPackage-->BuiltinBuildPipeline(ForceRebuild,null,LZ4,HashName,ClearAndCopyAll),
+      HotFixePackage-->RawFileBuildPipeline(ForceRebuild,null,HashName,ClearAndCopyAll)
     3.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     4.正常出apk或exe,启动打开游戏
     出增量包,即热更
     21.HyBridCLR/CompileDll/ActiveBuildTarget (好像改动太小,好像hotUpdate识别不了) 然后 HybridCLR/Generate/All_CopyTo_GameResHotFix (可利用文件修改时间看下有无新生成)
-    22.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),使用None,然后build两个包            resVersion=v1.1继续热更+  别重复1.1哦
+    22.改对AppConfig.cs的resVersion字段与(YooAsset/AssetBundleBuilder的BuildVersion值相等),然后build两个包  resVersion=v1.1继续热更+  别重复1.1哦
+    ps:DefaultPackage-->BuiltinBuildPipeline(ForceRebuild,null,LZ4,HashName,None),
+       HotFixePackage-->RawFileBuildPipeline(ForceRebuild,null,HashName,None)
     23.执行.YooAsset/Copy到_WWW_hyfclient下,然后启动web服务器.http-server --port 80 -b --cors
     24.杀掉游戏进程,打开游戏
 

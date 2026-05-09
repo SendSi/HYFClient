@@ -1,67 +1,56 @@
 Execute Windows batch command
-首包/整包---会出资源与apk
+首包/整包---会出资源与apk/exe
+
+ @echo off
+ set UNITY=C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe
+ set PROJ=D:\git_Project\HYFClient
 
 @echo off
-set UNITY="C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe"
-set PROJ="D:\git_Project\HYFClient"
+:: 先杀掉所有 Unity 进程，避免冲突
+taskkill /im Unity.exe /f
 
-set APP_VERSION=%APP_VERSION%
-set RES_VERSION=%RES_VERSION%
+ :: 下面这4个都是 Jenkins 传来的参数
+ set BUILD_TARGET=%BUILD_TARGET%
+ set PLAY_MODE=%PLAY_MODE%
+ set APP_VERSION=%APP_VERSION%
+ set RES_VERSION=%RES_VERSION%
 
-%UNITY% -batchmode -nographics -projectPath %PROJ% -executeMethod JenkinsBuild_Version.BuildFullPackage -quit
+ :: 【关键】把所有参数传给 Unity
+ "%UNITY%"^
+  -batchmode^
+  -nographics^
+  -projectPath "%PROJ%"^
+  -executeMethod JenkinsCommand.BuildGame^
+  -BUILD_TARGET=%BUILD_TARGET%^
+  -PLAY_MODE=%PLAY_MODE%^
+  -APP_VERSION=%APP_VERSION%^
+  -RES_VERSION=%RES_VERSION%^
+  -quit
 
 
 
 热更包---只出资源
 
 @echo off
-set UNITY="C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe"
-set PROJ="D:\git_Project\HYFClient"
-
-set RES_VERSION=%RES_VERSION%
-
-%UNITY% -batchmode -nographics -projectPath %PROJ% -executeMethod JenkinsBuild_HotVer.BuildHotPackage -quit
-
-
-
+ set UNITY=C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe
+ set PROJ=D:\git_Project\HYFClient
 
 @echo off
-:: 1. 定义变量时不要加引号，直接写路径
-set UNITY=C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe
-set PROJ=C:\UniProject\HYFClient
+:: 先杀掉所有 Unity 进程，避免冲突
+taskkill /im Unity.exe /f
 
-:: 2. 调用时再给变量加引号，避免路径里的空格被拆分
-"%UNITY%" -batchmode -nographics -projectPath "%PROJ%" -executeMethod JenkinsBuild_Exe.BuildExePackage -PLAY_MODE=%PLAY_MODE% -quit
+ :: 下面这2个都是 Jenkins 传来的参数
+ set BUILD_TARGET=%BUILD_TARGET%
+ set RES_VERSION=%RES_VERSION%
 
-
-OfflinePlayMode
-HostPlayMode
-WebPlayMode
-
-
-
-
-
-@echo off
-set UNITY=C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe
-set PROJ=C:\UniProject\HYFClient
-
-:: 下面这4个都是 Jenkins 传来的参数
-set BUILD_TARGET=%BUILD_TARGET%
-set PLAY_MODE=%PLAY_MODE%
-set APP_VERSION=%APP_VERSION%
-set RES_VERSION=%RES_VERSION%
-
-:: 【关键】把所有参数传给 Unity
-"%UNITY%"^
- -batchmode^
- -nographics^
- -projectPath "%PROJ%"^
- -executeMethod JenkinsCommand.BuildGame^
- -BUILD_TARGET=%BUILD_TARGET%^
- -PLAY_MODE=%PLAY_MODE%^
- -APP_VERSION=%APP_VERSION%^
- -RES_VERSION=%RES_VERSION%^
- -quit
+ :: 【关键】把所有参数传给 Unity
+ "%UNITY%"^
+  -batchmode^
+  -nographics^
+  -projectPath "%PROJ%"^
+  -executeMethod JenkinsCommand.BuildHotPKG^
+  -BUILD_TARGET=%BUILD_TARGET%^
+  -RES_VERSION=%RES_VERSION%^
+  -quit
 
 

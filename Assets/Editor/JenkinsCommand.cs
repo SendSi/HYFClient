@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using YooAsset.Editor;
 using System;
@@ -10,6 +11,30 @@ using UnityEditor.SceneManagement;
 /// <summary> Jenkins 打包命令</summary>
 public static class JenkinsCommand
 {
+    private static string _buildTarget = "Android";
+
+    [MenuItem("Jenkins/自行核对AppConfig.cs",false,1)]
+    public static void JenkinsDesc()
+    {
+        Debug.LogError("自行核对 AppConfig.cs 字段 appVersion resVersion");
+    }
+
+    [MenuItem("Jenkins/当前平台_出_整包",false,101)]
+    public static void JenkinsBuildTarget()
+    {
+        _buildTarget = GetCurrentBuildTargetString();
+        BuildGame();
+    }
+
+
+    [MenuItem("Jenkins/当前平台_出_热更",false,102)]
+    public static void JenkinsBuildHotPKG()
+    {
+        _buildTarget = GetCurrentBuildTargetString();
+        BuildHotPKG();
+    }
+
+
     /*  两路径要配对哦
  @echo off
  set UNITY=C:\Program Files (x86)\UnityHub3.6\install\2022.3.15f1\Editor\Unity.exe
@@ -42,14 +67,14 @@ taskkill /im Unity.exe /f
     {
         try
         {
-            string[] args = Environment.GetCommandLineArgs();
-            string buildTarget = GetArg(args, "-BUILD_TARGET=");
-            string playModeStr = GetArg(args, "-PLAY_MODE="); //HostPlayMode  或  OfflinePlayMode
-            string appVersion = GetArg(args, "-APP_VERSION=");
-            string resVersion = GetArg(args, "-RES_VERSION=");
+            string[] args = Environment.GetCommandLineArgs(); //jenkins使用的 
+            string buildTarget = GetJenkinsArg(args, "-BUILD_TARGET=", _buildTarget);
+            string playModeStr = GetJenkinsArg(args, "-PLAY_MODE=", "OfflinePlayMode"); //HostPlayMode  或  OfflinePlayMode
+            string appVersion = GetJenkinsArg(args, "-APP_VERSION=", AppConfig.appVersion);
+            string resVersion = GetJenkinsArg(args, "-RES_VERSION=", AppConfig.resVersion);
             Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} | PlayMode: {playModeStr} | AppVersion: {appVersion} | ResVersion: {resVersion}");
 
-            ModifyAppConfig(appVersion, resVersion); //修改appConfig脚本
+            ModifyAppConfig2Version(appVersion, resVersion); //修改appConfig脚本
             SetPlayMode(playModeStr); //设置热更状态
             SwitchBuildTarget(buildTarget); //切换平台
             DeleteStreamingAssetsYooFolder(); //
@@ -98,8 +123,8 @@ taskkill /im Unity.exe /f
     public static void BuildHotPKG()
     {
         string[] args = Environment.GetCommandLineArgs();
-        string buildTarget = GetArg(args, "-BUILD_TARGET=");
-        string resVersion = GetArg(args, "-RES_VERSION=");
+        string buildTarget = GetJenkinsArg(args, "-BUILD_TARGET=", _buildTarget);
+        string resVersion = GetJenkinsArg(args, "-RES_VERSION=", AppConfig.resVersion);
         Debug.Log($"=== Build Parameters === | BuildTarget: {buildTarget} |  ResVersion: {resVersion}");
 
         SwitchBuildTarget(buildTarget); //切换平台
@@ -148,7 +173,7 @@ taskkill /im Unity.exe /f
     /// 切换平台：Android / Windows
     /// 已经是目标平台则不重复切换
     /// </summary>
-    public static void SwitchBuildTarget(string targetStr)
+    static void SwitchBuildTarget(string targetStr)
     {
         BuildTarget target;
         BuildTargetGroup targetGroup;
@@ -181,10 +206,8 @@ taskkill /im Unity.exe /f
         Debug.Log($"Platform switch completed: {target}");
     }
 
-    /// <summary>
-    /// 打开场景 → 设置 PlayMode
-    /// </summary>
-    public static void SetPlayMode(string playModeStr)
+    /// <summary> 尝试打开场景 → 设置 PlayMode </summary>
+    static void SetPlayMode(string playModeStr)
     {
         YooAsset.EPlayMode playMode = YooAsset.EPlayMode.OfflinePlayMode;
         if (!string.IsNullOrEmpty(playModeStr))
@@ -206,11 +229,18 @@ taskkill /im Unity.exe /f
         AssetDatabase.Refresh();
     }
 
-    // 工具方法：读取命令行参数
-    private static string GetArg(string[] args, string key)
+    /// <summary>  Jenkins传入过来的  Cmd工具方法：读取命令行参数 </summary>
+    /// <param name="defaultValue">默认值</param>
+    private static string GetJenkinsArg(string[] args, string key, string defaultValue = "")
     {
+        if (args == null || args.Length == 0)
+        {
+            return defaultValue; // 检查args是否为null或空数组
+        }
+
         var arg = args.FirstOrDefault(x => x.StartsWith(key));
-        return arg?.Replace(key, "") ?? "";
+        string result = arg?.Replace(key, "") ?? defaultValue;
+        return result;
     }
 
 
@@ -219,7 +249,7 @@ taskkill /im Unity.exe /f
     /// </summary>
     /// <param name="newAppVersion">要替换成的 appVersion 值，如 "v1.2.3"</param>
     /// <param name="newResVersion">要替换成的 resVersion 值，如 "v1.2.3"</param>
-    public static void ModifyAppConfig(string newAppVersion, string newResVersion)
+    static void ModifyAppConfig2Version(string newAppVersion, string newResVersion)
     {
         string appConfigPath = @"Assets/GameScript/AOT/AppConfig.cs";
         string fullPath = Path.Combine(Application.dataPath, "../", appConfigPath);
@@ -250,7 +280,7 @@ taskkill /im Unity.exe /f
         Debug.Log($"Updated AppConfig.cs: appVersion={newAppVersion}, resVersion={newResVersion}");
     }
 
-    public static void DeleteStreamingAssetsYooFolder()
+    static void DeleteStreamingAssetsYooFolder()
     {
         string yooFolderPath = Path.Combine(Application.streamingAssetsPath, "yoo");
         if (Directory.Exists(yooFolderPath))
@@ -271,7 +301,7 @@ taskkill /im Unity.exe /f
     }
 
     // HybridCLR 生成全部
-    public static void HybridCLR_GenerateAll()
+    static void HybridCLR_GenerateAll()
     {
         bool ok = EditorApplication.ExecuteMenuItem("HybridCLR/Generate/All");
         if (!ok) throw new Exception("Step1 Failed-->HybridCLR/Generate/All");
@@ -292,7 +322,7 @@ taskkill /im Unity.exe /f
         p.PackageVersion = version;
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        p.BuildPipeline = "BuiltinBuildPipeline";
+
         if (buildTarget.Contains("Android"))
         {
             p.BuildTarget = BuildTarget.Android;
@@ -302,14 +332,14 @@ taskkill /im Unity.exe /f
             p.BuildTarget = BuildTarget.StandaloneWindows64;
         }
 
+        p.BuildPipeline = "BuiltinBuildPipeline";
+        p.BuildMode = EBuildMode.ForceRebuild;
         if (isHot == false) //全包
         {
-            p.BuildMode = EBuildMode.ForceRebuild;
             p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
         }
         else //热更包
         {
-            p.BuildMode = EBuildMode.IncrementalBuild;
             p.BuildinFileCopyOption = EBuildinFileCopyOption.None;
         }
 
@@ -333,7 +363,6 @@ taskkill /im Unity.exe /f
         p.PackageVersion = resVersion;
         p.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
         p.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        p.BuildPipeline = "RawFileBuildPipeline";
         if (buildTarget.Contains("Android"))
         {
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
@@ -345,14 +374,14 @@ taskkill /im Unity.exe /f
             p.BuildTarget = BuildTarget.StandaloneWindows64;
         }
 
+        p.BuildPipeline = "RawFileBuildPipeline";
+        p.BuildMode = EBuildMode.ForceRebuild;
         if (isHot == false) //全包
         {
-            p.BuildMode = EBuildMode.ForceRebuild;
             p.BuildinFileCopyOption = EBuildinFileCopyOption.ClearAndCopyAll;
         }
         else //热更
         {
-            p.BuildMode = EBuildMode.SimulateBuild;
             p.BuildinFileCopyOption = EBuildinFileCopyOption.None;
         }
 
@@ -368,7 +397,7 @@ taskkill /im Unity.exe /f
     }
 
     // 生成出的yooAsset资源 复制资源到CDN
-    public static void AssetResCopyToCDN(string appVersion, string resVersion, string playModeStr)
+    static void AssetResCopyToCDN(string appVersion, string resVersion, string playModeStr)
     {
         if (playModeStr.Equals("HostPlayMode"))
         {
@@ -377,7 +406,7 @@ taskkill /im Unity.exe /f
     }
 
     //  打包 APK或exe
-    public static void BuildToGameFile(string appVersion, string buildTarget, string playModeStr)
+    static void BuildToGameFile(string appVersion, string buildTarget, string playModeStr)
     {
         string version = appVersion.Replace("v", "");
         PlayerSettings.bundleVersion = version;
@@ -408,4 +437,24 @@ taskkill /im Unity.exe /f
         BuildPipeline.BuildPlayer(options);
         Debug.Log($"=== Jenkins Build Completed, Output Path: {options.locationPathName} ===");
     }
+
+
+    /// <summary> 获取当前构建平台的字符串表示 </summary>
+    private static string GetCurrentBuildTargetString()
+    {
+        BuildTarget activeTarget = EditorUserBuildSettings.activeBuildTarget;
+        switch (activeTarget)
+        {
+            case BuildTarget.Android:
+                return "Android";
+            case BuildTarget.StandaloneWindows:
+            case BuildTarget.StandaloneWindows64:
+                return "Windows";
+            default:
+                Debug.LogWarning($"[GetCurrentBuildTargetString] 未识别的平台: {activeTarget}，默认返回Android");
+                return "Android";
+        }
+    }
 }
+
+#endif
