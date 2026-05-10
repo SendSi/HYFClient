@@ -1,8 +1,8 @@
 yooAsset学习_hybridCLR学习_fairyGUI学习
 
-   https://www.hybridclr.cn/docs/beginner/quickstart 官方文档  
-   https://www.yooasset.com/docs/guide-editor/QuickStart  官方文档  
- https://fairygui.com/docs/editor 官方文档   
+   https://www.hybridclr.cn/docs/beginner/quickstart 华佗官方文档  
+   https://www.yooasset.com/docs/guide-editor/QuickStart  YooAsset官方文档  
+ https://fairygui.com/docs/editor FGUI官方文档   
  https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习  
  https://www.bilibili.com/video/BV1gQpGeTEtY/?vd_source=20561b00f1debfa5611eef8023c64796   自己录的视频记录
 
@@ -10,7 +10,7 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 #### AOT目录下的脚本是不能热更的
 #### Init场景挂了GameMain.cs脚本 若要在UnityEditor下测试CDN更新流程,看Start()方法,有注解的
 #### 菜单栏HybridCLR YooAsset添加了copy 打包时 可使其精准copy到localCDN中去
-#### AppConfig.lua 有打包的参数,,使用node.js(在cdn目录上输入cmd,打开命令窗口),,http-server --port 80 -b --cors
+#### AppConfig.cs 有打包的参数,,使用node.js(在cdn目录上输入cmd,打开命令窗口),,http-server --port 80 -b --cors
 #### 
 
 #### UI模块
@@ -67,8 +67,8 @@ yooAsset学习_hybridCLR学习_fairyGUI学习
 
 #### 出包_第2种方式
     适配了Jenkins,可以使用配置Jenkins网站(看JenkinsCommand.cs),另也可以直接使用Unity的菜单栏
-    出整包--> Jenkins/当前平台_出_整包    
-    出热更资源--> Jenkins/当前平台_出_热更 
+    出整包  --> Jenkins/当前平台_出_整包    
+    出热更资源  --> Jenkins/当前平台_出_热更 
     
 #### 常见问题
     1.没按hybridclr的要求环境所打开项目
