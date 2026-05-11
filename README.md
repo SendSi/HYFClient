@@ -1,9 +1,10 @@
 yooAsset学习_hybridCLR学习_fairyGUI学习
 
-   https://www.hybridclr.cn/docs/beginner/quickstart 华佗官方文档  
+ https://www.hybridclr.cn/docs/beginner/quickstart 华佗官方文档  
    https://www.yooasset.com/docs/guide-editor/QuickStart  YooAsset官方文档  
- https://fairygui.com/docs/editor FGUI官方文档   
- https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习  
+ https://fairygui.com/docs/editor FGUI官方文档  
+   https://www.obfuz.com/docs/beginner/work-with-hybridclr Obfuz混淆官方文档     
+   https://www.bilibili.com/video/BV1rc411Q73Q/?spm_id_from=333.999.0.0&vd_source=20561b00f1debfa5611eef8023c64796  看别人B站视频学习  
  https://www.bilibili.com/video/BV1gQpGeTEtY/?vd_source=20561b00f1debfa5611eef8023c64796   自己录的视频记录
 
 

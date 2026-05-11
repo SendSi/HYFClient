@@ -19,13 +19,13 @@ public static class AppConfig
     
     public static string defaultYooAssetPKG = "DefaultPackage"; //yooAsset包名  默认的普通资源              使用BuiltinBuildPipeline 传统内置构建管线 (BBP)
     public static string hotFixPackage = "HotFixPackage";//yooAsset包名 代码的dll都在这里了  被转为bytes后缀  使用RawFileBuildPipeline 原生文件构建管线(RFBP)
-    public static YooAsset.EPlayMode playModeStr = YooAsset.EPlayMode.HostPlayMode; //YooAsset.EPlayMode.OfflinePlayMode  Unity手动使用Jenkins菜单栏打出的整包
+    public static YooAsset.EPlayMode playModeStr =YooAsset.EPlayMode.OfflinePlayMode; //YooAsset.EPlayMode.OfflinePlayMode 或 HostPlayMode  Unity手动使用Jenkins菜单栏打出的整包
 
     public static bool EnableLog = true; //是否开启日志   本想Debug.logger.logEnabled = false;可以让服务端做一个密令一类的东西， 正式版也能让客户端把LOG打开
     
     #region editor下使用的
 
-    public static string resVersion = "v1.0.1"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
+    public static string resVersion = "v1.0.0"; //yooAsset生成资源时 的版本  复制时有用  editor下使用
     public static string localCDN = "D:/WWW_hyfclient/CDN/"; //本地cdn资源服务器 磁盘路径
 
     #endregion
