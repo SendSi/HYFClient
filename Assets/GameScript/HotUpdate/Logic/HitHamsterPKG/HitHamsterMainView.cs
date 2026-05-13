@@ -35,7 +35,7 @@ namespace HitHamsterPKG
             _hamsterList.numItems = 9;
             _stateCtrl.onChanged.Add(OnChangedStateCtrl);
 
-            hpValue = 1;
+            hpValue = 5;
             _hpList.itemRenderer = OnRenderHpList;
             _hpList.numItems = 5;
         }
@@ -142,7 +142,7 @@ namespace HitHamsterPKG
             List<Item_MainHamster> tCanChanges = new List<Item_MainHamster>();
             foreach (var item in mItemMain)
             {
-                if (item.GetState() == 0)
+                if (item.GetRunState() == 0)
                 {
                     canShow++;
                     tCanChanges.Add(item);

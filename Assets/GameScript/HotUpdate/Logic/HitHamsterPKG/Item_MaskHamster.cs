@@ -13,9 +13,15 @@ namespace HitHamsterPKG
             _TrKit.Play();
         }
 
-        public void SetState(int state)
+        public void SetColorState(int state)
         {
             _stateCtrl.selectedIndex = state;
+        }
+
+        /// <summary> 0晕  1黄  2蓝  3炸弹  4时钟 5空 </summary>
+        public int GetColorState()
+        {
+            return _stateCtrl.selectedIndex;
         }
     }
 }
