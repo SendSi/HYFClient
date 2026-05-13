@@ -20,12 +20,14 @@ namespace HitHamsterPKG
         private bool mIsPlaying = false;
         private int hpValue = 5;
         private List<Item_MainHamster> mItemMain = new List<Item_MainHamster>();
+        private bool isPause = false; //是否暂停
 
         public override void OnInit()
         {
             base.OnInit();
             mItemMain.Clear();
             _bigMarkBtn.onClick.Add(OnClickBigMaskBtn);
+            _continueBtn.onClick.Add(OnClickContinueBtn);
             _stopBtn.onClick.Add(OnClickStopBtn);
             _closeButton.onClick.Add(OnClickCloseBtn);
             _hamsterList.itemRenderer = OnRenderHamsterList;
@@ -71,7 +73,14 @@ namespace HitHamsterPKG
 
         private void OnClickStopBtn()
         {
+            isPause = true;
             _stateCtrl.selectedIndex = 1;
+        }
+
+        private void OnClickContinueBtn()
+        {
+            isPause = false;
+            _stateCtrl.selectedIndex = 3;
         }
 
         private void OnClickBigMaskBtn()
@@ -109,6 +118,11 @@ namespace HitHamsterPKG
         /// <summary> 头顶的 倒计时 </summary>
         private void OnPlayingTimer(object param)
         {
+            if (isPause == true)
+            {
+                return;
+            }
+
             mSumTime--;
             var curTxt = (Mathf.CeilToInt(mSumTime * 0.1f));
             _timeTxt.text = curTxt.ToString();
@@ -124,7 +138,6 @@ namespace HitHamsterPKG
 
         void CheckCurrent()
         {
-            Debug.LogError("检测");
             var canShow = 0;
             List<Item_MainHamster> tCanChanges = new List<Item_MainHamster>();
             foreach (var item in mItemMain)
@@ -143,7 +156,7 @@ namespace HitHamsterPKG
             if (canShow >= 6) gen++;
 
             if (gen <= 0) return;
-            
+
             var camItems = GetRandomItems(tCanChanges, 1);
             foreach (var item in camItems)
             {
